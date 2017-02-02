@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.bebel</groupId>
+	<artifactId>Samhain</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>Samhain</name>
+	<description>Site de jeu en prevision de Halloween - Les jeux de Bebel</description>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+			<!-- Minify css and js -->
+			<plugin>
+			    <groupId>com.samaxes.maven</groupId>
+			    <artifactId>minify-maven-plugin</artifactId>
+			    <version>1.7.2</version>
+			    <executions>
+			        <execution>
+			            <phase>prepare-package</phase>
+			            <goals>
+			                <goal>minify</goal>
+			            </goals>
+			        </execution>
+			    </executions>
+			    <configuration>
+			        <charset>UTF-8</charset>
+			        <skipMerge>true</skipMerge>
+			        <webappSourceDir>${basedir}/WebContent</webappSourceDir>
+			        <cssSourceDir>app/css</cssSourceDir>
+			        <jsSourceDir>app</jsSourceDir>
+			        <jsEngine>CLOSURE</jsEngine>
+			        <closureLanguage>ECMASCRIPT5</closureLanguage>
+			        <nosuffix>true</nosuffix>
+			        <cssSourceIncludes>
+			            <cssSourceInclude>**/*.css</cssSourceInclude>
+			        </cssSourceIncludes>
+			        <jsSourceIncludes>
+			            <jsSourceInclude>**/*.js</jsSourceInclude>
+			        </jsSourceIncludes>
+			    </configuration>
+			</plugin>
+			
+			<!-- Create war -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<warSourceDirectory>WebContent</warSourceDirectory>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<warSourceExcludes>app/**/*.js, app/**/*.css</warSourceExcludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.3</version>
+		</dependency>
+	</dependencies>
+</project>

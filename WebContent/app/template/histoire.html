@@ -1,0 +1,18 @@
+<div class="texte">
+	<div>
+		<% for(var texte in data.textes) { %>
+			<p><%= data.textes[texte] %></p>
+		<% } %>
+	</div>
+</div>
+<div class="choix">
+	<% for(var index in data.actions) { 
+		var action = data.actions[index];
+	%>
+		<div key='<%= index %>'>
+			<div class="texte" key='<%= index %>'>
+				<%= action.name %>
+			</div>
+		</div>
+	<% } %>
+</div>

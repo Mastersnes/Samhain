@@ -1,0 +1,481 @@
+html {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	height: 100%;
+}
+body {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	min-height: 100%;
+	overflow: hidden;
+}
+.hidden {
+	display: none;
+}
+
+.copyright {
+	position: fixed;
+	bottom: 0;
+	line-height: 0;
+}
+
+/**
+* Logo Bebel
+**/
+.logo {
+	margin-top: 5%;
+	position: absolute;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo > img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+/**
+* Menu
+**/
+.menu {
+	padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+}
+.menu > li {
+	text-align: center;
+	font-size: 2em;
+	font-family: fantasy;
+	
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	
+	cursor: pointer;
+	-webkit-transition: background-color 2s;
+	transition: background-color 2s;
+}
+.menu > li:nth-child(n+2)  {
+	margin-top: 2%;
+}
+.menu > li:hover {
+	background-color: #c59141;
+}
+
+/**
+* Popup
+**/
+.popup {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+}
+.popup > .content {
+	background-color: #4c4c4c;
+	width: 70%;
+	height: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50vh;
+	transform: translateY(-50%);
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";/* IE 8 */
+	filter: alpha(opacity=99);/* IE 5-7 */
+	-moz-opacity: 0.99;/* Netscape */
+	-khtml-opacity: 0.99;/* Safari 1.x */
+	opacity: 0.99;/* Good browsers */
+	
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+.popup > .content > .texte {
+	font-size: 1.7em;
+	font-family: fantasy;
+	text-align: center;
+	margin-top: 50vh;
+	transform: translateY(80%);
+}
+
+/**
+* Glossaire
+**/
+.glossaire {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+}
+.glossaire > .content {
+	background-color: none;
+	background: url("../img/glossaire.png") no-repeat;
+	background-size: 100% 100%;
+	width: 60%;
+	height: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 52vh;
+	transform: translateY(-50%);
+}
+.glossaire > .content > .texte {
+	position: absolute;
+	font-size: 1.7em;
+	font-family: fantasy;
+	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
+	top: 6%;
+	width: 90%;
+	height: 85%;
+	overflow-y: auto;
+}
+.glossaire > .content .texte p {
+	padding: 0;
+	margin: 1%;
+}
+.glossaire > .content .titre {
+	text-decoration: underline;
+}
+.glossaire > .content .stats {
+	text-align: left;
+}
+
+/**
+* Game
+**/
+.game {
+	width: 100%;
+	left: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	
+	background: url("../img/background.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+/**
+* Game header
+**/
+.game > .header {
+	background: url("../img/menu.png") no-repeat;
+	background-size: 100% 100%;
+	height: 20%;
+	
+	font-size: 1.7em;
+	font-family: fantasy;
+	
+}
+.game > .header > .left {
+	position: absolute;
+	width: 40%;
+	height: 5%;
+	margin-top: 0.8%;
+	margin-left: 4%;
+}
+.game > .header > .center {
+	position: absolute;
+	width: 100%;
+	height: 5%;
+	text-align: center;
+	margin-left: -1%;
+	margin-top: 0.8%;
+}
+.game > .header .level {
+	width: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+}
+.game > .header .content {
+	color: #c1a512;
+	text-shadow: 2px 2px 3px black, -2px -2px 3px black;
+}
+.game > .header > .right {
+	position: absolute;
+    width: 40%;
+    height: 5%;
+    margin-top: 0.8%;
+    margin-left: 78%;
+}
+.game > .header .argent {
+	display: inline-block;
+	width: 60%;
+	text-align: center;
+	-webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.game > .header .argent .piece {
+	display: inline-block;
+	background-image: url("../img/piece.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 10%;
+	height: 100%;
+}
+.game > .header .argent .texte {
+	display: inline-block;
+    -webkit-transform: translateY(-19%);
+    -moz-transform: translateY(-19%);
+    -ms-transform: translateY(-19%);
+    -o-transform: translateY(-19%);
+    transform: translateY(-19%);
+}
+
+/**
+* Jauge magie et vie
+**/
+.jauge {
+	width: 37%;
+	float: left;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	border: 2px solid;
+	overflow: hidden;
+}
+.jauge.xp {
+	width: 10%;
+	height: 10%;
+	margin-left: 45%
+}
+.vieRestante {
+	background-color: #8a0909;
+	height: 100%;
+}
+.magieRestante {
+	background-color: #151575;
+	height: 100%;
+}
+.xpRestant {
+	background-color: green;
+	height: 100%;
+	float: left;
+}
+/**
+* Sound
+**/
+.sound {
+	cursor: pointer;
+	float: left;
+	margin-left: 8%;
+	background-image: url("../img/sonon.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 8%;
+	height: 100%;
+}
+.sound.mute {
+	background-image: url("../img/sonoff.png");
+}
+
+/**
+* Game corps
+**/
+.game > .corps {
+	height: 80%;
+}
+
+/**
+* Histoire
+**/
+.corps > .texte {
+	height: 85%;
+	text-align: center;
+	
+	color: #a05b24;
+	text-shadow: 2px 2px 0px black, -2px -2px 0px black;
+	font-size: 1.7em;
+	font-family: fantasy;
+}
+.corps > .texte > div {
+	float: left;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+}
+.corps > .texte > div > p > span {
+	font-style: italic;
+	cursor: pointer;
+	margin-right: 0.20em;
+}
+a:hover, .corps > .texte > div > p > span:hover {
+	color: #d2a44c;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+	font-style: italic;
+	color: inherit;
+}
+/**
+* Choix
+**/
+.corps > .choix {
+	height: 100%;
+	margin-top: 5%;
+}
+.corps > .choix > div {
+	height: 100%;
+	float: left;
+	margin-top: -1%;
+	cursor: pointer;
+	
+	background: url("../img/action.png") no-repeat;
+	background-position: center;
+	background-size: auto 100%;
+	
+	-webkit-transition: margin-top 1s;
+	transition: margin-top 1s;
+	z-index: 99;
+}
+.corps > .choix > div:hover {
+	margin-top: -3%;
+}
+.corps > .choix > div.use {
+	margin-top: -3%;
+}
+.corps > .choix > div.used {
+	margin-top: 5%;
+}
+.corps > .choix > div > .texte {
+	width: 90%;
+	text-align: center;
+	font-family: fantasy;
+	font-size: 1.7em;
+	color: #1b0202;
+	text-shadow: 1px 1px 0px #b70a0a;
+	
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/**
+* Combat
+**/
+.corps > .combat {
+	height: 85%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.corps > .combat > div {
+	float: left;
+    height: 45%;
+    cursor: pointer;
+}
+.corps > .combat .monstreAction {
+	display: inline-block;
+	width: 100%;
+	height: 90%;
+    background: url("../img/action.png") no-repeat;
+    background-size: 100% 100%;
+}
+.corps > .combat .monstreAction .hurt {
+	position: absolute;
+	width: 10%;
+	height: 27%;
+    display: none;
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.monstreAction .hurt.poing {
+	background-image: url("../img/poing.png");
+}
+.monstreAction .hurt.baton {
+	background-image: url("../img/baton.png");
+}
+.monstreAction .hurt.dague {
+	background-image: url("../img/dague.png");
+}
+.monstreAction .hurt.epee {
+	background-image: url("../img/epee.png");
+}
+.monstreAction .hurt.croc {
+	background-image: url("../img/croc.png");
+}
+.monstreAction .hurt.venin {
+	background-image: url("../img/venin.png");
+}
+.monstreAction .hurt.bouleFeu {
+	background-image: url("../img/bouleFeu.png");
+}
+.corps > .combat .monstreName {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 22%;
+	
+	font-size: 1.5em;
+    font-family: fantasy;
+    text-align: center;
+    word-wrap: break-word;
+}
+.corps > .combat .jauge {
+	height: 10%;
+	width: 95%;
+}
+.corps > .wait {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: none;
+}
+
+/**
+* Inventaire
+**/
+.inventaire {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+}
+.inventaire > .content {
+	background-color: none;
+	background: url("../img/glossaire.png") no-repeat;
+	background-size: 100% 100%;
+	width: 60%;
+	height: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 52vh;
+	transform: translateY(-50%);
+}
+.inventaire > .content > .texte {
+	position: absolute;
+	font-size: 1.7em;
+	font-family: fantasy;
+	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
+	top: 6%;
+	width: 90%;
+	height: 85%;
+	overflow-y: auto;
+}
+.inventaire > .content .texte p {
+	padding: 0;
+	margin: 1%;
+}
+.inventaire > .content .titre {
+	text-decoration: underline;
+}

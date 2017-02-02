@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Samhain - Les jeux de bebel</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		
+		<link rel="shortcut icon" href="app/img/favicon.png" type="image/png">
+		
+		<script src="lib/require.min.js"></script>
+		<link rel="stylesheet" href="app/css/style.css">
+	</head>
+	<body>
+		<div>
+			<div id="app"></div>
+			<script>
+				require(['app/config/config.js'], function () {
+					require(['app/view/mainView'], function (main) {
+						new main();
+					});
+				});
+			</script>
+		</div>
+		<a class="hidden" href="honeybot" title="Lien pour Robot">Lien pour Robot</a>
+	</body>
+</html>
