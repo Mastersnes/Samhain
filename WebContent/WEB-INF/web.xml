@@ -15,15 +15,42 @@
 		<url-pattern>/connect</url-pattern>
 	</servlet-mapping>
 	
-	<!-- Admin -->
-	<servlet>
-	    <servlet-name>AdminServlet</servlet-name>
-	    <servlet-class>servlet.admin.AdminServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>AdminServlet</servlet-name>
-		<url-pattern>/admin</url-pattern>
-	</servlet-mapping>
+	<!-- Administration -->
+    <!-- Check -->
+    <servlet>
+        <servlet-name>CheckServlet</servlet-name>
+        <servlet-class>servlet.admin.check.CheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckServlet</servlet-name>
+        <url-pattern>/admin/check</url-pattern>
+    </servlet-mapping>
+    <!-- Clear -->
+    <servlet>
+        <servlet-name>ClearTrackServlet</servlet-name>
+        <servlet-class>servlet.admin.clear.ClearTrackServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClearTrackServlet</servlet-name>
+        <url-pattern>/admin/clear</url-pattern>
+    </servlet-mapping>
+    <!-- Refresh -->
+    <servlet>
+        <servlet-name>RefreshServlet</servlet-name>
+        <servlet-class>servlet.admin.refresh.RefreshServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RefreshServlet</servlet-name>
+        <url-pattern>/admin/refresh</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>CheckMdp</filter-name>
+        <filter-class>filter.admin.CheckMdp</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CheckMdp</filter-name>
+        <url-pattern>/admin/*</url-pattern>
+    </filter-mapping>
 	
 	<!-- HoneyPot -->
 	<servlet>
