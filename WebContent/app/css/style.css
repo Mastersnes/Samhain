@@ -479,3 +479,26 @@ a {
 .inventaire > .content .titre {
 	text-decoration: underline;
 }
+
+/**
+* Admin
+**/
+.adminPage li {
+    list-style: none;
+}
+.adminPage li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+.adminPage table {
+    border-collapse: collapse;
+}
+.adminPage th {
+    background-color: blue;
+    color: white;
+}
+.adminPage table,th,td {
+    border: 1px solid black;
+    text-align: center;
+}

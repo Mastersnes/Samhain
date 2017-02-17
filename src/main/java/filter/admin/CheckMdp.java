@@ -5,12 +5,13 @@ import java.io.IOException;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
 
 import servlet.abstrait.GeneralResponse;
+import utils.Constantes;
 import filter.abstrait.AbstractFilter;
 
-public class CheckMdp extends AbstractFilter {
+public class CheckMdp extends AbstractFilter<AdminFilterRequest> {
+    private static final long serialVersionUID = 1L;
 
     @Override
     public void init(final FilterConfig filterConfig) throws ServletException {
@@ -21,10 +22,10 @@ public class CheckMdp extends AbstractFilter {
     }
 
     @Override
-    protected GeneralResponse doFilter(final HttpServletRequest httpRequest, final FilterChain chain)
+    protected GeneralResponse doFilter(final AdminFilterRequest request, final FilterChain chain)
             throws ServletException, IOException {
         final GeneralResponse response = new GeneralResponse();
-        if ("Meuh".equals(httpRequest.getParameter("mdp"))) {
+        if ("Meuh".equals(request.getMdp())) {
             response.setCodeRetour(0);
         } else {
             response.setCodeRetour(-1);
@@ -33,5 +34,9 @@ public class CheckMdp extends AbstractFilter {
         return response;
     }
 
+    @Override
+    protected AdminFilterRequest getRequest(final String data) {
+        return Constantes.GSON.fromJson(data, AdminFilterRequest.class);
+    }
 
 }

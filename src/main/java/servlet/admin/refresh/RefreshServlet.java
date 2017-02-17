@@ -5,6 +5,7 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 
 import servlet.abstrait.AbstractServlet;
+import servlet.abstrait.GeneralResponse;
 
 /**
  * Controller d'administration permettant de rafraichir le contexte de l'application
@@ -12,17 +13,20 @@ import servlet.abstrait.AbstractServlet;
  * @author Snes
  * 
  */
-public class RefreshServlet extends AbstractServlet<String, String> {
+public class RefreshServlet extends AbstractServlet<String, GeneralResponse> {
     private static final long serialVersionUID = -4647019705021722992L;
 
     @Override
-    protected String doGet(final String request) throws ServletException, IOException {
-        return "DONE";
+    protected GeneralResponse doGet(final String request) throws ServletException, IOException {
+        return null;
     }
 
     @Override
-    protected String doPost(final String request) throws ServletException, IOException {
-        return null;
+    protected GeneralResponse doPost(final String request) throws ServletException, IOException {
+        final GeneralResponse response = new GeneralResponse();
+        response.setCodeRetour(0);
+        response.setMessage("Le site a ete rafraichie avec les nouvelles donnees");
+        return response;
     }
 
     @Override

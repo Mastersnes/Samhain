@@ -1,8 +1,6 @@
 package filter.abstrait;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.logging.Level;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -12,9 +10,8 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import servlet.abstrait.AbstractServlet;
 import servlet.abstrait.GeneralResponse;
-import utils.Constantes;
-import utils.Logger;
 
 /**
  * Filter abstrait
@@ -26,8 +23,18 @@ import utils.Logger;
  * @param <RESP>
  *            Reponse
  */
-public abstract class AbstractFilter implements Filter {
-	private static Logger LOGGER = new Logger(AbstractFilter.class.getName());
+public abstract class AbstractFilter<REQ> extends AbstractServlet<REQ, GeneralResponse> implements Filter {
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * Renvoi la requete rattachee au flux json en entree
+     * 
+     * @param data
+     *            le flux json
+     * @return la requete
+     */
+    @Override
+    protected abstract REQ getRequest(final String data);
 
     /**
      * filtre avec un formalisme epuré
@@ -36,15 +43,16 @@ public abstract class AbstractFilter implements Filter {
      *            requete
      * @return reponse
      */
-    protected abstract GeneralResponse doFilter(final HttpServletRequest request, final FilterChain chain)
+    protected abstract GeneralResponse doFilter(final REQ request, final FilterChain chain)
             throws ServletException, IOException;
 
     @Override
     public void doFilter(final ServletRequest request, final ServletResponse response, final FilterChain chain)
             throws IOException, ServletException {
         final HttpServletRequest req = (HttpServletRequest) request;
+        final REQ requete = mapRequest(req);
         final HttpServletResponse res = (HttpServletResponse) response;
-        final GeneralResponse jsonResponse = doFilter(req, chain);
+        final GeneralResponse jsonResponse = doFilter(requete, chain);
 
         if (jsonResponse.getCodeRetour() == 0) {
             chain.doFilter(request, response);
@@ -53,24 +61,13 @@ public abstract class AbstractFilter implements Filter {
         }
     }
 
-	/**
-	 * Ecrit la reponse au format json
-	 * 
-	 * @param resp
-	 * @param response
-	 */
-    protected void setResponse(final HttpServletResponse resp, final GeneralResponse response) {
-		PrintWriter writer = null;
-		try {
-			writer = resp.getWriter();
-			writer.append(Constantes.GSON.toJson(response));
-			writer.flush();
-		} catch (final IOException e) {
-			LOGGER.log(Level.WARNING, "Reponse invalide");
-		} finally {
-			if (writer != null) {
-				writer.close();
-			}
-		}
-	}
+    @Override
+    protected GeneralResponse doGet(final Object request) throws ServletException, IOException {
+        return null;
+    }
+
+    @Override
+    protected GeneralResponse doPost(final Object request) throws ServletException, IOException {
+        return null;
+    }
 }

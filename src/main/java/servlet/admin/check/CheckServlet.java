@@ -20,6 +20,11 @@ public class CheckServlet extends AbstractServlet<String, CheckServletResponse> 
 
     @Override
     protected CheckServletResponse doGet(final String request) throws ServletException, IOException {
+        return null;
+    }
+
+    @Override
+    protected CheckServletResponse doPost(final String request) throws ServletException, IOException {
         final CheckServletResponse response = new CheckServletResponse();
 
         final String ip = getClientIpAddr();
@@ -31,11 +36,6 @@ public class CheckServlet extends AbstractServlet<String, CheckServletResponse> 
         response.setConnexions(connexions);
 
         return response;
-    }
-
-    @Override
-    protected CheckServletResponse doPost(final String request) throws ServletException, IOException {
-        return null;
     }
 
     @Override

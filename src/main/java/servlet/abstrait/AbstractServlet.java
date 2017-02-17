@@ -44,7 +44,7 @@ public abstract class AbstractServlet<REQ, RESP> extends HttpServlet {
 	 * @throws ServletException
 	 * @throws IOException
 	 */
-	protected abstract RESP doGet(REQ request) throws ServletException, IOException;
+	protected abstract RESP doGet(final REQ request) throws ServletException, IOException;
 
 	/**
 	 * Requete POST avec un formalisme epuré
@@ -55,7 +55,7 @@ public abstract class AbstractServlet<REQ, RESP> extends HttpServlet {
 	 * @throws ServletException
 	 * @throws IOException
 	 */
-	protected abstract RESP doPost(REQ request) throws ServletException, IOException;
+	protected abstract RESP doPost(final REQ request) throws ServletException, IOException;
 
 	/**
 	 * Renvoi la requete rattaché au flux json en entrée
@@ -91,7 +91,7 @@ public abstract class AbstractServlet<REQ, RESP> extends HttpServlet {
 	 *            requete Http
 	 * @return requete json
 	 */
-	private REQ mapRequest(final HttpServletRequest req) {
+    protected REQ mapRequest(final HttpServletRequest req) {
 		final String data = getAttribute(req);
 		if (data != null) {
 			try {
