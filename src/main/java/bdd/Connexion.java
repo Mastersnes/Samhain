@@ -6,15 +6,15 @@ import java.util.Map;
 
 import utils.Constantes;
 import bean.Action;
-import bean.User;
+import bean.Device;
 
 public class Connexion {
-	private static Map<String, User> connexions = new HashMap<>();
+	private static Map<String, Device> connexions = new HashMap<>();
 
 	public static synchronized void addNew(final String ip, final String where) {
-		User user = connexions.get(ip);
+		Device user = connexions.get(ip);
 		if (user == null) {
-			user = new User();
+			user = new Device();
 			connexions.put(ip, user);
 		}
 		user.setIp(ip);
@@ -29,7 +29,7 @@ public class Connexion {
 
 	}
 
-	public static synchronized Map<String, User> getConnexions() {
+	public static synchronized Map<String, Device> getConnexions() {
 		return connexions;
 	}
 }

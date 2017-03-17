@@ -2,17 +2,16 @@
 define(["jquery",
         'underscore',
         "app/utils/utils",
-        "text!app/template/main.html",
+        "text!app/template/form/connexion.html",
         "app/model/menu/connexionModel"], 
-function($, _, Utils, Mediatheque, page, GameView, CreditView) {
+function($, _, Utils, page, Model) {
 	'use strict';
 
-	return function() {
-		this.init = function() {
-			this.el = $("#app");
-			this.model = new ConnexionModel();
-			Utils.load("track", {"where" : "Menu"}, function(data) {}, "POST");
-			this.render();
+	return function(parent) {
+		this.init = function(parent) {
+			this.el = $("#form");
+			this.model = new Model();
+			this.parent = parent;
 		};
 
 		this.render = function() {
@@ -54,6 +53,11 @@ function($, _, Utils, Mediatheque, page, GameView, CreditView) {
 			$("#menu-error-msg").hide();
 		};
 		
-		this.init();
+		this.show = function() {
+			Utils.load("track", {"where" : "Menu de connexion"}, function(data) {}, "POST");
+			this.render();
+		};
+		
+		this.init(parent);
 	};
 });

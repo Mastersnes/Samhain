@@ -7,7 +7,7 @@ import javax.servlet.ServletException;
 
 import servlet.abstrait.AbstractServlet;
 import bdd.Connexion;
-import bean.User;
+import bean.Device;
 
 /**
  * Controller d'administration permettant de recuperer les connexions
@@ -28,7 +28,7 @@ public class CheckServlet extends AbstractServlet<String, CheckServletResponse> 
         final CheckServletResponse response = new CheckServletResponse();
 
         final String ip = getClientIpAddr();
-        final Map<String, User> connexions = Connexion.getConnexions();
+        final Map<String, Device> connexions = Connexion.getConnexions();
         if (connexions.get(ip) != null) {
             connexions.get(ip).setIp("Moi");
         }
