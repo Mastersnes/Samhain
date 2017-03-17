@@ -3,7 +3,7 @@ package servlet.admin.check;
 import java.util.Map;
 
 import servlet.abstrait.GeneralResponse;
-import bean.User;
+import bean.Device;
 
 /**
  * Reponse de la servlet d'administration
@@ -13,7 +13,7 @@ import bean.User;
  */
 public class CheckServletResponse extends GeneralResponse {
 	private int nbrConnexion;
-	private Map<String, User> connexions;
+	private Map<String, Device> connexions;
 
 	public int getNbrConnexion() {
 		return nbrConnexion;
@@ -26,14 +26,14 @@ public class CheckServletResponse extends GeneralResponse {
 	/**
 	 * @return
 	 */
-	public Map<String, User> getConnexions() {
+	public Map<String, Device> getConnexions() {
 		return connexions;
 	}
 
 	/**
 	 * @param connexions
 	 */
-	public void setConnexions(final Map<String, User> connexions) {
+	public void setConnexions(final Map<String, Device> connexions) {
 		this.connexions = connexions;
 	}
 

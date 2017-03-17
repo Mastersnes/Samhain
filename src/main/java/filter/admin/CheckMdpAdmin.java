@@ -10,7 +10,7 @@ import servlet.abstrait.GeneralResponse;
 import utils.Constantes;
 import filter.abstrait.AbstractFilter;
 
-public class CheckMdp extends AbstractFilter<AdminFilterRequest> {
+public class CheckMdpAdmin extends AbstractFilter<AdminFilterRequest> {
     private static final long serialVersionUID = 1L;
 
     @Override

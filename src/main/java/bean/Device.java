@@ -9,7 +9,7 @@ import java.util.Map;
  * @author Mastersnes
  * 
  */
-public class User {
+public class Device {
 	private String ip;
 	private final Map<String, Action> actions = new HashMap<>();
 
