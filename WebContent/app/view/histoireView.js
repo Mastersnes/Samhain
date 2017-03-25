@@ -137,7 +137,7 @@ function($, _, Utils, page, story, Item) {
 					parent.go(dest);
 					break;
 				case "sound":
-					var name = action.params[0];
+					var sound = action.params[0];
 					if (parent.save.isSound()) {
 						this.mediatheque.play(sound);
 					}
