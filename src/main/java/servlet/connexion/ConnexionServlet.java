@@ -35,18 +35,14 @@ public class ConnexionServlet extends AbstractServlet<ConnexionServletRequest, C
             IOException {
         final ConnexionServletResponse response = new ConnexionServletResponse();
         try {
-            if (!validator.checkRequest(request)) {
-                throw new GeneralException(1, "Veuillez indiquer un Identifiant et un Mot de passe de connexion.");
-            }
+            validator.checkRequest(request);
 
             final ComplexUser user = UserDAO.getInstance().getUser(request.getLogin());
             if (user == null) {
                 throw new GeneralException(2, "Utilisateur inconnu");
             }
 
-            if (!validator.checkPassword(user, request.getMdp())) {
-                throw new GeneralException(3, "Mot de passe incorrecte.");
-            }
+            validator.checkPassword(user, request.getMdp());
 
             if (!user.isVerified()) {
                 throw new GeneralException(4, "Veuillez valider votre inscription en verifiant vos mail.");

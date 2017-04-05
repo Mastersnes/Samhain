@@ -4,7 +4,7 @@ define(["jquery",
         "app/utils/utils",
         "text!app/template/main.html",
         "app/model/menu/connexionModel"], 
-function($, _, Utils, Mediatheque, page, GameView, CreditView) {
+function($, _, Utils, page, ConnexionModel) {
 	'use strict';
 
 	return function() {

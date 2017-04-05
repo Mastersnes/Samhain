@@ -2,6 +2,7 @@ package servlet.connexion;
 
 import org.apache.commons.lang.StringUtils;
 
+import servlet.abstrait.GeneralException;
 import bean.SimplyUser;
 
 /**
@@ -15,13 +16,18 @@ public class ConnexionValidator {
      * Verifie que la request est bien remplie
      * 
      * @param request
-     * @return
+     * @throws GeneralException
      */
-    public boolean checkRequest(final ConnexionServletRequest request) {
+    public void checkRequest(final ConnexionServletRequest request) throws GeneralException {
         final String login = request.getLogin();
         final String mdp = request.getMdp();
 
-        return !StringUtils.isEmpty(login) && !StringUtils.isEmpty(mdp);
+        if (StringUtils.isEmpty(login)) {
+            throw new GeneralException(1, "Veuillez indiquer un identifiant de connexion.");
+        }
+        if (StringUtils.isEmpty(mdp)) {
+            throw new GeneralException(1, "Veuillez indiquer un mot de passe de connexion.");
+        }
     }
 
     /**
@@ -29,9 +35,11 @@ public class ConnexionValidator {
      * 
      * @param user
      * @param mdp
-     * @return
+     * @throws GeneralException
      */
-    public boolean checkPassword(final SimplyUser user, final String mdp) {
-        return user.getMdp().equals(mdp);
+    public void checkPassword(final SimplyUser user, final String mdp) throws GeneralException {
+        if (!user.getMdp().equals(mdp)) {
+            throw new GeneralException(3, "Mot de passe incorrecte.");
+        }
     }
 }
