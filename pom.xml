@@ -8,7 +8,7 @@
 	<name>Samhain</name>
 	<description>Site de jeu en prevision de Halloween - Les jeux de Bebel</description>
 	<build>
-		<sourceDirectory>src</sourceDirectory>
+		<sourceDirectory>src/main/java</sourceDirectory>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
