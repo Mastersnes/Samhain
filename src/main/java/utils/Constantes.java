@@ -1,10 +1,6 @@
 package utils;
 
-import java.text.SimpleDateFormat;
 
-import com.google.gson.Gson;
-
-public class Constantes {
-	public final static SimpleDateFormat FORMAT = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-	public final static Gson GSON = new Gson();
+public class Constantes extends CommunConstantes {
+    public static final String USER_PATH = "./Bebel/users.json";
 }

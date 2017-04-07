@@ -7,11 +7,12 @@ import javax.servlet.ServletException;
 
 import servlet.abstrait.AbstractServlet;
 import servlet.abstrait.GeneralException;
-import utils.Constantes;
+import utils.CommunConstantes;
 import utils.Logger;
-import utils.TokenUtils;
-import bdd.UserDAO;
-import bean.ComplexUser;
+import utils.SessionUtils;
+import webservices.bebel.BebelConnexionWSRequest;
+import webservices.bebel.BebelConnexionWSResponse;
+import webservices.bebel.BebelWS;
 
 /**
  * Controller permettant de se connecter
@@ -22,7 +23,7 @@ import bean.ComplexUser;
 public class ConnexionServlet extends AbstractServlet<ConnexionServletRequest, ConnexionServletResponse> {
     private static final long serialVersionUID = -4647019705021722992L;
     private final Logger logger = new Logger(ConnexionServlet.class.getName());
-    private final ConnexionValidator validator = new ConnexionValidator();
+    private final BebelWS bebelWs = new BebelWS();
 
     @Override
     protected ConnexionServletResponse doGet(final ConnexionServletRequest request) throws ServletException,
@@ -34,23 +35,22 @@ public class ConnexionServlet extends AbstractServlet<ConnexionServletRequest, C
     protected ConnexionServletResponse doPost(final ConnexionServletRequest request) throws ServletException,
             IOException {
         final ConnexionServletResponse response = new ConnexionServletResponse();
+
+        final BebelConnexionWSRequest wsRequest = new BebelConnexionWSRequest();
+        wsRequest.setLogin(request.getLogin());
+        wsRequest.setMdp(request.getMdp());
+
+        BebelConnexionWSResponse wsResponse;
         try {
-            validator.checkRequest(request);
+            wsResponse = bebelWs.callConnexion(wsRequest);
 
-            final ComplexUser user = UserDAO.getInstance().getUser(request.getLogin());
-            if (user == null) {
-                throw new GeneralException(2, "Utilisateur inconnu");
+            if (wsResponse.getCodeRetour() == 0) {
+                final String token = wsResponse.getToken();
+                response.setToken(token);
+                SessionUtils.getInstance(httpRequest).connectUser(token);
+            } else {
+                throw new GeneralException(wsResponse.getCodeRetour(), wsResponse.getMessage());
             }
-
-            validator.checkPassword(user, request.getMdp());
-
-            if (!user.isVerified()) {
-                throw new GeneralException(4, "Veuillez valider votre inscription en verifiant vos mail.");
-            }
-
-            // Token de connexion
-            response.setToken(TokenUtils.getInstance().generateToken(null));
-            connectUser(response.getToken());
         } catch (final GeneralException e) {
             logger.log(Level.WARNING, e.getMessage());
             response.setCodeRetour(e.getCodeRetour());
@@ -62,7 +62,7 @@ public class ConnexionServlet extends AbstractServlet<ConnexionServletRequest, C
 
     @Override
     protected ConnexionServletRequest getRequest(final String data) {
-        return Constantes.GSON.fromJson(data, ConnexionServletRequest.class);
+        return CommunConstantes.GSON.fromJson(data, ConnexionServletRequest.class);
     }
 
 }

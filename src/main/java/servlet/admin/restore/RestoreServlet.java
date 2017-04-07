@@ -6,7 +6,6 @@ import javax.servlet.ServletException;
 
 import servlet.abstrait.AbstractServlet;
 import servlet.abstrait.GeneralResponse;
-import bdd.UserDAO;
 
 /**
  * Controller d'administration permettant de restaurer le contexte de l'application
@@ -25,8 +24,6 @@ public class RestoreServlet extends AbstractServlet<String, GeneralResponse> {
     @Override
     protected GeneralResponse doPost(final String request) throws ServletException, IOException {
         final GeneralResponse response = new GeneralResponse();
-
-        UserDAO.getInstance().restore();
 
         response.setCodeRetour(0);
         response.setMessage("Le site a ete restauré avec les nouvelles donnees");

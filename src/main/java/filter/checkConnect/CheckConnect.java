@@ -7,7 +7,8 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 
 import servlet.abstrait.GeneralResponse;
-import utils.Constantes;
+import utils.CommunConstantes;
+import utils.SessionUtils;
 import filter.abstrait.AbstractFilter;
 
 public class CheckConnect extends AbstractFilter<ConnectFilterRequest> {
@@ -26,7 +27,7 @@ public class CheckConnect extends AbstractFilter<ConnectFilterRequest> {
             throws ServletException, IOException {
         final GeneralResponse response = new GeneralResponse();
 
-        final String sessionToken = getUser();
+        final String sessionToken = SessionUtils.getInstance(httpRequest).getUser();
         final String requestToken = request.getToken();
 
         if (sessionToken == null || !sessionToken.equals(requestToken)) {
@@ -39,7 +40,7 @@ public class CheckConnect extends AbstractFilter<ConnectFilterRequest> {
 
     @Override
     protected ConnectFilterRequest getRequest(final String data) {
-        return Constantes.GSON.fromJson(data, ConnectFilterRequest.class);
+        return CommunConstantes.GSON.fromJson(data, ConnectFilterRequest.class);
     }
 
 }

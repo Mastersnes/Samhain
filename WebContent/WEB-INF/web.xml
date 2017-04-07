@@ -22,7 +22,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>ConnexionServlet</servlet-name>
-        <url-pattern>/connect</url-pattern>
+        <url-pattern>/connexion</url-pattern>
     </servlet-mapping>
     
     <!-- Administration -->

@@ -3,10 +3,9 @@ define(["jquery",
         'underscore',
         "app/utils/utils",
         "app/utils/messageUtils",
-        "text!app/template/form/connexion.html",
-        "app/model/form/connexionModel",
-        "app/view/form/inscriptionView"], 
-function($, _, Utils, MessageUtils, page, Model, InscriptionView) {
+        "text!app/template/form/inscription.html",
+        "app/model/form/inscriptionModel"], 
+function($, _, Utils, MessageUtils, page, Model) {
 	'use strict';
 
 	return function(parent) {
@@ -27,9 +26,20 @@ function($, _, Utils, MessageUtils, page, Model, InscriptionView) {
 		
 		this.checkEvents = function() {
 			var that = this;
-			$("#connexion").click(function() {
+			$("#retour").click(function() {
+				that.parent.show();
+			});
+			$("#inscription").click(function() {
 				MessageUtils.hideError();
+				
+				var errorMessage = that.model.validate();
+				if (errorMessage) {
+					MessageUtils.showError(errorMessage);
+					return;
+				}
+				
 				that.model.send(function(data) {
+					console.log(data);
 					if (data.codeRetour != 0) {
 						MessageUtils.showError(data.message);
 					}else {
@@ -37,16 +47,10 @@ function($, _, Utils, MessageUtils, page, Model, InscriptionView) {
 					}
 				});
 			});
-			$("#inscription").click(function() {
-				if (!that.inscriptionView) {
-					that.inscriptionView = new InscriptionView(that);
-				}
-				that.inscriptionView.show();
-			});
 		};
 		
 		this.show = function() {
-			Utils.load("track", {"where" : "Menu de connexion"}, function(data) {}, "POST");
+			Utils.load("track", {"where" : "Menu d'inscription"}, function(data) {}, "POST");
 			this.render();
 		};
 		

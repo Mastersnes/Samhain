@@ -7,7 +7,7 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 
 import servlet.abstrait.GeneralResponse;
-import utils.Constantes;
+import utils.CommunConstantes;
 import filter.abstrait.AbstractFilter;
 
 public class CheckMdpAdmin extends AbstractFilter<AdminFilterRequest> {
@@ -36,7 +36,7 @@ public class CheckMdpAdmin extends AbstractFilter<AdminFilterRequest> {
 
     @Override
     protected AdminFilterRequest getRequest(final String data) {
-        return Constantes.GSON.fromJson(data, AdminFilterRequest.class);
+        return CommunConstantes.GSON.fromJson(data, AdminFilterRequest.class);
     }
 
 }

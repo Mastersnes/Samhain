@@ -1,6 +1,5 @@
 package utils;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -9,9 +8,20 @@ import javax.servlet.http.HttpServletRequest;
  * @author snesztler
  *
  */
-public class SessionUtils extends HttpServlet {
-    private static final long serialVersionUID = -1115526172398379397L;
+public class SessionUtils {
     private static final String USER_SESSION = "USER_CONNECT";
+    private static SessionUtils instance;
+
+    private SessionUtils() {
+    }
+
+    public static SessionUtils getInstance(final HttpServletRequest httpRequest) {
+        if (instance == null) {
+            instance = new SessionUtils();
+        }
+        instance.httpRequest = httpRequest;
+        return instance;
+    }
 
     /**
      * Requete http

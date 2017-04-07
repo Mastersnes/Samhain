@@ -5,7 +5,7 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 
 import servlet.abstrait.AbstractServlet;
-import utils.Constantes;
+import utils.CommunConstantes;
 import bdd.Connexion;
 
 /**
@@ -33,7 +33,7 @@ public class TrackServlet extends AbstractServlet<TrackServletRequest, TrackServ
 
 	@Override
 	protected TrackServletRequest getRequest(final String data) {
-		return Constantes.GSON.fromJson(data, TrackServletRequest.class);
+		return CommunConstantes.GSON.fromJson(data, TrackServletRequest.class);
 	}
 
 }
