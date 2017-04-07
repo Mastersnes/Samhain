@@ -4,17 +4,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
   version="3.0">
-  
-  	<!-- Track -->
-    <servlet>
-        <servlet-name>TrackServlet</servlet-name>
-        <servlet-class>servlet.track.TrackServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>TrackServlet</servlet-name>
-        <url-pattern>/track</url-pattern>
-    </servlet-mapping>
-
+ 
     <!-- Connexion -->
     <servlet>
         <servlet-name>ConnexionServlet</servlet-name>
@@ -25,7 +15,36 @@
         <url-pattern>/connexion</url-pattern>
     </servlet-mapping>
     
+    <!-- Filtres -->
+    <!-- Verifie qu'un utilisateur est bien connecte -->
+    <filter>
+        <filter-name>CheckConnect</filter-name>
+        <filter-class>filter.checkConnect.CheckConnect</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CheckConnect</filter-name>
+        <url-pattern>/connect/*</url-pattern>
+    </filter-mapping>
+    
     <!-- Administration -->
+    <!-- HoneyPot -->
+    <servlet>
+        <servlet-name>HoneyBotServlet</servlet-name>
+        <servlet-class>servlet.honeybot.HoneyBotServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HoneyBotServlet</servlet-name>
+        <url-pattern>/honeybot</url-pattern>
+    </servlet-mapping>
+    <!-- Track -->
+    <servlet>
+        <servlet-name>TrackServlet</servlet-name>
+        <servlet-class>servlet.track.TrackServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TrackServlet</servlet-name>
+        <url-pattern>/track</url-pattern>
+    </servlet-mapping>
     <!-- Check -->
     <servlet>
         <servlet-name>CheckServlet</servlet-name>
@@ -62,18 +81,6 @@
         <servlet-name>RestoreServlet</servlet-name>
         <url-pattern>/admin/restore</url-pattern>
     </servlet-mapping>
-    
-    <!-- HoneyPot -->
-    <servlet>
-        <servlet-name>HoneyBotServlet</servlet-name>
-        <servlet-class>servlet.honeybot.HoneyBotServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>HoneyBotServlet</servlet-name>
-        <url-pattern>/honeybot</url-pattern>
-    </servlet-mapping>
-    
-    <!-- Filtres -->
     <!-- CheckMdp pour l'administration -->
     <filter>
         <filter-name>CheckMdpAdmin</filter-name>
@@ -82,16 +89,6 @@
     <filter-mapping>
         <filter-name>CheckMdpAdmin</filter-name>
         <url-pattern>/admin/*</url-pattern>
-    </filter-mapping>
-
-    <!-- Verifie qu'un utilisateur est bien connecte -->
-    <filter>
-        <filter-name>CheckConnect</filter-name>
-        <filter-class>filter.checkConnect.CheckConnect</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>CheckConnect</filter-name>
-        <url-pattern>/connect/*</url-pattern>
     </filter-mapping>
 
 	<!-- Index -->

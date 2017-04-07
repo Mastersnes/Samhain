@@ -7,7 +7,7 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 
 import servlet.abstrait.GeneralResponse;
-import utils.CommunConstantes;
+import utils.Constantes;
 import utils.SessionUtils;
 import filter.abstrait.AbstractFilter;
 
@@ -40,7 +40,7 @@ public class CheckConnect extends AbstractFilter<ConnectFilterRequest> {
 
     @Override
     protected ConnectFilterRequest getRequest(final String data) {
-        return CommunConstantes.GSON.fromJson(data, ConnectFilterRequest.class);
+        return Constantes.GSON.fromJson(data, ConnectFilterRequest.class);
     }
 
 }

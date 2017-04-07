@@ -1,4 +1,4 @@
-package webservices.bebel;
+package ws.bebel.connexion;
 
 import servlet.abstrait.GeneralResponse;
 
@@ -8,7 +8,7 @@ import servlet.abstrait.GeneralResponse;
  * @author snesztler
  *
  */
-public class BebelConnexionWSResponse extends GeneralResponse {
+public class ConnexionWSResponse extends GeneralResponse {
     private String token;
 
     /**

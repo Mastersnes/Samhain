@@ -1,4 +1,4 @@
-package webservices.bebel;
+package ws.bebel.connexion;
 
 /**
  * Requete du WS de connexion bebel
@@ -6,7 +6,7 @@ package webservices.bebel;
  * @author snesztler
  *
  */
-public class BebelConnexionWSRequest {
+public class ConnexionWSRequest {
     private String login;
     private String mdp;
 

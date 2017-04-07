@@ -7,12 +7,12 @@ import javax.servlet.ServletException;
 
 import servlet.abstrait.AbstractServlet;
 import servlet.abstrait.GeneralException;
-import utils.CommunConstantes;
+import utils.Constantes;
 import utils.Logger;
 import utils.SessionUtils;
-import webservices.bebel.BebelConnexionWSRequest;
-import webservices.bebel.BebelConnexionWSResponse;
-import webservices.bebel.BebelWS;
+import ws.bebel.BebelWS;
+import ws.bebel.connexion.ConnexionWSRequest;
+import ws.bebel.connexion.ConnexionWSResponse;
 
 /**
  * Controller permettant de se connecter
@@ -36,11 +36,11 @@ public class ConnexionServlet extends AbstractServlet<ConnexionServletRequest, C
             IOException {
         final ConnexionServletResponse response = new ConnexionServletResponse();
 
-        final BebelConnexionWSRequest wsRequest = new BebelConnexionWSRequest();
+        final ConnexionWSRequest wsRequest = new ConnexionWSRequest();
         wsRequest.setLogin(request.getLogin());
         wsRequest.setMdp(request.getMdp());
 
-        BebelConnexionWSResponse wsResponse;
+        ConnexionWSResponse wsResponse;
         try {
             wsResponse = bebelWs.callConnexion(wsRequest);
 
@@ -62,7 +62,7 @@ public class ConnexionServlet extends AbstractServlet<ConnexionServletRequest, C
 
     @Override
     protected ConnexionServletRequest getRequest(final String data) {
-        return CommunConstantes.GSON.fromJson(data, ConnexionServletRequest.class);
+        return Constantes.GSON.fromJson(data, ConnexionServletRequest.class);
     }
 
 }
