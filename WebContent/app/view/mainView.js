@@ -5,8 +5,9 @@ define(["jquery",
         "app/utils/mediatheque",
         "text!app/template/main.html",
         "app/view/gameView",
-        "app/view/creditView"], 
-function($, _, Utils, Mediatheque, page, GameView, CreditView) {
+        "app/view/creditView",
+        "app/view/partenairesView"], 
+function($, _, Utils, Mediatheque, page, GameView, CreditView, PartenairesView) {
 	'use strict';
 
 	return function() {
@@ -24,6 +25,7 @@ function($, _, Utils, Mediatheque, page, GameView, CreditView) {
 			this.el.html(template(templateData));
 			
 			this.credit = new CreditView();
+			this.partenaires = new PartenairesView();
 			
 			this.checkContinue();
 			this.checkEvents();
@@ -51,6 +53,10 @@ function($, _, Utils, Mediatheque, page, GameView, CreditView) {
 			$("#credits").click(function() {
 				Utils.load("connect", {"where" : "Credit"}, function(data) {}, "POST");
 				that.credit.show();
+			});
+			$("#partenaires").click(function() {
+				Utils.load("connect", {"where" : "Partenaires"}, function(data) {}, "POST");
+				that.partenaires.show();
 			});
 		};
 		
