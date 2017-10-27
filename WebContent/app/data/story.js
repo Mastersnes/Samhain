@@ -9,8 +9,9 @@ define(
 				"gagne" : {
 					"textes" : [ 
 					    "F&eacute;licitation, vous avez termin&eacute; le jeu !",
-					    "N&apos;h&eacute;sitez pas &agrave; donner votre avis ou proposez vos sc&eacute;narios sur la page <a target='_blank' alt='Les jeux de Bebel' href='https://fr-fr.facebook.com/Les-jeux-de-Bebel-175358759157852/'>Les jeux de Bebel.</a>",
-					    "Si vous n&rsquo;avez pas facebook, laissez-nous un mail sur : lesjeuxdebebel.contact@gmail.com",
+					    "Suivez-nous sur <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a> ou <a target='_blank' alt='Twitter' href='http://twitter.com/lesjeuxdebebel'>Twitter</a>.",
+					    "Soutenez-nous sur <a target='_blank' alt='Tipeee' href='https://www.tipeee.com/les-jeux-de-bebel/'>Tipeee</a>.",
+					    "Nos autres jeux sur <a target='_blank' alt='Kongregate' href='http://www.kongregate.com/games/JeuxBebel'>Kongregate</a>.",
 					    "Vous pouvez aussi retenter votre chance en lancant une nouvelle partie."
 					 ],
 					"actions" : [ {
@@ -27,8 +28,9 @@ define(
 				"perdu" : {
 					"textes" : [ 
 					            "Oh non ! vous avez perdu !", 
-					            "N&apos;h&eacute;sitez pas &agrave; donner votre avis ou proposez vos scenarisc&eacute;narios page <a target='_blank' alt='Les jeux de Bebel' href='https://fr-fr.facebook.com/Les-jeux-de-Bebel-175358759157852/'>Les jeux de Bebel.</a>",
-					            "Si vous n&rsquo;avez pas facebook, laissez-nous un mail sur : lesjeuxdebebel.contact@gmail.com",
+					            "Suivez-nous sur <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a> ou <a target='_blank' alt='Twitter' href='http://twitter.com/lesjeuxdebebel'>Twitter</a>.",
+					            "Soutenez-nous sur <a target='_blank' alt='Tipeee' href='https://www.tipeee.com/les-jeux-de-bebel/'>Tipeee</a>.",
+					            "Nos autres jeux sur <a target='_blank' alt='Kongregate' href='http://www.kongregate.com/games/JeuxBebel'>Kongregate</a>.",
 					            "Vous pouvez aussi retenter votre chance en lancant une nouvelle partie."
 					            ],
 					            "actions" : [ {
