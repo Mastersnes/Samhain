@@ -1445,8 +1445,8 @@ define(["jquery"], function($){
                 en : "&laquo; What happened? &raquo;"
             },
             "reposVille3-texte-3" : {
-                fr : "Un des gardes se tourne vers vous :",
-                en : "One of the guards turns to you:"
+                fr : "Un des <span key='garde'>gardes</span> se tourne vers vous :",
+                en : "One of the <span key='garde'>guards</span> turns to you:"
             },
             "reposVille3-texte-4" : {
                 fr : "&laquo; Les morts ! Ils nous ont attaqu&eacute;s !",
@@ -1612,6 +1612,209 @@ define(["jquery"], function($){
             "suivre-trace" : {
                 fr : "Suivre les traces",
                 en : "Follow the tracks"
+            },
+            
+            "villeFouilleReussite1-texte-1" : {
+                fr : "Vous fouillez les maisons en flammes et trouvez une <span key='potionSante'>potion de sant&eacute;</span>",
+                en : "You search the burning houses and find a <span key='potionSante'>health potion</span>."
+            },
+            "villeFouilleReussite1-texte-2" : {
+            	fr : "dans celle du docteur.",
+            	en : "in the doctor's house."
+            },
+            "villeFouilleReussite1-texte-3" : {
+            	fr : "Cela pourra sans doute vous &ecirc;tre utile&hellip;",
+            	en : "This will undoubtedly be useful to you&hellip;"
+            },
+
+            "prendre" : {
+            	fr : "Prendre",
+            	en : "Take it"
+            },
+            
+            "villeFouilleReussite2-texte-1" : {
+            	fr : "Vous fouillez les maisons en flammes et trouvez une belle <span key='epee'>&eacute;p&eacute;e</span>",
+            	en : "You search the burning houses and find a nice <span key='epee'>sword</span>."
+            },
+            "villeFouilleReussite2-texte-1" : {
+            	fr : "et un grand <span key='bouclierFer'>bouclier en fer</span> dans celle du forgeron.",
+            	en : "and a large iron shield in the blacksmith's house."
+            },
+
+            "laisser" : {
+            	fr : "Laisser",
+            	en : "Leave it"
+            },
+            
+            "villeFouilleReussite3-texte-1" : {
+            	fr : "C&rsquo;est votre jour de chance !",
+            	en : "This is your lucky day!"
+            },
+            "villeFouilleReussite3-texte-2" : {
+            	fr : "En fouillant les maisons en flammes, vous trouvez une belle <span key='epee'>&eacute;p&eacute;e</span>",
+            	en : "When you search the burning houses, you find a beautiful <span key='epee'>sword</span>."
+            },
+            "villeFouilleReussite3-texte-3" : {
+            	fr : "ainsi qu'une <span key='potionSante'>potion de sant&eacute;</span>",
+            	en : "and a <span key='potionSante'>health potion</span>."
+            },
+
+            "laisser-arme" : {
+            	fr : "Laisser les armes",
+            	en : "Leave the weapons"
+            },
+            
+            "villeFouilleEchec-texte-1" : {
+            	fr : "Malheureusement, les maisons sont vides&hellip;",
+            	en : "Unfortunately, the houses are empty&hellip;"
+            },
+            "villeFouilleEchec-texte-2" : {
+            	fr : "Ces cr&eacute;tins n&rsquo;ont rien laiss&eacute;&hellip;",
+            	en : "Those cretins didn't leave anythinghellip;"
+            },
+            "villeFouilleEchec-texte-3" : {
+            	fr : "Vous continuez votre route.",
+            	en : "You're on your way back."
+            },
+
+            "villeFouilleEchec2-texte-1" : {
+            	fr : "En fouillant une des huttes,",
+            	en : "Searching one of the huts,"
+            },
+            "villeFouilleEchec2-texte-2" : {
+            	fr : "vous tombez nez &agrave; nez avec une <span key='grosseGoule'>grosse goule</span> !",
+            	en : "you're falling face to face with a <span key='grosseGoule'>big ghoul</span>!"
+            },
+            "villeFouilleEchec2-texte-3" : {
+            	fr : "Sauvez votre peau avant qu&rsquo;elle ne vous la mange !",
+            	en : "Save your skin before it eats you!"
+            },
+
+            "villeFouilleSuite-texte-1" : {
+            	fr : "En explorant le village, vous remarquez",
+            	en : "As you explore the village, you will notice"
+            },
+            "villeFouilleSuite-texte-2" : {
+            	fr : "que des traces de pas s&rsquo;enfoncent dans le marais&hellip;",
+            	en : "that footprints sink into the swamp..."
+            },
+            "villeFouilleSuite-texte-3" : {
+            	fr : "Peut-&ecirc;tre un fuyard ?",
+            	en : "Maybe a deserter?"
+            },
+
+            "reposVilleRefus2-texte-1" : {
+            	fr : "Vous vous en allez vers le marais.",
+            	en : "You're going to the swamp."
+            },
+            "reposVilleRefus2-texte-2" : {
+            	fr : "Ces cr&eacute;tins n&rsquo;auront cas se d&eacute;brouiller seul&hellip;",
+            	en : "Those cretins won't be able to figure it out on their own..."
+            },
+            "reposVilleRefus2-texte-3" : {
+            	fr : "En chemin, vous distinguez des traces sur le sol.",
+            	en : "On the way, you can see traces on the ground."
+            },
+
+            "retourVille2-texte-1" : {
+            	fr : "Le <span key='roiAraigneeBlesse'>roi des araign&eacute;es</span> d&eacute;vore de nombreuses <span key='goule'>goules</span> autour de vous.",
+            	en : "The <span key='roiAraigneeBlesse'>king of spiders</span> devours many <span key='goule'>ghouls</span> around you."
+            },
+            "retourVille2-texte-2" : {
+            	fr : "Les paysans sont partis se cacher dans leurs chaumi&egrave;res en ruine",
+            	en : "The peasants have gone to hide in their ruined cottages"
+            },
+            "retourVille2-texte-3" : {
+            	fr : "et quelques <span key='garde'>gardes</span> se pr&eacute;parent d&eacute;j&agrave; &agrave; attaquer votre nouvel alli&eacute;&hellip;",
+            	en : "and some <span key='garde'>guards</span> are already preparing to attack your new ally."
+            },
+
+            "arreter" : {
+            	fr : "&laquo; Arretez ! &raquo;",
+            	en : "&laquo; Stop it! &raquo;"
+            },
+            "help-guard" : {
+            	fr : "Aider les gardes",
+            	en : "Helping the guards"
+            },
+            
+            "retourVilleAideRoi-texte-1" : {
+            	fr : "L&rsquo;un des <span key='garde'>gardes</span> s&rsquo;adresse &agrave; vous :",
+            	en : "One of the <span key='garde'>guards</span> ask for you:"
+            },
+            "retourVilleAideRoi-texte-2" : {
+            	fr : "&laquo; Que dites-vous ? Il faut tuer ce monstre ! &raquo;",
+            	en : "&laquo; What are you saying? We have to kill that monster! &raquo;"
+            },
+            "retourVilleAideRoi-texte-3" : {
+            	fr : "Vous insistez :",
+            	en : "You insist :"
+            },
+            "retourVilleAideRoi-texte-4" : {
+            	fr : "&laquo; Non ! C&rsquo;est le <span key='roiAraigneeBlesse'>roi des araign&eacute;es</span> ! Il est venu pour nous aider ! &raquo;",
+            	en : "&laquo; No! He's the <span key='roiAraigneeBlesse'>king of spiders</span>! He came to help us! &raquo;"
+            },
+
+            "retourVilleAideRoi2-texte-1" : {
+            	fr : "Pendant votre discussion, la bataille continuait.",
+            	en : "During your discussion, the battle continued."
+            },
+            "retourVilleAideRoi2-texte-2" : {
+            	fr : "Le <span key='roiAraigneeBlesse'>roi des araign&eacute;es</span>, apr&egrave;s avoir d&eacute;truit les derni&egrave;res <span key='goule'>goules</span>,",
+            	en : "The <span key='roiAraigneeBlesse'>king of spiders</span>, after destroying the last <span key='goule'>ghouls</span>,"
+            },
+            "retourVilleAideRoi2-texte-3" : {
+            	fr : "s&rsquo;est enfonc&eacute; dans le marais &agrave; la recherche d&rsquo;autres proies.",
+            	en : "went deep into the swamp in search of other prey."
+            },
+
+            "retourVilleAideRoi3-texte-1" : {
+            	fr : "&laquo; Trop tard&hellip; Il s&rsquo;est enfuit&hellip; Vous l&agrave; ! Qu&rsquo;est-ce qui vous a pris ?",
+            	en : "&laquo; Too late&hellip; He ran away&hellip; You there! What the hell was that about?"
+            },
+            "retourVilleAideRoi3-texte-2" : {
+            	fr : "Les morts nous ont attaqu&eacute;s et ils ont emport&eacute; nos enfants dans la for&ecirc;t ! &raquo;",
+            	en : "The dead have attacked us and they took our children into the forest! &raquo;"
+            },
+
+            "retourVilleAideGarde-texte-1" : {
+            	fr : "Vous achevez le <span key='roiAraigneeBlesse'>roi araign&eacute;e</span> d&rsquo;un coup.",
+            	en : "You're killing the <span key='roiAraigneeBlesse'>spider king</span> all of a sudden."
+            },
+            "retourVilleAideGarde-texte-2" : {
+            	fr : "Les <span key='villageois'>villageois</span> commencent d&eacute;j&agrave; &agrave; sortir de leurs maisons, rassur&eacute;s.",
+            	en : "The villagers are already starting to leave their homes, reassured."
+            },
+
+            "marais-texte-1" : {
+            	fr : "Vous vous enfoncez profond&eacute;ment dans le marais,",
+            	en : "You're sinking deep into the swamp,"
+            },
+            "marais-texte-2" : {
+            	fr : "suivant les traces que vous apercevez au sol.",
+            	en : "following the tracks you see on the ground."
+            },
+            "marais-texte-3" : {
+            	fr : "Vous arrivez bient&ocirc;t devant une vieille b&acirc;tisse.",
+            	en : "You'll soon arrive in front of an old building."
+            },
+            "marais-texte-4" : {
+            	fr : "Elle para&icirc;t gigantesque, mais est en tr&eacute;s mauvais &eacute;tat.",
+            	en : "It looks gigantic, but is in very bad condition."
+            },
+
+            "entrer" : {
+            	fr : "Entrer",
+            	en : "Enter"
+            },
+            "contourner" : {
+            	fr : "Contourner",
+            	en : "Bypass"
+            },
+            
+            "maraisRoi-texte-1" : {
+            	fr : "La porte est grande ouverte et &agrave; moiti&eacute; explos&eacute;e.",
+            	en : "The door is wide open and half blown open."
             },
             
 	};

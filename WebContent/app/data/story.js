@@ -1121,17 +1121,14 @@ define(
 						]
 					}]
 				},
-				/**
-				 * HEREEEE
-				 */
 				"villeFouilleReussite1" : {
 					"textes" : [ 
-					        "Vous fouillez les maisons en flammes et trouvez une <span key='potionSante'>potion de sant&eacute;</span>",
-					        "dans celle du docteur.",
-					        "Cela pourra sans doute vous &ecirc;tre utile&hellip;"
+					        "villeFouilleReussite1-texte-1",
+					        "villeFouilleReussite1-texte-2",
+					        "villeFouilleReussite1-texte-3"
 					        ],
 			        "actions" : [ {
-						"name" : "Prendre", "action" : [ 
+						"name" : "prendre", "action" : [ 
 						      { "key" : "gain", "params" : [ "potionSante" ]},
 						      { "key" : "go", "params" : [ "villeFouilleSuite" ]}
 						]
@@ -1139,39 +1136,40 @@ define(
 				},
 				"villeFouilleReussite2" : {
 					"textes" : [ 
-					        "Vous fouillez les maisons en flammes et trouvez une belle <span key='epee'>&eacute;p&eacute;e</span>",
-					        " et un grand <span key='bouclierFer'>bouclier en fer</span> dans celle du forgeron.",
-					        "Cela pourra sans doute vous &ecirc;tre utile&hellip;"
+					        "villeFouilleReussite2-texte-1",
+					        "villeFouilleReussite2-texte-1",
+					        "villeFouilleReussite1-texte-3"
 					        ],
 			        "actions" : [ {
-						"name" : "Prendre", "action" : [ 
+						"name" : "prendre", "action" : [ 
 						      { "key" : "gain", "params" : [ "epee" ]},
 						      { "key" : "gain", "params" : [ "bouclierFer" ]},
 						      { "key" : "go", "params" : [ "villeFouilleSuite" ]}
 						]
 					},{
-						"name" : "Laisser", "action" : [ 
+						"name" : "laisser", "action" : [ 
   						      { "key" : "go", "params" : [ "villeFouilleSuite" ]}
   						]
   					}]
 				},
 				"villeFouilleReussite3" : {
 					"textes" : [ 
-					        "C&rsquo;est votre jour de chance !",
-					        "En fouillant les maisons en flammes, vous trouvez une belle <span key='epee'>&eacute;p&eacute;e</span>",
-					        "et un beau <span key='bouclierFer'>bouclier en fer</span> dans celle du forgeron",
-					        "ainsi qu'une <span key='potionSante'>potion de sant&eacute;</span> dans celle du docteur.",
-					        "Cela pourra sans doute vous &ecirc;tre utile&hellip;"
+					        "villeFouilleReussite3-texte-1",
+					        "villeFouilleReussite3-texte-2",
+					        "villeFouilleReussite2-texte-1",
+					        "villeFouilleReussite3-texte-3",
+					        "villeFouilleReussite1-texte-2",
+					        "villeFouilleReussite1-texte-3"
 					        ],
 			        "actions" : [ {
-						"name" : "Tout Prendre", "action" : [ 
+						"name" : "tout-prendre", "action" : [ 
 						      { "key" : "gain", "params" : [ "epee" ]},
 						      { "key" : "gain", "params" : [ "bouclierFer" ]},
 						      { "key" : "gain", "params" : [ "potionSante" ]},
 						      { "key" : "go", "params" : [ "villeFouilleSuite" ]}
 						]
 					},{
-						"name" : "Laisser les armes", "action" : [ 
+						"name" : "laisser-arme", "action" : [ 
 						      { "key" : "gain", "params" : [ "potionSante" ]},
 						      { "key" : "go", "params" : [ "villeFouilleSuite" ]}
 						]
@@ -1179,9 +1177,9 @@ define(
 				},
 				"villeFouilleEchec" : {
 					"textes" : [ 
-					        "Malheureusement, les maisons sont vides&hellip;",
-					        "Ces cr&eacute;tins n&rsquo;ont rien laiss&eacute;&hellip;",
-					        "Vous continuez votre route."
+					        "villeFouilleEchec-texte-1",
+					        "villeFouilleEchec-texte-2",
+					        "villeFouilleEchec-texte-3"
 					        ],
 			        "actions" : [ {
 						"name" : "suivant", "action" : [ 
@@ -1191,9 +1189,9 @@ define(
 				},
 				"villeFouilleEchec2" : {
 					"textes" : [ 
-					        "En fouillant une des huttes,",
-					        "vous tombez nez &agrave; nez avec une <span key='grosseGoule'>grosse goule</span> !",
-					        "Sauvez votre peau avant qu&rsquo;elle ne vous la mange !"
+					        "villeFouilleEchec2-texte-1",
+					        "villeFouilleEchec2-texte-2",
+					        "villeFouilleEchec2-texte-3"
 					        ],
 			        "actions" : [ {
 						"name" : "combattre", "action" : [ 
@@ -1203,9 +1201,9 @@ define(
 				},
 				"villeFouilleSuite" : {
 					"textes" : [ 
-					        "En explorant le village, vous remarquez",
-					        "que des traces de pas s&rsquo;enfoncent dans le marais&hellip;",
-					        "Peut-&ecirc;tre un fuyard ?"
+					        "villeFouilleSuite-texte-1",
+					        "villeFouilleSuite-texte-2",
+					        "villeFouilleSuite-texte-3"
 					        ],
 			        "actions" : [ {
 						"name" : "suivre-trace", "action" : [ 
@@ -1215,9 +1213,9 @@ define(
 				},
 				"reposVilleRefus2" : {
 					"textes" : [ 
-					        "Vous vous en allez vers le marais.",
-					        "Ces cr&eacute;tins n&rsquo;auront cas se d&eacute;brouiller seul&hellip;",
-					        "En chemin, vous distinguez des traces sur le sol."
+					        "reposVilleRefus2-texte-1",
+					        "reposVilleRefus2-texte-2",
+					        "reposVilleRefus2-texte-3"
 					        ],
 			        "actions" : [ {
 						"name" : "suivre-trace", "action" : [ 
@@ -1227,28 +1225,28 @@ define(
 				},
 				"retourVille2" : {
 					"textes" : [ 
-					        "Vous accourez dans le village, au c&oelig;ur de la bataille.",
-					        "Le <span key='roiAraigneeBlesse'>roi des araign&eacute;es</span> d&eacute;vore de nombreuses <span key='goule'>goules</span> autour de vous.",
-					        "Les paysans sont partis se cacher dans leurs chaumi&egrave;res en ruine",
-					        "et quelques <span key='garde'>gardes</span> se pr&eacute;parent d&eacute;j&agrave; &agrave; attaquer votre nouvel alli&eacute;&hellip;"
+					        "reposVille2-texte-1",
+					        "retourVille2-texte-1",
+					        "retourVille2-texte-2",
+					        "retourVille2-texte-3"
 					        ],
 			        "actions" : [ {
-						"name" : "&laquo; Arretez ! &raquo;", "action" : [ 
+						"name" : "arreter", "action" : [ 
 						      { "key" : "gain", "params" : [ "helpRoi2" ]},
 						      { "key" : "go", "params" : [ "retourVilleAideRoi" ]}
 						]
 					},{
-						"name" : "Aider les gardes", "action" : [ 
+						"name" : "help-guard", "action" : [ 
 						      { "key" : "fight", "params" : [ ["roiAraigneeBlesse"], "retourVilleAideGarde" ]}
 						]
 					}]
 				},
 				"retourVilleAideRoi" : {
 					"textes" : [ 
-					        "L&rsquo;un des <span key='garde'>gardes</span> s&rsquo;adresse &agrave; vous :",
-					        "&laquo; Que dites-vous ? Il faut tuer ce monstre ! &raquo;",
-					        "Vous insistez :",
-					        "&laquo; Non ! C&rsquo;est le <span key='roiAraigneeBlesse'>roi des araign&eacute;es</span> ! Il est venu pour nous aider ! &raquo;"
+					        "retourVilleAideRoi-texte-1",
+					        "retourVilleAideRoi-texte-2",
+					        "retourVilleAideRoi-texte-3",
+					        "retourVilleAideRoi-texte-4"
 					        ],
 			        "actions" : [ {
 						"name" : "suivant", "action" : [ 
@@ -1258,9 +1256,9 @@ define(
 				},
 				"retourVilleAideRoi2" : {
 					"textes" : [ 
-					        "Pendant votre discution, la bataille continuait.",
-					        "Le <span key='roiAraigneeBlesse'>roi des araign&eacute;es</span>, apr&egrave;s avoir d&eacute;truit les derni&egrave;res <span key='goule'>goules</span>,",
-					        "s&rsquo;est enfonc&eacute; dans le marais &agrave; la recherche d&rsquo;autres proies."
+					        "retourVilleAideRoi2-texte-1",
+					        "retourVilleAideRoi2-texte-2",
+					        "retourVilleAideRoi2-texte-3"
 					        ],
 			        "actions" : [ {
 						"name" : "suivant", "action" : [ 
@@ -1270,8 +1268,8 @@ define(
 				},
 				"retourVilleAideRoi3" : {
 					"textes" : [ 
-					        "&laquo; Trop tard&hellip; Il s&rsquo;est enfuit&hellip; Vous l&agrave; ! Qu&rsquo;est-ce qui vous a pris ?",
-					        "Les morts nous ont attaqu&eacute;s et ils ont emport&eacute; nos enfants dans la for&ecirc;t ! &raquo;"
+					        "retourVilleAideRoi3-texte-1",
+					        "retourVilleAideRoi3-texte-2"
 					        ],
 			        "actions" : [ {
 						"name" : "suivant", "action" : [ 
@@ -1281,11 +1279,11 @@ define(
 				},
 				"retourVilleAideGarde" : {
 					"textes" : [ 
-					        "Vous achevez le <span key='roiAraigneeBlesse'>roi araign&eacute;e</span> d&rsquo;un coup.",
-					        "Les <span key='villageois'>villageois</span> commencent d&eacute;j&agrave; &agrave; sortir de leurs maisons, rassur&eacute;s.",
-					        "Un des <span key='garde'>gardes</span> se tourne vers vous :",
-					        "&laquo; S&rsquo;il vous plait ! Les morts ! Ils nous ont attaqu&eacute;s !",
-					        "Ils ont emport&rsquo;s les enfants dans la for&ecirc;t ! &raquo;"
+					        "retourVilleAideGarde-texte-1",
+					        "retourVilleAideGarde-texte-2",
+					        "reposVille3-texte-3",
+					        "reposVille3-texte-4",
+					        "reposVille3-texte-5"
 					        ],
 			        "actions" : [ {
 						"name" : "suivant", "action" : [ 
@@ -1295,33 +1293,33 @@ define(
 				},
 "marais" : {
 	"textes" : [
-		"Vous vous enfoncez profond&eacute;ment dans le marais,",
-		"suivant les traces que vous apercevez au sol.",
-		"Vous arrivez bient&ocirc;t devant une vieille b&acirc;tisse.",
-		"Elle para&icirc;t gigantesque, mais est en tr&eacute;s mauvais &eacute;tat."
+		"marais-texte-1",
+		"marais-texte-2",
+		"marais-texte-3",
+		"marais-texte-4"
 	],
 	"actions" : [
 		{
-			"name" : "Entrer",
+			"name" : "entrer",
 			"action" : [{"key" : "go", "params" : ["necroPorte"]}]
 		},
 		{
-			"name" : "Contourner",
+			"name" : "contourner",
 			"action" : [{"key" : "go", "params" : ["necroTrou"]}]
 		}
 	]
 },
 "maraisRoi" : {
 	"textes" : [
-		"Vous vous enfoncez profond&eacute;ment dans le marais,",
-		"suivant les traces que vous apercevez au sol.",
-		"Vous arrivez bient&ocirc;t devant une vieille b&acirc;tisse.",
-		"Elle para&icirc;t gigantesque, mais est en tr&eacute;s mauvais &eacute;tat.",
-		"La porte est grande ouverte et &agrave; moiti&eacute; explos&eacute;e."
+		"marais-texte-1",
+		"marais-texte-2",
+		"marais-texte-3",
+		"marais-texte-4",
+		"maraisRoi-texte-1"
 	],
 	"actions" : [
 		{
-			"name" : "Entrer",
+			"name" : "entrer",
 			"action" : [
 				{"key" : "gain", "params" : ["necroS1Clean"]},
 				{"key" : "gain", "params" : ["S1ViaS0"]},
@@ -1330,11 +1328,14 @@ define(
 			]
 		},
 		{
-			"name" : "Contourner",
+			"name" : "contourner",
 			"action" : [{"key" : "go", "params" : ["necroTrou"]}]
 		}
 	]
 },
+/**
+ * HEREEEE
+ */
 "necroTrou" : {
 	"textes" : [
 		"Vous contournez le grand b&acirc;timent quand,",
@@ -1343,7 +1344,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Entrer",
+			"name" : "entrer",
 			"action" : [
 				{"key" : "gain", "params" : ["S3ViaS0"]},
 				{"key" : "gain", "params" : ["viaS3"]},
@@ -1434,7 +1435,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Contourner",
+			"name" : "contourner",
 			"action" : [{"key" : "go", "params" : ["necroTrou"]}]
 		}
 	]
