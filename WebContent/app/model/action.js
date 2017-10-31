@@ -22,7 +22,7 @@ function(Utils) {
 				this.data.name = data.action;
 				this.sound = data.sound;
 			}else {
-				this.data.name = "Piocher";
+				this.data.name = "piocher";
 			}
 		};
 		

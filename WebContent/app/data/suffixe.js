@@ -2,8 +2,8 @@
 define(["jquery", "app/utils/utils"], function($, Utils){
 	var data = {
 		"grognon" : {
-			"namem" : "Grognon",
-			"namef" : "Grognon",
+			"namem" : "grognon",
+			"namef" : "grognon",
 			"attaque" : 1.3,
 			"defense" : 1,
             "vie" : 1,
@@ -12,8 +12,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 2
 		},
 		"hargneux" : {
-			"namem" : "Hargneux",
-			"namef" : "Hargneuse",
+			"namem" : "hargneux-m",
+			"namef" : "hargneux-f",
 			"attaque" : 1,
 			"defense" : 1,
 			"vie" : 1.5,
@@ -22,8 +22,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 2
 		},
 		"debile" : {
-			"namem" : "D&eacute;bile",
-			"namef" : "D&eacute;bile",
+			"namem" : "debile",
+			"namef" : "debile",
 			"attaque" : 0.25,
 			"defense" : 1,
 			"vie" : 0.25,
@@ -32,8 +32,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 0.8
 		},
 		"borgne" : {
-			"namem" : "Borgne",
-			"namef" : "Borgne",
+			"namem" : "borgne",
+			"namef" : "borgne",
 			"attaque" : 0.5,
 			"defense" : 1,
 			"vie" : 1,
@@ -42,8 +42,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 0.5
 		},
 		"timide" : {
-			"namem" : "Timide",
-			"namef" : "Timide",
+			"namem" : "timide",
+			"namef" : "timide",
 			"attaque" : 1,
 			"defense" : 1.5,
 			"vie" : 1,
@@ -52,8 +52,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 1.2
 		},
 		"freluquet" : {
-			"namem" : "Freluquet",
-			"namef" : "Freluquet",
+			"namem" : "freluquet",
+			"namef" : "freluquet",
 			"attaque" : 1,
 			"defense" : 0.5,
 			"vie" : 0.5,
@@ -62,8 +62,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 0.5
 		},
 		"bourrin" : {
-			"namem" : "Bourrin",
-			"namef" : "Bourrine",
+			"namem" : "bourrin-m",
+			"namef" : "bourrin-f",
 			"attaque" : 2,
 			"defense" : 1,
 			"vie" : 0.5,
@@ -72,8 +72,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 2
 		},
 		"costaud" : {
-			"namem" : "Costaud",
-			"namef" : "Costaud",
+			"namem" : "costaud",
+			"namef" : "costaud",
 			"attaque" : 1.5,
 			"defense" : 2,
 			"vie" : 1.5,
@@ -82,8 +82,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 3
 		},
 		"fairplay" : {
-			"namem" : "Fair-play",
-			"namef" : "Fair-play",
+			"namem" : "fairplay",
+			"namef" : "fairplay",
 			"attaque" : 1,
 			"defense" : 1,
 			"vie" : 1,
@@ -92,8 +92,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 1.2
 		},
 		"mignon" : {
-			"namem" : "Mignon",
-			"namef" : "Mignonne",
+			"namem" : "mignon-m",
+			"namef" : "mignon-f",
 			"attaque" : 1,
 			"defense" : 0.75,
 			"vie" : 0.75,
@@ -102,8 +102,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 0.75
 		},
 		"terrifiant" : {
-			"namem" : "Terrifiant",
-			"namef" : "Terrifiante",
+			"namem" : "terrifiant-m",
+			"namef" : "terrifiant-f",
 			"attaque" : 2,
 			"defense" : 1,
 			"vie" : 1.5,
@@ -112,8 +112,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 2.5
 		},
 		"cruel" : {
-			"namem" : "Cruel",
-			"namef" : "Cruelle",
+			"namem" : "cruel-m",
+			"namef" : "cruel-f",
 			"attaque" : 3,
 			"defense" : 1,
 			"vie" : 1,
@@ -122,8 +122,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 4
 		},
 		"original" : {
-			"namem" : "Original",
-			"namef" : "Originale",
+			"namem" : "original-m",
+			"namef" : "original-f",
 			"attaque" : 1,
 			"defense" : 1,
 			"vie" : 1,
@@ -132,8 +132,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 1
 		},
 		"malade" : {
-			"namem" : "Malade",
-			"namef" : "Malade",
+			"namem" : "malade",
+			"namef" : "malade",
 			"attaque" : 0.5,
 			"defense" : 1,
 			"vie" : 0.10,
@@ -142,8 +142,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 0.25
 		},
 		"feroce" : {
-			"namem" : "F&eacute;roce",
-			"namef" : "F&eacute;roce",
+			"namem" : "feroce",
+			"namef" : "feroce",
 			"attaque" : 1.75,
 			"defense" : 1,
 			"vie" : 1,
@@ -152,8 +152,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 2.3
 		},
 		"glouton" : {
-			"namem" : "Glouton",
-			"namef" : "Gloutonne",
+			"namem" : "glouton-m",
+			"namef" : "glouton-f",
 			"attaque" : 1.25,
 			"defense" : 1,
 			"vie" : 1,
@@ -162,8 +162,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 2
 		},
 		"illumine" : {
-			"namem" : "Illumin&eacute;",
-			"namef" : "Illumin&eacute;e",
+			"namem" : "illumine-m",
+			"namef" : "illumine-f",
 			"attaque" : 1,
 			"defense" : 2,
 			"vie" : 1.5,
@@ -172,8 +172,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 4
 		},
 		"savant" : {
-			"namem" : "Savant",
-			"namef" : "Savante",
+			"namem" : "savant-m",
+			"namef" : "savant-f",
 			"attaque" : 1,
 			"defense" : 3,
 			"vie" : 1,
@@ -182,8 +182,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 4
 		},
 		"fouFurieux" : {
-			"namem" : "Fou Furieux",
-			"namef" : "Folle Furieuse",
+			"namem" : "fouFurieux-m",
+			"namef" : "fouFurieux-f",
 			"attaque" : 4,
 			"defense" : 1,
 			"vie" : 0,
@@ -192,8 +192,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 4
 		},
 		"fragile" : {
-			"namem" : "Fragile",
-			"namef" : "Fragile",
+			"namem" : "fragile",
+			"namef" : "fragile",
 			"attaque" : 1,
 			"defense" : 1,
 			"vie" : 0,
@@ -202,8 +202,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 2
 		},
 		"pleunirchard" : {
-			"namem" : "Pleurnichard",
-			"namef" : "Pleurnicharde",
+			"namem" : "pleunirchard-m",
+			"namef" : "pleunirchard-f",
 			"attaque" : 0.5,
 			"defense" : 0.5,
 			"vie" : 1,
@@ -212,8 +212,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 1
 		},
 		"pauvre" : {
-			"namem" : "Pauvre",
-			"namef" : "Pauvre",
+			"namem" : "pauvre",
+			"namef" : "pauvre",
 			"attaque" : 1,
 			"defense" : 0.5,
 			"vie" : 1,
@@ -222,8 +222,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 1
 		},
 		"riche" : {
-			"namem" : "Riche",
-			"namef" : "Riche",
+			"namem" : "riche",
+			"namef" : "riche",
 			"attaque" : 1.2,
 			"defense" : 1.2,
 			"vie" : 1.2,

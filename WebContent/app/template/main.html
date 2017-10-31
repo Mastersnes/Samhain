@@ -2,20 +2,20 @@
 	<div class="logo">
 		<img alt="Bebel" src="app/img/bebel.png" />
 		<ul class="menu">
-			<li id="new">Nouveau periple</li>
-			<li id="continue">Continuer</li>
-			<li id="credits">Credits</li>
-			<li id="partenaires">Partenaires</li>
+			<li id="new"><%= data.text.get("newgame")%></li>
+			<li id="continue"><%= data.text.get("continue")%></li>
+			<li id="option"><%= data.text.get("option")%></li>
+			<li id="credits"><%= data.text.get("credits")%></li>
 		</ul>
 	</div>
 	<div class="copyright">
-		<p>Cette oeuvre est sous license <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Creative Commons</a></p>
-		<p>Merci de ne pas la modifier ou la partager de fa&ccedil;on commerciale.</p>
+		<p><%= data.text.get("copyright-licence")%> <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Creative Commons</a></p>
+		<p><%= data.text.get("copyright-donot")%></p>
 	</div>
 </div>
 <div id="creditPopup" class="popup">
 </div>
-<div id="partenairesPopup" class="popup">
+<div id="option-popup" class="popup">
 </div>
 <div id="game" class="game">
 </div>

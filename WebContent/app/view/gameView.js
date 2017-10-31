@@ -11,17 +11,20 @@ define(["jquery",
 function($, _, Utils, page, Save, HistoireView, CombatView, GlossaireView, InventaireView) {
 	'use strict';
 
-	return function(start, mediatheque) {
-		this.init = function(start, mediatheque) {
+	return function(start, mediatheque, Textes) {
+		this.init = function(start, mediatheque, Textes) {
 			this.el = $("#game");
 			this.mediatheque = mediatheque;
+			this.Textes = Textes;
 			this.render(start);
 		};
 		
 		this.render = function() {
 			_.templateSettings.variable = "data";
 			var template = _.template(page);
-			var templateData = {};
+			var templateData = {
+			        text : this.Textes
+			};
 			this.el.html(template(templateData));
 			
 			this.checkEvents();
@@ -34,7 +37,7 @@ function($, _, Utils, page, Save, HistoireView, CombatView, GlossaireView, Inven
 			this.histoire = new HistoireView(this);
 			this.combat = new CombatView(this);
 			this.inventaire = new InventaireView(this);
-			this.glossaire = new GlossaireView();
+			this.glossaire = new GlossaireView(this);
 			
 			this.save = new Save();
 			if (!start) {
@@ -102,6 +105,6 @@ function($, _, Utils, page, Save, HistoireView, CombatView, GlossaireView, Inven
 			});
 		};
 		
-		this.init(start, mediatheque);
+		this.init(start, mediatheque, Textes);
 	};
 });

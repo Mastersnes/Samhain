@@ -5,9 +5,9 @@ define(["jquery"], function($){
 		 * Armes
 		 */
 		"poing" : {
-			"action" : "Coup de poing",
-			"name" : "Poing",
-			"textes" : ["C'est simplement votre poing... Depuis votre naissance il ne vous a pas quitt&eacute;."],
+			"action" : "poing-action",
+			"name" : "poing",
+			"textes" : ["poing-texte"],
 			"attaque" : [1, 1],
 			"defense" : [0, 0],
 			"vie" : [0, 0],
@@ -17,9 +17,9 @@ define(["jquery"], function($){
 			"anim" : "poing"
 		},
 		"baton" : {
-			"action" : "Coup de b&acirc;ton",
-			"name" : "B&Acirc;ton",
-			"textes" : ["Un gros b&acirc;ton qui peut faire tr&eacute;s mal..."],
+			"action" : "baton-action",
+			"name" : "baton",
+			"textes" : ["baton-texte"],
 			"attaque" : [1, 5],
 			"defense" : [0, 1],
 			"vie" : [0, 0],
@@ -29,9 +29,9 @@ define(["jquery"], function($){
 			"anim" : "baton"
 		},
 		"dague" : {
-			"action" : "Coup de dague",
-			"name" : "Dague",
-			"textes" : ["Une belle dague toute brillante. Sa lame semble tranchante comme un rasoir."],
+			"action" : "dague-action",
+			"name" : "dague",
+			"textes" : ["dague-texte"],
 			"attaque" : [5, 10],
 			"defense" : [0, 0],
 			"vie" : [0, 0],
@@ -41,9 +41,9 @@ define(["jquery"], function($){
 			"anim" : "dague"
 		},
 		"epee" : {
-			"action" : "Coup d'&eacute;p&eacute;e",
-			"name" : "&Eacute;p&eacute;e",
-			"textes" : ["Une grosse &eacute;p&eacute;e &agrave; une main. Elle est aussi lourde que tranchante !"],
+			"action" : "epee-action",
+			"name" : "epee",
+			"textes" : ["epee-texte"],
 			"attaque" : [5, 15],
 			"defense" : [0, 5],
 			"vie" : [0, 0],
@@ -53,9 +53,9 @@ define(["jquery"], function($){
 			"anim" : "epee"
 		},
 		"crocRoi" : {
-			"action" : "Coup de croc",
-			"name" : "Croc du roi",
-			"textes" : ["Le croc de votre ancien ami... Il d&eacute;gage une odeur putride... Parfait pour une petite balade !"],
+			"action" : "crocRoi-action",
+			"name" : "crocRoi",
+			"textes" : ["crocRoi-texte"],
 			"attaque" : [5, 15],
 			"defense" : 0,
 			"vie" : [0, 10],
@@ -68,9 +68,9 @@ define(["jquery"], function($){
 		 * Armures
 		 */
 		"bras" : {
-			"action" : "Bloquer avec son bras",
-			"name" : "Bras",
-			"textes" : ["Votre bras... Tout simplement... Vous pouvez en &ecirc;tre fier !"],
+			"action" : "bras-action",
+			"name" : "bras",
+			"textes" : ["bras-texte"],
 			"attaque" : [0, 0],
 			"defense" : [0, 5],
 			"vie" : [0, 1],
@@ -80,9 +80,9 @@ define(["jquery"], function($){
 			"anim" : null
 		},
 		"bouclierBois" : {
-			"action" : "Parer avec le bouclier",
-			"name" : "Bouclier de bois",
-			"textes" : ["Un bouclier en bois assez banale. Il semble plut&ocirc;t r&eacute;sistant."],
+			"action" : "bouclierBois-action",
+			"name" : "bouclierBois",
+			"textes" : ["bouclierBois-texte"],
 			"attaque" : [0, 0],
 			"defense" : [3, 15],
 			"vie" : [0, 2],
@@ -92,9 +92,9 @@ define(["jquery"], function($){
 			"anim" : null
 		},
 		"bouclierFer" : {
-			"action" : "Contrer avec le bouclier",
-			"name" : "Bouclier en fer",
-			"textes" : ["Un grand bouclier en fer ! Il est tr&eacute;s r&eacute;sistant."],
+			"action" : "bouclierFer-action",
+			"name" : "bouclierFer",
+			"textes" : ["bouclierFer-texte"],
 			"attaque" : [0, 0],
 			"defense" : [5, 20],
 			"vie" : [0, 3],
@@ -107,9 +107,9 @@ define(["jquery"], function($){
 		 * Consommable
 		 */
 		"potionSante" : {
-			"action" : "Boire la potion de vie",
-			"name" : "Potion de vie",
-			"textes" : ["Une dr&ocirc;le de fiole toute rouge. Sur l'&eacute;tiquette, il est not&eacute; : &laquo; Ne pas en abuser, donne la diarrh&eacute;e &raquo;."],
+			"action" : "potionSante-action",
+			"name" : "potionSante",
+			"textes" : ["potionSante-texte"],
 			"attaque" : [0, 0],
 			"defense" : [0, 0],
 			"vie" : [30, 60],
@@ -119,9 +119,9 @@ define(["jquery"], function($){
 			"anim" : null
 		},
 		"fromage" : {
-			"action" : "Manger le fromage",
-			"name" : "Fromage",
-			"textes" : ["Un vieux fromage l&eacute;g&egrave;rement moisi..."],
+			"action" : "fromage-action",
+			"name" : "fromage",
+			"textes" : ["fromage-texte"],
 			"attaque" : [0, 0],
 			"defense" : [0, 0],
 			"vie" : [20, 50],
@@ -131,9 +131,9 @@ define(["jquery"], function($){
 			"anim" : null
 		},
 		"pomme" : {
-			"action" : "Croquer la pomme",
-			"name" : "Pomme",
-			"textes" : ["Une belle pomme bien rouge ! Vous allez vous r&eacute;galer !"],
+			"action" : "pomme-action",
+			"name" : "pomme",
+			"textes" : ["pomme-texte"],
 			"attaque" : [0, 0],
 			"defense" : [0, 0],
 			"vie" : [15, 30],
@@ -143,9 +143,9 @@ define(["jquery"], function($){
 			"anim" : null
 		},
 		"venin" : {
-			"action" : "Lancer le venin",
-			"name" : "Venin",
-			"textes" : ["Une poche de venin pr&eacute;lev&eacute;e sur une grosse araign&eacute;e !"],
+			"action" : "venin-action",
+			"name" : "venin",
+			"textes" : ["venin-texte"],
 			"attaque" : [10, 30],
 			"defense" : [0, 0],
 			"vie" : [0, 0],
@@ -155,9 +155,9 @@ define(["jquery"], function($){
 			"anim" : "venin"
 		},
 		"elixir" : {
-			"action" : "Boire l'&eacute;lixir",
-			"name" : "&Eacute;lixir",
-			"textes" : ["Une grosse fiole &eacute;clatante de lumi&eacute;re ! Une &eacute;tiquette indique : &laquo; Ne pas boire apr&eacute;s minuit, risque d'allergie &raquo;."],
+			"action" : "elixir-action",
+			"name" : "elixir",
+			"textes" : ["elixir-texte"],
 			"attaque" : [0, 0],
 			"defense" : [0, 0],
 			"vie" : [40, 150],
@@ -171,9 +171,9 @@ define(["jquery"], function($){
 		 * Magie
 		 */
 		"bouleFeu" : {
-			"action" : "*Boule de feu*",
-			"name" : "Boule de feu",
-			"textes" : ["Un sort imparable permettant de lancer une &eacute;norme boule de feu !"],
+			"action" : "bouleFeu-action",
+			"name" : "bouleFeu",
+			"textes" : ["bouleFeu-texte"],
 			"attaque" : [10, 20],
 			"defense" : [0, 0],
 			"vie" : [0, 0],
@@ -183,9 +183,9 @@ define(["jquery"], function($){
 			"anim" : "bouleFeu"
 		},
 		"soin" : {
-			"action" : "*Soin*",
-			"name" : "Soin",
-			"textes" : ["Un sort permettant de se soigner. Le reiki peut aller se r'habiller !"],
+			"action" : "soin-action",
+			"name" : "soin",
+			"textes" : ["soin-texte"],
 			"attaque" : [0, 0],
 			"defense" : [0, 0],
 			"vie" : [20, 60],
@@ -198,9 +198,9 @@ define(["jquery"], function($){
 		 * Clef
 		 */
 		"bougie" : {
-			"action" : "Bougie",
-			"name" : "Bougie",
-			"textes" : ["Une vieille bougie accompagn&eacute; du mat&eacute;riel n&eacute;cessaire pour l'allumer."],
+			"action" : "bougie",
+			"name" : "bougie",
+			"textes" : ["bougie-texte"],
 			"attaque" : 0,
 			"defense" : 0,
 			"vie" : 0,
@@ -210,9 +210,9 @@ define(["jquery"], function($){
 			"anim" : null
 		},
 		"clefS2" : {
-			"action" : "Clef de la salle 2",
-			"name" : "Clef de la salle 2",
-			"textes" : ["Une simple clef."],
+			"action" : "clefS2",
+			"name" : "clefS2",
+			"textes" : ["clefS2-texte"],
 			"attaque" : 0,
 			"defense" : 0,
 			"vie" : 0,

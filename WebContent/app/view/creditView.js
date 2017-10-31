@@ -5,16 +5,19 @@ define(["jquery",
 function($, _, page) {
 	'use strict';
 
-	return function() {
-		this.init = function() {
+	return function(parent, Textes) {
+		this.init = function(parent, Textes) {
 			this.el = $("#creditPopup");
+			this.Textes = Textes;
 			this.render();
 		};
 		
 		this.render = function() {
 			_.templateSettings.variable = "data";
 			var template = _.template(page);
-			var templateData = {};
+			var templateData = {
+			        text : this.Textes
+			};
 			this.el.html(template(templateData));
 			
 			this.checkEvents();
@@ -34,6 +37,6 @@ function($, _, page) {
 			this.el.show("slow");
 		};
 		
-		this.init();
+		this.init(parent, Textes);
 	};
 });

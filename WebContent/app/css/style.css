@@ -25,6 +25,13 @@ body {
 }
 
 /**
+* Bootstrap
+**/
+.col-md-12 {
+	width: 100%;
+}
+
+/**
 * Logo Bebel
 **/
 .logo {
@@ -124,6 +131,60 @@ body {
     background-color: #413f3f !important;
     border: 1px solid black !important;
     border-radius: 50% !important;
+}
+
+ul.popup-menu {
+    display: block;
+}
+ul.popup-menu > li {
+    display: block;
+    text-align: center;
+    
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul.popup-menu > li {
+    cursor: pointer;
+    
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    
+    position: relative;
+    
+    -webkit-transition: background 2s;
+    transition: background 2s;
+}
+
+ul.popup-menu > li:hover {
+    background: #f5f5f5;
+    background: linear-gradient(top, #f5f5f5 5%, #555 100%);
+    background: -webkit-linear-gradient(top, #f5f5f5 5%, #555 100%);
+    background: -moz-linear-gradient(top, #f5f5f5 5%, #555 100%);
+    background: -ms-linear-gradient(top, #f5f5f5 5%, #555 100%);
+    background: -o-linear-gradient(top, #f5f5f5 5%, #555 100%);
+}
+
+/**
+* Option
+**/
+.flag-container {
+    height: 30vh;
+    width: 100%;
+}
+.flag {
+    cursor: pointer;
+    display: inline-block;
+    width: 45%; height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+.flag.fr {
+    background-image: url("../img/menu/flag/fr.jpg");
+}
+.flag.en {
+    background-image: url("../img/menu/flag/en.jpg");
 }
 
 /**

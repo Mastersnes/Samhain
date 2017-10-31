@@ -7,9 +7,10 @@ define(["jquery",
 function($, _, page, Glossaire, Item) {
 	'use strict';
 
-	return function() {
-		this.init = function() {
+	return function(game) {
+		this.init = function(game) {
 			this.el = $("#glossaire");
+			this.Textes = game.Textes;
 			this.checkEvents();
 		};
 		
@@ -29,6 +30,8 @@ function($, _, page, Glossaire, Item) {
 				data.type = "item";
 			}
 			
+			data.text = this.Textes;
+			
 			_.templateSettings.variable = "data";
 			var template = _.template(page);
 			this.el.html(template(data));
@@ -41,6 +44,6 @@ function($, _, page, Glossaire, Item) {
 			});
 		};
 		
-		this.init();
+		this.init(game);
 	};
 });

@@ -12,6 +12,7 @@ function($, _, Utils, page, story, Item) {
 		this.init = function(parent) {
 			this.el = $("#corps");
 			this.parent = parent;
+			this.Textes = parent.Textes;
 			this.mediatheque = parent.mediatheque;
 		};
 		
@@ -27,6 +28,7 @@ function($, _, Utils, page, story, Item) {
 			this.data = story.get(key);
 			this.purgeAction();
 			
+			this.data.text = this.Textes;
 			
 			_.templateSettings.variable = "data";
 			var template = _.template(page);

@@ -3,29 +3,31 @@ define(["jquery",
         'underscore',
         "app/utils/utils",
         "app/utils/mediatheque",
+        "app/data/textes",
         "text!app/template/main.html",
         "app/view/gameView",
         "app/view/creditView",
-        "app/view/partenairesView"], 
-function($, _, Utils, Mediatheque, page, GameView, CreditView, PartenairesView) {
+        "app/view/optionView"], 
+function($, _, Utils, Mediatheque, Textes, page, GameView, CreditView, OptionView) {
 	'use strict';
 
 	return function() {
 		this.init = function() {
 			this.el = $("#app");
 			this.mediatheque = new Mediatheque();
-			Utils.load("connect", {"where" : "Connexion"}, function(data) {}, "POST");
 			this.render();
 		};
 
 		this.render = function() {
 			_.templateSettings.variable = "data";
 			var template = _.template(page);
-			var templateData = {};
+			var templateData = {
+			        text : Textes
+			};
 			this.el.html(template(templateData));
 			
-			this.credit = new CreditView();
-			this.partenaires = new PartenairesView();
+			this.credit = new CreditView(this, Textes);
+			this.option = new OptionView(this, Textes);
 			
 			this.checkContinue();
 			this.checkEvents();
@@ -43,20 +45,16 @@ function($, _, Utils, Mediatheque, page, GameView, CreditView, PartenairesView) 
 		this.checkEvents = function() {
 			var that = this;
 			$("#new").click(function() {
-				Utils.load("connect", {"where" : "Nouveau Jeu"}, function(data) {}, "POST");
-				new GameView(true, that.mediatheque);
+				new GameView(true, that.mediatheque, Textes);
 			});
 			$("#continue").click(function() {
-				Utils.load("connect", {"where" : "Continue"}, function(data) {}, "POST");
-				new GameView(false, that.mediatheque);
+				new GameView(false, that.mediatheque, Textes);
 			});
 			$("#credits").click(function() {
-				Utils.load("connect", {"where" : "Credit"}, function(data) {}, "POST");
 				that.credit.show();
 			});
-			$("#partenaires").click(function() {
-				Utils.load("connect", {"where" : "Partenaires"}, function(data) {}, "POST");
-				that.partenaires.show();
+			$("#option").click(function() {
+			    that.option.show();
 			});
 		};
 		

@@ -14,6 +14,7 @@ function($, _, Utils, page, Glossaire, Suffixe, Monstre, Action) {
 		this.init = function(parent) {
 			this.el = $("#corps");
 			this.parent = parent;
+			this.Textes = parent.Textes;
 			this.mediatheque = parent.mediatheque;
 		};
 		
@@ -35,6 +36,9 @@ function($, _, Utils, page, Glossaire, Suffixe, Monstre, Action) {
 		this.render = function() {
 			_.templateSettings.variable = "data";
 			var template = _.template(page);
+			
+			this.data.text = this.Textes;
+			
 			this.el.html(template(this.data));
 			
 			this.positionMonstre();
@@ -205,7 +209,7 @@ function($, _, Utils, page, Glossaire, Suffixe, Monstre, Action) {
 			$(".corps > .choix > div[key="+this.use+"]").addClass("used");
 			this.use = null;
 			
-			if (action.data.name == "Piocher") {
+			if (action.data.name == "piocher") {
 				this.pioche();
 			}
 			
@@ -238,13 +242,13 @@ function($, _, Utils, page, Glossaire, Suffixe, Monstre, Action) {
 				consoPioche.push(action.data.name);
 				magiePioche.push(action.data.name);
 				this.data.actions.push(action);
-				$(".corps > .choix > div[key="+i+"] > .texte").html(action.data.name);
+				$(".corps > .choix > div[key="+i+"] > .texte").html(this.Textes.get(action.data.name));
 				$(".corps > .choix > div[key="+i+"]").removeClass("used");
 				i++;
 			}
 			var action = new Action(null);
 			this.data.actions.push(action);
-			$(".corps > .choix > div[key=5] > .texte").html(action.data.name);
+			$(".corps > .choix > div[key=5] > .texte").html(this.Textes.get(action.data.name));
 			$(".corps > .choix > div[key=5]").removeClass("used");
 			
 			$(".corps > .choix > div").removeClass("use");
@@ -253,7 +257,7 @@ function($, _, Utils, page, Glossaire, Suffixe, Monstre, Action) {
 		this.createMonstre = function(monstres) {
 			for (var index in monstres) {
 				var key = monstres[index];
-				var monstre = new Monstre(Glossaire.get(key));
+				var monstre = new Monstre(Glossaire.get(key), this.Textes);
 				monstre.buff(Suffixe.getRandom());
 				this.data.monstres.push(monstre);
 			};

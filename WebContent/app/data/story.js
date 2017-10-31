@@ -8,14 +8,14 @@ define(
 					 */
 				"gagne" : {
 					"textes" : [ 
-					    "F&eacute;licitation, vous avez termin&eacute; le jeu !",
-					    "Suivez-nous sur <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a> ou <a target='_blank' alt='Twitter' href='http://twitter.com/lesjeuxdebebel'>Twitter</a>.",
-					    "Soutenez-nous sur <a target='_blank' alt='Tipeee' href='https://www.tipeee.com/les-jeux-de-bebel/'>Tipeee</a>.",
-					    "Nos autres jeux sur <a target='_blank' alt='Kongregate' href='http://www.kongregate.com/games/JeuxBebel'>Kongregate</a>.",
-					    "Vous pouvez aussi retenter votre chance en lancant une nouvelle partie."
+					    "gagne-texte-1",
+					    "followUs",
+					    "followUs2",
+					    "followUs3",
+					    "retry"
 					 ],
 					"actions" : [ {
-						"name" : "Recommencer",
+						"name" : "restart-action",
 						"action" : [ {
 							"key" : "restart",
 							"params" : null
@@ -27,14 +27,14 @@ define(
 				 */
 				"perdu" : {
 					"textes" : [ 
-					            "Oh non ! vous avez perdu !", 
-					            "Suivez-nous sur <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a> ou <a target='_blank' alt='Twitter' href='http://twitter.com/lesjeuxdebebel'>Twitter</a>.",
-					            "Soutenez-nous sur <a target='_blank' alt='Tipeee' href='https://www.tipeee.com/les-jeux-de-bebel/'>Tipeee</a>.",
-					            "Nos autres jeux sur <a target='_blank' alt='Kongregate' href='http://www.kongregate.com/games/JeuxBebel'>Kongregate</a>.",
-					            "Vous pouvez aussi retenter votre chance en lancant une nouvelle partie."
+					            "perdu-texte-1", 
+					            "followUs",
+					            "followUs2",
+					            "followUs3",
+					            "retry"
 					            ],
 					            "actions" : [ {
-					            	"name" : "R&eacute;essayer",
+					            	"name" : "retry-action",
 					            	"action" : [ {
 					            		"key" : "restart",
 					            		"params" : null
@@ -46,27 +46,27 @@ define(
 				 */
 				"start" : {
 					"textes" : [
-							"Une nouvelle journ&eacute;e se termine.",
-							"La douceur de l&rsquo;automne caresse les feuilles qui virevoltent aux alentours.",
-							"Ayant termin&eacute; votre dur labeur un peu plus t&ocirc;t,",
-							"Vous d&eacute;cidez de vous reposer au pied d&rsquo;un des g&eacute;ants feuillus."
+							"start-texte-1",
+							"start-texte-2",
+							"start-texte-3",
+							"start-texte-4"
 							],
 					"actions" : [ {
-						"name" : "Suivant", "action" : [ {"key" : "go", "params" : [ "repos2" ]} ]
+						"name" : "suivant", "action" : [ {"key" : "go", "params" : [ "repos2" ]} ]
 					} ]
 				},
 				"repos2" : {
 					"textes" : [ 
-							"Vous fermez les yeux pour mieux appr&eacute;cier la brise.",
-							"Au loin, il vous semble entendre des bruits de pattes&hellip;",
-							"Vous vous levez en sursaut quand deux <span key='araignee'>araign&eacute;es</span> vous sautent dessus !",
+							"repos2-texte-1",
+							"repos2-texte-2",
+							"repos2-texte-3",
 					        ],
 					"actions" : [ {
-						"name" : "Combattre", "action" : [ 
+						"name" : "combattre", "action" : [ 
 						    { "key" : "fight", "params" : [ ["araignee", "araignee", "araignee"], "reposCombat" ]}
 						 ]
 					}, {
-						"name" : "Fuir en courant", 
+						"name" : "fuir", 
 						"action" : [ 
 						         { "key" : "hurt","params" : [ 10 ]},
 						         { "key" : "go", "params" : [ "reposVille" ]}
@@ -75,36 +75,36 @@ define(
 				},
 				"reposCombat" : {
 					"textes" : [ 
-							"Apr&egrave;s avoir d&eacute;fait vos adversaires &agrave; la force de vos <span key='poing'>poings</span>,",
-							"Vous faites une pause pour reprendre vos esprits :",
+							"reposCombat-texte-1",
+							"reposCombat-texte-2"
 					        ],
 					"actions" : [ {
-						"name" : "Examiner les alentours", "action" : [ { "key" : "go", "params" : [ "reposExamine" ]} ]
+						"name" : "examine-alentours", "action" : [ { "key" : "go", "params" : [ "reposExamine" ]} ]
 					}, {
-						"name" : "Fouiller les corps", "action" : [ { "key" : "go", "params" : [ "reposFouille" ]} ]
+						"name" : "fouille-corps", "action" : [ { "key" : "go", "params" : [ "reposFouille" ]} ]
 					}, {
-						"name" : "Rentrer en ville", "action" : [ { "key" : "go", "params" : [ "reposVille" ]} ]
+						"name" : "rentrer-ville", "action" : [ { "key" : "go", "params" : [ "reposVille" ]} ]
 					} ]
 				},
 				"reposFouille" : {
 					"textes" : [ 
-"Berk ! Pourquoi fouiller une <span key='araignee'>araign&eacute;e</span> ?",
-"Vous esp&eacute;riez vraiment y trouver quelque chose ?",
+"reposFouille-texte-1",
+"reposFouille-texte-2",
 					        ],
 					"actions" : [ {
-						"name" : "Retour", "action" : [ { "key" : "go", "params" : [ "reposCombat" ]} ]
+						"name" : "retour", "action" : [ { "key" : "go", "params" : [ "reposCombat" ]} ]
 					} ]
 				},
 				"reposExamine" : {
 					"textes" : [ 
-"En vous penchant, vous remarquez que les traces de vos adversaires remontent vers une caverne non loin.",
-"On peut clairement y entendre grouiller divers insectes.",
-"On se lance ?"
+"reposExamine-texte-1",
+"reposExamine-texte-2",
+"reposExamine-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "En avant !", "action" : [ { "key" : "go", "params" : [ "nid" ]} ]
+						"name" : "en-avant", "action" : [ { "key" : "go", "params" : [ "nid" ]} ]
 					}, {
-						"name" : "Rentrer en ville", "action" : [ { "key" : "go", "params" : [ "reposVille" ]} ]
+						"name" : "rentrer-ville", "action" : [ { "key" : "go", "params" : [ "reposVille" ]} ]
 					} ]
 				},
 				/**
@@ -112,23 +112,23 @@ define(
 				 */
 				"nid" : {
 					"textes" : [ 
-				            "Vous arrivez dans une cavit&eacute; plut&ocirc;t sombre et silencieuse.",
-					        "Une odeur naus&eacute;abonde monte &agrave; votre nez.",
-					        "En y regardant de plus pr&eacute;s, de nombreux cadavres <span key='araignee'>d&rsquo;araign&eacute;es</span> recouvrent le sol."
+				            "nid-texte-1",
+					        "nid-texte-2",
+					        "nid-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "Examiner le sol", "action" : [ { "key" : "go", "params" : [ "nidExamine" ]} ]
+						"name" : "examine-sol", "action" : [ { "key" : "go", "params" : [ "nidExamine" ]} ]
 					}, {
-						"name" : "Regarder aux alentours", "action" : [ { "key" : "go", "params" : [ "nid2" ]} ]
+						"name" : "examine-alentours", "action" : [ { "key" : "go", "params" : [ "nid2" ]} ]
 					} ]
 				},
 				"nidExamine" : {
 					"textes" : [ 
-"En fouillant les cadavres, vous trouvez une belle <span key='dague'>dague</span> qui semble abandonn&eacute;e.",
-"Vous vous penchez pour la saisir, quand&hellip;"
+"nidExamine-texte-1",
+"nidExamine-texte-2"
 					        ],
 					"actions" : [ {
-						"name" : "Suivant", "action" : [ 
+						"name" : "suivant", "action" : [ 
 						      { "key" : "gain", "params" : [ "dague" ]}, 
 						      { "key" : "sound", "params" : [ "punch" ]},
 						      { "key" : "hurt", "params" : [ 5 ]},
@@ -138,59 +138,59 @@ define(
 				},
 				"nidDague" : {
 					"textes" : [ 
-"Vous n&rsquo;avez pas le temps d&rsquo;esquiver !",
-"Un gros <span key='poing'>poing</span> vous &eacute;crase le visage et vous fait tomber au sol.",
-"En vous relevant, vous distinguez un <span key='bandit'>bandit</span> pr&ecirc;t &agrave; vous d&eacute;trousser !",
-"Allez-vous le laisser s&rsquo;en sortir vivant ?!"
+"nidDague-texte-1",
+"nidDague-texte-2",
+"nidDague-texte-3",
+"nidDague-texte-4"
 					        ],
 					"actions" : [ {
-						"name" : "Se battre", "action" : [ 
+						"name" : "se-battre", "action" : [ 
 						      { "key" : "fight", "params" : [ ["bandit"], "nid3" ]}
 						]
 					}, {
-						"name" : "Fuir dans la grotte", "action" : [ { "key" : "go", "params" : [ "nid4" ]} ]
+						"name" : "fuir-grotte", "action" : [ { "key" : "go", "params" : [ "nid4" ]} ]
 					} ]
 				},
 				"nid2" : {
 					"textes" : [ 
-"En regardant bien, vous distinguez un <span key='bandit'>bandit</span> qui se cache dans la p&eacute;nombre.",
-"Il s&rsquo;approche en souriant pour entamer le combat.",
-"Allez-vous le laisser s&rsquo;en sortir vivant ?!"
+"nid2-texte-1",
+"nid2-texte-2",
+"nid2-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "Se battre", "action" : [ 
+						"name" : "se-battre", "action" : [ 
 						      { "key" : "fight", "params" : [ ["bandit"], "nid3" ]}
 						]
 					}, {
-						"name" : "Fuir dans la grotte", "action" : [ { "key" : "go", "params" : [ "nid4" ]} ]
+						"name" : "fuir-grotte", "action" : [ { "key" : "go", "params" : [ "nid4" ]} ]
 					} ]
 				},
 				"nid3" : {
 					"textes" : [ 
-"Le combat se termine et votre adversaire s&rsquo;&eacute;croule sur le sol.",
-"Dans le feu de l&rsquo;action, vous en profitez pour :"
+"nid3-texte-1",
+"nid3-texte-2"
 					        ],
 					"actions" : [ {
-						"name" : "Fouiller le corps", "action" : [ 
+						"name" : "fouille-corp", "action" : [ 
 						      { "key" : "hasItem", "params" : [ ["dague"], "nid3Fouille", "nid3FouilleDague" ]}
 						]
 					}, {
-						"name" : "Continuer", "action" : [ { "key" : "go", "params" : [ "nid4" ]} ]
+						"name" : "continue", "action" : [ { "key" : "go", "params" : [ "nid4" ]} ]
 					} ]
 				},
 				"nid3Fouille" : {
 					"textes" : [ 
-"En d&eacute;troussant le d&eacute;trousseur, vous trouvez un gros morceau de <span key='fromage'>fromage</span> !",
-"Allez-vous vous r&eacute;galer ou le garder sagement ?"
+"nid3Fouille-texte-1",
+"nid3Fouille-texte-2"
 					        ],
 					"actions" : [ {
-						"name" : "Manger et continuer", "action" : [ 
+						"name" : "mange-continue", "action" : [ 
                               { "key" : "sound", "params" : [ "eat" ]},
 						      { "key" : "heal", "params" : [ 20 ]},
 						      { "key" : "go", "params" : [ "nid4" ]}
 						]
 					}, {
-						"name" : "Continuer", "action" : [ 
+						"name" : "continue", "action" : [ 
   						      { "key" : "gain", "params" : [ "fromage" ]},
   						      { "key" : "go", "params" : [ "nid4" ]}
   						]
@@ -198,17 +198,17 @@ define(
 				},
 				"nid3FouilleDague" : {
 					"textes" : [ 
-"En d&eacute;troussant le d&eacute;trousseur, vous trouvez un gros morceau de <span key='fromage'>fromage</span> !",
-"Allez-vous vous r&eacute;galer ou le garder sagement ?"
+"nid3Fouille-texte-1",
+"nid3Fouille-texte-2"
 					        ],
 					"actions" : [ {
-						"name" : "Manger et continuer", "action" : [ 
+						"name" : "mange-continue", "action" : [ 
 						      { "key" : "sound", "params" : [ "eat" ]},
 						      { "key" : "heal", "params" : [ 20 ]},
 						      { "key" : "random", "params" : [ "nid3TrouveDague", "nid4" ]}
 						]
 					}, {
-						"name" : "Continuer", "action" : [ 
+						"name" : "continue", "action" : [ 
   						      { "key" : "gain", "params" : [ "fromage" ]},
   						      { "key" : "go", "params" : [ "nid3TrouveDague", "nid4" ]}
   						]
@@ -216,12 +216,12 @@ define(
 				},
 				"nid3TrouveDague" : {
 					"textes" : [ 
-"Vous avez la bonne id&eacute;e de continuer les recherches.",
-"En dessous du bonhomme se trouvait une superbe <span key='dague'>dague</span> !",
-"Un bon outil qui vous sera bien utile."
+"nid3TrouveDague-texte-1",
+"nid3TrouveDague-texte-2",
+"nid3TrouveDague-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "Continuer", "action" : [ 
+						"name" : "continue", "action" : [ 
 						      { "key" : "gain", "params" : [ "dague" ]},
 						      { "key" : "go", "params" : [ "nid4" ]}
 						]
@@ -229,16 +229,16 @@ define(
 				},
 				"nid4" : {
 					"textes" : [ 
-"Vous vous enfoncez de plus en plus dans l&rsquo;obscurit&eacute; et n&rsquo;y voyez pas grand chose.",
-"Soudain, le tunnel se s&eacute;pare en deux.",
-"Deux choix s&rsquo;offrent donc &agrave; vous :"
+"nid4-texte-1",
+"nid4-texte-2",
+"nid4-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "Aller &agrave; gauche", "action" : [ 
+						"name" : "go-left", "action" : [ 
 						      { "key" : "go", "params" : [ "nidGauche" ]}
 						]
 					},{
-						"name" : "Aller &agrave; droite", "action" : [ 
+						"name" : "go-right", "action" : [ 
  						      { "key" : "go", "params" : [ "nidDroite" ]}
  						]
  					}]
@@ -248,43 +248,43 @@ define(
 				 */
 				"nidGauche" : {
 					"textes" : [ 
-"La lumi&egrave;re semble faiblir davantage, mais vous distinguez au loin une faible lueur.",
-"En vous approchant, vous apercevez un &eacute;norme coffre."
+"nidGauche-texte-1",
+"nidGauche-texte-2"
 					        ],
 					"actions" : [ {
-						"name" : "Essayer de l&apos;ouvrir", "action" : [ 
+						"name" : "try-open", "action" : [ 
 						      { "key" : "hasItem", "params" : [ ["dague"], "coffre", "coffreEchecSimple" ]}
 						]
 					},{
-						"name" : "Retourner en arriere", "action" : [ 
+						"name" : "retour-arriere", "action" : [ 
  						      { "key" : "go", "params" : [ "coffreRetourSimple" ]}
  						]
  					}]
 				},
 				"coffre" : {
 					"textes" : [ 
-"Le coffre est solidement ferm&eacute;.",
-"Peut-&ecirc;tre qu&rsquo;en for&ccedil;ant un peu avec la <span key='dague'>dague</span>,",
-"vous pourriez r&eacute;ussir &agrave; l&rsquo;ouvrir ?"
+"coffre-texte-1",
+"coffre-texte-2",
+"coffre-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "Forcer le coffre", "action" : [ 
+						"name" : "forcer-coffre", "action" : [ 
 						      { "key" : "random", "params" : [ "coffreReussite1", "coffreReussite2", "coffreEchec1", "coffreEchec2" ]}
 						]
 					},{
-						"name" : "Abandonner", "action" : [ 
+						"name" : "abandonner", "action" : [ 
  						      { "key" : "go", "params" : [ "coffreEchec12" ]}
  						]
  					}]
 				},
 				"coffreReussite1" : {
 					"textes" : [ 
-"Le coffre coince, mais en for&ccedil;ant un peu&hellip;",
-"Super ! Vous r&eacute;ussissez &agrave; l&rsquo;ouvrir en grand !",
-"Une belle <span key='potionSante'>potion de couleur rouge</span> et un <span key='bouclierBois'>bouclier en bois</span> vous font face."
+"coffreReussite1-texte-1",
+"coffreReussite1-texte-2",
+"coffreReussite1-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "Tout prendre", "action" : [ 
+						"name" : "tout-prendre", "action" : [ 
 						      { "key" : "gain", "params" : [ "potionSante"]},
 						      { "key" : "gain", "params" : [ "bouclierBois"]},
 						      { "key" : "go", "params" : [ "coffreReussite12"]}
@@ -293,23 +293,23 @@ define(
 				},
 				"coffreReussite12" : {
 					"textes" : [ 
-"Fier de votre butin,",
-"vous retournez &agrave; l&rsquo;intersection et prenez la direction de droite."
+"coffreReussite12-texte-1",
+"coffreReussite12-texte-2"
 					        ],
 					"actions" : [ {
-						"name" : "Suivant", "action" : [ 
+						"name" : "suivant", "action" : [ 
 						      { "key" : "go", "params" : [ "nidDroite"]}
 						]
 					}]
 				},
 				"coffreReussite2" : {
 					"textes" : [ 
-"Le coffre coince, mais en for&ccedil;ant un peu&hellip;",
-"La <span key='dague'>dague</span> &eacute;clate en morceaux et le coffre se renverse sur le sol.",
-"Dans le chantier, vous discernez une <span key='potionSante'>potion rouge</span> et un <span key='bouclierBois'>bouclier en bois</span>."
+"coffreReussite1-texte-1",
+"coffreReussite2-texte-1",
+"coffreReussite2-texte-2"
 					        ],
 					"actions" : [ {
-						"name" : "Tout prendre", "action" : [ 
+						"name" : "tout-prendre", "action" : [ 
 						      { "key" : "perte", "params" : [ "dague"]},
    						      { "key" : "gain", "params" : [ "potionSante"]},
    						      { "key" : "gain", "params" : [ "bouclierBois"]},
@@ -319,26 +319,26 @@ define(
 				},
 				"coffreReussite21" : {
 					"textes" : [ 
-"Fier de votre butin, mais un peu nostalgique de votre belle <span key='dague'>dague</span>,",
-"vous retournez &agrave; l&rsquo;intersection et prenez la direction de droite."
+"coffreReussite21-texte-1",
+"coffreReussite12-texte-2"
 					        ],
 					"actions" : [ {
-						"name" : "Suivant", "action" : [ 
+						"name" : "suivant", "action" : [ 
 						      { "key" : "go", "params" : [ "nidDroite"]}
 						]
 					}]
 				},
 				"coffreEchec1" : {
 					"textes" : [ 
-"Le coffre coince, mais en for&ccedil;ant un peu&hellip;",
-"Non, impossible ! Il ne bouge pas d&rsquo;un poil."
+"coffreReussite1-texte-1",
+"coffreEchec1-texte-1"
 					        ],
 					"actions" : [ {
-						"name" : "Insister", "action" : [ 
+						"name" : "insister", "action" : [ 
 						      { "key" : "random", "params" : [ "coffreReussite1", "coffreReussite2", "coffreEchec2"]}
 						]
 					},{
-						"name" : "Laisser tomber", "action" : [ 
+						"name" : "laisser-tomber", "action" : [ 
    						      { "key" : "go", "params" : [ "coffreEchec12"]}
    						]
    					}]
@@ -346,23 +346,23 @@ define(
 				"coffreEchec12" : {
 					"textes" : [ 
 "Un peu d&eacute;&ccedil;u,",
-"vous retournez &agrave; l&rsquo;intersection et prenez la direction de droite."
+"coffreReussite12-texte-2"
 					        ],
 					"actions" : [ {
-						"name" : "Suivant", "action" : [ 
+						"name" : "suivant", "action" : [ 
 						      { "key" : "go", "params" : [ "nidDroite"]}
 						]
 					}]
 				},
 				"coffreEchec2" : {
 					"textes" : [ 
-"Le coffre coince mais en for&ccedil;ant un peu&hellip;",
-"Bam ! La <span key='dague'>dague</span> &eacute;clate dans vos mains !",
-"Un filet de sang coule doucement sur le sol.",
-"Le coffre, lui, vous regarde impassible&hellip;"
+"coffreReussite1-texte-1",
+"coffreEchec2-texte-1",
+"coffreEchec2-texte-2",
+"coffreEchec2-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "Il n&rsquo;en vaut pas la peine&hellip;", "action" : [ 
+						"name" : "pas-la-peine", "action" : [ 
 						      { "key" : "perte", "params" : [ "dague"]},
 						      { "key" : "hurt", "params" : [ 5 ]},
 						      { "key" : "go", "params" : [ "coffreEchec21" ]}
@@ -371,22 +371,22 @@ define(
 				},
 				"coffreEchec21" : {
 					"textes" : [ 
-"Avec un mal de chien,",
-"vous retournez &agrave; l&rsquo;intersection et prenez la direction de droite."
+"coffreEchec21-texte-1",
+"coffreReussite12-texte-2"
 					        ],
 					"actions" : [ {
-						"name" : "Suivant", "action" : [ 
+						"name" : "suivant", "action" : [ 
 						      { "key" : "go", "params" : [ "nidDroite"]}
 						]
 					}]
 				},
 				"coffreEchecSimple" : {
 					"textes" : [ 
-"Le coffre est solidement ferm&eacute;.",
-"Impossible de l&rsquo;ouvrir&hellip;"
+"coffre-texte-1",
+"coffreEchecSimple-texte-1"
 					        ],
 					"actions" : [ {
-						"name" : "Tant pis&hellip;", "action" : [ 
+						"name" : "tant-pis", "action" : [ 
 						      { "key" : "go", "params" : [ "coffreEchec12"]}
 						]
 					}]
@@ -394,10 +394,10 @@ define(
 				"coffreRetourSimple" : {
 					"textes" : [ 
 "Tranquillement,",
-"vous retournez &agrave; l&rsquo;intersection et prenez la direction de droite."
+"coffreReussite12-texte-2"
 					        ],
 					"actions" : [ {
-						"name" : "Suivant", "action" : [ 
+						"name" : "suivant", "action" : [ 
 						      { "key" : "go", "params" : [ "nidDroite"]}
 						]
 					}]
@@ -407,239 +407,239 @@ define(
 				 */
 				"nidDroite" : {
 					"textes" : [ 
-"Vous arrivez dans une immense salle.",
-"De nombreuses toiles recouvrent les murs et donnent &agrave; l&rsquo;ensemble une ambiance sinistre.",
-"Une forme semble bouger lentement au fond de la pi&egrave;ce, dans l&rsquo;obscurit&eacute;."
+"nidDroite-texte-1",
+"nidDroite-texte-2",
+"nidDroite-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "S&apos;avancer", "action" : [ 
+						"name" : "avancer", "action" : [ 
 						      { "key" : "hasItem", "params" : [ ["potionSante"], "roiAraigneePotion", "roiAraignee"]}
 						]
 					}]
 				},
 				"roiAraigneePotion" : {
 					"textes" : [ 
-"En vous approchant, vous apercevez une <span key='roiAraigneeBlesse'>gigantesque araign&eacute;e</span> dans le noir.",
-"Mal en point, elle s&rsquo;avance doucement vers vous.",
-"Elle semble vouloir quelque chose&hellip;"
+"roiAraigneePotion-texte-1",
+"roiAraigneePotion-texte-2",
+"roiAraigneePotion-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "L&apos;attaquer", "action" : [ 
+						"name" : "attaquer", "action" : [ 
 						      { "key" : "fight", "params" : [ ["roiAraigneeBlesse"], "roiAraigneeAgonie"]}
 						]
 					},{
-						"name" : "&laquo; Stop ! &raquo;", "action" : [ 
+						"name" : "stop", "action" : [ 
  						      { "key" : "go", "params" : [ "roiAraigneePotion2"]}
  						]
  					}]
 				},
 				"roiAraigneePotion2" : {
 					"textes" : [ 
-"La cr&eacute;ature s&rsquo;arr&ecirc;te net et s&rsquo;exclame d&rsquo;une voix caverneuse :",
-"&laquo; Qui es-tu, jeune aventurier, pour oser p&eacute;n&eacute;trer",
-"dans l&rsquo;antre du <span key='roiAraigneeBlesse'>roi des araign&eacute;es</span> ?! &raquo;"
+"roiAraigneePotion2-texte-1",
+"roiAraigneePotion2-texte-2",
+"roiAraigneePotion2-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "&laquo; La mort ! &raquo;", "action" : [ 
+						"name" : "death", "action" : [ 
 						      { "key" : "fight", "params" : [ ["roiAraigneeBlesse"], "roiAraigneeAgonie"]}
 						]
 					},{
-						"name" : "&laquo; Un ami &raquo;", "action" : [ 
+						"name" : "ami", "action" : [ 
  						      { "key" : "go", "params" : [ "roiAraigneePotionAmi"]}
  						]
  					},{
-						"name" : "&laquo; Qui &ecirc;tes-vous ? &raquo;", "action" : [ 
+						"name" : "who-are-you", "action" : [ 
 						      { "key" : "go", "params" : [ "roiAraigneePotionQui"]}
 						]
 					}]
 				},
 				"roiAraigneePotionQui" : {
 					"textes" : [ 
-"&laquo; Je suis Aros ! Le roi arachnide !",
-"Je r&eacute;gnais sur ce royaume jusqu&rsquo;&agrave; aujourd&rsquo;hui, mais&hellip;",
-"D&rsquo;horribles cr&eacute;atures ont assassin&eacute; mes enfants !",
-"M&rsquo;aiderez-vous &agrave; me soigner ? &raquo;"
+"roiAraigneePotionQui-texte-1",
+"roiAraigneePotionQui-texte-2",
+"roiAraigneePotionQui-texte-3",
+"roiAraigneePotionQui-texte-4"
 					        ],
 					"actions" : [ {
-						"name" : "Donner la potion", "action" : [ 
+						"name" : "donner-potion", "action" : [ 
 						      { "key" : "perte", "params" : [ "potionSante"]},
 						      { "key" : "go", "params" : [ "roiAraigneeGuerit"]}
 						]
 					},{
-						"name" : "Refuser", "action" : [ 
+						"name" : "refuser", "action" : [ 
  						      { "key" : "go", "params" : [ "roiAraigneeRefus"]}
  						]
  					}]
 				},
 				"roiAraigneePotionAmi" : {
 					"textes" : [ 
-"&laquo; Vraiment ? Si ce que vous dites est vrai,",
-"pourriez-vous aider un bon ami en le soignant ? &raquo;"
+"roiAraigneePotionAmi-texte-1",
+"roiAraigneePotionAmi-texte-2"
 					        ],
 					"actions" : [ {
-						"name" : "Donner la potion", "action" : [ 
+						"name" : "donner-potion", "action" : [ 
 						      { "key" : "perte", "params" : [ "potionSante"]},
 						      { "key" : "go", "params" : [ "roiAraigneeGuerit"]}
 						]
 					},{
-						"name" : "Refuser", "action" : [ 
+						"name" : "refuser", "action" : [ 
  						      { "key" : "go", "params" : [ "roiAraigneeRefus"]}
  						]
  					}]
 				},
 				"roiAraignee" : {
 					"textes" : [ 
-"En vous approchant, vous apercevez une <span key='roiAraigneeBlesse'>gigantesque araign&eacute;e</span> dans le noir.",
-"Mal en point, elle s&rsquo;avance doucement vers vous.",
-"Elle semble vouloir quelque chose&hellip;"
+"roiAraigneePotion-texte-1",
+"roiAraigneePotion-texte-2",
+"roiAraigneePotion-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "L&apos;attaquer", "action" : [ 
+						"name" : "attaquer", "action" : [ 
 						      { "key" : "fight", "params" : [ ["roiAraigneeBlesse"], "roiAraigneeAgonie"]}
 						]
 					},{
-						"name" : "&laquo; Stop ! &raquo;", "action" : [ 
+						"name" : "stop", "action" : [ 
  						      { "key" : "hasItem", "params" : [ ["fromage"], "roiAraigneeFromage", "roiAraigneeRien"]}
  						]
  					}]
 				},
 				"roiAraigneeFromage" : {
 					"textes" : [ 
-"La cr&eacute;ature s&rsquo;arr&ecirc;te net et s&rsquo;exclame d&rsquo;une voix caverneuse.",
-"&laquo; Qui es-tu, jeune aventurier, pour oser p&eacute;n&eacute;trer",
-"dans l&rsquo;antre du <span key='roiAraigneeBlesse'>roi des araign&eacute;es</span> ?! &raquo;"
+"roiAraigneePotion2-texte-1",
+"roiAraigneePotion2-texte-2",
+"roiAraigneePotion2-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "&laquo; La mort ! &raquo;", "action" : [ 
+						"name" : "death", "action" : [ 
 						      { "key" : "fight", "params" : [ ["roiAraigneeBlesse"], "roiAraigneeAgonie"]}
 						]
 					},{
-						"name" : "&laquo; Un ami &raquo;", "action" : [ 
+						"name" : "ami", "action" : [ 
  						      { "key" : "go", "params" : [ "roiAraigneeFromageAmi"]}
  						]
  					},{
-						"name" : "&laquo; Qui &ecirc;tes-vous ? &raquo;", "action" : [ 
+						"name" : "who-are-you", "action" : [ 
 						      { "key" : "go", "params" : [ "roiAraigneeFromageQui"]}
 						]
 					}]
 				},
 				"roiAraigneeFromageQui" : {
 					"textes" : [ 
-"&laquo; Je suis Aros ! Le roi arachnide !",
-"Je r&eacute;gnais sur ce royaume jusqu&rsquo;&agrave; aujourd&rsquo;hui, mais&hellip;",
-"D&rsquo;horribles cr&eacute;atures ont assassin&eacute; mes enfants !",
-"M&rsquo;aiderez-vous &agrave; me soigner ? &raquo;"
+"roiAraigneePotionQui-texte-1",
+"roiAraigneePotionQui-texte-2",
+"roiAraigneePotionQui-texte-3",
+"roiAraigneePotionQui-texte-4"
 					        ],
 					"actions" : [ {
-						"name" : "Donner le fromage", "action" : [ 
+						"name" : "donner-fromage", "action" : [ 
 						      { "key" : "perte", "params" : [ "fromage"]},
 						      { "key" : "go", "params" : [ "roiAraigneeGuerit"]}
 						]
 					},{
-						"name" : "Refuser", "action" : [ 
+						"name" : "refuser", "action" : [ 
  						      { "key" : "go", "params" : [ "roiAraigneeRefus"]}
  						]
  					}]
 				},
 				"roiAraigneeFromageAmi" : {
 					"textes" : [ 
-"&laquo; Vraiment ? Si ce que vous dites est vrai,",
-"pourriez-vous aider un bon ami en le soignant ? &raquo;"
+"roiAraigneePotionAmi-texte-1",
+"roiAraigneePotionAmi-texte-2"
 					        ],
 					"actions" : [ {
-						"name" : "Donner le fromage", "action" : [ 
+						"name" : "donner-fromage", "action" : [ 
 						      { "key" : "perte", "params" : [ "fromage"]},
 						      { "key" : "go", "params" : [ "roiAraigneeGuerit"]}
 						]
 					},{
-						"name" : "Refuser", "action" : [ 
+						"name" : "refuser", "action" : [ 
  						      { "key" : "go", "params" : [ "roiAraigneeRefus"]}
  						]
  					}]
 				},
 				"roiAraigneeRien" : {
 					"textes" : [ 
-"La cr&eacute;ature s&rsquo;arr&ecirc;te net et s&rsquo;exclame d&rsquo;une voix caverneuse.",
-"&laquo; Qui es-tu, jeune aventurier, pour oser p&eacute;n&eacute;trer",
-"dans l&rsquo;antre du <span key='roiAraigneeBlesse'>roi des araign&eacute;es</span> ?! &raquo;"
+"roiAraigneePotion2-texte-1",
+"roiAraigneePotion2-texte-2",
+"roiAraigneePotion2-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "&laquo; La mort ! &raquo;", "action" : [ 
+						"name" : "death", "action" : [ 
 						      { "key" : "fight", "params" : [ ["roiAraigneeBlesse"], "roiAraigneeAgonie"]}
 						]
 					},{
-						"name" : "&laquo; Qui &ecirc;tes-vous ? &raquo;", "action" : [ 
+						"name" : "who-are-you", "action" : [ 
 						      { "key" : "go", "params" : [ "roiAraigneeQui"]}
 						]
 					}]
 				},
 				"roiAraigneeQui" : {
 					"textes" : [ 
-"&laquo; Je suis Aros ! Le roi arachnide !",
-"Je r&eacute;gnais sur ce royaume jusqu&rsquo;&agrave; aujourd&rsquo;hui, mais&hellip;",
-"D&rsquo;horribles cr&eacute;atures ont assassin&eacute; mes enfants !",
-"M&rsquo;aiderez-vous &agrave; me soigner ? &raquo;"
+"roiAraigneePotionQui-texte-1",
+"roiAraigneePotionQui-texte-2",
+"roiAraigneePotionQui-texte-3",
+"roiAraigneePotionQui-texte-4"
 					        ],
 					"actions" : [ {
-						"name" : "&laquo; Je n&rsquo;ai rien &raquo;", "action" : [ 
+						"name" : "jai-rien", "action" : [ 
  						      { "key" : "go", "params" : [ "roiAraigneeRefus"]}
  						]
  					}]
 				},
 				"roiAraigneeGuerit" : {
 					"textes" : [ 
-"&laquo; Je vous remercie mon ami !",
-"Je me sens beaucoup mieux !",
-"Malheureusement, vous &ecirc;tes arriv&eacute; un peu tard&hellip;",
-"Mon peuple a &eacute;t&eacute; d&eacute;cim&eacute;. &raquo;"
+"roiAraigneeGuerit-texte-1",
+"roiAraigneeGuerit-texte-2",
+"roiAraigneeGuerit-texte-3",
+"roiAraigneeGuerit-texte-4"
 					        ],
 					"actions" : [ {
-						"name" : "&laquo; Qui a fait &ccedil;a ? &raquo;", "action" : [ 
+						"name" : "qui-fait-ca", "action" : [ 
  						      { "key" : "go", "params" : [ "roiAraigneeGuerit2"]}
  						]
  					}]
 				},
 				"roiAraigneeGuerit2" : {
 					"textes" : [ 
-"&laquo; Ils sont apparu sans pr&eacute;venir du c&oelig;ur des t&eacute;n&egrave;bres,",
-"leur r&acirc;le sombre les pr&eacute;c&eacute;dant.",
-"Des spectres, des <span key='goule'>goules</span>, des cr&eacute;atures de l&rsquo;autre monde&hellip; &raquo;"
+"roiAraigneeGuerit2-texte-1",
+"roiAraigneeGuerit2-texte-2",
+"roiAraigneeGuerit2-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "&laquo; Comment ?! &raquo;", "action" : [ 
+						"name" : "comment", "action" : [ 
  						      { "key" : "go", "params" : [ "roiAraigneeGuerit3"]}
  						]
  					}]
 				},
 				"roiAraigneeGuerit3" : {
 					"textes" : [ 
-"&laquo; Ils ont tu&eacute; mes enfants ! Ces monstres !",
-"Je dois les venger ! &raquo;",
-"Le roi se jette au-dessus de vous et se dirige vers la sortie."
+"roiAraigneeGuerit3-texte-1",
+"roiAraigneeGuerit3-texte-2",
+"roiAraigneeGuerit3-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "&laquo; O&ugrave; allez-vous ? &raquo;", "action" : [ 
+						"name" : "ou-aller-vous", "action" : [ 
  						      { "key" : "go", "params" : [ "roiAraigneeGuerit4"]}
  						]
  					},{
-						"name" : "Le laisser partir", "action" : [ 
+						"name" : "laisser-partir", "action" : [ 
 						      { "key" : "go", "params" : [ "roiAraigneeParti"]}
 						]
 					}]
 				},
 				"roiAraigneeGuerit4" : {
 					"textes" : [ 
-"&laquo; Ils sont partis attaquer votre village !",
-"Les laisserez-vous donc faire ?!",
-"Je dois venger les miens ! En route ! &raquo;",
-"Le roi s&rsquo;enfonce dans les t&eacute;n&egrave;bres de la grotte."
+"roiAraigneeGuerit4-texte-1",
+"roiAraigneeGuerit4-texte-2",
+"roiAraigneeGuerit4-texte-3",
+"roiAraigneeGuerit4-texte-4"
 					        ],
 					"actions" : [ {
-						"name" : "Fouiller les lieux", "action" : [ 
+						"name" : "fouiller-lieux", "action" : [ 
  						      { "key" : "go", "params" : [ "roiAraigneeFouilleGrotte"]}
  						]
  					},{
-						"name" : "Aller en ville", "action" : [ 
+						"name" : "aller-ville", "action" : [ 
 						      { "key" : "gain", "params" : [ "helpRoi"]},
 						      { "key" : "go", "params" : [ "reposVille"]}
 						]
@@ -647,15 +647,15 @@ define(
 				},
 				"roiAraigneeParti" : {
 					"textes" : [ 
-"Le roi s&rsquo;enfonce dans les t&eacute;n&egrave;bres de la grotte",
-"et vous laisse seul dans sa demeure&hellip;"
+"roiAraigneeGuerit4-texte-4",
+"roiAraigneeParti-texte-1"
 					        ],
 					"actions" : [ {
-						"name" : "Fouiller les lieux", "action" : [ 
+						"name" : "fouiller-lieux", "action" : [ 
  						      { "key" : "go", "params" : [ "roiAraigneeFouilleGrotte"]}
  						]
  					},{
-						"name" : "Retourner en ville", "action" : [ 
+						"name" : "aller-ville", "action" : [ 
 						      { "key" : "gain", "params" : [ "helpRoi"]},
 						      { "key" : "go", "params" : [ "reposVille"]}
 						]
@@ -663,11 +663,11 @@ define(
 				},
 				"roiAraigneeFouilleGrotte" : {
 					"textes" : [ 
-"Malheureusement, vous ne trouvez rien d&rsquo;int&eacute;ressant.",
-"De nombreux cadavres d&rsquo;arachnides jonchent le sol."
+"roiAraigneeFouilleGrotte-texte-1",
+"roiAraigneeFouilleGrotte-texte-2"
 					        ],
 					"actions" : [ {
-						"name" : "Retourner en ville", "action" : [
+						"name" : "aller-ville", "action" : [
 						      { "key" : "gain", "params" : [ "helpRoi"]},
 						      { "key" : "go", "params" : [ "reposVille"]}
 						]
@@ -675,47 +675,47 @@ define(
 				},
 				"roiAraigneeRefus" : {
 					"textes" : [ 
-"&laquo; Tu n&rsquo;es donc pas notre ami&hellip;",
-"Tu ne vaux pas mieux que ceux qui ont tu&eacute; mes enfants&hellip;",
-"Pars ! Sors de ma demeure&hellip; Laisse-moi mourir en paix. &raquo;"
+"roiAraigneeRefus-texte-1",
+"roiAraigneeRefus-texte-2",
+"roiAraigneeRefus-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "L&apos;attaquer", "action" : [ 
+						"name" : "attaquer", "action" : [ 
 						      { "key" : "fight", "params" : [ ["roiAraigneeBlesse"], "roiAraigneeAgonie"]}
 						]
 					}, {
-						"name" : "Le laisser", "action" : [ 
+						"name" : "let-him", "action" : [ 
  						      { "key" : "go", "params" : [ "reposVille"]}
  						]
  					}]
 				},
 				"roiAraigneeAgonie" : {
 					"textes" : [ 
-"&laquo; Pourquoi ?&hellip;",
-"Je vous maudis, vous et votre race !",
-"Ils vous an&eacute;antiront tous, la mort aux dents&hellip; &raquo;",
-"Le roi s&rsquo;&eacute;croule devant vous, dans une marre de sang vert.",
-"Vous vous demandez ce qu&rsquo;il a voulu dire&hellip;"
+"roiAraigneeAgonie-texte-1",
+"roiAraigneeAgonie-texte-2",
+"roiAraigneeAgonie-texte-3",
+"roiAraigneeAgonie-texte-4",
+"roiAraigneeAgonie-texte-5"
 					        ],
 					"actions" : [ {
-						"name" : "Fouiller", "action" : [ 
+						"name" : "fouiller", "action" : [ 
 						      { "key" : "gain", "params" : [ "venin"]},
 						      { "key" : "go", "params" : [ "roiAraigneeAgonieFouille"]}
 						]
 					}, {
-						"name" : "Rentrer en ville", "action" : [ 
+						"name" : "rentrer-ville", "action" : [ 
  						      { "key" : "go", "params" : [ "reposVille"]}
  						]
  					}]
 				},
 				"roiAraigneeAgonieFouille" : {
 					"textes" : [ 
-"Rien d&rsquo;int&eacute;ressant dans la pi&egrave;ce.",
-"Mais, vous trouvez sur le roi une <span key='venin'>poche de venin</span> !",
-"Elle pourra vous &ecirc;tre utile en combat."
+"roiAraigneeAgonieFouille-texte-1",
+"roiAraigneeAgonieFouille-texte-2",
+"roiAraigneeAgonieFouille-texte-3"
 					        ],
 					"actions" : [ {
-						"name" : "Retourner en ville", "action" : [ 
+						"name" : "aller-ville", "action" : [ 
  						      { "key" : "go", "params" : [ "reposVille"]}
  						]
  					}]
@@ -726,17 +726,17 @@ define(
 				 */
 				"reposVille" : {
 					"textes" : [ 
-					        "Vous arrivez aux abords du village, devant la ferme du vieux Tom.",
-					        "Au loin, des bruits de combats acharn&eacute;s se font entendre.",
-					        "Un vent de panique vous submerge&hellip;"
+					        "reposVille-texte-1",
+					        "reposVille-texte-2",
+					        "reposVille-texte-3"
 					        ],
 			        "actions" : [ {
-						"name" : "Courir &agrave; la ville", 
+						"name" : "courir-ville", 
 						"action" : [
 						      { "key" : "hasItem", "params" : [ ["helpRoi"], "retourVille2", "reposVille2" ]}
 						]
 					},{
-						"name" : "Examiner les lieux", 
+						"name" : "examiner-lieux", 
 						"action" : [ 
 						      { "key" : "hasItem", "params" : [ ["helpRoi"], "fermeExaminer2", "fermeExaminer"]}
 						]
@@ -744,72 +744,72 @@ define(
 				},
 				"fermeExaminer" : {
 					"textes" : [ 
-					        "Il s&rsquo;agit d&rsquo;une vieille grange mal entretenue&hellip;",
-					        "Elle semble abandonn&eacute;e et un <span key='baton'>gros b&acirc;ton</span> permet de caler la porte.",
-					        "Peut-&ecirc;tre en cas d&rsquo;orage ?"
+					        "fermeExaminer-texte-1",
+					        "fermeExaminer-texte-2",
+					        "fermeExaminer-texte-3"
 					        ],
 			        "actions" : [ {
-						"name" : "Retirer le b&acirc;ton", "action" : [ 
+						"name" : "retirer-baton", "action" : [ 
 						      { "key" : "random", "params" : [ "batonSaisieReussite1", "batonSaisieReussite2", "batonSaisieEchec" ]}
 						]
 					},{
-						"name" : "Casser le b&acirc;ton", "action" : [ 
+						"name" : "casser-baton", "action" : [ 
 						      { "key" : "go", "params" : [ "batonPousse"]}
 						]
 					},{
-						"name" : "Courir &agrave; la ville", "action" : [ 
+						"name" : "courir-ville", "action" : [ 
   						      { "key" : "go", "params" : [ "reposVille2"]}
   						]
   					}]
 				},
 				"fermeExaminer2" : {
 					"textes" : [ 
-					        "Il s&rsquo;agit d&rsquo;une vieille grange mal entretenue&hellip;",
-					        "Elle semble abandonn&eacute;e.",
-					        "Le corps d&rsquo;une <span key='goule'>goule</span> g&icirc;t devant la porte grande ouverte."
+					        "fermeExaminer-texte-1",
+					        "fermeExaminer2-texte-1",
+					        "fermeExaminer2-texte-2"
 					        ],
 			        "actions" : [ {
-						"name" : "Entrer dans la grange", "action" : [ 
+						"name" : "entrer-grange", "action" : [ 
 						      { "key" : "go", "params" : [ "grange"]}
 						]
 					},{
-						"name" : "Courir &agrave; la ville", "action" : [ 
+						"name" : "courir-ville", "action" : [ 
   						      { "key" : "go", "params" : [ "retourVille2"]}
   						]
   					}]
 				},
 				"batonSaisieReussite1" : {
 					"textes" : [ 
-					        "En for&ccedil;ant un peu, vous parvenez &agrave; d&eacute;bloquer le <span key='baton'>b&acirc;ton</span>.",
-					        "Dans une roulade arri&egrave;re, vous avez juste le temps d&rsquo;esquiver",
-					        "la grosse porte de la grange qui s&rsquo;ouvre avec fracas&hellip;"
+					        "batonSaisieReussite1-texte-1",
+					        "batonSaisieReussite1-texte-2",
+					        "batonSaisieReussite1-texte-3"
 					        ],
 			        "actions" : [ {
-						"name" : "Garder le b&acirc;ton", "action" : [ 
+						"name" : "garder-baton", "action" : [ 
 						      { "key" : "gain", "params" : [ "baton" ]},
 						      { "key" : "go", "params" : [ "fermeGoule" ]}
 						]
 					},{
-						"name" : "Le laisser", "action" : [ 
+						"name" : "let-him", "action" : [ 
 						      { "key" : "go", "params" : [ "fermeGoule"]}
 						]
 					}]
 				},
 				"batonSaisieReussite2" : {
 					"textes" : [ 
-					        "En for&ccedil;ant un peu, vous parvenez &agrave; d&eacute;bloquer le <span key='baton'>b&acirc;ton</span>.",
-					        "Malheureusement vous n&rsquo;avez pas le temps d&rsquo;&eacute;viter",
-					        "la grosse porte de la grange qui s&rsquo;ouvre avec fracas&hellip;",
-					        "et vous fait tomber &agrave; la renverse&hellip;"
+					        "batonSaisieReussite1-texte-1",
+					        "batonSaisieReussite2-texte-1",
+					        "batonSaisieReussite1-texte-3",
+					        "batonSaisieReussite2-texte-2"
 					        ],
 			        "actions" : [ {
-						"name" : "Garder le b&acirc;ton", "action" : [
+						"name" : "garder-baton", "action" : [
 						      { "key" : "hurt", "params" : [ 5 ]},
 						      { "key" : "gain", "params" : [ "baton" ]},
 						      { "key" : "go", "params" : [ "fermeGoule" ]}
 						]
 					},{
-						"name" : "Le laisser", "action" : [
+						"name" : "let-him", "action" : [
                               { "key" : "hurt", "params" : [ 5 ]},
 						      { "key" : "go", "params" : [ "fermeGoule"]}
 						]
@@ -817,92 +817,92 @@ define(
 				},
 				"batonSaisieEchec" : {
 					"textes" : [ 
-					        "Impossible de le faire bouger&hellip;",
-					        "Le <span key='baton'>b&acirc;ton</span> est trop bien enfonc&eacute;.",
-					        "Au loin, la bataille fait rage&hellip;"
+					        "batonSaisieEchec-texte-1",
+					        "batonSaisieEchec-texte-2",
+					        "batonSaisieEchec-texte-3"
 					        ],
 			        "actions" : [ {
-						"name" : "Casser le b&acirc;ton", "action" : [
+						"name" : "casser-baton", "action" : [
 						      { "key" : "go", "params" : [ "batonPousse" ]}
 						]
 					},{
-						"name" : "Courir &agrave; la ville", "action" : [
+						"name" : "courir-ville", "action" : [
 						      { "key" : "go", "params" : [ "reposVille2"]}
 						]
 					}]
 				},
 				"batonPousse" : {
 					"textes" : [ 
-					        "vous donnez un puissant coup de pied dans le <span key='baton'>b&acirc;ton</span> qui &eacute;clate en morceaux.",
-					        "La porte de la grange s&rsquo;ouvre avec fracas&hellip;"
+					        "batonPousse-texte-1",
+					        "batonPousse-texte-2"
 					        ],
 			        "actions" : [ {
-						"name" : "Suivant", "action" : [
+						"name" : "suivant", "action" : [
 						      { "key" : "go", "params" : [ "fermeGoule" ]}
 						]
 					}]
 				},
 				"fermeGoule" : {
 					"textes" : [ 
-					        "Une horrible <span key='goule'>goule</span> bondit hors de la grange !",
-					        "Elle vous observe un moment, comme si vous &eacute;tiez un en-cas,",
-					        "puis se jette sur vous !"
+					        "fermeGoule-texte-1",
+					        "fermeGoule-texte-2",
+					        "fermeGoule-texte-3"
 					        ],
 			        "actions" : [ {
-						"name" : "Attaquer", "action" : [
+						"name" : "attaquer", "action" : [
 						      { "key" : "fight", "params" : [ ["goule"], "fermeGoule2" ]}
 						]
 					}]
 				},
 				"fermeGoule2" : {
 					"textes" : [ 
-					        "Qu&rsquo;est-ce que ce monstre faisait l&agrave; ?",
-					        "Vous vous remettez de vos &eacute;motions et&hellip;"
+					        "fermeGoule2-texte-1",
+					        "fermeGoule2-texte-2"
 					        ],
 			        "actions" : [ {
-						"name" : "Fouiller", "action" : [
+						"name" : "fouiller", "action" : [
 						      { "key" : "go", "params" : [ "fouillerGoule" ]}
 						]
 					},{
-						"name" : "Entrer dans la grange", "action" : [
+						"name" : "entrer-grange", "action" : [
    						      { "key" : "go", "params" : [ "grange" ]}
    						]
    					},{
-						"name" : "Courir &agrave; la ville", "action" : [
+						"name" : "courir-ville", "action" : [
    						      { "key" : "go", "params" : [ "reposVille2" ]}
    						]
    					}]
 				},
 				"fouillerGoule" : {
 					"textes" : [ 
-					        "Rien&hellip;",
-					        "Juste un cadavre &agrave; moiti&eacute; d&eacute;compos&eacute;."
+					        "fouillerGoule-texte-1",
+					        "fouillerGoule-texte-2"
 					        ],
 			        "actions" : [ {
-						"name" : "Entrer dans la grange", "action" : [
+						"name" : "entrer-grange", "action" : [
    						      { "key" : "go", "params" : [ "grange" ]}
    						]
    					},{
-						"name" : "Courir &agrave; la ville", "action" : [
+						"name" : "courir-ville", "action" : [
    						      { "key" : "go", "params" : [ "reposVille2" ]}
    						]
    					}]
 				},
 				"grange" : {
 					"textes" : [ 
-					        "La grange est sombre et sent le renferm&eacute;.",
-					        "Une grosse table est pos&eacute;e au fond."
+					        "grange-texte-1",
+					        "grange-texte-2"
 					        ],
 			        "actions" : [ {
-						"name" : "Fouiller la table", "action" : [
+						"name" : "fouiller-table", "action" : [
    						      { "key" : "go", "params" : [ "grangeFouilleTable" ]}
    						]
    					},{
-						"name" : "Examiner la grange", "action" : [
+						"name" : "examine-grange", "action" : [
    						      { "key" : "go", "params" : [ "grangeExamine" ]}
    						]
    					},{
-						"name" : "Courir &agrave; la ville", 
+						"name" : "courir-ville", 
 						"action" : [
 						      { "key" : "hasItem", "params" : [ ["helpRoi"], "retourVille2", "reposVille2" ]}
 						]
@@ -910,31 +910,31 @@ define(
 				},
 				"grangeFouilleTable" : {
 					"textes" : [ 
-					        "La table est recouverte de paperasses en pagaille.",
-					        "Une vieille <span key='bougie'>bougie</span> presque us&eacute;e est pos&eacute;e dans un coin."
+					        "grangeFouilleTable-texte-1",
+					        "grangeFouilleTable-texte-2"
 					        ],
 			        "actions" : [ {
-						"name" : "Prendre la bougie", "action" : [
+						"name" : "prendre-bougie", "action" : [
    						      { "key" : "gain", "params" : [ "bougie" ]},
    						      { "key" : "go", "params" : [ "grangeFouilleTable2" ]}
    						]
    					},{
-						"name" : "Retour", "action" : [
+						"name" : "retour", "action" : [
    						      { "key" : "go", "params" : [ "grange" ]}
    						]
    					}]
 				},
 				"grangeFouilleTable2" : {
 					"textes" : [ 
-					        "Vous prenez la <span key='bougie'>bougie</span> et le n&eacute;cessaire pour l&rsquo;allumer si besoin.",
-					        "Il est temps de continuer l&rsquo;aventure :"
+					        "grangeFouilleTable2-texte-1",
+					        "grangeFouilleTable2-texte-2"
 					        ],
 			        "actions" : [ {
-						"name" : "Examiner la grange", "action" : [
+						"name" : "examine-grange", "action" : [
    						      { "key" : "go", "params" : [ "grangeExamine" ]}
    						]
    					},{
-						"name" : "Courir &agrave; la ville", 
+						"name" : "courir-ville", 
 						"action" : [
 						      { "key" : "hasItem", "params" : [ ["helpRoi"], "retourVille2", "reposVille2" ]}
 						]
@@ -942,16 +942,16 @@ define(
 				},
 				"grangeExamine" : {
 					"textes" : [ 
-					        "Une grande b&acirc;tisse recouverte de poussi&egrave;re&hellip;",
-					        "De la paille est pr&eacute;sente partout o&ugrave; vous mettez les pieds.",
-					        "Une grosse table est pos&eacute;e dans le fond."
+					        "grangeExamine-texte-1",
+					        "grangeExamine-texte-2",
+					        "grange-texte-2"
 					        ],
 			        "actions" : [ {
-						"name" : "Fouiller la table", "action" : [
+						"name" : "fouiller-table", "action" : [
    						      { "key" : "hasItem", "params" : [ ["bougie"], "grangeFouilleTable3", "grangeFouilleTable" ]}
    						]
    					},{
-						"name" : "Courir &agrave; la ville", 
+						"name" : "courir-ville", 
 						"action" : [
 						      { "key" : "hasItem", "params" : [ ["helpRoi"], "retourVille2", "reposVille2" ]}
 						]
@@ -959,85 +959,85 @@ define(
 				},
 				"grangeFouilleTable3" : {
 					"textes" : [ 
-					        "La table est recouverte de paperasses en pagaille.",
-					        "Elle aurait besoin d&rsquo;un bon nettoyage&hellip;"
+					        "grangeFouilleTable-texte-1",
+					        "grangeFouilleTable3-texte-1"
 					        ],
 			        "actions" : [ {
-						"name" : "Retour", "action" : [
+						"name" : "retour", "action" : [
    						      { "key" : "go", "params" : [ "grangeExamine" ]}
    						]
    					}]
 				},
 				"reposVille2" : {
 					"textes" : [ 
-					        "Vous accourez dans le village, au c&oelig;ur de la bataille.",
-					        "De nombreuses <span key='goule'>goules</span> tentent de d&eacute;vorer les paysans qui se battent de leur mieux.",
-					        "&laquo; Du nerf ! D&eacute;fendez la ville ! &raquo; hurle un <span key='garde'>garde</span> non loin de vous."
+					        "reposVille2-texte-1",
+					        "reposVille2-texte-2",
+					        "reposVille2-texte-3"
 					        ],
 			        "actions" : [ {
-						"name" : "D&eacute;fendre la ville", "action" : [ 
+						"name" : "defendre-ville", "action" : [ 
 						      { "key" : "fight", "params" : [ ["goule", "goule", "goule"], "reposVille3"]}
 						]
 					}]
 				},
 				"reposVille3" : {
 					"textes" : [ 
-					        "Vous tuez la derni&egrave;re <span key='goule'>goule</span> face &agrave; vous et retournez voir les <span key='garde'>gardes</span> :",
-					        "&laquo; Que s&rsquo;est-il pass&eacute; ? &raquo;",
-					        "Un des gardes se tourne vers vous :",
-					        "&laquo; Les morts ! Ils nous ont attaqu&eacute;s !",
-					        "Ils ont emport&eacute;s les enfants dans la foret &raquo;"
+					        "reposVille3-texte-1",
+					        "reposVille3-texte-2",
+					        "reposVille3-texte-3",
+					        "reposVille3-texte-4",
+					        "reposVille3-texte-5"
 					        ],
 			        "actions" : [ {
-						"name" : "Suivant", "action" : [ 
+						"name" : "suivant", "action" : [ 
 						      { "key" : "go", "params" : [ "reposVille4"]}
 						]
 					}]
 				},
 				"reposVille4" : {
 					"textes" : [ 
-					        "&laquo; Malheureusement, nous devons nous occuper des bless&eacute;s.",
-					        "Vous avez l&rsquo;air de savoir vous battre !",
-					        "Vous devez les secourir, demandez de l&rsquo;aide aux autres <span key='villageois'>villageois</span> ! &raquo;"
+					        "reposVille4-texte-1",
+					        "reposVille4-texte-2",
+					        "reposVille4-texte-3"
 					        ],
 			        "actions" : [ {
-						"name" : "Aider", "action" : [ 
+						"name" : "aider", "action" : [ 
 						      { "key" : "go", "params" : [ "reposVilleAide"]}
 						]
 					},{
-						"name" : "Refuser", "action" : [ 
+						"name" : "refuser", "action" : [ 
 						      { "key" : "go", "params" : [ "reposVilleRefus"]}
 						]
 					}]
 				},
 				"reposVilleAide" : {
 					"textes" : [ 
-					        "Vous hochez bravement la t&ecirc;te et",
-					        "vous dirigez vers les <span key='villageois'>villageois</span> paniqu&eacute;s.",
-					        "John, le forgeron, s&rsquo;approche de vous l&rsquo;air mena&ccedil;ant :",
-					        "&laquo; Tiens ! Prends cette <span key='epee'>&eacute;p&eacute;e</span> et ce <span key='bouclierFer'>bouclier en fer</span> !",
-					        "Ils pourront t&rsquo;&ecirc;tre utiles. &raquo;"
+					        "reposVilleAide-texte-1",
+					        "reposVilleAide-texte-2",
+					        "reposVilleAide-texte-3",
+					        "reposVilleAide-texte-4",
+					        "reposVilleAide-texte-5"
 					        ],
 			        "actions" : [ {
-						"name" : "Prendre les armes", "action" : [ 
+						"name" : "prendre-arme", "action" : [ 
 						      { "key" : "gain", "params" : [ "epee"]},
 						      { "key" : "gain", "params" : [ "bouclierFer" ]},
 						      { "key" : "go", "params" : [ "reposVilleAide1"]}
 						]
 					},{
-						"name" : "Non Merci", "action" : [ 
+						"name" : "non-merci", "action" : [ 
 						      { "key" : "go", "params" : [ "reposVilleAide2"]}
 						]
 					}]
 				},
 				"reposVilleAide1" : {
 					"textes" : [ 
-					        "Vous saisissez <span key='epee'>l&rsquo;&eacute;p&eacute;e</span> et mangez un morceau pour vous pr&eacute;parer.",
-					        "Ces sales monstres n&rsquo;ont qu&rsquo;&agrave; bien se tenir !",
-					        "Fier de votre nouvelle arme, vous partez en direction du marais&hellip;"
+					        "reposVilleAide1-texte-1",
+					        "reposVilleAide1-texte-2",
+					        "reposVilleAide1-texte-3"
 					        ],
 			        "actions" : [ {
-						"name" : "Suivant", "action" : [ 
+						"name" : "suivant", "action" : [ 
 						      { "key" : "heal", "params" : [ 1000 ]},
 						      { "key" : "hasItem", "params" : [ ["helpRoi2"], "maraisRoi", "marais"]}
 						]
@@ -1045,14 +1045,14 @@ define(
 				},
 				"reposVilleAide2" : {
 					"textes" : [ 
-					        "Un vieux monsieur s&rsquo;approche en toussotant :",
-					        "&laquo; Prend au moins cette <span key='potionSante'>potion</span> mon petit&hellip; ",
-					        "Tu ne peux pas y aller sans rien ! &raquo;",
-					        "Vous prenez la fiole et mangez un morceau.",
-					        "Une fois pr&ecirc;t vous vous mettez en route pour le marais&hellip;"
+					        "reposVilleAide2-texte-1",
+					        "reposVilleAide2-texte-2",
+					        "reposVilleAide2-texte-3",
+					        "reposVilleAide2-texte-4",
+					        "reposVilleAide2-texte-5"
 					        ],
 			        "actions" : [ {
-						"name" : "Suivant", "action" : [ 
+						"name" : "suivant", "action" : [ 
 						      { "key" : "gain", "params" : [ "potionSante" ]},
 						      { "key" : "heal", "params" : [ 1000 ]},
 						      { "key" : "hasItem", "params" : [ ["helpRoi2"], "maraisRoi", "marais"]}
@@ -1061,66 +1061,69 @@ define(
 				},
 				"reposVilleRefus" : {
 					"textes" : [ 
-					        "&laquo; Dans ce cas, allez-vous-en !",
-					        "Nous n&rsquo;avons pas besoin de l&acirc;ches dans nos rang ! &raquo;",
-					        "Les <span key='garde'>gardes</span> sortent leurs &eacute;p&eacute;es et vous pousse vers le marais&hellip;"
+					        "reposVilleRefus-texte-1",
+					        "reposVilleRefus-texte-2",
+					        "reposVilleRefus-texte-3"
 					        ],
 			        "actions" : [ {
-						"name" : "Venger cet affront", "action" : [ 
+						"name" : "venger-affront", "action" : [ 
 						      { "key" : "fight", "params" : [ ["garde", "garde"], "reposVilleTraitre" ]}
 						]
 					},{
-						"name" : "S&rsquo;en aller", "action" : [ 
+						"name" : "sen-aller", "action" : [ 
  						      { "key" : "go", "params" : [ "reposVilleRefus2" ]}
  						]
  					}]
 				},
 				"reposVilleTraitre" : {
 					"textes" : [ 
-					        "Certains <span key='villageois'>villageois</span> s&rsquo;avancent vers vous :",
-					        "&laquo; Tra&icirc;tre ! C&rsquo;est toi qui as amen&eacute; la mort sur nous !",
-					        "Tu vas nous le payer ! Rend-nous nos enfants ! &raquo;",
-					        "Ils se jettent sur vous&hellip;"
+					        "reposVilleTraitre-texte-1",
+					        "reposVilleTraitre-texte-2",
+					        "reposVilleTraitre-texte-3",
+					        "reposVilleTraitre-texte-4"
 					        ],
 			        "actions" : [ {
-						"name" : "Combattre", "action" : [ 
+						"name" : "combattre", "action" : [ 
 						      { "key" : "fight", "params" : [ ["villageois", "villageois", "villageois"], "reposVilleTraitre2" ]}
 						]
 					},{
-						"name" : "Fuir", "action" : [ 
+						"name" : "fuir", "action" : [ 
  						      { "key" : "go", "params" : [ "reposVilleRefus2" ]}
  						]
  					}]
 				},
 				"reposVilleTraitre2" : {
 					"textes" : [ 
-					        "Vous vous d&eacute;p&ecirc;trez du dernier <span key='villageois'>villageois</span> qui a os&eacute; vous d&eacute;fier.",
-					        "Ces insectes ne valent rien&hellip; Mais, peut-&ecirc;tre poss&egrave;dent-ils quelques",
-					        "objets de valeur dans leurs chaumi&egrave;res ?"
+					        "reposVilleTraitre2-texte-1",
+					        "reposVilleTraitre2-texte-2",
+					        "reposVilleTraitre2-texte-3"
 					        ],
 			        "actions" : [ {
-						"name" : "Fouiller les maisons", "action" : [ 
+						"name" : "fouiller-maison", "action" : [ 
 						      { "key" : "random", "params" : [ "villeFouilleReussite1", "villeFouilleReussite2", 
 						                                       "villeFouilleReussite3", "villeFouilleEchec", "villeFouilleEchec2" ]}
 						]
 					},{
-						"name" : "S&rsquo;en aller", "action" : [ 
+						"name" : "sen-aller", "action" : [ 
  						      { "key" : "go", "params" : [ "reposVilleTraitre3" ]}
  						]
  					}]
 				},
 				"reposVilleTraitre3" : {
 					"textes" : [ 
-					        "Vous vous en allez vers le marais.",
-					        "Ces cr&eacute;tins n&rsquo;ont eu que ce qu&rsquo;ils meritaient&hellip;",
-					        "En chemin, vous distinguez des traces sur le sol."
+					        "reposVilleTraitre3-texte-1",
+					        "reposVilleTraitre3-texte-2",
+					        "reposVilleTraitre3-texte-3"
 					        ],
 			        "actions" : [ {
-						"name" : "Suivre les traces", "action" : [ 
+						"name" : "suivre-trace", "action" : [ 
 						      { "key" : "hasItem", "params" : [ ["helpRoi2"], "maraisRoi", "marais" ]}
 						]
 					}]
 				},
+				/**
+				 * HEREEEE
+				 */
 				"villeFouilleReussite1" : {
 					"textes" : [ 
 					        "Vous fouillez les maisons en flammes et trouvez une <span key='potionSante'>potion de sant&eacute;</span>",
@@ -1181,7 +1184,7 @@ define(
 					        "Vous continuez votre route."
 					        ],
 			        "actions" : [ {
-						"name" : "Suivant", "action" : [ 
+						"name" : "suivant", "action" : [ 
 						      { "key" : "go", "params" : [ "villeFouilleSuite" ]}
 						]
 					}]
@@ -1193,7 +1196,7 @@ define(
 					        "Sauvez votre peau avant qu&rsquo;elle ne vous la mange !"
 					        ],
 			        "actions" : [ {
-						"name" : "Combattre", "action" : [ 
+						"name" : "combattre", "action" : [ 
 						      { "key" : "fight", "params" : [ ["grosseGoule"], "villeFouilleSuite" ]}
 						]
 					}]
@@ -1205,7 +1208,7 @@ define(
 					        "Peut-&ecirc;tre un fuyard ?"
 					        ],
 			        "actions" : [ {
-						"name" : "Suivre les traces", "action" : [ 
+						"name" : "suivre-trace", "action" : [ 
 						      { "key" : "hasItem", "params" : [ ["helpRoi2"], "maraisRoi", "marais" ]}
 						]
 					}]
@@ -1217,7 +1220,7 @@ define(
 					        "En chemin, vous distinguez des traces sur le sol."
 					        ],
 			        "actions" : [ {
-						"name" : "Suivre les traces", "action" : [ 
+						"name" : "suivre-trace", "action" : [ 
 						      { "key" : "hasItem", "params" : [ ["helpRoi2"], "maraisRoi", "marais" ]}
 						]
 					}]
@@ -1248,7 +1251,7 @@ define(
 					        "&laquo; Non ! C&rsquo;est le <span key='roiAraigneeBlesse'>roi des araign&eacute;es</span> ! Il est venu pour nous aider ! &raquo;"
 					        ],
 			        "actions" : [ {
-						"name" : "Suivant", "action" : [ 
+						"name" : "suivant", "action" : [ 
 						      { "key" : "go", "params" : [ "retourVilleAideRoi2" ]}
 						]
 					}]
@@ -1260,7 +1263,7 @@ define(
 					        "s&rsquo;est enfonc&eacute; dans le marais &agrave; la recherche d&rsquo;autres proies."
 					        ],
 			        "actions" : [ {
-						"name" : "Suivant", "action" : [ 
+						"name" : "suivant", "action" : [ 
 						      { "key" : "go", "params" : [ "retourVilleAideRoi3" ]}
 						]
 					}]
@@ -1271,7 +1274,7 @@ define(
 					        "Les morts nous ont attaqu&eacute;s et ils ont emport&eacute; nos enfants dans la for&ecirc;t ! &raquo;"
 					        ],
 			        "actions" : [ {
-						"name" : "Suivant", "action" : [ 
+						"name" : "suivant", "action" : [ 
 						      { "key" : "go", "params" : [ "reposVille4" ]}
 						]
 					}]
@@ -1285,7 +1288,7 @@ define(
 					        "Ils ont emport&rsquo;s les enfants dans la for&ecirc;t ! &raquo;"
 					        ],
 			        "actions" : [ {
-						"name" : "Suivant", "action" : [ 
+						"name" : "suivant", "action" : [ 
 						      { "key" : "go", "params" : [ "reposVille4" ]}
 						]
 					}]
@@ -1384,7 +1387,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"action" : [{"key" : "go", "params" : ["necroGS"]}]
 		},
 		{
@@ -1416,7 +1419,7 @@ define(
 			]
 		},
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"appairIf" : [{"key" : "hasNoItem", "params" : ["S3ViaS0"]}],
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
@@ -1477,7 +1480,7 @@ define(
 			]
 		},
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -1491,7 +1494,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Combattre",
+			"name" : "combattre",
 			"action" : [
 				{"key" : "gain", "params" : ["necroS1Clean"]},
 				{"key" : "fight", "params" : [["goule", "goule"], "necroS1Fight2"]},
@@ -1515,7 +1518,7 @@ define(
 			]
 		},
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -1539,7 +1542,7 @@ define(
 			]
 		},
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"appairIf" : [{"key" : "hasNoItem", "params" : ["S1ViaS0"]}],
 			"action" : [{"key" : "go", "params" : ["necroGS"]}]
 		}
@@ -1553,7 +1556,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Combattre",
+			"name" : "combattre",
 			"action" : [
 				{"key" : "fight", "params" : [["grosseGoule", "squelette", "squelette"], "necroGSFight2"]}
 			]
@@ -1582,7 +1585,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Combattre",
+			"name" : "combattre",
 			"action" : [
 				{"key" : "fight", "params" : [["squelette", "squelette"], "necroGSRoiFight2"]}
 			]
@@ -1733,7 +1736,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Fouiller",
+			"name" : "fouiller",
 			"action" : [
 				{"key" : "gain", "params" : ["elixir"]},
 				{"key" : "gain", "params" : ["fouilleCercueil"]},
@@ -1741,7 +1744,7 @@ define(
 			]
 		},
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -1758,7 +1761,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Combattre",
+			"name" : "combattre",
 			"action" : [
 				{"key" : "fight", "params" : [["squeletteManchot"], "necroGSFouilleCercueil3"]}
 			]
@@ -1829,7 +1832,7 @@ define(
 			]
 		},
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -1914,7 +1917,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -1930,7 +1933,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -1944,7 +1947,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -1958,7 +1961,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -1991,7 +1994,7 @@ define(
 			]
 		},
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -2055,7 +2058,7 @@ define(
 			]
 		},
 		{
-			"name" : "S&rsquo;en aller",
+			"name" : "sen-aller",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -2105,7 +2108,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Combattre",
+			"name" : "combattre",
 			"action" : [
 				{"key" : "gain", "params" : ["S2Clean"]},
 				{"key" : "fight", "params" : [["experience"], "necroS2Enfant2"]}
@@ -2123,13 +2126,13 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Fouiller",
+			"name" : "fouiller",
 			"action" : [
 				{"key" : "go", "params" : ["necroS2Fouille"]}
 			]
 		},
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -2161,7 +2164,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -2198,7 +2201,7 @@ define(
 		}
 		,
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -2213,7 +2216,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"action" : [
 				{"key" : "go", "params" : ["necroCouloir"]}
 			]
@@ -2229,7 +2232,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"action" : [
 				{"key" : "gain", "params" : ["S4Clean"]},
 				{"key" : "gain", "params" : ["potionSante"]},
@@ -2246,7 +2249,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Retour",
+			"name" : "retour",
 			"action" : [
 				{"key" : "gain", "params" : ["S5Clean"]},
 				{"key" : "gain", "params" : ["soin"]},
@@ -2348,7 +2351,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Combattre",
+			"name" : "combattre",
 			"action" : [
 				{"key" : "fight", "params" : [["experience", "experience"], "boss2"]}
 			]
@@ -2364,7 +2367,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Combattre",
+			"name" : "combattre",
 			"action" : [
 				{"key" : "fight", "params" : [["necromancien"], "boss3"]}
 			]
@@ -2416,7 +2419,7 @@ define(
 	],
 	"actions" : [
 		{
-			"name" : "Combattre",
+			"name" : "combattre",
 			"action" : [
 				{"key" : "fight", "params" : [["liche"], "boss6"]}
 			]

@@ -2,9 +2,9 @@
 define(["jquery"], function($){
 	var data = {
 		"araignee" : {
-			"name" : "Araign&eacute;e",
+			"name" : "araignee",
 			"textes" : [
-	            "Cette horrible cr&eacute;ature vit souvent en groupe. De petite taille, elles grouillent par milliers dans l&apos;obscurit&eacute;."
+	            "araignee-texte"
             ],
             "attaque" : [0, 2],
             "defense" : [0, 1],
@@ -14,9 +14,9 @@ define(["jquery"], function($){
             "sexe" : "f"
 		},
 		"bandit" : {
-			"name" : "Bandit",
+			"name" : "bandit",
 			"textes" : [
-	            "Ils errent dans les vieilles tombes &agrave; la recherche de tr&eacute;sors ou de babioles. N&apos;&eacute;ssayez jamais de voler leurs biens, ils sont plut&ocirc;t grincheux.",
+	            "bandit-texte",
             ],
             "attaque" : [0, 2],
             "defense" : [0, 3],
@@ -26,9 +26,9 @@ define(["jquery"], function($){
             "sexe" : "m"
 		},
 		"roiAraigneeBlesse" : {
-			"name" : "Roi des araign&eacute;es",
+			"name" : "roiAraigneeBlesse",
 			"textes" : [
-			            "Il reigne sur le royaume des araign&eacute;es. Il est bless&eacute; mais prot&eacute;gera toujours ses enfants. Restez sur vos gardes, Vous pourriez le regretter !",
+			            "roiAraigneeBlesse-texte",
 			            ],
 			            "attaque" : [5, 10],
 			            "defense" : [0, 5],
@@ -38,9 +38,9 @@ define(["jquery"], function($){
 			            "sexe" : "m"
 		},
 		"goule" : {
-			"name" : "Goule",
+			"name" : "goule",
 			"textes" : [
-			            "Un cadavre en d&eacute;composition, reveill&eacute; par la magie d'un mage noir. Il a un besoin instinctif de se repa&icirc;tre de chair fra&icirc;che."
+			            "goule-texte"
 			            ],
 			            "attaque" : [2, 8],
 			            "defense" : [0, 5],
@@ -50,9 +50,9 @@ define(["jquery"], function($){
 			            "sexe" : "f"
 		},
 		"garde": {
-			"name" : "Garde",
+			"name" : "garde",
 			"textes" : [
-			            "Garde de la ville. Un peu lent &agrave; la d&eacute;tente, mais redoutable &agrave; l'&eacute;p&eacute;e !"
+			            "garde-texte"
 			            ],
 			            "attaque" : [3, 10],
 			            "defense" : [0, 10],
@@ -62,9 +62,9 @@ define(["jquery"], function($){
 			            "sexe" : "m"
 		}, 
 		"villageois": {
-			"name" : "Villageois",
+			"name" : "villageois",
 			"textes" : [
-			            "Un courageux villageois pr&ecirc;t &agrave; tout pour d&eacute;fendre ses terres. Attention, sa fourche pourrait piquer un peu..."
+			            "villageois-texte"
 			            ],
 			            "attaque" : [0, 2],
 			            "defense" : [0, 2],
@@ -74,9 +74,9 @@ define(["jquery"], function($){
 			            "sexe" : "m"
 		}, 
 		"grosseGoule": {
-			"name" : "Grosse goule",
+			"name" : "grosseGoule",
 			"textes" : [
-			            "Un cadavre putr&eacute;fi&eacute;, relev&eacute; par un mage noir puissant. Sa force a &eacute;t&eacute; d&eacute;cupl&eacute; par de sombres sortil&eacute;ges."
+			            "grosseGoule-texte"
 			            ],
 			            "attaque" : [5, 10],
 			            "defense" : [0, 8],
@@ -86,9 +86,9 @@ define(["jquery"], function($){
 			            "sexe" : "f"
 		}, 
 		"squelette": {
-			"name" : "Squelette",
+			"name" : "squelette",
 			"textes" : [
-			            "Un tas d'os qui marche. Aucune d&eacute;fense, mais une sacr&eacute; &eacute;p&eacute;e entre les mains !"
+			            "squelette-texte"
 			            ],
 			            "attaque" : [5, 10],
 			            "defense" : [0, 0],
@@ -98,9 +98,9 @@ define(["jquery"], function($){
 			            "sexe" : "m"
 		}, 
 		"squeletteManchot": {
-			"name" : "Squelette manchot",
+			"name" : "squeletteManchot",
 			"textes" : [
-			            "Un squelette avec une main en moins. C'est presque trop facile..."
+			            "squeletteManchot-texte"
 			            ],
 			            "attaque" : [0, 5],
 			            "defense" : [0, 0],
@@ -110,9 +110,9 @@ define(["jquery"], function($){
 			            "sexe" : "m"
 		}, 
 		"experience": {
-			"name" : "Exp&eacute;rience",
+			"name" : "experience",
 			"textes" : [
-			            "L'inf&acirc;me exp&eacute;rience d'un sorcier fou. Elle ressemble de loin &agrave; un enfant blanc comme un cadavre. Ses bras sont anormalement longs et couverts de coupures. De ses doigts sortent de grandes tiges de fer&hellip;"
+			            "experience-texte"
 			            ],
 			            "attaque" : [7, 15],
 			            "defense" : [0, 10],
@@ -122,9 +122,9 @@ define(["jquery"], function($){
 			            "sexe" : "f"
 		}, 
 		"necromancien": {
-			"name" : "N&eacute;crom l'ancien",
+			"name" : "necromancien",
 			"textes" : [
-			            "Un horrible sorcier usant de magie noir ! Il ressemble &agrave; un vieillard et tiens &agrave; peine sur ses jambes..."
+			            "necromancien-texte"
 			            ],
 			            "attaque" : [5, 20],
 			            "defense" : [0, 10],
@@ -134,9 +134,9 @@ define(["jquery"], function($){
 			            "sexe" : "m"
 		}, 
 		"liche": {
-			"name" : "Liche",
+			"name" : "liche",
 			"textes" : [
-			            "Un spectre tout droit sortie de l'au-del&agrave; ! Une aura n&eacute;faste l'entoure, laissant pr&eacute;sager de sa puissance..."
+			            "liche-texte"
 			            ],
 			            "attaque" : [10, 30],
 			            "defense" : [0, 15],

@@ -4,7 +4,7 @@ define(["app/utils/utils",
 function(Utils, Items) {
 	'use strict';
 
-	return function(data) {
+	return function(data, Textes) {
 		this.data = {
 				"name" : "Monstre",
 				"textes" : null,
@@ -18,7 +18,8 @@ function(Utils, Items) {
 	            "sexe" : "m"
 		};
 		
-		this.bind = function(data) {
+		this.bind = function(data, Textes) {
+		    this.Textes = Textes;
 			if (data) {
 				this.data = data;
 				this.data.vie = data.vie;
@@ -63,9 +64,9 @@ function(Utils, Items) {
 		this.getName = function() {
 			var suffixe = this.data.suffixe;
 			if (this.data.sexe == "m") {
-				return this.data.name + " " + suffixe.namem;
+				return this.Textes.get(this.data.name) + " " + this.Textes.get(suffixe.namem);
 			}else {
-				return this.data.name + " " + suffixe.namef;
+				return this.Textes.get(this.data.name) + " " + this.Textes.get(suffixe.namef);
 			}
 		};
 		
@@ -76,6 +77,6 @@ function(Utils, Items) {
 			this.data.alive = false;
 		};
 		
-		this.bind(data);
+		this.bind(data, Textes);
 	};
 });

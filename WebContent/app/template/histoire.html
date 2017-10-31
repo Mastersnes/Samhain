@@ -1,7 +1,7 @@
 <div class="texte">
 	<div>
 		<% for(var texte in data.textes) { %>
-			<p><%= data.textes[texte] %></p>
+			<p><%= data.text.get(data.textes[texte]) %></p>
 		<% } %>
 	</div>
 </div>
@@ -11,7 +11,7 @@
 	%>
 		<div key='<%= index %>'>
 			<div class="texte" key='<%= index %>'>
-				<%= action.name %>
+				<%= data.text.get(action.name) %>
 			</div>
 		</div>
 	<% } %>

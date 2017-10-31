@@ -5,9 +5,10 @@ define(["jquery",
 function($, _, page) {
 	'use strict';
 
-	return function() {
-		this.init = function() {
+	return function(game) {
+		this.init = function(game) {
 			this.el = $("#inventaire");
+			this.Textes = game.Textes;
 			this.checkEvents();
 		};
 		
@@ -23,7 +24,10 @@ function($, _, page) {
 			var data = null;
 			_.templateSettings.variable = "data";
 			var template = _.template(page);
-			this.el.html(template(data));
+			var templateData = {
+                    text : this.Textes
+            };
+			this.el.html(template(templateData));
 		};
 		
 		this.checkEvents = function() {
@@ -33,6 +37,6 @@ function($, _, page) {
 			});
 		};
 		
-		this.init();
+		this.init(game);
 	};
 });
