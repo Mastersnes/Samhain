@@ -52,7 +52,10 @@ define(
 							"start-texte-4"
 							],
 					"actions" : [ {
-						"name" : "suivant", "action" : [ {"key" : "go", "params" : [ "repos2" ]} ]
+						"name" : "suivant", "action" : [ 
+						                                {"key" : "score", "params" : ["GameStart", 1]},
+						                                 {"key" : "go", "params" : [ "repos2" ]}
+						                                 ]
 					} ]
 				},
 				"repos2" : {
@@ -69,6 +72,7 @@ define(
 						"name" : "fuir", 
 						"action" : [ 
 						         { "key" : "hurt","params" : [ 10 ]},
+						         {"key" : "score", "params" : ["Leak", 1]},
 						         { "key" : "go", "params" : [ "reposVille" ]}
 						]
 					} ]
@@ -148,7 +152,10 @@ define(
 						      { "key" : "fight", "params" : [ ["bandit"], "nid3" ]}
 						]
 					}, {
-						"name" : "fuir-grotte", "action" : [ { "key" : "go", "params" : [ "nid4" ]} ]
+						"name" : "fuir-grotte", "action" : [ 
+						                                    {"key" : "score", "params" : ["Leak", 1]},
+						                                     { "key" : "go", "params" : [ "nid4" ]}
+						                                     ]
 					} ]
 				},
 				"nid2" : {
@@ -162,7 +169,10 @@ define(
 						      { "key" : "fight", "params" : [ ["bandit"], "nid3" ]}
 						]
 					}, {
-						"name" : "fuir-grotte", "action" : [ { "key" : "go", "params" : [ "nid4" ]} ]
+						"name" : "fuir-grotte", "action" : [ 
+						                                    {"key" : "score", "params" : ["Leak", 1]},
+						                                     { "key" : "go", "params" : [ "nid4" ]}
+						                                     ]
 					} ]
 				},
 				"nid3" : {
@@ -287,6 +297,7 @@ define(
 						"name" : "tout-prendre", "action" : [ 
 						      { "key" : "gain", "params" : [ "potionSante"]},
 						      { "key" : "gain", "params" : [ "bouclierBois"]},
+						      {"key" : "score", "params" : ["Treasure", 1]},
 						      { "key" : "go", "params" : [ "coffreReussite12"]}
 						]
 					}]
@@ -313,6 +324,7 @@ define(
 						      { "key" : "perte", "params" : [ "dague"]},
    						      { "key" : "gain", "params" : [ "potionSante"]},
    						      { "key" : "gain", "params" : [ "bouclierBois"]},
+   						      {"key" : "score", "params" : ["Treasure", 1]},
    						      { "key" : "go", "params" : [ "coffreReussite21"]}
    						]
 					}]
@@ -365,6 +377,7 @@ define(
 						"name" : "pas-la-peine", "action" : [ 
 						      { "key" : "perte", "params" : [ "dague"]},
 						      { "key" : "hurt", "params" : [ 5 ]},
+						      {"key" : "score", "params" : ["NoChance", 1]},
 						      { "key" : "go", "params" : [ "coffreEchec21" ]}
 						]
 					}]
@@ -393,7 +406,7 @@ define(
 				},
 				"coffreRetourSimple" : {
 					"textes" : [ 
-"Tranquillement,",
+"coffreRetourSimple-texte-1",
 "coffreReussite12-texte-2"
 					        ],
 					"actions" : [ {
@@ -425,6 +438,7 @@ define(
 					        ],
 					"actions" : [ {
 						"name" : "attaquer", "action" : [ 
+						                                 {"key" : "score", "params" : ["KillSpider", 1]},
 						      { "key" : "fight", "params" : [ ["roiAraigneeBlesse"], "roiAraigneeAgonie"]}
 						]
 					},{
@@ -441,6 +455,7 @@ define(
 					        ],
 					"actions" : [ {
 						"name" : "death", "action" : [ 
+						                              {"key" : "score", "params" : ["KillSpider", 1]},
 						      { "key" : "fight", "params" : [ ["roiAraigneeBlesse"], "roiAraigneeAgonie"]}
 						]
 					},{
@@ -463,6 +478,7 @@ define(
 					"actions" : [ {
 						"name" : "donner-potion", "action" : [ 
 						      { "key" : "perte", "params" : [ "potionSante"]},
+						      {"key" : "score", "params" : ["HelpSpider", 1]},
 						      { "key" : "go", "params" : [ "roiAraigneeGuerit"]}
 						]
 					},{
@@ -479,6 +495,7 @@ define(
 					"actions" : [ {
 						"name" : "donner-potion", "action" : [ 
 						      { "key" : "perte", "params" : [ "potionSante"]},
+						      {"key" : "score", "params" : ["HelpSpider", 1]},
 						      { "key" : "go", "params" : [ "roiAraigneeGuerit"]}
 						]
 					},{
@@ -495,6 +512,7 @@ define(
 					        ],
 					"actions" : [ {
 						"name" : "attaquer", "action" : [ 
+						                                 {"key" : "score", "params" : ["KillSpider", 1]},
 						      { "key" : "fight", "params" : [ ["roiAraigneeBlesse"], "roiAraigneeAgonie"]}
 						]
 					},{
@@ -511,6 +529,7 @@ define(
 					        ],
 					"actions" : [ {
 						"name" : "death", "action" : [ 
+						                              {"key" : "score", "params" : ["KillSpider", 1]},
 						      { "key" : "fight", "params" : [ ["roiAraigneeBlesse"], "roiAraigneeAgonie"]}
 						]
 					},{
@@ -533,6 +552,7 @@ define(
 					"actions" : [ {
 						"name" : "donner-fromage", "action" : [ 
 						      { "key" : "perte", "params" : [ "fromage"]},
+						      {"key" : "score", "params" : ["HelpSpider", 1]},
 						      { "key" : "go", "params" : [ "roiAraigneeGuerit"]}
 						]
 					},{
@@ -549,6 +569,7 @@ define(
 					"actions" : [ {
 						"name" : "donner-fromage", "action" : [ 
 						      { "key" : "perte", "params" : [ "fromage"]},
+						      {"key" : "score", "params" : ["HelpSpider", 1]},
 						      { "key" : "go", "params" : [ "roiAraigneeGuerit"]}
 						]
 					},{
@@ -565,6 +586,7 @@ define(
 					        ],
 					"actions" : [ {
 						"name" : "death", "action" : [ 
+						                              {"key" : "score", "params" : ["KillSpider", 1]},
 						      { "key" : "fight", "params" : [ ["roiAraigneeBlesse"], "roiAraigneeAgonie"]}
 						]
 					},{
@@ -681,6 +703,7 @@ define(
 					        ],
 					"actions" : [ {
 						"name" : "attaquer", "action" : [ 
+						                                 {"key" : "score", "params" : ["KillSpider", 1]},
 						      { "key" : "fight", "params" : [ ["roiAraigneeBlesse"], "roiAraigneeAgonie"]}
 						]
 					}, {
@@ -1002,6 +1025,7 @@ define(
 					        ],
 			        "actions" : [ {
 						"name" : "aider", "action" : [ 
+						                              {"key" : "score", "params" : ["HelpTown", 1]},
 						      { "key" : "go", "params" : [ "reposVilleAide"]}
 						]
 					},{
@@ -1022,6 +1046,7 @@ define(
 						"name" : "prendre-arme", "action" : [ 
 						      { "key" : "gain", "params" : [ "epee"]},
 						      { "key" : "gain", "params" : [ "bouclierFer" ]},
+						      {"key" : "score", "params" : ["Treasure", 1]},
 						      { "key" : "go", "params" : [ "reposVilleAide1"]}
 						]
 					},{
@@ -1067,6 +1092,7 @@ define(
 					        ],
 			        "actions" : [ {
 						"name" : "venger-affront", "action" : [ 
+						                                       {"key" : "score", "params" : ["Traitor", 1]},
 						      { "key" : "fight", "params" : [ ["garde", "garde"], "reposVilleTraitre" ]}
 						]
 					},{
@@ -1088,6 +1114,7 @@ define(
 						]
 					},{
 						"name" : "fuir", "action" : [ 
+						                             {"key" : "score", "params" : ["Leak", 1]},
  						      { "key" : "go", "params" : [ "reposVilleRefus2" ]}
  						]
  					}]
@@ -1137,13 +1164,14 @@ define(
 				"villeFouilleReussite2" : {
 					"textes" : [ 
 					        "villeFouilleReussite2-texte-1",
-					        "villeFouilleReussite2-texte-1",
+					        "villeFouilleReussite2-texte-2",
 					        "villeFouilleReussite1-texte-3"
 					        ],
 			        "actions" : [ {
 						"name" : "prendre", "action" : [ 
 						      { "key" : "gain", "params" : [ "epee" ]},
 						      { "key" : "gain", "params" : [ "bouclierFer" ]},
+						      {"key" : "score", "params" : ["Treasure", 1]},
 						      { "key" : "go", "params" : [ "villeFouilleSuite" ]}
 						]
 					},{
@@ -1156,7 +1184,7 @@ define(
 					"textes" : [ 
 					        "villeFouilleReussite3-texte-1",
 					        "villeFouilleReussite3-texte-2",
-					        "villeFouilleReussite2-texte-1",
+					        "villeFouilleReussite2-texte-2",
 					        "villeFouilleReussite3-texte-3",
 					        "villeFouilleReussite1-texte-2",
 					        "villeFouilleReussite1-texte-3"
@@ -1166,6 +1194,7 @@ define(
 						      { "key" : "gain", "params" : [ "epee" ]},
 						      { "key" : "gain", "params" : [ "bouclierFer" ]},
 						      { "key" : "gain", "params" : [ "potionSante" ]},
+						      {"key" : "score", "params" : ["Treasure", 1]},
 						      { "key" : "go", "params" : [ "villeFouilleSuite" ]}
 						]
 					},{
@@ -1237,6 +1266,7 @@ define(
 						]
 					},{
 						"name" : "help-guard", "action" : [ 
+						                                   {"key" : "score", "params" : ["TraitorSpider", 1]},
 						      { "key" : "fight", "params" : [ ["roiAraigneeBlesse"], "retourVilleAideGarde" ]}
 						]
 					}]
@@ -2237,6 +2267,7 @@ define(
 			"action" : [
 				{"key" : "gain", "params" : ["S4Clean"]},
 				{"key" : "gain", "params" : ["potionSante"]},
+				{"key" : "score", "params" : ["SaveChild", 1]},
 				{"key" : "go", "params" : ["necroCouloir"]}
 			]
 		}
@@ -2254,6 +2285,7 @@ define(
 			"action" : [
 				{"key" : "gain", "params" : ["S5Clean"]},
 				{"key" : "gain", "params" : ["soin"]},
+				{"key" : "score", "params" : ["LearnHeal", 1]},
 				{"key" : "go", "params" : ["necroCouloir"]}
 			]
 		}
@@ -2440,6 +2472,7 @@ define(
 		{
 			"name" : "terminer",
 			"action" : [
+			    {"key" : "score", "params" : ["GameComplete", 1]},
 				{"key" : "go", "params" : ["gagne"]}
 			]
 		}

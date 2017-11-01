@@ -654,10 +654,6 @@ define(["jquery"], function($){
                 fr : "Fouiller les corps",
                 en : "Searching bodies"
             },
-            "rentrer-ville" : {
-                fr : "Rentrer en ville",
-                en : "Getting back into town"
-            },
             "retour" : {
                 fr : "Retour",
                 en : "Returns"
@@ -1123,7 +1119,7 @@ define(["jquery"], function($){
                 fr : "Je dois les venger ! &raquo;",
                 en : "I must avenge them ! &raquo;"
             },
-            "roiAraigneeGuerit3-texte-2" : {
+            "roiAraigneeGuerit3-texte-3" : {
                 fr : "Le roi se jette au-dessus de vous et se dirige vers la sortie.",
                 en : "The king throws himself over you and heads for the exit."
             },
@@ -1644,7 +1640,7 @@ define(["jquery"], function($){
             	fr : "Vous fouillez les maisons en flammes et trouvez une belle <span key='epee'>&eacute;p&eacute;e</span>",
             	en : "You search the burning houses and find a nice <span key='epee'>sword</span>."
             },
-            "villeFouilleReussite2-texte-1" : {
+            "villeFouilleReussite2-texte-2" : {
             	fr : "et un grand <span key='bouclierFer'>bouclier en fer</span> dans celle du forgeron.",
             	en : "and a large iron shield in the blacksmith's house."
             },
@@ -2659,8 +2655,7 @@ define(["jquery"], function($){
             "terminer" : {
             	fr : "Terminer",
             	en : "Finish"
-            },
-
+            }
             
 	};
 	

@@ -13,6 +13,7 @@ function($, _, Utils, page, story, Item) {
 			this.el = $("#corps");
 			this.parent = parent;
 			this.Textes = parent.Textes;
+			this.kongregateUtils = parent.kongregateUtils;
 			this.mediatheque = parent.mediatheque;
 		};
 		
@@ -105,6 +106,9 @@ function($, _, Utils, page, story, Item) {
 				case "go":
 					this.disappair();
 					parent.go(action.params[0]);
+					break;
+				case "score":
+					this.kongregateUtils.score(action.params[0], action.params[1]);
 					break;
 				case "restart":
 					location.reload();
