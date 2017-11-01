@@ -1333,14 +1333,11 @@ define(
 		}
 	]
 },
-/**
- * HEREEEE
- */
 "necroTrou" : {
 	"textes" : [
-		"Vous contournez le grand b&acirc;timent quand,",
-		"&agrave; un tournant, vous tombez sur un mur en ruine.",
-		"Un gros trou permet de p&eacute;netrer dans une pi&egrave;ce sombre."
+		"necroTrou-texte-1",
+		"necroTrou-texte-2",
+		"necroTrou-texte-3"
 	],
 	"actions" : [
 		{
@@ -1355,14 +1352,14 @@ define(
 },
 "necroS3" : {
 	"textes" : [
-		"Vous p&eacute;netrez dans une vieille salle en ruine.",
-		"Apparement, elle servait de biblioth&egrave;que de fortune.",
-		"Vous d&eacute;couvrez de nombreux ouvrages et parchemins dispers&eacute;s un peu partout sur le sol.",
-		"Une porte permet d&rsquo;acc&eacute;der &agrave; une autre partie du b&acirc;timent."
+		"necroS3-texte-1",
+		"necroS3-texte-2",
+		"necroS3-texte-3",
+		"necroS3-texte-4"
 	],
 	"actions" : [
 		{
-			"name" : "Ouvrir la porte",
+			"name" : "ouvrir-porte",
 			"appairIf" : [{"key" : "hasItem", "params" : ["S3ViaS0"]}],
 			"action" : [
 				{"key" : "perte", "params" : ["S3ViaS0"]},
@@ -1370,7 +1367,7 @@ define(
 			]
 		},
 		{
-			"name" : "Lire les parchemins",
+			"name" : "lire-parchemin",
 			"appairIf" : [{"key" : "hasNoItem", "params" : ["parchoLu"]}],
 			"action" : [
 				{"key" : "upMG", "params" : [15]},
@@ -1382,9 +1379,9 @@ define(
 },
 "necroS3GS" : {
 	"textes" : [
-		"Vous p&eacute;netrez dans une vieille salle en ruine.",
-		"Apparement, elle servait de biblioth&egrave;que de fortune.",
-		"Vous d&eacute;couvrez de nombreux ouvrages et parchemins dispers&eacute;s un peu partout sur le sol."
+		"necroS3-texte-1",
+		"necroS3-texte-2",
+		"necroS3-texte-3"
 	],
 	"actions" : [
 		{
@@ -1392,7 +1389,7 @@ define(
 			"action" : [{"key" : "go", "params" : ["necroGS"]}]
 		},
 		{
-			"name" : "Lire les parchemins",
+			"name" : "lire-parchemin",
 			"appairIf" : [{"key" : "hasNoItem", "params" : ["parchoLu"]}],
 			"action" : [
 				{"key" : "upMG", "params" : [15]},
@@ -1404,15 +1401,15 @@ define(
 },
 "necroS3Fouille" : {
 	"textes" : [
-		"Il semblerait qu&rsquo;il s&rsquo;agisse de trait&eacute;s sur la magie.",
-		"Beaucoup sont dans une langue incomprehensible,",
-		"mais vous parvenez &agrave; comprendre certains mots.",
-		"Cela parle d&rsquo;une fusion entre les &eacute;l&eacute;ments&hellip;",
-		"Vous vous relevez et vous dirigez vers la porte."
+		"necroS3Fouille-texte-1",
+		"necroS3Fouille-texte-2",
+		"necroS3Fouille-texte-3",
+		"necroS3Fouille-texte-4",
+		"necroS3Fouille-texte-5"
 	],
 	"actions" : [
 		{
-			"name" : "Ouvrir la porte",
+			"name" : "ouvrir-porte",
 			"appairIf" : [{"key" : "hasItem", "params" : ["S3ViaS0"]}],
 			"action" : [
 				{"key" : "perte", "params" : ["S3ViaS0"]},
@@ -1430,8 +1427,8 @@ define(
 },
 "necroPorte" : {
 	"textes" : [
-		"La porte est immense et semble ferm&eacute; &agrave; clef.",
-		"Vous avez beau forcer, vous n&rsquo;arrivez pas &agrave; la d&eacute;placer&hellip;"
+		"necroPorte-texte-1",
+		"necroPorte-texte-2"
 	],
 	"actions" : [
 		{
@@ -1442,13 +1439,13 @@ define(
 },
 "necroS1Roi" : {
 	"textes" : [
-		"Vous p&eacute;n&eacute;trez prudemment dans la pi&egrave;ce.",
-		"Deux cadavres de <span key='goule'>goules</span> gisent sur le sol et une tra&icirc;n&eacute;e de sang vert",
-		"continue vers une seconde porte en face de vous&hellip;"
+		"necroS1Roi-texte-1",
+		"necroS1Roi-texte-2",
+		"necroS1Roi-texte-3"
 	],
 	"actions" : [
 		{
-			"name" : "Fouiller la pi&egrave;ce",
+			"name" : "fouiller-piece",
 			"appairIf" : [{"key" : "hasNoItem", "params" : ["hadClef"]}],
 			"action" : [
 				{"key" : "gain", "params" : ["clefS2"]},
@@ -1457,7 +1454,7 @@ define(
 			]
 		},
 		{
-			"name" : "Continuer",
+			"name" : "continue",
 			"action" : [
 				{"key" : "perte", "params" : ["S1ViaS0"]},
 				{"key" : "go", "params" : ["necroGSRoiFight"]}
@@ -1467,12 +1464,12 @@ define(
 },
 "necroS1" : {
 	"textes" : [
-		"Vous p&eacute;n&eacute;trez dans une petite pi&egrave;ce vide.",
-		"Deux cadavres de <span key='goule'>goules</span> gisent sur le sol."
+		"necroS1-texte-1",
+		"necroS1-texte-2"
 	],
 	"actions" : [
 		{
-			"name" : "Fouiller la pi&egrave;ce",
+			"name" : "fouiller-piece",
 			"appairIf" : [{"key" : "hasNoItem", "params" : ["hadClef"]}],
 			"action" : [
 				{"key" : "gain", "params" : ["clefS2"]},
@@ -1490,8 +1487,8 @@ define(
 },
 "necroS1Fight" : {
 	"textes" : [
-		"Vous p&eacute;n&eacute;trez dans une petite pi&egrave;ce vide.",
-		"Deux <span key='goule'>goules</span> vous observent, le regard vitreux."
+		"necroS1-texte-1",
+		"necroS1Fight-texte-1"
 	],
 	"actions" : [
 		{
@@ -1505,13 +1502,13 @@ define(
 },
 "necroS1Fight2" : {
 	"textes" : [
-		"Vous abattez ces larves !",
-		"Elles ont failli vous d&eacute;coiffer&hellip;",
-		"Il est temps de continuer !"
+		"necroS1Fight2-texte-1",
+		"necroS1Fight2-texte-2",
+		"necroS1Fight2-texte-3"
 	],
 	"actions" : [
 		{
-			"name" : "Fouiller la pi&egrave;ce",
+			"name" : "fouiller-piece",
 			"action" : [
 				{"key" : "gain", "params" : ["clefS2"]},
 				{"key" : "gain", "params" : ["hadClef"]},
@@ -1528,14 +1525,14 @@ define(
 },
 "necroS1Fouille" : {
 	"textes" : [
-		"La salle est compl&egrave;tement vide hormis un petit paillasson",
-		"devant l&rsquo;entr&eacute;e inscrit &laquo; HellCome &raquo;.",
-		"En le soulevant, vous d&eacute;couvrez une petite <span key='clefS2'>clef</span>&hellip;",
-		"Vous la prenez et vous dirigez vers la porte&hellip;"
+		"necroS1Fouille-texte-1",
+		"necroS1Fouille-texte-2",
+		"necroS1Fouille-texte-3",
+		"necroS1Fouille-texte-4"
 	],
 	"actions" : [
 		{
-			"name" : "Continuer",
+			"name" : "continue",
 			"appairIf" : [{"key" : "hasItem", "params" : ["S1ViaS0"]}],
 			"action" : [
 				{"key" : "perte", "params" : ["S1ViaS0"]},
@@ -1551,9 +1548,9 @@ define(
 },
 "necroGSFight" : {
 	"textes" : [
-		"Vous p&eacute;n&eacute;trez dans une tr&egrave;s grande crypte.",
-		"&Agrave; votre arriv&eacute;e, le gardien des lieux, une <span key='grosseGoule'>grosse goule</span> se dirige vers vous.",
-		"Sur le c&ocirc;t&eacute;, deux <span key='squelette'>squelettes</span> sortent lentement de leurs cercueils&hellip;"
+		"necroGSFight-texte-1",
+		"necroGSFight-texte-2",
+		"necroGSFight-texte-3"
 	],
 	"actions" : [
 		{
@@ -1566,12 +1563,12 @@ define(
 },
 "necroGSFight2" : {
 	"textes" : [
-		"Vous vous relevez p&eacute;niblement apr&egrave;s ce difficile combat.",
-		"Encore sous le choc, vous observez la pi&egrave;ce autour de vous&hellip;"
+		"necroGSFight2-texte-1",
+		"necroGSFight2-texte-2"
 	],
 	"actions" : [
 		{
-			"name" : "Continuer",
+			"name" : "continue",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -1580,9 +1577,9 @@ define(
 },
 "necroGSRoiFight" : {
 	"textes" : [
-		"Vous p&eacute;n&eacute;trez dans une tr&egrave;s grande crypte.",
-		"Le <span key='roiAraigneeBlesse'>roi araign&eacute;e</span> est couch&eacute; au centre, inconscient, une <span key='grosseGoule'>grosse goule</span> morte dans la gueule&hellip;",
-		"Sur le c&ocirc;t&eacute;, deux <span key='squelette'>squelettes</span> sortent lentement de leurs cercueils&hellip;"
+		"necroGSFight-texte-1",
+		"necroGSRoiFight-texte-1",
+		"necroGSFight-texte-3"
 	],
 	"actions" : [
 		{
@@ -1595,22 +1592,22 @@ define(
 },
 "necroGSRoiFight2" : {
 	"textes" : [
-		"Vous vous relevez p&eacute;niblement apr&egrave;s ce difficile combat et vous dirigez vers votre ami.",
-		"Le roi, &agrave; l&rsquo;agonie, vous exprime son dernier souhait :",
-		"&laquo; Merci, noble aventurier. Je me meurs&hellip; Mais vous, vous pouvez encore sauver votre esp&egrave;ce.",
-		"Vengez-nous, combattez pour l&rsquo;araign&eacute;e ! &raquo;",
-		"Avant de mourir, le roi s&rsquo;arrache un <span key='crocRoi'>croc</span> et le jette &agrave; vos pieds."
+		"necroGSRoiFight2-texte-1",
+		"necroGSRoiFight2-texte-2",
+		"necroGSRoiFight2-texte-3",
+		"necroGSRoiFight2-texte-4",
+		"necroGSRoiFight2-texte-5"
 	],
 	"actions" : [
 		{
-			"name" : "Prendre le croc",
+			"name" : "prendre-croc",
 			"action" : [
 				{"key" : "gain", "params" : ["crocRoi"]},
 				{"key" : "go", "params" : ["necroGSFight3Oui"]}
 			]
 		},
 		{
-			"name" : "Laisser le croc",
+			"name" : "laisser-croc",
 			"action" : [
 				{"key" : "go", "params" : ["necroGSFight3Non"]}
 			]
@@ -1619,13 +1616,13 @@ define(
 },
 "necroGSFight3Oui" : {
 	"textes" : [
-		"Vous prenez l&rsquo;arme en souvenir de votre ami.",
-		"Elle fera certainement une alli&eacute;e pr&eacute;cieuse !",
-		"Encore sous le choc, vous observez la pi&egrave;ce autour de vous&hellip;"
+		"necroGSFight3Oui-texte-1",
+		"necroGSFight3Oui-texte-2",
+		"necroGSFight2-texte-2"
 	],
 	"actions" : [
 		{
-			"name" : "Continuer",
+			"name" : "continue",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -1634,13 +1631,13 @@ define(
 },
 "necroGSFight3Non" : {
 	"textes" : [
-		"Vous laissez l&rsquo;arme devant votre ami.",
-		"Esp&eacute;rant qu&rsquo;elle l&rsquo;accompagne dans l&rsquo;au-del&agrave;.",
-		"Encore sous le choc, vous observez la pi&egrave;ce autour de vous&hellip;"
+		"necroGSFight3Non-texte-1",
+		"necroGSFight3Non-texte-2",
+		"necroGSFight2-texte-2"
 	],
 	"actions" : [
 		{
-			"name" : "Continuer",
+			"name" : "continue",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -1649,20 +1646,20 @@ define(
 },
 "necroGS" : {
 	"textes" : [
-		"Vous vous trouvez dans une gigantesque salle aux allures de crypte.",
-		"Quelques cercueils sont &eacute;parpill&eacute;s un peu partout.",
-		"Vous remarquez trois portes : &agrave; gauche, en face et &agrave; droite&hellip;"
+		"necroGS-texte-1",
+		"necroGS-texte-2",
+		"necroGS-texte-3"
 	],
 	"actions" : [
 		{
-			"name" : "Fouiller les cercueils",
+			"name" : "fouiller-cercueil",
 			"appairIf" : [{"key" : "hasNoItem", "params" : ["fouilleCercueil"]}],
 			"action" : [
 				{"key" : "go", "params" : ["necroGSFouilleCercueil"]}
 			]
 		},
 		{
-			"name" : "Fouiller la salle",
+			"name" : "fouiller-salle",
 			"action" : [
 				{"key" : "go", "params" : ["necroGSFouilleSalle"]}
 			]
@@ -1671,14 +1668,14 @@ define(
 		 * Gauche
 		 */
 		{
-			"name" : "Aller &agrave; gauche",
+			"name" : "go-left",
 			"appairIf" : [{"key" : "hasItem", "params" : ["viaS1"]}],
 			"action" : [
 				{"key" : "hasItem", "params" : [["S2Clean"], "necroS2Clean", "necroGSS2"]}
 			]
 		},
 		{
-			"name" : "Aller &agrave; gauche",
+			"name" : "go-left",
 			"appairIf" : [{"key" : "hasItem", "params" : ["viaS3"]}],
 			"action" : [
 				{"key" : "hasItem", "params" : [["necroS1Clean"], "necroS1", "necroS1Fight"]}
@@ -1688,14 +1685,14 @@ define(
 		 * Droite
 		 */
 		{
-			"name" : "Aller &agrave; droite",
+			"name" : "go-right",
 			"appairIf" : [{"key" : "hasItem", "params" : ["viaS1"]}],
 			"action" : [
 				{"key" : "go", "params" : ["necroS3GS"]}
 			]
 		},
 		{
-			"name" : "Aller &agrave; droite",
+			"name" : "go-right",
 			"appairIf" : [{"key" : "hasItem", "params" : ["viaS3"]}],
 			"action" : [
 				{"key" : "go", "params" : ["necroCouloir"]}
@@ -1705,14 +1702,14 @@ define(
 		 * Face
 		 */
 		{
-			"name" : "Aller en face",
+			"name" : "go-face",
 			"appairIf" : [{"key" : "hasItem", "params" : ["viaS1"]}],
 			"action" : [
 				{"key" : "go", "params" : ["necroCouloir"]}
 			]
 		},
 		{
-			"name" : "Aller en face",
+			"name" : "go-face",
 			"appairIf" : [{"key" : "hasItem", "params" : ["viaS3"]}],
 			"action" : [
 				{"key" : "hasItem", "params" : [["S2Clean"], "necroS2Clean", "necroGSS2"]}
@@ -1722,7 +1719,7 @@ define(
 		 * Retour
 		 */
 		{
-			"name" : "Revenir sur vos pas",
+			"name" : "revenir-pas",
 			"action" : [
 				{"key" : "hasItem", "params" : [["viaS1"], "necroS1", "necroS3GS"]}
 			]
@@ -1731,9 +1728,9 @@ define(
 },
 "necroGSFouilleCercueil" : {
 	"textes" : [
-		"Avec d&eacute;go&ucirc;t, vous fouillez les cercueils.",
-		"Les deux premiers sont vides, mais dans le troisi&eacute;me,",
-		"vous apercevez une lueur jaune sous un tas d&rsquo;os&hellip;"
+		"necroGSFouilleCercueil-texte-1",
+		"necroGSFouilleCercueil-texte-2",
+		"necroGSFouilleCercueil-texte-3"
 	],
 	"actions" : [
 		{
@@ -1754,11 +1751,11 @@ define(
 },
 "necroGSFouilleCercueil2" : {
 	"textes" : [
-		"Vous saisissez un authentique <span key='elixir'>&eacute;lixir</span> !",
-		"Malheureusement, vous n&rsquo;&ecirc;tes pas le seul sur le coup&hellip;",
-		"Une main osseuse vous tient fermement le poigner.",
-		"Vous vous &eacute;cartez brusquement, emportant la main avec vous,",
-		"pendant qu&rsquo;un <span key='squeletteManchot'>squelette manchot</span> sort difficilement de son cercueil&hellip;"
+		"necroGSFouilleCercueil2-texte-1",
+		"necroGSFouilleCercueil2-texte-2",
+		"necroGSFouilleCercueil2-texte-3",
+		"necroGSFouilleCercueil2-texte-4",
+		"necroGSFouilleCercueil2-texte-5"
 	],
 	"actions" : [
 		{
@@ -1771,12 +1768,12 @@ define(
 },
 "necroGSFouilleCercueil3" : {
 	"textes" : [
-		"Vous vous d&eacute;barassez facilement de votre adversaire.",
-		"Il est temps de continuer votre aventure !"
+		"necroGSFouilleCercueil3-texte-1",
+		"necroGSFouilleCercueil3-texte-2"
 	],
 	"actions" : [
 		{
-			"name" : "Continuer",
+			"name" : "continue",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -1785,48 +1782,48 @@ define(
 },
 "necroGSFouilleSalle" : {
 	"textes" : [
-		"Il s&rsquo;agit d&rsquo;une grande salle ressemblant &agrave; s&rsquo;y m&eacute;prendre &agrave; une crypte.",
-		"Les murs sont suintants d&rsquo;humidit&eacute; et un froid intense la parcourt.",
-		"Deux torches se trouvent accroch&eacute;es sur le mur du fond&hellip;"
+		"necroGSFouilleSalle-texte-1",
+		"necroGSFouilleSalle-texte-2",
+		"necroGSFouilleSalle-texte-3"
 	],
 	"actions" : [
 		{
-			"name" : "Voir la torche &agrave; gauche",
+			"name" : "voir-torche-gauche",
 			"appairIf" : [{"key" : "hasNoItem", "params" : ["torcheAllumeG", "torcheExploseG"]}],
 			"action" : [
 				{"key" : "go", "params" : ["necroGSTorcheG"]}
 			]
 		},
 		{
-			"name" : "Voir la torche &agrave; gauche",
+			"name" : "voir-torche-gauche",
 			"appairIf" : [{"key" : "hasItem", "params" : ["torcheAllumeG"]}],
 			"action" : [
 				{"key" : "go", "params" : ["necroGSTorcheAllume"]}
 			]
 		},
 		{
-			"name" : "Voir la torche &agrave; gauche",
+			"name" : "voir-torche-gauche",
 			"appairIf" : [{"key" : "hasItem", "params" : ["torcheExploseG"]}],
 			"action" : [
 				{"key" : "go", "params" : ["necroGSTorcheExplose"]}
 			]
 		},
 		{
-			"name" : "Voir la torche &agrave; droite",
+			"name" : "voir-torche-droite",
 			"appairIf" : [{"key" : "hasNoItem", "params" : ["torcheAllumeD", "torcheExploseD"]}],
 			"action" : [
 				{"key" : "go", "params" : ["necroGSTorcheD"]}
 			]
 		},
 		{
-			"name" : "Voir la torche &agrave; droite",
+			"name" : "voir-torche-droite",
 			"appairIf" : [{"key" : "hasItem", "params" : ["torcheAllumeD"]}],
 			"action" : [
 				{"key" : "go", "params" : ["necroGSTorcheAllume"]}
 			]
 		},
 		{
-			"name" : "Voir la torche &agrave; droite",
+			"name" : "voir-torche-droite",
 			"appairIf" : [{"key" : "hasItem", "params" : ["torcheExploseD"]}],
 			"action" : [
 				{"key" : "go", "params" : ["necroGSTorcheExplose"]}
@@ -1842,13 +1839,13 @@ define(
 },
 "necroGSTorcheG" : {
 	"textes" : [
-		"Vous vous approchez de la torche sur le mur de gauche.",
-		"Celle-ci est &eacute;teinte.",
-		"Vous ne trouvez pas qu&rsquo;il fait sombre ? Pourquoi ne pas l&rsquo;allumer ?"
+		"necroGSTorcheG-texte-1",
+		"necroGSTorcheG-texte-2",
+		"necroGSTorcheG-texte-3"
 	],
 	"actions" : [
 		{
-			"name" : "Utiliser la bougie",
+			"name" : "utiliser-bougie",
 			"appairIf" : [{"key" : "hasItem", "params" : ["bougie"]}],
 			"action" : [
 				{"key" : "gain", "params" : ["torcheAllumeG"]},
@@ -1856,7 +1853,7 @@ define(
 			]
 		},
 		{
-			"name" : "Lancer une boule de feu",
+			"name" : "lancer-boule-feu",
 			"appairIf" : [
 				{"key" : "hasItem", "params" : ["bouleFeu"]},
 				{"key" : "hasMG", "params" : [5]}
@@ -1868,7 +1865,7 @@ define(
 			]
 		},
 		{
-			"name" : "Impossible",
+			"name" : "impossible",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -1877,13 +1874,13 @@ define(
 },
 "necroGSTorcheD" : {
 	"textes" : [
-		"Vous vous approchez de la torche sur le mur de droite.",
-		"Celle-ci est &eacute;teinte.",
-		"Vous ne trouvez pas qu&rsquo;il fait froid ? Pourquoi ne pas se rechauffer un peu ?"
+		"necroGSTorcheD-texte-1",
+		"necroGSTorcheG-texte-2",
+		"necroGSTorcheD-texte-2"
 	],
 	"actions" : [
 		{
-			"name" : "Utiliser la bougie",
+			"name" : "utiliser-bougie",
 			"appairIf" : [{"key" : "hasItem", "params" : ["bougie"]}],
 			"action" : [
 				{"key" : "gain", "params" : ["torcheAllumeD"]},
@@ -1891,7 +1888,7 @@ define(
 			]
 		},
 		{
-			"name" : "Lancer une boule de feu",
+			"name" : "lancer-boule-feu",
 			"appairIf" : [
 				{"key" : "hasItem", "params" : ["bouleFeu"]},
 				{"key" : "hasMG", "params" : [5]}
@@ -1903,7 +1900,7 @@ define(
 			]
 		},
 		{
-			"name" : "Impossible",
+			"name" : "impossible",
 			"action" : [
 				{"key" : "go", "params" : ["necroGS"]}
 			]
@@ -1912,9 +1909,9 @@ define(
 },
 "necroGSTorcheOK" : {
 	"textes" : [
-		"Vous allumez consciencieusement la torche en prenant soin de ne pas vous br&ucirc;ler.",
-		"Soudain, vous entendez un syst&egrave;me d&rsquo;engrenages s&rsquo;enclencher&hellip;",
-		"Il semblerait qu&rsquo;une porte se soit ouverte quelque part."
+		"necroGSTorcheOK-texte-1",
+		"necroGSTorcheOK-texte-2",
+		"necroGSTorcheOK-texte-3"
 	],
 	"actions" : [
 		{
@@ -1927,10 +1924,10 @@ define(
 },
 "necroGSTorcheKO" : {
 	"textes" : [
-		"Vous lancez votre plus belle <span key='bouleFeu'>boule de feu</span> !",
-		"Celle-ci &eacute;clate violemment sur le mur et explose la torche.",
-		"Il ne reste plus qu&rsquo;une vieille tige en souvenir.",
-		"R.I.P la torche&hellip;"
+		"necroGSTorcheKO-texte-1",
+		"necroGSTorcheKO-texte-2",
+		"necroGSTorcheKO-texte-3",
+		"necroGSTorcheKO-texte-4"
 	],
 	"actions" : [
 		{
@@ -1943,8 +1940,8 @@ define(
 },
 "necroGSTorcheAllume" : {
 	"textes" : [
-		"La torche brille de mille feux !",
-		"Ne la regardez pas trop longtemps, &ccedil;a pourrait br&ucirc;ler !"
+		"necroGSTorcheAllume-texte-1",
+		"necroGSTorcheAllume-texte-2"
 	],
 	"actions" : [
 		{
@@ -1957,8 +1954,8 @@ define(
 },
 "necroGSTorcheExplose" : {
 	"textes" : [
-		"Une vieille tige carbonis&eacute;e se dresse fi&egrave;rement sur le mur.",
-		"Elle n&rsquo;avait pourtant rien fait de mal&hellip;"
+		"necroGSTorcheExplose-texte-1",
+		"necroGSTorcheExplose-texte-2"
 	],
 	"actions" : [
 		{
@@ -1971,14 +1968,14 @@ define(
 },
 "necroGSS2" : {
 	"textes" : [
-		"Vous faites face &agrave; une petite porte ferm&eacute;e &agrave; clef.",
-		"Elle semble tr&egrave;s r&eacute;sistante&hellip;",
-		"En tendant l&rsquo;oreille, vous entendez des cris &agrave; l&rsquo;int&eacute;rieur,",
-		"comme si une personne essayait de se d&eacute;battre."
+		"necroGSS2-texte-1",
+		"necroGSS2-texte-2",
+		"necroGSS2-texte-3",
+		"necroGSS2-texte-4"
 	],
 	"actions" : [
 		{
-			"name" : "Utiliser la clef",
+			"name" : "utiliser-clef",
 			"appairIf" : [{"key" : "hasItem", "params" : ["clefS2"]}],
 			"action" : [
 				{"key" : "perte", "params" : ["clefS2"]},
@@ -1988,7 +1985,7 @@ define(
 			]
 		},
 		{
-			"name" : "Ouvrir",
+			"name" : "ouvrir",
 			"appairIf" : [{"key" : "hasItem", "params" : ["S2Ouvert"]}],
 			"action" : [
 				{"key" : "go", "params" : ["necroS2Retour"]}
@@ -2004,15 +2001,15 @@ define(
 },
 "necroS2" : {
 	"textes" : [
-		"Vous ouvrez la porte et entrez doucement dans la pi&egrave;ce.",
-		"Les cris se font de plus en plus pressants et s&rsquo;arr&ecirc;tent d&rsquo;un coup.",
-		"Vous apercevez une ombre dans le fond de la pi&egrave;ce.",
-		"Elle vous parle d&rsquo;une voix enfantine :",
-		"&laquo; Qui est l&agrave; ? J&rsquo;ai peur&hellip; J&rsquo;ai faim&hellip; &raquo;"
+		"necroS2-texte-1",
+		"necroS2-texte-2",
+		"necroS2-texte-3",
+		"necroS2-texte-4",
+		"necroS2-texte-5"
 	],
 	"actions" : [
 		{
-			"name" : "Continuer",
+			"name" : "continue",
 			"action" : [
 				{"key" : "go", "params" : ["necroS22"]}
 			]
@@ -2021,15 +2018,15 @@ define(
 },
 "necroS2Retour" : {
 	"textes" : [
-		"Vous ouvrez la porte et entrez doucement dans la pi&egrave;ce.",
-		"Les cris se font de plus en plus pressants et s&rsquo;arr&ecirc;tent d&rsquo;un coup.",
-		"L&rsquo;ombre dans le fond de la pi&egrave;ce vous regarde toujours sans bouger.",
-		"Elle vous parle d&rsquo;une voix enfantine, calmement :",
-		"&laquo; Te revoil&agrave; ? Tu viens jouer ? &raquo;"
+		"necroS2-texte-1",
+		"necroS2-texte-2",
+		"necroS2Retour-texte-1",
+		"necroS2Retour-texte-2",
+		"necroS2Retour-texte-3"
 	],
 	"actions" : [
 		{
-			"name" : "Continuer",
+			"name" : "continue",
 			"action" : [
 				{"key" : "go", "params" : ["necroS22"]}
 			]
@@ -2038,22 +2035,22 @@ define(
 },
 "necroS22" : {
 	"textes" : [
-		"Vous vous approchez tout doucement pour ne pas l&rsquo;effrayer&hellip;",
-		"La silhouette s&rsquo;enfonce un peu plus dans l&rsquo;obscurit&eacute;.",
-		"Vous entendez soudain une voix criarde :",
-		"&laquo; C&rsquo;est un m&eacute;chant ! Tue-le ! Tue-le, d&eacute;chet ! &raquo;",
-		"Puis, la voix enfantine :",
-		"&laquo; Non&hellip; Il ne faut pas&hellip; &raquo;"
+		"necroS22-texte-1",
+		"necroS22-texte-2",
+		"necroS22-texte-3",
+		"necroS22-texte-4",
+		"necroS22-texte-5",
+		"necroS22-texte-6"
 	],
 	"actions" : [
 		{
-			"name" : "Parler",
+			"name" : "parler",
 			"action" : [
 				{"key" : "go", "params" : ["necroS2Parle"]}
 			]
 		},
 		{
-			"name" : "Approcher",
+			"name" : "approcher",
 			"action" : [
 				{"key" : "go", "params" : ["necroS2Approche"]}
 			]
@@ -2068,15 +2065,15 @@ define(
 },
 "necroS2Parle" : {
 	"textes" : [
-		"Vous essayez de rassurer l&rsquo;enfant d&rsquo;une voix douce.",
-		"Mais, c&rsquo;est &agrave; nouveau la voix criarde qui vous r&eacute;pond :",
-		"&laquo; Silence ! Insecte inutile ! Il ne t&rsquo;&eacute;coutera pas !",
-		"Maintenant, tue-le o&ugrave; tu souffriras de nouveau ! &raquo;",
-		"Vous voyez dans le noir deux points brillants&hellip;"
+		"necroS2Parle-texte-1",
+		"necroS2Parle-texte-2",
+		"necroS2Parle-texte-3",
+		"necroS2Parle-texte-4",
+		"necroS2Parle-texte-5"
 	],
 	"actions" : [
 		{
-			"name" : "Continuer",
+			"name" : "continue",
 			"action" : [
 				{"key" : "go", "params" : ["necroS2Approche"]}
 			]
@@ -2085,14 +2082,14 @@ define(
 },
 "necroS2Approche" : {
 	"textes" : [
-		"L&rsquo;ombre vous regarde fixement et s&rsquo;avance doucement vers vous.",
-		"La porte derri&egrave;re vous claque violemment et vous entendez l&rsquo;enfant rire&hellip;",
-		"&laquo; Tu aurais d&ucirc; t&rsquo;enfuir tant que tu le pouvais&hellip; &raquo;",
-		"&Agrave; mesure que la forme s&rsquo;approche, vous la discernez mieux&hellip;"
+		"necroS2Approche-texte-1",
+		"necroS2Approche-texte-2",
+		"necroS2Approche-texte-3",
+		"necroS2Approche-texte-4"
 	],
 	"actions" : [
 		{
-			"name" : "Continuer",
+			"name" : "continue",
 			"action" : [
 				{"key" : "go", "params" : ["necroS2Enfant"]}
 			]
@@ -2101,11 +2098,11 @@ define(
 },
 "necroS2Enfant" : {
 	"textes" : [
-		"Un enfant s&rsquo;avance lentement, blanc comme un linge.",
-		"Ses bras sont anormalement longs et couverts de coupures.",
-		"De ses doigts sortent de grandes tiges de fer&hellip;",
-		"En avan&ccedil;ant, il se met &agrave; ricaner.",
-		"Ses dents, pointues comme les crocs d&rsquo;un loup, brillent d&rsquo;une couleur rouge&acirc;tre."
+		"necroS2Enfant-texte-1",
+		"necroS2Enfant-texte-2",
+		"necroS2Enfant-texte-3",
+		"necroS2Enfant-texte-4",
+		"necroS2Enfant-texte-5"
 	],
 	"actions" : [
 		{
@@ -2119,11 +2116,11 @@ define(
 },
 "necroS2Enfant2" : {
 	"textes" : [
-		"Mais quelle &eacute;tait cette horreur ?!",
-		"Les enfants captur&eacute;s servaient &agrave; fabriquer ce monstre ?!",
-		"Vous r&eacute;alisez soudain que d&rsquo;autres enfants doivent subir le m&ecirc;me sort &agrave; l&rsquo;heure qu&rsquo;il est !",
-		"Il n&rsquo;est peut-&ecirc;tre pas trop tard !",
-		"Vous reprenez vos esprits et repartez &agrave; l&rsquo;aventure."
+		"necroS2Enfant2-texte-1",
+		"necroS2Enfant2-texte-2",
+		"necroS2Enfant2-texte-3",
+		"necroS2Enfant2-texte-4",
+		"necroS2Enfant2-texte-5"
 	],
 	"actions" : [
 		{
@@ -2142,14 +2139,14 @@ define(
 },
 "necroS2Fouille" : {
 	"textes" : [
-		"La salle se compose simplement d&rsquo;une &eacute;tag&egrave;re remplie de vieux parchemins.",
-		"En en lisant quelques-uns, vous d&eacute;couvrez qu&rsquo;il est possible, avec la formule ad&eacute;quate",
-		"et un peu de concentration, de lancer une terrible <span key='bouleFeu'>boule de feu</span> !",
-		"Il est temps de retourner dans la grande salle ! L&rsquo;aventure n&rsquo;attend pas !"
+		"necroS2Fouille-texte-1",
+		"necroS2Fouille-texte-2",
+		"necroS2Fouille-texte-3",
+		"necroS2Fouille-texte-4"
 	],
 	"actions" : [
 		{
-			"name" : "Continuer",
+			"name" : "continue",
 			"action" : [
 				{"key" : "gain", "params" : ["bouleFeu"]},
 				{"key" : "upMG", "params" : [15]},
@@ -2160,8 +2157,8 @@ define(
 },
 "necroS2Clean" : {
 	"textes" : [
-		"La salle est vide&hellip; Seul reste au sol cette <span key='experience'>exp&eacute;rience</span> rat&eacute;e.",
-		"Vous vous demandez quel &ecirc;tre immonde a pu op&eacute;rer telle transformation&hellip;"
+		"necroS2Clean-texte-1",
+		"necroS2Clean-texte-2"
 	],
 	"actions" : [
 		{
@@ -2174,28 +2171,28 @@ define(
 },
 "necroCouloir" : {
 	"textes" : [
-		"Vous entrez dans un long couloir &eacute;clair&eacute; par de nombreuses torches.",
-		"Une ambiance calme et presque conviviale vous invite &agrave; avancer&hellip;",
-		"Une grande porte de ch&ecirc;ne vous fait face et deux portes plus petites",
-		"se trouvent de chaque c&ocirc;t&eacute; du couloir&hellip;"
+		"necroCouloir-texte-1",
+		"necroCouloir-texte-2",
+		"necroCouloir-texte-3",
+		"necroCouloir-texte-4"
 	],
 	"actions" : [
 		{
-			"name" : "Aller &agrave; gauche",
+			"name" : "go-left",
 			"appairIf" : [{"key" : "hasNoItem", "params" : ["S4Clean"]}],
 			"action" : [
 				{"key" : "hasItem", "params" : [["torcheAllumeG"], "necroS4", "necroSalleFerme"]}
 			]
 		},
 		{
-			"name" : "Aller &agrave; droite",
+			"name" : "go-right",
 			"appairIf" : [{"key" : "hasNoItem", "params" : ["S5Clean"]}],
 			"action" : [
 				{"key" : "hasItem", "params" : [["torcheAllumeD"], "necroS5", "necroSalleFerme"]}
 			]
 		},
 		{
-			"name" : "Aller en face",
+			"name" : "go-face",
 			"action" : [
 				{"key" : "go", "params" : ["necroSB"]}
 			]
@@ -2211,9 +2208,9 @@ define(
 },
 "necroSalleFerme" : {
 	"textes" : [
-		"Vous approchez de la porte, mais remarquez qu&rsquo;elle ne possede ni poign&eacute;e ni serrure&hellip;",
-		"Pas tr&egrave;s pratique tout de m&ecirc;me.",
-		"Vous essayez de forcer un peu pour l&rsquo;ouvrir, mais impossible de la faire bouger."
+		"necroSalleFerme-texte-1",
+		"necroSalleFerme-texte-2",
+		"necroSalleFerme-texte-3"
 	],
 	"actions" : [
 		{
@@ -2224,12 +2221,15 @@ define(
 		}
 	]
 },
+/**
+ * HEREEE
+ */
 "necroS4" : {
 	"textes" : [
-		"Vous entrez dans une pi&egrave;ce aux allures de prison.",
-		"De nombreux enfants sont agglutin&eacute;s dans un coin.",
-		"Lorsqu&rsquo;ils s&rsquo;enfuient &agrave; votre demande, l&rsquo;un d&rsquo;eux vous tend une <span key='potionSante'>fiole rouge</span>.",
-		"&Ccedil;a peut toujours aider&hellip;"
+		"necroS4-texte-1",
+		"necroS4-texte-2",
+		"necroS4-texte-3",
+		"necroS4-texte-4"
 	],
 	"actions" : [
 		{
@@ -2244,9 +2244,9 @@ define(
 },
 "necroS5" : {
 	"textes" : [
-		"Vous entrez dans une belle biblioth&egrave;que pleine de livres anciens.",
-		"Vous en lisez quelques-uns qui vous apprennent qu&rsquo;il est possible,",
-		"en se concentrant, de faire sortir de l&rsquo;&eacute;nergie de son corps afin de se <span key='soin'>soigner</span>."
+		"necroS5-texte-1",
+		"necroS5-texte-2",
+		"necroS5-texte-3"
 	],
 	"actions" : [
 		{
@@ -2261,25 +2261,25 @@ define(
 },
 "necroSB" : {
 	"textes" : [
-		"Plein de confiance, vous p&eacute;n&eacute;trez fi&egrave;rement dans la derni&egrave;re salle.",
-		"Celle-ci est ronde et centr&eacute;e sur un grand puits d&rsquo;eau verte.",
-		"Un vieil homme y est pench&eacute;, pronon&ccedil;ant d&rsquo;&eacute;tranges incantations."
+		"necroSB-texte-1",
+		"necroSB-texte-2",
+		"necroSB-texte-3"
 	],
 	"actions" : [
 		{
-			"name" : "Toussoter",
+			"name" : "tousser",
 			"action" : [
 				{"key" : "go", "params" : ["bossTousse"]}
 			]
 		},
 		{
-			"name" : "Avancer",
+			"name" : "avancer",
 			"action" : [
 				{"key" : "go", "params" : ["bossAvance"]}
 			]
 		},
 		{
-			"name" : "Parler",
+			"name" : "parler",
 			"action" : [
 				{"key" : "go", "params" : ["bossParle"]}
 			]
@@ -2288,19 +2288,19 @@ define(
 },
 "bossTousse" : {
 	"textes" : [
-		"Vous toussez l&eacute;g&egrave;rement pour attirer l&rsquo;attention du vieil homme,",
-		"mais &ecirc;tes soudain pris d&rsquo;une quinte plus forte.",
-		"Le vieux, toujours pench&eacute;, n&rsquo;a pas boug&eacute; d&rsquo;un poil&hellip;"
+		"bossTousse-texte-1",
+		"bossTousse-texte-2",
+		"bossTousse-texte-3"
 	],
 	"actions" : [
 		{
-			"name" : "Avancer",
+			"name" : "avancer",
 			"action" : [
 				{"key" : "go", "params" : ["bossAvance"]}
 			]
 		},
 		{
-			"name" : "Parler",
+			"name" : "parler",
 			"action" : [
 				{"key" : "go", "params" : ["bossParle"]}
 			]
@@ -2309,15 +2309,15 @@ define(
 },
 "bossParle" : {
 	"textes" : [
-		"&laquo; Je suis venu pour les enfants ! O&ugrave; sont-ils ? &raquo;",
-		"Le vieux se retourne alors lentement en souriant&hellip;",
-		"Lorsque vous voyez son visage, vous ne pouvez que r&eacute;prouver un fort d&eacute;go&ucirc;t :",
-		"celui-ci est couvert de pustules et laisse entrevoir son cr&acirc;ne &agrave; nu &agrave; plusieurs endroits.",
-		"De nombreux vers circulent dans la peau de son cou et descendent sous son ample manteau."
+		"bossParle-texte-1",
+		"bossParle-texte-2",
+		"bossParle-texte-3",
+		"bossParle-texte-4",
+		"bossParle-texte-5"
 	],
 	"actions" : [
 		{
-			"name" : "Continuer",
+			"name" : "continue",
 			"action" : [
 				{"key" : "go", "params" : ["bossAvance2"]}
 			]
@@ -2326,15 +2326,15 @@ define(
 },
 "bossAvance" : {
 	"textes" : [
-		"Vous avancez vers le vieil homme et posez une main sur son &eacute;paule.",
-		"Il se retourne alors lentement en souriant&hellip;",
-		"Lorsque vous voyez son visage, vous ne pouvez que r&eacute;prouver un fort d&eacute;go&ucirc;t :",
-		"celui-ci est couvert de pustule et laisse entrevoir son cr&acirc;ne &agrave; nu &agrave; plusieurs endroits.",
-		"De nombreux vers circulent dans la peau de son cou et descendent sous son ample manteau."
+		"bossAvance-texte-1",
+		"bossAvance-texte-2",
+		"bossParle-texte-3",
+		"bossParle-texte-4",
+		"bossParle-texte-5"
 	],
 	"actions" : [
 		{
-			"name" : "Continuer",
+			"name" : "continue",
 			"action" : [
 				{"key" : "go", "params" : ["bossAvance2"]}
 			]
@@ -2343,12 +2343,12 @@ define(
 },
 "bossAvance2" : {
 	"textes" : [
-		"&laquo; Bienvenue, jeune homme&hellip; Je suis le ma&icirc;tre de ces lieux. &raquo;",
-		"Il vous regarde, mais ses yeux renvoient le vide.",
-		"&laquo; Vous avez certainement vu mes cr&eacute;ations ?",
-		"Si ce n&rsquo;est pas le cas, laissez moi vous les pr&eacute;senter&hellip; &raquo;",
-		"Il ricane doucement, alors que deux <span key='experience'>monstres</span> sortent du puits.",
-		"Ils ressemblent &agrave; des enfants, mais n&rsquo;en ont plus que l&rsquo;apparence&hellip;"
+		"bossAvance2-texte-1",
+		"bossAvance2-texte-2",
+		"bossAvance2-texte-3",
+		"bossAvance2-texte-4",
+		"bossAvance2-texte-5",
+		"bossAvance2-texte-6"
 	],
 	"actions" : [
 		{
@@ -2361,10 +2361,10 @@ define(
 },
 "boss2" : {
 	"textes" : [
-		"Vous tuez &agrave; contrec&oelig;ur ces abominations&hellip;",
-		"&laquo; Nonnnn !! Qu&rsquo;avez-vous fait &agrave; mes perles ! Vous allez le regretter ! &raquo;",
-		"Le <span key='necromancien'>vieux</span> s&rsquo;approche en titubant et tend les bras en avant.",
-		"Le combat risque d&rsquo;&ecirc;tre facile&hellip;"
+		"boss2-texte-1",
+		"boss2-texte-2",
+		"boss2-texte-3",
+		"boss2-texte-4"
 	],
 	"actions" : [
 		{
@@ -2377,15 +2377,15 @@ define(
 },
 "boss3" : {
 	"textes" : [
-		"Le vieux avait de la ressource !",
-		"Vous finissez le combat en lui transper&ccedil;ant le c&oelig;ur, puis repartez.",
-		"Les enfants seront au moins lib&eacute;r&eacute;s de ce monstre&hellip;",
-		"Alors que vous vous appr&ecirc;tez &agrave; ouvrir la porte pour sortir,", 
-		"vous entendez rire derri&egrave;re vous&hellip;"
+		"boss3-texte-1",
+		"boss3-texte-2",
+		"boss3-texte-3",
+		"boss3-texte-4", 
+		"boss3-texte-5"
 	],
 	"actions" : [
 		{
-			"name" : "Continuer",
+			"name" : "continue",
 			"action" : [
 				{"key" : "go", "params" : ["boss4"]}
 			]
@@ -2394,15 +2394,15 @@ define(
 },
 "boss4" : {
 	"textes" : [
-		"Une voix caverneuse r&eacute;sonne dans la pi&egrave;ce :",
-		"&laquo; Hahaha ! Tu pensais vraiment me battre ainsi ?! &raquo;",
-		"Une dalle de la pi&egrave;ce vole vers vous et s&rsquo;&eacute;crase sur le mur.",
-		"&laquo; Tu n&rsquo;as fait que me lib&eacute;rer, pauvre mortel ! &raquo;", 
-		"Les dalles dansent dans la salle et un tourbillon se forme dans le puits."
+		"boss4-texte-1",
+		"boss4-texte-2",
+		"boss4-texte-3",
+		"boss4-texte-4", 
+		"boss4-texte-5"
 	],
 	"actions" : [
 		{
-			"name" : "Continuer",
+			"name" : "continue",
 			"action" : [
 				{"key" : "go", "params" : ["boss5"]}
 			]
@@ -2411,12 +2411,12 @@ define(
 },
 "boss5" : {
 	"textes" : [
-		"&laquo; Les enfants sont &agrave; moi ! Ils sont si faciles &agrave; manipuler, &agrave; torturer&hellip; &raquo;",
-		"Le tourbillon grandit et sort violemment du puits pour s&rsquo;&eacute;craser sur le cadavre du vieux.",
-		"&laquo; Ils sont mon arm&eacute;e ! Tu n&rsquo;es pas en mesure de nous arr&ecirc;ter ! &raquo;",
-		"Le corps du vieillard se rel&egrave;ve et vole dans l&rsquo;air comme une marionnette.", 
-		"&laquo; Maintenant, observe ta fin ! &raquo;",
-		"Le <span key='liche'>vieux</span> se redresse d&rsquo;un coup et se jette sur vous avec agilit&eacute; !"
+		"boss5-texte-1",
+		"boss5-texte-2",
+		"boss5-texte-3",
+		"boss5-texte-4", 
+		"boss5-texte-5",
+		"boss5-texte-6"
 	],
 	"actions" : [
 		{
@@ -2429,16 +2429,16 @@ define(
 },
 "boss6" : {
 	"textes" : [
-		"Vous exterminez ce d&eacute;mon sans remords !",
-		"Son &acirc;me s&rsquo;envole dans la pi&egrave;ce, emportant avec elle le liquide vert inf&acirc;me.",
-		"Mais&hellip; Personne ne le saura jamais&hellip;",
-		"Vous, pauvre aventurier, avez sauv&eacute; le village et certainement le monde.", 
-		"Avec noblesse, vous vous retournez et partez vers de nouvelles aventures.",
-		"Peut-&ecirc;tre d&rsquo;autres qu&ecirc;tes valent-elles la peine d&rsquo;&ecirc;tre v&eacute;cues&hellip;"
+		"boss6-texte-1",
+		"boss6-texte-2",
+		"boss6-texte-3",
+		"boss6-texte-4", 
+		"boss6-texte-5",
+		"boss6-texte-6"
 	],
 	"actions" : [
 		{
-			"name" : "Terminer",
+			"name" : "terminer",
 			"action" : [
 				{"key" : "go", "params" : ["gagne"]}
 			]

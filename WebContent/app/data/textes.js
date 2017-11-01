@@ -821,6 +821,14 @@ define(["jquery"], function($){
                 fr : "Aller &agrave; droite",
                 en : "Go to the right"
             },
+            "go-face" : {
+            	fr : "Aller en face",
+            	en : "Go in front"
+            },
+            "revenir-pas" : {
+            	fr : "Revenir sur vos pas",
+            	en : "Retrace your steps"
+            },
             
             "nidGauche-texte-1" : {
                 fr : "La lumiére semble faiblir davantage, mais vous distinguez au loin une faible lueur.",
@@ -1816,6 +1824,843 @@ define(["jquery"], function($){
             	fr : "La porte est grande ouverte et &agrave; moiti&eacute; explos&eacute;e.",
             	en : "The door is wide open and half blown open."
             },
+
+            "necroTrou-texte-1" : {
+            	fr : "Vous contournez le grand b&acirc;timent quand,",
+            	en : "You bypass the large building when,"
+            },
+            "necroTrou-texte-2" : {
+            	fr : "&agrave; un tournant, vous tombez sur un mur en ruine.",
+            	en : "at a turning point, you fall on a ruined wall."
+            },
+            "necroTrou-texte-3" : {
+            	fr : "Un gros trou permet de p&eacute;netrer dans une pi&egrave;ce sombre.",
+            	en : "A large hole makes it possible to penetrate into a dark room."
+            },
+
+            "necroS3-texte-1" : {
+            	fr : "Vous p&eacute;netrez dans une vieille salle en ruine.",
+            	en : "You enter into an old, ruined room."
+            },
+            "necroS3-texte-2" : {
+            	fr : "Apparement, elle servait de biblioth&egrave;que de fortune.",
+            	en : "Apparently, it was used as a makeshift library."
+            },
+            "necroS3-texte-3" : {
+            	fr : "Vous d&eacute;couvrez de nombreux ouvrages et parchemins dispers&eacute;s un peu partout sur le sol.",
+            	en : "You will discover many books and scrolls scattered all over the ground."
+            },
+            "necroS3-texte-4" : {
+            	fr : "Une porte permet d&rsquo;acc&eacute;der &agrave; une autre partie du b&acirc;timent.",
+            	en : "A door gives access to another part of the building."
+            },
+
+            "ouvrir-porte" : {
+            	fr : "Ouvrir la porte",
+            	en : "Open the door"
+            },            
+            "lire-parchemin" : {
+            	fr : "Lire les parchemins",
+            	en : "Read Scrolls"
+            },
+            
+            "necroS3Fouille-texte-1" : {
+            	fr : "Il semblerait qu&rsquo;il s&rsquo;agisse de trait&eacute;s sur la magie.",
+            	en : "Looks like it's about drafts on magic."
+            },
+            "necroS3Fouille-texte-2" : {
+            	fr : "Beaucoup sont dans une langue incompréhensible,",
+            	en : "Many are in an incomprehensible language,"
+            },
+            "necroS3Fouille-texte-3" : {
+            	fr : "mais vous parvenez &agrave; comprendre certains mots.",
+            	en : "but you can understand some words."
+            },
+            "necroS3Fouille-texte-4" : {
+            	fr : "Cela parle d&rsquo;une fusion entre les &eacute;l&eacute;ments&hellip;",
+            	en : "It speaks of a fusion between elements&hellip;"
+            },
+            "necroS3Fouille-texte-5" : {
+            	fr : "Vous vous relevez et vous dirigez vers la porte.",
+            	en : "You get up and head for the door."
+            },
+
+            "necroPorte-texte-1" : {
+            	fr : "La porte est immense et semble ferm&eacute; &agrave; clef.",
+            	en : "The door is huge and seems to be locked."
+            },
+            "necroPorte-texte-2" : {
+            	fr : "Vous avez beau forcer, vous n&rsquo;arrivez pas &agrave; la d&eacute;placer&hellip;",
+            	en : "No matter how hard you force, you can't move it&hellip;"
+            },
+
+            "necroS1Roi-texte-1" : {
+            	fr : "Vous p&eacute;n&eacute;trez prudemment dans la pi&egrave;ce.",
+            	en : "You enter the room carefully."
+            },
+            "necroS1Roi-texte-2" : {
+            	fr : "Deux cadavres de <span key='goule'>goules</span> gisent sur le sol et une tra&icirc;n&eacute;e de sang vert",
+            	en : "Two dead <span key='goule'>ghouls</span> lie on the ground and a green blood trail"
+            },
+            "necroS1Roi-texte-3" : {
+            	fr : "continue vers une seconde porte en face de vous&hellip;",
+            	en : "continues towards a second door in front of you&hellip;"
+            },
+
+            "fouiller-piece" : {
+            	fr : "Fouiller la pi&egrave;ce",
+            	en : "Search the room"
+            },
+            
+            "necroS1-texte-1" : {
+            	fr : "Vous p&eacute;n&eacute;trez dans une petite pi&egrave;ce vide.",
+            	en : "You enter a small empty room."
+            },
+            "necroS1-texte-2" : {
+            	fr : "Deux cadavres de <span key='goule'>goules</span> gisent sur le sol.",
+            	en : "Two dead <span key='goule'>ghouls</span> lie on the ground."
+            },
+
+            "necroS1Fight-texte-1" : {
+            	fr : "Deux <span key='goule'>goules</span> vous observent, le regard vitreux.",
+            	en : "Two <span key='goule'>ghouls</span> look at you, glassy eyes."
+            },
+
+            "necroS1Fight2-texte-1" : {
+            	fr : "Vous abattez ces larves !",
+            	en : "You're killing those larvae!"
+            },
+            "necroS1Fight2-texte-2" : {
+            	fr : "Elles ont failli vous d&eacute;coiffer&hellip;",
+            	en : "They almost blew your hair&hellip;"
+            },
+            "necroS1Fight2-texte-3" : {
+            	fr : "Il est temps de continuer !",
+            	en : "It's time to continue!"
+            },
+
+            "necroS1Fouille-texte-1" : {
+            	fr : "La salle est compl&egrave;tement vide hormis un petit paillasson",
+            	en : "The room is completely empty except for a doormat."
+            },
+            "necroS1Fouille-texte-2" : {
+            	fr : "devant l&rsquo;entr&eacute;e inscrit &laquo; HellCome &raquo;.",
+            	en : "in front of the entrance marked &laquo; HellCome &raquo;."
+            },
+            "necroS1Fouille-texte-3" : {
+            	fr : "En le soulevant, vous d&eacute;couvrez une petite <span key='clefS2'>clef</span>&hellip;",
+            	en : "By lifting it, you discover a small <span key='clefS2'>key</span>&hellip;"
+            },
+            "necroS1Fouille-texte-4" : {
+            	fr : "Vous la prenez et vous dirigez vers la porte&hellip;",
+            	en : "You take it and head for the door&hellip;"
+            },
+
+            "necroGSFight-texte-1" : {
+            	fr : "Vous p&eacute;n&eacute;trez dans une tr&egrave;s grande crypte.",
+            	en : "You enter a very large crypt."
+            },
+            "necroGSFight-texte-2" : {
+            	fr : "&Agrave; votre arriv&eacute;e, le gardien des lieux, une <span key='grosseGoule'>grosse goule</span> se dirige vers vous.",
+            	en : "On your arrival, the caretaker of the place, a <span key='grosseGoule'>big ghoul</span> is heading towards you."
+            },
+            "necroGSFight-texte-3" : {
+            	fr : "Sur le c&ocirc;t&eacute;, deux <span key='squelette'>squelettes</span> sortent lentement de leurs cercueils&hellip;",
+            	en : "On the side, two <span key='squelette'>skeletons</span> slowly come out of their coffins&hellip;"
+            },
+
+            "necroGSFight2-texte-1" : {
+            	fr : "Vous vous relevez p&eacute;niblement apr&egrave;s ce difficile combat.",
+            	en : "You stand up painfully after this difficult fight."
+            },
+            "necroGSFight2-texte-2" : {
+            	fr : "Encore sous le choc, vous observez la pi&egrave;ce autour de vous&hellip;",
+            	en : "Still in shock, you watch the room around you&hellip;"
+            },
+
+            "necroGSRoiFight-texte-1" : {
+            	fr : "Le <span key='roiAraigneeBlesse'>roi araign&eacute;e</span> est couch&eacute; au centre, inconscient, une <span key='grosseGoule'>grosse goule</span> morte dans la gueule&hellip;",
+            	en : "The <span key='roiAraigneeBlesse'>spider king</span> lies unconscious in the middle with a <span key='grosseGoule'>big dead ghoul</span> in his mouth&hellip;"
+            },
+
+            "necroGSRoiFight2-texte-1" : {
+            	fr : "Vous vous relevez p&eacute;niblement apr&egrave;s ce difficile combat et vous dirigez vers votre ami.",
+            	en : "You stand up painfully after this difficult fight and you are heading towards your friend."
+            },
+            "necroGSRoiFight2-texte-2" : {
+            	fr : "Le roi, &agrave; l&rsquo;agonie, vous exprime son dernier souhait :",
+            	en : "The king, in agony, expresses his last wish to you:"
+            },
+            "necroGSRoiFight2-texte-3" : {
+            	fr : "&laquo; Merci, noble aventurier. Je me meurs&hellip; Mais vous, vous pouvez encore sauver votre esp&egrave;ce.",
+            	en : "&laquo; Thank you, noble adventurer. I'm dying&hellip; But you can still save your species."
+            },
+            "necroGSRoiFight2-texte-4" : {
+            	fr : "Vengez-nous, combattez pour l&rsquo;araign&eacute;e ! &raquo;",
+            	en : "Revenge us, fight for the spider ! &raquo;"
+            },
+            "necroGSRoiFight2-texte-5" : {
+            	fr : "Avant de mourir, le roi s&rsquo;arrache un <span key='crocRoi'>croc</span> et le jette &agrave; vos pieds.",
+            	en : "Before he dies, the king tears off a <span key='crocRoi'>fang</span> and throws it at your feet."
+            },
+
+            "prendre-croc" : {
+            	fr : "Prendre le croc",
+            	en : "Take the fang"
+            },
+            "laisser-croc" : {
+            	fr : "Laisser le croc",
+            	en : "Leave the fang"
+            },
+            
+            "necroGSFight3Oui-texte-1" : {
+            	fr : "Vous prenez l&rsquo;arme en souvenir de votre ami.",
+            	en : "You take the fang as a souvenir of your friend."
+            },
+            "necroGSFight3Oui-texte-2" : {
+            	fr : "Elle fera certainement une alli&eacute;e pr&eacute;cieuse !",
+            	en : "It will certainly make a valuable ally!"
+            },
+
+            "necroGSFight3Non-texte-1" : {
+            	fr : "Vous laissez l&rsquo;arme devant votre ami.",
+            	en : "You leave the fang in front of your friend."
+            },
+            "necroGSFight3Non-texte-2" : {
+            	fr : "Esp&eacute;rant qu&rsquo;elle l&rsquo;accompagne dans l&rsquo;au-del&agrave;.",
+            	en : "Hoping that she will accompany him to the afterlife."
+            },
+
+            "necroGS-texte-1" : {
+            	fr : "Vous vous trouvez dans une gigantesque salle aux allures de crypte.",
+            	en : "You are in a gigantic room looking like a crypt."
+            },
+            "necroGS-texte-2" : {
+            	fr : "Quelques cercueils sont &eacute;parpill&eacute;s un peu partout.",
+            	en : "Some coffins are scattered all over the place."
+            },
+            "necroGS-texte-3" : {
+            	fr : "Vous remarquez trois portes : &agrave; gauche, en face et &agrave; droite&hellip;",
+            	en : "You notice three doors: on the left, in front of you and on the right&hellip;"
+            },
+
+            "fouiller-cercueil" : {
+            	fr : "Fouiller les cercueils",
+            	en : "Searching coffins"
+            },
+            "fouiller-salle" : {
+            	fr : "Fouiller la salle",
+            	en : "Search the room"
+            },
+            
+            "necroGSFouilleCercueil-texte-1" : {
+            	fr : "Avec d&eacute;go&ucirc;t, vous fouillez les cercueils.",
+            	en : "Disgustingly, you search the coffins."
+            },
+            "necroGSFouilleCercueil-texte-2" : {
+            	fr : "Les deux premiers sont vides, mais dans le troisi&eacute;me,",
+            	en : "The first two are empty, but in the third,"
+            },
+            "necroGSFouilleCercueil-texte-3" : {
+            	fr : "vous apercevez une lueur jaune sous un tas d&rsquo;os&hellip;",
+            	en : "you see a yellow glow under a pile of bones&hellip;"
+            },
+            
+            "necroGSFouilleCercueil2-texte-1" : {
+            	fr : "Vous saisissez un authentique <span key='elixir'>&eacute;lixir</span> !",
+            	en : "You grasp an authentic <span key='elixir'>elixir</span>!"
+            },
+            "necroGSFouilleCercueil2-texte-2" : {
+            	fr : "Malheureusement, vous n&rsquo;&ecirc;tes pas le seul sur le coup&hellip;",
+            	en : "Unfortunately, you're not the only one the case&hellip;"
+            },
+            "necroGSFouilleCercueil2-texte-3" : {
+            	fr : "Une main osseuse vous tient fermement le poignet.",
+            	en : "A bony hand holds your wrist firmly."
+            },
+            "necroGSFouilleCercueil2-texte-4" : {
+            	fr : "Vous vous &eacute;cartez brusquement, emportant la main avec vous,",
+            	en : "You suddenly step aside, taking the hand with you,"
+            },
+            "necroGSFouilleCercueil2-texte-5" : {
+            	fr : "pendant qu&rsquo;un <span key='squeletteManchot'>squelette manchot</span> sort difficilement de son cercueil&hellip;",
+            	en : "while a one-armed skeleton hardly comes out of its coffin&hellip;"
+            },
+
+            "necroGSFouilleCercueil3-texte-1" : {
+            	fr : "Vous vous d&eacute;barassez facilement de votre adversaire.",
+            	en : "You easily kill off your opponent."
+            },
+            "necroGSFouilleCercueil3-texte-2" : {
+            	fr : "Il est temps de continuer votre aventure !",
+            	en : "It's time to continue your adventure!"
+            },
+
+            "necroGSFouilleSalle-texte-1" : {
+            	fr : "Il s&rsquo;agit d&rsquo;une grande salle ressemblant &agrave; s&rsquo;y m&eacute;prendre &agrave; une crypte.",
+            	en : "It is a large room that look like a crypt."
+            },
+            "necroGSFouilleSalle-texte-2" : {
+            	fr : "Les murs sont suintants d&rsquo;humidit&eacute; et un froid intense la parcourt.",
+            	en : "The walls are oozing with humidity and an intense cold runs through it."
+            },
+            "necroGSFouilleSalle-texte-3" : {
+            	fr : "Deux torches se trouvent accroch&eacute;es sur le mur du fond&hellip;",
+            	en : "Two torches are hung on the back wall&hellip;"
+            },
+
+            "voir-torche-gauche" : {
+            	fr : "Voir la torche &agrave; gauche",
+            	en : "See the torch on the left"
+            },
+            "voir-torche-droite" : {
+            	fr : "Voir la torche &agrave; droite",
+            	en : "See the torch on the right"
+            },
+            
+            "necroGSTorcheG-texte-1" : {
+            	fr : "Vous vous approchez de la torche sur le mur de gauche.",
+            	en : "You approach the torch on the left wall."
+            },
+            "necroGSTorcheG-texte-2" : {
+            	fr : "Celle-ci est &eacute;teinte.",
+            	en : "This one is off."
+            },
+            "necroGSTorcheG-texte-3" : {
+            	fr : "Vous ne trouvez pas qu&rsquo;il fait sombre ? Pourquoi ne pas l&rsquo;allumer ?",
+            	en : "Don't you think it's dark? Why don't you light it?"
+            },
+
+            "utiliser-bougie" : {
+            	fr : "Utiliser la bougie",
+            	en : "Use the candle"
+            },
+            "lancer-boule-feu" : {
+            	fr : "Lancer une boule de feu",
+            	en : "Throwing a fireball"
+            },
+            "impossible" : {
+            	fr : "Impossible",
+            	en : "Impossible"
+            },
+            
+            "necroGSTorcheD-texte-1" : {
+            	fr : "Vous vous approchez de la torche sur le mur de droite.",
+            	en : "You are approaching the torch on the right wall."
+            },
+            "necroGSTorcheD-texte-2" : {
+            	fr : "Vous ne trouvez pas qu&rsquo;il fait froid ? Pourquoi ne pas se rechauffer un peu ?",
+            	en : "Don't you think it's cold? Why don't we just warm up a little?"
+            },
+
+            "necroGSTorcheOK-texte-1" : {
+            	fr : "Vous allumez consciencieusement la torche en prenant soin de ne pas vous br&ucirc;ler.",
+            	en : "You light the torch conscientiously, taking care not to burn yourself."
+            },
+            "necroGSTorcheOK-texte-2" : {
+            	fr : "Soudain, vous entendez un syst&egrave;me d&rsquo;engrenages s&rsquo;enclencher&hellip;",
+            	en : "Suddenly, you hear a gear system engage&hellip;"
+            },
+            "necroGSTorcheOK-texte-3" : {
+            	fr : "Il semblerait qu&rsquo;une porte se soit ouverte quelque part.",
+            	en : "Looks like a door opened somewhere."
+            },
+
+            "necroGSTorcheKO-texte-1" : {
+            	fr : "Vous lancez votre plus belle <span key='bouleFeu'>boule de feu</span> !",
+            	en : "You throw your most beautiful <span key='bouleFeu'>fireball</span>!"
+            },
+            "necroGSTorcheKO-texte-2" : {
+            	fr : "Celle-ci &eacute;clate violemment sur le mur et explose la torche.",
+            	en : "This one bursts violently on the wall and explodes the torch."
+            },
+            "necroGSTorcheKO-texte-3" : {
+            	fr : "Il ne reste plus qu&rsquo;une vieille tige en souvenir.",
+            	en : "There's only one old stem left to remember."
+            },
+            "necroGSTorcheKO-texte-4" : {
+            	fr : "R.I.P la torche&hellip;",
+            	en : "R.I.P torch&hellip;"
+            },
+
+            "necroGSTorcheAllume-texte-1" : {
+            	fr : "La torche brille de mille feux !",
+            	en : "The torch shines brightly!"
+            },
+            "necroGSTorcheAllume-texte-2" : {
+            	fr : "Ne la regardez pas trop longtemps, &ccedil;a pourrait br&ucirc;ler !",
+            	en : "Don't look at her too long, it could burn!"
+            },
+
+            "necroGSTorcheExplose-texte-1" : {
+            	fr : "Une vieille tige carbonis&eacute;e se dresse fi&egrave;rement sur le mur.",
+            	en : "An old charred stem stands proudly on the wall."
+            },
+            "necroGSTorcheExplose-texte-2" : {
+            	fr : "Elle n&rsquo;avait pourtant rien fait de mal&hellip;",
+            	en : "She had done nothing wrong&hellip;"
+            },
+
+            "necroGSS2-texte-1" : {
+            	fr : "Vous faites face &agrave; une petite porte ferm&eacute;e &agrave; clef.",
+            	en : "You're facing a small locked door."
+            },
+            "necroGSS2-texte-2" : {
+            	fr : "Elle semble tr&egrave;s r&eacute;sistante&hellip;",
+            	en : "It seems very resistant&hellip;"
+            },
+            "necroGSS2-texte-3" : {
+            	fr : "En tendant l&rsquo;oreille, vous entendez des cris &agrave; l&rsquo;int&eacute;rieur,",
+            	en : "When you hold your ear out, you hear screams inside,"
+            },
+            "necroGSS2-texte-4" : {
+            	fr : "comme si une personne essayait de se d&eacute;battre.",
+            	en : "as if someone is trying to fight."
+            },
+
+            "utiliser-clef" : {
+            	fr : "Utiliser la clef",
+            	en : "Use the key"
+            },
+            "ouvrir" : {
+            	fr : "Ouvrir",
+            	en : "Open"
+            },
+            
+            "necroS2-texte-1" : {
+            	fr : "Vous ouvrez la porte et entrez doucement dans la pi&egrave;ce.",
+            	en : "You open the door and enter the room slowly."
+            },
+            "necroS2-texte-2" : {
+            	fr : "Les cris se font de plus en plus pressants et s&rsquo;arr&ecirc;tent d&rsquo;un coup.",
+            	en : "The screams are getting louder and louder and stop suddenly."
+            },
+            "necroS2-texte-3" : {
+            	fr : "Vous apercevez une ombre dans le fond de la pi&egrave;ce.",
+            	en : "You see a shadow in the background of the room."
+            },
+            "necroS2-texte-4" : {
+            	fr : "Elle vous parle d&rsquo;une voix enfantine :",
+            	en : "She speaks to you in a childish voice:"
+            },
+            "necroS2-texte-5" : {
+            	fr : "&laquo; Qui est l&agrave; ? J&rsquo;ai peur&hellip; J&rsquo;ai faim&hellip; &raquo;",
+            	en : "&laquo; Who's out there? I'm scared&hellip; I'm hungry&hellip; &raquo;"
+            },
+
+            "necroS2Retour-texte-1" : {
+            	fr : "L&rsquo;ombre dans le fond de la pi&egrave;ce vous regarde toujours sans bouger.",
+            	en : "The shadow in the background of the room always looks at you without moving."
+            },
+            "necroS2Retour-texte-2" : {
+            	fr : "Elle vous parle d&rsquo;une voix enfantine, calmement :",
+            	en : "She speaks to you in a childlike voice, calmly:"
+            },
+            "necroS2Retour-texte-3" : {
+            	fr : "&laquo; Te revoil&agrave; ? Tu viens jouer ? &raquo;",
+            	en : "&laquo; Are you back again? Are you coming to play? &raquo;"
+            },
+
+            "necroS22-texte-1" : {
+            	fr : "Vous vous approchez tout doucement pour ne pas l&rsquo;effrayer&hellip;",
+            	en : "You approach slowly so as not to frighten him&hellip;"
+            },
+            "necroS22-texte-2" : {
+            	fr : "La silhouette s&rsquo;enfonce un peu plus dans l&rsquo;obscurit&eacute;.",
+            	en : "The silhouette sinks a little deeper into the darkness."
+            },
+            "necroS22-texte-3" : {
+            	fr : "Vous entendez soudain une voix criarde :",
+            	en : "You suddenly hear a screaming voice:"
+            },
+            "necroS22-texte-4" : {
+            	fr : "&laquo; C&rsquo;est un m&eacute;chant ! Tue-le ! Tue-le, d&eacute;chet ! &raquo;",
+            	en : "&laquo; He's a bad guy! Kill him! Kill him, you trash! &raquo;"
+            },
+            "necroS22-texte-5" : {
+            	fr : "Puis, la voix enfantine :",
+            	en : "Then the childish voice:"
+            },
+            "necroS22-texte-6" : {
+            	fr : "&laquo; Non&hellip; Il ne faut pas&hellip; &raquo;",
+            	en : "&laquo; No&hellip; You mustn' t&hellip; &raquo;"
+            },
+
+            "parler" : {
+            	fr : "Parler",
+            	en : "Speak"
+            },
+            "approcher" : {
+            	fr : "Approcher",
+            	en : "Approach"
+            },
+            
+            "necroS2Parle-texte-1" : {
+            	fr : "Vous essayez de rassurer l&rsquo;enfant d&rsquo;une voix douce.",
+            	en : "You are trying to reassure the child with a soft voice."
+            },
+            "necroS2Parle-texte-2" : {
+            	fr : "Mais, c&rsquo;est &agrave; nouveau la voix criarde qui vous r&eacute;pond :",
+            	en : "But it is again the screaming voice that responds to you:"
+            },
+            "necroS2Parle-texte-3" : {
+            	fr : "&laquo; Silence ! Insecte inutile ! Il ne t&rsquo;&eacute;coutera pas !",
+            	en : "&laquo; Quiet! Insect useless! He won't listen to you!"
+            },
+            "necroS2Parle-texte-4" : {
+            	fr : "Maintenant, tue-le o&ugrave; tu souffriras de nouveau ! &raquo;",
+            	en : "Now kill him or you'll suffer again! &raquo;"
+            },
+            "necroS2Parle-texte-5" : {
+            	fr : "Vous voyez dans le noir deux points brillants&hellip;",
+            	en : "You see in the dark two bright spots&hellip;"
+            },
+
+            "necroS2Approche-texte-1" : {
+            	fr : "L&rsquo;ombre vous regarde fixement et s&rsquo;avance doucement vers vous.",
+            	en : "The shadow stares at you and slowly advances towards you."
+            },
+            "necroS2Approche-texte-2" : {
+            	fr : "La porte derri&egrave;re vous claque violemment et vous entendez l&rsquo;enfant rire&hellip;",
+            	en : "The back door slams you hard and you hear the child laughing&hellip;"
+            },
+            "necroS2Approche-texte-3" : {
+            	fr : "&laquo; Tu aurais d&ucirc; t&rsquo;enfuir tant que tu le pouvais&hellip; &raquo;",
+            	en : "&laquo; You should have run away while you could&hellip; &raquo;"
+            },
+            "necroS2Approche-texte-4" : {
+            	fr : "&Agrave; mesure que la forme s&rsquo;approche, vous la discernez mieux&hellip;",
+            	en : "As the shape approaches, you can see it better&hellip;"
+            },
+
+            "necroS2Enfant-texte-1" : {
+            	fr : "Un enfant s&rsquo;avance lentement, blanc comme un linge.",
+            	en : "A child advances slowly, white as a sheet."
+            },
+            "necroS2Enfant-texte-2" : {
+            	fr : "Ses bras sont anormalement longs et couverts de coupures.",
+            	en : "His arms are abnormally long and covered with cuts."
+            },
+            "necroS2Enfant-texte-3" : {
+            	fr : "De ses doigts sortent de grandes tiges de fer&hellip;",
+            	en : "From his fingers come out large rods of iron&hellip;"
+            },
+            "necroS2Enfant-texte-4" : {
+            	fr : "En avan&ccedil;ant, il se met &agrave; ricaner.",
+            	en : "As he moves on, he starts giggling."
+            },
+            "necroS2Enfant-texte-5" : {
+            	fr : "Ses dents, pointues comme les crocs d&rsquo;un loup, brillent d&rsquo;une couleur rouge&acirc;tre.",
+            	en : "Its teeth, pointed like a wolf's fangs, shine red."
+            },
+
+            "necroS2Enfant2-texte-1" : {
+            	fr : "Mais quelle &eacute;tait cette horreur ?!",
+            	en : "But what was that horror?!"
+            },
+            "necroS2Enfant2-texte-2" : {
+            	fr : "Les enfants captur&eacute;s servaient &agrave; fabriquer ce monstre ?!",
+            	en : "The captured children were used to make this monster?!"
+            },
+            "necroS2Enfant2-texte-3" : {
+            	fr : "Vous r&eacute;alisez soudain que d&rsquo;autres enfants doivent subir le m&ecirc;me sort &agrave; l&rsquo;heure qu&rsquo;il est !",
+            	en : "Suddenly you realize that other children have to suffer the same fate now!"
+            },
+            "necroS2Enfant2-texte-4" : {
+            	fr : "Il n&rsquo;est peut-&ecirc;tre pas trop tard !",
+            	en : "It may not be too late!"
+            },
+            "necroS2Enfant2-texte-5" : {
+            	fr : "Vous reprenez vos esprits et repartez &agrave; l&rsquo;aventure.",
+            	en : "You come to your senses and go back to adventure."
+            },
+
+            "necroS2Fouille-texte-1" : {
+            	fr : "La salle se compose simplement d&rsquo;une &eacute;tag&egrave;re remplie de vieux parchemins.",
+            	en : "The room is simply a shelf filled with old scrolls."
+            },
+            "necroS2Fouille-texte-2" : {
+            	fr : "En en lisant quelques-uns, vous d&eacute;couvrez qu&rsquo;il est possible, avec la formule ad&eacute;quate",
+            	en : "By reading a few of them, you will discover that it is possible, with the appropriate formula"
+            },
+            "necroS2Fouille-texte-3" : {
+            	fr : "et un peu de concentration, de lancer une terrible <span key='bouleFeu'>boule de feu</span> !",
+            	en : "and a little concentration, to throw a terrible <span key='bouleFeu'>fireball</span>!"
+            },
+            "necroS2Fouille-texte-4" : {
+            	fr : "Il est temps de retourner dans la grande salle ! L&rsquo;aventure n&rsquo;attend pas !",
+            	en : "It's time to go back to the big room! The adventure does not wait!"
+            },
+
+            "necroS2Clean-texte-1" : {
+            	fr : "La salle est vide&hellip; Seul reste au sol cette <span key='experience'>exp&eacute;rience</span> rat&eacute;e.",
+            	en : "The room is empty&hellip; Only this failed <span key='experience'>experiment</span> remains on the ground."
+            },
+            "necroS2Clean-texte-2" : {
+            	fr : "Vous vous demandez quel &ecirc;tre immonde a pu op&eacute;rer telle transformation&hellip;",
+            	en : "You're wondering what a disgusting thing it is to be could have done such a transformation&hellip;"
+            },
+
+            "necroCouloir-texte-1" : {
+            	fr : "Vous entrez dans un long couloir &eacute;clair&eacute; par de nombreuses torches.",
+            	en : "You enter a long corridor lit by many torches."
+            },
+            "necroCouloir-texte-2" : {
+            	fr : "Une ambiance calme et presque conviviale vous invite &agrave; avancer&hellip;",
+            	en : "A calm and almost convivial atmosphere invites you to move forward&hellip;"
+            },
+            "necroCouloir-texte-3" : {
+            	fr : "Une grande porte de ch&ecirc;ne vous fait face et deux portes plus petites",
+            	en : "A large oak door facing you and two smaller doors"
+            },
+            "necroCouloir-texte-4" : {
+            	fr : "se trouvent de chaque c&ocirc;t&eacute; du couloir&hellip;",
+            	en : "are on either side of the hallway&hellip;"
+            },
+
+            "necroSalleFerme-texte-1" : {
+            	fr : "Vous approchez de la porte, mais remarquez qu&rsquo;elle ne possede ni poign&eacute;e ni serrure&hellip;",
+            	en : "You approach the door, but notice that it has no handle or lock&hellip;"
+            },
+            "necroSalleFerme-texte-2" : {
+            	fr : "Pas tr&egrave;s pratique tout de m&ecirc;me.",
+            	en : "Not very practical all the same."
+            },
+            "necroSalleFerme-texte-3" : {
+            	fr : "Vous essayez de forcer un peu pour l&rsquo;ouvrir, mais impossible de la faire bouger.",
+            	en : "You try to force a little bit to open it, but you can't make it move."
+            },
+
+            "necroS4-texte-1" : {
+            	fr : "Vous entrez dans une pi&egrave;ce aux allures de prison.",
+            	en : "You walk into a room looking like a prison."
+            },
+            "necroS4-texte-2" : {
+            	fr : "De nombreux enfants sont agglutin&eacute;s dans un coin.",
+            	en : "Many children are clustered in a corner."
+            },
+            "necroS4-texte-3" : {
+            	fr : "Lorsqu&rsquo;ils s&rsquo;enfuient &agrave; votre demande, l&rsquo;un d&rsquo;eux vous tend une <span key='potionSante'>fiole rouge</span>.",
+            	en : "When they run away at your request, one of them hands you a <span key='potionSante'>red vial</span>."
+            },
+            "necroS4-texte-4" : {
+            	fr : "&Ccedil;a peut toujours aider&hellip;",
+            	en : "It can always help&hellip;"
+            },
+
+            "necroS5-texte-1" : {
+            	fr : "Vous entrez dans une belle biblioth&egrave;que pleine de livres anciens.",
+            	en : "You enter a beautiful library full of old books."
+            },
+            "necroS5-texte-2" : {
+            	fr : "Vous en lisez quelques-uns qui vous apprennent qu&rsquo;il est possible,",
+            	en : "You read a few of them that tell you that it is possible,"
+            },
+            "necroS5-texte-3" : {
+            	fr : "en se concentrant, de faire sortir de l&rsquo;&eacute;nergie de son corps afin de se <span key='soin'>soigner</span>.",
+            	en : "by concentrating, to take energy out of your body in order to <span key='soin'>heal</span> yourself."
+            },
+
+            "necroSB-texte-1" : {
+            	fr : "Plein de confiance, vous p&eacute;n&eacute;trez fi&egrave;rement dans la derni&egrave;re salle.",
+            	en : "Full of confidence, you proudly enter the last room."
+            },
+            "necroSB-texte-2" : {
+            	fr : "Celle-ci est ronde et centr&eacute;e sur un grand puits d&rsquo;eau verte.",
+            	en : "It is round and centred on a large well of green water."
+            },
+            "necroSB-texte-3" : {
+            	fr : "Un vieil homme y est pench&eacute;, pronon&ccedil;ant d&rsquo;&eacute;tranges incantations.",
+            	en : "An old man is bent over there, pronouncing strange incantations."
+            },
+
+            "tousser" : {
+            	fr : "Toussoter",
+            	en : "Give a discreet cough"
+            },
+            
+            "bossTousse-texte-1" : {
+            	fr : "Vous toussez l&eacute;g&egrave;rement pour attirer l&rsquo;attention du vieil homme,",
+            	en : "You're coughing lightly to get the old man's attention,"
+            },
+            "bossTousse-texte-2" : {
+            	fr : "mais &ecirc;tes soudain pris d&rsquo;une quinte plus forte.",
+            	en : "but are suddenly taken from a stronger coughing."
+            },
+            "bossTousse-texte-3" : {
+            	fr : "Le vieux, toujours pench&eacute;, n&rsquo;a pas boug&eacute; d&rsquo;un poil&hellip;",
+            	en : "The old man, always leaning, did not move a bit&hellip;"
+            },
+
+            "bossParle-texte-1" : {
+            	fr : "&laquo; Je suis venu pour les enfants ! O&ugrave; sont-ils ? &raquo;",
+            	en : "&laquo; I came for the children! Where are they? &raquo;"
+            },
+            "bossParle-texte-2" : {
+            	fr : "Le vieux se retourne alors lentement en souriant&hellip;",
+            	en : "The old man then turns slowly and smiles&hellip;"
+            },
+            "bossParle-texte-3" : {
+            	fr : "Lorsque vous voyez son visage, vous ne pouvez que r&eacute;prouver un fort d&eacute;go&ucirc;t :",
+            	en : "When you see his face, you can only condemn a strong disgust:"
+            },
+            "bossParle-texte-4" : {
+            	fr : "Lorsque vous voyez son visage, vous ne pouvez que r&eacute;prouver un fort d&eacute;go&ucirc;t :",
+            	en : "This one is covered with pustules and lets us glimpse its skull in several places."
+            },
+            "bossParle-texte-5" : {
+            	fr : "De nombreux vers circulent dans la peau de son cou et descendent sous son ample manteau.",
+            	en : "Many worms circulate in the skin of her neck and descend under her large mantle."
+            },
+
+            "bossAvance-texte-1" : {
+            	fr : "Vous avancez vers le vieil homme et posez une main sur son &eacute;paule.",
+            	en : "You walk towards the old man and put a hand on his shoulder."
+            },
+            "bossAvance-texte-2" : {
+            	fr : "Il se retourne alors lentement en souriant&hellip;",
+            	en : "He then turns slowly and smiles&hellip;"
+            },
+
+            "bossAvance2-texte-1" : {
+            	fr : "&laquo; Bienvenue, jeune homme&hellip; Je suis le ma&icirc;tre de ces lieux. &raquo;",
+            	en : "&laquo; Welcome, young man&hellip; I am the master of these places. &raquo;"
+            },
+            "bossAvance2-texte-2" : {
+            	fr : "Il vous regarde, mais ses yeux renvoient le vide.",
+            	en : "He looks at you, but his eyes send back the void."
+            },
+            "bossAvance2-texte-3" : {
+            	fr : "&laquo; Vous avez certainement vu mes cr&eacute;ations ?",
+            	en : "&laquo; You've probably seen my creations ?"
+            },
+            "bossAvance2-texte-4" : {
+            	fr : "Si ce n&rsquo;est pas le cas, laissez moi vous les pr&eacute;senter&hellip; &raquo;",
+            	en : "If not, let me introduce them to you&hellip; &raquo;"
+            },
+            "bossAvance2-texte-5" : {
+            	fr : "Il ricane doucement, alors que deux <span key='experience'>monstres</span> sortent du puits.",
+            	en : "He sneers softly, as two <span key='experience'>monsters</span> emerge from the well."
+            },
+            "bossAvance2-texte-6" : {
+            	fr : "Ils ressemblent &agrave; des enfants, mais n&rsquo;en ont plus que l&rsquo;apparence&hellip;",
+            	en : "They look like children, but they only have theirs appareance&hellip;"
+            },
+
+            "boss2-texte-1" : {
+            	fr : "Vous tuez &agrave; contrec&oelig;ur ces abominations&hellip;",
+            	en : "You grudgingly kill these abominations&hellip;"
+            },
+            "boss2-texte-2" : {
+            	fr : "&laquo; Nonnnn !! Qu&rsquo;avez-vous fait &agrave; mes perles ! Vous allez le regretter ! &raquo;",
+            	en : "&laquo; Nooooo!! What have you done to my pearls! You'll regret it! &raquo;"
+            },
+            "boss2-texte-3" : {
+            	fr : "Le <span key='necromancien'>vieux</span> s&rsquo;approche en titubant et tend les bras en avant.",
+            	en : "The <span key='necromancien'>old man</span> approaches staggeringly and stretches his arms forward."
+            },
+            "boss2-texte-4" : {
+            	fr : "Le combat risque d&rsquo;&ecirc;tre facile&hellip;",
+            	en : "The fight is likely to be easy&hellip;"
+            },
+
+            "boss3-texte-1" : {
+            	fr : "Le vieux avait de la ressource !",
+            	en : "The old man had resources!"
+            },
+            "boss3-texte-2" : {
+            	fr : "Vous finissez le combat en lui transper&ccedil;ant le c&oelig;ur, puis repartez.",
+            	en : "You finish the fight by piercing his heart, then going back."
+            },
+            "boss3-texte-3" : {
+            	fr : "Les enfants seront au moins lib&eacute;r&eacute;s de ce monstre&hellip;",
+            	en : "Children will at least be free from this monster&hellip;"
+            },
+            "boss3-texte-4" : {
+            	fr : "Alors que vous vous appr&ecirc;tez &agrave; ouvrir la porte pour sortir,",
+            	en : "As you're about to open the door to get out,"
+            },
+            "boss3-texte-5" : {
+            	fr : "vous entendez rire derri&egrave;re vous&hellip;",
+            	en : "You hear laughter behind you&hellip;"
+            },
+
+            "boss4-texte-1" : {
+            	fr : "Une voix caverneuse r&eacute;sonne dans la pi&egrave;ce :",
+            	en : "A cavernous voice resounds in the room:"
+            },
+            "boss4-texte-2" : {
+            	fr : "&laquo; Hahaha ! Tu pensais vraiment me battre ainsi ?! &raquo;",
+            	en : "&laquo; Hahaha! Did you really think you'd beat me like that?! &raquo;"
+            },
+            "boss4-texte-3" : {
+            	fr : "Une dalle de la pi&egrave;ce vole vers vous et s&rsquo;&eacute;crase sur le mur.",
+            	en : "A slab of the room flies towards you and crashes on the wall."
+            },
+            "boss4-texte-4" : {
+            	fr : "&laquo; Tu n&rsquo;as fait que me lib&eacute;rer, pauvre mortel ! &raquo;",
+            	en : "&laquo; All you did was set me free, you mortal bastard! &raquo;"
+            },
+            "boss4-texte-5" : {
+            	fr : "Les dalles dansent dans la salle et un tourbillon se forme dans le puits.",
+            	en : "The slabs dance in the room and a whirlpool is formed in the well."
+            },
+
+            "boss5-texte-1" : {
+            	fr : "&laquo; Les enfants sont &agrave; moi ! Ils sont si faciles &agrave; manipuler, &agrave; torturer&hellip; &raquo;",
+            	en : "&laquo; The children are mine! They are so easy to manipulate, to torture&hellip; &raquo;"
+            },
+            "boss5-texte-2" : {
+            	fr : "Le tourbillon grandit et sort violemment du puits pour s&rsquo;&eacute;craser sur le cadavre du vieux.",
+            	en : "The vortex grows and violently comes out of the well to crash on the old man's corpse."
+            },
+            "boss5-texte-3" : {
+            	fr : "&laquo; Ils sont mon arm&eacute;e ! Tu n&rsquo;es pas en mesure de nous arr&ecirc;ter ! &raquo;",
+            	en : "&laquo; They're my army! You can't stop us! &raquo;"
+            },
+            "boss5-texte-4" : {
+            	fr : "Le corps du vieillard se rel&egrave;ve et vole dans l&rsquo;air comme une marionnette.",
+            	en : "The old man's body lifts up and flies in the air like a puppet."
+            },
+            "boss5-texte-5" : {
+            	fr : "&laquo; Maintenant, observe ta fin ! &raquo;",
+            	en : "&laquo; Now, watch your end! &raquo;"
+            },
+            "boss5-texte-6" : {
+            	fr : "Le <span key='liche'>vieux</span> se redresse d&rsquo;un coup et se jette sur vous avec agilit&eacute; !",
+            	en : "The <span key='liche'>old man</span> straightens up suddenly and throws himself on you with agility!"
+            },
+
+            "boss6-texte-1" : {
+            	fr : "Vous exterminez ce d&eacute;mon sans remords !",
+            	en : "You exterminate this evil without remorse!"
+            },
+            "boss6-texte-2" : {
+            	fr : "Son &acirc;me s&rsquo;envole dans la pi&egrave;ce, emportant avec elle le liquide vert inf&acirc;me.",
+            	en : "His soul flies into the room, carrying with it the unfame green liquid."
+            },
+            "boss6-texte-3" : {
+            	fr : "Mais&hellip; Personne ne le saura jamais&hellip;",
+            	en : "But&hellip; Nobody will ever know&hellip;"
+            },
+            "boss6-texte-4" : {
+            	fr : "Vous, pauvre aventurier, avez sauv&eacute; le village et certainement le monde.",
+            	en : "You poor adventurer saved the village and certainly the world."
+            },
+            "boss6-texte-5" : {
+            	fr : "Avec noblesse, vous vous retournez et partez vers de nouvelles aventures.",
+            	en : "With nobility, you turn around and set off on new adventures."
+            },
+            "boss6-texte-6" : {
+            	fr : "Peut-&ecirc;tre d&rsquo;autres qu&ecirc;tes valent-elles la peine d&rsquo;&ecirc;tre v&eacute;cues&hellip;",
+            	en : "Perhaps other quests are worth living&hellip;"
+            },
+
+            "terminer" : {
+            	fr : "Terminer",
+            	en : "Finish"
+            },
+
             
 	};
 	
