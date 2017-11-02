@@ -40,7 +40,7 @@ function($, _, Utils, page, Save, HistoireView, CombatView, GlossaireView, Inven
 			this.inventaire = new InventaireView(this);
 			this.glossaire = new GlossaireView(this);
 			
-			this.save = new Save();
+			this.save = new Save(this);
 			if (!start) {
 				this.save.loadGame();
 			}

@@ -4,7 +4,7 @@ define(["app/utils/utils",
 function(Utils, Items) {
 	'use strict';
 
-	return function() {
+	return function(parent) {
 		this.data = {
 				"maxLife" : 100,
 				"currentLife" : 100,
@@ -33,6 +33,10 @@ function(Utils, Items) {
 				},
 				
 				"playSound" : true
+		};
+		
+		this.init = function(parent) {
+			this.parent = parent;
 		};
 		
 		this.saveGame = function() {
@@ -114,6 +118,7 @@ function(Utils, Items) {
 		};
 		this.upArgent = function(montant) {
 			this.data.argent += Math.round(montant);
+			this.parent.kongregateUtils.score("Gold", this.data.argent);
 			this.saveGame();
 		};
 		this.upMG = function(montant) {
@@ -124,6 +129,7 @@ function(Utils, Items) {
 		};
 		this.upLevel = function() {
 			this.data.niveau ++;
+			this.parent.kongregateUtils.score("Level", this.data.niveau);
 			this.data.xp -=  this.data.palier;
 			this.data.palier += 50;
 			
@@ -221,5 +227,7 @@ function(Utils, Items) {
 			}
 			return has;
 		};
+		
+		this.init(parent);
 	};
 });
