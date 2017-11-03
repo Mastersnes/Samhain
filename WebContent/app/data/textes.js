@@ -4,6 +4,14 @@ define(["jquery"], function($){
 	        /**
 	         * Menu
 	         */
+			"bienvenue" : {
+				fr : "Bienvenue",
+				en : "Wellcome"
+			},
+			"guest" : {
+				fr : "Invité",
+				en : "Guest"
+			},
 	        "newgame" : {
                 fr : "Nouveau Periple",
                 en : "New Journey"
