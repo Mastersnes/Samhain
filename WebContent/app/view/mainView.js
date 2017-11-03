@@ -73,14 +73,7 @@ function($, _, Utils, Kongregate, Mediatheque, Textes, page, GameView, CreditVie
 			});
 			
 			$("#login").click(function() {
-				that.kongregate.services.addEventListener('login', function(){
-	            	console.log('Kongregate username changed to: ' + that.kongregate.services.getUsername());
-	            	$(".username").html(that.kongregate.services.getUsername());
-	            	if (!that.kongregate.services.isGuest()) {
-	            		$("#login").addClass("hidden");
-	            	}
-	            });
-				that.kongregate.services.showRegistrationBox();
+				that.kongregateUtils.login();
 			});
 		};
 		

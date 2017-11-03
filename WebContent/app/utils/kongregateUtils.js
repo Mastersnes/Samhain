@@ -36,6 +36,21 @@ define(["jquery", "kongregate"], function($){
 			this.kongregate.stats.submit(key, value);
 		};
 		
+		this.login = function() {
+			console.log("login");
+			if (!this.isLoad) return;
+			
+			var that = this;
+			this.kongregate.services.addEventListener('login', function(){
+            	console.log('Kongregate username changed to: ' + that.kongregate.services.getUsername());
+            	$(".username").html(that.kongregate.services.getUsername());
+            	if (!that.kongregate.services.isGuest()) {
+            		$("#login").addClass("hidden");
+            	}
+            });
+			this.kongregate.services.showRegistrationBox();
+		};
+		
 		this.init(Textes);
 	};
 });
