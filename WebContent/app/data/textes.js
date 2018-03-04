@@ -2678,7 +2678,7 @@ define(["jquery"], function($){
 				this.local = navigator.language || navigator.userLanguage;
 			}
 			var text = $.extend(true, {}, data[key]);
-			if (!text[this.local]) return key;
+			if (!text[this.local]) return text["en"];
 			else return text[this.local];
 		}
 	};
