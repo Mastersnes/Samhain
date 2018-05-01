@@ -6,7 +6,7 @@ define(["jquery"], function($){
 	         */
 			"bienvenue" : {
 				fr : "Bienvenue",
-				en : "Wellcome"
+				en : "Welcome"
 			},
 			"guest" : {
 				fr : "Invité",
@@ -2676,10 +2676,19 @@ define(["jquery"], function($){
 		get : function(key) {
 			if (!this.local) {
 				this.local = navigator.language || navigator.userLanguage;
+				if (this.local) {
+					this.local = this.local.toLowerCase();
+					if (this.local.indexOf("fr") > -1) this.local = "fr";
+					else if (this.local.indexOf("en") > -1) this.local = "en";
+				}else {
+					this.local = "en";
+				}
 			}
 			var text = $.extend(true, {}, data[key]);
-			if (!text[this.local]) return text["en"];
-			else return text[this.local];
+			
+			if (text[this.local]) return text[this.local]; 
+			else if (text.en) return text.en;
+			else return key;
 		}
 	};
 });
