@@ -437,7 +437,7 @@ a {
 	background-size: auto 100%;
 	
 	-webkit-transition: margin-top 1s;
-	transition: margin-top 1s;
+	transition: all 1s;
 	z-index: 99;
 }
 .corps > .choix > div:hover {
@@ -448,6 +448,7 @@ a {
 }
 .corps > .choix > div.used {
 	margin-top: 5%;
+	visibility: hidden;
 }
 .corps > .choix > div > .texte {
 	width: 90%;
