@@ -8,15 +8,17 @@ define(["jquery",
         "text!app/template/main.html",
         "app/view/gameView",
         "app/view/creditView",
-        "app/view/optionView"], 
-function($, _, Utils, Kongregate, Mediatheque, Textes, page, GameView, CreditView, OptionView) {
+        "app/view/optionView",
+        "app/manager/sceneManager"],
+function($, _, Utils, Kongregate, Mediatheque, Textes, page, GameView, CreditView, OptionView, SceneManager) {
 	'use strict';
 
 	return function() {
 		this.init = function() {
 			this.el = $("#app");
 			this.mediatheque = new Mediatheque();
-			
+			this.scene = new SceneManager(this);
+
 			this.kongregateUtils = new Kongregate(Textes);
 			
 			var that = this;
@@ -28,6 +30,7 @@ function($, _, Utils, Kongregate, Mediatheque, Textes, page, GameView, CreditVie
 			}else {
 				console.log("Pas sur kongregate !");
 				this.render();
+				this.scene.resize();
 			}
 		};
 
@@ -60,10 +63,10 @@ function($, _, Utils, Kongregate, Mediatheque, Textes, page, GameView, CreditVie
 		this.checkEvents = function() {
 			var that = this;
 			$("#new").click(function() {
-				new GameView(true, that.mediatheque, Textes, that.kongregateUtils);
+				new GameView(that, true, that.mediatheque, Textes, that.kongregateUtils);
 			});
 			$("#continue").click(function() {
-				new GameView(false, that.mediatheque, Textes, that.kongregateUtils);
+				new GameView(that, false, that.mediatheque, Textes, that.kongregateUtils);
 			});
 			$("#credits").click(function() {
 				that.credit.show();

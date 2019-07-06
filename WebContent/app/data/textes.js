@@ -668,12 +668,12 @@ define(["jquery"], function($){
             },
 
             "reposFouille-texte-1" : {
-                fr : "Berk ! Pourquoi fouiller une <span key='araignee'>araignée</span> ?",
-                en : "Berk! Why search a <span key='araignee'>spider</span>?"
+                fr : "Ravalant votre dégoût, vous vous décidez à fouiller les <span key='araignee'>araignée</span>.",
+                en : "Swallowing your disgust, you decide to search the <span key='araignee'>spider</span>."
             },
             "reposFouille-texte-2" : {
-                fr : "Vous espériez vraiment y trouver quelque chose ?",
-                en : "Did you really expect to find anything in it?"
+                fr : "Malheureusement, malgré tout votre courage, vous ne trouvez rien.",
+                en : "Unfortunately, despite all your courage, you can't find anything."
             },
 
             "reposExamine-texte-1" : {

@@ -1,16 +1,20 @@
-html {
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
 	height: 100vh;
-}
-body {
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-	min-height: 100vh;
 	overflow: hidden;
+	background-color: rgba(0,0,0,0);
+}
+body * {
+	background-color: rgba(0,0,0,0);
 }
 .hidden {
 	display: none;
+}
+
+#app {
+    background-color : black;
 }
 
 .text {
@@ -18,6 +22,14 @@ body {
 	font-size : 1.5em;
 	max-width: 100%;
 	word-wrap: break-word;
+}
+
+.scene {
+	position: relative !important;
+	width: 100%; height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
 }
 
 /**
@@ -56,7 +68,7 @@ body {
 .logo {
 	margin-top: 5%;
 	position: absolute;
-	width: 100vw;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -107,7 +119,7 @@ body {
 .popup {
 	width: 100vw;
 	height: 100vh;
-	position: relative;
+	position: absolute;
 	top: 0;
 	display: none;
 }
@@ -220,7 +232,7 @@ ul.popup-menu > li:hover {
 	background-color: none;
 	background: url("../img/glossaire.png") no-repeat;
 	background-size: 100% 100%;
-	width: 60%;
+	width: 95%;
 	height: 70%;
 	margin-left: auto;
 	margin-right: auto;
@@ -229,7 +241,7 @@ ul.popup-menu > li:hover {
 }
 .glossaire > .content > .texte {
 	position: absolute;
-	font-size: 1.7em;
+	font-size: 1.5em;
 	font-family: fantasy;
 	text-align: center;
 	padding-left: 5%;
@@ -237,7 +249,7 @@ ul.popup-menu > li:hover {
 	top: 6%;
 	width: 90%;
 	height: 85%;
-	overflow-y: auto;
+	overflow-y: hidden;
 }
 .glossaire > .content .texte p {
 	padding: 0;
@@ -320,7 +332,7 @@ ul.popup-menu > li:hover {
 	background-image: url("../img/piece.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	width: 10%;
+	width: 15%;
 	height: 100%;
 }
 .game > .header .argent .texte {
@@ -454,7 +466,7 @@ a {
 	width: 90%;
 	text-align: center;
 	font-family: fantasy;
-	font-size: 1.7em;
+	font-size: 1.3em;
 	color: #1b0202;
 	text-shadow: 1px 1px 0px #b70a0a;
 	
@@ -520,7 +532,7 @@ a {
 	margin-right: auto;
 	margin-top: 22%;
 	
-	font-size: 1.5em;
+	font-size: 1.2em;
     font-family: fantasy;
     text-align: center;
     word-wrap: break-word;

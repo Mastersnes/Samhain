@@ -18,8 +18,12 @@ function($, _, page, Glossaire, Item) {
 		 * Charge l'ecran de glossaire en fonction de la clef
 		 */
 		this.load = function(key) {
+			var that = this;
 			this.render(key);
-			this.el.show("slow");
+			$("#glossaire").show("slow", function() {
+			console.log("show complete")
+			    $("#glossaire .texte").css("overflow-y", "auto");
+			});
 		};
 		
 		this.render = function(key) {
@@ -34,13 +38,14 @@ function($, _, page, Glossaire, Item) {
 			
 			_.templateSettings.variable = "data";
 			var template = _.template(page);
-			this.el.html(template(data));
+			$("#glossaire").html(template(data));
 		};
 		
 		this.checkEvents = function() {
 			var that = this;
-			this.el.click(function() {
-				that.el.hide("slow");
+			$("#glossaire").click(function() {
+			    $("#glossaire .texte").css("overflow-y", "");
+				$("#glossaire").hide("slow");
 			});
 		};
 		

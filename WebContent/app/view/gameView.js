@@ -11,9 +11,11 @@ define(["jquery",
 function($, _, Utils, page, Save, HistoireView, CombatView, GlossaireView, InventaireView) {
 	'use strict';
 
-	return function(start, mediatheque, Textes, kongregateUtils) {
-		this.init = function(start, mediatheque, Textes, kongregateUtils) {
+	return function(parent, start, mediatheque, Textes, kongregateUtils) {
+		this.init = function(parent, start, mediatheque, Textes, kongregateUtils) {
 			this.el = $("#game");
+			this.parent = parent;
+			this.parent.scene.resize();
 			this.mediatheque = mediatheque;
 			this.kongregateUtils = kongregateUtils;
 			this.Textes = Textes;
@@ -106,6 +108,6 @@ function($, _, Utils, page, Save, HistoireView, CombatView, GlossaireView, Inven
 			});
 		};
 		
-		this.init(start, mediatheque, Textes, kongregateUtils);
+		this.init(parent, start, mediatheque, Textes, kongregateUtils);
 	};
 });
