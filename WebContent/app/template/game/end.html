@@ -1,0 +1,21 @@
+<div class="end page">
+	<div class="scene">
+		<space class="back"></space>
+		<space class="front" type="1"></space>
+
+		<% if (!data.gagne) { %>
+		<div class="h-center v-center text">
+			<p><%=data.text.get("gameOver-1")%></p>
+			<p id="reload"><%=data.text.get("gameOver-2")%></p>
+			<p><%=data.text.get("gameOver-3")%></p>
+		</div>
+		<% } else { %>
+		<div class="h-center v-center text">
+			<p><%=data.text.get("gameFinish-1")%></p>
+			<p><%=data.text.get("gameFinish-2")%></p>
+			<p><%=data.text.get("gameFinish-3")%></p>
+			<p><%=data.text.get("gameFinish-4")%></p>
+		</div>
+		<% } %>
+	</div>
+</div>

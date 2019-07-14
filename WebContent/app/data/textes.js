@@ -1,73 +1,111 @@
 'use strict';
-define(["jquery"], function($){
+define(["jquery", "app/utils/utils"], function($, Utils){
 	var data = {
 	        /**
-	         * Menu
-	         */
-			"bienvenue" : {
-				fr : "Bienvenue",
-				en : "Welcome"
-			},
-			"guest" : {
-				fr : "Invité",
-				en : "Guest"
-			},
-	        "newgame" : {
-                fr : "Nouveau Periple",
-                en : "New Journey"
+	        * Menu
+	        **/
+	        "bienvenue" : {
+                fr : "Bienvenue",
+                en : "Welcome"
             },
-            "continue" : {
+            "guest" : {
+                fr : "Invité",
+                en : "Guest"
+            },
+            "chargement" : {
+                fr : "...Chargement...",
+                en : "...Loading..."
+            },
+            "use" : {
+                fr : "<span class='info' title='Et perdre'>Utiliser</span>",
+                en : "<span class='info' title='And lost'>Use</span>"
+            },
+            "clickToContinue" : {
+                fr : "- Cliquez pour continuer -",
+                en : "- Click to continue -"
+            },
+            "newGame" : {
+                fr : "Nouveau périple",
+                en : "New periple"
+            },
+            "kongregate" : {
+                fr : "Nos autres jeux sur:",
+                en : "Our other games on:"
+            },
+            "eraseSave" : {
+                fr : "Attention, ceci effacera votre partie enregistrée!",
+                en : "Warning, this will erase your registered save!"
+            },
+            "continuerButton" : {
                 fr : "Continuer",
                 en : "Continue"
             },
-            "option" : {
-                fr : "Option",
-                en : "Option"
+            "cancelButton" : {
+                fr : "Annuler",
+                en : "Cancel"
+            },
+            "loadGame" : {
+                fr : "Continuer",
+                en : "Continue"
+            },
+            "options" : {
+                fr : "Options",
+                en : "Options"
+            },
+            "langage" : {
+                fr : "Langage :",
+                en : "Language :"
+            },
+            "fullscreen" : {
+                fr : "Plein écran (appuyez sur echap pour revenir)",
+                en : "Fullscreen (press escape for return)"
             },
             "credits" : {
                 fr : "Crédits",
                 en : "Credits"
             },
             "illustration" : {
-                fr : "Illustrations",
-                en : "Illustrations"
+                fr : "Game artist",
+                en : "Game artist"
             },
             "developpement" : {
-                fr : "D&eacuteveloppement",
+                fr : "Développement",
                 en : "Development"
+            },
+            "musique" : {
+                fr : "Musiques",
+                en : "Musics"
             },
             "textes" : {
                 fr : "Textes",
                 en : "Texts"
             },
-	        "langage" : {
-	            fr : "Langage :",
-	            en : "Language :"
-	        },
-	        "fullscreen" : {
-	            fr : "Plein &eacutecran (appuyez sur echap pour revenir)",
-	            en : "Fullscreen (press escape for return)"
-	        },
-	        "copyright-licence" : {
-	            fr : "Cette oeuvre est sous license ",
-	            en : "This work is licensed by "
-	        },
-	        "copyright-donot" : {
-	            fr : "Merci de ne pas la modifier ou la partager de fa&ccedil;on commerciale sans notre accord.",
-	            en : "Please don't modify and share it commercially without our consent."
-	        },
-	        "followUs" : {
-	            fr : "Suivez-nous sur <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a> ou <a target='_blank' alt='Twitter' href='http://twitter.com/lesjeuxdebebel'>Twitter</a>.",
-	            en : "Follow us on <a target='_blank' alt='Facebook' href='https://www.facebook.com/lesjeuxdebebel/'>Facebook</a> or <a target='_blank' alt='Twitter' href='http://twitter.com/lesjeuxdebebel'>Twitter</a>."
-	        },
-	        "followUs2" : {
-	            fr : "Soutenez-nous sur <a target='_blank' alt='Tipeee' href='https://www.tipeee.com/les-jeux-de-bebel/'>Tipeee</a>.",
-	            en : "Support us on <a target='_blank' alt='Tipeee' href='https://www.tipeee.com/les-jeux-de-bebel/'>Tipeee</a>."
-	        },
-	        "followUs3" : {
-	            fr : "Nos autres jeux sur <a target='_blank' alt='Kongregate' href='http://www.kongregate.com/games/JeuxBebel'>Kongregate</a>.",
-	            en : "Our other games on <a target='_blank' alt='Kongregate' href='http://www.kongregate.com/games/JeuxBebel'>Kongregate</a>."
-	        },
+            "mute" : {
+                fr : "Mute",
+                en : "Mute"
+            },
+            "copyright-licence" : {
+                fr : "Copyright © Les Jeux de Bebel, 2018. Tous droits réservés.",
+                en : "Copyright © Les Jeux de Bebel, 2018. All rights reserved."
+            },
+
+            "muteMusic" : {
+                fr : "Couper la musique",
+                en : "Mute musics"
+            },
+            "demuteMusic" : {
+                fr : "Jouer la musique",
+                en : "Play musics"
+            },
+            "muteSound" : {
+                fr : "Couper les effets sonores",
+                en : "Mute sonor effects"
+            },
+            "demuteSound" : {
+                fr : "Jouer les effets sonores",
+                en : "Play sonor effects"
+            },
+
 	        /**
 	         * Jeu
 	         */
@@ -668,12 +706,12 @@ define(["jquery"], function($){
             },
 
             "reposFouille-texte-1" : {
-                fr : "Ravalant votre dégoût, vous vous décidez à fouiller les <span key='araignee'>araignée</span>.",
-                en : "Swallowing your disgust, you decide to search the <span key='araignee'>spider</span>."
+                fr : "Berk ! Pourquoi fouiller une <span key='araignee'>araignée</span> ?",
+                en : "Berk! Why search a <span key='araignee'>spider</span>?"
             },
             "reposFouille-texte-2" : {
-                fr : "Malheureusement, malgré tout votre courage, vous ne trouvez rien.",
-                en : "Unfortunately, despite all your courage, you can't find anything."
+                fr : "Vous espériez vraiment y trouver quelque chose ?",
+                en : "Did you really expect to find anything in it?"
             },
 
             "reposExamine-texte-1" : {
@@ -2668,27 +2706,44 @@ define(["jquery"], function($){
 	};
 	
 	return {
-		local : null,
-		
-		/**
-		* Permet d'appeler un WS
-		**/
-		get : function(key) {
-			if (!this.local) {
-				this.local = navigator.language || navigator.userLanguage;
-				if (this.local) {
-					this.local = this.local.toLowerCase();
-					if (this.local.indexOf("fr") > -1) this.local = "fr";
-					else if (this.local.indexOf("en") > -1) this.local = "en";
-				}else {
-					this.local = "en";
-				}
-			}
-			var text = $.extend(true, {}, data[key]);
-			
-			if (text[this.local]) return text[this.local]; 
-			else if (text.en) return text.en;
-			else return key;
-		}
-	};
+        local : null,
+
+        /**
+        * Permet d'appeler un WS
+        **/
+        get : function(key) {
+            if (!this.local) {
+                this.local = navigator.language || navigator.userLanguage;
+                if (this.local) {
+                    this.local = this.local.toLowerCase();
+                    if (this.local.indexOf("fr") > -1) this.local = "fr";
+                    else if (this.local.indexOf("en") > -1) this.local = "en";
+                }else {
+                    this.local = "en";
+                }
+            }
+
+            var text = data[key];
+            if (!text) return key;
+
+            if (text[this.local]) return text[this.local];
+            else if (text.en) return text.en;
+            else return key;
+        },
+
+        /**
+        * Permet de charger le language en session
+        **/
+        loadLanguage : function() {
+            var sessionLanguage = window.localStorage.getItem("bebelLanguage");
+            if (sessionLanguage) this.local = sessionLanguage;
+        },
+
+        /**
+        * Permet de modifier le language en session
+        **/
+        setLanguage : function(newLanguage) {
+            window.localStorage.setItem("bebelLanguage", newLanguage);
+        }
+    };
 });

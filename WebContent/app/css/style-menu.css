@@ -1,0 +1,224 @@
+/**
+* Kongregate
+**/
+.username {
+	position: absolute;
+	top: 1%;
+	right: 2%;
+}
+
+/**
+* Menu
+**/
+.bebel {
+	z-index : 10000;
+	background-color : white;
+	background-image: url("../img/menu/bebel.png");
+	background-repeat: no-repeat;
+	background-size: 50% 50%;
+	background-position: 50% 50%;
+}
+.bebel .text, .text#loading {
+	position: absolute;
+	text-align: center;
+	top: 75%;
+	cursor: pointer;
+	width: 100%;
+}
+.bebel .text#starting {
+	display: none;
+}
+
+fullscreen {
+	z-index: 10;
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	right: 1%; bottom: 1%;
+	width: 3%; height: 4%;
+	background-image: url("../img/game/interface/bouton/fullscreen.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+fullscreen.exit {
+	background-image: url("../img/game/interface/bouton/exit-fullscreen.png") !important;
+}
+
+/**
+* Menu
+**/
+.menu-page {
+	background-color: #060606;
+}
+.menu-page .scene {
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("../img/game/interface/background.jpg");
+}
+.menu-cadre {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.menu-cadre logo {
+	position: absolute;
+    display: block;
+    width: 40%; height: 40%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("../img/menu/logo.png");
+    left: -8%; top: -12%;
+}
+
+.menu-cadre boutons {
+	position: absolute;
+	display: block;
+	left: 10%; top: 46%;
+	width: 100%; height: 7%;
+}
+
+.menu-cadre bouton {
+	position: relative;
+	display: inline-block;
+	width: 20%; height: 100%;
+	cursor: pointer;
+}
+.menu-cadre cadre {
+	display: block;
+	position: absolute;
+	left: 0; top: 0;
+	width: 100%; height: 100%;
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("../img/menu/carre haut.png");
+}
+.menu-cadre text {
+    position: absolute;
+	display: block;
+    left: 0; top: 40%;
+    font-size: 2vh;
+    color: white;
+    text-align: center;
+    width: 100%; height: 100%;
+}
+
+ul.popup-menu {
+	display: block;
+}
+ul.popup-menu > li {
+	display: block;
+	text-align: center;
+	
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+ul.popup-menu > li {
+	cursor: pointer;
+	
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	
+	position: relative;
+	
+	-webkit-transition: background 2s;
+	transition: background 2s;
+}
+
+ul.popup-menu > li:hover {
+	color: #222 !important;
+	background: #f5f5f5;
+	background: linear-gradient(top, #f5f5f5 5%, #555 100%);
+	background: -webkit-linear-gradient(top, #f5f5f5 5%, #555 100%);
+	background: -moz-linear-gradient(top, #f5f5f5 5%, #555 100%);
+	background: -ms-linear-gradient(top, #f5f5f5 5%, #555 100%);
+	background: -o-linear-gradient(top, #f5f5f5 5%, #555 100%);
+}
+
+a {
+	color : #23527c;
+}
+a:hover {
+	color : #337ab7;
+}
+
+.flag-container {
+    height: 30vh;
+    width: 100%;
+}
+.flag {
+    cursor: pointer;
+    display: inline-block;
+    width: 35%; height: 90%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+.flag.fr {
+	background-image: url("../img/menu/flag/fr.jpg");
+}
+.flag.en {
+	background-image: url("../img/menu/flag/en.jpg");
+}
+
+.close-button {
+	cursor: pointer;
+	width: 6% !important; height: 7vh !important;
+	position: absolute !important;
+	opacity : 1 !important;
+	
+	background-image: url("../img/game/interface/croix/0.png");
+	background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+}
+.close-button:hover {
+	animation-name: close-turn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+	-webkit-animation-name: close-turn;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+	-moz-animation-name: close-turn;
+    -moz-animation-duration: 1s;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+	-o-animation-name: close-turn;
+    -o-animation-duration: 1s;
+    -o-animation-fill-mode: forwards;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: infinite;
+}
+
+@keyframes close-turn {
+    0%, 100% {background-image: url("../img/game/interface/croix/0.png");}
+    5% {background-image: url("../img/game/interface/croix/1.png");}
+    9% {background-image: url("../img/game/interface/croix/2.png");}
+    14% {background-image: url("../img/game/interface/croix/3.png");}
+    18% {background-image: url("../img/game/interface/croix/4.png");}
+    23% {background-image: url("../img/game/interface/croix/5.png");}
+    27% {background-image: url("../img/game/interface/croix/6.png");}
+    32% {background-image: url("../img/game/interface/croix/7.png");}
+    36% {background-image: url("../img/game/interface/croix/8.png");}
+    41% {background-image: url("../img/game/interface/croix/9.png");}
+    45% {background-image: url("../img/game/interface/croix/10.png");}
+    50% {background-image: url("../img/game/interface/croix/11.png");}
+    54% {background-image: url("../img/game/interface/croix/12.png");}
+    59% {background-image: url("../img/game/interface/croix/13.png");}
+    63% {background-image: url("../img/game/interface/croix/14.png");}
+    68% {background-image: url("../img/game/interface/croix/15.png");}
+    72% {background-image: url("../img/game/interface/croix/16.png");}
+    77% {background-image: url("../img/game/interface/croix/17.png");}
+    81% {background-image: url("../img/game/interface/croix/18.png");}
+    86% {background-image: url("../img/game/interface/croix/19.png");}
+    90% {background-image: url("../img/game/interface/croix/20.png");}
+    95% {background-image: url("../img/game/interface/croix/21.png");}
+}

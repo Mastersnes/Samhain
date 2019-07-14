@@ -1,0 +1,144 @@
+
+/**
+* UI
+**/
+.ui {
+    display : block;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 18%;
+}
+.ui montant {
+    cursor: default;
+    text-align: justify;
+}
+
+/**
+* fioles
+**/
+fiole {
+	position: absolute;
+	display: block;
+	width: 10%; height: 100%;
+}
+fiole picture {
+    position: relative;
+    display: block;
+    width: 100%; height: 100%;
+    background-repeat: no-repeat;
+    /* 100 * nombre de frames */
+    background-size: 500% 500%;
+}
+fiole picture[step="0"] {background-position: 0% 0%;}
+fiole picture[step="1"] {background-position: 25% 0%;}
+fiole picture[step="2"] {background-position: 50% 0%;}
+fiole picture[step="3"] {background-position: 75% 0%;}
+fiole picture[step="4"] {background-position: 100% 0%;}
+fiole picture[step="5"] {background-position: 0% 25%;}
+fiole picture[step="6"] {background-position: 25% 25%;}
+fiole picture[step="7"] {background-position: 50% 25%;}
+fiole picture[step="8"] {background-position: 75% 25%;}
+fiole picture[step="9"] {background-position: 100% 25%;}
+fiole picture[step="10"] {background-position: 0% 50%;}
+fiole picture[step="11"] {background-position: 25% 50%;}
+fiole picture[step="12"] {background-position: 50% 50%;}
+fiole picture[step="13"] {background-position: 75% 50%;}
+fiole picture[step="14"] {background-position: 100% 50%;}
+fiole picture[step="15"] {background-position: 0% 75%;}
+fiole picture[step="16"] {background-position: 25% 75%;}
+fiole picture[step="17"] {background-position: 50% 75%;}
+fiole picture[step="18"] {background-position: 75% 75%;}
+fiole picture[step="19"] {background-position: 100% 75%;}
+fiole picture[step="20"] {background-position: 0% 100%;}
+
+fiole montant {
+    position: absolute;
+    display: block;
+    color: black;
+    left: 16%; top: 53%;
+    transform: rotate(-60deg);
+    font-size: 2.5vh; font-weight: bold;
+}
+
+fiole.life {
+	top: 0; left: 0%;
+}
+fiole.life picture {
+    background-image: url("../img/game/interface/ui/life.png");
+}
+
+fiole.mana {
+	top: 0; left: 5%;
+}
+fiole.mana picture {
+    background-image: url("../img/game/interface/ui/mana.png");
+}
+
+/**
+* Argent
+**/
+gold {
+	position: absolute;
+	display: block;
+	width: 10%; height: 100%;
+	top: 0%; right: 0%;
+}
+gold picture {
+    position: relative;
+    display: block;
+    width: 100%; height: 100%;
+    background-repeat: no-repeat;
+    /* 100 * nombre de frames */
+    background-size: 600% 100%;
+    background-image: url("../img/game/interface/ui/bourse.png");
+}
+gold montant {
+    position: absolute;
+    display: block;
+    color: black;
+    left: 38%; top: 53%;
+    font-size: 2.5vh; font-weight: bold;
+}
+gold picture[step="0"] {background-position: 0% 0%;}
+gold picture[step="1"] {background-position: 20% 0%;}
+gold picture[step="2"] {background-position: 40% 0%;}
+gold picture[step="3"] {background-position: 60% 0%;}
+gold picture[step="4"] {background-position: 80% 0%;}
+gold picture[step="5"] {background-position: 100% 0%;}
+
+/**
+* Level
+**/
+level {
+	position: absolute;
+	display: block;
+	width: 15%; height: 70%;
+	top: 20%; left: 45%;
+}
+level picture {
+    position: relative;
+    display: block;
+    width: 100%; height: 100%;
+    background-repeat: no-repeat;
+    /* 100 * nombre de frames */
+    background-size: 1100% 100%;
+    background-image: url("../img/game/interface/ui/xp.png");
+}
+level montant {
+    position: absolute;
+    display: block;
+    color: black;
+    left: 25%; top: 0%;
+    font-size: 2.5vh; font-weight: bold;
+}
+level picture[step="0"] {background-position: 0% 0%;}
+level picture[step="1"] {background-position: 10% 0%;}
+level picture[step="2"] {background-position: 20% 0%;}
+level picture[step="3"] {background-position: 30% 0%;}
+level picture[step="4"] {background-position: 40% 0%;}
+level picture[step="5"] {background-position: 50% 0%;}
+level picture[step="6"] {background-position: 60% 0%;}
+level picture[step="7"] {background-position: 70% 0%;}
+level picture[step="8"] {background-position: 80% 0%;}
+level picture[step="9"] {background-position: 90% 0%;}
+level picture[step="10"] {background-position: 100% 0%;}

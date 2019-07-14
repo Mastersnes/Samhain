@@ -1,0 +1,42 @@
+<div class="page bebel">
+	<div id="starting" class="text"><%=data.text.get("clickToContinue")%></div>
+</div>
+
+<div class="page menu-page">
+    <div class="scene">
+		<div class="username text hidden"></div>
+		<div id="login" class="loginKongregate hidden"></div>
+	    <div class="menu-cadre">
+	    	<logo></logo>
+	    	<boutons>
+				<bouton id="new">
+					<cadre>
+						<text><%=data.text.get("newGame")%></text>
+					</cadre>
+				</bouton>
+				<bouton id="load">
+					<cadre>
+						<text><%=data.text.get("loadGame")%></text>
+					</cadre>
+				</bouton>
+				<bouton id="option">
+					<cadre>
+						<text><%=data.text.get("options")%></text>
+					</cadre>
+				</bouton>
+				<bouton id="credit">
+					<cadre>
+						<text><%=data.text.get("credits")%></text>
+					</cadre>
+				</bouton>
+			</boutons>
+	    </div>
+	    
+	    <div id="popups"></div>
+	    <div id="load-popup" class="popup"></div>
+		<div id="option-popup" class="popup"></div>
+		<div id="credit-popup" class="popup"></div>
+		<fullscreen></fullscreen>
+		<mute></mute>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+
+/**
+* Game
+**/
+.game {
+	background-color: black;
+}
+.scene {
+	position: relative;
+	width: 100%; height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+.game .scene {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("../img/game/interface/background.jpg");
+}
+
+.histoire, .combat {
+	position: absolute;
+	width: 100%; height: 82%;
+    left: 0; top: 18%;
+
+	transition: transform 1s ease-in-out;
+}
+.combat {
+	display: none;
+}

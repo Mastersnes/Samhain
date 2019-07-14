@@ -1,26 +1,64 @@
 <html>
 	<head>
-		<title>Samhain - Les jeux de bebel</title>
-		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-		<meta http-equiv="Cache-Control" content="no-cache" />
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<title>Samhain - Les jeux de Bebel</title>
+		<link rel="shortcut icon" href="app/img/favicon.jpg" />
+		<link rel="apple-touch-icon" href="app/img/favicon.jpg" />
+		<link rel="icon" type="image/ jpeg" href="app/img/favicon.jpg" />
+		<meta property="og:image" content="app/img/favicon.jpg" />
 		
-		<link rel="shortcut icon" href="app/img/favicon.png" type="image/png">
+		<meta name="title" content="Samhain - Les jeux de Bebel"/>
+		<meta property="og:title" content="Samhain - Les jeux de Bebel">
+		
+		<meta name="description" content="Samhain - Jeu d'aventure textuel gratuit sur navigateur."/>
+		<meta property="og:description" content="Samhain - Jeu d'aventure textuel gratuit sur navigateur.">
+		<meta name="keywords" content="Samhain; Les jeux de Bebel; Jeu; Game; Bebel; Independant; Indes; Fun; Nesztler; Aventure; Roling; Role; Halloween;"/>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta http-equiv="Cache-Control" content="private" />
+		<meta http-equiv="Expires" content="86400000" />
+		<meta http-equiv="Cache-Control" content="max-age=86400000" />
 		
 		<script src="lib/require.min.js"></script>
+		
+		<link rel="stylesheet" href="app/css/bootstrap.min.css">
 		<link rel="stylesheet" href="app/css/style.css">
+		<link rel="stylesheet" href="app/css/style-menu.css">
+		<link rel="stylesheet" href="app/css/style-popup.css">
+		<link rel="stylesheet" href="app/css/style-preload.css">
+		<link rel="stylesheet" href="app/css/style-game.css">
+		<link rel="stylesheet" href="app/css/style-ui.css">
+		<link rel="stylesheet" href="app/css/style-profil.css">
 	</head>
 	<body>
-		<div>
+		<div class="app-container bebel">
+			<div id="loading" class="text">...Loading...</div>
 			<div id="app"></div>
 			<script>
-				require(['app/config/config.js'], function () {
-					require(['app/view/mainView'], function (main) {
-						new main();
-					});
+			try {	
+			    require.config({
+	                waitSeconds : 60,
+	                baseUrl: "",
+	                paths: {
+	                    "jquery": "lib/jquery-3.1.1.min",
+	                    "underscore": "lib/underscore.min",
+	                    "text": "lib/text.min",
+	                    "sha": "lib/js-sha256.min",
+	                    "kongregate": "lib/kongregate"
+	                },
+	                urlArgs: "version=" + (new Date()).getTime()
+	            });
+			    
+				require(['app/view/menu/menuView'], function (main) {
+				    new main();
 				});
+			} catch (error) {
+				location.reload();
+			}
 			</script>
 		</div>
 		<a class="hidden" href="honeybot" title="Lien pour Robot">Lien pour Robot</a>
+		
+		<!-- Preload des images -->
+		<div class="preload">
+		</div>
 	</body>
 </html>

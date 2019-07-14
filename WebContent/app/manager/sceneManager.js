@@ -4,6 +4,8 @@ define(["jquery",
     return function(parent){
         this.init = function(parent) {
             this.parent = parent;
+            this.Textes = parent.Textes;
+            this.mediatheque = parent.mediatheque;
 
             var that = this;
             $(window).on('debouncedresize resize', function() {

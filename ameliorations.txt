@@ -1,0 +1,17 @@
+OK :
+	-> revoir les redimensionnement
+
+
+revoir interfesse : 
+	-> glossaire
+	-> inventaire
+bugs :
+	-> parler de la pomme au debut
+	-> un scroll apparait quand on ferme la feuille de glossaire
+	-> on sait pas comment fermer la feuille de glossaire
+	-> le son se lance avec du retard
+amelioration :
+	-> ajouter une indication de ciblage
+	-> mieux afficher les montant perdu ou gagné
+	-> ajouter une musique
+	-> ajouter une animation pour le blocage
