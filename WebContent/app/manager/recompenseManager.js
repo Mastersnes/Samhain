@@ -15,7 +15,7 @@ function($, _, Utils) {
 			this.saveManager = parent.saveManager;
 			this.mediatheque = parent.mediatheque;
 
-			this.complete = this.saveManager.load("successComplete");
+			this.complete = this.saveManager.load("success").successComplete;
 			this.newList = [];
 		};
 

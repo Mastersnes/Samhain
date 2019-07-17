@@ -172,7 +172,12 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 	};
 	
 	return {
-		get : function(key) {
+		get : function(param1, param2) {
+		    if (!param2) return this.getAll(param1);
+		    else return this.getByType(param1, param2);
+		},
+
+		getAll : function(key) {
 		    var item = this.getByType("arme", key);
 
 		    if (!item) item = this.getByType("bouclier", key);
@@ -191,7 +196,6 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 		        item = Utils.clone(items[key]);
 		        if (type != "ifObj") item.type = type;
 		    }
-
 		    return item;
 		}
 	};

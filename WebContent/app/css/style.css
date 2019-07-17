@@ -137,3 +137,11 @@ mute {
 mute.off {
 	background-image: url("../img/game/interface/bouton/mute-off.png");
 }
+
+/**
+* Ensemble des polices
+**/
+@font-face {
+    font-family: "Priscilla";
+    src: url("../fonts/priscilla.otf");
+}

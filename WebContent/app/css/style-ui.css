@@ -19,7 +19,6 @@
 fiole {
 	position: absolute;
 	display: block;
-	width: 10%; height: 100%;
 }
 fiole picture {
     position: relative;
@@ -27,51 +26,66 @@ fiole picture {
     width: 100%; height: 100%;
     background-repeat: no-repeat;
     /* 100 * nombre de frames */
-    background-size: 500% 500%;
+    background-size: 1100% 100%;
 }
-fiole picture[step="0"] {background-position: 0% 0%;}
-fiole picture[step="1"] {background-position: 25% 0%;}
-fiole picture[step="2"] {background-position: 50% 0%;}
-fiole picture[step="3"] {background-position: 75% 0%;}
-fiole picture[step="4"] {background-position: 100% 0%;}
-fiole picture[step="5"] {background-position: 0% 25%;}
-fiole picture[step="6"] {background-position: 25% 25%;}
-fiole picture[step="7"] {background-position: 50% 25%;}
-fiole picture[step="8"] {background-position: 75% 25%;}
-fiole picture[step="9"] {background-position: 100% 25%;}
-fiole picture[step="10"] {background-position: 0% 50%;}
-fiole picture[step="11"] {background-position: 25% 50%;}
-fiole picture[step="12"] {background-position: 50% 50%;}
-fiole picture[step="13"] {background-position: 75% 50%;}
-fiole picture[step="14"] {background-position: 100% 50%;}
-fiole picture[step="15"] {background-position: 0% 75%;}
-fiole picture[step="16"] {background-position: 25% 75%;}
-fiole picture[step="17"] {background-position: 50% 75%;}
-fiole picture[step="18"] {background-position: 75% 75%;}
-fiole picture[step="19"] {background-position: 100% 75%;}
-fiole picture[step="20"] {background-position: 0% 100%;}
+fiole picture[step="0"] {background-position: 100% 0%;}
+fiole picture[step="1"] {background-position: 90% 0%;}
+fiole picture[step="2"] {background-position: 80% 0%;}
+fiole picture[step="3"] {background-position: 70% 0%;}
+fiole picture[step="4"] {background-position: 60% 0%;}
+fiole picture[step="5"] {background-position: 50% 0%;}
+fiole picture[step="6"] {background-position: 40% 0%;}
+fiole picture[step="7"] {background-position: 30% 0%;}
+fiole picture[step="8"] {background-position: 20% 0%;}
+fiole picture[step="9"] {background-position: 10% 0%;}
+fiole picture[step="10"] {background-position: 0% 0%;}
 
 fiole montant {
     position: absolute;
     display: block;
-    color: black;
+    color: #DDDDDD;
     left: 16%; top: 53%;
-    transform: rotate(-60deg);
-    font-size: 2.5vh; font-weight: bold;
+    font-size: 1.7vh;
 }
 
 fiole.life {
-	top: 0; left: 0%;
+	top: 12%; left: 1.8%;
+	width: 13.4%; height: 100%;
 }
 fiole.life picture {
     background-image: url("../img/game/interface/ui/life.png");
 }
+fiole.life montant {
+    transform: rotate(-16deg);
+}
+fiole.life montant[digits="3"] {
+    left: 10.3%; top: 12%;
+}
+fiole.life montant[digits="2"] {
+    left: 13%; top: 11%;
+}
+fiole.life montant[digits="1"] {
+    left: 16%; top: 11%;
+}
 
 fiole.mana {
-	top: 0; left: 5%;
+	top: 19%; left: 10.6%;
+	width: 16%; height: 100%;
 }
 fiole.mana picture {
     background-image: url("../img/game/interface/ui/mana.png");
+}
+fiole.mana montant {
+    transform: rotate(19deg);
+}
+fiole.mana montant[digits="3"] {
+    left: 47.5%; top: 13%;
+}
+fiole.mana montant[digits="2"] {
+    left: 50%; top: 13%;
+}
+fiole.mana montant[digits="1"] {
+    left: 52%; top: 13%;
 }
 
 /**

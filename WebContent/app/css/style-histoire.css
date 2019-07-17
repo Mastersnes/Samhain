@@ -1,0 +1,66 @@
+
+/**
+* Histoire
+**/
+.histoire {
+    display : block;
+    position: absolute;
+    width: 100%; height: 82%;
+    left: 0; top: 18%;
+}
+.histoire texte, .histoire action {
+    cursor: default;
+    text-align: center;
+}
+
+.histoire storyContainer {
+	position: relative;
+	display: inline-block;
+	width: 100%; height: 76%;
+}
+.histoire storyContainer textes {
+    color: #DDDDDD;
+	position: absolute;
+	display: block;
+	width: 96%; height: 71%;
+	left: 2%; top: 15%;
+}
+.histoire storyContainer texte {
+	position: relative;
+	display: block;
+	font-size: 2.5vh;
+	font-family: monospace;
+}
+
+/**
+* Actions utilisés dans l'histoire et le combat
+**/
+actionsContainer {
+	position: relative;
+	display: inline-block;
+	width: 100%; height: 24%;
+}
+actionsContainer actions {
+    color: #BBBBBB;
+	position: absolute;
+	display: block;
+	left: 2%; top: 8%;
+	width: 96%; height: 80%;
+	text-align: center;
+}
+actionsContainer action {
+	cursor: pointer !important;
+	position: relative;
+	display: inline-block;
+	font-size: 2.5vh;
+	font-family: monospace;
+	font-weight: bold;
+	vertical-align: middle;
+    width: auto; height: 40%;
+    margin-left: 3%; margin-right: 3%;
+    border: 1px solid sandybrown;
+}
+
+actionsContainer action:hover {
+    color: #FFFFFF;
+}

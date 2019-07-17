@@ -22,11 +22,11 @@ function($, _, Utils) {
 			this.saveData = {
 			    "player" : {
 			        "life" : {
-			            "current" : 50,
+			            "current" : 100,
 			            "max" : 100
 			        },
 			        "mana" : {
-			            "current" : 5,
+			            "current" : 10,
 			            "max" : 10
 			        },
 
@@ -43,7 +43,7 @@ function($, _, Utils) {
 			            "bouclier" : ["bras", "bouclierBois"],
 			            "currentBouclier" : "bras",
 			            "magie" : ["bouleFeu", "soin"],
-			            "conso" : [],
+			            "conso" : ["pomme", "fromage", "venin", "potionSante"],
 			            "clef" : ["bougie"],
 			            "ifObj" : []
 			        },
@@ -67,6 +67,9 @@ function($, _, Utils) {
                     "Traitor" : false,
                     "TraitorSpider" : false,
                     "Treasure" : false
+                },
+                "gameOptions" : {
+                    "selectAuto" : true
                 }
             };
 		};
@@ -126,7 +129,6 @@ function($, _, Utils) {
                 if (success["Traitor"]) this.kongregateUtils.score("Traitor", 1);
                 if (success["TraitorSpider"]) this.kongregateUtils.score("TraitorSpider", 1);
                 if (success["Treasure"]) this.kongregateUtils.score("Treasure", 1);
-
 	        }
 		};
 

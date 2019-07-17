@@ -16,6 +16,7 @@ function($, _, Utils, LevelManager, Items) {
 
 			this.saveManager = parent.saveManager;
 			this.data = this.saveManager.load("player");
+			this.options = this.saveManager.load("gameOptions");
 
 			this.mediatheque = parent.mediatheque;
 			this.levelManager = new LevelManager(this);
@@ -45,7 +46,7 @@ function($, _, Utils, LevelManager, Items) {
 		        this.data.equipment.currentBouclier = "bras";
             }
 
-		    return Items.getByType("bouclier", currentBouclier);
+		    return Items.get("bouclier", currentBouclier);
 		};
 		this.arme = function() {
 		    var armes = this.data.equipment.arme;
@@ -56,7 +57,11 @@ function($, _, Utils, LevelManager, Items) {
                 this.data.equipment.currentArme = "poing";
             }
 
-            return Items.getByType("arme", currentArme);
+            return Items.get("arme", currentArme);
+		};
+		this.currentArme = function() {
+		    this.arme();
+		    return this.data.equipment.currentArme;
 		};
 		this.addEquipment = function(param1, param2) {
 		    var type, name;
@@ -70,8 +75,13 @@ function($, _, Utils, LevelManager, Items) {
 		        else type = "ifObj";
 		    }
 
-		    console.log("Ajout de l'item", type, name);
 		    this.data.equipment[type].push(name);
+
+		    // Si c'est une arme ou un bouclier et qu'il est meilleur, on le selectionne automatiquement
+		    if (this.options.selectAuto) {
+                if (type == "arme") this.selectBetterArme(name);
+                else if (type == "bouclier") this.selectBetterBouclier(name);
+            }
 		};
 		this.removeEquipment = function(param1, param2) {
 		    var type, name;
@@ -90,7 +100,6 @@ function($, _, Utils, LevelManager, Items) {
 
 		    var itemIndex = this.data.equipment[type].indexOf(name);
 		    if (itemIndex > -1) {
-		        console.log("Suppression de l'item", type, name);
 		        this.data.equipment[type].splice(itemIndex, 1);
 		        this.arme();
 		        this.bouclier();
@@ -102,12 +111,32 @@ function($, _, Utils, LevelManager, Items) {
 		        this.data.equipment.currentArme = name;
 		    } else console.log("Erreur selection - arme non possédée", name);
 		};
+		this.selectBetterArme = function(name) {
+            var arme = Items.get("arme", name);
+            if (!arme) return;
+            var currentArme = this.currentArme();
+
+            var moyenneArme = (arme.degats[0] + arme.degats[1]) / 2;
+            var moyenneCurrent = (currentArme.degats[0] + currentArme.degats[1]) / 2;
+
+            if (moyenneArme > moyenneCurrent) this.selectArme(name);
+        };
 		this.selectBouclier = function(name) {
 		    var boucliers = this.data.equipment.bouclier;
             if (Utils.contains(boucliers, name)) {
                 this.data.equipment.currentBouclier = name;
             } else console.log("Erreur selection - bouclier non possédé", name);
 		};
+		this.selectBetterBouclier = function(name) {
+            var bouclier = Items.get("bouclier", name);
+            if (!bouclier) return;
+            var currentBouclier = this.currentBouclier();
+
+            var moyenneBouclier = (bouclier.defense[0] + bouclier.defense[1]) / 2;
+            var moyenneCurrent = (currentBouclier.defense[0] + currentBouclier.defense[1]) / 2;
+
+            if (moyenneBouclier > moyenneCurrent) this.selectBouclier(name);
+        };
 		this.has = function(itemId) {
 		    if (Utils.contains(this.data.equipment.arme, itemId)) return "arme";
 		    if (Utils.contains(this.data.equipment.bouclier, itemId)) return "bouclier";
@@ -117,39 +146,86 @@ function($, _, Utils, LevelManager, Items) {
 		    if (Utils.contains(this.data.equipment.ifObj, itemId)) return "ifObj";
 		    return null;
 		};
+		this.usableMagie = function() {
+		    if (!this.get("unlockMana")) return [];
+
+		    var usable = [];
+		    var currentMana = this.data.mana.current;
+		    for (var i in this.data.equipment.magie) {
+		        var magieId = this.data.equipment.magie[i];
+		        var magie = Items.get("magie", magieId);
+		        if (currentMana >= magie.manaCost) usable.push(magieId);
+		    }
+		    return usable;
+		};
+		/**
+		* Renvoi un des objet de soin
+		**/
+		this.getRandSoin = function() {
+		    var soinItem = [];
+		    for (var i in this.data.equipment.conso) {
+		        var consoId = this.data.equipment.conso[i];
+		        var conso = Items.get("conso", consoId);
+		        if (conso && conso.vie[1] > 0) soinItem.push(consoId);
+		        else if (!conso) console.log("Erreur - le conso n'existe pas", consoId) ;
+		    }
+
+		    var randNumber = Utils.rand(0, soinItem.length);
+		    return soinItem[randNumber];
+		};
+
+		// Vrai si le joueur possede tout les objets
+		// Faux si le joueur ne possede pas au moins un des objets
+		this.hasAll = function(items) {
+		    var found = true;
+            for (var i in items) {
+                var item = items[i];
+                found = found && this.has(item);
+            }
+            return found;
+		};
+
+		// Vrai si le joueur ne possede aucun des objets
+		// Faux si le joueur possede au moins un des objets
+        this.hasNoOne = function(items) {
+            for (var i in items) {
+                var item = items[i];
+                if (this.has(item)) return false;
+            }
+            return true;
+        };
+
 		this.use = function(itemId, cible) {
 		    if (!cible) cible = this;
 		    var consos = this.data.equipment.conso;
 		    if (Utils.contains(consos, itemId)) {
-		        var item = Items.getByType("conso", itemId);
+		        var item = Items.get("conso", itemId);
 
-		        var degats = Utils.rand(item.degats[0], item.degats[1]);
-		        var vie = Utils.rand(item.vie[0], item.vie[1]);
-		        var mana = Utils.rand(item.mana[0], item.mana[1]);
+		        var degats = Utils.rand(item.degats[0], item.degats[1], true);
+		        var vie = Utils.rand(item.vie[0], item.vie[1], true);
+		        var mana = Utils.rand(item.mana[0], item.mana[1], true);
 
 		        cible.hurt(degats, true);
 		        cible.addLife(vie);
 		        cible.addMana(mana);
 
-                console.log("Utilisation de l'objet", itemId, cible);
 		        this.removeEquipment("conso", itemId);
 		    }else console.log("Erreur use - objet non possédé", itemId, cible);
 		};
 		this.spell = function(itemId, cible) {
+            if (!this.get("unlockMana")) return;
             if (!cible) cible = this;
             var magies = this.data.equipment.magie;
 
             if (Utils.contains(magies, itemId)) {
-                var magie = Items.getByType("magie", itemId);
+                var magie = Items.get("magie", itemId);
                 if (magie.manaCost <= this.get("mana.current")) {
-                    var degats = Utils.rand(magie.degats[0], magie.degats[1]);
-                    var vie = Utils.rand(magie.vie[0], magie.vie[1]);
+                    var degats = Utils.rand(magie.degats[0], magie.degats[1], true);
+                    var vie = Utils.rand(magie.vie[0], magie.vie[1], true);
 
                     cible.hurt(degats, true);
                     cible.addLife(vie);
                     cible.addMana(-magie.manaCost);
-
-                    console.log("Utilisation du sort", itemId, cible);
                 } else console.log("Erreur spell - pas assez de mana", magie, cible);
             }else console.log("Erreur spell - sort non possédé", itemId, cible);
         };
@@ -164,7 +240,7 @@ function($, _, Utils, LevelManager, Items) {
             var degatsMin = baseAttaque + arme.degats[0];
             var degatsMax = baseAttaque + arme.degats[1];
 
-            var degats = Utils.rand(degatsMin, degatsMax);
+            var degats = Utils.rand(degatsMin, degatsMax, true);
             if (degats < 0) degats = 0;
             cible.hurt(degats, true);
         };
@@ -178,7 +254,7 @@ function($, _, Utils, LevelManager, Items) {
                 var defenseMin = baseDefense + bouclier.defense[0];
                 var defenseMax = baseDefense + bouclier.defense[1];
 
-                degats -= Utils.rand(defenseMin, defenseMax);
+                degats -= Utils.rand(defenseMin, defenseMax, true);
 		    }
 
 		    if (degats < 0) degats = 0;
@@ -201,6 +277,11 @@ function($, _, Utils, LevelManager, Items) {
 		    if (this.data.mana.current < 0) this.data.mana.current = 0;
 		    if (this.data.mana.current > this.data.mana.max)
 		        this.data.mana.current = this.data.mana.max;
+		};
+		this.unlockMana = function(amount) {
+		    this.data.unlockMana = true;
+		    if (amount < 0) amount = 0;
+		    this.data.mana.max += amount;
 		};
 
         /**

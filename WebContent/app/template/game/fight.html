@@ -1,0 +1,26 @@
+<% var text = data.text %>
+<% var monsters = data.monsters %>
+
+<div>
+	<monstersContainer>
+		<monsters>
+			<% for (var i in monsters) { %>
+				<% var monster = monsters[i]; %>
+				<monster id="<%=i%>" class="<%=monster.name%>">
+					<life></life>
+					<name><%=monster.completeName()%></name>
+				</monster>
+			<% } %>
+		</monsters>
+	</monstersContainer>
+	<actionsContainer>
+		<actions>
+			<action></action>
+			<action></action>
+			<action></action>
+			<action></action>
+			<action></action>
+			<action></action>
+		</actions>
+	</actionsContainer>
+</div>

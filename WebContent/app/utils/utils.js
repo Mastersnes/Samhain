@@ -1,7 +1,7 @@
 'use strict';
 define(["jquery", "sha"], function($, sha){
 	return {
-		name : "bebelSamhain",
+		name : "bebelSamhainV2",
 		
 		/**
 		* Permet d'appeler un WS
@@ -26,8 +26,10 @@ define(["jquery", "sha"], function($, sha){
 	            }
 	        });
 		},
-		
-		rand : function(pMin, pMax) {
+
+		// Max non inclus
+		rand : function(pMin, pMax, maxInclude) {
+		  if (maxInclude) pMax++;
 		  var min = Math.ceil(pMin);
 		  var max = Math.floor(pMax);
 		  return Math.floor(Math.random() * (max - min)) + min;

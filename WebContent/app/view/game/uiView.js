@@ -28,12 +28,13 @@ define(["jquery",
 
         this.loop = function(game) {
             var life = this.player.get("life");
-            this.refresh("fiole.life", life.current, life.max, true, 21);
+            this.refresh("fiole.life", life.current, life.max, true, 11);
 
-            var mana = this.player.get("mana");
-            this.refresh("fiole.mana", mana.current, mana.max, true, 21);
-            if (this.player.get("unlockMana")) this.el.find("fiole.mana").fadeIn();
-            else this.el.find("fiole.mana").hide();
+            if (this.player.get("unlockMana")) {
+                var mana = this.player.get("mana");
+                this.el.find("fiole.mana").fadeIn()
+                this.refresh("fiole.mana", mana.current, mana.max, true, 11);
+            }else this.el.find("fiole.mana").hide();
 
             var gold = this.player.get("gold");
             this.refresh("gold", gold, 1000, false, 6);
@@ -47,11 +48,22 @@ define(["jquery",
         };
 
         this.refresh = function(id, current, max, wantPercent, stepNumber) {
+            if (!max) {
+                this.el.find(id).hide();
+                return;
+            }else this.el.find(id).fadeIn();
             stepNumber--;
 
-            var percent = Math.round(Utils.toPercent(current, max));
-            if (wantPercent) this.el.find(id + " montant").html(percent + "%");
-            else this.el.find(id + " montant").html(current);
+            var display = current;
+            if (wantPercent) {
+                display = Math.round(Utils.toPercent(current, max));
+                this.el.find(id + " montant").html(display + "%");
+            }
+            else this.el.find(id + " montant").html(display);
+
+            var digits = Math.floor(Math.log10(display) + 1);
+            if (display == 0) digits = 1;
+            this.el.find(id + " montant").attr("digits", digits);
 
             var step = Math.ceil((current * stepNumber) / max);
             if (step > stepNumber) step = stepNumber;
@@ -61,10 +73,10 @@ define(["jquery",
         this.makeEvents = function() {
             var that = this;
             this.el.find("fiole.life").click(function() {
-                that.player.achete("potionSante");
+                that.player.attaque(that.player);
             });
             this.el.find("fiole.mana").click(function() {
-                that.player.achete("elixir");
+                that.player.addMana(-1);
             });
             this.el.find("level").click(function() {
                 that.player.addXp(1);

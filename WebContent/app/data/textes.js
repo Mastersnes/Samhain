@@ -105,6 +105,14 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 fr : "Jouer les effets sonores",
                 en : "Play sonor effects"
             },
+            "selectAuto" : {
+                fr : "Selectionner automatiquement les meilleurs equipements",
+                en : "Select automaticaly the best equipments"
+            },
+            "deselectAuto" : {
+                fr : "Ne pas selectionner automatiquement les meilleurs equipements",
+                en : "Do not select automaticaly the best equipments"
+            },
 
 	        /**
 	         * Jeu

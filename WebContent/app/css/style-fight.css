@@ -1,0 +1,61 @@
+
+/**
+* Fight
+**/
+.fight {
+    display : block;
+    position: absolute;
+    width: 100%; height: 82%;
+    left: 0; top: 18%;
+}
+.fight monster, .fight action {
+    cursor: default;
+    text-align: center;
+}
+
+.fight monstersContainer {
+	position: relative;
+	display: inline-block;
+	width: 100%; height: 76%;
+}
+.fight monstersContainer monsters {
+    color: #DDDDDD;
+	position: absolute;
+	display: block;
+	width: 96%; height: 71%;
+	left: 0%; top: 18%;
+	text-align: center;
+}
+.fight monstersContainer monster {
+	position: relative;
+	display: inline-block;
+	font-size: 2.5vh;
+	font-family: "Priscilla";
+	text-align: center;
+
+	width: 14%; height: 48%;
+	margin-left: 1.2%; margin-right: 1.2%;
+
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.fight monster name {
+    position: absolute;
+    display: block;
+    width: 86%; height: auto;
+    left: 6%; top: 23%;
+    color: 000000;
+    font-size: 3.5vh;
+}
+
+.fight monster.araignee {
+    background-image: url("../img/game/monsters/araignee.png");
+}
+.fight monster.goule {
+    background-image: url("../img/game/monsters/goule.png");
+}
+.fight monster.villageois {
+    background-image: url("../img/game/monsters/villageois.png");
+}
+
+.fight

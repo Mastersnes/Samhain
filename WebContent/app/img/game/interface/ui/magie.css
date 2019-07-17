@@ -1,0 +1,25 @@
+/* -----------------------------------------------------
+   created with https://www.codeandweb.com/texturepacker 
+   -----------------------------------------------------
+   $TexturePacker:SmartUpdate:ddc3d8e1c4360cc233f0fb716ec06afd:6ba15b80c614cfbc9146e221bc3def30:a3ee3fb4ce75ad43eff7a0ca2d097427$
+   -----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(magie.png);}
+
+.frame0000 {width:168px; height:127px; background-position: -0px -0px}
+.frame0001 {width:168px; height:127px; background-position: -168px -0px}
+.frame0002 {width:168px; height:127px; background-position: -336px -0px}
+.frame0003 {width:168px; height:127px; background-position: -504px -0px}
+.frame0004 {width:168px; height:127px; background-position: -672px -0px}
+.frame0005 {width:168px; height:127px; background-position: -840px -0px}
+.frame0006 {width:168px; height:127px; background-position: -1008px -0px}
+.frame0007 {width:168px; height:127px; background-position: -1176px -0px}
+.frame0008 {width:168px; height:127px; background-position: -1344px -0px}
+.frame0009 {width:168px; height:127px; background-position: -1512px -0px}
+.frame0010 {width:168px; height:127px; background-position: -1680px -0px}
