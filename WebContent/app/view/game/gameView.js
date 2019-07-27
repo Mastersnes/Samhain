@@ -101,10 +101,6 @@ function($, _, Utils, PopupUtils, page,
 		    if (!this.endGame) {
     		    if (!this.pause) {
                     this.saveManager.saveInSession();
-                    
-//                    if (this.pointManager.gameOver()) {
-//                        this.gameOver();
-//                    }
                 }
                 var that = this;
                 setTimeout(function() {
@@ -121,10 +117,13 @@ function($, _, Utils, PopupUtils, page,
         	if (!this.endGame) {
     		    if (!this.pause) {
         		    this.uiView.loop(this);
+        		    this.fightView.loop(this);
     		    }
     		    
     		    setTimeout(function() {
-                    that.renderLoop();
+    		        if (!window.stopLoop) {
+                        that.renderLoop();
+                    }
                 }, 100);
         	}
         };

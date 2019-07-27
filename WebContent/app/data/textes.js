@@ -36,6 +36,10 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 fr : "Attention, ceci effacera votre partie enregistrée!",
                 en : "Warning, this will erase your registered save!"
             },
+            "continue" : {
+                fr : "Continuer",
+                en : "Continue"
+            },
             "continuerButton" : {
                 fr : "Continuer",
                 en : "Continue"
@@ -374,24 +378,24 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "Savant"
             },
             "fouFurieux-m" : {
-                fr : "Fou furieux",
-                en : "Raving lunatic"
+                fr : "Fou",
+                en : "Lunatic"
             },
             "fouFurieux-f" : {
-                fr : "Folle furieuse",
-                en : "Raving lunatic"
+                fr : "Folle",
+                en : "Lunatic"
             },
             "fragile" : {
                 fr : "Fragile",
                 en : "Frail"
             },
-            "pleunirchard-m" : {
-                fr : "Pleunirchard",
-                en : "Whiny"
+            "peureux-m" : {
+                fr : "Peureux",
+                en : "Fearful"
             },
-            "pleunirchard-f" : {
-                fr : "Pleunircharde",
-                en : "Whiny"
+            "peureux-f" : {
+                fr : "Peureuse",
+                en : "Fearful"
             },
             "pauvre" : {
                 fr : "Pauvre",
@@ -660,8 +664,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "Having finished your hard work a little sooner,"
             },
             "start-texte-4" : {
-                fr : "Vous décidez de vous reposer au pied d'un des géants feuillus.",
-                en : "You decide to rest at the foot of one of the deciduous giants."
+                fr : "Vous ramassez une pomme de votre panier et décidez de vous reposer au pied du géants feuillus.",
+                en : "You pick an apple from your basket and decide to rest at the foot of the leafy giants."
             },
 
             "suivant" : {
@@ -713,13 +717,22 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "Returns"
             },
 
-            "reposFouille-texte-1" : {
-                fr : "Berk ! Pourquoi fouiller une <span key='araignee'>araignée</span> ?",
-                en : "Berk! Why search a <span key='araignee'>spider</span>?"
+            "reposFouilleFail-texte-1" : {
+                fr : "Vous en fouillez une mais ne trouvez que des entrailles, Berk !",
+                en : "You search one but only find guts, Yuck!"
             },
-            "reposFouille-texte-2" : {
-                fr : "Vous espériez vraiment y trouver quelque chose ?",
-                en : "Did you really expect to find anything in it?"
+            "reposFouilleFail-texte-2" : {
+                fr : "J’espère que ce n'est pas ce que vous cherchiez... si ?",
+                en : "I hope that's not what you searched... is it?"
+            },
+
+            "reposFouilleSuccess-texte-1" : {
+                fr : "En remuant les entrailles vous découvrez une belle pomme !",
+                en : "By stirring the guts you discover a beautiful apple!"
+            },
+            "reposFouilleSuccess-texte-2" : {
+                fr : "Espérons que le rouge provienne bien de sa maturité...",
+                en : "Let's hope that the red comes from its maturity..."
             },
 
             "reposExamine-texte-1" : {

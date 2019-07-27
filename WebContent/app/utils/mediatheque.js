@@ -48,7 +48,6 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			if (!key) return;
 			if (!id) id = "";
 			if (!this.sounds[key + id]) {
-				console.log("Never pass!");
 				this.load(key, id, callback);
 			}
 			try {

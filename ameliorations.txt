@@ -1,17 +1,32 @@
-OK :
-	-> revoir les redimensionnement
+Ameliorations :
+****************
+-> General
+	-> Refonte du moteur (EN COURS)
+	-> Refonte graphique (EN COURS)
+	-> Ajout de musiques
+-> Interface
+	-> Ajout du glossaire
+	-> Ajout de l'inventaire
+-> Combat
+    -> Afficher la vie des monstres
+	-> Ajout d'un niveau de monstre
+	-> Affichage des degats et gain de vie
+	-> Afficher les attaques des monstres
+	-> Magie de monstres (empoisonnement, doubles attaques)
+	-> Buff et debuff (poison, brulure, rassasié, ...)
+-> Contenu
+	-> Ajout de la boutique
+	-> Ajout de la ville
+	-> Ajout de 3 quetes
+	-> Ajout du poste de garde (combats aleatoires en fonction du niveau)
+
+-> Bugs
+    ->
 
 
-revoir interfesse : 
-	-> glossaire
-	-> inventaire
-bugs :
-	-> parler de la pomme au debut
-	-> un scroll apparait quand on ferme la feuille de glossaire
-	-> on sait pas comment fermer la feuille de glossaire
-	-> le son se lance avec du retard
-amelioration :
-	-> ajouter une indication de ciblage
-	-> mieux afficher les montant perdu ou gagné
-	-> ajouter une musique
-	-> ajouter une animation pour le blocage
+-> Fait
+    -> General
+        -> Quand on fouille les araignées au debut, chance de trouver un truc
+    -> Combat
+        -> Modification du combat (FAIT)
+        -> Ajout d'une indication de ciblage (FAIT)

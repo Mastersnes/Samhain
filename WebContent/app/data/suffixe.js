@@ -186,7 +186,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"namef" : "fouFurieux-f",
 			"attaque" : 4,
 			"defense" : 1,
-			"vie" : 0,
+			"vie" : 0.5,
 			"magie" : 1,
 			"argent" : 1,
             "xp" : 4
@@ -196,14 +196,14 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"namef" : "fragile",
 			"attaque" : 1,
 			"defense" : 1,
-			"vie" : 0,
+			"vie" : 0.5,
 			"magie" : 1,
 			"argent" : 1,
             "xp" : 2
 		},
-		"pleunirchard" : {
-			"namem" : "pleunirchard-m",
-			"namef" : "pleunirchard-f",
+		"peureux" : {
+			"namem" : "peureux-m",
+			"namef" : "peureux-f",
 			"attaque" : 0.5,
 			"defense" : 0.5,
 			"vie" : 1,

@@ -54,6 +54,7 @@ define(
 					"actions" : [ {
 						"name" : "suivant", "action" : [ 
 						                                {"key" : "score", "params" : ["GameStart", 1]},
+						                                {"key" : "gain", "params" : ["pomme"]},
 						                                 {"key" : "go", "params" : [ "repos2" ]}
 						                                 ]
 					} ]
@@ -85,20 +86,38 @@ define(
 					"actions" : [ {
 						"name" : "examine-alentours", "action" : [ { "key" : "go", "params" : [ "reposExamine" ]} ]
 					}, {
-						"name" : "fouille-corps", "action" : [ { "key" : "go", "params" : [ "reposFouille" ]} ]
+						"name" : "fouille-corps", "action" : [ { "key" : "random", "params" : [ "reposFouilleFail", "reposFouilleSuccess" ]} ],
+						"appairIf" : [{"key" : "hasNoItem", "params" : ["araigneeFouillees"]}],
 					}, {
 						"name" : "rentrer-ville", "action" : [ { "key" : "go", "params" : [ "reposVille" ]} ]
 					} ]
 				},
-				"reposFouille" : {
-					"textes" : [ 
-"reposFouille-texte-1",
-"reposFouille-texte-2",
+				"reposFouilleFail" : {
+					"textes" : [
+"reposFouilleFail-texte-1",
+"reposFouilleFail-texte-2",
 					        ],
 					"actions" : [ {
-						"name" : "retour", "action" : [ { "key" : "go", "params" : [ "reposCombat" ]} ]
+						"name" : "retour",
+						"action" : [
+						    { "key" : "gain", "params" : [ "araigneeFouillees" ]},
+						    { "key" : "go", "params" : [ "reposCombat" ]}
+						]
 					} ]
 				},
+				"reposFouilleSuccess" : {
+                    "textes" : [
+"reposFouilleSuccess-texte-1",
+"reposFouilleSuccess-texte-2",
+                            ],
+                    "actions" : [ {
+                        "name" : "retour",
+                        "action" : [
+                            { "key" : "gain", "params" : [ "pomme", "araigneeFouillees" ]},
+                            { "key" : "go", "params" : [ "reposCombat" ]}
+                        ]
+                    } ]
+                },
 				"reposExamine" : {
 					"textes" : [ 
 "reposExamine-texte-1",

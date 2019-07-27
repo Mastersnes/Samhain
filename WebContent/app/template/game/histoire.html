@@ -13,8 +13,11 @@
 		<actions>
 			<% for(var j in lieu.actions) { %>
 				<% var action = lieu.actions[j]; %>
-				<% if (!action.appairIf || data.checkActions(action.appairIf)) { %>
-					<action id="<%=j%>"><%= text.get(lieu.actions[j].name) %></action>
+				<% if (!action.appairIf || data.view.checkActions(action.appairIf)) { %>
+
+					<action id="<%=j%>">
+						<name class="js-center"><%= text.get(lieu.actions[j].name) %></name>
+					</action>
 				<% } %>
 			<% } %>
 		</actions>

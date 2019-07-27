@@ -37,7 +37,9 @@ define(["jquery",
             }else this.el.find("fiole.mana").hide();
 
             var gold = this.player.get("gold");
-            this.refresh("gold", gold, 1000, false, 6);
+            this.refresh("gold", gold, 1000, false, 8);
+            if (gold > 0) this.el.find("gold montant").show();
+            else this.el.find("gold montant").hide();
 
             var xp = this.player.get("xp");
             var palier = this.player.levelManager.nextPalier();
@@ -82,7 +84,8 @@ define(["jquery",
                 that.player.addXp(1);
             });
             this.el.find("gold").click(function() {
-                that.player.addGold(10);
+                if (that.player.get("gold") == 0) that.player.addGold(5);
+                else that.player.addGold(10);
             });
         };
 

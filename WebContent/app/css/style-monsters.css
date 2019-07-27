@@ -1,0 +1,12 @@
+/**
+* Monsters
+**/
+.fight monster.araignee {
+    background-image: url("../img/game/monsters/araignee.png");
+}
+.fight monster.goule {
+    background-image: url("../img/game/monsters/goule.png");
+}
+.fight monster.villageois {
+    background-image: url("../img/game/monsters/villageois.png");
+}

@@ -121,6 +121,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "mana" : [0, 0],
                 "sound" : "acide",
                 "anim" : "venin",
+                "multicible" : true,
                 "price" : 30
             },
             "elixir" : {
@@ -184,7 +185,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 		    if (!item) item = this.getByType("conso", key);
 		    if (!item) item = this.getByType("magie", key);
 		    if (!item) item = this.getByType("clef", key);
-		    if (!item) item = this.getByType("ifObj", key);
+		    // Sinon, IfObj
+		    if (!item) item = key;
 
 		    return item;
 		},

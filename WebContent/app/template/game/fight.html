@@ -6,21 +6,35 @@
 		<monsters>
 			<% for (var i in monsters) { %>
 				<% var monster = monsters[i]; %>
-				<monster id="<%=i%>" class="<%=monster.name%>">
-					<life></life>
-					<name><%=monster.completeName()%></name>
+				<monster id="<%=i%>" class="<%=monster.name%>" suffixe="<%=monster.suffixe.namem%>">
+					<cible></cible>
+					<life>
+						<max></max>
+						<current></current>
+					</life>
+					<name class="js-center"><%=monster.completeName()%></name>
+					<anim></anim>
 				</monster>
 			<% } %>
 		</monsters>
 	</monstersContainer>
 	<actionsContainer>
 		<actions>
-			<action></action>
-			<action></action>
-			<action></action>
-			<action></action>
-			<action></action>
-			<action></action>
+			<action state="new" class="gauche">
+				<name class="js-center"></name>
+			</action>
+			<action state="new" class="gauche">
+				<name class="js-center"></name>
+			</action>
+			<action state="new" class="gauche">
+				<name class="js-center"></name>
+			</action>
+			<action state="new" class="droite">
+				<name class="js-center"></name>
+			</action>
+			<action state="new" class="droite">
+				<name class="js-center"></name>
+			</action>
 		</actions>
 	</actionsContainer>
 </div>

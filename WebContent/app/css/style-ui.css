@@ -94,7 +94,7 @@ fiole.mana montant[digits="1"] {
 gold {
 	position: absolute;
 	display: block;
-	width: 10%; height: 100%;
+	width: 27%; height: 137%;
 	top: 0%; right: 0%;
 }
 gold picture {
@@ -103,22 +103,37 @@ gold picture {
     width: 100%; height: 100%;
     background-repeat: no-repeat;
     /* 100 * nombre de frames */
-    background-size: 600% 100%;
+    background-size: 100% 900%;
     background-image: url("../img/game/interface/ui/bourse.png");
 }
 gold montant {
     position: absolute;
     display: block;
-    color: black;
-    left: 38%; top: 53%;
-    font-size: 2.5vh; font-weight: bold;
+    color: #DDDDDD;
+    font-size: 1.7vh;
 }
+gold montant[digits="4"] {
+    left: 52.5%; top: 45.5%;
+    font-weight: bold;
+}
+gold montant[digits="3"] {
+    left: 53.5%; top: 45.5%;
+}
+gold montant[digits="2"] {
+    left: 54.5%; top: 45.5%;
+}
+gold montant[digits="1"] {
+    left: 56%; top: 45.5%;
+}
+
 gold picture[step="0"] {background-position: 0% 0%;}
-gold picture[step="1"] {background-position: 20% 0%;}
-gold picture[step="2"] {background-position: 40% 0%;}
-gold picture[step="3"] {background-position: 60% 0%;}
-gold picture[step="4"] {background-position: 80% 0%;}
-gold picture[step="5"] {background-position: 100% 0%;}
+gold picture[step="1"] {background-position: 0% 12.5%;}
+gold picture[step="2"] {background-position: 0% 25%;}
+gold picture[step="3"] {background-position: 0% 37.5%;}
+gold picture[step="4"] {background-position: 0% 50%;}
+gold picture[step="5"] {background-position: 0% 62.5%;}
+gold picture[step="6"] {background-position: 0% 75%;}
+gold picture[step="7"] {background-position: 0% 87.5%;}
 
 /**
 * Level

@@ -1,9 +1,10 @@
 'use strict';
 define(["jquery",
         "app/utils/utils",
+        "app/utils/viewUtils",
         "text!app/template/game/histoire.html",
         "app/data/story"
-        ], function($, Utils, page, Stories){
+        ], function($, Utils, ViewUtils, page, Stories){
     return function(parent){
         this.init = function(parent) {
         	this.el = $(".histoire");
@@ -22,8 +23,8 @@ define(["jquery",
         };
 
         this.go = function(newLieuId) {
-            $(".fight").hide();
-            this.el.show();
+            $(".fight").fadeOut();
+            this.el.fadeIn();
 
             var newLieu = Stories.get(newLieuId);
             if (!newLieu) console.log("Erreur - le lieu n'existe pas", newLieuId)
@@ -36,14 +37,22 @@ define(["jquery",
 			var templateData = {
 					text : this.Textes,
 					lieu : newLieu,
-					checkActions : this.checkActions
+					view : this
 			};
 			this.el.html(template(templateData));
+			ViewUtils.verticalCenter();
 
-//			if (newLieu.actions.length == 1) this.el.find("action").css("width", "100%");
-//			else this.el.find("action").css("width", "49%");
+			this.positionneActions();
 
 			this.makeEvents();
+        };
+
+        this.positionneActions = function() {
+            var nbActions = this.el.find("action").length;
+            this.el.find("action").each(function(index, element) {
+                if (index < nbActions / 2) $(this).addClass("gauche");
+                else $(this).addClass("droite");
+            });
         };
 
         this.makeEvents = function() {
@@ -80,13 +89,24 @@ define(["jquery",
                 case "fight":
                     var adversaires = params[0];
                     var nextLieu = params[1];
+                    var failLieu = params[2];
+
+                    var failFunction = null;
+                    if (failLieu) {
+                        failFunction = function() {
+                            that.go(failLieu);
+                        };
+                    }
                     this.parent.fight(adversaires, function() {
                         that.go(nextLieu);
-                    });
+                    }, failFunction);
                     break;
                 case "hurt":
                     var degats = params[0];
                     this.player.hurt(degats, true);
+                    if (this.player.get("life.current") <= 0) {
+                        this.player.addLife(1);
+                    }
                     break;
                 case "gain":
                     for (var i in params) {
@@ -102,7 +122,7 @@ define(["jquery",
                     break;
                 case "sound":
                     var sound = params[0];
-                    this.mediatheque.playSound(sound);
+                    this.mediatheque.playSound(sound + ".wav");
                     break;
                 case "hasItem":
                     var items = params[0];
@@ -145,10 +165,10 @@ define(["jquery",
         this.checkAction = function(action, params) {
             switch(action) {
                 case "hasNoItem":
-                    var items = params[0];
+                    var items = params;
                     return this.player.hasNoOne(items);
                 case "hasItem":
-                    var items = params[0];
+                    var items = params;
                     return this.player.hasAll(items);
                 case "hasMG":
                     var amount = params[0];

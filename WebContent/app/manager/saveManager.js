@@ -26,29 +26,29 @@ function($, _, Utils) {
 			            "max" : 100
 			        },
 			        "mana" : {
-			            "current" : 10,
-			            "max" : 10
+			            "current" : 0,
+			            "max" : 0
 			        },
 
 			        "xp" : 0,
 			        "level" : 0,
-			        "gold" : 200,
+			        "gold" : 0,
 
 			        "attaque" : 1,
 			        "defense" : 1,
 
 			        "equipment" : {
-			            "arme" : ["poing", "epee"],
+			            "arme" : ["poing"],
 			            "currentArme" : "poing",
-			            "bouclier" : ["bras", "bouclierBois"],
+			            "bouclier" : ["bras"],
 			            "currentBouclier" : "bras",
-			            "magie" : ["bouleFeu", "soin"],
-			            "conso" : ["pomme", "fromage", "venin", "potionSante"],
-			            "clef" : ["bougie"],
+			            "magie" : [],
+			            "conso" : [],
+			            "clef" : [],
 			            "ifObj" : []
 			        },
                     "lieu" : "start",
-                    "unlockMana" : true
+                    "unlockMana" : false
 			    },
                 "success" : {
                     "successComplete" : [],
