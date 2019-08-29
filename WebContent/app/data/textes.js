@@ -129,6 +129,10 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 fr : "Niv.",
                 en : "Lvl."
             },
+            "rate" : {
+                fr : "Raté",
+                en : "Missed"
+            },
 	        
 	        /**
 	         * Glossaire
@@ -137,9 +141,25 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 	            fr : "Vie",
 	            en : "Life"
 	        },
+	        "mana" : {
+	            fr : "Mana",
+	            en : "Mana"
+	        },
 	        "attack" : {
 	            fr : "Attaque",
 	            en : "Attack"
+	        },
+	        "degats" : {
+	            fr : "Dégâts",
+	            en : "Damage"
+	        },
+	        "lifeSteal" : {
+	            fr : "Vol de vie",
+	            en : "Lifesteal"
+	        },
+	        "manaCost" : {
+	            fr : "Coût en mana",
+	            en : "Mana Cost"
 	        },
 	        "defense" : {
 	            fr : "Défense",
@@ -156,6 +176,14 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 	        "lifeGain" : {
 	            fr : "Gain de vie",
 	            en : "Gain of life"
+	        },
+	        "manaGain" : {
+	            fr : "Gain de mana",
+	            en : "Gain of mana"
+	        },
+	        "multicible" : {
+	            fr : "Multi-cible",
+	            en : "Multi-target"
 	        },
 	        "attackGain" : {
 	            fr : "Gain d'attaque",
@@ -186,7 +214,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "They wander through old tombs in search of treasures or trinkets. Never try to steal their belongings, they're rather cranky."
             },
             "roiAraigneeBlesse" : {
-                fr : "Roi des araignées",
+                fr : "Roi Araignées",
                 en : "King of Spiders"
             },
             "roiAraigneeBlesse-texte" : {
@@ -405,7 +433,19 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 fr : "Riche",
                 en : "Rich"
             },
-            
+            "resistant-m" : {
+                fr : "Résistant",
+                en : "Resistant"
+            },
+            "resistant-f" : {
+                fr : "Résistante",
+                en : "Resistant"
+            },
+            "incassable" : {
+                fr : "Incassable",
+                en : "Unbreakable"
+            },
+
             /**
              * Armes
              */
@@ -418,7 +458,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "Fist"
             },
             "poing-action" : {
-                fr : "Coup de poing",
+                fr : "Coup de Poing",
                 en : "Punch"
             },
             "poing-texte" : {
@@ -430,8 +470,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "Stick"
             },
             "baton-action" : {
-                fr : "Coup de bâton",
-                en : "Stick stroke"
+                fr : "Coup de Bâton",
+                en : "Stick Stroke"
             },
             "baton-texte" : {
                 fr : "Un gros bâton qui peut faire très mal...",
@@ -442,8 +482,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "Dagger"
             },
             "dague-action" : {
-                fr : "Coup de dague",
-                en : "Dagger stroke"
+                fr : "Coup de Dague",
+                en : "Dagger Stroke"
             },
             "dague-texte" : {
                 fr : "Une belle dague toute brillante. Sa lame semble tranchante comme un rasoir.",
@@ -454,8 +494,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "Sword"
             },
             "epee-action" : {
-                fr : "Coup d'épée",
-                en : "Sword strike"
+                fr : "Coup d'Epée",
+                en : "Sword Strike"
             },
             "epee-texte" : {
                 fr : "Une grosse épée à une main. Elle est aussi lourde que tranchante !",
@@ -466,8 +506,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "King's fang"
             },
             "crocRoi-action" : {
-                fr : "Coup de croc",
-                en : "Fang strike"
+                fr : "Coup de Croc",
+                en : "Fang Strike"
             },
             "crocRoi-texte" : {
                 fr : "Le croc de votre ancien ami... Il dégage une odeur putride... Parfait pour une petite balade !",
@@ -482,8 +522,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "Arm"
             },
             "bras-action" : {
-                fr : "Bloquer avec son bras",
-                en : "Block with arm"
+                fr : "Bloquer avec son Bras",
+                en : "Block with Arm"
             },
             "bras-texte" : {
                 fr : "Votre bras... Tout simplement... Vous pouvez en être fier !",
@@ -494,8 +534,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "Wooden Shield"
             },
             "bouclierBois-action" : {
-                fr : "Parer avec le bouclier",
-                en : "Parry with the shield"
+                fr : "Parer avec le Bouclier",
+                en : "Parry with the Shield"
             },
             "bouclierBois-texte" : {
                 fr : "Un bouclier en bois assez banale. Il semble plutôt résistant.",
@@ -506,8 +546,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "Iron Shield"
             },
             "bouclierFer-action" : {
-                fr : "Contrer avec le bouclier",
-                en : "Countering with the shield"
+                fr : "Contrer avec le Bouclier",
+                en : "Countering with the Shield"
             },
             "bouclierFer-texte" : {
                 fr : "Un grand bouclier en fer ! Il est très résistant.",
@@ -522,20 +562,32 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "Potion of life"
             },
             "potionSante-action" : {
-                fr : "Boire la potion de vie",
-                en : "Drinking the potion of life"
+                fr : "Potion de Vie",
+                en : "Potion of Life"
             },
             "potionSante-texte" : {
                 fr : "Une drôle de fiole toute rouge. Sur l'étiquette, il est noté : &laquo; Ne pas en abuser, donne la diarrhée &raquo;.",
                 en : "That's a funny red vial. On the label, it is noted: &laquo; Don't abuse it, gives diarrhea &raquo;."
+            },
+            "potionMana" : {
+                fr : "Potion de mana",
+                en : "Potion of mana"
+            },
+            "potionMana-action" : {
+                fr : "Potion de Mana",
+                en : "Potion of Mana"
+            },
+            "potionMana-texte" : {
+                fr : "Une jolie fiole toute bleue. Sur l'étiquette, il est noté : &laquo; Attention, agite les ganglions &raquo;.",
+                en : "-"
             },
             "fromage" : {
                 fr : "Fromage",
                 en : "Cheese"
             },
             "fromage-action" : {
-                fr : "Manger le fromage",
-                en : "Eating cheese"
+                fr : "Manger le Fromage",
+                en : "Eating Cheese"
             },
             "fromage-texte" : {
                 fr : "Un vieux fromage légèrement moisi...",
@@ -546,8 +598,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "Apple"
             },
             "pomme-action" : {
-                fr : "Croquer la pomme",
-                en : "Chew the apple"
+                fr : "Croquer la Pomme",
+                en : "Chew the Apple"
             },
             "pomme-texte" : {
                 fr : "Une belle pomme bien rouge ! Vous allez vous régaler !",
@@ -559,7 +611,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             },
             "venin-action" : {
                 fr : "Lancer le venin",
-                en : "Throwing the venom"
+                en : "Throwing the Venom"
             },
             "venin-texte" : {
                 fr : "Une poche de venin prélevée sur une grosse araignée !",
@@ -570,8 +622,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "Elixir"
             },
             "elixir-action" : {
-                fr : "Boire l'élixir",
-                en : "Drinking the elixir"
+                fr : "Élixir",
+                en : "Elixir"
             },
             "elixir-texte" : {
                 fr : "Une grosse fiole éclatante de lumière ! Une étiquette indique : &laquo; Ne pas boire après minuit, risque d'allergie &raquo;.",
@@ -586,7 +638,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "Fireball"
             },
             "bouleFeu-action" : {
-                fr : "*Boule de feu*",
+                fr : "*Boule de Feu*",
                 en : "*Fireball*"
             },
             "bouleFeu-texte" : {
@@ -604,6 +656,18 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "soin-texte" : {
                 fr : "Un sort permettant de se soigner. Le reiki peut aller se r'habiller !",
                 en : "A spell for healing. The reiki can go back where he came from!"
+            },
+            "morsure" : {
+                fr : "Morsure",
+                en : "Bite"
+            },
+            "morsure-action" : {
+                fr : "*Morsure*",
+                en : "*Bite*"
+            },
+            "morsure-texte" : {
+                fr : "Une vilaine morsure pas très belle à voir. Vous devriez consulter...",
+                en : "???"
             },
             
             /**
@@ -629,6 +693,14 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             /**
              * Histoire
              */
+            "oui" : {
+                fr : "Oui",
+                en : "Yes"
+            },
+            "non" : {
+                fr : "Non",
+                en : "No"
+            },
             "gagne-texte-1" : {
                 fr : "Félicitation, vous avez terminé le jeu !",
                 en : "Congratulations, you have finished the game!"
@@ -664,8 +736,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 en : "Having finished your hard work a little sooner,"
             },
             "start-texte-4" : {
-                fr : "Vous ramassez une pomme de votre panier et décidez de vous reposer au pied du géants feuillus.",
-                en : "You pick an apple from your basket and decide to rest at the foot of the leafy giants."
+                fr : "Vous ramassez une <span key='pomme'>pomme</span> de votre panier et décidez de vous reposer au pied du géants feuillus.",
+                en : "You pick an <span key='pomme'>apple</span> from your basket and decide to rest at the foot of the leafy giants."
             },
 
             "suivant" : {
@@ -727,8 +799,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             },
 
             "reposFouilleSuccess-texte-1" : {
-                fr : "En remuant les entrailles vous découvrez une belle pomme !",
-                en : "By stirring the guts you discover a beautiful apple!"
+                fr : "En remuant les entrailles vous découvrez une belle <span key='pomme'>pomme</span> !",
+                en : "By stirring the guts you discover a beautiful <span key='pomme'>apple</span>!"
             },
             "reposFouilleSuccess-texte-2" : {
                 fr : "Espérons que le rouge provienne bien de sa maturité...",

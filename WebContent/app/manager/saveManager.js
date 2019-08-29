@@ -30,6 +30,8 @@ function($, _, Utils) {
 			            "max" : 0
 			        },
 
+			        "buff" : null,
+			        "debuff" : null,
 			        "xp" : 0,
 			        "level" : 0,
 			        "gold" : 0,

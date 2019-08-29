@@ -55,7 +55,13 @@ define(["jquery", "sha"], function($, sha){
         	return (value * 100)/base;
         },
 		clone : function(value) {
-			return $.extend(true, {}, value);
+		    if (value == undefined) return value;
+			else return $.extend(true, {}, value);
+		},
+		normalize : function(texte) {
+		    var newText = texte.toLowerCase();
+		    newText = newText.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+		    return newText;
 		},
 		pow : function(multiple, base, puissance) {
         	return Math.round(multiple * Math.pow(base, puissance));

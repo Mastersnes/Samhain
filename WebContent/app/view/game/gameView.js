@@ -9,11 +9,12 @@ define(["jquery",
         "app/view/game/uiView",
         "app/view/game/histoireView",
         "app/view/game/fightView",
+        "app/view/game/glossaireView",
         "app/view/game/endView"
         ],
 function($, _, Utils, PopupUtils, page,
             RecompenseManager, PlayerManager,
-            UIView, HistoireView, FightView, EndView) {
+            UIView, HistoireView, FightView, GlossaireView, EndView) {
 	'use strict';
 
 	return function(parent) {
@@ -43,6 +44,7 @@ function($, _, Utils, PopupUtils, page,
 
             this.histoireView = new HistoireView(this);
             this.fightView = new FightView(this);
+            this.glossaireView = new GlossaireView(this);
 
             this.endView = new EndView(this);
 
@@ -152,6 +154,10 @@ function($, _, Utils, PopupUtils, page,
 
         this.fight = function(adversaires, onWin, onFail) {
             this.fightView.fight(adversaires, onWin, onFail);
+        };
+
+        this.glossaire = function(key) {
+            this.glossaireView.show(key);
         };
 
         this.makeEvents = function() {

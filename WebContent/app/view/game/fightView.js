@@ -4,8 +4,9 @@ define(["jquery",
         "app/utils/viewUtils",
         "text!app/template/game/fight.html",
         "app/manager/monsterManager",
-        "app/manager/actionManager"
-        ], function($, Utils, ViewUtils, page, MonsterManager, ActionManager){
+        "app/manager/actionManager",
+        "app/data/items"
+        ], function($, Utils, ViewUtils, page, MonsterManager, ActionManager, Items){
     return function(parent){
         this.init = function(parent) {
         	this.el = $(".fight");
@@ -33,7 +34,6 @@ define(["jquery",
             this.fightLaunch = true;
             var that = this;
             $(".histoire").fadeOut();
-            this.el.fadeIn();
 
             this.onWin = onWin;
             this.onFail = onFail;
@@ -50,6 +50,7 @@ define(["jquery",
             }
 
             this.render();
+            this.el.fadeIn();
             this.pioche();
         };
 
@@ -78,6 +79,7 @@ define(["jquery",
             this.actions.length = 0;
 
             var bouclierFound = false;
+            var manaStock = this.player.get("mana").current;
             while (this.actions.length < PIOCHE_MAX) {
                 var actionsPossibles = ["arme", "bouclier"];
                 if (magies.length) actionsPossibles.push("magie");
@@ -103,8 +105,11 @@ define(["jquery",
                     case "magie":
                         if (!magies.length) continue;
                         var randNumber = Utils.rand(0, magies.length);
-                        actionFound = magies[randNumber];
+                        var actionFound = magies[randNumber];
                         magies.splice(randNumber, 1);
+                        var magie = Items.get("magie", actionFound);
+                        if (magie.manaCost > manaStock) continue;
+                        else manaStock -= magie.manaCost;
                         break;
                     case "conso":
                         if (!consosDispo.length) continue;
@@ -119,7 +124,8 @@ define(["jquery",
             this.eraseCurrentPioche();
             setTimeout(function() {
                 that.renderNewPioche();
-                ViewUtils.verticalCenter();            }, 300);
+                ViewUtils.verticalCenter();
+            }, 300);
         };
 
         this.eraseCurrentPioche = function() {
@@ -164,9 +170,19 @@ define(["jquery",
 
                 var life = monster.get("life");
                 var percent = Utils.toPercent(life.current, life.max) + "%";
-                monsterDom.find("life current").css({
+                monsterDom.find(".life current").css({
                     "width": percent
                 });
+
+                var mana = monster.get("mana");
+                if (mana.max) {
+                    percent = Utils.toPercent(mana.current, mana.max) + "%";
+                    monsterDom.find(".mana current").css({
+                        "width": percent
+                    });
+                }else monsterDom.find(".mana").hide();
+
+                this.refreshMonsterEtats(monster, monsterDom);
 
                 if (life.current <= 0) monsterDom.fadeOut("fast");
                 else {
@@ -175,6 +191,28 @@ define(["jquery",
                 }
             }
             if (allDied) this.win();
+        };
+
+        this.refreshMonsterEtats = function(monster, monsterDom) {
+            monsterDom.find("etats").empty();
+
+            var buff = monster.data.buff;
+            if (buff) {
+                monsterDom.find("etat#buff").attr("type", buff.type);
+                monsterDom.find("etat#buff").fadeIn();
+            } else {
+                monsterDom.find("etat#buff").attr("type", null);
+                monsterDom.find("etat#buff").fadeOut();
+            }
+
+            var debuff = monster.data.debuff;
+            if (debuff) {
+                monsterDom.find("etat#debuff").attr("type", debuff.type);
+                monsterDom.find("etat#debuff").fadeIn();
+            } else {
+                monsterDom.find("etat#debuff").attr("type", null);
+                monsterDom.find("etat#debuff").fadeOut();
+            }
         };
 
         /**
@@ -240,6 +278,19 @@ define(["jquery",
             return alive;
         };
 
+        /**
+        * Renvoi les monstres encore en vie autre que celui indiqué
+        **/
+        this.otherMonsters = function(monsterExclude) {
+            var alive = [];
+            for (var i in this.monsters) {
+                var monster = this.monsters[i];
+                if (monster.get("life").current > 0 && monster != monsterExclude)
+                    alive.push(monster);
+            }
+            return alive;
+        };
+
         this.setPending = function(action) {
             if (!action) return;
             this.pendingAction = action;
@@ -279,6 +330,46 @@ define(["jquery",
             });
         };
 
+        this.monstersAttaque = function(blockSound) {
+            var that = this;
+            var aliveMonsters = this.aliveMonsters();
+            this.eraseCurrentPioche();
+            this.recursiveAttaque(0, aliveMonsters, blockSound, function() {
+                that.pioche();
+            });
+        };
+        this.recursiveAttaque = function(index, aliveMonsters, blockSound, endFunction) {
+             if (index >= aliveMonsters.length) return endFunction();
+             var that = this;
+             var monster = aliveMonsters[index];
+             var monsterDom = this.el.find("monster#"+monster.index);
+
+            monsterDom.animate({
+                "top" : "15%"
+            }, 200, function() {
+                monster.launchAttaque(monsterDom, that.player, aliveMonsters, blockSound);
+
+                monsterDom.animate({
+                    "top" : "0%"
+                }, 200, function() {
+                    that.recursiveAttaque(index+1, aliveMonsters, blockSound, endFunction);
+                });
+
+            });
+        };
+
+        /**
+        * Inflige l'etat au differents adversaires
+        **/
+        this.infligeEtats = function() {
+            this.player.etatsManager.infligeEtats();
+            var aliveMonsters = this.aliveMonsters();
+            for (var i in aliveMonsters) {
+                var monster = aliveMonsters[i];
+                monster.etatsManager.infligeEtats();
+            }
+        };
+
         this.win = function() {
             this.endFight();
 
@@ -287,12 +378,9 @@ define(["jquery",
 
             for (var i in this.monsters) {
                 var adversaire = this.monsters[i];
-                console.log("adversaire vaincu", adversaire);
                 goldEarn += adversaire.data.gold;
                 xpEarn += adversaire.data.xp;
             }
-
-            console.log("gain total", goldEarn, xpEarn);
 
             this.player.addGold(goldEarn);
             this.player.addXp(xpEarn);

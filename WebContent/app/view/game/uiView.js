@@ -74,19 +74,6 @@ define(["jquery",
 
         this.makeEvents = function() {
             var that = this;
-            this.el.find("fiole.life").click(function() {
-                that.player.attaque(that.player);
-            });
-            this.el.find("fiole.mana").click(function() {
-                that.player.addMana(-1);
-            });
-            this.el.find("level").click(function() {
-                that.player.addXp(1);
-            });
-            this.el.find("gold").click(function() {
-                if (that.player.get("gold") == 0) that.player.addGold(5);
-                else that.player.addGold(10);
-            });
         };
 
         this.init(parent);

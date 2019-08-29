@@ -1,0 +1,121 @@
+
+/**
+* Glossaire
+**/
+.glossaire {
+    display : block; position: absolute;
+    width: 100%; height: 100%;
+    left: 0; top: 0%;
+    z-index: 10;
+}
+.glossaire div {
+    width: 100%; height: 100%;
+}
+.glossaire contour {
+    display: block; position: relative;
+    width: 80%; height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #ae7fb9;
+}
+
+.glossaire content {
+    display: block; position: absolute;
+    width: 90%; height: 90%;
+    top: 5%; left: 5%;
+    font-family: "Priscilla";
+}
+/**
+* Zoom sur un element
+**/
+.glossaire .zoom retour {
+    display: block; position: absolute;
+    width: 10%; height: 7%;
+    font-size: 3vh;
+    text-align: center;
+    border: 1px solid black;
+    z-index: 10;
+    top: -5%; left: -5%;
+    cursor: pointer;
+}
+.glossaire .zoom retour:hover {
+    text-decoration: underline;
+}
+.glossaire .zoom titre {
+    display: block; position: relative;
+    width: 100%; height: 10%;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3.5vh;
+    font-weight: bold;
+}
+
+.glossaire .zoom texte {
+    display: block; position: relative;
+    width: 100%; height: auto;
+    text-align: justify;
+    font-size: 3.5vh;
+    overflow-y: auto;
+    max-height: 40%;
+    margin-bottom: 4%;
+    border-bottom: 1px dashed black;
+    padding-bottom: 3%;
+}
+.glossaire .zoom infos {
+    display: block; position: relative;
+    width: 100%; height: 50%;
+    font-size: 3.5vh;
+    overflow-y: auto;
+    text-align: left;
+}
+.glossaire .zoom info {
+    display: inline-block; position: relative;
+    width: 50%; height: auto;
+    text-align: left;
+}
+
+/**
+* Liste des elements
+**/
+.glossaire .liste alphabet {
+    display: block; position: relative;
+    width: 100%; height: auto;
+    text-align: left;
+    font-size: 3vh;
+    font-weight: bold;
+}
+.glossaire .liste alphabet letter {
+    display: inline-block; position: relative;
+    width: 5%; height: auto;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 0.25%;
+}
+.glossaire .liste alphabet letter.selected {
+    background-color: red;
+}
+.glossaire .liste alphabet letter:hover {
+    text-decoration: underline;
+}
+
+.glossaire .liste propositions {
+    display: block; position: relative;
+    width: 100%; height: auto;
+    text-align: left;
+    font-size: 3.5vh;
+    margin-top: 2%;
+}
+.glossaire .liste proposition {
+    display: inline-block; position: relative;
+    width: auto; height: auto;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 0.25%;
+    padding: 0.25%;
+}
+.glossaire .liste proposition:hover {
+    text-decoration: underline;
+}

@@ -23,6 +23,7 @@ define(["jquery",
         };
 
         this.go = function(newLieuId) {
+        var that = this;
             $(".fight").fadeOut();
             this.el.fadeIn();
 
@@ -42,7 +43,9 @@ define(["jquery",
 			this.el.html(template(templateData));
 			ViewUtils.verticalCenter();
 
-			this.positionneActions();
+			setTimeout(function() {
+			    that.showActions(function() {that.positionneActions()});
+			}, 50);
 
 			this.makeEvents();
         };
@@ -59,14 +62,35 @@ define(["jquery",
             var that = this;
             this.el.find("action").click(function() {
                 var id = $(this).attr("id");
-                var actions = that.currentLieu.actions[id];
-                if (!actions) console.log("Erreur - l'action n'existe pas pour ce lieu", that.currentLieu, id);
+                that.hideActions(function() {
+                     var actions = that.currentLieu.actions[id];
+                     if (!actions) console.log("Erreur - l'action n'existe pas pour ce lieu", that.currentLieu, id);
 
-                for (var actionId in actions.action) {
-                    var action = actions.action[actionId];
-                    that.execute(action.key, action.params);
-                }
+                     for (var actionId in actions.action) {
+                         var action = actions.action[actionId];
+                         that.execute(action.key, action.params);
+                     }
+                });
             });
+
+            this.el.find("texte span").click(function() {
+                var key = $(this).attr("key");
+                that.parent.glossaire(key);
+            });
+        };
+
+        this.hideActions = function(then) {
+            this.el.find("action").css({
+                "top" : "150%"
+            });
+            setTimeout(then, 300);
+        };
+
+        this.showActions = function(then) {
+            this.el.find("action").css({
+                "top" : "0%"
+            });
+            setTimeout(then, 300);
         };
 
         /**

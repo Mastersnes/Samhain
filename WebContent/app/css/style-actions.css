@@ -20,6 +20,7 @@ actionsContainer action {
     width: 18%; height: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    z-index: 10;
 
     transition: all 300ms;
 }
@@ -45,12 +46,91 @@ actionsContainer action[type="poing"] name {
 actionsContainer action[type="bouleFeu"] name {
     left: 18% !important;
 }
+actionsContainer action[type="pomme"] name {
+    left: 15% !important;
+}
+actionsContainer action[type="bras"] name {
+    left: 16% !important;
+    font-size: 3.4vh !important;
+}
 
 actionsContainer action.gauche:hover {
     transform: rotate(-16deg);
 }
 actionsContainer action.droite:hover {
     transform: rotate(16deg);
+}
+actionsContainer action[state] {
+    top: 150%;
+}
+
+/**
+* Etiquettes des actions
+**/
+actionsContainer action {
+    background-image: url("../img/game/actions/dague.png");
+}
+
+/** Armes **/
+actionsContainer action[type="poing"] {
+    background-image: url("../img/game/actions/poing.png");
+}
+actionsContainer action[type="dague"] {
+     background-image: url("../img/game/actions/dague.png");
+ }
+actionsContainer action[type="baton"] {
+ background-image: url("../img/game/actions/baton.png");
+}
+actionsContainer action[type="epee"] {
+ background-image: url("../img/game/actions/epee.png");
+}
+actionsContainer action[type="croc"] {
+ background-image: url("../img/game/actions/croc.png");
+}
+/** Defense **/
+actionsContainer action[type="bras"] {
+    background-image: url("../img/game/actions/bras.png");
+}
+actionsContainer action[type="bouclierBois"] {
+    background-image: url("../img/game/actions/bouclierBois.png");
+}
+actionsContainer action[type="bouclierFer"] {
+    background-image: url("../img/game/actions/bouclierFer.png");
+}
+
+/** Items **/
+actionsContainer action[type="potionSante"] {
+    background-image: url("../img/game/actions/potionSante.png");
+}
+actionsContainer action[type="potionMana"] {
+    background-image: url("../img/game/actions/potionMana.png");
+}
+actionsContainer action[type="elixir"] {
+    background-image: url("../img/game/actions/elixir.png");
+}
+actionsContainer action[type="pomme"] {
+    background-image: url("../img/game/actions/pomme.png");
+}
+actionsContainer action[type="fromage"] {
+    background-image: url("../img/game/actions/fromage.png");
+}
+actionsContainer action[type="venin"] {
+    background-image: url("../img/game/actions/venin.png");
+}
+
+/** Sorts **/
+actionsContainer action[type="bouleFeu"] {
+    background-image: url("../img/game/actions/bouleFeu.png");
+}
+actionsContainer action[type="soin"] {
+    background-image: url("../img/game/actions/soin.png");
+}
+
+/**
+* Specificité a l'histoire
+**/
+.histoire action {
+    top: 150%;
 }
 
 /**
@@ -67,30 +147,6 @@ actionsContainer action.droite:hover {
     top: -10% !important;
     transform: rotate(16deg);
 }
-.fight action[state] {
-    top: 150%;
-}
-
-/**
-* Etiquettes des actions
-**/
-actionsContainer action {
-    background-image: url("../img/game/actions/dague.png");
-}
-actionsContainer action[type="poing"] {
-    background-image: url("../img/game/actions/poing.png");
-}
-actionsContainer action[type="dague"] {
-    background-image: url("../img/game/actions/dague.png");
-}
-actionsContainer action[type="bouleFeu"] {
-    background-image: url("../img/game/actions/bouleFeu.png");
-}
-actionsContainer action[type="potionSante"] {
-    background-image: url("../img/game/actions/potionSante.png");
-}
-
-
 
 /**
 * Animation des actions sur les monstres
@@ -104,11 +160,12 @@ actionsContainer action[type="potionSante"] {
     background-size: 100% 100%;
 }
 
+/**
+* Animation des actions sur les monstres
+**/
+/** Armes **/
 .fight monster anim.poing {
     background-image: url("../img/game/actions/anim/poing.png");
-}
-.fight monster anim.venin {
-    background-image: url("../img/game/actions/anim/venin.png");
 }
 .fight monster anim.croc {
     background-image: url("../img/game/actions/anim/croc.png");
@@ -122,6 +179,13 @@ actionsContainer action[type="potionSante"] {
 .fight monster anim.baton {
     background-image: url("../img/game/actions/anim/baton.png");
 }
+
+/** Items **/
+.fight monster anim.venin {
+    background-image: url("../img/game/actions/anim/venin.png");
+}
+
+/** Sorts **/
 .fight monster anim.bouleFeu {
     background-image: url("../img/game/actions/anim/bouleFeu.png");
 }

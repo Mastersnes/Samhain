@@ -55,6 +55,12 @@ fiole.life {
 fiole.life picture {
     background-image: url("../img/game/interface/ui/life.png");
 }
+fiole.life[etat="poison"] picture {
+    background-image: url("../img/game/interface/ui/life-poison.png");
+}
+fiole.life[etat="brulure"] picture {
+    background-image: url("../img/game/interface/ui/life-brulure.png");
+}
 fiole.life montant {
     transform: rotate(-16deg);
 }

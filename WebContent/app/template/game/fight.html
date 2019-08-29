@@ -6,33 +6,42 @@
 		<monsters>
 			<% for (var i in monsters) { %>
 				<% var monster = monsters[i]; %>
-				<monster id="<%=i%>" class="<%=monster.name%>" suffixe="<%=monster.suffixe.namem%>">
+				<monster id="<%=i%>" class="<%=monster.name%> <%=monster.type%>" suffixe="<%=monster.suffixe.namem%>">
 					<cible></cible>
-					<life>
+					<jauge class="life">
 						<max></max>
 						<current></current>
-					</life>
+					</jauge>
+					<jauge class="mana">
+						<max></max>
+						<current></current>
+					</jauge>
 					<name class="js-center"><%=monster.completeName()%></name>
 					<anim></anim>
+					<etats>
+						<etat id="buff"></etat>
+						<etat id="debuff"></etat>
+					</etats>
+					<miss></miss>
 				</monster>
 			<% } %>
 		</monsters>
 	</monstersContainer>
 	<actionsContainer>
 		<actions>
-			<action state="new" class="gauche">
+			<action id="0" state="new" class="gauche">
 				<name class="js-center"></name>
 			</action>
-			<action state="new" class="gauche">
+			<action id="1" state="new" class="gauche">
 				<name class="js-center"></name>
 			</action>
-			<action state="new" class="gauche">
+			<action id="2" state="new" class="gauche">
 				<name class="js-center"></name>
 			</action>
-			<action state="new" class="droite">
+			<action id="3" state="new" class="droite">
 				<name class="js-center"></name>
 			</action>
-			<action state="new" class="droite">
+			<action id="4" state="new" class="droite">
 				<name class="js-center"></name>
 			</action>
 		</actions>

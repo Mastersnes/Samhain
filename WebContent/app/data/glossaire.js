@@ -1,149 +1,153 @@
 'use strict';
-define(["jquery"], function($){
+define(["jquery", "app/utils/utils"], function($, Utils){
 	var data = {
 		"araignee" : {
 			"name" : "araignee",
-			"textes" : [
-	            "araignee-texte"
-            ],
+			"texte" : "araignee-texte",
             "attaque" : [1, 3],
             "defense" : [0, 1],
             "vie" : [5, 10],
+            "mana" : [0, 3],
             "xp": [1, 1],
             "argent" : [0, 3],
-            "sexe" : "f"
+            "sexe" : "f",
+            "abilities" : ["morsure"],
+            "blockAnim" : "block",
+            "blockSound" : "block"
 		},
 		"bandit" : {
 			"name" : "bandit",
-			"textes" : [
-	            "bandit-texte",
-            ],
-            "attaque" : [1, 5],
+			"texte" : "bandit-texte",
+            "attaque" : [2, 5],
             "defense" : [1, 3],
-            "vie" : [10, 20],
-            "xp" : [2, 4],
+            "vie" : [20, 30],
+            "mana" : [0, 0],
+            "xp" : [2, 3],
             "argent" : [1, 5],
-            "sexe" : "m"
+            "sexe" : "m",
+            "abilities" : []
 		},
 		"roiAraigneeBlesse" : {
 			"name" : "roiAraigneeBlesse",
-			"textes" : [
-			            "roiAraigneeBlesse-texte",
-			            ],
-			            "attaque" : [5, 10],
-			            "defense" : [0, 5],
-			            "vie" : [20, 40],
-			            "xp" : [20, 40],
-			            "argent" : [10, 30],
-			            "sexe" : "m"
+			"texte" : "roiAraigneeBlesse-texte",
+            "attaque" : [5, 15],
+            "defense" : [3, 5],
+            "vie" : [50, 100],
+            "mana" : [1, 5],
+            "xp" : [20, 40],
+            "argent" : [10, 30],
+            "sexe" : "m",
+            "abilities" : ["morsure"],
+            "type": "boss"
 		},
 		"goule" : {
 			"name" : "goule",
-			"textes" : [
-			            "goule-texte"
-			            ],
-			            "attaque" : [2, 8],
-			            "defense" : [0, 5],
-			            "vie" : [10, 30],
-			            "xp" : [5, 15],
-			            "argent" : [3, 8],
-			            "sexe" : "f"
+			"texte" : "goule-texte",
+            "attaque" : [2, 8],
+            "defense" : [0, 5],
+            "vie" : [20, 40],
+            "mana" : [0, 3],
+            "xp" : [5, 15],
+            "argent" : [3, 8],
+            "sexe" : "f",
+            "abilities" : ["morsure"]
 		},
 		"garde": {
 			"name" : "garde",
-			"textes" : [
-			            "garde-texte"
-			            ],
-			            "attaque" : [3, 10],
-			            "defense" : [3, 10],
-			            "vie" : [20, 30],
-			            "xp" : [10, 30],
-			            "argent" : [5, 10],
-			            "sexe" : "m"
-		}, 
+			"texte" : "garde-texte",
+            "attaque" : [3, 10],
+            "defense" : [3, 10],
+            "vie" : [30, 40],
+            "mana" : [0, 0],
+            "xp" : [10, 30],
+            "argent" : [5, 10],
+            "sexe" : "m",
+            "abilities" : []
+		},
 		"villageois": {
 			"name" : "villageois",
-			"textes" : [
-			            "villageois-texte"
-			            ],
-			            "attaque" : [1, 2],
-			            "defense" : [1, 2],
-			            "vie" : [10, 25],
-			            "xp" : [5, 15],
-			            "argent" : [0, 10],
-			            "sexe" : "m"
+			"texte" : "villageois-texte",
+            "attaque" : [1, 2],
+            "defense" : [1, 2],
+            "vie" : [20, 35],
+            "mana" : [0, 0],
+            "xp" : [5, 15],
+            "argent" : [0, 10],
+            "sexe" : "m",
+            "abilities" : []
 		}, 
 		"grosseGoule": {
 			"name" : "grosseGoule",
-			"textes" : [
-			            "grosseGoule-texte"
-			            ],
-			            "attaque" : [5, 10],
-			            "defense" : [2, 8],
-			            "vie" : [20, 50],
-			            "xp" : [20, 40],
-			            "argent" : [5, 10],
-			            "sexe" : "f"
+			"texte" : "grosseGoule-texte",
+            "attaque" : [5, 10],
+            "defense" : [2, 8],
+            "vie" : [30, 60],
+            "mana" : [1, 5],
+            "xp" : [20, 40],
+            "argent" : [5, 10],
+            "sexe" : "f",
+            "abilities" : ["morsure"]
 		}, 
 		"squelette": {
 			"name" : "squelette",
-			"textes" : [
-			            "squelette-texte"
-			            ],
-			            "attaque" : [5, 10],
-			            "defense" : [0, 0],
-			            "vie" : [10, 30],
-			            "xp" : [10, 30],
-			            "argent" : [2, 8],
-			            "sexe" : "m"
+			"texte" : "squelette-texte",
+            "attaque" : [5, 10],
+            "defense" : [0, 0],
+            "vie" : [20, 40],
+            "mana" : [0, 0],
+            "xp" : [10, 30],
+            "argent" : [2, 8],
+            "sexe" : "m",
+            "abilities" : []
 		}, 
 		"squeletteManchot": {
 			"name" : "squeletteManchot",
-			"textes" : [
-			            "squeletteManchot-texte"
-			            ],
-			            "attaque" : [1, 5],
-			            "defense" : [0, 0],
-			            "vie" : [10, 20],
-			            "xp" : [20, 50],
-			            "argent" : [10, 30],
-			            "sexe" : "m"
+			"texte" : "squeletteManchot-texte",
+            "attaque" : [1, 5],
+            "defense" : [0, 0],
+            "vie" : [20, 30],
+            "mana" : [0, 0],
+            "xp" : [20, 50],
+            "argent" : [10, 30],
+            "sexe" : "m",
+            "abilities" : ["morsure"]
 		}, 
 		"experience": {
 			"name" : "experience",
-			"textes" : [
-			            "experience-texte"
-			            ],
-			            "attaque" : [7, 15],
-			            "defense" : [2, 10],
-			            "vie" : [50, 80],
-			            "xp" : [30, 50],
-			            "argent" : [10, 30],
-			            "sexe" : "f"
+			"texte" : "experience-texte",
+            "attaque" : [7, 15],
+            "defense" : [2, 10],
+            "vie" : [60, 90],
+            "mana" : [1, 5],
+            "xp" : [30, 50],
+            "argent" : [10, 30],
+            "sexe" : "f",
+            "abilities" : ["morsure"]
 		}, 
 		"necromancien": {
 			"name" : "necromancien",
-			"textes" : [
-			            "necromancien-texte"
-			            ],
-			            "attaque" : [5, 20],
-			            "defense" : [3, 10],
-			            "vie" : [70, 100],
-			            "xp" : [50, 100],
-			            "argent" : [15, 30],
-			            "sexe" : "m"
+			"texte" : "necromancien-texte",
+            "attaque" : [5, 20],
+            "defense" : [3, 10],
+            "vie" : [80, 120],
+            "mana" : [1, 5],
+            "xp" : [50, 100],
+            "argent" : [15, 30],
+            "sexe" : "m",
+            "abilities" : ["soin"]
 		}, 
 		"liche": {
 			"name" : "liche",
-			"textes" : [
-			            "liche-texte"
-			            ],
-			            "attaque" : [15, 30],
-			            "defense" : [3, 15],
-			            "vie" : [100, 200],
-			            "xp" : [100, 150],
-			            "argent" : [20, 40],
-			            "sexe" : "f"
+			"texte" : "liche-texte",
+            "attaque" : [15, 30],
+            "defense" : [3, 15],
+            "vie" : [150, 250],
+            "mana" : [5, 10],
+            "xp" : [100, 150],
+            "argent" : [20, 40],
+            "sexe" : "f",
+            "abilities" : ["soin"],
+            "type" : "boss"
 		}
 	};
 	
@@ -152,7 +156,16 @@ define(["jquery"], function($){
 		* Permet d'appeler un WS
 		**/
 		get : function(key) {
-			return $.extend(true, {}, data[key]);
-		}
+			return Utils.clone(data[key]);
+		},
+
+		list : function(letter, Textes) {
+            var resultats = [];
+            for (var monster in data) {
+                var monsterName = Utils.normalize(Textes.get(monster));
+                if(monsterName.startsWith(letter)) resultats.push(monster);
+            }
+            return resultats;
+        }
 	};
 });

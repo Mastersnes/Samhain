@@ -1,7 +1,6 @@
 'use strict';
-define(
-		[ "jquery" ],
-		function($) {
+define(["jquery", "app/utils/utils"],
+		function($, Utils) {
 			var data = {
 					/**
 					 * Gagne
@@ -1018,7 +1017,7 @@ define(
 					        ],
 			        "actions" : [ {
 						"name" : "defendre-ville", "action" : [ 
-						      { "key" : "fight", "params" : [ ["goule", "goule", "goule"], "reposVille3"]}
+						      { "key" : "fight", "params" : [ ["goule", "goule", "goule", "goule"], "reposVille3"]}
 						]
 					}]
 				},
@@ -1129,7 +1128,7 @@ define(
 					        ],
 			        "actions" : [ {
 						"name" : "combattre", "action" : [ 
-						      { "key" : "fight", "params" : [ ["villageois", "villageois", "villageois"], "reposVilleTraitre2" ]}
+						      { "key" : "fight", "params" : [ ["villageois", "villageois", "villageois", "villageois"], "reposVilleTraitre2" ]}
 						]
 					},{
 						"name" : "fuir", "action" : [ 
@@ -2504,7 +2503,7 @@ define(
 				 * Permet dappeler un WS
 				 */
 				get : function(key) {
-					return $.extend(true, {}, data[key]);
+					return Utils.clone(data[key]);
 				}
 			};
 		});

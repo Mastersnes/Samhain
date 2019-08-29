@@ -31,15 +31,14 @@ function($, _, Utils, Items) {
 		this.click = function() {
 		    switch (this.data.type) {
 		        case "arme": // On attaque 1 ou plusieurs monstres
-		        case "magie":
 		            this.attaqueCase();
 		            break;
 		        case "bouclier": // Tout le monde nous attaque mais on defend
 		            this.bouclierCase();
 		            break;
-		        case "conso": // On se soigne ou on fait des degats
-                    var degats = this.data.degats[0] + this.data.degats[1];
-		            if (degats) this.attaqueCase();
+                case "magie": // On se soigne ou on fait des degats
+		        case "conso":
+		            if (this.data.offensif) this.attaqueCase();
 		            else this.useOn(this.parent.player);
 		            break;
 		    }
@@ -61,19 +60,10 @@ function($, _, Utils, Items) {
         * Methode specifique de gestion du bouclier
         **/
         this.bouclierCase = function() {
-            var sound = this.data.sound;
-            this.mediatheque.playSound(sound + ".wav");
-
             this.parent.closePending();
             this.state = "used";
-
-            var aliveMonsters = this.parent.aliveMonsters();
-            var player = this.parent.player;
-            for (var i in aliveMonsters) {
-                var monster = aliveMonsters[i];
-                monster.attaque(player, true);
-            }
-            this.parent.pioche();
+            this.parent.infligeEtats();
+            this.parent.monstersAttaque(this.data.sound);
         };
 
         this.useOn = function(cibles) {
@@ -82,26 +72,20 @@ function($, _, Utils, Items) {
             this.state = "used";
 
             var player = this.parent.player;
-            var actionDone = false;
+            this.parent.infligeEtats();
             switch (this.data.type) {
                 case "arme" :
-                    actionDone = player.attaque(cibles, true);
+                    player.attaque(cibles, true, this.data);
                     break;
                 case "magie" :
-                    actionDone = player.spell(this.data.name, cibles);
+                    player.spell(this.data.name, cibles, this.data);
                     break;
                 case "conso" :
-                    actionDone = player.use(this.data.name, cibles);
+                    player.use(this.data.name, cibles);
                     break;
                 default :
                     console.log("Erreur - l'action est inconnue", this.data, cibles);
                     break;
-            }
-
-            if (actionDone) {
-                var sound = this.data.sound;
-                this.mediatheque.playSound(sound + ".wav");
-                this.parent.playAnim(cibles, this.data.anim);
             }
         };
 

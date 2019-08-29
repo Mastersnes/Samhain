@@ -1,25 +1,29 @@
 Ameliorations :
 ****************
 -> General
-	-> Refonte du moteur (EN COURS)
 	-> Refonte graphique (EN COURS)
 	-> Ajout de musiques
 -> Interface
-	-> Ajout du glossaire
+	-> Ajout du glossaire (RESTE LES GRAPHISMES)
 	-> Ajout de l'inventaire
 -> Combat
-    -> Afficher la vie des monstres
-	-> Ajout d'un niveau de monstre
-	-> Affichage des degats et gain de vie
-	-> Afficher les attaques des monstres
-	-> Magie de monstres (empoisonnement, doubles attaques)
-	-> Buff et debuff (poison, brulure, rassasié, ...)
+	-> Donner la possibilité de forcer des donnees (suffixe, niveau) sur un monstre
+	-> Sorts (vol de vie, vol de mana, double attaque, coup critique) (voler, invoquer)
+	    -> roi araignee : pondre d'autre araignee, vol de vie
+	    -> liche : invoquer experience, vol de vie, vol de mana
+	    -> bandit : voler, double attaque
+	    -> squelette : coup critique
+	    -> goule : vol de vie, double attaque
+	    -> grosseGoule : vol de vie, coup critique, double attaque
+	    -> experience : morsure, vol de vie, double attaque, coup critique
 -> Contenu
 	-> Ajout de la boutique
 	-> Ajout de la ville
 	-> Ajout de 3 quetes
 	-> Ajout du poste de garde (combats aleatoires en fonction du niveau)
-
+-> Sons
+    -> hurt.wav quand le joueur prend des degats
+    -> des sons de blockage pour les monstres
 -> Bugs
     ->
 
@@ -27,6 +31,14 @@ Ameliorations :
 -> Fait
     -> General
         -> Quand on fouille les araignées au debut, chance de trouver un truc
+        -> Refonte du moteur
+    -> Interface
+        ->
     -> Combat
-        -> Modification du combat (FAIT)
-        -> Ajout d'une indication de ciblage (FAIT)
+        -> Modification du combat
+        -> Ajout d'une indication de ciblage
+        -> Affichage une indication des degats
+        -> Afficher les attaques des monstres (ravancer le monstre qui attaque et faire le degat)
+        -> Affichage des gains de vie et perte de vie (mettre un +x ou -x qui s'envole)
+        -> Magie de monstres (empoisonnement, doubles attaques)
+        -> Buff et debuff (poison, brulure, rassasié, ...)

@@ -1,6 +1,7 @@
 'use strict';
 define(["jquery",
-        "app/utils/utils"], function($, Utils){
+        "app/utils/utils",
+        "app/utils/viewUtils"], function($, Utils, ViewUtils){
     return function(parent){
         this.init = function(parent) {
             this.parent = parent;
@@ -38,6 +39,7 @@ define(["jquery",
                     height : w * rapport.h + "px"
                 });
             }
+            ViewUtils.verticalCenter();
         };
 
         this.init(parent);

@@ -4,7 +4,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 	    "arme" : {
 	        "poing" : {
                 "name" : "poing",
-                "textes" : ["poing-texte"],
+                "texte" : "poing-texte",
                 "degats" : [1, 3],
                 "lifeSteal" : [0, 0],
                 "manaCost" : [0, 0],
@@ -14,37 +14,37 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             },
             "baton" : {
                 "name" : "baton",
-                "textes" : ["baton-texte"],
+                "texte" : "baton-texte",
                 "degats" : [2, 5],
                 "lifeSteal" : [0, 0],
                 "manaCost" : [0, 0],
                 "sound" : "baton",
                 "anim" : "baton",
-                "price" : 10
+                "price" : 30
             },
             "dague" : {
                 "name" : "dague",
-                "textes" : ["dague-texte"],
+                "texte" : "dague-texte",
                 "degats" : [5, 10],
                 "lifeSteal" : [0, 0],
                 "manaCost" : [0, 0],
                 "sound" : "dagguer",
                 "anim" : "dague",
-                "price" : 30
+                "price" : 50
             },
             "epee" : {
                 "name" : "epee",
-                "textes" : ["epee-texte"],
+                "texte" : "epee-texte",
                 "degats" : [5, 15],
                 "lifeSteal" : [0, 0],
                 "manaCost" : [0, 0],
                 "sound" : "sword",
                 "anim" : "epee",
-                "price" : 50
+                "price" : 100
             },
             "crocRoi" : {
                 "name" : "crocRoi",
-                "textes" : ["crocRoi-texte"],
+                "texte" : "crocRoi-texte",
                 "degats" : [5, 15],
                 "lifeSteal" : [0, 10],
                 "manaCost" : [0, 0],
@@ -56,7 +56,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 	    "bouclier" : {
 	        "bras" : {
                 "name" : "bras",
-                "textes" : ["bras-texte"],
+                "texte" : "bras-texte",
                 "defense" : [0, 2],
                 "manaCost" : [0, 0],
                 "sound" : "block",
@@ -65,104 +65,147 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             },
             "bouclierBois" : {
                 "name" : "bouclierBois",
-                "textes" : ["bouclierBois-texte"],
+                "texte" : "bouclierBois-texte",
                 "defense" : [3, 5],
                 "manaCost" : [0, 0],
                 "sound" : "woodblock",
                 "anim" : null,
-                "price" : 20
+                "price" : 50
             },
             "bouclierFer" : {
                 "name" : "bouclierFer",
-                "textes" : ["bouclierFer-texte"],
+                "texte" : "bouclierFer-texte",
                 "defense" : [5, 10],
                 "manaCost" : [0, 0],
                 "sound" : "ironblock",
                 "anim" : null,
-                "price" : 40
+                "price" : 100
             }
 	    },
 	    "conso" : {
 	        "potionSante" : {
                 "name" : "potionSante",
-                "textes" : ["potionSante-texte"],
+                "texte" : "potionSante-texte",
                 "degats" : [0, 0],
                 "vie" : [30, 60],
+                "effet" : [],
                 "mana" : [0, 0],
                 "sound" : "drink",
                 "anim" : null,
-                "price" : 30
+                "price" : 50,
+                "offensif" : false
+            },
+            "potionMana" : {
+                "name" : "potionMana",
+                "texte" : "potionMana-texte",
+                "degats" : [0, 0],
+                "vie" : [0, 0],
+                "effet" : [],
+                "mana" : [30, 60],
+                "sound" : "drink",
+                "anim" : null,
+                "price" : 70,
+                "offensif" : false
             },
             "fromage" : {
                 "name" : "fromage",
-                "textes" : ["fromage-texte"],
+                "texte" : "fromage-texte",
                 "degats" : [0, 0],
                 "vie" : [20, 50],
                 "mana" : [0, 0],
+                "effet" : ["satiete"],
                 "sound" : "eat",
                 "anim" : null,
-                "price" : 20
+                "price" : 30,
+                "offensif" : false
             },
             "pomme" : {
                 "name" : "pomme",
-                "textes" : ["pomme-texte"],
+                "texte" : "pomme-texte",
                 "degats" : [0, 0],
                 "vie" : [15, 30],
                 "mana" : [0, 0],
+                "effet" : ["satiete"],
                 "sound" : "eat",
                 "anim" : null,
-                "price" : 10
+                "price" : 15,
+                "offensif" : false
             },
             "venin" : {
                 "name" : "venin",
-                "textes" : ["venin-texte"],
+                "texte" : "venin-texte",
                 "degats" : [10, 30],
                 "vie" : [0, 0],
                 "mana" : [0, 0],
+                "effet" : ["poison"],
                 "sound" : "acide",
                 "anim" : "venin",
                 "multicible" : true,
-                "price" : 30
+                "price" : 80,
+                "offensif" : true
             },
             "elixir" : {
                 "name" : "elixir",
-                "textes" : ["elixir-texte"],
+                "texte" : "elixir-texte",
                 "degats" : [0, 0],
                 "vie" : [40, 150],
                 "mana" : [40, 150],
+                "effet" : [],
                 "sound" : "drink",
                 "anim" : null,
-                "price" : 50
+                "price" : 100,
+                "offensif" : false
             }
 	    },
 	    "magie" : {
 	        "bouleFeu" : {
                 "name" : "bouleFeu",
-                "textes" : ["bouleFeu-texte"],
-                "degats" : [10, 20],
+                "texte" : "bouleFeu-texte",
+                "degats" : [5, 10],
                 "vie" : [0, 0],
+                "lifeSteal" : [0, 0],
+                "effet" : ["brulure"],
                 "manaCost" : 5,
                 "sound" : "bouleFeu",
-                "anim" : "bouleFeu"
+                "anim" : "bouleFeu",
+                "price" : 100,
+                "offensif" : true
             },
             "soin" : {
                 "name" : "soin",
-                "textes" : ["soin-texte"],
+                "texte" : "soin-texte",
                 "degats" : [0, 0],
                 "vie" : [20, 60],
+                "lifeSteal" : [0, 0],
+                "effet" : [],
                 "manaCost" : 5,
                 "sound" : "soin",
-                "anim" : null
+                "anim" : null,
+                "price" : 150,
+                "offensif" : false
+            },
+            "morsure" : {
+                "name" : "morsure",
+                "texte" : "morsure-texte",
+                "degats" : [2, 5],
+                "vie" : [0, 0],
+                "lifeSteal" : [0, 1],
+                "effet" : ["poison"],
+                "manaCost" : 1,
+                "sound" : null,
+                "anim" : null,
+                "price" : null,
+                "offensif" : true
             }
 	    },
 	    "clef" : {
 	        "bougie" : {
                 "name" : "bougie",
-                "textes" : ["bougie-texte"]
+                "texte" : "bougie-texte"
             },
             "clefS2" : {
                 "name" : "clefS2",
-                "textes" : ["clefS2-texte"]
+                "texte" : "clefS2-texte"
             }
 	    },
 	    "ifObj" : [
@@ -199,6 +242,22 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 		        if (type != "ifObj") item.type = type;
 		    }
 		    return item;
+		},
+
+		list : function(letter, Textes) {
+		    var resultats = this.listByType("arme", letter, Textes);
+		    resultats = resultats.concat(this.listByType("bouclier", letter, Textes))
+		    resultats = resultats.concat(this.listByType("conso", letter, Textes))
+		    resultats = resultats.concat(this.listByType("magie", letter, Textes))
+		    return resultats;
+		},
+		listByType : function(type, letter, Textes) {
+		    var resultats = [];
+		    for (var item in data[type]) {
+		        var itemName = Utils.normalize(Textes.get(item));
+		        if(itemName.startsWith(letter)) resultats.push(item);
+		    }
+		    return resultats;
 		}
 	};
 });

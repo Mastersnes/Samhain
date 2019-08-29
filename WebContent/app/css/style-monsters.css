@@ -1,3 +1,14 @@
+.fight monster level {
+    color: black;
+    top: 5%; left: 8%;
+    width: 81%; height: 20%;
+    text-align: right;
+    font-family: "Priscilla";
+    font-weight: bold;
+    font-size: 2vh;
+    padding-right: 5%; padding-top: 5%;
+}
+
 /**
 * Monsters
 **/
@@ -9,4 +20,20 @@
 }
 .fight monster.villageois {
     background-image: url("../img/game/monsters/villageois.png");
+}
+.fight monster.squelette {
+    background-image: url("../img/game/monsters/squelette.png");
+}
+.fight monster.squeletteManchot {
+    background-image: url("../img/game/monsters/squeletteManchot.png");
+}
+
+/**
+* Boss
+**/
+.fight monster.roiAraigneeBlesse {
+    background-image: url("../img/game/monsters/roiAraigneeBlesse.png");
+}
+.fight monster.liche {
+    background-image: url("../img/game/monsters/liche.png");
 }

@@ -3,9 +3,11 @@ define(["jquery",
         'underscore',
         "app/utils/utils",
         "app/manager/levelManager",
-        "app/data/items"
+        "app/manager/etatsManager",
+        "app/data/items",
+        "app/data/etats"
         ],
-function($, _, Utils, LevelManager, Items) {
+function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 	'use strict';
 
 	return function(parent) {
@@ -20,6 +22,7 @@ function($, _, Utils, LevelManager, Items) {
 
 			this.mediatheque = parent.mediatheque;
 			this.levelManager = new LevelManager(this);
+			this.etatsManager = new EtatsManager(this);
 		};
 
 		this.get = function(key) {
@@ -79,7 +82,6 @@ function($, _, Utils, LevelManager, Items) {
 		        else type = "ifObj";
 		    }
 
-            console.log("Ajout de l'item", type, name);
 		    this.data.equipment[type].push(name);
 
 		    // Si c'est une arme ou un bouclier et qu'il est meilleur, on le selectionne automatiquement
@@ -198,9 +200,7 @@ function($, _, Utils, LevelManager, Items) {
         this.hasNoOne = function(items) {
             for (var i in items) {
                 var item = items[i];
-                console.log("On verifie si le joueur a l'item", item);
                 if (this.has(item))  {
-                    console.log("le joueur a l'item", item, "de type", this.has(item));
                     return false;
                 }
             }
@@ -211,12 +211,11 @@ function($, _, Utils, LevelManager, Items) {
 		    if (!cibles) cibles = this;
 		    if (!Array.isArray(cibles)) cibles = [cibles];
 
-		    var actionDone = false;
-
 		    var consos = this.data.equipment.conso;
 		    if (Utils.contains(consos, itemId)) {
 		        var item = Items.get("conso", itemId);
 
+                var totalDegats = 0;
                 for (var i in cibles) {
                     var cible = cibles[i];
 
@@ -224,45 +223,63 @@ function($, _, Utils, LevelManager, Items) {
                     var vie = Utils.rand(item.vie[0], item.vie[1], true);
                     var mana = Utils.rand(item.mana[0], item.mana[1], true);
 
-                    cible.hurt(degats, true);
-                    cible.addLife(vie);
-                    cible.addMana(mana);
+                    var degatsInfliges = 0;
+                    if (degats > 0) degatsInfliges = cible.hurt(degats, true);
+                    if (vie > 0) cible.addLife(vie);
+                    if (mana > 0) cible.addMana(mana);
+
+                    for (var i in item.effet) {
+                        var effetId = item.effet[i];
+                        this.etatsManager.check(effetId, cible);
+                    }
+
+                    totalDegats += degatsInfliges;
+                    if (item.offensif) cible.checkDegats(degatsInfliges, item.anim);
 		        }
 
+                // On joue le son de l'attaque apres la boucle pour ne pas tuer les oreilles du joueur
+                this.playSound(item, cibles[0], totalDegats);
 		        this.removeEquipment("conso", itemId);
-		        actionDone = true;
 		    }else console.log("Erreur use - objet non possédé", itemId, cibles);
-
-		    return actionDone;
 		};
 		this.spell = function(itemId, cibles) {
             if (!this.get("unlockMana")) return false;
             if (!cibles) cibles = this;
             if (!Array.isArray(cibles)) cibles = [cibles];
 
-            var actionDone = false;
-
             var magies = this.data.equipment.magie;
             if (Utils.contains(magies, itemId)) {
                 var magie = Items.get("magie", itemId);
-                console.log("Utilisation de", magie);
                 if (magie.manaCost <= this.get("mana.current")) {
-                    console.log("On retire", magie.manaCost, "mana");
                     this.addMana(-magie.manaCost);
 
+                    var totalDegats = 0;
                     for (var i in cibles) {
                         var cible = cibles[i];
 
-                        var degats = Utils.rand(magie.degats[0], magie.degats[1], true);
                         var vie = Utils.rand(magie.vie[0], magie.vie[1], true);
-                        cible.hurt(degats, true);
-                        cible.addLife(vie);
+                        if (vie > 0) cible.addLife(vie);
+
+                        var lifeSteal = Utils.rand(magie.lifeSteal[0], magie.lifeSteal[1], true);
+                        if (lifeSteal > 0) this.addLife(lifeSteal);
+
+                        var degatsInfliges = 0;
+                        var degats = Utils.rand(magie.degats[0], magie.degats[1], true);
+                        if (degats > 0) degatsInfliges = cible.hurt(degats, true);
+
+
+                        for (var i in magie.effet) {
+                            var effetId = magie.effet[i];
+                            this.etatsManager.check(effetId, cible);
+                        }
+
+                        totalDegats += degatsInfliges;
+                        if (magie.offensif) cible.checkDegats(degatsInfliges, magie.anim);
                     }
-                    actionDone = true;
+                    // On joue le son de l'attaque apres la boucle pour ne pas tuer les oreilles du joueur
+                    this.playSound(magie, cibles[0], totalDegats);
                 } else console.log("Erreur spell - pas assez de mana", magie, cibles);
             }else console.log("Erreur spell - sort non possédé", itemId, cibles);
-
-            return actionDone;
         };
 
         /**
@@ -279,20 +296,25 @@ function($, _, Utils, LevelManager, Items) {
             var degatsMin = baseAttaque + arme.degats[0];
             var degatsMax = baseAttaque + arme.degats[1];
 
+            var totalDegats=0;
             for (var i in cibles) {
                 var cible = cibles[i];
-
-                var degats = Utils.rand(degatsMin, degatsMax, true);
-                if (degats < 0) degats = 0;
-                cible.hurt(degats, withDef);
 
                 var lifeStealMin = arme.lifeSteal[0];
                 var lifeStealMax = arme.lifeSteal[1];
                 var lifeSteal = Utils.rand(lifeStealMin, lifeStealMax, true);
-                this.addLife(lifeSteal);
-            }
+                if (lifeSteal > 0) this.addLife(lifeSteal);
 
-            return true;
+                var degats = Utils.rand(degatsMin, degatsMax, true);
+                if (degats < 0) degats = 0;
+                var degatsInfliges = cible.hurt(degats, withDef);
+
+                totalDegats += degatsInfliges;
+                cible.checkDegats(degatsInfliges, arme.anim);
+            }
+            // On joue le son de l'attaque apres la boucle pour ne pas tuer les oreilles du joueur
+            arme.offensif = true;
+            this.playSound(arme, cibles[0], totalDegats);
         };
 		this.hurt = function(amount, withDef) {
 		    var degats = amount;
@@ -309,8 +331,10 @@ function($, _, Utils, LevelManager, Items) {
 
 		    if (degats < 0) degats = 0;
             this.addLife(-degats);
+            return degats;
 		};
 		this.addLife = function(amount) {
+		    this.showAmountChange(amount, "life", "red");
             this.data.life.current += amount;
             if (this.data.life.current < 0) this.data.life.current = 0;
             if (this.data.life.current > this.data.life.max)
@@ -322,6 +346,7 @@ function($, _, Utils, LevelManager, Items) {
 		* Modifications sur le mana
 		**/
 		this.addMana = function(amount) {
+		    this.showAmountChange(amount, "mana", "blue");
 		    if (!this.data.unlockMana) return;
 		    this.data.mana.current += amount;
 		    if (this.data.mana.current < 0) this.data.mana.current = 0;
@@ -338,6 +363,7 @@ function($, _, Utils, LevelManager, Items) {
         * Modifications sur l'xp
         **/
 		this.addXp = function(amount) {
+		    this.showAmountChange(amount, "xp", "white");
 		    this.levelManager.add(amount);
 		};
 		this.levelUp = function() {
@@ -354,6 +380,7 @@ function($, _, Utils, LevelManager, Items) {
 		* Modification sur l'or
 		**/
 		this.addGold = function(amount) {
+		    this.showAmountChange(amount, "gold", "yellow");
             this.data.gold += amount;
             if (this.data.gold < 0) this.data.gold = 0;
             if (this.data.gold > 1000) this.data.gold = 1000;
@@ -366,6 +393,50 @@ function($, _, Utils, LevelManager, Items) {
                     this.addEquipment(item.type, item.name);
                 }else console.log("Erreur achete - l'item est trop chere", itemId, item.price);
             }else console.log("Erreur achete - l'item n'existe pas", itemId);
+        };
+
+        /**
+        * Animation representant la perte ou le gain d'un montant
+        **/
+        this.showAmountChange = function(amount, type, color) {
+            if (amount < 0 && type == "life") {
+                $(".game hurtScreen").fadeIn(100, function() {
+                    $(".game hurtScreen").fadeOut(200);
+                });
+            }else if (amount == 0) {
+                color = "white";
+                amount = this.Textes.get("rate");
+            }
+            var degatsDom = $(".game amountChanger amount:hidden:first");
+            if (degatsDom.length == 0) {
+                degatsDom = $("<amount></amount>");
+                $(".game amountChanger").append(degatsDom);
+            }
+            degatsDom.removeAttr("style");
+            degatsDom.html(amount);
+            degatsDom.css({
+                "left" : Utils.rand(20, 80) + "%",
+                "color" : color
+            });
+
+            degatsDom.show();
+            degatsDom.animate({
+                "top" : "-1000%",
+                "opacity" : "0"
+            }, 2000, function() {
+                degatsDom.hide();
+            });
+        };
+
+        /**
+        * Joue le son de l'attaque ou du blocage du premier monstre
+        * TODO : A changer si le son est acceptable pour l'ensemble des monstres (a voir)
+        **/
+        this.playSound = function(item, cible, degats) {
+            if (item.offensif) {
+                if (degats > 0) this.mediatheque.playSound(item.sound + ".wav");
+                else this.mediatheque.playSound(cible.template.blockSound + ".wav");
+            }else this.mediatheque.playSound(item.sound + ".wav");
         };
 
 
