@@ -1,0 +1,90 @@
+
+/**
+* Hurt
+**/
+hurts {
+	position: absolute;
+	display: block;
+	width: 100%; height: 100%;
+    left: 0; top: 0%;
+    pointer-events: none;
+}
+hurts hurt {
+    position: absolute;
+    display: none;
+    width: 100%; height: 100%;
+    left: 0; top: 0%;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+hurts hurt.normal {
+    background-image: url("../img/game/interface/degats/normal.png");
+}
+hurts hurt.poison {
+    background-image: url("../img/game/interface/degats/poison.png");
+}
+hurts hurt.feu {
+    background-image: url("../img/game/interface/degats/feu.png");
+}
+
+/**
+* Amount Changer
+**/
+hurts amountchanger {
+	position: absolute;
+	display: block;
+	width: 100%; height: 5%;
+	top: 80%; left: 0%;
+	display: none;
+	z-index: 20;
+}
+hurts amountchanger amount {
+	position: relative;
+	width: 15%; height: 100%;
+	top: 0%;
+	text-align: center;
+	font-size: 5vh;
+	font-family: monospace;
+}
+
+/**
+* Cas classiques
+**/
+hurts amountchanger.life amount {
+    color: red;
+}
+hurts amountchanger.mana amount {
+    color: blue !important;
+}
+hurts amountchanger.gold amount {
+    color: yellow !important;
+    margin-left: 60%;
+}
+hurts amountchanger.xp amount {
+    color: white !important;
+    margin-left: 80%;
+}
+hurts amountchanger[element="miss"], hurts amountchanger.abilitie {
+    text-align: center;
+}
+
+/**
+* Cas des elements
+**/
+hurts amountchanger[element="miss"] amount {
+    margin-left: 0;
+    color: white;
+}
+hurts amountchanger amount {
+    color: red;
+}
+hurts amountchanger[element="poison"] amount {
+    color: green;
+}
+hurts amountchanger[element="feu"] amount {
+    color: orange;
+}
+hurts amountchanger[element="gold"] amount {
+    color: yellow;
+}

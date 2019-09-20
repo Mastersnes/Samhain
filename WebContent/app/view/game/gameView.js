@@ -139,9 +139,12 @@ function($, _, Utils, PopupUtils, page,
         		this.kongregateUtils.score("GameComplete", 1);
         	} else {
         		musicName = "music/gameover.ogg";
-        		this.saveManager.save("GameOver", 1);
-        		this.kongregateUtils.score("GameOver", 1);
+        		var gameOver = this.saveManager.load("GameOver");
+        		this.saveManager.save("GameOver", gameOver+1);
+        		this.playerManager.data.life.current = this.playerManager.data.life.max / 2;
+        		this.kongregateUtils.score("GameOver", gameOver+1);
         	}
+        	this.saveManager.saveInSession();
         	var that = this;
         	setTimeout(function() {
         		that.mediatheque.play(musicName, "", function() {

@@ -42,13 +42,22 @@
 .glossaire .zoom retour:hover {
     text-decoration: underline;
 }
-.glossaire .zoom titre {
+.glossaire .zoom entete {
     display: block; position: relative;
     width: 100%; height: 10%;
     text-align: center;
+}
+.glossaire .zoom titre, .glossaire .zoom suffixe {
+    display: inline-block; position: relative;
+    width: auto; height: 100%;
+}
+
+.glossaire .zoom titre, .glossaire .zoom suffixe select {
     text-decoration: underline;
     font-size: 3.5vh;
     font-weight: bold;
+    border: none;
+    border-color: none;
 }
 
 .glossaire .zoom texte {
@@ -73,6 +82,18 @@
     display: inline-block; position: relative;
     width: 50%; height: auto;
     text-align: left;
+}
+.glossaire .zoom infoList {
+    display: inline-block; position: relative;
+    width: 100%; height: auto;
+    text-align: left;
+}
+
+.glossaire .zoom span {
+    cursor: pointer;
+}
+.glossaire .zoom span:hover {
+    text-decoration: underline;
 }
 
 /**

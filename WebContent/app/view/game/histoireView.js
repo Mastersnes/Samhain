@@ -3,7 +3,7 @@ define(["jquery",
         "app/utils/utils",
         "app/utils/viewUtils",
         "text!app/template/game/histoire.html",
-        "app/data/story"
+        "app/data/stories"
         ], function($, Utils, ViewUtils, page, Stories){
     return function(parent){
         this.init = function(parent) {
@@ -62,13 +62,16 @@ define(["jquery",
             var that = this;
             this.el.find("action").click(function() {
                 var id = $(this).attr("id");
+
+                that.player.etatsManager.infligeEtats();
                 that.hideActions(function() {
                      var actions = that.currentLieu.actions[id];
                      if (!actions) console.log("Erreur - l'action n'existe pas pour ce lieu", that.currentLieu, id);
 
                      for (var actionId in actions.action) {
                          var action = actions.action[actionId];
-                         that.execute(action.key, action.params);
+                         if (action.key) that.execute(action.key, action.params);
+                         else action(that);
                      }
                 });
             });

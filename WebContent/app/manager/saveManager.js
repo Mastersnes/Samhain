@@ -26,8 +26,8 @@ function($, _, Utils) {
 			            "max" : 100
 			        },
 			        "mana" : {
-			            "current" : 0,
-			            "max" : 0
+			            "current" : 100,
+			            "max" : 100
 			        },
 
 			        "buff" : null,
@@ -44,13 +44,13 @@ function($, _, Utils) {
 			            "currentArme" : "poing",
 			            "bouclier" : ["bras"],
 			            "currentBouclier" : "bras",
-			            "magie" : [],
+			            "magie" : ["bouleFeu"],
 			            "conso" : [],
 			            "clef" : [],
 			            "ifObj" : []
 			        },
                     "lieu" : "start",
-                    "unlockMana" : false
+                    "unlockMana" : true
 			    },
                 "success" : {
                     "successComplete" : [],

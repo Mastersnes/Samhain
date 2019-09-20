@@ -49,6 +49,9 @@ actionsContainer action[type="bouleFeu"] name {
 actionsContainer action[type="pomme"] name {
     left: 15% !important;
 }
+actionsContainer action[type="epee"] name {
+    left: 15% !important;
+}
 actionsContainer action[type="bras"] name {
     left: 16% !important;
     font-size: 3.4vh !important;
@@ -68,7 +71,7 @@ actionsContainer action[state] {
 * Etiquettes des actions
 **/
 actionsContainer action {
-    background-image: url("../img/game/actions/dague.png");
+    background-image: url("../img/game/actions/basique.png");
 }
 
 /** Armes **/

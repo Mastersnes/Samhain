@@ -15,25 +15,37 @@
 .fight monster.araignee {
     background-image: url("../img/game/monsters/araignee.png");
 }
+.fight monster.bandit {
+    background-image: url("../img/game/monsters/bandit.png");
+}
+.fight monster.experience {
+    background-image: url("../img/game/monsters/experience.png");
+}
+.fight monster.garde {
+    background-image: url("../img/game/monsters/garde.png");
+}
 .fight monster.goule {
     background-image: url("../img/game/monsters/goule.png");
-}
-.fight monster.villageois {
-    background-image: url("../img/game/monsters/villageois.png");
 }
 .fight monster.squelette {
     background-image: url("../img/game/monsters/squelette.png");
 }
-.fight monster.squeletteManchot {
+.fight monster.squelette[suffixe^="manchot"] {
     background-image: url("../img/game/monsters/squeletteManchot.png");
+}
+.fight monster.villageois {
+    background-image: url("../img/game/monsters/villageois.png");
 }
 
 /**
 * Boss
 **/
-.fight monster.roiAraigneeBlesse {
-    background-image: url("../img/game/monsters/roiAraigneeBlesse.png");
+.fight monster.roiAraignee {
+    background-image: url("../img/game/monsters/roiAraignee.png");
 }
 .fight monster.liche {
     background-image: url("../img/game/monsters/liche.png");
+}
+.fight monster.necromancien {
+    background-image: url("../img/game/monsters/necromancien.png");
 }

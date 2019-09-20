@@ -1,4 +1,5 @@
 <% var text = data.text %>
+<% var suffixes = data.suffixes %>
 
 <div>
 	<mask></mask>
@@ -10,7 +11,22 @@
 		</content>
 		<content class="zoom">
 			<retour><%=text.get("retour")%></retour>
-			<titre></titre>
+			<entete>
+				<titre></titre>
+				<suffixe>
+					<select>
+						<% for (var i in suffixes) { %>
+							<% var suffixe = suffixes[i]; %>
+							<option id="<%=i%>-m" class="masculin" name="<%=i%>">
+								<%=text.get(suffixe.namem)%>
+							</option>
+							<option id="<%=i%>-f" class="feminin" name="<%=i%>">
+								<%=text.get(suffixe.namef)%>
+							</option>
+						<% } %>
+					</select>
+				</suffixe>
+			</entete>
 			<texte></texte>
 			<infos></infos>
 		</content>

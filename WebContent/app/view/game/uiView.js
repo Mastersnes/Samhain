@@ -29,6 +29,7 @@ define(["jquery",
         this.loop = function(game) {
             var life = this.player.get("life");
             this.refresh("fiole.life", life.current, life.max, true, 11);
+            this.refreshEtats();
 
             if (this.player.get("unlockMana")) {
                 var mana = this.player.get("mana");
@@ -69,7 +70,23 @@ define(["jquery",
 
             var step = Math.ceil((current * stepNumber) / max);
             if (step > stepNumber) step = stepNumber;
-            this.el.find(id + " picture").attr("step", step);
+            this.el.find(id + " > picture").attr("step", step);
+        };
+
+        this.refreshEtats = function() {
+            var debuff = this.player.get("debuff");
+            if (debuff) this.el.find("fiole.life").attr("debuff", debuff.element);
+            else this.el.find("fiole.life").removeAttr("debuff");
+
+            var buff = this.player.get("buff");
+            if (buff) {
+                this.el.find("fiole.life buff").attr("class", buff.element);
+                var stepNumber = 5;
+                var step = Math.ceil((buff.current * stepNumber) / buff.duree);
+                if (step > stepNumber) step = stepNumber;
+                this.el.find("fiole.life buff > picture").attr("step", step);
+                this.el.find("fiole.life buff").show();
+            } else this.el.find("fiole.life buff").hide();
         };
 
         this.makeEvents = function() {

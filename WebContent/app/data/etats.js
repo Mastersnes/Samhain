@@ -3,10 +3,19 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 	var data = {
         "poison" : {
             "name" : "poison",
-            "texte" : "poison-texte",
-            "type" : "poison",
+            "element" : "poison",
             "duree" : [1, 3],
-            "degats" : [0, 3],
+            "degats" : [1, 3],
+            "vie" : [0, 0],
+            "sound" : null,
+            "anim" : null,
+            "offensif" : true
+        },
+        "poison-2" : {
+            "name" : "poison",
+            "element" : "poison",
+            "duree" : [3, 5],
+            "degats" : [3, 5],
             "vie" : [0, 0],
             "sound" : null,
             "anim" : null,
@@ -14,8 +23,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
         },
         "satiete" : {
             "name" : "satiete",
-            "texte" : "satiete-texte",
-            "type" : "sante",
+            "element" : "sante",
             "duree" : [1, 3],
             "degats" : [0, 0],
             "vie" : [1, 3],
@@ -25,10 +33,19 @@ define(["jquery", "app/utils/utils"], function($, Utils){
         },
         "brulure" : {
             "name" : "brulure",
-            "texte" : "brulure-texte",
-            "type" : "brulure",
-            "duree" : [1, 3],
-            "degats" : [0, 5],
+            "element" : "feu",
+            "duree" : [1, 2],
+            "degats" : [3, 5],
+            "vie" : [0, 0],
+            "sound" : null,
+            "anim" : null,
+            "offensif" : true
+        },
+        "saignement" : {
+            "name" : "saignement",
+            "element" : "saignement",
+            "duree" : [2, 3],
+            "degats" : [1, 5],
             "vie" : [0, 0],
             "sound" : null,
             "anim" : null,

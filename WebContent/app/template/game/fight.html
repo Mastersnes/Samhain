@@ -6,6 +6,7 @@
 		<monsters>
 			<% for (var i in monsters) { %>
 				<% var monster = monsters[i]; %>
+				<% if (monster.get("life.current") <= 0) continue; %>
 				<monster id="<%=i%>" class="<%=monster.name%> <%=monster.type%>" suffixe="<%=monster.suffixe.namem%>">
 					<cible></cible>
 					<jauge class="life">

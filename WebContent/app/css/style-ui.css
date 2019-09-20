@@ -20,7 +20,7 @@ fiole {
 	position: absolute;
 	display: block;
 }
-fiole picture {
+fiole > picture {
     position: relative;
     display: block;
     width: 100%; height: 100%;
@@ -28,17 +28,17 @@ fiole picture {
     /* 100 * nombre de frames */
     background-size: 1100% 100%;
 }
-fiole picture[step="0"] {background-position: 100% 0%;}
-fiole picture[step="1"] {background-position: 90% 0%;}
-fiole picture[step="2"] {background-position: 80% 0%;}
-fiole picture[step="3"] {background-position: 70% 0%;}
-fiole picture[step="4"] {background-position: 60% 0%;}
-fiole picture[step="5"] {background-position: 50% 0%;}
-fiole picture[step="6"] {background-position: 40% 0%;}
-fiole picture[step="7"] {background-position: 30% 0%;}
-fiole picture[step="8"] {background-position: 20% 0%;}
-fiole picture[step="9"] {background-position: 10% 0%;}
-fiole picture[step="10"] {background-position: 0% 0%;}
+fiole > picture[step="0"] {background-position: 100% 0%;}
+fiole > picture[step="1"] {background-position: 90% 0%;}
+fiole > picture[step="2"] {background-position: 80% 0%;}
+fiole > picture[step="3"] {background-position: 70% 0%;}
+fiole > picture[step="4"] {background-position: 60% 0%;}
+fiole > picture[step="5"] {background-position: 50% 0%;}
+fiole > picture[step="6"] {background-position: 40% 0%;}
+fiole > picture[step="7"] {background-position: 30% 0%;}
+fiole > picture[step="8"] {background-position: 20% 0%;}
+fiole > picture[step="9"] {background-position: 10% 0%;}
+fiole > picture[step="10"] {background-position: 0% 0%;}
 
 fiole montant {
     position: absolute;
@@ -52,14 +52,17 @@ fiole.life {
 	top: 12%; left: 1.8%;
 	width: 13.4%; height: 100%;
 }
-fiole.life picture {
-    background-image: url("../img/game/interface/ui/life.png");
+fiole.life > picture {
+    background-image: url("../img/game/interface/ui/life/normal.png");
 }
-fiole.life[etat="poison"] picture {
-    background-image: url("../img/game/interface/ui/life-poison.png");
+fiole.life[debuff="poison"] > picture {
+    background-image: url("../img/game/interface/ui/life/poison.png");
 }
-fiole.life[etat="brulure"] picture {
-    background-image: url("../img/game/interface/ui/life-brulure.png");
+fiole.life[debuff="feu"] > picture {
+    background-image: url("../img/game/interface/ui/life/feu.png");
+}
+fiole.life[debuff="saignement"] > picture {
+    background-image: url("../img/game/interface/ui/life/saignement.png");
 }
 fiole.life montant {
     transform: rotate(-16deg);
@@ -78,7 +81,7 @@ fiole.mana {
 	top: 19%; left: 10.6%;
 	width: 16%; height: 100%;
 }
-fiole.mana picture {
+fiole.mana > picture {
     background-image: url("../img/game/interface/ui/mana.png");
 }
 fiole.mana montant {
@@ -103,7 +106,7 @@ gold {
 	width: 27%; height: 137%;
 	top: 0%; right: 0%;
 }
-gold picture {
+gold > picture {
     position: relative;
     display: block;
     width: 100%; height: 100%;
@@ -132,14 +135,14 @@ gold montant[digits="1"] {
     left: 56%; top: 45.5%;
 }
 
-gold picture[step="0"] {background-position: 0% 0%;}
-gold picture[step="1"] {background-position: 0% 12.5%;}
-gold picture[step="2"] {background-position: 0% 25%;}
-gold picture[step="3"] {background-position: 0% 37.5%;}
-gold picture[step="4"] {background-position: 0% 50%;}
-gold picture[step="5"] {background-position: 0% 62.5%;}
-gold picture[step="6"] {background-position: 0% 75%;}
-gold picture[step="7"] {background-position: 0% 87.5%;}
+gold > picture[step="0"] {background-position: 0% 0%;}
+gold > picture[step="1"] {background-position: 0% 12.5%;}
+gold > picture[step="2"] {background-position: 0% 25%;}
+gold > picture[step="3"] {background-position: 0% 37.5%;}
+gold > picture[step="4"] {background-position: 0% 50%;}
+gold > picture[step="5"] {background-position: 0% 62.5%;}
+gold > picture[step="6"] {background-position: 0% 75%;}
+gold > picture[step="7"] {background-position: 0% 87.5%;}
 
 /**
 * Level
@@ -150,7 +153,7 @@ level {
 	width: 15%; height: 70%;
 	top: 20%; left: 45%;
 }
-level picture {
+level > picture {
     position: relative;
     display: block;
     width: 100%; height: 100%;
@@ -166,14 +169,41 @@ level montant {
     left: 25%; top: 0%;
     font-size: 2.5vh; font-weight: bold;
 }
-level picture[step="0"] {background-position: 0% 0%;}
-level picture[step="1"] {background-position: 10% 0%;}
-level picture[step="2"] {background-position: 20% 0%;}
-level picture[step="3"] {background-position: 30% 0%;}
-level picture[step="4"] {background-position: 40% 0%;}
-level picture[step="5"] {background-position: 50% 0%;}
-level picture[step="6"] {background-position: 60% 0%;}
-level picture[step="7"] {background-position: 70% 0%;}
-level picture[step="8"] {background-position: 80% 0%;}
-level picture[step="9"] {background-position: 90% 0%;}
-level picture[step="10"] {background-position: 100% 0%;}
+level > picture[step="0"] {background-position: 0% 0%;}
+level > picture[step="1"] {background-position: 10% 0%;}
+level > picture[step="2"] {background-position: 20% 0%;}
+level > picture[step="3"] {background-position: 30% 0%;}
+level > picture[step="4"] {background-position: 40% 0%;}
+level > picture[step="5"] {background-position: 50% 0%;}
+level > picture[step="6"] {background-position: 60% 0%;}
+level > picture[step="7"] {background-position: 70% 0%;}
+level > picture[step="8"] {background-position: 80% 0%;}
+level > picture[step="9"] {background-position: 90% 0%;}
+level > picture[step="10"] {background-position: 100% 0%;}
+
+/**
+* Buffs (Stickers)
+**/
+fiole.life buff {
+    position: absolute;
+    display: block;
+    left: 32%; top: 41%;
+    width: 15%; height: 15%;
+}
+fiole.life buff > picture {
+    position: relative;
+    display: block;
+    width: 100%; height: 100%;
+    background-repeat: no-repeat;
+    /* 100 * nombre de frames */
+    background-size: 500% 100%;
+}
+fiole.life buff > picture[step="0"] {background-position: 0% 0%;}
+fiole.life buff > picture[step="1"] {background-position: 25% 0%;}
+fiole.life buff > picture[step="2"] {background-position: 50% 0%;}
+fiole.life buff > picture[step="3"] {background-position: 75% 0%;}
+fiole.life buff > picture[step="4"] {background-position: 100% 0%;}
+
+fiole.life buff.sante > picture {
+    background-image: url("../img/game/interface/ui/buff/sante.png");
+}

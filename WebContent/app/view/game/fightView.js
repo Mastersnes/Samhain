@@ -20,6 +20,7 @@ define(["jquery",
             this.saveManager = parent.saveManager;
             this.recompenseManager = parent.recompenseManager;
             this.player = parent.playerManager;
+            this.player.fightView = this;
 
             this.monsters = [];
             this.actions = [];
@@ -64,6 +65,25 @@ define(["jquery",
             this.el.html(template(templateData));
 
             this.makeEvents();
+        };
+
+        /**
+        * Ranime ou ajoute des monstres supplementaires au plateau
+        **/
+        this.addMonstre = function(monstres, max) {
+            if (!max) max = 6;
+            if (!Array.isArray(monstres)) monstres = [monstres];
+            var aliveMonsters = this.aliveMonsters();
+            if (aliveMonsters.length + 1 > max) return;
+
+            var base = this.monsters.length;
+            for (var i in monstres) {
+                var adversaire = monstres[i];
+                var monstre = this.firstDeadMonster(adversaire);
+                if (monstre) monstre.restore();
+                else this.monsters.push(new MonsterManager(this, adversaire, base + parseInt(i)));
+            }
+            this.render();
         };
 
         this.pioche = function() {
@@ -194,11 +214,9 @@ define(["jquery",
         };
 
         this.refreshMonsterEtats = function(monster, monsterDom) {
-            monsterDom.find("etats").empty();
-
             var buff = monster.data.buff;
             if (buff) {
-                monsterDom.find("etat#buff").attr("type", buff.type);
+                monsterDom.find("etat#buff").attr("type", buff.element);
                 monsterDom.find("etat#buff").fadeIn();
             } else {
                 monsterDom.find("etat#buff").attr("type", null);
@@ -207,7 +225,7 @@ define(["jquery",
 
             var debuff = monster.data.debuff;
             if (debuff) {
-                monsterDom.find("etat#debuff").attr("type", debuff.type);
+                monsterDom.find("etat#debuff").attr("type", debuff.element);
                 monsterDom.find("etat#debuff").fadeIn();
             } else {
                 monsterDom.find("etat#debuff").attr("type", null);
@@ -276,6 +294,18 @@ define(["jquery",
                     alive.push(monster);
             }
             return alive;
+        };
+
+        /**
+        * Renvoi le premier monstre morts portant le nom indiqué
+        **/
+        this.firstDeadMonster = function(name) {
+            for (var i in this.monsters) {
+                var monster = this.monsters[i];
+                if (monster.get("life").current <= 0 && monster.name == name)
+                    return monster;
+            }
+            return null;
         };
 
         /**
@@ -356,18 +386,6 @@ define(["jquery",
                 });
 
             });
-        };
-
-        /**
-        * Inflige l'etat au differents adversaires
-        **/
-        this.infligeEtats = function() {
-            this.player.etatsManager.infligeEtats();
-            var aliveMonsters = this.aliveMonsters();
-            for (var i in aliveMonsters) {
-                var monster = aliveMonsters[i];
-                monster.etatsManager.infligeEtats();
-            }
         };
 
         this.win = function() {

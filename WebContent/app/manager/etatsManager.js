@@ -35,7 +35,7 @@ function($, _, Utils, Etats) {
 
 		/**
         * Ajoute l'effet en question
-        * Si un effet du meme type existe deja -> le reinitialise
+        * Si un effet du meme type existe deja additionne les durees
         **/
         this.addEtat = function(newEtat) {
             if (!newEtat) return;
@@ -43,34 +43,43 @@ function($, _, Utils, Etats) {
             var dureeMin = newEtat.duree[0];
             var dureeMax = newEtat.duree[1];
             newEtat.duree = Utils.rand(dureeMin, dureeMax, true) + newEtat.level;
+            newEtat.current = newEtat.duree;
 
-            if (newEtat.offensif) this.data.debuff = newEtat;
-            else this.data.buff = newEtat;
+            if (newEtat.offensif) {
+                var oldEtat = this.data.debuff;
+                if (oldEtat && oldEtat.type == newEtat.type) newEtat.duree += oldEtat.current;
+                this.data.debuff = newEtat;
+            }else {
+                var oldEtat = this.data.buff;
+                if (oldEtat && oldEtat.type == newEtat.type) newEtat.duree += oldEtat.current;
+                this.data.buff = newEtat;
+            }
         };
 
         /**
-        * Inflige les etats et decremente la duree
+        * Inflige les etats et lance le callback
         **/
-		this.infligeEtats = function() {
-            if (this.data.buff) {
-                this.infligeEtat(this.data.buff);
-                if(this.data.buff.duree <= 0) this.data.buff = null;
-            }
-
-            if (this.data.debuff) {
-                this.infligeEtat(this.data.debuff);
-                if(this.data.debuff.duree <= 0) this.data.debuff = null;
-            }
+		this.infligeEtats = function(endFunction) {
+            var that = this;
+            this.infligeEtat("debuff", function() {
+                that.infligeEtat("buff", endFunction);
+            });
         };
 
-        this.infligeEtat = function(etat) {
-            etat.duree--;
+        this.infligeEtat = function(etatName, then) {
+            var etat = this.data[etatName];
+            if (!etat) return then?then():null;
+            etat.current--;
 
             var degats = Utils.rand(etat.degats[0], etat.degats[1], true);
-            if (degats) this.parent.hurt(degats + etat.level, false);
+            if (degats) this.parent.hurt(degats + etat.level, false, etat.element);
 
             var vie = Utils.rand(etat.vie[0], etat.vie[1], true);
             if (vie) this.parent.addLife(vie + etat.level);
+
+            if (etat.current <= 0) this.data[etatName] = null;
+            // Empeche la superposition des degats
+            setTimeout(then, 50);
         };
 
 		this.init(parent);

@@ -62,31 +62,32 @@ function($, _, Utils, Items) {
         this.bouclierCase = function() {
             this.parent.closePending();
             this.state = "used";
-            this.parent.infligeEtats();
             this.parent.monstersAttaque(this.data.sound);
         };
 
         this.useOn = function(cibles) {
+            var that = this;
             if (!Array.isArray(cibles)) cibles = [cibles];
             this.parent.closePending();
             this.state = "used";
 
             var player = this.parent.player;
-            this.parent.infligeEtats();
-            switch (this.data.type) {
-                case "arme" :
-                    player.attaque(cibles, true, this.data);
-                    break;
-                case "magie" :
-                    player.spell(this.data.name, cibles, this.data);
-                    break;
-                case "conso" :
-                    player.use(this.data.name, cibles);
-                    break;
-                default :
-                    console.log("Erreur - l'action est inconnue", this.data, cibles);
-                    break;
-            }
+            player.etatsManager.infligeEtats(function() {
+                switch (that.data.type) {
+                    case "arme" :
+                        player.attaque(cibles, true, that.data);
+                        break;
+                    case "magie" :
+                        player.spell(that.data.name, cibles, that.data);
+                        break;
+                    case "conso" :
+                        player.use(that.data.name, cibles);
+                        break;
+                    default :
+                        console.log("Erreur - l'action est inconnue", that.data, cibles);
+                        break;
+                }
+            });
         };
 
 		this.init(parent, name);

@@ -7,15 +7,7 @@ Ameliorations :
 	-> Ajout du glossaire (RESTE LES GRAPHISMES)
 	-> Ajout de l'inventaire
 -> Combat
-	-> Donner la possibilité de forcer des donnees (suffixe, niveau) sur un monstre
-	-> Sorts (vol de vie, vol de mana, double attaque, coup critique) (voler, invoquer)
-	    -> roi araignee : pondre d'autre araignee, vol de vie
-	    -> liche : invoquer experience, vol de vie, vol de mana
-	    -> bandit : voler, double attaque
-	    -> squelette : coup critique
-	    -> goule : vol de vie, double attaque
-	    -> grosseGoule : vol de vie, coup critique, double attaque
-	    -> experience : morsure, vol de vie, double attaque, coup critique
+    -> Ajouter les status des monstres
 -> Contenu
 	-> Ajout de la boutique
 	-> Ajout de la ville
@@ -23,10 +15,8 @@ Ameliorations :
 	-> Ajout du poste de garde (combats aleatoires en fonction du niveau)
 -> Sons
     -> hurt.wav quand le joueur prend des degats
-    -> des sons de blockage pour les monstres
 -> Bugs
-    ->
-
+    -> Revoir au cas par cas la force des monstres
 
 -> Fait
     -> General
@@ -42,3 +32,12 @@ Ameliorations :
         -> Affichage des gains de vie et perte de vie (mettre un +x ou -x qui s'envole)
         -> Magie de monstres (empoisonnement, doubles attaques)
         -> Buff et debuff (poison, brulure, rassasié, ...)
+        -> Donner la possibilité de forcer des donnees (suffixe, niveau) sur un monstre
+        -> Sorts des monstres :
+            -> araignee : morsure
+            -> bandit : voler, double attaque
+            -> goule : morsure, cannibalisme, double attaque
+            -> roi araignee : morsure, pondre d'autre araignee, double attaque
+            -> experience : morsure, double attaque, cannibalisme
+            -> necomancien : "soin", "volDeVie", "bouleFeu", "invoqueGoule", "invoqueExperience"
+            -> liche : "soin", "volDeVie", "volDeMana", "bouleFeu", "invoqueGrosseGoule", "invoqueExperience"

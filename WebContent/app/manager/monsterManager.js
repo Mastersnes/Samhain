@@ -42,14 +42,14 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
 			if (this.level < 0) this.level = 0;
 			if (adversaire.level) this.level = eval(adversaire.level.replace("player", playerLevel));
 
-			var vieMin = this.template.vie[0] * this.suffixe.vie;
-			var vieMax = this.template.vie[1] * this.suffixe.vie;
-			var vie = Utils.rand(vieMin, vieMax) + this.level;
+			var vieMin = this.template.vie[0] * this.suffixe.vie * (this.level+1);
+			var vieMax = this.template.vie[1] * this.suffixe.vie * (this.level+1);
+			var vie = Utils.rand(vieMin, vieMax);
 			if (vie < 1) vie = 1;
 
-			var manaMin = this.template.mana[0] * this.suffixe.mana;
-			var manaMax = this.template.mana[1] * this.suffixe.mana;
-			var mana = Utils.rand(manaMin, manaMax) + this.level;
+			var manaMin = this.template.mana[0] * this.suffixe.mana + this.level;
+			var manaMax = this.template.mana[1] * this.suffixe.mana + this.level;
+			var mana = Utils.rand(manaMin, manaMax);
 
 			var attaqueMin = this.template.attaque[0] * this.suffixe.attaque + this.level;
 			var attaqueMax = this.template.attaque[1] * this.suffixe.attaque + this.level;
@@ -58,20 +58,22 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
 			var defenseMin = this.template.defense[0] * this.suffixe.defense + this.level;
 			var defenseMax = this.template.defense[1] * this.suffixe.defense + this.level;
 
-			var goldMin = this.template.argent[0] * this.suffixe.argent;
-			var goldMax = this.template.argent[1] * this.suffixe.argent;
-			var gold = Utils.rand(goldMin, goldMax) + this.level;
+			var goldMin = this.template.argent[0] * this.suffixe.argent + this.level;
+			var goldMax = this.template.argent[1] * this.suffixe.argent + this.level;
+			var gold = Utils.rand(goldMin, goldMax);
 			if (gold < 1) gold = 1;
 
-			var xpMin = this.template.xp[0] * this.suffixe.xp;
-			var xpMax = this.template.xp[1] * this.suffixe.xp;
-			var xp = Utils.rand(xpMin, xpMax) + this.level;
+			var xpMin = this.template.xp[0] * this.suffixe.xp + this.level;
+			var xpMax = this.template.xp[1] * this.suffixe.xp + this.level;
+			var xp = Utils.rand(xpMin, xpMax);
 			if (xp < 1) xp = 1;
 
 			var abilities = [];
 			if (this.template.abilities) abilities = this.template.abilities;
 
 			this.type = this.template.type;
+
+			this.isMonster = true;
 
 			this.data = {
 			    "life" : {
@@ -124,7 +126,7 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
             if (degats < 0) degats = 0;
             return cible.hurt(degats, withDef);
         };
-        this.hurt = function(amount, withDef) {
+        this.hurt = function(amount, withDef, element) {
             var degats = amount;
 
             if (withDef) {
@@ -133,10 +135,10 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
             }
 
             if (degats < 0) degats = 0;
-            this.addLife(-degats);
+            this.addLife(-degats, element);
             return degats;
         };
-        this.addLife = function(amount) {
+        this.addLife = function(amount, element) {
             this.data.life.current += amount;
             if (this.data.life.current < 0) this.data.life.current = 0;
             if (this.data.life.current > this.data.life.max)
@@ -144,6 +146,7 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
         };
 
         this.spell = function(itemId, cibles) {
+            var that = this;
             if (!cibles) cibles = this;
             if (!Array.isArray(cibles)) cibles = [cibles];
 
@@ -152,24 +155,52 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
             var abilities = this.data.abilities;
             if (Utils.contains(abilities, itemId)) {
                 var abilitie = Items.get("magie", itemId);
+                // Si il existe une contrainte et qu'elle n'est pas respectée, on ne lance pas le sort
+                if (abilitie.contrainte && !abilitie.contrainte(this, cible, this.parent)) return actionDone;
+
                 if (abilitie.manaCost <= this.get("mana.current")) {
                     this.addMana(-abilitie.manaCost);
 
                     for (var i in cibles) {
                         var cible = cibles[i];
 
-                        var degats = Utils.rand(abilitie.degats[0], abilitie.degats[1], true);
-                        if (degats > 0) cible.hurt(degats + this.level, true);
+                        if (abilitie.offensif) {
+                            cible.showAmountChange(this.Textes.get(abilitie.name), "abilitie", abilitie.element);
+                        }
 
-                        var vie = Utils.rand(abilitie.vie[0], abilitie.vie[1], true);
-                        if (vie > 0) cible.addLife(vie + this.level);
+                        if (abilitie.degats) {
+                            var degats = Utils.rand(abilitie.degats[0], abilitie.degats[1], true);
+                            if (degats > 0) {
+                                // Empeche la superposition des degats
+                                setTimeout(function() {
+                                    cible.hurt(degats + that.level, true, abilitie.element);
+                                }, 50);
+                            }
+                        }
 
-                        var lifeSteal = Utils.rand(abilitie.lifeSteal[0], abilitie.lifeSteal[1], true);
-                        if (lifeSteal > 0) this.addLife(lifeSteal + this.level);
+                        if (abilitie.vie) {
+                            var vie = Utils.rand(abilitie.vie[0], abilitie.vie[1], true);
+                            if (vie > 0) cible.addLife(vie + this.level);
+                        }
 
-                        for (var i in abilitie.effet) {
-                            var effetId = abilitie.effet[i];
-                            this.etatsManager.check(effetId, cible);
+                        if (abilitie.lifeSteal) {
+                            var lifeSteal = Utils.rand(abilitie.lifeSteal[0], abilitie.lifeSteal[1], true);
+                            if (lifeSteal > 0) this.steal("life", cible, lifeSteal + this.level)
+                        }
+
+                        if (abilitie.manaSteal) {
+                            var manaSteal = Utils.rand(abilitie.manaSteal[0], abilitie.manaSteal[1], true);
+                            if (manaSteal > 0) this.steal("mana", cible, manaSteal + this.level)
+                        }
+
+                        // Action particuliere
+                        if (abilitie.action) abilitie.action(this, cible, this.parent);
+
+                        if (abilitie.effet) {
+                            for (var i in abilitie.effet) {
+                                var effetId = abilitie.effet[i];
+                                this.etatsManager.check(effetId, cible);
+                            }
                         }
                     }
                     actionDone = true;
@@ -197,45 +228,72 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
             return usable;
         };
 
+        this.steal = function(attr, cible, value, valueMin) {
+            switch(attr) {
+                case "life":
+                    var steal = cible.get("life.current");
+                    cible.addLife(-value);
+                    steal -= cible.get("life.current");
+                    if (valueMin != undefined) this.addLife(Utils.rand(valueMin, steal, true));
+                    else this.addLife(steal);
+                    break;
+                case "mana":
+                    var steal = cible.get("mana.current");
+                    cible.addMana(-value);
+                    steal -= cible.get("mana.current");
+                    if (valueMin != undefined) this.addMana(Utils.rand(valueMin, steal, true));
+                    else this.addMana(steal);
+                    break;
+                case "gold":
+                    var steal = cible.get("gold");
+                    cible.addGold(-value);
+                    if (valueMin != undefined) this.addGold(Utils.rand(valueMin, steal, true));
+                    else this.addGold(steal);
+                    break;
+            }
+        };
+
+        /**
+        * Modification sur l'or
+        **/
+        this.addGold = function(amount) {
+            this.data.gold += amount;
+            if (this.data.gold < 0) this.data.gold = 0;
+            if (this.data.gold > 1000) this.data.gold = 1000;
+        };
+
         /**
         * Lance une attaque de type magique ou physique
         **/
         this.launchAttaque = function(dom, player, aliveMonsters, blockSound) {
-            if (Utils.rand(0, 5) == 0) { // Chances de lancer un sort
+            if (Utils.rand(0, 4) == 0) { // Chances de lancer un sort
                 var abilities = this.usableMagie();
                 if (abilities.length > 0) {
                     var abilitieId = abilities[Utils.rand(0, abilities.length)];
                     var abilitie = Items.get("magie", abilitieId);
+                    var actionDone = false;
 
                     if (abilitie.offensif) {
-                        this.spell(abilitie.name, player);
+                        actionDone = this.spell(abilitie.name, player);
                     }else if (abilitie.multicible) {
-                        this.spell(abilitie.name, aliveMonsters);
+                        actionDone = this.spell(abilitie.name, aliveMonsters);
                     }else {
                         var cibleMonster = aliveMonsters[Utils.rand(0, aliveMonsters.length)];
-                        this.spell(abilitie.name, cibleMonster);
+                        actionDone = this.spell(abilitie.name, cibleMonster);
                     }
-                    return;
+                    if (actionDone) return;
                 }
             }
 
             // Attaque classique si aucun sort a lancer
             var degats = this.attaque(player, true);
             if (degats) this.mediatheque.playSound("hurt.wav");
-            else this.mediatheque.playSound(blockSound + ".wav");
-        };
-
-        /**
-        * Verifie si le monstre a pris des degats
-        **/
-        this.checkDegats = function(degats, anim) {
-            if (degats > 0) this.showDegats(anim);
             else {
-                var blockAnim = "block";
-                if (this.template.blockAnim) blockAnim = this.template.blockAnim;
-
-                this.showDegats(blockAnim);
+                if (!blockSound) blockSound = "block";
+                this.mediatheque.playSound(blockSound + ".wav");
             }
+
+            this.etatsManager.infligeEtats();
         };
 
         /**
@@ -244,13 +302,20 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
         this.showDegats = function(anim) {
             if (!anim) return;
             var ciblesDom = $(".fight monster#"+this.index+" anim");
-            console.log("play", anim, "on", ciblesDom);
             ciblesDom.addClass(anim);
             ciblesDom.fadeIn(200, function() {
                 ciblesDom.fadeOut(500, function() {
                     ciblesDom.removeClass(anim);
                 });
             });
+        };
+
+        /**
+        * Rescussite le monstre
+        **/
+        this.restore = function() {
+            this.addLife(this.get("life.max"));
+            this.addMana(this.get("mana.max"));
         };
 
 		this.init(parent, name, index);
