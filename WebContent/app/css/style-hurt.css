@@ -59,13 +59,14 @@ hurts amountchanger.mana amount {
 }
 hurts amountchanger.gold amount {
     color: yellow !important;
-    margin-left: 60%;
+}
+hurts amountchanger.equipment amount {
+    color: yellow !important;
 }
 hurts amountchanger.xp amount {
     color: white !important;
-    margin-left: 80%;
 }
-hurts amountchanger[element="miss"], hurts amountchanger.abilitie {
+hurts amountchanger[element="miss"], hurts amountchanger.abilitie, hurts amountchanger.equipment {
     text-align: center;
 }
 
@@ -73,7 +74,6 @@ hurts amountchanger[element="miss"], hurts amountchanger.abilitie {
 * Cas des elements
 **/
 hurts amountchanger[element="miss"] amount {
-    margin-left: 0;
     color: white;
 }
 hurts amountchanger amount {

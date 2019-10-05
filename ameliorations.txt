@@ -7,8 +7,8 @@ Ameliorations :
 	-> Ajout du glossaire (RESTE LES GRAPHISMES)
 	-> Ajout de l'inventaire
 -> Combat
-    -> Ajouter les status des monstres
--> Contenu
+    ->
+-> Contenu Additionnel
 	-> Ajout de la boutique
 	-> Ajout de la ville
 	-> Ajout de 3 quetes
@@ -41,3 +41,4 @@ Ameliorations :
             -> experience : morsure, double attaque, cannibalisme
             -> necomancien : "soin", "volDeVie", "bouleFeu", "invoqueGoule", "invoqueExperience"
             -> liche : "soin", "volDeVie", "volDeMana", "bouleFeu", "invoqueGrosseGoule", "invoqueExperience"
+        -> Ajouter les status des monstres

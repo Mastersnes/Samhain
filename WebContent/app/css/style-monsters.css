@@ -10,6 +10,15 @@
 }
 
 /**
+* Specificité
+**/
+monstersContainer monster.grosseGoule name {
+    width: 78%;
+    left: 11%;
+    font-size: 3.4vh;
+}
+
+/**
 * Monsters
 **/
 .fight monster.araignee {
@@ -26,6 +35,9 @@
 }
 .fight monster.goule {
     background-image: url("../img/game/monsters/goule.png");
+}
+.fight monster.grosseGoule {
+    background-image: url("../img/game/monsters/grosseGoule.png");
 }
 .fight monster.squelette {
     background-image: url("../img/game/monsters/squelette.png");

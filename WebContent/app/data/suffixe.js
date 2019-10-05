@@ -6,30 +6,30 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"namef" : "grognon",
 			"attaque" : 1.3,
 			"defense" : 0,
-            "vie" : 1,
+            "vie" : 1.1,
             "mana" : 0.7,
-            "argent" : 2,
-            "xp" : 2
+            "argent" : 1.2,
+            "xp" : 1.2
 		},
 		"hargneux" : {
 			"namem" : "hargneux-m",
 			"namef" : "hargneux-f",
-			"attaque" : 1,
+			"attaque" : 1.2,
 			"defense" : 0,
-			"vie" : 1.5,
+			"vie" : 1.8,
 			"mana" : 1,
-			"argent" : 2,
-            "xp" : 2
+			"argent" : 1.2,
+            "xp" : 1.2
 		},
 		"debile" : {
 			"namem" : "debile",
 			"namef" : "debile",
-			"attaque" : 0.25,
+			"attaque" : 0.5,
 			"defense" : 0,
-			"vie" : 0.25,
-			"mana" : 0.25,
-			"argent" : 0.8,
-            "xp" : 0.8
+			"vie" : 0.5,
+			"mana" : 0.5,
+			"argent" : 0.25,
+            "xp" : 0.25
 		},
 		"borgne" : {
 			"namem" : "borgne",
@@ -38,8 +38,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"defense" : 0,
 			"vie" : 1,
 			"mana" : 0.5,
-			"argent" : 0.5,
-            "xp" : 0.5
+			"argent" : 0.25,
+            "xp" : 0.25
 		},
 		"timide" : {
 			"namem" : "timide",
@@ -47,9 +47,9 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"attaque" : 1,
 			"defense" : 0,
 			"vie" : 1,
-			"mana" : 1.3,
-			"argent" : 1.2,
-            "xp" : 1.2
+			"mana" : 1.5,
+			"argent" : 1,
+            "xp" : 1
 		},
 		"freluquet" : {
 			"namem" : "freluquet",
@@ -58,18 +58,18 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"defense" : 0,
 			"vie" : 0.5,
 			"mana" : 1,
-			"argent" : 0.5,
-            "xp" : 0.5
+			"argent" : 0.25,
+            "xp" : 0.25
 		},
 		"bourrin" : {
 			"namem" : "bourrin-m",
 			"namef" : "bourrin-f",
 			"attaque" : 2,
 			"defense" : 0,
-			"vie" : 0.5,
-			"mana" : 0.5,
-			"argent" : 2,
-            "xp" : 2
+			"vie" : 0.8,
+			"mana" : 0.25,
+			"argent" : 1.3,
+            "xp" : 1.3
 		},
 		"costaud" : {
 			"namem" : "costaud",
@@ -78,8 +78,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"defense" : 0,
 			"vie" : 1.5,
 			"mana" : 1,
-			"argent" : 3,
-            "xp" : 3
+			"argent" : 1.3,
+            "xp" : 1.3
 		},
 		"fairplay" : {
 			"namem" : "fairplay",
@@ -88,8 +88,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"defense" : 0,
 			"vie" : 1,
 			"mana" : 1,
-			"argent" : 1.3,
-            "xp" : 1.3
+			"argent" : 1.2,
+            "xp" : 1.2
 		},
 		"mignon" : {
 			"namem" : "mignon-m",
@@ -98,8 +98,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"defense" : 0,
 			"vie" : 0.75,
 			"mana" : 1.5,
-			"argent" : 0.75,
-            "xp" : 0.75
+			"argent" : 0.5,
+            "xp" : 0.5
 		},
 		"terrifiant" : {
 			"namem" : "terrifiant-m",
@@ -107,9 +107,9 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"attaque" : 2,
 			"defense" : 0,
 			"vie" : 1.5,
-			"mana" : 1.2,
-			"argent" : 2.5,
-            "xp" : 2.5
+			"mana" : 1.3,
+			"argent" : 1.5,
+            "xp" : 1.5
 		},
 		"cruel" : {
 			"namem" : "cruel-m",
@@ -118,8 +118,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"defense" : 0,
 			"vie" : 1,
 			"mana" : 1,
-			"argent" : 2,
-            "xp" : 4
+			"argent" : 1.3,
+            "xp" : 1.5
 		},
 		"original" : {
 			"namem" : "original-m",
@@ -136,30 +136,30 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"namef" : "malade",
 			"attaque" : 0.5,
 			"defense" : 0,
-			"vie" : 0.10,
-			"mana" : 0.2,
+			"vie" : 0.25,
+			"mana" : 0.25,
 			"argent" : 0.25,
             "xp" : 0.25
 		},
 		"feroce" : {
 			"namem" : "feroce",
 			"namef" : "feroce",
-			"attaque" : 1.75,
+			"attaque" : 2,
 			"defense" : 0,
-			"vie" : 1,
+			"vie" : 1.5,
 			"mana" : 1,
-			"argent" : 2,
-            "xp" : 2.3
+			"argent" : 1.3,
+            "xp" : 1.5
 		},
 		"glouton" : {
 			"namem" : "glouton-m",
 			"namef" : "glouton-f",
 			"attaque" : 1.25,
 			"defense" : 0,
-			"vie" : 1,
+			"vie" : 1.5,
 			"mana" : 1.2,
-			"argent" : 2,
-            "xp" : 2
+			"argent" : 1.2,
+            "xp" : 1.3
 		},
 		"illumine" : {
 			"namem" : "illumine-m",
@@ -169,7 +169,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"vie" : 1.5,
 			"mana" : 2,
 			"argent" : 1,
-            "xp" : 4
+            "xp" : 1.5
 		},
 		"savant" : {
 			"namem" : "savant-m",
@@ -178,8 +178,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"defense" : 0,
 			"vie" : 1,
 			"mana" : 3,
-			"argent" : 2,
-            "xp" : 4
+			"argent" : 1.3,
+            "xp" : 1.5
 		},
 		"fouFurieux" : {
 			"namem" : "fouFurieux-m",
@@ -187,9 +187,9 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"attaque" : 4,
 			"defense" : 0,
 			"vie" : 0.5,
-			"mana" : 0.6,
-			"argent" : 1,
-            "xp" : 4
+			"mana" : 0.5,
+			"argent" : 1.5,
+            "xp" : 1.5
 		},
 		"fragile" : {
 			"namem" : "fragile",
@@ -197,9 +197,9 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"attaque" : 1,
 			"defense" : 0,
 			"vie" : 0.5,
-			"mana" : 1.2,
+			"mana" : 1.3,
 			"argent" : 1,
-            "xp" : 2
+            "xp" : 1.2
 		},
 		"peureux" : {
 			"namem" : "peureux-m",
@@ -207,9 +207,9 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"attaque" : 0.5,
 			"defense" : 0,
 			"vie" : 1,
-			"mana" : 0.8,
-			"argent" : 1,
-            "xp" : 1
+			"mana" : 0.5,
+			"argent" : 0.5,
+            "xp" : 0.8
 		},
 		"pauvre" : {
 			"namem" : "pauvre",
@@ -218,7 +218,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"defense" : 0,
 			"vie" : 1,
 			"mana" : 1,
-			"argent" : 0.2,
+			"argent" : 0.1,
             "xp" : 1
 		},
 		"riche" : {
@@ -228,7 +228,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"defense" : 0,
 			"vie" : 1.2,
 			"mana" : 1.2,
-			"argent" : 5,
+			"argent" : 2,
             "xp" : 1
 		},
 		"resistant" : {
@@ -237,19 +237,19 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "attaque" : 1,
             "defense" : 0,
             "vie" : 2,
-            "mana" : 0.5,
-            "argent" : 3,
-            "xp" : 3
+            "mana" : 1,
+            "argent" : 1.3,
+            "xp" : 1.3
         },
         "incassable" : {
             "namem" : "incassable",
             "namef" : "incassable",
-            "attaque" : 1.3,
+            "attaque" : 1.2,
             "defense" : 0,
             "vie" : 3,
             "mana" : 0.5,
-            "argent" : 4,
-            "xp" : 4
+            "argent" : 1.5,
+            "xp" : 1.5
         },
         "paresseux" : {
             "namem" : "paresseux-m",
@@ -259,7 +259,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "vie" : 1.5,
             "mana" : 1.5,
             "argent" : 1,
-            "xp" : 0.8
+            "xp" : 0.5
         },
         "rieur" : {
             "namem" : "rieur-m",
@@ -269,16 +269,16 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "vie" : 1.8,
             "mana" : 0.5,
             "argent" : 1.3,
-            "xp" : 1.3
+            "xp" : 0.5
         },
         "silencieux" : {
             "namem" : "silencieux-m",
             "namef" : "silencieux-f",
-            "attaque" : 1,
+            "attaque" : 1.5,
             "defense" : 0,
             "vie" : 2,
             "mana" : 1.5,
-            "argent" : 1,
+            "argent" : 0.5,
             "xp" : 1.3
         },
         "precis" : {
@@ -305,10 +305,10 @@ define(["jquery", "app/utils/utils"], function($, Utils){
         "blesse" : {
             "namem" : "blesse-m",
             "namef" : "blesse-f",
-            "attaque" : 1.5,
+            "attaque" : 0.8,
             "defense" : 0,
-            "vie" : 0.5,
-            "mana" : 1.5,
+            "vie" : 0.8,
+            "mana" : 1,
             "argent" : 0.8,
             "xp" : 0.8,
             "unique" : true
@@ -316,9 +316,9 @@ define(["jquery", "app/utils/utils"], function($, Utils){
         "lancien" : {
             "namem" : "lancien-m",
             "namef" : "lancien-f",
-            "attaque" : 0.8,
+            "attaque" : 1.3,
             "defense" : 0,
-            "vie" : 0.8,
+            "vie" : 1.2,
             "mana" : 1.5,
             "argent" : 1,
             "xp" : 1,

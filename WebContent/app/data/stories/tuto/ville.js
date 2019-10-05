@@ -10,7 +10,7 @@ define([], function() {
                 {
                     "name" : "defendre-ville", "action" : [
                         {"key" : "fight", "params" : [[
-                            "goule", "goule", "goule", "goule"
+                            "goule", "goule"
                         ], "reposVille3"]}
                     ]
                 }

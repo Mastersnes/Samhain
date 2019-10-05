@@ -78,8 +78,7 @@ function($, _, Utils, Etats) {
             if (vie) this.parent.addLife(vie + etat.level);
 
             if (etat.current <= 0) this.data[etatName] = null;
-            // Empeche la superposition des degats
-            setTimeout(then, 50);
+            if (then) then();
         };
 
 		this.init(parent);

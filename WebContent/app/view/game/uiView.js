@@ -38,7 +38,7 @@ define(["jquery",
             }else this.el.find("fiole.mana").hide();
 
             var gold = this.player.get("gold");
-            this.refresh("gold", gold, 1000, false, 8);
+            this.refresh("gold", gold, 500, false, 8);
             if (gold > 0) this.el.find("gold montant").show();
             else this.el.find("gold montant").hide();
 

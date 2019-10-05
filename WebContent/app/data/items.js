@@ -13,32 +13,32 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "baton" : {
                 "name" : "baton",
                 "texte" : "baton-texte",
-                "degats" : [2, 5],
+                "degats" : [1, 5],
                 "sound" : "baton",
                 "anim" : "baton",
-                "price" : 30
+                "price" : 50
             },
             "dague" : {
                 "name" : "dague",
                 "texte" : "dague-texte",
-                "degats" : [3, 8],
+                "degats" : [2, 8],
                 "sound" : "dagguer",
                 "anim" : "dague",
-                "price" : 50
+                "price" : 100
             },
             "epee" : {
                 "name" : "epee",
                 "texte" : "epee-texte",
-                "degats" : [5, 15],
+                "degats" : [3, 10],
                 "sound" : "sword",
                 "anim" : "epee",
-                "price" : 100
+                "price" : 200
             },
             "crocRoi" : {
                 "name" : "crocRoi",
                 "texte" : "crocRoi-texte",
-                "degats" : [5, 15],
-                "lifeSteal" : [0, 10],
+                "degats" : [2, 8],
+                "lifeSteal" : [0, 8],
                 "sound" : "croc",
                 "anim" : "croc",
                 "price" : 0
@@ -48,7 +48,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 	        "bras" : {
                 "name" : "bras",
                 "texte" : "bras-texte",
-                "defense" : [0, 2],
+                "defense" : [0, 1],
                 "sound" : "block",
                 "anim" : null,
                 "price" : 0
@@ -56,78 +56,78 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "bouclierBois" : {
                 "name" : "bouclierBois",
                 "texte" : "bouclierBois-texte",
-                "defense" : [1, 4],
+                "defense" : [1, 2],
                 "sound" : "woodblock",
                 "anim" : null,
-                "price" : 50
+                "price" : 100
             },
             "bouclierFer" : {
                 "name" : "bouclierFer",
                 "texte" : "bouclierFer-texte",
-                "defense" : [3, 6],
+                "defense" : [1, 5],
                 "sound" : "ironblock",
                 "anim" : null,
-                "price" : 100
+                "price" : 200
             }
 	    },
 	    "conso" : {
 	        "potionSante" : {
                 "name" : "potionSante",
                 "texte" : "potionSante-texte",
-                "vie" : [30, 60],
+                "vie" : [500, 500],
                 "sound" : "drink",
                 "anim" : null,
-                "price" : 50,
+                "price" : 100,
                 "offensif" : false
             },
             "potionMana" : {
                 "name" : "potionMana",
                 "texte" : "potionMana-texte",
-                "mana" : [30, 60],
+                "mana" : [500, 500],
                 "sound" : "drink",
                 "anim" : null,
-                "price" : 70,
+                "price" : 100,
                 "offensif" : false
             },
             "fromage" : {
                 "name" : "fromage",
                 "texte" : "fromage-texte",
-                "vie" : [20, 50],
+                "vie" : [30, 50],
+                "effet" : ["satiete"],
+                "sound" : "eat",
+                "anim" : null,
+                "price" : 50,
+                "offensif" : false
+            },
+            "pomme" : {
+                "name" : "pomme",
+                "texte" : "pomme-texte",
+                "vie" : [10, 30],
                 "effet" : ["satiete"],
                 "sound" : "eat",
                 "anim" : null,
                 "price" : 30,
                 "offensif" : false
             },
-            "pomme" : {
-                "name" : "pomme",
-                "texte" : "pomme-texte",
-                "vie" : [15, 30],
-                "effet" : ["satiete"],
-                "sound" : "eat",
-                "anim" : null,
-                "price" : 15,
-                "offensif" : false
-            },
             "venin" : {
                 "name" : "venin",
                 "texte" : "venin-texte",
-                "degats" : [10, 30],
+                "degats" : [5, 25],
                 "effet" : ["poison"],
                 "sound" : "acide",
                 "anim" : "venin",
                 "multicible" : true,
-                "price" : 80,
+                "price" : 100,
                 "offensif" : true
             },
             "elixir" : {
                 "name" : "elixir",
                 "texte" : "elixir-texte",
-                "vie" : [40, 150],
-                "mana" : [40, 150],
+                "vie" : [500, 500],
+                "mana" : [500, 500],
                 "sound" : "drink",
                 "anim" : null,
-                "price" : 100,
+                "price" : 300,
                 "offensif" : false
             }
 	    },
@@ -140,26 +140,26 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "manaCost" : 1,
                 "sound" : "bouleFeu",
                 "anim" : "bouleFeu",
-                "price" : 100,
+                "price" : 200,
                 "offensif" : true,
                 "element" : "feu"
             },
             "soin" : {
                 "name" : "soin",
                 "texte" : "soin-texte",
-                "vie" : [20, 60],
+                "vie" : [500, 500],
                 "manaCost" : 1,
                 "sound" : "soin",
                 "anim" : null,
-                "price" : 150,
+                "price" : 300,
                 "offensif" : false
             },
             "morsure" : {
                 "name" : "morsure",
                 "texte" : "morsure-texte",
-                "degats" : [2, 5],
+                "degats" : [1, 1],
                 "lifeSteal" : [0, 1],
-                "effet" : ["poison"],
+                "effet" : ["poison", "satiete"],
                 "manaCost" : 1,
                 "sound" : null,
                 "anim" : null,
@@ -171,7 +171,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "name" : "araneisme",
                 "texte" : "araneisme-texte",
                 "degats" : [4, 8],
-                "lifeSteal" : [0, 3],
+                "lifeSteal" : [10, 20],
                 "effet" : ["poison-2"],
                 "manaCost" : 1,
                 "sound" : null,
@@ -234,7 +234,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "taillade" : {
                 "name" : "taillade",
                 "texte" : "taillade-texte",
-                "degats" : [3, 7],
+                "degats" : [4, 8],
                 "effet" : ["saignement"],
                 "manaCost" : 1,
                 "sound" : null,
@@ -286,7 +286,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "name" : "cannibalisme",
                 "texte" : "cannibalisme-texte",
                 "degats" : [3, 5],
-                "lifeSteal" : [5, 10],
+                "lifeSteal" : [10, 30],
                 "manaCost" : 1,
                 "sound" : null,
                 "anim" : null,

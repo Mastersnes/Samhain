@@ -56,6 +56,9 @@ actionsContainer action[type="bras"] name {
     left: 16% !important;
     font-size: 3.4vh !important;
 }
+actionsContainer action[type="bouclierFer"] name {
+    left: 15% !important;
+}
 
 actionsContainer action.gauche:hover {
     transform: rotate(-16deg);

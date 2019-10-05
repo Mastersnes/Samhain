@@ -369,10 +369,10 @@ define(["jquery",
             });
         };
         this.recursiveAttaque = function(index, aliveMonsters, blockSound, endFunction) {
-             if (index >= aliveMonsters.length) return endFunction();
-             var that = this;
-             var monster = aliveMonsters[index];
-             var monsterDom = this.el.find("monster#"+monster.index);
+            if (index >= aliveMonsters.length) return endFunction();
+            var that = this;
+            var monster = aliveMonsters[index];
+            var monsterDom = this.el.find("monster#"+monster.index);
 
             monsterDom.animate({
                 "top" : "15%"
@@ -384,7 +384,6 @@ define(["jquery",
                 }, 200, function() {
                     that.recursiveAttaque(index+1, aliveMonsters, blockSound, endFunction);
                 });
-
             });
         };
 

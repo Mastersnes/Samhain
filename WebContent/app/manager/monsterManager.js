@@ -165,17 +165,12 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
                         var cible = cibles[i];
 
                         if (abilitie.offensif) {
-                            cible.showAmountChange(this.Textes.get(abilitie.name), "abilitie", abilitie.element);
+                            cible.addAmountChange(this.Textes.get(abilitie.name), "abilitie", abilitie.element);
                         }
 
                         if (abilitie.degats) {
                             var degats = Utils.rand(abilitie.degats[0], abilitie.degats[1], true);
-                            if (degats > 0) {
-                                // Empeche la superposition des degats
-                                setTimeout(function() {
-                                    cible.hurt(degats + that.level, true, abilitie.element);
-                                }, 50);
-                            }
+                            if (degats > 0) cible.hurt(degats + that.level, true, abilitie.element);
                         }
 
                         if (abilitie.vie) {

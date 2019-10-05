@@ -103,6 +103,7 @@ function($, _, Utils, PopupUtils, page,
 		    if (!this.endGame) {
     		    if (!this.pause) {
                     this.saveManager.saveInSession();
+                    this.playerManager.showNextAmount();
                 }
                 var that = this;
                 setTimeout(function() {
@@ -120,6 +121,7 @@ function($, _, Utils, PopupUtils, page,
     		    if (!this.pause) {
         		    this.uiView.loop(this);
         		    this.fightView.loop(this);
+        		    this.playerManager.showNextAmount();
     		    }
     		    
     		    setTimeout(function() {

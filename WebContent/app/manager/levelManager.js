@@ -58,6 +58,8 @@ function($, _, Utils) {
 		    var palier = this.nextPalier();
 		    if (palier && this.data.xp >= palier) {
 		        this.data.xp -= palier;
+
+		        this.parent.addAmountChange("Lvl+1", "abilitie");
                 this.data.level++;
                 if (this.data.level >= this.paliers.length)
                     this.data.level = this.paliers.length-1;

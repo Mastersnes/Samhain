@@ -123,15 +123,20 @@
 **/
 .fight monster etats {
     display: block; position: absolute;
-    width: 69%; height: 13%;
-    top: 12%; left: 15%;
-    text-align: left;
+    width: 74%; height: 26%;
+    top: 7%; left: 12%;
 }
 .fight monster etats etat {
-    display: inline-block; position: relative;
-    width: 20%; height: 100%;
+    display: inline-block; position: absolute;
+    width: 40%; height: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+.fight monster etats etat#debuff {
+    left: 0;
+}
+.fight monster etats etat#buff {
+    right: 0;
 }
 
 /** Ce sont les types d"etats **/

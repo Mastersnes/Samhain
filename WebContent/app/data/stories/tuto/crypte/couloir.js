@@ -61,6 +61,7 @@ define([], function() {
         			"name" : "retour", "action" : [
         				{"key" : "gain", "params" : ["S5Clean"]},
         				{"key" : "gain", "params" : ["soin"]},
+        				{"key" : "upMG", "params" : [2]},
         				{"key" : "score", "params" : ["LearnHeal", 1]},
         				{"key" : "go", "params" : ["necroCouloir"]}
         			]

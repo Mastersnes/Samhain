@@ -23,6 +23,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 			this.mediatheque = parent.mediatheque;
 			this.levelManager = new LevelManager(this);
 			this.etatsManager = new EtatsManager(this);
+			this.amountBuffer = [];
 		};
 
 		this.get = function(key) {
@@ -82,6 +83,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 		        else type = "ifObj";
 		    }
 
+            if (type != "ifObj") this.addAmountChange("+"+this.Textes.get(name), "equipment");
 		    this.data.equipment[type].push(name);
 
 		    // Si c'est une arme ou un bouclier et qu'il est meilleur, on le selectionne automatiquement
@@ -107,6 +109,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 
 		    var itemIndex = this.data.equipment[type].indexOf(name);
 		    if (itemIndex > -1) {
+		        if (type != "ifObj") this.addAmountChange("<s>"+this.Textes.get(name)+"</s>", "equipment");
 		        this.data.equipment[type].splice(itemIndex, 1);
 		        this.arme();
 		        this.bouclier();
@@ -127,7 +130,9 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
             var currentArme = this.arme();
 
             var moyenneArme = (arme.degats[0] + arme.degats[1]) / 2;
+            if (arme.lifeSteal) moyenneArme += (arme.lifeSteal[0] + arme.lifeSteal[1]) / 2;
             var moyenneCurrent = (currentArme.degats[0] + currentArme.degats[1]) / 2;
+            if (currentArme.lifeSteal) moyenneCurrent += (currentArme.lifeSteal[0] + currentArme.lifeSteal[1]) / 2;
 
             if (moyenneArme > moyenneCurrent) this.selectArme(name);
         };
@@ -258,27 +263,28 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
                 var magie = Items.get("magie", itemId);
                 if (magie.manaCost <= this.get("mana.current")) {
                     this.addMana(-magie.manaCost);
+                    var level = this.data.level;
                     for (var i in cibles) {
                         var cible = cibles[i];
 
                         if (magie.vie) {
                             var vie = Utils.rand(magie.vie[0], magie.vie[1], true);
-                            if (vie > 0) cible.addLife(vie + this.level);
+                            if (vie > 0) cible.addLife(vie + level);
                         }
 
                         if (magie.degats) {
                             var degats = Utils.rand(magie.degats[0], magie.degats[1], true);
-                            if (degats > 0) cible.hurt(degats + this.level, true, magie.element);
+                            if (degats > 0) cible.hurt(degats + level, true, magie.element);
                         }
 
                         if (magie.lifeSteal) {
                             var lifeSteal = Utils.rand(magie.lifeSteal[0], magie.lifeSteal[1], true);
-                            if (lifeSteal > 0) this.steal("life", cible, lifeSteal + this.level)
+                            if (lifeSteal > 0) this.steal("life", cible, lifeSteal + level)
                         }
 
                         if (magie.manaSteal) {
                             var manaSteal = Utils.rand(magie.manaSteal[0], magie.manaSteal[1], true);
-                            if (manaSteal > 0) this.steal("mana", cible, manaSteal + this.level)
+                            if (manaSteal > 0) this.steal("mana", cible, manaSteal + level)
                         }
 
                         // Action particuliere
@@ -313,22 +319,22 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
             var degatsMin = baseAttaque + arme.degats[0];
             var degatsMax = baseAttaque + arme.degats[1];
 
+            var level = this.level;
             for (var i in cibles) {
                 var cible = cibles[i];
 
                 if (arme.lifeSteal) {
                     var lifeSteal = Utils.rand(arme.lifeSteal[0], arme.lifeSteal[1], true);
-                    if (lifeSteal > 0) this.steal("life", cible, lifeSteal + this.level)
+                    if (lifeSteal > 0) this.steal("life", cible, lifeSteal + level)
                 }
                 if (arme.manaSteal) {
                     var manaSteal = Utils.rand(arme.manaSteal[0], arme.manaSteal[1], true);
-                    if (manaSteal > 0) this.steal("mana", cible, manaSteal + this.level)
+                    if (manaSteal > 0) this.steal("mana", cible, manaSteal + level)
                 }
 
                 var degats = Utils.rand(degatsMin, degatsMax, true);
                 if (degats < 0) degats = 0;
                 cible.hurt(degats, withDef);
-
                 cible.showDegats(arme.anim);
             }
             // On joue le son de l'attaque apres la boucle pour ne pas tuer les oreilles du joueur
@@ -358,7 +364,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 		* element est le type de degats recus
 		**/
 		this.addLife = function(amount, element) {
-		    this.showAmountChange(amount, "life", element);
+		    this.addAmountChange(amount, "life", element);
             this.data.life.current += amount;
             if (this.data.life.current < 0) this.data.life.current = 0;
             if (this.data.life.current > this.data.life.max)
@@ -371,7 +377,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 		**/
 		this.addMana = function(amount) {
 		    if (!this.data.unlockMana) return;
-		    if (amount > 0) this.showAmountChange(amount, "mana");
+		    if (amount > 0) this.addAmountChange(amount, "mana");
 		    this.data.mana.current += amount;
 		    if (this.data.mana.current < 0) this.data.mana.current = 0;
 		    if (this.data.mana.current > this.data.mana.max)
@@ -388,11 +394,10 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
         * Modifications sur l'xp
         **/
 		this.addXp = function(amount) {
-		    if (amount > 0) this.showAmountChange(amount, "xp");
+		    if (amount > 0) this.addAmountChange(amount, "xp");
 		    this.levelManager.add(amount);
 		};
 		this.levelUp = function() {
-		    this.showAmountChange("Lvl+1", "xp");
 		    this.data.attaque++;
 		    this.data.defense++;
 		    this.data.life.max += 50;
@@ -406,7 +411,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 		* Modification sur l'or
 		**/
 		this.addGold = function(amount) {
-		    if (amount > 0) this.showAmountChange(amount, "gold");
+		    if (amount > 0) this.addAmountChange(amount, "gold");
             this.data.gold += amount;
             if (this.data.gold < 0) this.data.gold = 0;
             if (this.data.gold > 1000) this.data.gold = 1000;
@@ -447,44 +452,82 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
         };
 
         /**
+        * Ajoute un montant a perdre ou gagner au buffer d'affichage
+        **/
+        this.addAmountChange = function(amount, type, element) {
+            if (!element) element = "normal";
+            this.amountBuffer.push({
+                "amount" : amount,
+                "type" : type,
+                "element" : element
+            });
+        };
+
+        /**
+        * Affiche le prochain montant perdu ou gagné
+        **/
+        this.showNextAmount = function() {
+            if (this.amountBuffer.length <= 0) return;
+            var infos = this.amountBuffer[0];
+            this.showAmountChange(infos.amount, infos.type, infos.element);
+            this.amountBuffer.splice(0, 1);
+        };
+
+        /**
         * Animation representant la perte ou le gain d'un montant
         **/
-        this.showAmountChange = function(amount, type, element) {
-            if (!element) element = "normal";
-            if (type == "life" || type == "abilitie") {
-                if (amount < 0) this.showHurtScreen(element);
-                else if (amount == 0) {
-                    element = "miss";
-                    amount = this.Textes.get("rate");
-                }
+        this.showAmountChange= function(amount, type, element) {
+            var left = 0;
+            switch (type) {
+                case "abilitie":
+                    break;
+                case "life":
+                    left = Utils.rand(10, 30, true);
+                    if (amount < 0) {
+                        this.showHurtScreen(element);
+                        amount = amount + "pv";
+                    } else if (amount == 0) {
+                        element = "miss";
+                        amount = this.Textes.get("rate");
+                        left = 0;
+                    } else amount = "+" + amount + "pv";
+                break;
+                case "mana":
+                    if (amount > 0) amount = "+" + amount;
+                    amount += "pm";
+                    left = Utils.rand(35, 45, true);
+                break;
+                case "xp":
+                    if (amount > 0) amount = "+" + amount;
+                    amount += "xp";
+                    left = Utils.rand(55, 65, true);
+                break;
+                case "gold":
+                    if (amount > 0) amount = "+" + amount;
+                    amount += "po";
+                    left = Utils.rand(75, 85, true);
+                break;
             }
-            if (amount > 0) amount = "+" + amount;
 
             var degatsDom = $(".game hurts amountchanger:hidden:first");
-            if (degatsDom.length == 0) {
+            if (degatsDom.length > 0) {
+                degatsDom.removeAttr("style");
+                degatsDom.removeAttr("class");
+                degatsDom.removeAttr("element");
+            }else {
                 degatsDom = $("<amountchanger><amount></amount></amountchanger>");
                 $(".game hurts").append(degatsDom);
             }
             degatsDom.find("amount").html(amount);
-            degatsDom.removeAttr("style");
             degatsDom.attr("class", type);
             degatsDom.attr("element", element);
 
-            if (element != "miss") {
-                var left = 0;
-                if (type == "life") left = Utils.rand(10, 30, true);
-                else if (type == "mana") left = Utils.rand(35, 45, true);
-                else if (type == "gold") left = Utils.rand(55, 65, true);
-                else if (type == "xp") left = Utils.rand(75, 85, true);
-                degatsDom.css({
-                    "margin-left" : left + "%"
-                });
-            }
+            degatsDom.css({"margin-left" : left + "%"});
             degatsDom.show();
             degatsDom.animate({
-                "top" : "-10%",
+                "top" : "-50%",
                 "opacity" : "0"
-            }, 2000, function() {
+            }, 4000, function() {
                 degatsDom.hide();
             });
         };

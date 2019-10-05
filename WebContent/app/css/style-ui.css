@@ -150,8 +150,8 @@ gold > picture[step="7"] {background-position: 0% 87.5%;}
 level {
 	position: absolute;
 	display: block;
-	width: 15%; height: 70%;
-	top: 20%; left: 45%;
+	width: 21.3%; height: 77%;
+	top: 29%; left: 42%;
 }
 level > picture {
     position: relative;
@@ -159,7 +159,7 @@ level > picture {
     width: 100%; height: 100%;
     background-repeat: no-repeat;
     /* 100 * nombre de frames */
-    background-size: 1100% 100%;
+    background-size: 100% 1900%;
     background-image: url("../img/game/interface/ui/xp.png");
 }
 level montant {
@@ -169,17 +169,25 @@ level montant {
     left: 25%; top: 0%;
     font-size: 2.5vh; font-weight: bold;
 }
-level > picture[step="0"] {background-position: 0% 0%;}
-level > picture[step="1"] {background-position: 10% 0%;}
-level > picture[step="2"] {background-position: 20% 0%;}
-level > picture[step="3"] {background-position: 30% 0%;}
-level > picture[step="4"] {background-position: 40% 0%;}
-level > picture[step="5"] {background-position: 50% 0%;}
-level > picture[step="6"] {background-position: 60% 0%;}
-level > picture[step="7"] {background-position: 70% 0%;}
-level > picture[step="8"] {background-position: 80% 0%;}
-level > picture[step="9"] {background-position: 90% 0%;}
-level > picture[step="10"] {background-position: 100% 0%;}
+level > picture[step="18"] {background-position: 0% 0%;}
+level > picture[step="17"] {background-position: 0% 5.556%;}
+level > picture[step="16"] {background-position: 0% 11.111%;}
+level > picture[step="15"] {background-position: 0% 16.667%;}
+level > picture[step="14"] {background-position: 0% 22.222%;}
+level > picture[step="13"] {background-position: 0% 27.778%;}
+level > picture[step="12"] {background-position: 0% 33.333%;}
+level > picture[step="11"] {background-position: 0% 38.889%;}
+level > picture[step="10"] {background-position: 0% 44.444%;}
+level > picture[step="9"] {background-position: 0% 50%;}
+level > picture[step="8"] {background-position: 0% 55.556%;}
+level > picture[step="7"] {background-position: 0% 61.080%;}
+level > picture[step="6"] {background-position: 0% 66.657%;}
+level > picture[step="5"] {background-position: 0% 72.212%;}
+level > picture[step="4"] {background-position: 0% 77.758%;}
+level > picture[step="3"] {background-position: 0% 83.313%;}
+level > picture[step="2"] {background-position: 0% 88.869%;}
+level > picture[step="1"] {background-position: 0% 94.424%;}
+level > picture[step="0"] {background-position: 0% 99.97%;}
 
 /**
 * Buffs (Stickers)
@@ -187,8 +195,8 @@ level > picture[step="10"] {background-position: 100% 0%;}
 fiole.life buff {
     position: absolute;
     display: block;
-    left: 32%; top: 41%;
-    width: 15%; height: 15%;
+    left: 18%; top: 44%;
+    width: 27%; height: 27%;
 }
 fiole.life buff > picture {
     position: relative;
@@ -196,13 +204,14 @@ fiole.life buff > picture {
     width: 100%; height: 100%;
     background-repeat: no-repeat;
     /* 100 * nombre de frames */
-    background-size: 500% 100%;
+    background-size: 600% 100%;
 }
-fiole.life buff > picture[step="0"] {background-position: 0% 0%;}
-fiole.life buff > picture[step="1"] {background-position: 25% 0%;}
-fiole.life buff > picture[step="2"] {background-position: 50% 0%;}
-fiole.life buff > picture[step="3"] {background-position: 75% 0%;}
-fiole.life buff > picture[step="4"] {background-position: 100% 0%;}
+fiole.life buff > picture[step="5"] {background-position: 0% 0%;}
+fiole.life buff > picture[step="4"] {background-position: 20% 0%;}
+fiole.life buff > picture[step="3"] {background-position: 40% 0%;}
+fiole.life buff > picture[step="2"] {background-position: 60% 0%;}
+fiole.life buff > picture[step="1"] {background-position: 80% 0%;}
+fiole.life buff > picture[step="0"] {background-position: 100% 0%;}
 
 fiole.life buff.sante > picture {
     background-image: url("../img/game/interface/ui/buff/sante.png");

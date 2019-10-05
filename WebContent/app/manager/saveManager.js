@@ -22,12 +22,12 @@ function($, _, Utils) {
 			this.saveData = {
 			    "player" : {
 			        "life" : {
-			            "current" : 100,
-			            "max" : 100
+			            "current" : 300,
+			            "max" : 300
 			        },
 			        "mana" : {
-			            "current" : 100,
-			            "max" : 100
+			            "current" : 10,
+			            "max" : 10
 			        },
 
 			        "buff" : null,
@@ -44,7 +44,7 @@ function($, _, Utils) {
 			            "currentArme" : "poing",
 			            "bouclier" : ["bras"],
 			            "currentBouclier" : "bras",
-			            "magie" : ["bouleFeu"],
+			            "magie" : ["bouleFeu", "morsure"],
 			            "conso" : [],
 			            "clef" : [],
 			            "ifObj" : []
