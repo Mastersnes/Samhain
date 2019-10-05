@@ -135,7 +135,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 	        "bouleFeu" : {
                 "name" : "bouleFeu",
                 "texte" : "bouleFeu-texte",
-                "degats" : [1, 1],
+                "degats" : [10, 30],
                 "effet" : ["brulure"],
                 "manaCost" : 1,
                 "sound" : "bouleFeu",
@@ -157,9 +157,9 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "morsure" : {
                 "name" : "morsure",
                 "texte" : "morsure-texte",
-                "degats" : [1, 1],
+                "degats" : [3, 5],
                 "lifeSteal" : [0, 1],
-                "effet" : ["poison", "satiete"],
+                "effet" : ["poison"],
                 "manaCost" : 1,
                 "sound" : null,
                 "anim" : null,
