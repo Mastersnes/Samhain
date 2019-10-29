@@ -9,12 +9,14 @@ define(["jquery",
         "app/view/game/uiView",
         "app/view/game/histoireView",
         "app/view/game/fightView",
+        "app/view/game/boutiqueView",
         "app/view/game/glossaireView",
+        "app/view/game/inventaireView",
         "app/view/game/endView"
         ],
 function($, _, Utils, PopupUtils, page,
             RecompenseManager, PlayerManager,
-            UIView, HistoireView, FightView, GlossaireView, EndView) {
+            UIView, HistoireView, FightView, BoutiqueView, GlossaireView, InventaireView, EndView) {
 	'use strict';
 
 	return function(parent) {
@@ -26,6 +28,7 @@ function($, _, Utils, PopupUtils, page,
 			this.kongregateUtils = parent.kongregateUtils;
 			this.pause = false;
 			this.endGame = false;
+			this.easterEggs = 0;
 
 			this.render();
 			
@@ -44,7 +47,9 @@ function($, _, Utils, PopupUtils, page,
 
             this.histoireView = new HistoireView(this);
             this.fightView = new FightView(this);
+            this.boutiqueView = new BoutiqueView(this);
             this.glossaireView = new GlossaireView(this);
+            this.inventaireView = new InventaireView(this);
 
             this.endView = new EndView(this);
 
@@ -121,7 +126,12 @@ function($, _, Utils, PopupUtils, page,
     		    if (!this.pause) {
         		    this.uiView.loop(this);
         		    this.fightView.loop(this);
+        		    this.boutiqueView.loop(this);
         		    this.playerManager.showNextAmount();
+        		    if (this.easterEggs == 0) {
+        		        this.el.find("loupe").removeAttr("style");
+        		        this.el.find("loupe").removeClass("easterEggs");
+                    }
     		    }
     		    
     		    setTimeout(function() {
@@ -131,7 +141,7 @@ function($, _, Utils, PopupUtils, page,
                 }, 100);
         	}
         };
-        
+
         this.gameOver = function(gagne) {
         	this.mediatheque.stopAllMusic();
         	var musicName = "";
@@ -160,7 +170,9 @@ function($, _, Utils, PopupUtils, page,
         this.fight = function(adversaires, onWin, onFail) {
             this.fightView.fight(adversaires, onWin, onFail);
         };
-
+        this.boutique = function(items, onPurchase, onNoPurchase) {
+            this.boutiqueView.open(items, onPurchase, onNoPurchase);
+        };
         this.glossaire = function(key) {
             this.glossaireView.show(key);
         };
@@ -169,16 +181,83 @@ function($, _, Utils, PopupUtils, page,
             var that = this;
 
             //Make Sub events
-            this.uiView.makeEvents();
+            console.log("Mon premier a un gout de fraise.");
+            this.uiView.el.find("fiole.life").click(function(e) {
+                if (that.easterEggs == 0) {
+                    console.log("Mon second a de la pratique.");
+                    that.easterEggs++;
+                } else if (that.easterEggs == 3) {
+                    console.log("Mon cinquieme est adroit(e).");
+                    that.easterEggs++;
+                } else that.easterEggs = 0;
+            });
+            this.uiView.el.find("level picture").click(function(e) {
+                if (that.easterEggs == 1) {
+                    console.log("Mon troisieme ne fait pas le bonheur.");
+                    that.easterEggs++;
+                } else that.easterEggs = 0;
+            });
+            this.uiView.el.find("gold").click(function(e) {
+                if (that.easterEggs == 2) {
+                    console.log("Mon quatrieme aurait voulu etre premier.");
+                    that.easterEggs++;
+                } else that.easterEggs = 0;
+            });
+            $("body").contextmenu(function() {
+                if (that.easterEggs == 4) {
+                    console.log("Je ne verrais rien sans mon dernier.");
+                    that.easterEggs++;
+                } else that.easterEggs = 0;
+                return false;
+            });
 
-            $(".text", "montant").click(function(e) {
-            	e.preventDefault();
-            	return true;
+            /**
+            * Loupe - Glossaire
+            **/
+            this.el.find("loupe hitbox").hover(function(e) {
+                if(that.easterEggs > 5) return;
+                that.el.find("loupe").addClass("hover");
+            }, function(e) {
+                if(that.easterEggs > 5) return;
+                that.el.find("loupe").removeClass("hover");
             });
-            $(".text", "montant").bind('selectstart', function(e){
-            	e.preventDefault();
-            	return false;
+            this.el.find("loupe hitbox").click(function(e) {
+                if(that.easterEggs == 5) {
+                    that.easterEggs = 6;
+                    console.log("Bravo ! Vous l'avez =) !");
+                    that.recompenseManager.addSuccess("easterEggs", true);
+                    return
+                } else if (that.easterEggs < 5) that.glossaireView.list();
+
+                that.easterEggs = 0;
             });
+
+            /**
+            * Inventaire - Carnet
+            **/
+            this.el.find("carnet hitbox").hover(function(e) {
+                that.el.find("carnet").addClass("hover");
+            }, function(e) {
+                that.el.find("carnet").removeClass("hover");
+            });
+            this.el.find("carnet hitbox").click(function(e) {
+                that.inventaireView.show();
+            });
+
+            $("body").mousemove(function(e) {
+                if (that.easterEggs == 6) {
+                    var loupe = that.el.find("loupe");
+                    loupe.addClass("easterEggs");
+                    var left = (event.clientX - $(".scene").position().left) - (loupe.width() / 2);
+                    var top = event.clientY - (loupe.height() / 2);
+
+                    loupe.css({
+                        "left":  left,
+                        "top": top
+                    });
+                }
+            });
+
             $("fullscreen").click(function() {
             	var isFullscreen = Utils.fullscreen();
 				if (isFullscreen) {
@@ -190,11 +269,8 @@ function($, _, Utils, PopupUtils, page,
             $("mute").click(function() {
             	that.mediatheque.mute("all");
 			});
-//            $("body").contextmenu(function() {
-//				return false;
-//			});
         };
-        
+
         /**
          * Appel la fonction permettant d'afficher une information
          */

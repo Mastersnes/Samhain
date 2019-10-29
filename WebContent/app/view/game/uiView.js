@@ -47,7 +47,8 @@ define(["jquery",
             this.refresh("level", xp, palier, false, 10);
 
             var level = this.player.get("level");
-            this.el.find("level montant").html(this.Textes.get("lvl") + " " + level);
+            if (level < 10) level = "0" + level;
+            this.el.find("level montant").html(level);
         };
 
         this.refresh = function(id, current, max, wantPercent, stepNumber) {
@@ -87,10 +88,6 @@ define(["jquery",
                 this.el.find("fiole.life buff > picture").attr("step", step);
                 this.el.find("fiole.life buff").show();
             } else this.el.find("fiole.life buff").hide();
-        };
-
-        this.makeEvents = function() {
-            var that = this;
         };
 
         this.init(parent);

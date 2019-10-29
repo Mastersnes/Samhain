@@ -183,7 +183,7 @@ define([], function(){
             en : "With nobility, you turn around and set off on new adventures."
         },
         "boss6-texte-6" : {
-            fr : "Peut-&ecirc;tre d&rsquo;autres qu&ecirc;tes valent-elles la peine d&rsquo;&ecirc;tre v&eacute;cues&hellip;",
+            fr : "Peut-être d'autres quêtes valent-elles la peine d'être vécues&hellip;",
             en : "Perhaps other quests are worth living&hellip;"
         }
 	};

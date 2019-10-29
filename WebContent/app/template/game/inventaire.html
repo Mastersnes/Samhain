@@ -1,0 +1,57 @@
+<% var text = data.text %>
+<% var player = data.player %>
+<% var consos = data.consos %>
+
+<div>
+    <mask class="canClose"></mask>
+    <contour class="canClose">
+        <close class="canClose"></close>
+        <content class="infos">
+            <profil></profil>
+        </content>
+        <content class="equipment">
+            <armes>
+                <% var armes = player.get("equipment.arme"); %>
+                <% var current = player.get("equipment.currentArme"); %>
+                <% for (var i in armes) { %>
+                    <% var arme = armes[i]; %>
+                    <element id="<%=arme%>">
+                        <% if (current == arme) { %>
+                            <case class="coche"></case>
+                        <% } else {%>
+                            <case></case>
+                        <% } %>
+                        <span><%=text.get(arme)%></span>
+                    </element>
+                <% } %>
+            </armes>
+            <boucliers>
+                <% var boucliers = player.get("equipment.bouclier"); %>
+                <% var current = player.get("equipment.currentBouclier"); %>
+                <% for (var i in boucliers) { %>
+                    <% var bouclier = boucliers[i]; %>
+                    <element id="<%=bouclier%>">
+                        <% if (current == bouclier) { %>
+                            <case class="coche"></case>
+                        <% } else { %>
+                            <case></case>
+                        <% } %>
+                        <span><%=text.get(bouclier)%></span>
+                    </element>
+                <% } %>
+            </boucliers>
+            <magies>
+                <% var magies = player.get("equipment.magie"); %>
+                <% for (var i in magies) { %>
+                    <% var magie = magies[i]; %>
+                    <element id="<%=magie%>"><%=text.get(magie)%></element>
+                <% } %>
+            </magies>
+            <consos>
+                <% for (var conso of consos.keys()) { %>
+                    <element id="<%=conso%>"><%=text.get(conso)%></element>
+                <% } %>
+            </consos>
+        </content>
+    </contour>
+</div>

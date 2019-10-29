@@ -40,12 +40,12 @@ function($, _, Utils) {
 			        "defense" : 1,
 
 			        "equipment" : {
-			            "arme" : ["poing"],
-			            "currentArme" : "poing",
-			            "bouclier" : ["bras"],
+			            "arme" : ["poing", "dague", "epee", "crocRoi"],
+			            "currentArme" : "crocRoi",
+			            "bouclier" : ["bras", "bouclierBois", "bouclierFer"],
 			            "currentBouclier" : "bras",
-			            "magie" : [],
-			            "conso" : [],
+			            "magie" : ["bouleFeu", "soin"],
+			            "conso" : ["pomme", "fromage", "venin", "potionSante", "elixir"],
 			            "clef" : [],
 			            "ifObj" : []
 			        },

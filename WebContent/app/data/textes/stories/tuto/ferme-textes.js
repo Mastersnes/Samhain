@@ -15,8 +15,8 @@ define([], function(){
         },
 
         "courir-ville" : {
-            fr : "Courir à la ville",
-            en : "Running to the city"
+            fr : "Courir au village",
+            en : "Running to the village"
         },
 
         "fermeExaminer-texte-1" : {

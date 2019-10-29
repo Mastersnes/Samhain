@@ -42,6 +42,9 @@ ul li {
 .clickable {
 	cursor: pointer;
 }
+.interdit {
+	cursor: not-allowed;
+}
 button:focus {outline:0;}
 
 .text {
@@ -144,4 +147,17 @@ mute.off {
 @font-face {
     font-family: "Priscilla";
     src: url("../fonts/priscilla.ttf");
+}
+
+/**
+* Ne pas selectionner le texte
+**/
+* {
+    -moz-user-select:-moz-none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
 }

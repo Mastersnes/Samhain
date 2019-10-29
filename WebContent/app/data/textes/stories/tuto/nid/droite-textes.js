@@ -176,8 +176,8 @@ define([], function(){
         },
 
         "aller-ville" : {
-            fr : "Aller en ville",
-            en : "Go to town"
+            fr : "Aller au village",
+            en : "Go to the village"
         },
 
         "roiAraigneeParti-texte-1" : {

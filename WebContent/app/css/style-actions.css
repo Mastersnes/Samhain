@@ -40,23 +40,23 @@ actionsContainer action name {
 /**
 * Specificité pour les ecarts de papier
 **/
-actionsContainer action[type="poing"] name {
+.actionsContainer action[type="poing"] name {
     left: 16.6% !important;
 }
-actionsContainer action[type="bouleFeu"] name {
+.actionsContainer action[type="bouleFeu"] name {
     left: 18% !important;
 }
-actionsContainer action[type="pomme"] name {
+.actionsContainer action[type="pomme"] name {
     left: 15% !important;
 }
-actionsContainer action[type="epee"] name {
+.actionsContainer action[type="epee"] name {
     left: 15% !important;
 }
-actionsContainer action[type="bras"] name {
+.actionsContainer action[type="bras"] name {
     left: 16% !important;
-    font-size: 3.4vh !important;
+    font-size: 3.2vh !important;
 }
-actionsContainer action[type="bouclierFer"] name {
+.actionsContainer action[type="bouclierFer"] name {
     left: 15% !important;
 }
 
@@ -135,7 +135,7 @@ actionsContainer action[type="soin"] {
 /**
 * Specificité a l'histoire
 **/
-.histoire action {
+.histoire action, .boutique action {
     top: 150%;
 }
 

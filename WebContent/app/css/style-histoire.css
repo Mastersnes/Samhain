@@ -8,33 +8,34 @@
     width: 100%; height: 82%;
     left: 0; top: 18%;
 }
-.histoire texte, .histoire action {
+texte, .histoire action {
     cursor: default;
     text-align: center;
 }
 
-.histoire storyContainer {
+storyContainer {
 	position: relative;
 	display: inline-block;
-	width: 100%; height: 76%;
+	left: 14%;
+	width: 70%; height: 76%;
 }
-.histoire storyContainer textes {
+storyContainer textes {
     color: #DDDDDD;
 	position: absolute;
 	display: block;
 	width: 96%; height: 71%;
 	left: 2%; top: 15%;
 }
-.histoire storyContainer texte {
+storyContainer texte {
 	position: relative;
 	display: block;
 	font-size: 2.5vh;
 	font-family: monospace;
 }
-.histoire storyContainer texte span {
+storyContainer texte span {
 	text-decoration: underline;
     cursor: help;
 }
-.histoire storyContainer texte span:hover {
+storyContainer texte span:hover {
     color: #BBBBFF;
 }

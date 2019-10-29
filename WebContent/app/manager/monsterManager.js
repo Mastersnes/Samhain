@@ -42,8 +42,8 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
 			if (this.level < 0) this.level = 0;
 			if (adversaire.level) this.level = eval(adversaire.level.replace("player", playerLevel));
 
-			var vieMin = this.template.vie[0] * this.suffixe.vie * (this.level+1);
-			var vieMax = this.template.vie[1] * this.suffixe.vie * (this.level+1);
+			var vieMin = this.template.vie[0] * this.suffixe.vie * ((this.level+1)/2);
+			var vieMax = this.template.vie[1] * this.suffixe.vie * ((this.level+1)/2);
 			var vie = Utils.rand(vieMin, vieMax);
 			if (vie < 1) vie = 1;
 

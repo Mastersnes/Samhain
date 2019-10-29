@@ -10,12 +10,12 @@ define([], function(){
             en : "Many <span key='goule'>ghouls</span> try to worship the peasants who fight at their best."
         },
         "reposVille2-texte-3" : {
-            fr : "&laquo; Du nerf ! D&eacute;fendez la ville ! &raquo; hurle un <span key='garde'>garde</span> non loin de vous.",
-            en : "&laquo; Get on your nerves! Defend the city! &raquo; screams a <span key='garde'>guard</span> not far from you."
+            fr : "&laquo; Du nerf ! D&eacute;fendez le village ! &raquo; hurle un <span key='garde'>garde</span> non loin de vous.",
+            en : "&laquo; Get on your nerves! Defend the village! &raquo; screams a <span key='garde'>guard</span> not far from you."
         },
 
         "defendre-ville" : {
-            fr : "Défendre la ville",
+            fr : "Défendre le village",
             en : "Defending the city"
         },
 

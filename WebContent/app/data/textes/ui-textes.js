@@ -49,11 +49,11 @@ define([], function(){
                 en : "Defense"
             },
             "experienceGain" : {
-                fr : "Gain d'expérience",
-                en : "Experience gained"
+                fr : "XP",
+                en : "XP"
             },
             "argentGain" : {
-                fr : "Gain d'argent",
+                fr : "Argent",
                 en : "Income"
             },
             "lifeGain" : {

@@ -163,6 +163,26 @@ define([], function(){
         },
 
         /**
+        * Achat
+        **/
+        "faire-achat" : {
+            fr : "Faire des achats",
+            en : "Make purchases"
+        },
+        "acheter" : {
+            fr : "Acheter",
+            en : "Buy"
+        },
+        "vendre" : {
+            fr : "Vendre",
+            en : "Sell"
+        },
+        "quitter-boutique" : {
+            fr : "Quitter la boutique",
+            en : "Leave the shop"
+        },
+
+        /**
         * Direction
         **/
         "go-left" : {

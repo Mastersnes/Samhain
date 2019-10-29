@@ -9,6 +9,7 @@
     width: 100%; height: 18%;
 }
 .ui montant {
+    position: absolute; display: block;
     cursor: default;
     text-align: justify;
 }
@@ -41,8 +42,6 @@ fiole > picture[step="9"] {background-position: 10% 0%;}
 fiole > picture[step="10"] {background-position: 0% 0%;}
 
 fiole montant {
-    position: absolute;
-    display: block;
     color: #DDDDDD;
     left: 16%; top: 53%;
     font-size: 1.7vh;
@@ -116,8 +115,6 @@ gold > picture {
     background-image: url("../img/game/interface/ui/bourse.png");
 }
 gold montant {
-    position: absolute;
-    display: block;
     color: #DDDDDD;
     font-size: 1.7vh;
 }
@@ -162,12 +159,20 @@ level > picture {
     background-size: 100% 1900%;
     background-image: url("../img/game/interface/ui/xp.png");
 }
+level plaque {
+    position: absolute; display: block;
+    width: 29%; height: 40%;
+    left: 25%; top: -11%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(../img/game/interface/ui/plaque.png);
+}
 level montant {
-    position: absolute;
-    display: block;
-    color: black;
-    left: 25%; top: 0%;
-    font-size: 2.5vh; font-weight: bold;
+    color: #dddddd;
+    width: 100%; height: 100%;
+    text-align: center !important;
+    top: 22%;
+    font-size: 2vh; font-weight: bold;
 }
 level > picture[step="18"] {background-position: 0% 0%;}
 level > picture[step="17"] {background-position: 0% 5.556%;}

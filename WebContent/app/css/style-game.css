@@ -18,14 +18,75 @@
     background-size: 100% 100%;
     background-image: url("../img/game/interface/background.jpg");
 }
+hitbox {
+    position: absolute; display: block;
+}
 
-.histoire, .combat {
+.histoire, .fight, .boutique {
 	position: absolute;
 	width: 100%; height: 82%;
     left: 0; top: 18%;
 
 	transition: transform 1s ease-in-out;
 }
-.combat {
-	display: none;
+
+loupe {
+    position: absolute; display: block;
+    width: 26%; height: 60%;
+    top: 45%; left: -10.5%;
+    background-repeat: no-repeat;
+    background-image: url("../img/game/interface/ui/loupe.png");
+    background-size: 100% 100%;
+}
+loupe.hover {
+    transform: rotate(8deg);
+    top: 44%; left: -9%;
+}
+
+loupe hitbox.verre {
+    width: 76%; height: 42%;
+    left: 21%; top: 1%;
+}
+loupe hitbox.manche {
+    width: 20%; height: 58%;
+    left: 27%; top: 40%;
+    transform: rotate(17deg);
+}
+
+loupe:not(.easterEggs) {
+    transition: all 0.5s ease-in-out;
+}
+loupe.hover:not(.easterEggs) {
+    cursor: pointer;
+}
+loupe.easterEggs {
+    z-index: 10000;
+}
+
+/**
+* Carnet d'inventaire
+**/
+carnet {
+    position: absolute; display: block;
+    width: 36%; height: 69%;
+    top: 23%; left: 81%;
+    background-repeat: no-repeat;
+    background-image: url("../img/game/interface/ui/carnet.png");
+    background-size: 100% 100%;
+    transition: all 0.5s ease-in-out;
+}
+carnet.hover {
+    transform: rotate(9deg);
+    top: 23%; left: 75%;
+    cursor: pointer;
+}
+carnet.hide {
+    left: 150%;
+    pointer-event: none;
+    display: none;
+}
+carnet hitbox {
+    width: 73%; height: 75%;
+    left: 15%; top: 5%;
+    transform: rotate(-11deg);
 }

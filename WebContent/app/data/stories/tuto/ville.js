@@ -68,7 +68,7 @@ define([], function() {
                 {
                     "name" : "suivant", "action" : [
                         {"key" : "heal", "params" : [1000 ]},
-                        {"key" : "hasItem", "params" : [["helpRoi2"], "maraisRoi", "marais"]}
+                        {"key" : "go", "params" : ["echoppe"]}
                     ]
                 }
             ]
@@ -81,7 +81,7 @@ define([], function() {
                     "name" : "suivant", "action" : [
                         {"key" : "gain", "params" : ["potionSante"]},
                         {"key" : "heal", "params" : [1000]},
-                        {"key" : "hasItem", "params" : [["helpRoi2"], "maraisRoi", "marais"]}
+                        {"key" : "go", "params" : ["echoppe"]}
                     ]
                 }
             ]
@@ -146,7 +146,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "suivre-trace", "action" : [
-                        {"key" : "hasItem", "params" : [["helpRoi2"], "maraisRoi", "marais" ]}
+                        {"key" : "go", "params" : ["echoppe" ]}
                     ]
                 }
             ]
@@ -228,7 +228,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "suivre-trace", "action" : [
-                        {"key" : "hasItem", "params" : [["helpRoi2"], "maraisRoi", "marais"]}
+                        {"key" : "go", "params" : ["echoppe"]}
                     ]
                 }
             ]
@@ -238,7 +238,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "suivre-trace", "action" : [
-                        {"key" : "hasItem", "params" : [["helpRoi2"], "maraisRoi", "marais"]}
+                        {"key" : "go", "params" : ["echoppe"]}
                     ]
                 }
             ]

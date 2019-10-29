@@ -23,8 +23,12 @@ define(["jquery",
         };
 
         this.go = function(newLieuId) {
-        var that = this;
+            var that = this;
             $(".fight").fadeOut();
+            $(".boutique").fadeOut();
+
+            $("carnet").removeClass("hide");
+
             this.el.fadeIn();
 
             var newLieu = Stories.get(newLieuId);
@@ -174,6 +178,21 @@ define(["jquery",
                 case "random":
                     var chance = Utils.rand(0, params.length);
                     this.go(params[chance]);
+                    break;
+                case "boutique":
+                    var items = params[0];
+                    var nextLieu = params[1];
+                    var failLieu = params[2];
+
+                    var failFunction = null;
+                    if (failLieu) {
+                        failFunction = function() {
+                            that.go(failLieu);
+                        };
+                    }
+                    this.parent.boutique(items, function() {
+                        that.go(nextLieu);
+                    }, failFunction);
                     break;
                 default:
                     break;

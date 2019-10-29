@@ -1,0 +1,53 @@
+<% var text = data.text %>
+<% var items = data.items %>
+<% var mode = data.mode %>
+
+<div>
+	<% if (mode == "vente") { %>
+		<storyContainer>
+			<textes>
+				<texte>Vous n'avez rien à vendre.</texte>
+				<texte>Vos poches sont aussi vide que le crâne d'une goule...</texte>
+			</textes>
+		</storyContainer>
+	<% } %>
+	<actionsContainer class="itemsContainer">
+		<actions>
+			<% for (var [index, item] of items.data) { %>
+				<action id="<%=index%>" type="<%=item.name%>">
+					<name class="js-center"><%=text.get(item.name)%></name>
+					<prix>
+						<amount><%=item.price%></amount>
+					</prix>
+					<% if (mode == "achat") { %>
+						<indication><%=text.get("acheter")%></indication>
+					<% } else { %>
+						<indication><%=text.get("vendre")%></indication>
+						<% if (item.nb > 1) { %>
+							<quantity>
+								<amount>x<%=item.nb%></amount>
+							</quantity>
+						<% } %>
+					<% } %>
+				</action>
+			<% } %>
+		</actions>
+	</actionsContainer>
+	<actionsContainer class="actionsContainer">
+		<actions>
+			<% if (mode != "achat") { %>
+				<action class="gauche" id="acheter">
+					<name class="js-center"><%=text.get("acheter")%></name>
+				</action>
+			<% } else { %>
+				<action class="gauche" id="vendre">
+					<name class="js-center"><%=text.get("vendre")%></name>
+				</action>
+			<% } %>
+
+			<action class="droite" id="quitter">
+				<name class="js-center"><%=text.get("quitter-boutique")%></name>
+			</action>
+		</actions>
+	</actionsContainer>
+</div>

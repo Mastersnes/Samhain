@@ -3,53 +3,45 @@ define(["jquery"], function($){
 	return function(collection){
 		this.init = function(collection) {
 			if (!collection) collection = [];
-			this.data = collection;
+			this.data = new Map(collection);
 		};
 		
 		this.put = function(key, value) {
-			this.data[key] = value;
+			this.data.set(key, value);
 		};
 		this.push = function(key) {
-			this.data[key] = key;
+			this.data.set(key, key);
 		};
 		
 		this.length = function() {
-			var taille = 0;
-			for (var index in this.data) {
-				var item = this.data[index];
-				if (item) taille++;
-			}
-			return taille;
+			return this.data.size;
 		};
 		
 		this.remove = function(key) {
-			try {
-				var retour = this.data.splice(key, 1);
-				if (retour && retour.length > 1) return true;
-			}catch (e) {
-				console.log("Erreur à la suppression");
-			}
-			
-			delete this.data[key];
+			return this.data.delete(key);
 		};
-		
+		this.clear = function() {
+			return this.data.clear();
+		};
+
 		this.get = function(key) {
-			return this.data[key];
+			return this.data.get(key);
 		};
 
 		this.getFirst = function() {
-			for (var index in this.data) {
-				return index;
-			}
+			return this.data.keys().next().value;
 		};
 		
 		this.getKey = function(value) {
-			for (var index in this.data) {
-				var item = this.data[index];
+			for (var [index, item] of this.data.entries()) {
 				if (item == value) return index;
 			}
 			return null;
 		};
+
+		this.keys = function() {
+            return this.data.keys();
+        };
 		
 		this.contains = function(value) {
 			return this.getKey(value) != null;
@@ -61,16 +53,15 @@ define(["jquery"], function($){
 		 */
 		this.getFirstEmptyKey = function() {
 			var firstKey;
-			for (var index in this.data) {
+			for (var [index, item] in this.data.entries()) {
 				if (!index) break;
 				if (!firstKey) firstKey = index;
 				
-				var item = this.data[index];
 				if (item == null || item == "") return index;
 			}
 			return firstKey;
 		};
-		
+
 		this.init(collection);
 	};
 });

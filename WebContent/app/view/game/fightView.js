@@ -35,6 +35,7 @@ define(["jquery",
             this.fightLaunch = true;
             var that = this;
             $(".histoire").fadeOut();
+            $(".boutique").fadeOut();
 
             this.onWin = onWin;
             this.onFail = onFail;
@@ -99,6 +100,7 @@ define(["jquery",
             this.actions.length = 0;
 
             var bouclierFound = false;
+            var armeFound = false;
             var manaStock = this.player.get("mana").current;
             while (this.actions.length < PIOCHE_MAX) {
                 var actionsPossibles = ["arme", "bouclier"];
@@ -108,14 +110,16 @@ define(["jquery",
                 var randNumber = Utils.rand(0, actionsPossibles.length);
                 var randType = actionsPossibles[randNumber];
 
-                if (this.actions.length == PIOCHE_MAX-1 && !bouclierFound) {
-                    // On oblige d'avoir au moins un bouclier pour repiocher
-                    randType = "bouclier";
+                if (this.actions.length >= PIOCHE_MAX-2) {
+                    // On oblige d'avoir au moins un bouclier et une arme
+                    if (!armeFound) randType = "arme";
+                    if (!bouclierFound) randType = "bouclier";
                 }
 
                 var actionFound;
                 switch (randType) {
                     case "arme":
+                        armeFound = true;
                         actionFound = arme;
                         break;
                     case "bouclier":
@@ -172,6 +176,7 @@ define(["jquery",
             if (this.player.get("life.current") <= 0) {
                 this.fail();
             }else {
+                if (!$("carnet").hasClass("hide")) $("carnet").addClass("hide");
                 this.refreshMonsters();
                 this.refreshActions();
             }

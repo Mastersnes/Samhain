@@ -251,7 +251,11 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
                 // On joue le son de l'attaque apres la boucle pour ne pas tuer les oreilles du joueur
                 this.mediatheque.playSound(item.sound + ".wav");
 		        this.removeEquipment("conso", itemId);
-		    }else console.log("Erreur use - objet non possédé", itemId, cibles);
+		        return true;
+		    }else {
+		        console.log("Erreur use - objet non possédé", itemId, cibles);
+		        return false;
+		    }
 		};
 		this.spell = function(itemId, cibles) {
             if (!this.get("unlockMana")) return false;
@@ -319,7 +323,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
             var degatsMin = baseAttaque + arme.degats[0];
             var degatsMax = baseAttaque + arme.degats[1];
 
-            var level = this.level;
+            var level = this.get("level");
             for (var i in cibles) {
                 var cible = cibles[i];
 
@@ -419,11 +423,18 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
         this.achete = function(itemId) {
             var item = Items.get(itemId);
             if (item && item.price) {
-                if(this.data.gold > item.price) {
+                if(this.data.gold >= item.price) {
                     this.addGold(-item.price);
                     this.addEquipment(item.type, item.name);
                 }else console.log("Erreur achete - l'item est trop chere", itemId, item.price);
-            }else console.log("Erreur achete - l'item n'existe pas", itemId);
+            }else console.log("Erreur achete - l'item n'existe pas ou n'a pas de prix", itemId);
+        };
+        this.vend = function(itemId) {
+            var item = Items.get(itemId);
+            if (item && item.price) {
+                this.addGold(Math.round(item.price * 0.5));
+                this.removeEquipment(item.type, item.name);
+            }else console.log("Erreur vend - l'item n'existe pas ou n'a pas de prix", itemId);
         };
 
         this.steal = function(attr, cible, value, valueMin) {
@@ -530,6 +541,10 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
             }, 4000, function() {
                 degatsDom.hide();
             });
+        };
+
+        // Non uilisé
+        this.showDegats = function() {
         };
 
         /**

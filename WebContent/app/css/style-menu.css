@@ -68,7 +68,7 @@ fullscreen.exit {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url("../img/menu/logo.png");
-    left: -8%; top: -12%;
+    left: 0%; top: 0%;
 }
 
 .menu-cadre boutons {

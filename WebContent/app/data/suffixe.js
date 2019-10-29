@@ -114,7 +114,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 		"cruel" : {
 			"namem" : "cruel-m",
 			"namef" : "cruel-f",
-			"attaque" : 3,
+			"attaque" : 2.5,
 			"defense" : 0,
 			"vie" : 1,
 			"mana" : 1,
@@ -177,7 +177,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"attaque" : 1,
 			"defense" : 0,
 			"vie" : 1,
-			"mana" : 3,
+			"mana" : 2.5,
 			"argent" : 1.3,
             "xp" : 1.5
 		},
@@ -244,9 +244,9 @@ define(["jquery", "app/utils/utils"], function($, Utils){
         "incassable" : {
             "namem" : "incassable",
             "namef" : "incassable",
-            "attaque" : 1.2,
+            "attaque" : 1,
             "defense" : 0,
-            "vie" : 3,
+            "vie" : 2.5,
             "mana" : 0.5,
             "argent" : 1.5,
             "xp" : 1.5
@@ -284,7 +284,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
         "precis" : {
             "namem" : "precis-m",
             "namef" : "precis-f",
-            "attaque" : 3,
+            "attaque" : 2.5,
             "defense" : 0,
             "vie" : 1,
             "mana" : 1.3,

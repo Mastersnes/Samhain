@@ -73,7 +73,7 @@ hurts amountchanger[element="miss"], hurts amountchanger.abilitie, hurts amountc
 /**
 * Cas des elements
 **/
-hurts amountchanger[element="miss"] amount {
+hurts amountchanger[element="miss"] amount, hurts amountchanger.abilitie[element="normal"] amount {
     color: white;
 }
 hurts amountchanger amount {

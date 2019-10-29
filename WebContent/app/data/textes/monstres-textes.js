@@ -42,8 +42,8 @@ define([], function(){
                 en : "Guard"
             },
             "garde-texte" : {
-                fr : "Garde de la ville. Un peu lent à la détente, mais redoutable à l'épée !",
-                en : "City guard. A little slow to relax, but fearful by the sword!"
+                fr : "Garde du village. Un peu lent à la détente, mais redoutable à l'épée !",
+                en : "Village guard. A little slow to relax, but fearful by the sword!"
             },
             "villageois" : {
                 fr : "Villageois",

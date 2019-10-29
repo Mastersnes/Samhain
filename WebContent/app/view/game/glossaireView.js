@@ -63,13 +63,14 @@ define(["jquery",
         **/
         this.show = function(key, isChange) {
             this.current = key;
-            this.el.find(".liste").hide();
+//            this.el.find(".liste").hide();
             var monster = Glossaire.get(key);
             if (monster) this.showMonster(monster, isChange);
             else this.showItem(key);
             this.makeZoomEvents();
             this.el.find(".zoom").show();
             this.el.fadeIn();
+            this.list(true);
         };
         this.showItem = function(key) {
             var item = Items.get(key);
@@ -143,6 +144,8 @@ define(["jquery",
                 infoDom.html(this.Textes.get(titre) + " : [" + min + "-" + max + "]");
             }else if(infos >= 0 || infos < 0) infoDom.html(this.Textes.get(titre) + " : " + Math.round(infos * suffixe));
             else infoDom.html(this.Textes.get(titre) + " : " + infos);
+
+            if (infoDom.html().length > 16) infoDom.addClass("large");
             this.el.find("infos").append(infoDom);
         };
 
@@ -159,10 +162,11 @@ define(["jquery",
             this.el.find("infos").append(infoDom);
         };
 
-        this.list = function() {
+        this.list = function(refresh) {
             var that = this;
             var letter = this.currentLetter;
-            this.el.find(".zoom").hide();
+
+            if (!refresh) this.el.find(".zoom").hide();
 
             this.el.find(".liste letter").removeClass("selected");
             this.el.find(".liste letter#" + letter).addClass("selected");
@@ -185,18 +189,19 @@ define(["jquery",
 
         this.makeEvents = function() {
             var that = this;
-            this.el.find("close, mask").click(function() {
-                that.el.fadeOut();
+            this.el.find("close, contour").click(function(e) {
+                var target = $(e.target);
+                if (target.hasClass("canClose")) that.el.fadeOut();
             });
-            this.el.find(".zoom retour").click(function() {
-                that.list();
-            });
+//            this.el.find(".zoom retour").click(function() {
+//                that.list();
+//            });
             this.el.find(".zoom suffixe select").change(function() {
                 that.show(that.current, true);
             });
             this.el.find(".liste alphabet letter").click(function() {
                 that.currentLetter = $(this).attr("id");
-                that.list();
+                that.list(true);
             });
         };
 
