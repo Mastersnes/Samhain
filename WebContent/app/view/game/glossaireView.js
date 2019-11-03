@@ -189,7 +189,7 @@ define(["jquery",
 
         this.makeEvents = function() {
             var that = this;
-            this.el.find("close, contour").click(function(e) {
+            this.el.find(".canClose").click(function(e) {
                 var target = $(e.target);
                 if (target.hasClass("canClose")) that.el.fadeOut();
             });

@@ -16,8 +16,6 @@ Ameliorations :
     -> hurt.wav quand le joueur prend des degats
 -> Bugs
     -> Revoir au cas par cas la force des monstres
-    -> Croc est trop fort
-    -> Ne pas permettre de vendre si on depasse les 1000golds
 
 -> Fait
     -> General

@@ -17,6 +17,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 			this.Textes = parent.Textes;
 
 			this.saveManager = parent.saveManager;
+			this.recompenseManager = parent.recompenseManager;
 			this.data = this.saveManager.load("player");
 			this.options = this.saveManager.load("gameOptions");
 
@@ -418,7 +419,10 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 		    if (amount > 0) this.addAmountChange(amount, "gold");
             this.data.gold += amount;
             if (this.data.gold < 0) this.data.gold = 0;
-            if (this.data.gold > 1000) this.data.gold = 1000;
+            if (this.data.gold > Utils.MAX_GOLD) {
+                this.data.gold = Utils.MAX_GOLD;
+                this.recompenseManager.addSuccess("MaxGoldEarn", true);
+            }
         };
         this.achete = function(itemId) {
             var item = Items.get(itemId);
@@ -430,11 +434,17 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
             }else console.log("Erreur achete - l'item n'existe pas ou n'a pas de prix", itemId);
         };
         this.vend = function(itemId) {
+            if (this.data.gold >= Utils.MAX_GOLD) return false;
+
             var item = Items.get(itemId);
             if (item && item.price) {
                 this.addGold(Math.round(item.price * 0.5));
                 this.removeEquipment(item.type, item.name);
-            }else console.log("Erreur vend - l'item n'existe pas ou n'a pas de prix", itemId);
+                return true;
+            }else {
+                console.log("Erreur vend - l'item n'existe pas ou n'a pas de prix", itemId);
+                return false;
+            }
         };
 
         this.steal = function(attr, cible, value, valueMin) {

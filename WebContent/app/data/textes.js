@@ -2,12 +2,13 @@
 define([
     "app/data/textes/menu-textes",
     "app/data/textes/ui-textes",
+    "app/data/textes/inventaire-textes",
     "app/data/textes/etats-textes",
     "app/data/textes/monstres-textes",
     "app/data/textes/suffixes-textes",
     "app/data/textes/items-textes",
     "app/data/textes/stories-textes"
-], function(Menu, UI, Etats, Monstres, Suffixes, Items, Stories){
+], function(Menu, UI, Inventaire, Etats, Monstres, Suffixes, Items, Stories){
 	var data = {
 	};
 	
@@ -29,6 +30,7 @@ define([
             var text = data[key];
             if (!text) text = Menu.get(key);
             if (!text) text = UI.get(key);
+            if (!text) text = Inventaire.get(key);
             if (!text) text = Etats.get(key);
             if (!text) text = Monstres.get(key);
             if (!text) text = Suffixes.get(key);

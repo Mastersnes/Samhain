@@ -2,12 +2,44 @@
 <% var player = data.player %>
 <% var consos = data.consos %>
 
+<% var level = player.get("level"); %>
+<% var xp = player.get("xp"); %>
+<% var palier = player.levelManager.nextPalier(); %>
+<% var xpRestant = palier - xp; %>
+<% var gold = player.get("gold"); %>
+
+<% var life = player.get("life"); %>
+<% var mana = player.get("mana"); %>
+
+<% var attaque = player.get("attaque"); %>
+<% var defense = player.get("defense"); %>
+
 <div>
     <mask class="canClose"></mask>
     <contour class="canClose">
         <close class="canClose"></close>
         <content class="infos">
-            <profil></profil>
+            <profil>
+                <info class="level"><%=text.get("aventurier")%> <%=text.get("level")%> <%=level%></info>
+                <info class="xp"><%=xpRestant%> <%=text.get("pointDexperienceAvantNext")%></info>
+                <info class="gold"><%=gold%> <%=text.get("pieceDor")%></info>
+
+                <info></info>
+                <info class="life"><span>x</span> / <%=life.max%> <%= text.get("pointDeVie")%></info>
+                <info class="debuff">-<span class="amount">x</span> <%=text.get("pendant")%> <span class="duree">x</span> <%=text.get("tours")%></info>
+                <info class="buff">+<span class="amount">x</span> <%=text.get("pendant")%> <span class="duree">x</span> <%=text.get("tours")%></info>
+                <info class="mana"><span>x</span> / <%=mana.max%> <%= text.get("pointDeMana")%></info>
+
+                <info></info>
+                <info class="attaque"><%=attaque%> <%=text.get("pointDattaque")%></info>
+                <info class="arme">+<span>x</span> <%=text.get("bonusArme")%></info>
+                <info class="lifeSteal">+<span>x</span> <%=text.get("pointVolDeVie")%></info>
+                <info class="manaSteal">+<span>x</span> <%=text.get("pointVolDeMana")%></info>
+
+                <info></info>
+                <info class="defense"><%=defense%> <%=text.get("pointDeDefense")%></info>
+                <info class="bouclier">+<span>x</span> <%=text.get("bonusBouclier")%></info>
+            </profil>
         </content>
         <content class="equipment">
             <armes>

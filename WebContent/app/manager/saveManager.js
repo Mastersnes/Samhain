@@ -34,7 +34,7 @@ function($, _, Utils) {
 			        "debuff" : null,
 			        "xp" : 0,
 			        "level" : 0,
-			        "gold" : 0,
+			        "gold" : 9500,
 
 			        "attaque" : 1,
 			        "defense" : 1,

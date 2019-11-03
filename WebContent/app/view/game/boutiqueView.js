@@ -162,8 +162,7 @@ define(["jquery",
             });
             this.el.find(".itemsContainer action").click(function() {
                 if (that.mode == "achat") that.player.achete($(this).attr("id"));
-                else {
-                    that.player.vend($(this).attr("id"));
+                else if (that.player.vend($(this).attr("id"))) {
                     that.sellAndRefresh($(this).attr("id"));
                 }
             });

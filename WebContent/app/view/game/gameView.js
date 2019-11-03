@@ -127,6 +127,7 @@ function($, _, Utils, PopupUtils, page,
         		    this.uiView.loop(this);
         		    this.fightView.loop(this);
         		    this.boutiqueView.loop(this);
+        		    this.inventaireView.loop(this);
         		    this.playerManager.showNextAmount();
         		    if (this.easterEggs == 0) {
         		        this.el.find("loupe").removeAttr("style");
@@ -225,7 +226,7 @@ function($, _, Utils, PopupUtils, page,
                 if(that.easterEggs == 5) {
                     that.easterEggs = 6;
                     console.log("Bravo ! Vous l'avez =) !");
-                    that.recompenseManager.addSuccess("easterEggs", true);
+                    that.recompenseManager.addSuccess("EasterEggs", true);
                     return
                 } else if (that.easterEggs < 5) that.glossaireView.list();
 

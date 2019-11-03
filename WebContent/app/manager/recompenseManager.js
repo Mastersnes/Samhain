@@ -20,6 +20,10 @@ function($, _, Utils) {
 		};
 
 		this.reloadSuccess = function() {
+		    for (var i in this.complete) {
+		        var success = this.complete[i];
+		        this.addSuccess(success, true);
+		    }
 		};
 
 		this.addSuccess = function(success, withoutMessage) {

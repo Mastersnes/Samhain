@@ -38,7 +38,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "name" : "crocRoi",
                 "texte" : "crocRoi-texte",
                 "degats" : [2, 8],
-                "lifeSteal" : [0, 8],
+                "lifeSteal" : [0, 3],
                 "sound" : "croc",
                 "anim" : "croc",
                 "price" : 0

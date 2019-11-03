@@ -254,7 +254,7 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
         this.addGold = function(amount) {
             this.data.gold += amount;
             if (this.data.gold < 0) this.data.gold = 0;
-            if (this.data.gold > 1000) this.data.gold = 1000;
+            if (this.data.gold > Utils.MAX_GOLD) this.data.gold = Utils.MAX_GOLD;
         };
 
         /**

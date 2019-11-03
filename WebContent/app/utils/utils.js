@@ -2,6 +2,7 @@
 define(["jquery", "sha"], function($, sha){
 	return {
 		name : "bebelSamhainV2",
+		MAX_GOLD : 9999,
 		
 		/**
 		* Permet d'appeler un WS
