@@ -1,19 +1,23 @@
-<mask></mask>
-<div class="content popup-game">
-	<div class="close-button" aria-label="Close"></div>
-	<ul class="texte popup-menu">
-		<li id="avn"><%=data.text.get("illustration")%> : Alicia Nesztler</li>
-		<li><%=data.text.get("developpement")%> : Steven Nesztler</li>
-		<li id="bandcamp"><%=data.text.get("musique")%> : Alicia Nesztler</li>
-		<li><%=data.text.get("textes")%> : Steven Nesztler</li>
-    </ul>
-    <div class="popup-menu reseaux">
-        <div class="reseau facebook" title="Facebook"></div>
-        <div class="reseau twitter" title="Twitter"></div>
-        <div class="reseau wordpress" title="Wordpress"></div>
-        <div class="reseau instagram" title="Instagram"></div><br/>
-        <div class="texte"><%=data.text.get('kongregate')%></div>
-        <div class="reseau kongregate" title="Kongregate"></div>
-    </div>
-    <div class="texte"><%=data.text.get("copyright-licence")%></div>
+<% var text = data.text %>
+
+<div>
+	<mask class="canClose"></mask>
+	<contour class="canClose">
+		<close class="canClose"></close>
+		<content>
+			<fleches>
+				<son id="sound">
+					<text><%=text.get("sound")%></text>
+				</son>
+				<son id="music">
+					<text><%=text.get("music")%></text>
+				</son>
+				<flags>
+					<text><%=text.get("language")%></text>
+					<flag id="fr"></flag>
+					<flag id="en"></flag>
+				</flags>
+			</fleches>
+		</content>
+	</contour>
 </div>

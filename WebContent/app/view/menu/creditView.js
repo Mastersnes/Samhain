@@ -1,61 +1,79 @@
-/*global define */
+'use strict';
 define(["jquery",
-        'underscore',
         "app/utils/utils",
-        "text!app/template/menu/popup/credit.html"], 
-function($, _, Utils, page) {
-	'use strict';
+        "app/utils/viewUtils",
+        "text!app/template/menu/popup/option.html"
+        ], function($, Utils, ViewUtils, page){
+    return function(parent){
+        this.init = function(parent) {
+        	this.el = $(".option-popup");
 
-	return function(Textes) {
-		this.init = function(Textes) {
-			this.el = "#credit-popup";
-			this.Textes = Textes;
-			this.render();
-		};
+            this.parent = parent;
+            this.Textes = parent.Textes;
+            this.mediatheque = parent.mediatheque;
 
-		this.render = function() {
-			_.templateSettings.variable = "data";
-			var template = _.template(page);
-			var templateData = {
-					text : this.Textes
-			};
-			$(this.el).html(template(templateData));
-			
-			this.makeEvents();
-		};
-		
-		this.makeEvents = function() {
-			var that = this;
-			$(this.el).find(".close-button, mask").click(function() {
-				$(that.el).fadeOut();
-			});
-			$("#avn").click(function() {
-				window.open("https://avn2dgameartist.wordpress.com", "_blank");
-			});
-			$("#bandcamp").click(function() {
-				window.open("https://lesjeuxdebebel.bandcamp.com/album/yule-a-god-birth", "_blank");
-			});
-			$(".facebook").click(function() {
-				window.open("https://www.facebook.com/lesjeuxdebebel/", "_blank");
-			});
-			$(".twitter").click(function() {
-				window.open("https://twitter.com/lesjeuxdebebel", "_blank");
-			});
-			$(".wordpress").click(function() {
-				window.open("https://lesjeuxdebebel.wordpress.com", "_blank");
-			});
-			$(".instagram").click(function() {
-				window.open("https://www.instagram.com/lesjeuxdebebel/", "_blank");
-			});
-			$(".kongregate").click(function() {
-				window.open("https://www.kongregate.com/games/JeuxBebel", "_blank");
-			});
-		};
-		
-		this.show = function() {
-			$(this.el).fadeIn();
-		};
-		
-		this.init(Textes);
-	};
+            // Manager
+            this.saveManager = parent.saveManager;
+
+            this.render();
+            this.el.hide();
+        };
+
+        this.render = function() {
+            _.templateSettings.variable = "data";
+            var template = _.template(page);
+            var templateData = {
+                    text : this.Textes
+            };
+            this.el.html(template(templateData));
+
+            this.makeEvents();
+        };
+
+        /**
+        * Montre les options
+        **/
+        this.show = function() {
+            this.refresh();
+            this.el.fadeIn();
+        };
+
+        this.refresh = function() {
+            if (this.mediatheque.isMute("sound"))
+                this.el.find("son#sound").addClass("mute");
+            else this.el.find("son#sound").removeClass("mute");
+
+            if (this.mediatheque.isMute("music"))
+                this.el.find("son#music").addClass("mute");
+            else this.el.find("son#music").removeClass("mute");
+
+            var lang = this.Textes.local;
+            this.el.find("flag").removeClass("selected");
+            this.el.find("flag#"+lang).addClass("selected");
+        };
+
+        this.makeEvents = function() {
+            var that = this;
+            this.el.find(".canClose").click(function(e) {
+                var target = $(e.target);
+                if (target.hasClass("canClose")) that.el.fadeOut();
+            });
+            this.el.find("flag").click(function(e) {
+                if ($(this).hasClass("selected")) return;
+                var lang = $(this).attr("id");
+                that.Textes.setLanguage(lang);
+                that.parent.render();
+            });
+            this.el.find("son#sound").click(function(e) {
+                that.mediatheque.mute("sound");
+                that.refresh();
+            });
+            this.el.find("son#music").click(function(e) {
+                that.mediatheque.mute("music");
+                that.refresh();
+            });
+        };
+
+        this.init(parent);
+    };
 });

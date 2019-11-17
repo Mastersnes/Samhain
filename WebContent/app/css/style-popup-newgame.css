@@ -1,0 +1,123 @@
+/**
+* Popup
+**/
+.popup {
+	z-index: 1000;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+	top: 0;
+	display: none;
+}
+.popup > .content {
+	width: 70%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50vh;
+	transform: translateY(-50%);
+	
+	background-image: url("../img/menu/popup/popup.png");
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.popup > .content .texte {
+    cursor: default;
+	font-size: 2.5vh;
+	font-family: serif;
+	text-align: center;
+	width: 100%;
+	color: #f1efeb;
+}
+
+.popup.popupEvent > .content li {
+	color: #aaafbd;
+}
+
+.popup .close-button {
+    top: -4.5%;
+    right: -2.5%;
+}
+
+.popup ul li a {
+	color: #337ab7;
+}
+
+mask {
+	position: absolute;
+	width: 100%; height: 100%;
+	background-color: #060606;
+	opacity: 0.5;
+	left: 0; top: 0;
+}
+
+.popup .button {
+	cursor: pointer;
+	width: inherit; height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.popup .button span {
+	display: block;
+    margin-top: 4%;
+}
+
+.popup .button[disabled="disabled"] {
+	cursor: not-allowed;
+	
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-image: url("../img/game/interface/bouton/off.png");
+}
+
+.popup .button-center {
+	margin-left: 25%;
+}
+
+/**
+* Textes in game
+**/
+.popupText {
+	display: none;
+	position: absolute;
+	left : 15%;
+	top : 5%;
+    z-index: 2000;
+    
+    text-align: center;
+    
+    width: 75%;
+    height: auto;
+    max-height: 100%;
+    
+    color: ghostwhite;
+    cursor: pointer;
+}
+.popupText .next {
+	width: auto;
+    margin-left: 78%;
+    font-size: 3vh;
+    color: #aaafbd;
+}
+.popupText .next.hover {
+	color : #665ee6;
+}
+
+.popup-game {
+	padding: 1%;
+	text-align: center;
+
+	color: #c6c6e6;
+
+	width: auto !important;
+    height: auto !important;
+    max-height: 100%;
+    max-width: 90%;
+}
