@@ -47,24 +47,24 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
 			var vie = Utils.rand(vieMin, vieMax);
 			if (vie < 1) vie = 1;
 
-			var manaMin = this.template.mana[0] * this.suffixe.mana + this.level;
-			var manaMax = this.template.mana[1] * this.suffixe.mana + this.level;
+			var manaMin = (this.template.mana[0] + this.level) * this.suffixe.mana;
+			var manaMax = (this.template.mana[1] + this.level) * this.suffixe.mana;
 			var mana = Utils.rand(manaMin, manaMax);
 
-			var attaqueMin = this.template.attaque[0] * this.suffixe.attaque + this.level;
-			var attaqueMax = this.template.attaque[1] * this.suffixe.attaque + this.level;
+			var attaqueMin = (this.template.attaque[0] + this.level) * this.suffixe.attaque;
+			var attaqueMax = (this.template.attaque[1] + this.level) * this.suffixe.attaque;
 			if (attaqueMax < 1) attaqueMax = 1;
 
-			var defenseMin = this.template.defense[0] * this.suffixe.defense + this.level;
-			var defenseMax = this.template.defense[1] * this.suffixe.defense + this.level;
+			var defenseMin = (this.template.defense[0] + this.level) * this.suffixe.defense;
+			var defenseMax = (this.template.defense[1] + this.level) * this.suffixe.defense;
 
-			var goldMin = this.template.argent[0] * this.suffixe.argent + this.level;
-			var goldMax = this.template.argent[1] * this.suffixe.argent + this.level;
+			var goldMin = (this.template.argent[0] + this.level) * this.suffixe.argent;
+			var goldMax = (this.template.argent[1] + this.level) * this.suffixe.argent;
 			var gold = Utils.rand(goldMin, goldMax);
 			if (gold < 1) gold = 1;
 
-			var xpMin = this.template.xp[0] * this.suffixe.xp + this.level;
-			var xpMax = this.template.xp[1] * this.suffixe.xp + this.level;
+			var xpMin = (this.template.xp[0] + this.level) * this.suffixe.xp;
+			var xpMax = (this.template.xp[1] + this.level) * this.suffixe.xp;
 			var xp = Utils.rand(xpMin, xpMax);
 			if (xp < 1) xp = 1;
 
@@ -131,7 +131,8 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
 
             if (withDef) {
                 var defense = this.data.defense;
-                degats -= Utils.rand(defense[0], defense[1], true);
+                var defResult = Utils.rand(defense[0], defense[1], true);
+                degats -= defResult;
             }
 
             if (degats < 0) degats = 0;

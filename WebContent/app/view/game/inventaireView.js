@@ -55,6 +55,8 @@ define(["jquery",
         this.show = function(key, isChange) {
             this.inventaireOpen = true;
             this.initConsos();
+            this.player.arme();
+            this.player.bouclier();
             this.render();
             this.el.fadeIn();
             this.refreshStats();
@@ -183,7 +185,7 @@ define(["jquery",
                 var id = $(this).attr("id");
                 var item = Items.get("conso", id);
 
-//                if (!item.offensif) {
+                if (!item.offensif) {
                     that.player.use(id, null)
                     var nb = that.consos.get(id)-1;
                     if (nb <= 0) {
@@ -192,7 +194,7 @@ define(["jquery",
                     }else that.consos.put(id, nb);
                     that.player.etatsManager.infligeEtats();
                     that.refreshStats();
-//                }
+                }
             });
 
             this.el.find(".canClose").click(function(e) {

@@ -1,79 +1,79 @@
-/*global define */
+'use strict';
 define(["jquery",
-        'underscore',
         "app/utils/utils",
-        "text!app/template/menu/popup/option.html"], 
-function($, _, Utils, page) {
-	'use strict';
+        "app/utils/viewUtils",
+        "text!app/template/menu/popup/option.html"
+        ], function($, Utils, ViewUtils, page){
+    return function(parent){
+        this.init = function(parent) {
+        	this.el = $(".option-popup");
 
-	return function(parent, Textes) {
-		this.init = function(parent, Textes) {
-			this.el = "#option-popup";
-			this.Textes = Textes;
-			this.parent = parent;
-			this.render();
-		};
+            this.parent = parent;
+            this.Textes = parent.Textes;
+            this.mediatheque = parent.mediatheque;
 
-		this.render = function() {
-			_.templateSettings.variable = "data";
-			var template = _.template(page);
-			var templateData = {
-					text : this.Textes
-			};
-			$(this.el).html(template(templateData));
-			
-			this.refresh();
-			
-			this.makeEvents();
-		};
-		
-		this.refresh = function() {
-			if (this.parent.mediatheque.isMuteMusic)
-				$("#muteMusic").html(this.Textes.get("demuteMusic"));
-			else
-				$("#muteMusic").html(this.Textes.get("muteMusic"));
+            // Manager
+            this.saveManager = parent.saveManager;
 
-			if (this.parent.mediatheque.isMuteSound)
-				$("#muteSound").html(this.Textes.get("demuteSound"));
-			else
-				$("#muteSound").html(this.Textes.get("muteSound"));
-		};
-		
-		this.makeEvents = function() {
-			var that = this;
-			$(this.el).find(".close-button, mask").click(function() {
-				$(that.el).fadeOut();
-			});
-			$(this.el).find(".flag.fr").click(function() {
-				that.Textes.setLanguage("fr");
-				that.parent.render();
-			});
-			$(this.el).find(".flag.en").click(function() {
-				that.Textes.setLanguage("en");
-				that.parent.render();
-			});
-			$(this.el).find("#fullscreen").click(function() {
-				var isFullscreen = Utils.fullscreen();
-				if (isFullscreen) {
-					$("fullscreen").removeClass("exit");
-				}else {
-					$("fullscreen").addClass("exit");
-				}
-			});
-			$(this.el).find("#muteMusic").click(function() {
-				that.parent.mediatheque.mute("music");
-				that.refresh();
-			});
-			$(this.el).find("#muteSound").click(function() {
-				that.parent.mediatheque.mute("sound");
-				that.refresh();
-			});
-		};
-		
-		this.show = function() {
-			$(this.el).fadeIn();
-		};
-		
-		this.init(parent, Textes);
-	};
+            this.render();
+            this.el.hide();
+        };
+
+        this.render = function() {
+            _.templateSettings.variable = "data";
+            var template = _.template(page);
+            var templateData = {
+                    text : this.Textes
+            };
+            this.el.html(template(templateData));
+
+            this.makeEvents();
+        };
+
+        /**
+        * Montre les options
+        **/
+        this.show = function() {
+            this.refresh();
+            this.el.fadeIn();
+        };
+
+        this.refresh = function() {
+            if (this.mediatheque.isMute("sound"))
+                this.el.find("son#sound").addClass("mute");
+            else this.el.find("son#sound").removeClass("mute");
+
+            if (this.mediatheque.isMute("music"))
+                this.el.find("son#music").addClass("mute");
+            else this.el.find("son#music").removeClass("mute");
+
+            var lang = this.Textes.local;
+            this.el.find("flag").removeClass("selected");
+            this.el.find("flag#"+lang).addClass("selected");
+        };
+
+        this.makeEvents = function() {
+            var that = this;
+            this.el.find(".canClose").click(function(e) {
+                var target = $(e.target);
+                if (target.hasClass("canClose")) that.el.fadeOut();
+            });
+            this.el.find("flag").click(function(e) {
+                if ($(this).hasClass("selected")) return;
+                var lang = $(this).attr("id");
+                that.Textes.setLanguage(lang);
+                that.parent.render();
+            });
+            this.el.find("son#sound").click(function(e) {
+                that.mediatheque.mute("sound");
+                that.refresh();
+            });
+            this.el.find("son#music").click(function(e) {
+                that.mediatheque.mute("music");
+                that.refresh();
+            });
+        };
+
+        this.init(parent);
+    };
 });

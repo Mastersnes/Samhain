@@ -23,8 +23,9 @@ define(["jquery",
                     texteNo : texteNo
             };
             el.html(template(templateData));
+            el.find(".popup").addClass(textePopup);
             el.find(".popup").fadeIn();
-            
+
             el.find(".yes").click(function() {
             	el.find(".popup").fadeOut();
             	if (callbackSuccess) callbackSuccess();

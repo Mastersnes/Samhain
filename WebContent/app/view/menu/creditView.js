@@ -2,11 +2,11 @@
 define(["jquery",
         "app/utils/utils",
         "app/utils/viewUtils",
-        "text!app/template/menu/popup/option.html"
+        "text!app/template/menu/popup/credit.html"
         ], function($, Utils, ViewUtils, page){
     return function(parent){
         this.init = function(parent) {
-        	this.el = $(".option-popup");
+        	this.el = $(".credit-popup");
 
             this.parent = parent;
             this.Textes = parent.Textes;
@@ -34,43 +34,75 @@ define(["jquery",
         * Montre les options
         **/
         this.show = function() {
-            this.refresh();
+            this.restartText();
             this.el.fadeIn();
         };
 
-        this.refresh = function() {
-            if (this.mediatheque.isMute("sound"))
-                this.el.find("son#sound").addClass("mute");
-            else this.el.find("son#sound").removeClass("mute");
-
-            if (this.mediatheque.isMute("music"))
-                this.el.find("son#music").addClass("mute");
-            else this.el.find("son#music").removeClass("mute");
-
-            var lang = this.Textes.local;
-            this.el.find("flag").removeClass("selected");
-            this.el.find("flag#"+lang).addClass("selected");
+        this.restartText = function() {
+            this.stopText();
+            this.el.find("textes").css("top", "98%");
+            this.resumeText();
+        };
+        this.pauseText = function() {
+            this.el.find("textes").stop(true, false);
+        };
+        this.stopText = function() {
+            this.remaining = 80*1000;
+            this.el.find("textes").finish();
+        };
+        this.resumeText = function() {
+            var that = this;
+            this.el.find("textes").stop(true, false).animate({"top" : "-348%"},
+            {
+                duration : that.remaining,
+                easing : "linear",
+                progress: function(animation, progress, msRemaining) {
+                    that.remaining = msRemaining;
+                },
+                complete: function() {
+                    that.stopText();
+                    that.restartText();
+                }
+            });
         };
 
         this.makeEvents = function() {
             var that = this;
             this.el.find(".canClose").click(function(e) {
                 var target = $(e.target);
-                if (target.hasClass("canClose")) that.el.fadeOut();
+                if (target.hasClass("canClose")) {
+                    that.el.fadeOut();
+                    that.stopText();
+                }
             });
-            this.el.find("flag").click(function(e) {
-                if ($(this).hasClass("selected")) return;
-                var lang = $(this).attr("id");
-                that.Textes.setLanguage(lang);
-                that.parent.render();
+
+            this.el.find("textes").hover(function(e) {
+                that.pauseText();
+            }, function(e) {
+                that.resumeText();
             });
-            this.el.find("son#sound").click(function(e) {
-                that.mediatheque.mute("sound");
-                that.refresh();
+
+            this.el.find("reseau#twitter").click(function(e) {
+                window.open("https://twitter.com/lesjeuxdebebel", "_blank");
             });
-            this.el.find("son#music").click(function(e) {
-                that.mediatheque.mute("music");
-                that.refresh();
+            this.el.find("reseau#kofi").click(function(e) {
+                window.open("https://ko-fi.com/lesjeuxdebebel", "_blank");
+            });
+            this.el.find("reseau#instagram").click(function(e) {
+                window.open("https://www.instagram.com/lesjeuxdebebel/", "_blank");
+            });
+
+            this.el.find("text#studio").click(function(e) {
+                window.open("https://twitter.com/lesjeuxdebebel", "_blank");
+            });
+            this.el.find("text#directeurArtistique, text#graphisme, text#animation").click(function(e) {
+                window.open("https://twitter.com/AVNesztler", "_blank");
+            });
+            this.el.find("text#conceptArt").click(function(e) {
+                window.open("https://www.artstation.com/avnesztler", "_blank");
+            });
+            this.el.find("text#compositeur").click(function(e) {
+                window.open("https://lesjeuxdebebel.bandcamp.com/releases", "_blank");
             });
         };
 

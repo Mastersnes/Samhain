@@ -1,19 +1,21 @@
 Ameliorations :
 ****************
 -> General
-	-> Refonte graphique (EN COURS)
 	-> Ajout de musiques
--> Interface
-	-> Ajout du glossaire (RESTE LETUDE VISUEL)
-	-> Ajout de l'inventaire
--> Combat
-    ->
+	-> Didactitiel
 -> Contenu Additionnel
 	-> Ajout de la ville
 	-> Ajout de 3 quetes
 	-> Ajout du poste de garde (combats aleatoires en fonction du niveau)
 -> Sons
+    -> Musiques
+    -> revoir les sons
     -> hurt.wav quand le joueur prend des degats
+-> Combat
+    -> objets et magie : degats = baseAttaque + degats suppl
+    -> lifesteal : pourcentage des degats infligés
+    -> manasteal : pourcentage de mana courant de l'adversaire
+    -> soin : pourcentage de vie max
 -> Bugs
     -> Revoir au cas par cas la force des monstres
 
@@ -21,8 +23,10 @@ Ameliorations :
     -> General
         -> Quand on fouille les araignées au debut, chance de trouver un truc
         -> Refonte du moteur
+        -> Refonte graphique
     -> Interface
-        ->
+        -> Ajout du glossaire
+        -> Ajout de l'inventaire
     -> Combat
         -> Modification du combat
         -> Ajout d'une indication de ciblage

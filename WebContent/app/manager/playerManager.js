@@ -405,7 +405,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 		this.levelUp = function() {
 		    this.data.attaque++;
 		    this.data.defense++;
-		    this.data.life.max += 50;
+		    this.data.life.max += 10;
 		    if (this.data.unlockMana) this.data.mana.max++;
 
 		    this.addLife(this.data.life.max);

@@ -54,171 +54,53 @@ fullscreen.exit {
 .menu-page .scene {
 	background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url("../img/game/interface/background.jpg");
+    background-image: url("../img/menu/background.jpg");
 }
 .menu-cadre {
-	position: absolute;
-	width: 100%;
-	height: 100%;
+	display: block; position: absolute;
+	width: 100%; height: 100%;
 }
 .menu-cadre logo {
-	position: absolute;
-    display: block;
-    width: 40%; height: 40%;
+	position: absolute; display: block;
+    width: 44%; height: 43%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url("../img/menu/logo.png");
     left: 0%; top: 0%;
 }
+.menu-cadre carnet {
+    left: 44.8%; top: 19.5%;
+    width: 38.8%; height: 74.8%;
+}
 
+/**
+* Boutons
+**/
 .menu-cadre boutons {
-	position: absolute;
-	display: block;
-	left: 10%; top: 46%;
-	width: 100%; height: 7%;
-}
+    display: block; position: absolute;
+    width: 52%; height: 58%;
+    left: 24%; top: 12%;
+    transform: rotate(-9.5deg);
 
+    font-family: "Morgan";
+    font-size: 3vh;
+    color: white; text-align: center;
+}
 .menu-cadre bouton {
-	position: relative;
-	display: inline-block;
-	width: 20%; height: 100%;
-	cursor: pointer;
-}
-.menu-cadre cadre {
-	display: block;
-	position: absolute;
-	left: 0; top: 0;
-	width: 100%; height: 100%;
-	background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url("../img/menu/carre haut.png");
-}
-.menu-cadre text {
-    position: absolute;
-	display: block;
-    left: 0; top: 40%;
-    font-size: 2vh;
-    color: white;
-    text-align: center;
-    width: 100%; height: 100%;
-}
-
-ul.popup-menu {
-	display: block;
-}
-ul.popup-menu > li {
-	display: block;
-	text-align: center;
-	
-	width: 60%;
-	margin-left: auto;
-	margin-right: auto;
-}
-ul.popup-menu > li {
-	cursor: pointer;
-	
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	
-	position: relative;
-	
-	-webkit-transition: background 2s;
-	transition: background 2s;
-}
-
-ul.popup-menu > li:hover {
-	color: #222 !important;
-	background: #f5f5f5;
-	background: linear-gradient(top, #f5f5f5 5%, #555 100%);
-	background: -webkit-linear-gradient(top, #f5f5f5 5%, #555 100%);
-	background: -moz-linear-gradient(top, #f5f5f5 5%, #555 100%);
-	background: -ms-linear-gradient(top, #f5f5f5 5%, #555 100%);
-	background: -o-linear-gradient(top, #f5f5f5 5%, #555 100%);
-}
-
-a {
-	color : #23527c;
-}
-a:hover {
-	color : #337ab7;
-}
-
-.flag-container {
-    height: 30vh;
-    width: 100%;
-}
-.flag {
+    display: block; position: relative;
+    width: 100%; height: 10%;
+    margin-top: 10%;
     cursor: pointer;
-    display: inline-block;
-    width: 35%; height: 90%;
+}
+.menu-cadre bouton case {
+    position: relative; display: inline-block;
+    width: 14%; height: 100%;
+    top: 20%; left: 0;
     background-repeat: no-repeat;
-    background-size: 100% 100%; 
+    background-image: url(../img/game/interface/ui/checkbox.png);
+    background-size: 300% 100%;
+    background-position: 0% 0%;
 }
-.flag.fr {
-	background-image: url("../img/menu/flag/fr.jpg");
-}
-.flag.en {
-	background-image: url("../img/menu/flag/en.jpg");
-}
-
-.close-button {
-	cursor: pointer;
-	width: 6% !important; height: 7vh !important;
-	position: absolute !important;
-	opacity : 1 !important;
-	
-	background-image: url("../img/game/interface/croix/0.png");
-	background-repeat: no-repeat !important;
-    background-size: 100% 100% !important;
-}
-.close-button:hover {
-	animation-name: close-turn;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-
-	-webkit-animation-name: close-turn;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-
-	-moz-animation-name: close-turn;
-    -moz-animation-duration: 1s;
-    -moz-animation-fill-mode: forwards;
-    -moz-animation-timing-function: linear;
-    -moz-animation-iteration-count: infinite;
-
-	-o-animation-name: close-turn;
-    -o-animation-duration: 1s;
-    -o-animation-fill-mode: forwards;
-    -o-animation-timing-function: linear;
-    -o-animation-iteration-count: infinite;
-}
-
-@keyframes close-turn {
-    0%, 100% {background-image: url("../img/game/interface/croix/0.png");}
-    5% {background-image: url("../img/game/interface/croix/1.png");}
-    9% {background-image: url("../img/game/interface/croix/2.png");}
-    14% {background-image: url("../img/game/interface/croix/3.png");}
-    18% {background-image: url("../img/game/interface/croix/4.png");}
-    23% {background-image: url("../img/game/interface/croix/5.png");}
-    27% {background-image: url("../img/game/interface/croix/6.png");}
-    32% {background-image: url("../img/game/interface/croix/7.png");}
-    36% {background-image: url("../img/game/interface/croix/8.png");}
-    41% {background-image: url("../img/game/interface/croix/9.png");}
-    45% {background-image: url("../img/game/interface/croix/10.png");}
-    50% {background-image: url("../img/game/interface/croix/11.png");}
-    54% {background-image: url("../img/game/interface/croix/12.png");}
-    59% {background-image: url("../img/game/interface/croix/13.png");}
-    63% {background-image: url("../img/game/interface/croix/14.png");}
-    68% {background-image: url("../img/game/interface/croix/15.png");}
-    72% {background-image: url("../img/game/interface/croix/16.png");}
-    77% {background-image: url("../img/game/interface/croix/17.png");}
-    81% {background-image: url("../img/game/interface/croix/18.png");}
-    86% {background-image: url("../img/game/interface/croix/19.png");}
-    90% {background-image: url("../img/game/interface/croix/20.png");}
-    95% {background-image: url("../img/game/interface/croix/21.png");}
+.menu-cadre bouton case.coche {
+    background-position: 100% 0%;
 }

@@ -5,19 +5,118 @@
 	<contour class="canClose">
 		<close class="canClose"></close>
 		<content>
-			<fleches>
-				<son id="sound">
-					<text><%=text.get("sound")%></text>
-				</son>
-				<son id="music">
-					<text><%=text.get("music")%></text>
-				</son>
-				<flags>
-					<text><%=text.get("language")%></text>
-					<flag id="fr"></flag>
-					<flag id="en"></flag>
-				</flags>
-			</fleches>
+			<wrapper>
+				<textes>
+					<text id="samhain" class="bloc">
+						<text class="title">Samhain</text>
+					</text>
+
+					<text id="studio" class="bloc clickable">
+						<text class="title"><%=text.get("studio-credits")%></text>
+						<text>Les Jeux de Bebel</text>
+					</text>
+					<text id="creation" class="bloc">
+						<text class="title"><%=text.get("creation-credits")%></text>
+						<text><%=text.get("nous-credits")%></text>
+					</text>
+
+					<text class="separator"></text>
+
+					<text id="directeurArtistique" class="bloc clickable">
+						<text class="title"><%=text.get("DA-credits")%></text>
+						<text><%=text.get("lili-credits")%></text>
+					</text>
+					<text id="conceptArt" class="bloc clickable">
+						<text class="title"><%=text.get("CA-credits")%></text>
+						<text><%=text.get("lili-credits")%></text>
+					</text>
+					<text id="graphisme" class="bloc clickable">
+						<text class="title"><%=text.get("graphist-credits")%></text>
+						<text><%=text.get("lili-credits")%></text>
+					</text>
+					<text id="animation" class="bloc clickable">
+						<text class="title"><%=text.get("animation-credits")%></text>
+						<text><%=text.get("lili-credits")%></text>
+					</text>
+
+					<text class="separator"></text>
+
+					<text id="gameDesign" class="bloc">
+						<text class="title"><%=text.get("gameDesign-credits")%></text>
+						<text><%=text.get("titi-credits")%></text>
+					</text>
+					<text id="programming" class="bloc">
+						<text class="title"><%=text.get("programming-credits")%></text>
+						<text><%=text.get("titi-credits")%></text>
+					</text>
+					<text id="levelDesign" class="bloc">
+						<text class="title"><%=text.get("levelDesign-credits")%></text>
+						<text><%=text.get("titi-credits")%></text>
+					</text>
+
+					<text class="separator"></text>
+
+					<text id="compositeur" class="bloc clickable">
+						<text class="title"><%=text.get("musiques-credits")%></text>
+						<text><%=text.get("lili-credits")%></text>
+					</text>
+					<text id="soundDesigner" class="bloc">
+						<text class="title"><%=text.get("sound-credits")%></text>
+						<text><%=text.get("nous-credits")%></text>
+					</text>
+
+					<text class="separator"></text>
+
+					<text id="texte" class="bloc">
+						<text class="title"><%=text.get("texte-credits")%></text>
+						<text><%=text.get("titi-credits")%></text>
+					</text>
+					<text id="correction" class="bloc">
+						<text class="title"><%=text.get("correction-credits")%></text>
+						<text><%=text.get("lili-credits")%></text>
+					</text>
+					<text id="traduction" class="bloc">
+						<text class="title"><%=text.get("traduction-credits")%></text>
+						<text><%=text.get("nous-credits")%></text>
+					</text>
+
+					<text class="separator"></text>
+
+					<text id="community" class="bloc">
+						<text class="title"><%=text.get("community-credits")%></text>
+						<text><%=text.get("lili-credits")%></text>
+					</text>
+
+					<text class="separator"></text>
+
+					<text id="tester" class="bloc">
+						<text class="title"><%=text.get("tester-credits")%></text>
+						<text><%=text.get("nous-credits")%></text>
+					</text>
+					<text id="beta" class="bloc">
+						<text class="title"><%=text.get("beta-credits")%></text>
+						<text><%=text.get("lili-credits")%></text>
+						<text><%=text.get("titi-credits")%></text>
+						<text>...</text>
+					</text>
+
+					<text class="separator"></text>
+
+					<text id="merci" class="bloc">
+						<text class="title"><%=text.get("merci-credits")%></text>
+						<text><%=text.get("suiveurs-thx-credits")%></text>
+						<text><%=text.get("beta-thx-credits")%></text>
+						<text><%=text.get("animalux-thx-credits")%></text>
+					</text>
+				</textes>
+				<reseaux>
+					<reseau id="twitter"></reseau>
+					<reseau id="kofi"></reseau>
+					<reseau id="instagram"></reseau>
+				</reseaux>
+
+				<background></background>
+			</wrapper>
 		</content>
 	</contour>
 </div>

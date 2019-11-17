@@ -29,8 +29,8 @@ define([], function(){
                 en : "Our other games on:"
             },
             "eraseSave" : {
-                fr : "Attention, ceci effacera votre partie enregistrée!",
-                en : "Warning, this will erase your registered save!"
+                fr : "<text>ATTENTION !</text><text>Ceci effacera votre partie enregistrée</text>",
+                en : "<text>WARNING!</text><text>this will erase your registered save</text>"
             },
             "continue" : {
                 fr : "Continuer",

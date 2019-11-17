@@ -84,8 +84,6 @@ function($, _, Utils, PopupUtils, page,
 			}else {
 				$("fullscreen").addClass("exit");
 			}
-			
-			this.mediatheque.refreshMute();
 		};
 
         /**

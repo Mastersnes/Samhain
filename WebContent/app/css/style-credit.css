@@ -1,16 +1,16 @@
 /**
-* Option
+* Credits
 **/
-.option-popup {
+.credit-popup {
     display : block; position: absolute;
     width: 100%; height: 100%;
     left: 0; top: 0%;
     z-index: 10;
 }
-.option-popup div {
+.credit-popup div {
     width: 100%; height: 100%;
 }
-.option-popup contour {
+.credit-popup contour {
     display: block; position: relative;
     width: 100%; height: 100%;
     margin-left: auto;
@@ -21,88 +21,98 @@
     background-size: 100% 100%;
 }
 
-.option-popup content {
+.credit-popup content {
     display: block; position: absolute;
     font-family: "Morgan";
     width: 73.5%; height: 75%;
     top: 13%; left: 12.5%;
 }
 
-.option-popup close {
+.credit-popup close {
     width: 2.5%; height: 4%;
     top: 15%; left: 82.2%;
 }
-.option-popup fleches {
+.credit-popup wrapper {
     position: absolute; display: block;
-    width: 58%; height: 38%;
-    top: 13%; left: 18%;
-    background-image: url("../img/menu/popup/option.png");
+    width: 92%; height: 96%;
+    left: 4.5%; top: 3.2%;
+    overflow: hidden;
+}
+.credit-popup background {
+    position: absolute; display: block;
+    width: 100%; height: 100%;
+    left: 0%; top: 0%;
+    background-image: url("../img/menu/popup/credit.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    pointer-events: none;
 }
 
-.option-popup text {
-    display: block; position: absolute;
+.credit-popup textes {
+    position: absolute; display: block;
+    width: 57.5%; height: auto;
+    top: 23.5%; left: 27%;
+}
+
+.credit-popup textes text {
+    position: relative; display: block;
     width: auto; height: auto;
     text-align: center;
-    font-family: "Morgan"; font-weight: bold;
+    font-family: "Morgan";
+    font-size: 3vh;
+    text-rendering: optimizeSpeed;
+    word-spacing: 5px;
+}
+.credit-popup textes text.bloc {
+    margin-bottom: 4%;
     color: black;
 }
-
-.option-popup son#music {
-    width: 15%; height: 26%;
-    left: 80%; top: 50%;
+.credit-popup textes text.separator {
+    padding-top: 5%;
+    border-top: 3px double;
 }
-.option-popup son#music text {
-    left: 141%; top: -66%;
-    font-size: 3.5vh;
-}
-.option-popup son#sound {
-    width: 15%; height: 26%;
-    left: 62%; top: 10%;
-}
-.option-popup son#sound text {
-    left: -96%; top: -90%;
-    font-size: 3.5vh;
+.credit-popup textes text.title {
+    font-weight: bold;
 }
 
-.option-popup flags {
-    position: absolute; display: block;
-    width: 106%; height: 83%;
-    top: 93%; left: 2%;
+.credit-popup textes text.clickable:hover {
+    color: #2b2b6f;
 }
-.option-popup flags flag {
+
+.credit-popup textes text#samhain .title {
+    font-size: 6vh;
+    color: #331f0a;
+}
+
+.credit-popup reseaux {
     position: absolute; display: block;
-    background-image: url("../img/menu/boutons/flags.png");
-    background-size: 200% 100%;
+    width: 26%; height: 9%;
+    top: 88.5%; left: 1%;
+}
+.credit-popup reseaux reseau {
+    position: absolute; display: block;
+    background-image: url("../img/menu/boutons/reseaux.png");
+    background-size: 300% 100%;
     background-repeat: no-repeat;
     cursor: pointer;
-    opacity: 0.7;
     transition: all 1000ms;
 }
-.option-popup flags flag.selected {
-    opacity: 1;
-}
-.option-popup flags text {
-    left: -19%; top: -52%;
-    font-size: 4.5vh;
-}
-.option-popup flags flag#fr {
-    background-position: 100% 0%;
-    width: 39%; height: 83%;
-    left: 0%; top: 6%;
-    transform: rotate(-11deg);
-}
-.option-popup flags flag#fr:not(.selected):hover {
-    transform: rotate(-20deg);
+.credit-popup reseaux reseau:hover {
+    transform: scale(1.1);
 }
 
-.option-popup flags flag#en {
+.credit-popup reseaux reseau#instagram {
     background-position: 0% 0%;
-    width: 39%; height: 83%;
-    left: 60%; top: 13%;
-    transform: rotate(14deg);
+    width: 33%; height: 97%;
+    left: 60%; top: 23%;
 }
-.option-popup flags flag#en:not(.selected):hover {
-    transform: rotate(23deg);
+.credit-popup reseaux reseau#kofi {
+    background-position: 50% 0%;
+    width: 33%; height: 97%;
+    left: 35%; top: 23%;
+}
+.credit-popup reseaux reseau#twitter {
+    background-position: 100% 0%;
+    width: 33%; height: 97%;
+    top: 0%; left: 1%;
 }

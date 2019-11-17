@@ -126,27 +126,20 @@ button:focus {outline:0;}
 	background-image: url("../img/game/interface/bouton/wordpress.png");
 }
 
-mute {
-	z-index: 10;
-	cursor: pointer;
-	display: block;
-	position: absolute;
-	right: 5%; bottom: 0.4%;
-    width: 4%; height: 5%;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-image: url("../img/game/interface/bouton/mute-on.png");
-}
-mute.off {
-	background-image: url("../img/game/interface/bouton/mute-off.png");
-}
-
 /**
 * Ensemble des polices
 **/
 @font-face {
     font-family: "Priscilla";
     src: url("../fonts/priscilla.ttf");
+}
+@font-face {
+    font-family: "Luna";
+    src: url("../fonts/luna.ttf");
+}
+@font-face {
+    font-family: "Morgan";
+    src: url("../fonts/morgan.ttf");
 }
 
 /**
@@ -160,4 +153,45 @@ mute.off {
     -webkit-user-select:none;
     -ms-user-select:none;
     user-select:none;
+}
+
+/**
+* Close button
+**/
+close {
+    position: absolute; display: block;
+    width: 2.5%; height: 4%;
+    background-image: url("../img/menu/boutons/close.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 100;
+    transition: all 300ms;
+}
+close:hover {
+    transform: scale(1.1);
+}
+
+/**
+* Son
+**/
+son {
+    position: absolute; display: block;
+    background-image: url("../img/menu/boutons/son.png");
+    background-size: 400% 100%;
+    background-repeat: no-repeat;
+}
+son#music {
+    background-position: 33.33% 100%;
+    cursor: pointer;
+}
+son#music.mute {
+    background-position: 0% 100%;
+}
+son#sound {
+    background-position: 100% 100%;
+    cursor: pointer;
+}
+son#sound.mute {
+    background-position: 66.66% 100%;
 }

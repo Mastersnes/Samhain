@@ -7,6 +7,9 @@
     left: 0; top: 0%;
     z-index: 10;
 }
+.glossaire close {
+    top: 16%; left: 90.4%;
+}
 .glossaire div {
     width: 100%; height: 100%;
 }

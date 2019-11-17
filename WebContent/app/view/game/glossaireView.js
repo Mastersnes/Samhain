@@ -193,9 +193,6 @@ define(["jquery",
                 var target = $(e.target);
                 if (target.hasClass("canClose")) that.el.fadeOut();
             });
-//            this.el.find(".zoom retour").click(function() {
-//                that.list();
-//            });
             this.el.find(".zoom suffixe select").change(function() {
                 that.show(that.current, true);
             });

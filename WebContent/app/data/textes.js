@@ -1,6 +1,8 @@
 'use strict';
 define([
     "app/data/textes/menu-textes",
+    "app/data/textes/options-textes",
+    "app/data/textes/credits-textes",
     "app/data/textes/ui-textes",
     "app/data/textes/inventaire-textes",
     "app/data/textes/etats-textes",
@@ -8,7 +10,7 @@ define([
     "app/data/textes/suffixes-textes",
     "app/data/textes/items-textes",
     "app/data/textes/stories-textes"
-], function(Menu, UI, Inventaire, Etats, Monstres, Suffixes, Items, Stories){
+], function(Menu, Options, Credits, UI, Inventaire, Etats, Monstres, Suffixes, Items, Stories){
 	var data = {
 	};
 	
@@ -29,6 +31,8 @@ define([
 
             var text = data[key];
             if (!text) text = Menu.get(key);
+            if (!text) text = Options.get(key);
+            if (!text) text = Credits.get(key);
             if (!text) text = UI.get(key);
             if (!text) text = Inventaire.get(key);
             if (!text) text = Etats.get(key);

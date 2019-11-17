@@ -6,6 +6,19 @@
     width: 100%; height: 100%;
     left: 0; top: 0%;
     z-index: 10;
+    font-family: "Luna";
+}
+.inventaire close {
+    display : block; position: absolute;
+    width: 5%; height: 5%;
+    left: 86.5%; top: 1.5%;
+    background-repeat: no-repeat;
+    background-image: url("../img/game/interface/bouton/close_inventaire.png");
+    background-size: 100% 100%;
+    transition: all 1000ms;
+}
+.inventaire close:hover {
+    transform: rotate(12deg);
 }
 .inventaire div {
     width: 100%; height: 100%;
@@ -24,7 +37,6 @@
 
 .inventaire content {
     display: block; position: absolute;
-    font-family: "Priscilla";
 }
 
 /**
@@ -39,7 +51,7 @@
     left: 22%; top: 8%;
     width: 74%; height: 85%;
     text-align: left;
-    font-size: 2.8vh;
+    font-size: 2.4vh;
 }
 .inventaire profil info {
     display: block; position: relative;
@@ -104,7 +116,10 @@
     position: relative; display: block;
     width: 100%; height: 10%;
     margin-bottom: 2%;
-    font-size: 2.6vh;
+    font-size: 2.5vh;
+}
+.inventaire .equipment element#bouclierBois, .inventaire .equipment element#bouclierFer {
+    font-size: 2vh;
 }
 
 .inventaire .equipment case {
@@ -113,10 +128,10 @@
     top: 20%; left: 0;
     background-repeat: no-repeat;
     background-image: url("../img/game/interface/ui/checkbox.png");
-    background-size: 200% 100%;
+    background-size: 300% 100%;
 
     background-position: 0% 0%;
 }
 .inventaire .equipment case.coche {
-    background-position: 100% 0%;
+    background-position: 50% 0%;
 }

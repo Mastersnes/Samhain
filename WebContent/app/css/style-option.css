@@ -1,106 +1,108 @@
 /**
-* Kongregate
+* Option
 **/
-.username {
-	position: absolute;
-	top: 1%;
-	right: 2%;
+.option-popup {
+    display : block; position: absolute;
+    width: 100%; height: 100%;
+    left: 0; top: 0%;
+    z-index: 10;
 }
-
-/**
-* Menu
-**/
-.bebel {
-	z-index : 10000;
-	background-color : white;
-	background-image: url("../img/menu/bebel.png");
-	background-repeat: no-repeat;
-	background-size: 50% 50%;
-	background-position: 50% 50%;
+.option-popup div {
+    width: 100%; height: 100%;
 }
-.bebel .text, .text#loading {
-	position: absolute;
-	text-align: center;
-	top: 75%;
-	cursor: pointer;
-	width: 100%;
-}
-.bebel .text#starting {
-	display: none;
-}
-
-fullscreen {
-	z-index: 10;
-	cursor: pointer;
-	display: block;
-	position: absolute;
-	right: 1%; bottom: 1%;
-	width: 3%; height: 4%;
-	background-image: url("../img/game/interface/bouton/fullscreen.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-
-fullscreen.exit {
-	background-image: url("../img/game/interface/bouton/exit-fullscreen.png") !important;
-}
-
-/**
-* Menu
-**/
-.menu-page {
-	background-color: #060606;
-}
-.menu-page .scene {
-	background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url("../img/menu/background.jpg");
-}
-.menu-cadre {
-	display: block; position: absolute;
-	width: 100%; height: 100%;
-}
-.menu-cadre logo {
-	position: absolute; display: block;
-    width: 44%; height: 43%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url("../img/menu/logo.png");
-    left: 0%; top: 0%;
-}
-.menu-cadre carnet {
-    left: 44.8%; top: 19.5%;
-    width: 38.8%; height: 74.8%;
-}
-
-/**
-* Boutons
-**/
-.menu-cadre boutons {
-    display: block; position: absolute;
-    width: 52%; height: 58%;
-    left: 24%; top: 12%;
-    transform: rotate(-9.5deg);
-
-    font-family: "Morgan";
-    font-size: 3vh;
-    color: white; text-align: center;
-}
-.menu-cadre bouton {
+.option-popup contour {
     display: block; position: relative;
-    width: 100%; height: 10%;
-    margin-top: 10%;
-    cursor: pointer;
-}
-.menu-cadre bouton case {
-    position: relative; display: inline-block;
-    width: 14%; height: 100%;
-    top: 20%; left: 0;
+    width: 100%; height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     background-repeat: no-repeat;
-    background-image: url(../img/game/interface/ui/checkbox.png);
-    background-size: 300% 100%;
-    background-position: 0% 0%;
+    background-image: url("../img/menu/popup/popup.png");
+    background-size: 100% 100%;
 }
-.menu-cadre bouton case.coche {
+
+.option-popup content {
+    display: block; position: absolute;
+    font-family: "Morgan";
+    width: 73.5%; height: 75%;
+    top: 13%; left: 12.5%;
+}
+
+.option-popup close {
+    width: 2.5%; height: 4%;
+    top: 15%; left: 82.2%;
+}
+.option-popup fleches {
+    position: absolute; display: block;
+    width: 58%; height: 38%;
+    top: 13%; left: 18%;
+    background-image: url("../img/menu/popup/option.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.option-popup text {
+    display: block; position: absolute;
+    width: auto; height: auto;
+    text-align: center;
+    font-family: "Morgan"; font-weight: bold;
+    color: black;
+}
+
+.option-popup son#music {
+    width: 15%; height: 26%;
+    left: 80%; top: 50%;
+}
+.option-popup son#music text {
+    left: 141%; top: -66%;
+    font-size: 3.5vh;
+}
+.option-popup son#sound {
+    width: 15%; height: 26%;
+    left: 62%; top: 10%;
+}
+.option-popup son#sound text {
+    left: -96%; top: -90%;
+    font-size: 3.5vh;
+}
+
+.option-popup flags {
+    position: absolute; display: block;
+    width: 106%; height: 83%;
+    top: 93%; left: 2%;
+}
+.option-popup flags flag {
+    position: absolute; display: block;
+    background-image: url("../img/menu/boutons/flags.png");
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 1000ms;
+}
+.option-popup flags flag.selected {
+    opacity: 1;
+}
+.option-popup flags text {
+    left: -19%; top: -52%;
+    font-size: 4.5vh;
+}
+.option-popup flags flag#fr {
     background-position: 100% 0%;
+    width: 39%; height: 83%;
+    left: 0%; top: 6%;
+    transform: rotate(-11deg);
+}
+.option-popup flags flag#fr:not(.selected):hover {
+    transform: rotate(-20deg);
+}
+
+.option-popup flags flag#en {
+    background-position: 0% 0%;
+    width: 39%; height: 83%;
+    left: 60%; top: 13%;
+    transform: rotate(14deg);
+}
+.option-popup flags flag#en:not(.selected):hover {
+    transform: rotate(23deg);
 }

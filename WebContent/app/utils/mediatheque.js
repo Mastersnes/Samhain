@@ -129,15 +129,20 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 				if (this.isMuteMusic) this.stopAllMusic();
 				else this.play(this.currentMusic);
 			}
-			this.refreshMute();
 		};
-		
-		this.refreshMute = function() {
-			$("mute").removeClass("off");
-			if (!(this.isMuteMusic && this.isMuteSound)) {
-				$("mute").addClass("off");
-			}
-		};
+
+		this.isMute = function(type) {
+            switch(type) {
+                case "all" :
+                    return this.isMuteMusic && this.isMuteSound;
+                case "music" :
+                    return this.isMuteMusic;
+                case "sound" :
+                    return this.isMuteSound;
+                default:
+                    break;
+            }
+        };
 		
 		this.loadAll();
 	};

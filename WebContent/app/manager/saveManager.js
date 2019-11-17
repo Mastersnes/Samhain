@@ -22,8 +22,8 @@ function($, _, Utils) {
 			this.saveData = {
 			    "player" : {
 			        "life" : {
-			            "current" : 300,
-			            "max" : 300
+			            "current" : 100,
+			            "max" : 100
 			        },
 			        "mana" : {
 			            "current" : 0,
@@ -34,18 +34,18 @@ function($, _, Utils) {
 			        "debuff" : null,
 			        "xp" : 0,
 			        "level" : 0,
-			        "gold" : 9500,
+			        "gold" : 0,
 
 			        "attaque" : 1,
 			        "defense" : 1,
 
 			        "equipment" : {
-			            "arme" : ["poing", "dague", "epee", "crocRoi"],
-			            "currentArme" : "crocRoi",
-			            "bouclier" : ["bras", "bouclierBois", "bouclierFer"],
+			            "arme" : ["poing"],
+			            "currentArme" : "poing",
+			            "bouclier" : ["bras"],
 			            "currentBouclier" : "bras",
-			            "magie" : ["bouleFeu", "soin"],
-			            "conso" : ["pomme", "fromage", "venin", "potionSante", "elixir"],
+			            "magie" : [],
+			            "conso" : [],
 			            "clef" : [],
 			            "ifObj" : []
 			        },

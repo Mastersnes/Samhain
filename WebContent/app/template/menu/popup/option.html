@@ -1,20 +1,23 @@
-<mask></mask>
-<div class="content popup-game">
-	<div class="close-button" aria-label="Close"></div>
-	<div class="texte row">
-		<div class="col-md-12" id="language">
-			<label class="col-md-12"><%= data.text.get("langage")%></label>
-			<div class="flag-container col-md-12">
-				<div class="flag fr"></div>
-				<div class="flag en"></div>
-			</div>
-		</div>
-		<div class="col-md-12">
-			<ul class="col-md-12 popup-menu">
-   				<li id="fullscreen"><%= data.text.get("fullscreen")%></li>
-   				<li id="muteMusic"></li>
-   				<li id="muteSound"></li>
-   			</ul>
-		</div>
-	</div>
+<% var text = data.text %>
+
+<div>
+	<mask class="canClose"></mask>
+	<contour class="canClose">
+		<close class="canClose"></close>
+		<content>
+			<fleches>
+				<son id="sound">
+					<text><%=text.get("sound")%></text>
+				</son>
+				<son id="music">
+					<text><%=text.get("music")%></text>
+				</son>
+				<flags>
+					<text><%=text.get("language")%></text>
+					<flag id="fr"></flag>
+					<flag id="en"></flag>
+				</flags>
+			</fleches>
+		</content>
+	</contour>
 </div>

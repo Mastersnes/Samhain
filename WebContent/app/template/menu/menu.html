@@ -1,5 +1,7 @@
+<% var text = data.text %>
+
 <div class="page bebel">
-	<div id="starting" class="text"><%=data.text.get("clickToContinue")%></div>
+	<div id="starting" class="text"><%=text.get("clickToContinue")%></div>
 </div>
 
 <div class="page menu-page">
@@ -8,35 +10,32 @@
 		<div id="login" class="loginKongregate hidden"></div>
 	    <div class="menu-cadre">
 	    	<logo></logo>
-	    	<boutons>
-				<bouton id="new">
-					<cadre>
-						<text><%=data.text.get("newGame")%></text>
-					</cadre>
-				</bouton>
-				<bouton id="load">
-					<cadre>
-						<text><%=data.text.get("loadGame")%></text>
-					</cadre>
-				</bouton>
-				<bouton id="option">
-					<cadre>
-						<text><%=data.text.get("options")%></text>
-					</cadre>
-				</bouton>
-				<bouton id="credit">
-					<cadre>
-						<text><%=data.text.get("credits")%></text>
-					</cadre>
-				</bouton>
-			</boutons>
+	    	<carnet>
+				<boutons>
+					<bouton id="new">
+						<case></case>
+						<span><%=text.get("newGame")%></span>
+					</bouton>
+					<bouton id="load">
+						<case></case>
+						<span><%=text.get("continue")%></span>
+					</bouton>
+					<bouton id="option">
+						<case></case>
+						<span><%=text.get("options")%></span>
+					</bouton>
+					<bouton id="credit">
+						<case></case>
+						<span><%=text.get("credits")%></span>
+					</bouton>
+				</boutons>
+			</carnet>
 	    </div>
 	    
 	    <div id="popups"></div>
-	    <div id="load-popup" class="popup"></div>
-		<div id="option-popup" class="popup"></div>
-		<div id="credit-popup" class="popup"></div>
+	    <div class="load-popup"></div>
+		<div class="option-popup"></div>
+		<div class="credit-popup"></div>
 		<fullscreen></fullscreen>
-		<mute></mute>
     </div>
 </div>

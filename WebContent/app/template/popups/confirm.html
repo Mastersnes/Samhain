@@ -1,16 +1,14 @@
+<% var text = data.text %>
+
 <div class="popup">
-    <mask></mask>
-    <div class="content popup-game">
-        <div class="texte text-center row">
-	        <div class="col-md-12"><%= data.text.get(data.textePopup) %></div>
-	        <div class="col-md-12">
-            	<div class="categorie text button yes">
-            		<span><%= data.text.get(data.texteYes) %></span>
-            	</div>
-            	<div class="categorie text button no">
-            		<span><%= data.text.get(data.texteNo) %></span>
-            	</div>
-	        </div>
-        </div>
-    </div>
+	<div>
+		<mask class="canClose"></mask>
+		<contour class="canClose">
+			<content>
+				<text class="title"><%= text.get(data.textePopup) %></text>
+				<text class="yes clickable"><%= text.get(data.texteYes) %></text>
+				<text class="no clickable"><%= text.get(data.texteNo) %></text>
+			</content>
+		</contour>
+	</div>
 </div>

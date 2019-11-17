@@ -29,7 +29,7 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate, Textes, Mediatheque,
             this.saveManager = new SaveManager(this.kongregateUtils);
             this.Textes = Textes;
             this.Textes.loadLanguage();
-            
+
             var that = this;
 			if (window.location.href.indexOf("kongregate") > -1) {
 	            console.log("kongregate Load");
@@ -62,11 +62,13 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate, Textes, Mediatheque,
 			$(".app-container").removeClass("bebel");
 			this.scene.resize();
 			setTimeout(function() {
-				that.mediatheque.refreshMute();
 				$(".text#loading").fadeOut("slow");
 				$(".text#starting").fadeIn("slow");
 				$(".preload").empty();
 				that.scene.resize();
+
+				that.optionView = new OptionView(that);
+				that.creditView = new CreditView(that);
 			}, 1000);
 		};
 		
@@ -74,10 +76,13 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate, Textes, Mediatheque,
 			var that = this;
 			$("#new").click(function() {
 			    if (that.saveManager.checkSave()) {
+			        that.el.find("carnet boutons").fadeOut();
 					PopupUtils.confirm(Textes, "eraseSave", function() {
 				        that.saveManager.eraseSave();
 						that.loadGame();
-				    }, null, "continuerButton", "cancelButton");
+				    }, function() {
+				        that.el.find("carnet boutons").fadeIn();
+				    }, "continuerButton", "cancelButton");
 			    }else {
 			    	that.loadGame();
 			    }
@@ -87,10 +92,10 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate, Textes, Mediatheque,
 			    that.loadGame();
 			});
 			$("#option").click(function() {
-				new OptionView(that, Textes).show();
+				that.optionView.show();
 			});
 			$("#credit").click(function() {
-				new CreditView(Textes).show();
+			    that.creditView.show();
 			});
 			
 			$("#login").click(function() {
@@ -98,9 +103,9 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate, Textes, Mediatheque,
 			});
 			
 			$("bouton").hover(function() {
-				$(this).find("etoile").addClass("hovered");
+				$(this).find("case").addClass("coche");
 			}, function() {
-				$(this).find("etoile").removeClass("hovered");
+				$(this).find("case").removeClass("coche");
 			});
 			
 			$(".page.bebel").click(function() {
@@ -116,20 +121,13 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate, Textes, Mediatheque,
 			
 			$("fullscreen").click(function() {
 				var isFullscreen = Utils.fullscreen();
-				if (isFullscreen) {
-					$("fullscreen").removeClass("exit");
-				}else {
-					$("fullscreen").addClass("exit");
-				}
+				if (isFullscreen) $("fullscreen").removeClass("exit");
+				else $("fullscreen").addClass("exit");
 			});
 
-			$("mute").click(function() {
-				that.mediatheque.mute("all");
+			$("body").contextmenu(function() {
+				return false;
 			});
-
-//			$("body").contextmenu(function() {
-//				return false;
-//			});
 		};
 		
 		this.loadGame = function() {
