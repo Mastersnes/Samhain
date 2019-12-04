@@ -244,11 +244,11 @@ define([], function() {
         		{
         			"appairIf" : [
         				{"key" : "hasItem", "params" : ["bouleFeu"]},
-        				{"key" : "hasMG", "params" : [5]}
+        				{"key" : "hasMG", "params" : [1]}
         			],
         			"name" : "lancer-boule-feu", "action" : [
         				{"key" : "gain", "params" : ["torcheExploseG"]},
-        				{"key" : "healMG", "params" : [-5]},
+        				{"key" : "healMG", "params" : [-1]},
         				{"key" : "go", "params" : ["necroGSTorcheKO"]}
         			]
         		},
@@ -272,11 +272,11 @@ define([], function() {
         		{
         			"appairIf" : [
         				{"key" : "hasItem", "params" : ["bouleFeu"]},
-        				{"key" : "hasMG", "params" : [5]}
+        				{"key" : "hasMG", "params" : [1]}
         			],
         			"name" : "lancer-boule-feu", "action" : [
         				{"key" : "gain", "params" : ["torcheExploseD"]},
-        				{"key" : "healMG", "params" : [-5]},
+        				{"key" : "healMG", "params" : [-1]},
         				{"key" : "go", "params" : ["necroGSTorcheKO"]}
         			]
         		},

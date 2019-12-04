@@ -228,6 +228,10 @@ define([], function(){
         "contourner" : {
             fr : "Contourner",
             en : "Bypass"
+        },
+        "continue-adventure" : {
+            fr : "Continuer l'aventure",
+            en : "Continue the adventure"
         }
 	};
 	

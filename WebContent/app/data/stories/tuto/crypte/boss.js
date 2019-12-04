@@ -111,7 +111,7 @@ define([], function() {
         		{
         			"name" : "combattre", "action" : [
         				{"key" : "fight", "params" : [[
-        				    "liche"
+        				    {"name":"liche", "suffixe":"spectral"}
                         ], "boss6"]}
         			]
         		}

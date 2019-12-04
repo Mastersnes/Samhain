@@ -29,15 +29,15 @@ function($, _, Utils, Etats) {
                 return;
             }
             etat.level = this.data.level;
-            if (etat.offensif) cible.etatsManager.addEtat(etat);
-            else this.addEtat(etat);
+            if (etat.offensif) cible.etatsManager.addEtat(etat, cible);
+            else this.addEtat(etat, cible);
 		};
 
 		/**
         * Ajoute l'effet en question
         * Si un effet du meme type existe deja additionne les durees
         **/
-        this.addEtat = function(newEtat) {
+        this.addEtat = function(newEtat, acteur) {
             if (!newEtat) return;
 
             var dureeMin = newEtat.duree[0];
@@ -48,6 +48,15 @@ function($, _, Utils, Etats) {
             if (newEtat.offensif) {
                 var oldEtat = this.data.debuff;
                 if (oldEtat && oldEtat.type == newEtat.type) newEtat.duree += oldEtat.current;
+
+                var baseAttaque = acteur.get("attaque");
+                if (Array.isArray(baseAttaque)) {
+                    newEtat.degats[0] += baseAttaque[0];
+                    newEtat.degats[1] += baseAttaque[1];
+                }else {
+                    newEtat.degats[0] += baseAttaque;
+                    newEtat.degats[1] += baseAttaque;
+                }
                 this.data.debuff = newEtat;
             }else {
                 var oldEtat = this.data.buff;
@@ -71,11 +80,15 @@ function($, _, Utils, Etats) {
             if (!etat) return then?then():null;
             etat.current--;
 
-            var degats = Utils.rand(etat.degats[0], etat.degats[1], true);
-            if (degats) this.parent.hurt(degats + etat.level, false, etat.element);
+            if (etat.degats) {
+                var degats = Utils.rand(etat.degats[0], etat.degats[1], true);
+                if (degats) this.parent.addLife(-degats, etat.element);
+            }
 
-            var vie = Utils.rand(etat.vie[0], etat.vie[1], true);
-            if (vie) this.parent.addLife(vie + etat.level);
+            if (etat.vie) {
+                var vie = Utils.rand(etat.vie[0], etat.vie[1], true);
+                if (vie) this.parent.addPercentLife(vie, etat.element);
+            }
 
             if (etat.current <= 0) this.data[etatName] = null;
             if (then) then();

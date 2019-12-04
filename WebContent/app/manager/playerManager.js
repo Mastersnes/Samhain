@@ -193,6 +193,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 		// Vrai si le joueur possede tout les objets
 		// Faux si le joueur ne possede pas au moins un des objets
 		this.hasAll = function(items) {
+		    if (!Array.isArray(items)) items = [items];
 		    var found = true;
             for (var i in items) {
                 var item = items[i];
@@ -204,6 +205,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 		// Vrai si le joueur ne possede aucun des objets
 		// Faux si le joueur possede au moins un des objets
         this.hasNoOne = function(items) {
+            if (!Array.isArray(items)) items = [items];
             for (var i in items) {
                 var item = items[i];
                 if (this.has(item))  {
@@ -224,17 +226,18 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
                     var cible = cibles[i];
 
                     if (item.degats) {
-                        var degats = Utils.rand(item.degats[0], item.degats[1], true);
+                        var baseAttaque = this.data.attaque;
+                        var degats = Utils.rand(baseAttaque + item.degats[0], baseAttaque + item.degats[1], true);
                         if (degats > 0) cible.hurt(degats, true);
                     }
                     if (item.vie) {
                         var vie = Utils.rand(item.vie[0], item.vie[1], true);
-                        if (vie > 0) cible.addLife(vie);
+                        if (vie > 0) cible.addPercentLife(vie);
                     }
 
                     if (item.mana) {
                         var mana = Utils.rand(item.mana[0], item.mana[1], true);
-                        if (mana > 0) cible.addMana(mana);
+                        if (mana > 0) cible.addPercentMana(mana);
                     }
 
                     if (item.effet) {
@@ -274,22 +277,26 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 
                         if (magie.vie) {
                             var vie = Utils.rand(magie.vie[0], magie.vie[1], true);
-                            if (vie > 0) cible.addLife(vie + level);
+                            if (vie > 0) cible.addPercentLife(vie);
                         }
 
+                        var degats = 0;
                         if (magie.degats) {
-                            var degats = Utils.rand(magie.degats[0], magie.degats[1], true);
-                            if (degats > 0) cible.hurt(degats + level, true, magie.element);
-                        }
+                            var baseAttaque = this.data.attaque;
+                            degats = Utils.rand(magie.degats[0] + baseAttaque, magie.degats[1] + baseAttaque, true);
+                            if (degats > 0) cible.hurt(degats, true, magie.element);
 
+                        }
                         if (magie.lifeSteal) {
                             var lifeSteal = Utils.rand(magie.lifeSteal[0], magie.lifeSteal[1], true);
-                            if (lifeSteal > 0) this.steal("life", cible, lifeSteal + level)
+                            this.stealLife(lifeSteal, degats, cible);
                         }
 
                         if (magie.manaSteal) {
                             var manaSteal = Utils.rand(magie.manaSteal[0], magie.manaSteal[1], true);
-                            if (manaSteal > 0) this.steal("mana", cible, manaSteal + level)
+                            var cibleCurrentMana = cible.get("mana.current");
+                            manaSteal = Math.round(Utils.percent(cibleCurrentMana, manaSteal));
+                            if (manaSteal > 0) this.addMana(manaSteal)
                         }
 
                         // Action particuliere
@@ -328,17 +335,18 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
             for (var i in cibles) {
                 var cible = cibles[i];
 
+                var degats = Utils.rand(degatsMin, degatsMax, true);
+                if (degats < 0) degats = 0;
+
                 if (arme.lifeSteal) {
                     var lifeSteal = Utils.rand(arme.lifeSteal[0], arme.lifeSteal[1], true);
-                    if (lifeSteal > 0) this.steal("life", cible, lifeSteal + level)
+                    this.stealLife(lifeSteal, degats, cible);
                 }
                 if (arme.manaSteal) {
                     var manaSteal = Utils.rand(arme.manaSteal[0], arme.manaSteal[1], true);
                     if (manaSteal > 0) this.steal("mana", cible, manaSteal + level)
                 }
 
-                var degats = Utils.rand(degatsMin, degatsMax, true);
-                if (degats < 0) degats = 0;
                 cible.hurt(degats, withDef);
                 cible.showDegats(arme.anim);
             }
@@ -368,6 +376,11 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 		* Ajoute ou retire de la vie
 		* element est le type de degats recus
 		**/
+		this.addPercentLife = function(amount, element) {
+		    var lifeMax = this.data.life.max;
+		    var amount = Math.round(Utils.percent(lifeMax, amount));
+		    this.addLife(amount, element);
+		};
 		this.addLife = function(amount, element) {
 		    this.addAmountChange(amount, "life", element);
             this.data.life.current += amount;
@@ -380,6 +393,11 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 		/**
 		* Modifications sur le mana
 		**/
+		this.addPercentMana = function(amount) {
+            var manaMax = this.data.mana.max;
+            var amount = Math.round(Utils.percent(manaMax, amount));
+            this.addMana(amount);
+        };
 		this.addMana = function(amount) {
 		    if (!this.data.unlockMana) return;
 		    if (amount > 0) this.addAmountChange(amount, "mana");
@@ -405,7 +423,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 		this.levelUp = function() {
 		    this.data.attaque++;
 		    this.data.defense++;
-		    this.data.life.max += 10;
+		    this.data.life.max += 25;
 		    if (this.data.unlockMana) this.data.mana.max++;
 
 		    this.addLife(this.data.life.max);
@@ -430,8 +448,10 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
                 if(this.data.gold >= item.price) {
                     this.addGold(-item.price);
                     this.addEquipment(item.type, item.name);
+                    return true;
                 }else console.log("Erreur achete - l'item est trop chere", itemId, item.price);
             }else console.log("Erreur achete - l'item n'existe pas ou n'a pas de prix", itemId);
+            return false;
         };
         this.vend = function(itemId) {
             if (this.data.gold >= Utils.MAX_GOLD) return false;
@@ -444,6 +464,24 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
             }else {
                 console.log("Erreur vend - l'item n'existe pas ou n'a pas de prix", itemId);
                 return false;
+            }
+        };
+
+        this.stealMana = function(baseManaSteal, cible) {
+            var cibleCurrentMana = cible.get("mana.current");
+            var manaSteal = Math.round(Utils.percent(cibleCurrentMana, baseManaSteal));
+            if (manaSteal > 0) this.addMana(manaSteal);
+        };
+        this.stealLife = function(baseLifeSteal, degats, cible) {
+            var cibleCurrentLife = cible.get("life.current");
+
+            var lifeSteal = 0;
+            if (degats) {
+                lifeSteal = Math.round(Utils.percent(degats, baseLifeSteal));
+                if (lifeSteal > 0) this.addLife(lifeSteal);
+            } else {
+                lifeSteal = Math.round(Utils.percent(cibleCurrentLife, baseLifeSteal));
+                if (lifeSteal > 0) this.steal("life", cible, lifeSteal);
             }
         };
 
@@ -466,6 +504,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
                 case "gold":
                     var steal = cible.get("gold");
                     cible.addGold(-value);
+                    steal -= cible.get("gold");
                     if (valueMin != undefined) this.addGold(Utils.rand(valueMin, steal, true));
                     else this.addGold(steal);
                     break;
@@ -566,7 +605,14 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
             hurtDom.fadeIn(100, function() {
                 hurtDom.fadeOut(200);
             });
-        }
+        };
+
+        this.restore = function() {
+            this.data.life.current = 0;
+            this.addPercentLife(70);
+            this.data.buff = null;
+            this.data.debuff = null;
+        };
 
 		this.init(parent);
 	};

@@ -38,7 +38,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "name" : "crocRoi",
                 "texte" : "crocRoi-texte",
                 "degats" : [1, 2],
-                "lifeSteal" : [30, 50],
+                "lifeSteal" : [10, 30],
                 "sound" : "croc",
                 "anim" : "croc",
                 "price" : 0
@@ -48,7 +48,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 	        "bras" : {
                 "name" : "bras",
                 "texte" : "bras-texte",
-                "defense" : [0, 1],
+                "defense" : [0, 0],
                 "sound" : "block",
                 "anim" : null,
                 "price" : 0
@@ -56,7 +56,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "bouclierBois" : {
                 "name" : "bouclierBois",
                 "texte" : "bouclierBois-texte",
-                "defense" : [0, 2],
+                "defense" : [0, 1],
                 "sound" : "woodblock",
                 "anim" : null,
                 "price" : 100
@@ -64,7 +64,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "bouclierFer" : {
                 "name" : "bouclierFer",
                 "texte" : "bouclierFer-texte",
-                "defense" : [0, 3],
+                "defense" : [0, 2],
                 "sound" : "ironblock",
                 "anim" : null,
                 "price" : 200
@@ -74,7 +74,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 	        "potionSante" : {
                 "name" : "potionSante",
                 "texte" : "potionSante-texte",
-                "vie" : [1000, 1000],
+                "vie" : [100, 100],
                 "sound" : "drink",
                 "anim" : null,
                 "price" : 100,
@@ -83,7 +83,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "potionMana" : {
                 "name" : "potionMana",
                 "texte" : "potionMana-texte",
-                "mana" : [1000, 1000],
+                "mana" : [100, 100],
                 "sound" : "drink",
                 "anim" : null,
                 "price" : 100,
@@ -92,7 +92,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "fromage" : {
                 "name" : "fromage",
                 "texte" : "fromage-texte",
-                "vie" : [10, 20],
+                "vie" : [20, 30],
                 "effet" : ["satiete"],
                 "sound" : "eat",
                 "anim" : null,
@@ -102,7 +102,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "pomme" : {
                 "name" : "pomme",
                 "texte" : "pomme-texte",
-                "vie" : [10, 15],
+                "vie" : [10, 20],
                 "effet" : ["satiete"],
                 "sound" : "eat",
                 "anim" : null,
@@ -123,8 +123,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "elixir" : {
                 "name" : "elixir",
                 "texte" : "elixir-texte",
-                "vie" : [1000, 1000],
-                "mana" : [1000, 1000],
+                "vie" : [100, 100],
+                "mana" : [100, 100],
                 "sound" : "drink",
                 "anim" : null,
                 "price" : 300,
@@ -147,7 +147,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "soin" : {
                 "name" : "soin",
                 "texte" : "soin-texte",
-                "vie" : [100, 100],
+                "vie" : [20, 40],
                 "manaCost" : 1,
                 "sound" : "soin",
                 "anim" : null,
@@ -170,8 +170,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "araneisme" : {
                 "name" : "araneisme",
                 "texte" : "araneisme-texte",
-                "degats" : [2, 5],
-                "lifeSteal" : [40, 80],
+                "degats" : [3, 5],
+                "lifeSteal" : [30, 50],
                 "effet" : ["poison-2"],
                 "manaCost" : 1,
                 "sound" : null,
@@ -189,7 +189,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "price" : null,
                 "offensif" : true,
                 "action" : function(me, cible) {
-                    var steal = Utils.rand(1 + me.level, 5 + me.level);
+                    var steal = Utils.rand(10 * (me.level+1), 20 * (me.level+1));
 
                     // Si c'est le monstre, il nous vole et recupere une partie
                     if (me.isMonster) me.steal("gold", cible, steal, 0);
@@ -214,8 +214,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "volDeVie" : {
                 "name" : "volDeVie",
                 "texte" : "volDeVie-texte",
-                "degats" : [1, 1],
-                "lifeSteal" : [100, 200],
+                "lifeSteal" : [5, 30],
                 "manaCost" : 1,
                 "sound" : null,
                 "anim" : null,
@@ -235,7 +234,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "taillade" : {
                 "name" : "taillade",
                 "texte" : "taillade-texte",
-                "degats" : [3, 6],
+                "degats" : [2, 5],
                 "effet" : ["saignement"],
                 "manaCost" : 1,
                 "sound" : null,

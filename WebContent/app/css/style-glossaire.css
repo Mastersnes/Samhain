@@ -78,7 +78,7 @@
     display: block; position: relative;
     width: 100%; height: auto;
     text-align: justify;
-    font-size: 3.5vh;
+    font-size: 3vh;
     overflow-y: auto;
     margin-bottom: 3%;
     border-bottom: 1px dashed black;
@@ -87,7 +87,7 @@
 .glossaire .zoom infos {
     display: block; position: relative;
     width: 100%; height: auto;
-    font-size: 3.5vh;
+    font-size: 3vh;
     overflow-y: auto;
     text-align: left;
     padding-bottom: 0.5%;

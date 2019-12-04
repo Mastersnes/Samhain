@@ -38,12 +38,18 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
             }
             if (adversaire.levelMin) levelMin = eval(adversaire.levelMin.replace("player", playerLevel));
             if (adversaire.levelMax) levelMax = eval(adversaire.levelMax.replace("player", playerLevel));
-			this.level = Utils.rand(levelMin, levelMax, true);
-			if (this.level < 0) this.level = 0;
-			if (adversaire.level) this.level = eval(adversaire.level.replace("player", playerLevel));
 
-			var vieMin = this.template.vie[0] * this.suffixe.vie * ((this.level+1)/2);
-			var vieMax = this.template.vie[1] * this.suffixe.vie * ((this.level+1)/2);
+			this.level = Utils.rand(levelMin, levelMax, true);
+			if (adversaire.level) this.level = eval(adversaire.level.replace("player", playerLevel));
+			if (this.level < 0) this.level = 0;
+
+			var vieMin = this.template.vie[0] * this.suffixe.vie * ((this.level+2)/2);
+			var vieMax = this.template.vie[1] * this.suffixe.vie * ((this.level+2)/2);
+			// DEBUG
+			console.log("level", this.level, "vieBase", this.template.vie, "suffixe", this.suffixe.vie, "vieCalc", {
+			    "vieMin" : vieMin,
+			    "vieMax" : vieMax
+			});
 			var vie = Utils.rand(vieMin, vieMax);
 			if (vie < 1) vie = 1;
 
@@ -139,6 +145,12 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
             this.addLife(-degats, element);
             return degats;
         };
+
+        this.addPercentLife = function(amount, element) {
+            var lifeMax = this.data.life.max;
+            var amount = Math.round(Utils.percent(lifeMax, amount));
+            this.addLife(amount, element);
+        };
         this.addLife = function(amount, element) {
             this.data.life.current += amount;
             if (this.data.life.current < 0) this.data.life.current = 0;
@@ -169,24 +181,26 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
                             cible.addAmountChange(this.Textes.get(abilitie.name), "abilitie", abilitie.element);
                         }
 
+                        var degats = 0;
                         if (abilitie.degats) {
-                            var degats = Utils.rand(abilitie.degats[0], abilitie.degats[1], true);
-                            if (degats > 0) cible.hurt(degats + that.level, true, abilitie.element);
-                        }
-
-                        if (abilitie.vie) {
-                            var vie = Utils.rand(abilitie.vie[0], abilitie.vie[1], true);
-                            if (vie > 0) cible.addLife(vie + this.level);
+                            var baseAttaque = this.data.attaque;
+                            degats = Utils.rand(abilitie.degats[0] + baseAttaque[0], abilitie.degats[1] + baseAttaque[1], true);
+                            if (degats > 0) cible.hurt(degats, true, abilitie.element);
                         }
 
                         if (abilitie.lifeSteal) {
                             var lifeSteal = Utils.rand(abilitie.lifeSteal[0], abilitie.lifeSteal[1], true);
-                            if (lifeSteal > 0) this.steal("life", cible, lifeSteal + this.level)
+                            this.stealLife(lifeSteal, degats, cible);
+                        }
+
+                        if (abilitie.vie) {
+                            var vie = Utils.rand(abilitie.vie[0], abilitie.vie[1], true);
+                            if (vie > 0) cible.addPercentLife(vie);
                         }
 
                         if (abilitie.manaSteal) {
                             var manaSteal = Utils.rand(abilitie.manaSteal[0], abilitie.manaSteal[1], true);
-                            if (manaSteal > 0) this.steal("mana", cible, manaSteal + this.level)
+                            this.stealMana(manaSteal, cible);
                         }
 
                         // Action particuliere
@@ -205,6 +219,11 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
 
             return actionDone;
         };
+        this.addPercentMana = function(amount) {
+            var manaMax = this.data.mana.max;
+            var amount = Math.round(Utils.percent(manaMax, amount));
+            this.addMana(amount);
+        };
         this.addMana = function(amount) {
             this.data.mana.current += amount;
             if (this.data.mana.current < 0) this.data.mana.current = 0;
@@ -222,6 +241,24 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
                 if (currentMana >= magie.manaCost) usable.push(magieId);
             }
             return usable;
+        };
+
+        this.stealMana = function(baseManaSteal, cible) {
+            var cibleCurrentMana = cible.get("mana.current");
+            var manaSteal = Math.round(Utils.percent(cibleCurrentMana, baseManaSteal));
+            if (manaSteal > 0) this.addMana(manaSteal);
+        };
+        this.stealLife = function(baseLifeSteal, degats, cible) {
+            var cibleCurrentLife = cible.get("life.current");
+
+            var lifeSteal = 0;
+            if (degats) {
+                lifeSteal = Math.round(Utils.percent(degats, baseLifeSteal));
+                if (lifeSteal > 0) this.addLife(lifeSteal);
+            } else {
+                lifeSteal = Math.round(Utils.percent(cibleCurrentLife, baseLifeSteal));
+                if (lifeSteal > 0) this.steal("life", cible, lifeSteal);
+            }
         };
 
         this.steal = function(attr, cible, value, valueMin) {
@@ -243,6 +280,8 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
                 case "gold":
                     var steal = cible.get("gold");
                     cible.addGold(-value);
+                    steal -= cible.get("gold");
+                    if (cible.addAmountChange) cible.addAmountChange(steal, "gold");
                     if (valueMin != undefined) this.addGold(Utils.rand(valueMin, steal, true));
                     else this.addGold(steal);
                     break;
@@ -310,6 +349,8 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
         * Rescussite le monstre
         **/
         this.restore = function() {
+            this.data.debuff = null;
+            this.data.buff = null;
             this.addLife(this.get("life.max"));
             this.addMana(this.get("mana.max"));
         };

@@ -161,10 +161,14 @@ define(["jquery",
                 });
             });
             this.el.find(".itemsContainer action").click(function() {
-                if (that.mode == "achat") that.player.achete($(this).attr("id"));
-                else if (that.player.vend($(this).attr("id"))) {
-                    that.sellAndRefresh($(this).attr("id"));
+                var itemId = $(this).attr("id");
+                var operate = false;
+                if (that.mode == "achat") operate = that.player.achete(itemId);
+                else if (that.player.vend(itemId)) {
+                    operate = true;
+                    that.sellAndRefresh(itemId);
                 }
+                if (operate) that.purchase.push(itemId);
             });
         };
 
@@ -188,6 +192,7 @@ define(["jquery",
 
         this.close = function() {
             this.boutiqueOpen = false;
+            console.log("onClose", this.onPurchase, this.onNoPurchase, this.purchase);
             if (this.onNoPurchase && this.purchase.length == 0) {
                 this.onNoPurchase();
             } else this.onPurchase();

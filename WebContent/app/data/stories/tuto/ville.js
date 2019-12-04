@@ -67,7 +67,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "suivant", "action" : [
-                        {"key" : "heal", "params" : [1000 ]},
+                        {"key" : "heal", "params" : [100]},
                         {"key" : "go", "params" : ["echoppe"]}
                     ]
                 }
@@ -80,7 +80,7 @@ define([], function() {
                 {
                     "name" : "suivant", "action" : [
                         {"key" : "gain", "params" : ["potionSante"]},
-                        {"key" : "heal", "params" : [1000]},
+                        {"key" : "heal", "params" : [100]},
                         {"key" : "go", "params" : ["echoppe"]}
                     ]
                 }

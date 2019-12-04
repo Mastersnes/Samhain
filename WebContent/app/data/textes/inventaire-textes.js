@@ -65,8 +65,8 @@ define([], function(){
                  en : "until"
             },
             "tours" : {
-                 fr : "tours",
-                 en : "turn"
+                 fr : " tours",
+                 en : " turn"
             },
 	};
 	

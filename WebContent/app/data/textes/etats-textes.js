@@ -5,37 +5,69 @@ define([], function(){
 	        * Etats
 	        **/
 	        "poison" : {
-                fr : "Poison",
-                en : "Poison"
+                fr : "Un Peu Pâle",
+                en : "A Bit Pale"
             },
-	        "poison-action" : {
-                fr : "Empoisonné",
-                en : "Poisoned"
+	        "poison-texte" : {
+                fr : "Un petit empoisonnement, rien de bien méchant ! Attention tout de même, si une légère toux s'installe, c'est que la tombe n'est pas bien loin...",
+                en : "A little poisoning, nothing too bad! Be careful though, if a slight cough sets in, it means that the grave is not far away..."
+            },
+	        "poison-2" : {
+                fr : "Malade",
+                en : "Malade"
+            },
+	        "poison-2-texte" : {
+                fr : "Dans un premier temps, les doigts commencent à piquer, légèrement. Ensuite la démangeaison se propage doucement dans le reste du corps jusqu'à la nuque. La fin n'est pas très belle à voir si vous voulez mon avis...",
+                en : "At first, the fingers start to sting, slightly. Then the itch spreads gently through the rest of the body to the neck. The end is not very beautiful to see if you want my opinion..."
             },
 	        "satiete" : {
-                fr : "Satiété",
-                en : "Satiety"
+                fr : "Encas",
+                en : "Snack"
             },
-	        "satiete-action" : {
-                fr : "Nourri",
-                en : "Fed"
+	        "satiete-texte" : {
+                fr : "Un bon encas pour bien commencer la journée ! On est quand même loin des 5 fruits et légumes par jour.",
+                en : "A good snack to start the day off right! We are still far from the 5 fruits and vegetables a day."
+            },
+	        "satiete-2" : {
+                fr : "Bon repas",
+                en : "Good meal"
+            },
+	        "satiete-2-texte" : {
+                fr : "De quoi être repus pour un petit moment ! Bon appétit !",
+                en : "Enough to be satisfied for a little while! Bon appétit!"
             },
 	        "brulure" : {
-                fr : "Brûlure",
-                en : "Burn"
+                fr : "Brûlure Legere",
+                en : "Slight Burns"
             },
-	        "brulure-action" : {
-                fr : "Brûle",
-                en : "Burning"
+	        "brulure-texte" : {
+                fr : "Une petite rougeur, rien de bien méchant... Un peu d'eau froide et on en parle plus...",
+                en : "A little redness, nothing too bad... A little cold water and you can forget it..."
+            },
+	        "brulure-2" : {
+                fr : "Brûlure Profonde",
+                en : "Deep Burn"
+            },
+	        "brulure-2-texte" : {
+                fr : "Hurk, C'est pas très beau à voir ! Au moins, vous avez du charbon pour le feu...",
+                en : "Hurk, it's not very beautiful to see! At least you have coal for the fire...."
             },
 	        "saignement" : {
-                fr : "Saignement",
-                en : "Bleeding"
+                fr : "Egratignure",
+                en : "Scratch"
             },
-	        "saignement-action" : {
-                fr : "Saigne",
-                en : "Bleeding"
+	        "saignement-texte" : {
+                fr : "Une petite éraflure, vous n'allez quand même pas pleurer... Si ?",
+                en : "A little scratch, you're not going to cry... are you?"
             },
+	        "saignement-2" : {
+                fr : "Coupure",
+                en : "Cut"
+            },
+            "saignement-2-texte" : {
+                 fr : "Ok, là ça saigne pas mal quand même. Vous devriez consulter.",
+                 en : "Okay, now it's bleeding pretty bad. You should consult."
+             }
 	};
 	
 	return {

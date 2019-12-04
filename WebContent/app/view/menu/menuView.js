@@ -87,6 +87,9 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate, Textes, Mediatheque,
 			    	that.loadGame();
 			    }
 			});
+			$("#didacticiel").click(function() {
+			    that.loadGame(true);
+			});
 			$("#load").click(function() {
 				that.saveManager.loadSave();
 			    that.loadGame();
@@ -130,8 +133,8 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate, Textes, Mediatheque,
 			});
 		};
 		
-		this.loadGame = function() {
-			new GameView(this);
+		this.loadGame = function(didacticiel) {
+			new GameView(this, didacticiel);
 		};
 		
 		this.init();

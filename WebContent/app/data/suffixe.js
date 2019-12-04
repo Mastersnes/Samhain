@@ -29,7 +29,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"vie" : 0.5,
 			"mana" : 0.5,
 			"argent" : 0.25,
-            "xp" : 0.25
+            "xp" : 0.5
 		},
 		"borgne" : {
 			"namem" : "borgne",
@@ -39,7 +39,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"vie" : 1,
 			"mana" : 0.5,
 			"argent" : 0.25,
-            "xp" : 0.25
+            "xp" : 0.5
 		},
 		"timide" : {
 			"namem" : "timide",
@@ -59,7 +59,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"vie" : 0.5,
 			"mana" : 1,
 			"argent" : 0.25,
-            "xp" : 0.25
+            "xp" : 0.5
 		},
 		"bourrin" : {
 			"namem" : "bourrin-m",
@@ -99,7 +99,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"vie" : 0.75,
 			"mana" : 1.5,
 			"argent" : 0.5,
-            "xp" : 0.5
+            "xp" : 1
 		},
 		"terrifiant" : {
 			"namem" : "terrifiant-m",
@@ -139,7 +139,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"vie" : 0.25,
 			"mana" : 0.25,
 			"argent" : 0.25,
-            "xp" : 0.25
+            "xp" : 0.5
 		},
 		"feroce" : {
 			"namem" : "feroce",
@@ -209,7 +209,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"vie" : 1,
 			"mana" : 0.5,
 			"argent" : 0.5,
-            "xp" : 0.8
+            "xp" : 1
 		},
 		"pauvre" : {
 			"namem" : "pauvre",
@@ -259,7 +259,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "vie" : 1.5,
             "mana" : 1.5,
             "argent" : 1,
-            "xp" : 0.5
+            "xp" : 1
         },
         "rieur" : {
             "namem" : "rieur-m",
@@ -269,7 +269,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "vie" : 1.8,
             "mana" : 0.5,
             "argent" : 1.3,
-            "xp" : 0.5
+            "xp" : 1.3
         },
         "silencieux" : {
             "namem" : "silencieux-m",
@@ -310,7 +310,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "vie" : 0.8,
             "mana" : 1,
             "argent" : 0.8,
-            "xp" : 0.8,
+            "xp" : 1,
             "unique" : true
         },
         "lancien" : {
@@ -324,6 +324,16 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 1,
             "unique" : true
         },
+        "spectral" : {
+            "namem" : "spectral-m",
+            "namef" : "spectral-f",
+            "attaque" : 1.1,
+            "defense" : 0,
+            "vie" : 1.2,
+            "mana" : 1.2,
+            "argent" : 1,
+            "xp" : 1
+        }
 	};
 	
 	return {

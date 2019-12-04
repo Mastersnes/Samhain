@@ -89,7 +89,7 @@ define([], function() {
                 {
                     "name" : "mange-continue", "action" : [
                         {"key" : "sound", "params" : ["eat"]},
-                        {"key" : "heal", "params" : [ 20 ]},
+                        {"key" : "heal", "params" : [ 40 ]},
                         {"key" : "go", "params" : ["nid4"]}
                     ]
                 },
@@ -107,7 +107,7 @@ define([], function() {
                 {
                     "name" : "mange-continue", "action" : [
                         {"key" : "sound", "params" : ["eat"]},
-                        {"key" : "heal", "params" : [ 20 ]},
+                        {"key" : "heal", "params" : [ 40 ]},
                         {"key" : "random", "params" : [
                             "nid3TrouveDague", "nid4"
                         ]}

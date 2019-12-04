@@ -69,19 +69,24 @@ define(["jquery",
             this.refreshInfo(this.player.get("mana").current, "mana", this.player.get("unlockMana"));
 
             var arme = this.player.arme();
-            var bonusArme = "[" + arme.degats[0] + "-" + arme.degats[1] + "]";
+            var bonusArme = arme.degats[0] + "-" + arme.degats[1];
             this.refreshInfo(bonusArme, "arme");
 
             var lifeSteal;
-            if (arme.lifeSteal) lifeSteal = "[" + arme.lifeSteal[0] + "-" + arme.lifeSteal[1] + "]";
+            if (arme.lifeSteal) {
+                var baseAttaque = this.player.get("attaque");
+                var lifeStealMin = Math.round(Utils.percent(baseAttaque + arme.degats[0], arme.lifeSteal[0]));
+                var lifeStealMax = Math.round(Utils.percent(baseAttaque + arme.degats[1], arme.lifeSteal[1]));
+                lifeSteal = lifeStealMin + "-" + lifeStealMax;
+            }
             this.refreshInfo(lifeSteal, "lifeSteal");
 
             var manaSteal;
-            if (arme.manaSteal) manaSteal = "[" + arme.manaSteal[0] + "-" + arme.manaSteal[1] + "]";
+            if (arme.manaSteal) manaSteal = arme.manaSteal[0] + "-" + arme.manaSteal[1] + "%";
             this.refreshInfo(manaSteal, "manaSteal");
 
             var bouclier = this.player.bouclier();
-            var bonusBouclier = "[" + bouclier.defense[0] + "-" + bouclier.defense[1] + "]";
+            var bonusBouclier = bouclier.defense[0] + "-" + bouclier.defense[1];
             this.refreshInfo(bonusBouclier, "bouclier");
         };
 
@@ -102,8 +107,14 @@ define(["jquery",
             if (etat) {
                 etatDom.show();
 
-                var amount = amount = "[" + etat.vie[0] + "-" + etat.vie[1] + "]";
-                if (etat.offensif) amount = "[" + etat.degats[0] + "-" + etat.degats[1] + "]";
+                var amount;
+                if (etat.offensif) amount = etat.degats[0] + "-" + etat.degats[1];
+                else {
+                    var lifeMax = this.player.get("life").max;
+                    var vieMin = Math.round(Utils.percent(lifeMax, etat.vie[0]));
+                    var vieMax = Math.round(Utils.percent(lifeMax, etat.vie[1]));
+                    amount = vieMin + "-" + vieMax;
+                }
                 etatDom.find("span.amount").html(amount);
                 etatDom.find("span.duree").html(etat.current);
             }else etatDom.hide();

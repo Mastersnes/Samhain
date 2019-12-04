@@ -241,6 +241,15 @@ define([], function(){
             "lancien-f" : {
                 fr : "L'ancienne",
                 en : "The ancient"
+            },
+
+            "spectral-m" : {
+                fr : "Spectral",
+                en : "Spectral"
+            },
+            "spectral-f" : {
+                fr : "Spectrale",
+                en : "Spectral"
             }
 	};
 	

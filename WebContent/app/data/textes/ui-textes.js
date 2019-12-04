@@ -60,6 +60,10 @@ define([], function(){
                 fr : "Gain de vie",
                 en : "Gain of life"
             },
+            "duree" : {
+                fr : "Durée",
+                en : "Duration"
+            },
             "manaGain" : {
                 fr : "Gain de mana",
                 en : "Gain of mana"

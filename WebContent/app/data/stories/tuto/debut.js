@@ -11,8 +11,8 @@ define([], function() {
                     "name" : "suivant",
                     "action" : [
                         {"key" : "score", "params" : ["GameStart", 1]},
-                        {"key" : "gain", "params" : ["pomme"]},
-                        {"key" : "go", "params" : [ "repos2" ]}
+                        {"key" : "gainOneTime", "params" : ["pomme"]},
+                        {"key" : "go", "params" : [ "repos2"]}
                     ]
                 }
             ]

@@ -2,7 +2,7 @@ Ameliorations :
 ****************
 -> General
 	-> Ajout de musiques
-	-> Didactitiel
+	-> Didacticiel
 -> Contenu Additionnel
 	-> Ajout de la ville
 	-> Ajout de 3 quetes
@@ -12,12 +12,9 @@ Ameliorations :
     -> revoir les sons
     -> hurt.wav quand le joueur prend des degats
 -> Combat
-    -> objets et magie : degats = baseAttaque + degats suppl
-    -> lifesteal : pourcentage des degats infligés
-    -> manasteal : pourcentage de mana courant de l'adversaire
-    -> soin : pourcentage de vie max
+    -> effets : à voir
 -> Bugs
-    -> Revoir au cas par cas la force des monstres
+    -> (Revoir au cas par cas la force des monstres)
 
 -> Fait
     -> General

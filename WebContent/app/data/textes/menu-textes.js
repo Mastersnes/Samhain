@@ -24,6 +24,10 @@ define([], function(){
                 fr : "Nouveau périple",
                 en : "New periple"
             },
+            "didacticiel" : {
+                fr : "Didacticiel",
+                en : "Tutorial"
+            },
             "kongregate" : {
                 fr : "Nos autres jeux sur:",
                 en : "Our other games on:"

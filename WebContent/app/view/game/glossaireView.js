@@ -22,7 +22,6 @@ define(["jquery",
             this.recompenseManager = parent.recompenseManager;
             this.player = parent.playerManager;
 
-
             this.render();
             this.el.hide();
         };
@@ -63,17 +62,42 @@ define(["jquery",
         **/
         this.show = function(key, isChange) {
             this.current = key;
-//            this.el.find(".liste").hide();
-            var monster = Glossaire.get(key);
-            if (monster) this.showMonster(monster, isChange);
-            else this.showItem(key);
+
+            if (!this.showEtat(key)) {
+                if (!this.showMonster(key, isChange)) {
+                    this.showItem(key);
+                }
+            }
+
             this.makeZoomEvents();
             this.el.find(".zoom").show();
             this.el.fadeIn();
             this.list(true);
         };
+
+        this.showEtat = function(key) {
+            var etat = Etats.get(key);
+            if (!etat) return false;
+
+            var etatName = this.Textes.get(etat.name);
+            this.el.find("titre").html(etatName);
+            this.el.find("suffixe").hide();
+            this.el.find("texte").html(this.Textes.get(etat.name + "-texte"));
+
+            this.currentLetter = Utils.normalize(etatName).charAt(0);
+
+            this.el.find("infos").empty();
+            this.addInfo("duree", etat.duree, null, "tours");
+            this.addInfo("degats", etat.degats, null);
+            this.addInfo("lifeGain", etat.vie, null, "lifeGain-glossaire");
+
+            if (etat.multicible) this.addInfo("multicible", this.Textes.get("oui"));
+            return true;
+        };
+
         this.showItem = function(key) {
             var item = Items.get(key);
+            if (!item || !item.name) return false;
             var itemName = this.Textes.get(item.name);
             this.el.find("titre").html(itemName);
             this.el.find("suffixe").hide();
@@ -82,25 +106,35 @@ define(["jquery",
             this.currentLetter = Utils.normalize(itemName).charAt(0);
 
             this.el.find("infos").empty();
-            this.addInfo("degats", item.degats);
-            this.addInfo("defense", item.defense);
-            this.addInfo("lifeSteal", item.lifeSteal);
-            this.addInfo("manaSteal", item.manaSteal);
-            this.addInfo("manaCost", item.manaCost);
-            this.addInfo("lifeGain", item.vie);
-            this.addInfo("manaGain", item.mana);
+            this.addInfo("degats", item.degats, null);
+            this.addInfo("defense", item.defense, null);
+
+            if (item.degats) this.addInfo("lifeSteal", item.lifeSteal, null, "lifeSteal-glossaire");
+            else this.addInfo("lifeSteal", item.lifeSteal, null, "lifeSteal2-glossaire");
+
+            this.addInfo("manaSteal", item.manaSteal, null, "manaSteal-glossaire");
+            this.addInfo("manaCost", item.manaCost, null);
+
+            this.addInfo("lifeGain", item.vie, null, "lifeGain-glossaire");
+            this.addInfo("manaGain", item.mana, null, "manaGain-glossaire");
             if (item.multicible) this.addInfo("multicible", this.Textes.get("oui"));
 
             if (item.effet) {
                 for (var i in item.effet) {
-                    var effet = Etats.get(item.effet[i]);
-                    if (effet.offensif) this.addInfo("inflige", this.Textes.get(effet.name));
-                    else this.addInfo("octroie", this.Textes.get(effet.name));
+                    var effetId = item.effet[i];
+                    var effet = Etats.get(effetId);
+
+                    var texte = "<span ref='"+effetId+"'>" + this.Textes.get(effet.name) + "</span>";
+                    if (effet.offensif) this.addInfo("inflige", texte);
+                    else this.addInfo("octroie", texte);
                 }
             }
+            return true;
         };
 
-        this.showMonster = function(monster, isChange) {
+        this.showMonster = function(key, isChange) {
+            var monster = Glossaire.get(key);
+            if (!monster) return false;
             var monsterName = this.Textes.get(monster.name);
             this.currentLetter = Utils.normalize(monsterName).charAt(0);
 
@@ -127,23 +161,27 @@ define(["jquery",
             this.addInfo("vie", monster.vie, suffixe.vie);
             this.addInfo("mana", monster.mana, suffixe.mana);
             this.addInfo("attack", monster.attaque, suffixe.attaque);
-//            this.addInfo("defense", monster.defense, suffixe.defense);
             this.addInfo("experienceGain", monster.xp, suffixe.xp);
             this.addInfo("argentGain", monster.argent, suffixe.argent);
             this.addInfoList("competences", monster.abilities);
+            return true;
         };
 
-        this.addInfo = function(titre, infos, suffixe) {
+        this.addInfo = function(titre, infos, suffixe, next) {
             if (infos == undefined) return;
             if (suffixe == undefined) suffixe = 1;
 
             var infoDom = $("<info></info>");
+
             if (Array.isArray(infos)) {
                 var min = Math.round(infos[0] * suffixe);
                 var max = Math.round(infos[1] * suffixe);
-                infoDom.html(this.Textes.get(titre) + " : [" + min + "-" + max + "]");
+                if (min == max) infoDom.html(this.Textes.get(titre) + " : " + min);
+                else infoDom.html(this.Textes.get(titre) + " : " + min + "-" + max);
             }else if(infos >= 0 || infos < 0) infoDom.html(this.Textes.get(titre) + " : " + Math.round(infos * suffixe));
             else infoDom.html(this.Textes.get(titre) + " : " + infos);
+
+            if (next) infoDom.append(this.Textes.get(next));
 
             if (infoDom.html().length > 16) infoDom.addClass("large");
             this.el.find("infos").append(infoDom);
@@ -174,6 +212,7 @@ define(["jquery",
             this.el.find(".liste propositions").empty();
             var propositions = Glossaire.list(letter, this.Textes);
             propositions = propositions.concat(Items.list(letter, this.Textes));
+            propositions = propositions.concat(Etats.list(letter, this.Textes));
             for (var i in propositions) {
                 var proposition = propositions[i];
                 var propositionDom = $("<proposition></proposition>")

@@ -19,8 +19,8 @@ function($, _, Utils, PopupUtils, page,
             UIView, HistoireView, FightView, BoutiqueView, GlossaireView, InventaireView, EndView) {
 	'use strict';
 
-	return function(parent) {
-		this.init = function(parent) {
+	return function(parent, didacticiel) {
+		this.init = function(parent, didacticiel) {
 		    this.el = $("#app");
 			this.parent = parent;
 		    this.Textes = parent.Textes;
@@ -45,7 +45,7 @@ function($, _, Utils, PopupUtils, page,
             this.uiView = new UIView(this);
             this.uiView.render();
 
-            this.histoireView = new HistoireView(this);
+            this.histoireView = new HistoireView(this, didacticiel);
             this.fightView = new FightView(this);
             this.boutiqueView = new BoutiqueView(this);
             this.glossaireView = new GlossaireView(this);
@@ -142,28 +142,28 @@ function($, _, Utils, PopupUtils, page,
         };
 
         this.gameOver = function(gagne) {
-        	this.mediatheque.stopAllMusic();
-        	var musicName = "";
         	if (gagne) {
-        		musicName = "music/victory.ogg";
-        		this.saveManager.save("GameComplete", 1);
-        		this.kongregateUtils.score("GameComplete", 1);
+        	    this.mediatheque.stopAllMusic();
+        	    var musicName = "music/victory.ogg";
+        		var gameComplete = this.saveManager.load("GameComplete");
+                this.saveManager.save("GameComplete", gameComplete+1);
+                this.kongregateUtils.score("GameComplete", gameComplete+1);
+                var that = this;
+                setTimeout(function() {
+                    that.mediatheque.play(musicName, "", function() {
+                        that.mediatheque.play("music/menu.ogg");
+                    });
+                }, 200);
+                this.endGame = true;
+                this.endView.render(gagne);
         	} else {
-        		musicName = "music/gameover.ogg";
+        	    this.playerManager.data.checkpoint = this.playerManager.data.lieu;
         		var gameOver = this.saveManager.load("GameOver");
         		this.saveManager.save("GameOver", gameOver+1);
-        		this.playerManager.data.life.current = this.playerManager.data.life.max / 2;
         		this.kongregateUtils.score("GameOver", gameOver+1);
+        		this.histoireView.go("die");
         	}
         	this.saveManager.saveInSession();
-        	var that = this;
-        	setTimeout(function() {
-        		that.mediatheque.play(musicName, "", function() {
-        			that.mediatheque.play("music/menu.ogg");
-        		});
-        	}, 200);
-        	this.endGame = true;
-            this.endView.render(gagne);
         };
 
         this.fight = function(adversaires, onWin, onFail) {
@@ -280,6 +280,6 @@ function($, _, Utils, PopupUtils, page,
             }, noButton);
         };
 		
-		this.init(parent);
+		this.init(parent, didacticiel);
 	};
 });

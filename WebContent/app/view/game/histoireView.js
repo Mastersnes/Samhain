@@ -3,10 +3,11 @@ define(["jquery",
         "app/utils/utils",
         "app/utils/viewUtils",
         "text!app/template/game/histoire.html",
-        "app/data/stories"
-        ], function($, Utils, ViewUtils, page, Stories){
-    return function(parent){
-        this.init = function(parent) {
+        "app/data/stories",
+        "app/data/stories/gameOver"
+        ], function($, Utils, ViewUtils, page, Stories, GameOver){
+    return function(parent, didacticiel){
+        this.init = function(parent, didacticiel) {
         	this.el = $(".histoire");
 
             this.parent = parent;
@@ -19,22 +20,30 @@ define(["jquery",
             this.recompenseManager = parent.recompenseManager;
             this.player = parent.playerManager;
 
-            this.go(this.player.get("lieu"));
+            this.didacticiel = didacticiel;
+
+            if (didacticiel) this.go("didactitiel1");
+            else this.go(this.player.get("lieu"));
         };
 
-        this.go = function(newLieuId) {
+        this.go = function(newLieuId, noSave) {
+            var newLieu = Stories.get(newLieuId);
+            if (!newLieu)  {
+                console.log("Erreur - le lieu n'existe pas", newLieuId)
+                return;
+            }
+
             var that = this;
             $(".fight").fadeOut();
             $(".boutique").fadeOut();
 
-            $("carnet").removeClass("hide");
+            if (newLieuId == "die") $("carnet").addClass("hide");
+            else $("carnet").removeClass("hide");
 
             this.el.fadeIn();
 
-            var newLieu = Stories.get(newLieuId);
-            if (!newLieu) console.log("Erreur - le lieu n'existe pas", newLieuId)
-
-            this.player.data.lieu = newLieuId;
+            if (this.didacticiel) noSave = true;
+            if (!noSave) this.player.data.lieu = newLieuId;
             this.currentLieu = newLieu;
 
         	_.templateSettings.variable = "data";
@@ -117,6 +126,14 @@ define(["jquery",
                     var newLieu = params[0];
                     this.go(newLieu);
                     break;
+                case "gameOver":
+                    this.player.restore();
+                    var rand = Utils.rand(1, GameOver.length(), true);
+                    this.go("gameOver"+rand);
+                    break;
+                case "reload":
+                    this.go(this.player.data.checkpoint);
+                    break;
                 case "fight":
                     var adversaires = params[0];
                     var nextLieu = params[1];
@@ -145,6 +162,15 @@ define(["jquery",
                         this.player.addEquipment(item);
                     }
                     break;
+                case "gainOneTime":
+                    var items = params;
+                    if (this.player.hasNoOne(params)) {
+                        for (var i in params) {
+                            var item = params[i];
+                            this.player.addEquipment(item);
+                        }
+                    }
+                    break;
                 case "perte":
                     for (var i in params) {
                         var item = params[i];
@@ -165,7 +191,7 @@ define(["jquery",
                     break;
                 case "heal":
                     var vie = params[0];
-                    this.player.addLife(vie);
+                    this.player.addPercentLife(vie);
                     break;
                 case "healMG":
                     var mana = params[0];
@@ -195,6 +221,7 @@ define(["jquery",
                     }, failFunction);
                     break;
                 default:
+                    console.log("Erreur, l'action " + action + " n'existe pas.")
                     break;
             }
         };
@@ -225,6 +252,6 @@ define(["jquery",
             return true;
         };
 
-        this.init(parent);
+        this.init(parent, didacticiel);
     };
 });

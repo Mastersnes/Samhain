@@ -44,7 +44,7 @@ define(["jquery",
 
             var xp = this.player.get("xp");
             var palier = this.player.levelManager.nextPalier();
-            this.refresh("level", xp, palier, false, 10);
+            this.refresh("level", xp, palier, false, 19);
 
             var level = this.player.get("level");
             if (level < 10) level = "0" + level;
