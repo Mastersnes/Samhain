@@ -18,7 +18,7 @@ define([], function(){
             en : "She speaks to you in a childish voice:"
         },
         "necroS2-texte-5" : {
-            fr : "&laquo; Qui est l&agrave; ? J&rsquo;ai peur&hellip; J&rsquo;ai faim&hellip; &raquo;",
+            fr : "&laquo; Qui est là&nbsp;? J&rsquo;ai peur&hellip; J&rsquo;ai faim&hellip; &raquo;",
             en : "&laquo; Who's out there? I'm scared&hellip; I'm hungry&hellip; &raquo;"
         },
 
@@ -31,7 +31,7 @@ define([], function(){
             en : "She speaks to you in a childlike voice, calmly:"
         },
         "necroS2Retour-texte-3" : {
-            fr : "&laquo; Te revoil&agrave; ? Tu viens jouer ? &raquo;",
+            fr : "&laquo; Te revoilà&nbsp;? Tu viens jouer&nbsp;? &raquo;",
             en : "&laquo; Are you back again? Are you coming to play? &raquo;"
         },
 
@@ -48,7 +48,7 @@ define([], function(){
             en : "You suddenly hear a screaming voice:"
         },
         "necroS22-texte-4" : {
-            fr : "&laquo; C&rsquo;est un m&eacute;chant ! Tue-le ! Tue-le, d&eacute;chet ! &raquo;",
+            fr : "&laquo; C&rsquo;est un m&eacute;chant&nbsp;! Tue-le&nbsp;! Tue-le, d&eacute;chet&nbsp;! &raquo;",
             en : "&laquo; He's a bad guy! Kill him! Kill him, you trash! &raquo;"
         },
         "necroS22-texte-5" : {
@@ -65,15 +65,15 @@ define([], function(){
             en : "You are trying to reassure the child with a soft voice."
         },
         "necroS2Parle-texte-2" : {
-            fr : "Mais, c&rsquo;est &agrave; nouveau la voix criarde qui vous r&eacute;pond :",
+            fr : "Mais, c&rsquo;est à nouveau la voix criarde qui vous r&eacute;pond :",
             en : "But it is again the screaming voice that responds to you:"
         },
         "necroS2Parle-texte-3" : {
-            fr : "&laquo; Silence ! Insecte inutile ! Il ne t&rsquo;&eacute;coutera pas !",
+            fr : "&laquo; Silence&nbsp;! Insecte inutile&nbsp;! Il ne t&rsquo;&eacute;coutera pas&nbsp;!",
             en : "&laquo; Quiet! Insect useless! He won't listen to you!"
         },
         "necroS2Parle-texte-4" : {
-            fr : "Maintenant, tue-le o&ugrave; tu souffriras de nouveau ! &raquo;",
+            fr : "Maintenant, tue-le o&ugrave; tu souffriras de nouveau&nbsp;! &raquo;",
             en : "Now kill him or you'll suffer again! &raquo;"
         },
         "necroS2Parle-texte-5" : {
@@ -94,7 +94,7 @@ define([], function(){
             en : "&laquo; You should have run away while you could&hellip; &raquo;"
         },
         "necroS2Approche-texte-4" : {
-            fr : "&Agrave; mesure que la forme s&rsquo;approche, vous la discernez mieux&hellip;",
+            fr : "À mesure que la forme s&rsquo;approche, vous la discernez mieux&hellip;",
             en : "As the shape approaches, you can see it better&hellip;"
         },
 
@@ -111,7 +111,7 @@ define([], function(){
             en : "From his fingers come out large rods of iron&hellip;"
         },
         "necroS2Enfant-texte-4" : {
-            fr : "En avan&ccedil;ant, il se met &agrave; ricaner.",
+            fr : "En avan&ccedil;ant, il se met à ricaner.",
             en : "As he moves on, he starts giggling."
         },
         "necroS2Enfant-texte-5" : {
@@ -120,23 +120,23 @@ define([], function(){
         },
 
         "necroS2Enfant2-texte-1" : {
-            fr : "Mais quelle &eacute;tait cette horreur ?!",
+            fr : "Mais quelle &eacute;tait cette horreur&nbsp;?!",
             en : "But what was that horror?!"
         },
         "necroS2Enfant2-texte-2" : {
-            fr : "Les enfants captur&eacute;s servaient &agrave; fabriquer ce monstre ?!",
+            fr : "Les enfants captur&eacute;s servaient à fabriquer ce monstre&nbsp;?!",
             en : "The captured children were used to make this monster?!"
         },
         "necroS2Enfant2-texte-3" : {
-            fr : "Vous r&eacute;alisez soudain que d&rsquo;autres enfants doivent subir le m&ecirc;me sort &agrave; l&rsquo;heure qu&rsquo;il est !",
+            fr : "Vous r&eacute;alisez soudain que d&rsquo;autres enfants doivent subir le m&ecirc;me sort à l&rsquo;heure qu&rsquo;il est&nbsp;!",
             en : "Suddenly you realize that other children have to suffer the same fate now!"
         },
         "necroS2Enfant2-texte-4" : {
-            fr : "Il n&rsquo;est peut-&ecirc;tre pas trop tard !",
+            fr : "Il n&rsquo;est peut-&ecirc;tre pas trop tard&nbsp;!",
             en : "It may not be too late!"
         },
         "necroS2Enfant2-texte-5" : {
-            fr : "Vous reprenez vos esprits et repartez &agrave; l&rsquo;aventure.",
+            fr : "Vous reprenez vos esprits et repartez à l&rsquo;aventure.",
             en : "You come to your senses and go back to adventure."
         },
 
@@ -149,11 +149,11 @@ define([], function(){
             en : "By reading a few of them, you will discover that it is possible, with the appropriate formula"
         },
         "necroS2Fouille-texte-3" : {
-            fr : "et un peu de concentration, de lancer une terrible <span key='bouleFeu'>boule de feu</span> !",
+            fr : "et un peu de concentration, de lancer une terrible <span key='bouleFeu'>boule de feu</span>&nbsp;!",
             en : "and a little concentration, to throw a terrible <span key='bouleFeu'>fireball</span>!"
         },
         "necroS2Fouille-texte-4" : {
-            fr : "Il est temps de retourner dans la grande salle ! L&rsquo;aventure n&rsquo;attend pas !",
+            fr : "Il est temps de retourner dans la grande salle&nbsp;! L&rsquo;aventure n&rsquo;attend pas&nbsp;!",
             en : "It's time to go back to the big room! The adventure does not wait!"
         },
 

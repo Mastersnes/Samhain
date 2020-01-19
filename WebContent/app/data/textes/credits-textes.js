@@ -104,7 +104,7 @@ define([], function(){
                 en : "To the beta testers who are constantly improving the quality of our games."
             },
 	        "animalux-thx-credits" : {
-                fr : "À nos adorables compagnons à poil et à plume qui nous apportent joie, amours et croquettes au quotidien !",
+                fr : "À nos adorables compagnons à poil et à plume qui nous apportent joie, amours et croquettes au quotidien&nbsp;!",
                 en : "To our adorable furry and feathered companions who bring us joy, love and croquettes every day!"
             }
 	};

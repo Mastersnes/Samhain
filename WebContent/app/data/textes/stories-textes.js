@@ -1,15 +1,16 @@
 'use strict';
 define([
     "app/data/textes/stories/buttons-textes",
+    "app/data/textes/stories/didacticiel-textes",
     "app/data/textes/stories/tuto-textes",
     "app/data/textes/stories/gameOver-textes"
-], function(Buttons, Tuto, GameOver){
+], function(Buttons, Didacticiel, Tuto, GameOver){
 	var data = {
 	    /**
 	    * Textes generiques
 	    **/
         "gagne-texte-1" : {
-            fr : "Félicitation, vous avez terminé le jeu !",
+            fr : "Félicitation, vous avez terminé le jeu&nbsp;!",
             en : "Congratulations, you have finished the game!"
         },
         "retry" : {
@@ -22,6 +23,7 @@ define([
         get : function(key) {
             var text = data[key];
             if (!text) text = Buttons.get(key);
+            if (!text) text = Didacticiel.get(key);
             if (!text) text = Tuto.get(key);
             if (!text) text = GameOver.get(key);
             return text;

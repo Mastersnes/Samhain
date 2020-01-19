@@ -28,7 +28,7 @@ define([], function(){
             en : "She seems to give up and a <span key='baton'>big stick</span> makes it possible to stall the door."
         },
         "fermeExaminer-texte-3" : {
-            fr : "Peut-&ecirc;tre en cas d&rsquo;orage ?",
+            fr : "Peut-&ecirc;tre en cas d&rsquo;orage&nbsp;?",
             en : "Maybe in the event of a storm?"
         },
 
@@ -56,7 +56,7 @@ define([], function(){
         },
 
         "batonSaisieReussite1-texte-1" : {
-            fr : "En for&ccedil;ant un peu, vous parvenez &agrave; d&eacute;bloquer le <span key='baton'>b&acirc;ton</span>.",
+            fr : "En for&ccedil;ant un peu, vous parvenez à d&eacute;bloquer le <span key='baton'>b&acirc;ton</span>.",
             en : "By forcing a little, you can unlock the <span key='baton'>stick</span>."
         },
         "batonSaisieReussite1-texte-2" : {
@@ -68,7 +68,7 @@ define([], function(){
             en : "Unfortunately, you don't have time to avoid"
         },
         "batonSaisieReussite2-texte-2" : {
-            fr : "et vous fait tomber &agrave; la renverse&hellip;",
+            fr : "et vous fait tomber à la renverse&hellip;",
             en : "and knocked you over..."
         },
         "batonSaisieReussite1-texte-3" : {
@@ -104,7 +104,7 @@ define([], function(){
         },
 
         "fermeGoule-texte-1" : {
-            fr : "Une horrible <span key='goule'>goule</span> bondit hors de la grange !",
+            fr : "Une horrible <span key='goule'>goule</span> bondit hors de la grange&nbsp;!",
             en : "A horrible <span key='goule'>ghoul</span> leaps out of the barn!"
         },
         "fermeGoule-texte-2" : {
@@ -112,13 +112,13 @@ define([], function(){
             en : "She watches you for a while, like you're a snack,"
         },
         "fermeGoule-texte-3" : {
-            fr : "puis se jette sur vous !",
+            fr : "puis se jette sur vous&nbsp;!",
             en : "and then throws himself on you!"
         },
 
         "fermeGoule2-texte-1" : {
-            fr : "Qu&rsquo;est-ce que ce monstre faisait l&agrave; ?",
-            en : "What did this monster do here ?"
+            fr : "Qu&rsquo;est-ce que ce monstre faisait là&nbsp;?",
+            en : "What did this monster do here&nbsp;?"
         },
         "fermeGoule2-texte-2" : {
             fr : "Vous vous remettez de vos &eacute;motions et&hellip;",
@@ -130,7 +130,7 @@ define([], function(){
             en : "Nothing&hellip;"
         },
         "fouillerGoule-texte-2" : {
-            fr : "Juste un cadavre &agrave; moiti&eacute; d&eacute;compos&eacute;.",
+            fr : "Juste un cadavre à moiti&eacute; d&eacute;compos&eacute;.",
             en : "Just a corpse half-decomposed."
         },
 

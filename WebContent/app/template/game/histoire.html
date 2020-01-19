@@ -15,7 +15,7 @@
 				<% var action = lieu.actions[j]; %>
 				<% if (!action.appairIf || data.view.checkActions(action.appairIf)) { %>
 
-					<action id="<%=j%>">
+					<action id="<%=j%>" type="<%=lieu.actions[j].name%>">
 						<name class="js-center"><%= text.get(lieu.actions[j].name) %></name>
 					</action>
 				<% } %>

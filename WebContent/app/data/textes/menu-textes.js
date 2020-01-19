@@ -33,7 +33,7 @@ define([], function(){
                 en : "Our other games on:"
             },
             "eraseSave" : {
-                fr : "<text>ATTENTION !</text><text>Ceci effacera votre partie enregistrée</text>",
+                fr : "<text>ATTENTION&nbsp;!</text><text>Ceci effacera votre partie enregistrée</text>",
                 en : "<text>WARNING!</text><text>this will erase your registered save</text>"
             },
             "continue" : {

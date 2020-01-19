@@ -10,7 +10,7 @@ define([], function() {
                 {
                     "name" : "faire-achat", "action" : [
                         {"key" : "boutique", "params" : [[
-                            "pomme", "fromage", "potionSante", "baton", "dague", "venin"
+                            "pomme", "fromage", "potionSante", "antidote", "baton", "dague", "venin"
                         ], "echoppe-oui-fin", "echoppe-non-fin"]}
                     ]
                 },

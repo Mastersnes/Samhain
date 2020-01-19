@@ -3,6 +3,10 @@ define([],
 		function() {
 			var data = {
 			    "die" : {
+                    "before" : function(histoire) {
+                        $("carnet").addClass("hide");
+                    },
+
                     "textes" : ["die-texte-1", "die-texte-2"],
                     "actions" : [
                         {"name" : "continue", "action" : [{"key" : "gameOver"}]},

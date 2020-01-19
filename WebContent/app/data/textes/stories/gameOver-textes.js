@@ -15,11 +15,11 @@ define([
         },
 
 	    "gameOver1-texte-1" : {
-            fr : "&laquo; Qu'est ce que c’était ?! &raquo;",
+            fr : "&laquo; Qu'est ce que c’était&nbsp;?! &raquo;",
             en : "&laquo; What was that?! &raquo;"
         },
         "gameOver1-texte-2" : {
-            fr : "Vous vous ressaisissez, encore frappé par cette vision cauchemardesque. L'aventure n'attends pas !",
+            fr : "Vous vous ressaisissez, encore frappé par cette vision cauchemardesque. L'aventure n'attends pas&nbsp;!",
             en : "You pull yourself together, still struck by this nightmare vision. The adventure doesn't wait!"
         },
 
@@ -28,7 +28,7 @@ define([
             en : "You open your eyes suddenly. Yet this dream seemed so real..."
         },
         "gameOver2-texte-2" : {
-            fr : "Mais pas le temps de bayer au corneille ! L'aventure n'attends pas !",
+            fr : "Mais pas le temps de bayer au corneille&nbsp;! L'aventure n'attends pas&nbsp;!",
             en : "But there's no time for stand gaping! The adventure doesn't wait!"
         }
 	};

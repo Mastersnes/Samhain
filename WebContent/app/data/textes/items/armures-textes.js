@@ -14,7 +14,7 @@ define([], function(){
                 eo : "Bloki per la Brako"
             },
             "bras-texte" : {
-                fr : "Votre bras... Tout simplement... Vous pouvez en être fier !",
+                fr : "Votre bras... Tout simplement... Vous pouvez en être fier&nbsp;!",
                 en : "Your arm... Quite simply... You can be proud of it!"
             },
             "bouclierBois" : {
@@ -38,7 +38,7 @@ define([], function(){
                 en : "Countering with the Shield"
             },
             "bouclierFer-texte" : {
-                fr : "Un grand bouclier en fer ! Il est très résistant.",
+                fr : "Un grand bouclier en fer&nbsp;! Il est très résistant.",
                 en : "A big iron shield! It is very resistant."
             }
 	};

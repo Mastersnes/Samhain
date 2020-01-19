@@ -6,7 +6,7 @@ define([], function(){
             en : "As you leave town, a strange shop attracts your attention."
         },
         "echoppe-texte-2" : {
-            fr : "Après tout, pourquoi ne pas faire quelques achats ?",
+            fr : "Après tout, pourquoi ne pas faire quelques achats&nbsp;?",
             en : "After all, why not make some purchases?"
         },
         "echoppe-oui-fin-texte-1" : {

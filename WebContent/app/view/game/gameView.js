@@ -45,6 +45,7 @@ function($, _, Utils, PopupUtils, page,
             this.uiView = new UIView(this);
             this.uiView.render();
 
+            this.didacticiel = didacticiel;
             this.histoireView = new HistoireView(this, didacticiel);
             this.fightView = new FightView(this);
             this.boutiqueView = new BoutiqueView(this);
@@ -91,7 +92,7 @@ function($, _, Utils, PopupUtils, page,
         **/
 		this.hardLoop = function() {
             if (!this.endGame) {
-                this.saveManager.saveInCloud();
+                if (!this.didacticiel) this.saveManager.saveInCloud();
                 var that = this;
                 setTimeout(function() {
                     that.hardLoop();
@@ -105,7 +106,7 @@ function($, _, Utils, PopupUtils, page,
 		this.loop = function() {
 		    if (!this.endGame) {
     		    if (!this.pause) {
-                    this.saveManager.saveInSession();
+                    if (!this.didacticiel) this.saveManager.saveInSession();
                     this.playerManager.showNextAmount();
                 }
                 var that = this;
@@ -149,11 +150,11 @@ function($, _, Utils, PopupUtils, page,
                 this.saveManager.save("GameComplete", gameComplete+1);
                 this.kongregateUtils.score("GameComplete", gameComplete+1);
                 var that = this;
-                setTimeout(function() {
-                    that.mediatheque.play(musicName, "", function() {
-                        that.mediatheque.play("music/menu.ogg");
-                    });
-                }, 200);
+//                setTimeout(function() {
+//                    that.mediatheque.play(musicName, "", function() {
+//                        that.mediatheque.play("music/menu.ogg");
+//                    });
+//                }, 200);
                 this.endGame = true;
                 this.endView.render(gagne);
         	} else {
@@ -166,8 +167,8 @@ function($, _, Utils, PopupUtils, page,
         	this.saveManager.saveInSession();
         };
 
-        this.fight = function(adversaires, onWin, onFail) {
-            this.fightView.fight(adversaires, onWin, onFail);
+        this.fight = function(adversaires, onWin, onFail, textes) {
+            this.fightView.fight(adversaires, onWin, onFail, textes);
         };
         this.boutique = function(items, onPurchase, onNoPurchase) {
             this.boutiqueView.open(items, onPurchase, onNoPurchase);

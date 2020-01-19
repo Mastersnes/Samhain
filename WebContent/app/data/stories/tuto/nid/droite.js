@@ -36,7 +36,7 @@ define([], function() {
             "textes" : ["roiAraigneePotion2-texte-1", "roiAraigneePotion2-texte-2", "roiAraigneePotion2-texte-3"],
             "actions" : [
                 {
-                    "name" : "death", "action" : [
+                    "name" : "lamort", "action" : [
                         {"key" : "score", "params" : ["KillSpider", 1]},
                         {"key" : "fight", "params" : [[
                             {"name":"roiAraignee", "suffixe":"blesse"}
@@ -44,12 +44,12 @@ define([], function() {
                     ]
                 },
                 {
-                    "name" : "ami", "action" : [
+                    "name" : "unami", "action" : [
                         {"key" : "go", "params" : ["roiAraigneePotionAmi"]}
                     ]
                 },
                 {
-                    "name" : "who-are-you", "action" : [
+                    "name" : "quietesvous", "action" : [
                         {"key" : "go", "params" : ["roiAraigneePotionQui"]}
                     ]
                 }
@@ -112,7 +112,7 @@ define([], function() {
             "textes" : ["roiAraigneePotion2-texte-1", "roiAraigneePotion2-texte-2", "roiAraigneePotion2-texte-3"],
             "actions" : [
                 {
-                    "name" : "death", "action" : [
+                    "name" : "lamort", "action" : [
                         {"key" : "score", "params" : ["KillSpider", 1]},
                         {"key" : "fight", "params" : [[
                             {"name":"roiAraignee", "suffixe":"blesse"}
@@ -120,12 +120,12 @@ define([], function() {
                     ]
                 },
                 {
-                    "name" : "ami", "action" : [
+                    "name" : "unami", "action" : [
                         {"key" : "go", "params" : ["roiAraigneeFromageAmi"]}
                     ]
                 },
                 {
-                    "name" : "who-are-you", "action" : [
+                    "name" : "quietesvous", "action" : [
                         {"key" : "go", "params" : ["roiAraigneeFromageQui"]}
                     ]
                 }
@@ -170,7 +170,7 @@ define([], function() {
             "textes" : ["roiAraigneePotion2-texte-1", "roiAraigneePotion2-texte-2", "roiAraigneePotion2-texte-3"],
             "actions" : [
                 {
-                    "name" : "death", "action" : [
+                    "name" : "lamort", "action" : [
                         {"key" : "score", "params" : ["KillSpider", 1]},
                         {"key" : "fight", "params" : [ [
                             {"name":"roiAraignee", "suffixe":"blesse"}
@@ -178,7 +178,7 @@ define([], function() {
                     ]
                 },
                 {
-                    "name" : "who-are-you", "action" : [
+                    "name" : "quietesvous", "action" : [
                         {"key" : "go", "params" : ["roiAraigneeQui"]}
                     ]
                 }
@@ -189,7 +189,7 @@ define([], function() {
                 "roiAraigneePotionQui-texte-4"],
             "actions" : [
                 {
-                    "name" : "jai-rien", "action" : [
+                    "name" : "jairien", "action" : [
                         {"key" : "go", "params" : ["roiAraigneeRefus"]}
                     ]
                 }

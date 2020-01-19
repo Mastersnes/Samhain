@@ -22,7 +22,7 @@ define(["jquery",
 
             this.didacticiel = didacticiel;
 
-            if (didacticiel) this.go("didactitiel1");
+            if (didacticiel) this.go("didacticiel-start");
             else this.go(this.player.get("lieu"));
         };
 
@@ -37,10 +37,14 @@ define(["jquery",
             $(".fight").fadeOut();
             $(".boutique").fadeOut();
 
-            if (newLieuId == "die") $("carnet").addClass("hide");
-            else $("carnet").removeClass("hide");
-
+            $("carnet").removeClass("hide");
+            $("loupe").removeClass("hide");
             this.el.fadeIn();
+
+            if (newLieu.before) newLieu.before(this);
+            if (newLieu.music) {
+                this.mediatheque.play("music/" + newLieu.music);
+            }
 
             if (this.didacticiel) noSave = true;
             if (!noSave) this.player.data.lieu = newLieuId;
@@ -139,6 +143,12 @@ define(["jquery",
                     var nextLieu = params[1];
                     var failLieu = params[2];
 
+                    var textes;
+                    if (failLieu != undefined && Array.isArray(failLieu)) {
+                        textes = failLieu;
+                        failLieu = null;
+                    }else textes = params[3];
+
                     var failFunction = null;
                     if (failLieu) {
                         failFunction = function() {
@@ -147,7 +157,7 @@ define(["jquery",
                     }
                     this.parent.fight(adversaires, function() {
                         that.go(nextLieu);
-                    }, failFunction);
+                    }, failFunction, textes);
                     break;
                 case "hurt":
                     var degats = params[0];

@@ -81,7 +81,12 @@
             </magies>
             <consos>
                 <% for (var conso of consos.keys()) { %>
-                    <element id="<%=conso%>"><%=text.get(conso)%></element>
+                    <% var number = consos.get(conso); %>
+                    <% if (number == 1) { %>
+                        <element id="<%=conso%>" nb="1"><%=text.get(conso)%></element>
+                    <% } else { %>
+                        <element id="<%=conso%>" nb="<%=number%>"><%=text.get(conso)%>(x<%=number%>)</element>
+                    <% } %>
                 <% } %>
             </consos>
         </content>

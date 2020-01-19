@@ -9,7 +9,7 @@ define([], function(){
                 en : "A Bit Pale"
             },
 	        "poison-texte" : {
-                fr : "Un petit empoisonnement, rien de bien méchant ! Attention tout de même, si une légère toux s'installe, c'est que la tombe n'est pas bien loin...",
+                fr : "Un petit empoisonnement, rien de bien méchant&nbsp;! Attention tout de même, si une légère toux s'installe, c'est que la tombe n'est pas bien loin...",
                 en : "A little poisoning, nothing too bad! Be careful though, if a slight cough sets in, it means that the grave is not far away..."
             },
 	        "poison-2" : {
@@ -25,7 +25,7 @@ define([], function(){
                 en : "Snack"
             },
 	        "satiete-texte" : {
-                fr : "Un bon encas pour bien commencer la journée ! On est quand même loin des 5 fruits et légumes par jour.",
+                fr : "Un bon encas pour bien commencer la journée&nbsp;! On est quand même loin des 5 fruits et légumes par jour.",
                 en : "A good snack to start the day off right! We are still far from the 5 fruits and vegetables a day."
             },
 	        "satiete-2" : {
@@ -33,7 +33,7 @@ define([], function(){
                 en : "Good meal"
             },
 	        "satiete-2-texte" : {
-                fr : "De quoi être repus pour un petit moment ! Bon appétit !",
+                fr : "De quoi être repus pour un petit moment&nbsp;! Bon appétit&nbsp;!",
                 en : "Enough to be satisfied for a little while! Bon appétit!"
             },
 	        "brulure" : {
@@ -49,7 +49,7 @@ define([], function(){
                 en : "Deep Burn"
             },
 	        "brulure-2-texte" : {
-                fr : "Hurk, C'est pas très beau à voir ! Au moins, vous avez du charbon pour le feu...",
+                fr : "Hurk, C'est pas très beau à voir&nbsp;! Au moins, vous avez du charbon pour le feu...",
                 en : "Hurk, it's not very beautiful to see! At least you have coal for the fire...."
             },
 	        "saignement" : {
@@ -57,7 +57,7 @@ define([], function(){
                 en : "Scratch"
             },
 	        "saignement-texte" : {
-                fr : "Une petite éraflure, vous n'allez quand même pas pleurer... Si ?",
+                fr : "Une petite éraflure, vous n'allez quand même pas pleurer... Si&nbsp;?",
                 en : "A little scratch, you're not going to cry... are you?"
             },
 	        "saignement-2" : {

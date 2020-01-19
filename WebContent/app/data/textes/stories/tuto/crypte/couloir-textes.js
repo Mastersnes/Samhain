@@ -6,7 +6,7 @@ define([], function(){
             en : "You enter a long corridor lit by many torches."
         },
         "necroCouloir-texte-2" : {
-            fr : "Une ambiance calme et presque conviviale vous invite &agrave; avancer&hellip;",
+            fr : "Une ambiance calme et presque conviviale vous invite à avancer&hellip;",
             en : "A calm and almost convivial atmosphere invites you to move forward&hellip;"
         },
         "necroCouloir-texte-3" : {
@@ -40,7 +40,7 @@ define([], function(){
             en : "Many children are clustered in a corner."
         },
         "necroS4-texte-3" : {
-            fr : "Lorsqu&rsquo;ils s&rsquo;enfuient &agrave; votre demande, l&rsquo;un d&rsquo;eux vous tend une <span key='potionSante'>fiole rouge</span>.",
+            fr : "Lorsqu&rsquo;ils s&rsquo;enfuient à votre demande, l&rsquo;un d&rsquo;eux vous tend une <span key='potionSante'>fiole rouge</span>.",
             en : "When they run away at your request, one of them hands you a <span key='potionSante'>red vial</span>."
         },
         "necroS4-texte-4" : {

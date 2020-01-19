@@ -28,6 +28,18 @@ define([], function(){
                 fr : "Une jolie fiole toute bleue. Sur l'étiquette, il est noté : &laquo; Attention, agite les ganglions &raquo;.",
                 en : "-"
             },
+            "antidote" : {
+                fr : "Antidote",
+                en : "Antidote"
+            },
+            "antidote-action" : {
+                fr : "Antidote",
+                en : "Antidote"
+            },
+            "antidote-texte" : {
+                fr : "Une fiole verte visqueuse censé être de l'anti-poison. Vu l'odeur, ça risque plutôt de vous empoisonner&nbsp;!<br/>(Soigne uniquement du poison)",
+                en : "A slimy green vial supposed to be anti-poison. From the smell of it, it's more likely to poison you!<br/>(Only treats poison)"
+            },
             "fromage" : {
                 fr : "Fromage",
                 en : "Cheese"
@@ -49,7 +61,7 @@ define([], function(){
                 en : "Chew the Apple"
             },
             "pomme-texte" : {
-                fr : "Une belle pomme bien rouge ! Vous allez vous régaler !",
+                fr : "Une belle pomme bien rouge&nbsp;! Vous allez vous régaler&nbsp;!",
                 en : "A beautiful red apple! It's delicious!"
             },
             "venin" : {
@@ -61,7 +73,7 @@ define([], function(){
                 en : "Throwing the Venom"
             },
             "venin-texte" : {
-                fr : "Une poche de venin prélevée sur une grosse araignée !",
+                fr : "Une poche de venin prélevée sur une grosse araignée&nbsp;!",
                 en : "A pocket of venom from a big spider!"
             },
             "elixir" : {
@@ -73,7 +85,7 @@ define([], function(){
                 en : "Elixir"
             },
             "elixir-texte" : {
-                fr : "Une grosse fiole éclatante de lumière ! Une étiquette indique : &laquo; Ne pas boire après minuit, risque d'allergie &raquo;.",
+                fr : "Une grosse fiole éclatante de lumière&nbsp;! Une étiquette indique : &laquo; Ne pas boire après minuit, risque d'allergie &raquo;.",
                 en : "A big, bright vial of light! A label says: &laquo; Do not drink after midnight, risk of allergy &raquo;."
             }
 	};

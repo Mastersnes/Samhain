@@ -125,6 +125,26 @@ define(["jquery",
             if (!$("carnet").hasClass("hide")) $("carnet").addClass("hide");
         };
 
+        this.refreshConso = function(consoDom) {
+            var name = this.Textes.get(consoDom.attr("id"));
+            var nb = parseInt(consoDom.attr("nb"));
+
+            if (nb == 1) consoDom.html(name);
+            else consoDom.html(name + "(x"+nb+")");
+        }
+        this.refreshMagie = function(magieDom) {
+            var id = magieDom.attr("id");
+            var magie = Items.get("magie", id);
+            var currentMana = this.player.get("mana.current");
+
+            magieDom.removeClass("clickable");
+            magieDom.removeClass("interdit");
+            if (!magie.offensif) {
+                if (magie.manaCost <= currentMana) magieDom.addClass("clickable");
+                else magieDom.addClass("interdit");
+            }
+        }
+
         this.makeEvents = function() {
             var that = this;
 
@@ -148,24 +168,10 @@ define(["jquery",
             });
 
             this.el.find("magies element").hover(function() {
-                var id = $(this).attr("id");
-                var magie = Items.get("magie", id);
-                var currentMana = that.player.get("mana.current");
-
-                var html = $(this).html();
-                $(this).removeClass("clickable", "interdit");
-                if (!magie.offensif) {
-                    if (magie.manaCost <= currentMana) {
-                        $(this).addClass("clickable");
-                        $(this).html("<b>"+html+ "</b>");
-                    } else {
-                        $(this).addClass("interdit");
-                        $(this).html("<s>"+html+ "</s>");
-                    }
-                }
+                that.refreshMagie($(this));
             }, function() {
-                var name = that.Textes.get($(this).attr("id"));
-                $(this).html(name);
+                $(this).removeClass("clickable");
+                $(this).removeClass("interdit");
             });
 
             this.el.find("consos element").hover(function() {
@@ -176,11 +182,9 @@ define(["jquery",
                 $(this).removeClass("clickable");
                 if (!item.offensif) {
                     $(this).addClass("clickable");
-                    $(this).html("<b>"+html+ "</b>");
                 }
             }, function() {
-                var name = that.Textes.get($(this).attr("id"));
-                $(this).html(name);
+                $(this).removeClass("clickable");
             });
 
             this.el.find("magies element").click(function() {
@@ -190,6 +194,7 @@ define(["jquery",
                     that.player.spell(id);
                     that.player.etatsManager.infligeEtats();
                     that.refreshStats();
+                    that.refreshMagie($(this));
                 }
             });
             this.el.find("consos element").click(function() {
@@ -202,7 +207,12 @@ define(["jquery",
                     if (nb <= 0) {
                         that.consos.remove(id);
                         $(this).remove();
-                    }else that.consos.put(id, nb);
+                    }else {
+                        that.consos.put(id, nb);
+                        $(this).attr("nb", nb);
+                        that.refreshConso($(this));
+                    }
+
                     that.player.etatsManager.infligeEtats();
                     that.refreshStats();
                 }

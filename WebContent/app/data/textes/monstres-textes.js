@@ -26,8 +26,8 @@ define([], function(){
                 en : "King of Spiders"
             },
             "roiAraignee-texte" : {
-                fr : "Il reigne sur le royaume des araignées. Il est blessé mais protégera toujours ses enfants. Restez sur vos gardes, Vous pourriez le regretter !",
-                en : "He reigns over the kingdom of spiders. He's hurt, but he'll always protect his children. Stay on your toes, you might regret it !"
+                fr : "Il reigne sur le royaume des araignées. Il est blessé mais protégera toujours ses enfants. Restez sur vos gardes, Vous pourriez le regretter&nbsp;!",
+                en : "He reigns over the kingdom of spiders. He's hurt, but he'll always protect his children. Stay on your toes, you might regret it&nbsp;!"
             },
             "goule" : {
                 fr : "Goule",
@@ -42,7 +42,7 @@ define([], function(){
                 en : "Guard"
             },
             "garde-texte" : {
-                fr : "Garde du village. Un peu lent à la détente, mais redoutable à l'épée !",
+                fr : "Garde du village. Un peu lent à la détente, mais redoutable à l'épée&nbsp;!",
                 en : "Village guard. A little slow to relax, but fearful by the sword!"
             },
             "villageois" : {
@@ -66,7 +66,7 @@ define([], function(){
                 en : "Skeleton"
             },
             "squelette-texte" : {
-                fr : "Un tas d'os qui marche. Aucune défense, mais une sacré épée entre les mains !",
+                fr : "Un tas d'os qui marche. Aucune défense, mais une sacré épée entre les mains&nbsp;!",
                 en : "A bunch of bones walking. No defense, but a hell of a sword in his hands!"
             },
             "experience" : {
@@ -82,7 +82,7 @@ define([], function(){
                 en : "Necrom"
             },
             "necromancien-texte" : {
-                fr : "Un horrible sorcier usant de magie noir ! Il ressemble à un vieillard et tiens à peine sur ses jambes...",
+                fr : "Un horrible sorcier usant de magie noir&nbsp;! Il ressemble à un vieillard et tiens à peine sur ses jambes...",
                 en : "A horrible wizard using black magic! He looks like an old man and barely stands on his legs..."
             },
             "liche" : {
@@ -90,7 +90,7 @@ define([], function(){
                 en : "Lich"
             },
             "liche-texte" : {
-                fr : "Un spectre tout droit sortie de l'au-delà ! Une aura néfaste l'entoure, laissant présager de sa puissance...",
+                fr : "Un spectre tout droit sortie de l'au-delà&nbsp;! Une aura néfaste l'entoure, laissant présager de sa puissance...",
                 en : "A spectrum straight out of the afterlife! A harmful aura surrounds it, letting us imagine its power..."
             }
 	};

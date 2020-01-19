@@ -14,7 +14,7 @@ define([], function(){
             en : "You will discover many books and scrolls scattered all over the ground."
         },
         "necroS3-texte-4" : {
-            fr : "Une porte permet d&rsquo;acc&eacute;der &agrave; une autre partie du b&acirc;timent.",
+            fr : "Une porte permet d&rsquo;acc&eacute;der à une autre partie du b&acirc;timent.",
             en : "A door gives access to another part of the building."
         },
 
@@ -32,7 +32,7 @@ define([], function(){
             en : "Many are in an incomprehensible language,"
         },
         "necroS3Fouille-texte-3" : {
-            fr : "mais vous parvenez &agrave; comprendre certains mots.",
+            fr : "mais vous parvenez à comprendre certains mots.",
             en : "but you can understand some words."
         },
         "necroS3Fouille-texte-4" : {

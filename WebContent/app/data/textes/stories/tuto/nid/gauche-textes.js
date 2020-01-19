@@ -19,8 +19,8 @@ define([], function(){
             en : "Maybe by forcing a little with the <span key='dague'>dagger</span>,"
         },
         "coffre-texte-3" : {
-            fr : "vous pourriez r&eacute;ussir &agrave; l&rsquo;ouvrir ?",
-            en : "you might be able to open it ?"
+            fr : "vous pourriez r&eacute;ussir à l&rsquo;ouvrir&nbsp;?",
+            en : "you might be able to open it?"
         },
 
         "forcer-coffre" : {
@@ -33,7 +33,7 @@ define([], function(){
             en : "The trunk gets stuck, but by forcing a little&hellip;"
         },
         "coffreReussite1-texte-2" : {
-            fr : "Super ! Vous r&eacute;ussissez &agrave; l&rsquo;ouvrir en grand !",
+            fr : "Super&nbsp;! Vous r&eacute;ussissez à l&rsquo;ouvrir en grand&nbsp;!",
             en : "Awesome! You managed to open it wide!"
         },
         "coffreReussite1-texte-3" : {
@@ -65,7 +65,7 @@ define([], function(){
         },
 
         "coffreEchec1-texte-1" : {
-            fr : "Non, impossible ! Il ne bouge pas d&rsquo;un poil.",
+            fr : "Non, impossible&nbsp;! Il ne bouge pas d&rsquo;un poil.",
             en : "No, impossible! He's not moving a bit."
         },
 
@@ -75,7 +75,7 @@ define([], function(){
         },
 
         "coffreEchec2-texte-1" : {
-            fr : "Bam ! La <span key='dague'>dague</span> &eacute;clate dans vos mains !",
+            fr : "Bam&nbsp;! La <span key='dague'>dague</span> &eacute;clate dans vos mains&nbsp;!",
             en : "Bam! The dagger bursts in your hands!"
         },
         "coffreEchec2-texte-2" : {

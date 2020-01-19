@@ -135,3 +135,9 @@
 .inventaire .equipment case.coche {
     background-position: 50% 0%;
 }
+.inventaire .equipment element.clickable {
+    font-weight: bold;
+}
+.inventaire .equipment element.interdit {
+    text-decoration: line-through;
+}

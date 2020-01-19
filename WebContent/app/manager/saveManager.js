@@ -37,7 +37,7 @@ function($, _, Utils) {
 			        "gold" : 0,
 
 			        "attaque" : 1,
-			        "defense" : 1,
+			        "defense" : 0,
 
 			        "equipment" : {
 			            "arme" : ["poing"],
@@ -49,7 +49,7 @@ function($, _, Utils) {
 			            "clef" : [],
 			            "ifObj" : []
 			        },
-                    "lieu" : "start",
+                    "lieu" : "quete1-start",
                     "unlockMana" : false
 			    },
                 "success" : {

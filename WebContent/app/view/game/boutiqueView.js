@@ -192,7 +192,6 @@ define(["jquery",
 
         this.close = function() {
             this.boutiqueOpen = false;
-            console.log("onClose", this.onPurchase, this.onNoPurchase, this.purchase);
             if (this.onNoPurchase && this.purchase.length == 0) {
                 this.onNoPurchase();
             } else this.onPurchase();

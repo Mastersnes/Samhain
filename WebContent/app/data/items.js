@@ -48,7 +48,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 	        "bras" : {
                 "name" : "bras",
                 "texte" : "bras-texte",
-                "defense" : [0, 0],
+                "defense" : [0, 1],
                 "sound" : "block",
                 "anim" : null,
                 "price" : 0
@@ -56,7 +56,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "bouclierBois" : {
                 "name" : "bouclierBois",
                 "texte" : "bouclierBois-texte",
-                "defense" : [0, 1],
+                "defense" : [0, 3],
                 "sound" : "woodblock",
                 "anim" : null,
                 "price" : 100
@@ -64,7 +64,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "bouclierFer" : {
                 "name" : "bouclierFer",
                 "texte" : "bouclierFer-texte",
-                "defense" : [0, 2],
+                "defense" : [0, 5],
                 "sound" : "ironblock",
                 "anim" : null,
                 "price" : 200
@@ -88,6 +88,20 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "anim" : null,
                 "price" : 100,
                 "offensif" : false
+            },
+            "antidote" : {
+                "name" : "antidote",
+                "texte" : "antidote-texte",
+                "sound" : "drink",
+                "anim" : null,
+                "price" : 100,
+                "offensif" : false,
+                "action" : function(me) {
+                    var debuff = me.get("debuff");
+                    if (debuff && debuff.element == "poison") {
+                        me.data.debuff = null;
+                    }
+                }
             },
             "fromage" : {
                 "name" : "fromage",
@@ -153,6 +167,18 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "anim" : null,
                 "price" : 300,
                 "offensif" : false
+            },
+            "guerison" : {
+                "name" : "guerison",
+                "texte" : "guerison-texte",
+                "manaCost" : 1,
+                "sound" : "soin",
+                "anim" : null,
+                "price" : 400,
+                "offensif" : false,
+                "action" : function(me) {
+                    me.data.debuff = null;
+                }
             },
             "morsure" : {
                 "name" : "morsure",

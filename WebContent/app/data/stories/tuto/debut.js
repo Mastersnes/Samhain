@@ -4,8 +4,9 @@ define([], function() {
         /**
          * Quete Tutoriel - Seul dans la foret
          */
-        "start" : {
-            "textes" : ["start-texte-1", "start-texte-2", "start-texte-3", "start-texte-4"],
+        "quete1-start" : {
+            "music" : "story1.mp3",
+            "textes" : ["quete1-start-texte-1", "quete1-start-texte-2", "quete1-start-texte-3", "quete1-start-texte-4"],
             "actions" : [
                 {
                     "name" : "suivant",

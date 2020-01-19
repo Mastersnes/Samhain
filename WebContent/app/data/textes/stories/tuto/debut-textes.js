@@ -1,19 +1,19 @@
 'use strict';
 define([], function(){
 	var data = {
-        "start-texte-1" : {
+        "quete1-start-texte-1" : {
             fr : "Une nouvelle journée se termine.",
             en : "A new day ends."
         },
-        "start-texte-2" : {
+        "quete1-start-texte-2" : {
             fr : "La douceur de l'automne caresse les feuilles qui virevoltent aux alentours.",
             en : "The sweetness of autumn caresses the leaves that twirl around."
         },
-        "start-texte-3" : {
+        "quete1-start-texte-3" : {
             fr : "Ayant terminé votre dur labeur un peu plus tôt,",
             en : "Having finished your hard work a little sooner,"
         },
-        "start-texte-4" : {
+        "quete1-start-texte-4" : {
             fr : "Vous ramassez une <span key='pomme'>pomme</span> de votre panier et décidez de vous reposer au pied du géants feuillus.",
             en : "You pick an <span key='pomme'>apple</span> from your basket and decide to rest at the foot of the leafy giants."
         },
@@ -27,7 +27,7 @@ define([], function(){
             en : "In the distance, you seem to hear the sounds of legs..."
         },
         "repos2-texte-3" : {
-            fr : "Vous vous levez en sursaut quand deux <span key='araignee'>araignées</span> vous sautent dessus !",
+            fr : "Vous vous levez en sursaut quand deux <span key='araignee'>araignées</span> vous sautent dessus&nbsp;!",
             en : "You get up in a jolt when two <span key='araignee'>spiders</span> jump on you!"
         },
 
@@ -50,16 +50,16 @@ define([], function(){
         },
 
         "reposFouilleFail-texte-1" : {
-            fr : "Vous en fouillez une mais ne trouvez que des entrailles, Berk !",
+            fr : "Vous en fouillez une mais ne trouvez que des entrailles, Berk&nbsp;!",
             en : "You search one but only find guts, Yuck!"
         },
         "reposFouilleFail-texte-2" : {
-            fr : "J’espère que ce n'est pas ce que vous cherchiez... si ?",
+            fr : "J’espère que ce n'est pas ce que vous cherchiez... si&nbsp;?",
             en : "I hope that's not what you searched... is it?"
         },
 
         "reposFouilleSuccess-texte-1" : {
-            fr : "En remuant les entrailles vous découvrez une belle <span key='pomme'>pomme</span> !",
+            fr : "En remuant les entrailles vous découvrez une belle <span key='pomme'>pomme</span>&nbsp;!",
             en : "By stirring the guts you discover a beautiful <span key='pomme'>apple</span>!"
         },
         "reposFouilleSuccess-texte-2" : {
@@ -76,12 +76,12 @@ define([], function(){
             en : "You can clearly hear various insects swarming around."
         },
         "reposExamine-texte-3" : {
-            fr : "On se lance ?",
+            fr : "On se lance&nbsp;?",
             en : "Shall we get started?"
         },
 
         "en-avant" : {
-            fr : "En avant !",
+            fr : "En avant&nbsp;!",
             en : "Forward!"
         },
         "rentrer-ville" : {

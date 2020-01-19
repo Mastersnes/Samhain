@@ -38,7 +38,7 @@ function($, _, Utils) {
 			    var gainText = this.Textes.get("gainSuccess");
         		gainText = gainText.replace("{?}", this.Textes.get(success));
 
-        		this.mediatheque.playSound("success.ogg");
+//        		this.mediatheque.playSound("success.ogg");
 				this.parent.alertPopup(gainText, null, true);
 			}
 			return true;

@@ -6,7 +6,7 @@ define([], function(){
             en : "You arrive in a dark and silent cavity."
         },
         "nid-texte-2" : {
-            fr : "Une odeur naus&eacute;abonde monte &agrave; votre nez.",
+            fr : "Une odeur naus&eacute;abonde monte à votre nez.",
             en : "An unpleasant smell rises to your nose."
         },
         "nid-texte-3" : {
@@ -24,7 +24,7 @@ define([], function(){
         },
 
         "nidDague-texte-1" : {
-            fr : "Vous n'avez pas le temps d'esquiver !",
+            fr : "Vous n'avez pas le temps d'esquiver&nbsp;!",
             en : "You don't have time to dodge!"
         },
         "nidDague-texte-2" : {
@@ -32,11 +32,11 @@ define([], function(){
             en : "A big <span key='poing'>fist</span> crushes your face and makes you fall to the ground."
         },
         "nidDague-texte-3" : {
-            fr : "En vous relevant, vous distinguez un <span key='bandit'>bandit</span> pr&ecirc;t &agrave; vous d&eacute;trousser !",
+            fr : "En vous relevant, vous distinguez un <span key='bandit'>bandit</span> pr&ecirc;t à vous d&eacute;trousser&nbsp;!",
             en : "When you stand up, you see a <span key='bandit'>bandit</span> ready to rob you!"
         },
         "nidDague-texte-4" : {
-            fr : "Allez-vous le laisser s&rsquo;en sortir vivant ?!",
+            fr : "Allez-vous le laisser s&rsquo;en sortir vivant&nbsp;?!",
             en : "Are you gonna let him get away alive?!"
         },
 
@@ -54,7 +54,7 @@ define([], function(){
             en : "He approaches with a smile to start the fight."
         },
         "nid2-texte-3" : {
-            fr : "Allez-vous le laisser s&rsquo;en sortir vivant ?!",
+            fr : "Allez-vous le laisser s&rsquo;en sortir vivant&nbsp;?!",
             en : "Are you gonna let him get away alive?!"
         },
 
@@ -68,11 +68,11 @@ define([], function(){
         },
 
         "nid3Fouille-texte-1" : {
-            fr : "En d&eacute;troussant le d&eacute;trousseur, vous trouvez un gros morceau de <span key='fromage'>fromage</span> !",
+            fr : "En d&eacute;troussant le d&eacute;trousseur, vous trouvez un gros morceau de <span key='fromage'>fromage</span>&nbsp;!",
             en : "While Robbing the robber, you find a big piece of <span key='fromage'>cheese</span>!"
         },
         "nid3Fouille-texte-2" : {
-            fr : "Allez-vous vous régaler ou le garder sagement ?",
+            fr : "Allez-vous vous régaler ou le garder sagement&nbsp;?",
             en : "Are you going to enjoy yourself or keep it wisely?"
         },
 
@@ -86,7 +86,7 @@ define([], function(){
             en : "You have a good idea to continue the research."
         },
         "nid3TrouveDague-texte-2" : {
-            fr : "En dessous du bonhomme se trouvait une superbe <span key='dague'>dague</span> !",
+            fr : "En dessous du bonhomme se trouvait une superbe <span key='dague'>dague</span>&nbsp;!",
             en : "Below the man was a superb <span key='dague'>dagger</span>!"
         },
         "nid3TrouveDague-texte-3" : {
@@ -103,7 +103,7 @@ define([], function(){
             en : "Suddenly, the tunnel splits in half."
         },
         "nid4-texte-3" : {
-            fr : "Deux choix s&rsquo;offrent donc &agrave; vous :",
+            fr : "Deux choix s&rsquo;offrent donc à vous :",
             en : "Two choices are available:"
         }
 	};

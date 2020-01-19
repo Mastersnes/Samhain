@@ -21,6 +21,10 @@ define([], function(){
             fr : "Retour",
             en : "Returns"
         },
+        "retour-menu" : {
+            fr : "Retour au menu",
+            en : "Returns to the menu"
+        },
         "restart-action" : {
             fr : "Recommencer",
             en : "Restart"
@@ -49,6 +53,10 @@ define([], function(){
             fr : "L'attaquer",
             en : "Attack her"
         },
+        "alattaque" : {
+            fr : "À l'attaque&nbsp;!",
+            en : "Attack!"
+        },
         "combattre" : {
             fr : "Combattre",
             en : "Fight"
@@ -64,6 +72,10 @@ define([], function(){
         "lancer-boule-feu" : {
             fr : "Lancer une boule de feu",
             en : "Throwing a fireball"
+        },
+        "lancer-combat" : {
+            fr : "Lancer le combat",
+            en : "-"
         },
 
         /**
@@ -145,10 +157,6 @@ define([], function(){
             fr : "Refuser",
             en : "Refuse"
         },
-        "non-merci" : {
-            fr : "Non Merci",
-            en : "No Thanks"
-        },
         "aider" : {
             fr : "Aider",
             en : "Help Them"
@@ -160,6 +168,38 @@ define([], function(){
         "tousser" : {
             fr : "Toussoter",
             en : "Give a discreet cough"
+        },
+
+        /**
+        * Dialogue
+        **/
+        "lamort" : {
+            fr : "La mort&nbsp!",
+            en : "Death&nbsp!"
+        },
+        "quietesvous" : {
+            fr : "Qui êtes vous&nbsp?",
+            en : "Who are you&nbsp?"
+        },
+        "evidemment" : {
+            fr : "Evidemment&nbsp!",
+            en : "Obviously&nbsp!"
+        },
+        "non-merci" : {
+            fr : "Non Merci",
+            en : "No Thanks"
+        },
+        "unami" : {
+            fr : "Un ami",
+            en : "A friend"
+        },
+        "jairien" : {
+            fr : "Je n'ai rien",
+            en : "I have nothing"
+        },
+        "stop" : {
+            fr : "Stop&nbsp;!",
+            en : "Stop!"
         },
 
         /**
@@ -185,9 +225,17 @@ define([], function(){
         /**
         * Direction
         **/
+        "left" : {
+            fr : "Gauche",
+            en : "Left"
+        },
         "go-left" : {
             fr : "Aller à gauche",
             en : "Go to the left"
+        },
+        "right" : {
+            fr : "Droite",
+            en : "Right"
         },
         "go-right" : {
             fr : "Aller à droite",

@@ -46,10 +46,10 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
 			var vieMin = this.template.vie[0] * this.suffixe.vie * ((this.level+2)/2);
 			var vieMax = this.template.vie[1] * this.suffixe.vie * ((this.level+2)/2);
 			// DEBUG
-			console.log("level", this.level, "vieBase", this.template.vie, "suffixe", this.suffixe.vie, "vieCalc", {
-			    "vieMin" : vieMin,
-			    "vieMax" : vieMax
-			});
+//			console.log("level", this.level, "vieBase", this.template.vie, "suffixe", this.suffixe.vie, "vieCalc", {
+//			    "vieMin" : vieMin,
+//			    "vieMax" : vieMax
+//			});
 			var vie = Utils.rand(vieMin, vieMax);
 			if (vie < 1) vie = 1;
 

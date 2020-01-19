@@ -28,7 +28,7 @@ define([], function(){
         },
 
         "bossParle-texte-1" : {
-            fr : "&laquo; Je suis venu pour les enfants ! O&ugrave; sont-ils ? &raquo;",
+            fr : "&laquo; Je suis venu pour les enfants&nbsp;! O&ugrave; sont-ils&nbsp;? &raquo;",
             en : "&laquo; I came for the children! Where are they? &raquo;"
         },
         "bossParle-texte-2" : {
@@ -62,8 +62,8 @@ define([], function(){
             en : "He looks at you, but his eyes send back the void."
         },
         "bossAvance2-texte-3" : {
-            fr : "&laquo; Vous avez certainement vu mes cr&eacute;ations ?",
-            en : "&laquo; You've probably seen my creations ?"
+            fr : "&laquo; Vous avez certainement vu mes cr&eacute;ations&nbsp;?",
+            en : "&laquo; You've probably seen my creations&nbsp;?"
         },
         "bossAvance2-texte-4" : {
             fr : "Si ce n&rsquo;est pas le cas, laissez moi vous les pr&eacute;senter&hellip; &raquo;",
@@ -74,16 +74,16 @@ define([], function(){
             en : "He sneers softly, as two <span key='experience'>monsters</span> emerge from the well."
         },
         "bossAvance2-texte-6" : {
-            fr : "Ils ressemblent &agrave; des enfants, mais n&rsquo;en ont plus que l&rsquo;apparence&hellip;",
+            fr : "Ils ressemblent à des enfants, mais n&rsquo;en ont plus que l&rsquo;apparence&hellip;",
             en : "They look like children, but they only have theirs appareance&hellip;"
         },
 
         "boss2-texte-1" : {
-            fr : "Vous tuez &agrave; contrec&oelig;ur ces abominations&hellip;",
+            fr : "Vous tuez à contrec&oelig;ur ces abominations&hellip;",
             en : "You grudgingly kill these abominations&hellip;"
         },
         "boss2-texte-2" : {
-            fr : "&laquo; Nonnnn !! Qu&rsquo;avez-vous fait &agrave; mes perles ! Vous allez le regretter ! &raquo;",
+            fr : "&laquo; Nonnnn&nbsp;!! Qu&rsquo;avez-vous fait à mes perles&nbsp;! Vous allez le regretter&nbsp;! &raquo;",
             en : "&laquo; Nooooo!! What have you done to my pearls! You'll regret it! &raquo;"
         },
         "boss2-texte-3" : {
@@ -96,7 +96,7 @@ define([], function(){
         },
 
         "boss3-texte-1" : {
-            fr : "Le vieux avait de la ressource !",
+            fr : "Le vieux avait de la ressource&nbsp;!",
             en : "The old man had resources!"
         },
         "boss3-texte-2" : {
@@ -108,7 +108,7 @@ define([], function(){
             en : "Children will at least be free from this monster&hellip;"
         },
         "boss3-texte-4" : {
-            fr : "Alors que vous vous appr&ecirc;tez &agrave; ouvrir la porte pour sortir,",
+            fr : "Alors que vous vous appr&ecirc;tez à ouvrir la porte pour sortir,",
             en : "As you're about to open the door to get out,"
         },
         "boss3-texte-5" : {
@@ -121,7 +121,7 @@ define([], function(){
             en : "A cavernous voice resounds in the room:"
         },
         "boss4-texte-2" : {
-            fr : "&laquo; Hahaha ! Tu pensais vraiment me battre ainsi ?! &raquo;",
+            fr : "&laquo; Hahaha&nbsp;! Tu pensais vraiment me battre ainsi&nbsp;?! &raquo;",
             en : "&laquo; Hahaha! Did you really think you'd beat me like that?! &raquo;"
         },
         "boss4-texte-3" : {
@@ -129,7 +129,7 @@ define([], function(){
             en : "A slab of the room flies towards you and crashes on the wall."
         },
         "boss4-texte-4" : {
-            fr : "&laquo; Tu n&rsquo;as fait que me lib&eacute;rer, pauvre mortel ! &raquo;",
+            fr : "&laquo; Tu n&rsquo;as fait que me lib&eacute;rer, pauvre mortel&nbsp;! &raquo;",
             en : "&laquo; All you did was set me free, you mortal bastard! &raquo;"
         },
         "boss4-texte-5" : {
@@ -138,7 +138,7 @@ define([], function(){
         },
 
         "boss5-texte-1" : {
-            fr : "&laquo; Les enfants sont &agrave; moi ! Ils sont si faciles &agrave; manipuler, &agrave; torturer&hellip; &raquo;",
+            fr : "&laquo; Les enfants sont à moi&nbsp;! Ils sont si faciles à manipuler, à torturer&hellip; &raquo;",
             en : "&laquo; The children are mine! They are so easy to manipulate, to torture&hellip; &raquo;"
         },
         "boss5-texte-2" : {
@@ -146,7 +146,7 @@ define([], function(){
             en : "The vortex grows and violently comes out of the well to crash on the old man's corpse."
         },
         "boss5-texte-3" : {
-            fr : "&laquo; Ils sont mon arm&eacute;e ! Tu n&rsquo;es pas en mesure de nous arr&ecirc;ter ! &raquo;",
+            fr : "&laquo; Ils sont mon arm&eacute;e&nbsp;! Tu n&rsquo;es pas en mesure de nous arr&ecirc;ter&nbsp;! &raquo;",
             en : "&laquo; They're my army! You can't stop us! &raquo;"
         },
         "boss5-texte-4" : {
@@ -154,16 +154,16 @@ define([], function(){
             en : "The old man's body lifts up and flies in the air like a puppet."
         },
         "boss5-texte-5" : {
-            fr : "&laquo; Maintenant, observe ta fin ! &raquo;",
+            fr : "&laquo; Maintenant, observe ta fin&nbsp;! &raquo;",
             en : "&laquo; Now, watch your end! &raquo;"
         },
         "boss5-texte-6" : {
-            fr : "Le <span key='liche'>vieux</span> se redresse d&rsquo;un coup et se jette sur vous avec agilit&eacute; !",
+            fr : "Le <span key='liche'>vieux</span> se redresse d&rsquo;un coup et se jette sur vous avec agilit&eacute;&nbsp;!",
             en : "The <span key='liche'>old man</span> straightens up suddenly and throws himself on you with agility!"
         },
 
         "boss6-texte-1" : {
-            fr : "Vous exterminez ce d&eacute;mon sans remords !",
+            fr : "Vous exterminez ce d&eacute;mon sans remords&nbsp;!",
             en : "You exterminate this evil without remorse!"
         },
         "boss6-texte-2" : {

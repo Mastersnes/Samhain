@@ -31,12 +31,13 @@ define(["jquery",
         /**
         * Lance un nouveau combat
         **/
-        this.fight = function(adversaires, onWin, onFail) {
+        this.fight = function(adversaires, onWin, onFail, textes) {
             this.fightLaunch = true;
             var that = this;
             $(".histoire").fadeOut();
             $(".boutique").fadeOut();
 
+            this.textesBuffer = textes;
             this.onWin = onWin;
             this.onFail = onFail;
             if (!onFail) this.onFail = function() {
@@ -52,6 +53,7 @@ define(["jquery",
             }
 
             this.render();
+
             this.el.fadeIn();
             this.pioche();
         };
@@ -66,6 +68,24 @@ define(["jquery",
             this.el.html(template(templateData));
 
             this.makeEvents();
+
+            this.renderText();
+        };
+
+        this.renderText = function() {
+            var textContainer = this.el.find("textContainer");
+            if (!this.textesBuffer || this.textesBuffer.length == 0) {
+                textContainer.hide();
+                return;
+            }
+            textContainer.find("textes").empty();
+            var currentTextes = this.textesBuffer[0];
+            for (var i in currentTextes) {
+                var texte = currentTextes[i];
+                var textDom = $("<texte></texte>");
+                textDom.html(this.Textes.get(texte));
+                textContainer.find("textes").append(textDom);
+            }
         };
 
         /**
@@ -285,6 +305,11 @@ define(["jquery",
             this.el.contextmenu(function() {
                 that.closePending();
                 return false;
+            });
+
+            this.el.find("textContainer").click(function() {
+                that.textesBuffer.splice(0, 1);
+                that.renderText();
             });
         };
 

@@ -72,22 +72,21 @@ function($, _, Utils, Items) {
             this.state = "used";
 
             var player = this.parent.player;
-            player.etatsManager.infligeEtats(function() {
-                switch (that.data.type) {
-                    case "arme" :
-                        player.attaque(cibles, true, that.data);
-                        break;
-                    case "magie" :
-                        player.spell(that.data.name, cibles, that.data);
-                        break;
-                    case "conso" :
-                        player.use(that.data.name, cibles);
-                        break;
-                    default :
-                        console.log("Erreur - l'action est inconnue", that.data, cibles);
-                        break;
-                }
-            });
+            switch (that.data.type) {
+                case "arme" :
+                    player.attaque(cibles, true, that.data);
+                    break;
+                case "magie" :
+                    player.spell(that.data.name, cibles, that.data);
+                    break;
+                case "conso" :
+                    player.use(that.data.name, cibles);
+                    break;
+                default :
+                    console.log("Erreur - l'action est inconnue", that.data, cibles);
+                    break;
+            }
+            player.etatsManager.infligeEtats();
         };
 
 		this.init(parent, name);

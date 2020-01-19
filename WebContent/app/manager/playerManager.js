@@ -363,8 +363,9 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 
                 var defenseMin = baseDefense + bouclier.defense[0];
                 var defenseMax = baseDefense + bouclier.defense[1];
+                var defense = Utils.rand(defenseMin, defenseMax, true);
 
-                degats -= Utils.rand(defenseMin, defenseMax, true);
+                degats -= defense;
 		    }
 
 		    if (degats < 0) degats = 0;
@@ -422,7 +423,6 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 		};
 		this.levelUp = function() {
 		    this.data.attaque++;
-		    this.data.defense++;
 		    this.data.life.max += 25;
 		    if (this.data.unlockMana) this.data.mana.max++;
 

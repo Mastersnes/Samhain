@@ -39,3 +39,16 @@ storyContainer texte span {
 storyContainer texte span:hover {
     color: #BBBBFF;
 }
+
+/**
+* Specificité de taille de certaines actions d'histoire
+**/
+.actionsContainer action[type="quietesvous"] name {
+    font-size: 2.9vh !important;
+}
+.actionsContainer action[type="evidemment"] name {
+    font-size: 3.3vh !important;
+}
+.actionsContainer action[type="alattaque"] name {
+    font-size: 3.4vh !important;
+}

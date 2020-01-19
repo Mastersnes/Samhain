@@ -59,6 +59,9 @@ actionsContainer action name {
 .actionsContainer action[type="bouclierFer"] name {
     left: 15% !important;
 }
+.actionsContainer action[type="antidote"] name {
+    left: 10% !important;
+}
 
 actionsContainer action.gauche:hover {
     transform: rotate(-16deg);
@@ -111,6 +114,9 @@ actionsContainer action[type="potionSante"] {
 actionsContainer action[type="potionMana"] {
     background-image: url("../img/game/actions/potionMana.png");
 }
+actionsContainer action[type="antidote"] {
+    background-image: url("../img/game/actions/antidote.png");
+}
 actionsContainer action[type="elixir"] {
     background-image: url("../img/game/actions/elixir.png");
 }
@@ -130,6 +136,9 @@ actionsContainer action[type="bouleFeu"] {
 }
 actionsContainer action[type="soin"] {
     background-image: url("../img/game/actions/soin.png");
+}
+actionsContainer action[type="guerison"] {
+    background-image: url("../img/game/actions/guerison.png");
 }
 
 /**

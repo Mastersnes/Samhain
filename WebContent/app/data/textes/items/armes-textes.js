@@ -54,7 +54,7 @@ define([], function(){
                 en : "Sword Strike"
             },
             "epee-texte" : {
-                fr : "Une grosse épée à une main. Elle est aussi lourde que tranchante !",
+                fr : "Une grosse épée à une main. Elle est aussi lourde que tranchante&nbsp;!",
                 en : "A big sword with one hand. It's as heavy as it is sharp!"
             },
             "crocRoi" : {
@@ -66,7 +66,7 @@ define([], function(){
                 en : "Fang Strike"
             },
             "crocRoi-texte" : {
-                fr : "Le croc de votre ancien ami... Il dégage une odeur putride... Parfait pour une petite balade !",
+                fr : "Le croc de votre ancien ami... Il dégage une odeur putride... Parfait pour une petite balade&nbsp;!",
                 en : "Your old friend's fang... It emits a putrid smell... Perfect for a short walk!"
             }
 	};

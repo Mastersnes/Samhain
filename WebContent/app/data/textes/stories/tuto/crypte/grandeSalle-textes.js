@@ -6,7 +6,7 @@ define([], function(){
             en : "You enter a very large crypt."
         },
         "necroGSFight-texte-2" : {
-            fr : "&Agrave; votre arriv&eacute;e, le gardien des lieux, une <span key='grosseGoule'>grosse goule</span> se dirige vers vous.",
+            fr : "À votre arriv&eacute;e, le gardien des lieux, une <span key='grosseGoule'>grosse goule</span> se dirige vers vous.",
             en : "On your arrival, the caretaker of the place, a <span key='grosseGoule'>big ghoul</span> is heading towards you."
         },
         "necroGSFight-texte-3" : {
@@ -33,7 +33,7 @@ define([], function(){
             en : "You stand up painfully after this difficult fight and you are heading towards your friend."
         },
         "necroGSRoiFight2-texte-2" : {
-            fr : "Le roi, &agrave; l&rsquo;agonie, vous exprime son dernier souhait :",
+            fr : "Le roi, à l&rsquo;agonie, vous exprime son dernier souhait :",
             en : "The king, in agony, expresses his last wish to you:"
         },
         "necroGSRoiFight2-texte-3" : {
@@ -41,11 +41,11 @@ define([], function(){
             en : "&laquo; Thank you, noble adventurer. I'm dying&hellip; But you can still save your species."
         },
         "necroGSRoiFight2-texte-4" : {
-            fr : "Vengez-nous, combattez pour l&rsquo;araign&eacute;e ! &raquo;",
-            en : "Revenge us, fight for the spider ! &raquo;"
+            fr : "Vengez-nous, combattez pour l&rsquo;araign&eacute;e&nbsp;! &raquo;",
+            en : "Revenge us, fight for the spider&nbsp;! &raquo;"
         },
         "necroGSRoiFight2-texte-5" : {
-            fr : "Avant de mourir, le roi s&rsquo;arrache un <span key='crocRoi'>croc</span> et le jette &agrave; vos pieds.",
+            fr : "Avant de mourir, le roi s&rsquo;arrache un <span key='crocRoi'>croc</span> et le jette à vos pieds.",
             en : "Before he dies, the king tears off a <span key='crocRoi'>fang</span> and throws it at your feet."
         },
 
@@ -63,7 +63,7 @@ define([], function(){
             en : "You take the fang as a souvenir of your friend."
         },
         "necroGSFight3Oui-texte-2" : {
-            fr : "Elle fera certainement une alli&eacute;e pr&eacute;cieuse !",
+            fr : "Elle fera certainement une alli&eacute;e pr&eacute;cieuse&nbsp;!",
             en : "It will certainly make a valuable ally!"
         },
 
@@ -72,7 +72,7 @@ define([], function(){
             en : "You leave the fang in front of your friend."
         },
         "necroGSFight3Non-texte-2" : {
-            fr : "Esp&eacute;rant qu&rsquo;elle l&rsquo;accompagne dans l&rsquo;au-del&agrave;.",
+            fr : "Esp&eacute;rant qu&rsquo;elle l&rsquo;accompagne dans l&rsquo;au-delà.",
             en : "Hoping that she will accompany him to the afterlife."
         },
 
@@ -85,7 +85,7 @@ define([], function(){
             en : "Some coffins are scattered all over the place."
         },
         "necroGS-texte-3" : {
-            fr : "Vous remarquez trois portes : &agrave; gauche, en face et &agrave; droite&hellip;",
+            fr : "Vous remarquez trois portes : à gauche, en face et à droite&hellip;",
             en : "You notice three doors: on the left, in front of you and on the right&hellip;"
         },
 
@@ -108,7 +108,7 @@ define([], function(){
         },
 
         "necroGSFouilleCercueil2-texte-1" : {
-            fr : "Vous saisissez un authentique <span key='elixir'>&eacute;lixir</span> !",
+            fr : "Vous saisissez un authentique <span key='elixir'>&eacute;lixir</span>&nbsp;!",
             en : "You grasp an authentic <span key='elixir'>elixir</span>!"
         },
         "necroGSFouilleCercueil2-texte-2" : {
@@ -133,12 +133,12 @@ define([], function(){
             en : "You easily kill off your opponent."
         },
         "necroGSFouilleCercueil3-texte-2" : {
-            fr : "Il est temps de continuer votre aventure !",
+            fr : "Il est temps de continuer votre aventure&nbsp;!",
             en : "It's time to continue your adventure!"
         },
 
         "necroGSFouilleSalle-texte-1" : {
-            fr : "Il s&rsquo;agit d&rsquo;une grande salle ressemblant &agrave; s&rsquo;y m&eacute;prendre &agrave; une crypte.",
+            fr : "Il s&rsquo;agit d&rsquo;une grande salle ressemblant à s&rsquo;y m&eacute;prendre à une crypte.",
             en : "It is a large room that look like a crypt."
         },
         "necroGSFouilleSalle-texte-2" : {
@@ -151,11 +151,11 @@ define([], function(){
         },
 
         "voir-torche-gauche" : {
-            fr : "Voir la torche &agrave; gauche",
+            fr : "Voir la torche à gauche",
             en : "See the torch on the left"
         },
         "voir-torche-droite" : {
-            fr : "Voir la torche &agrave; droite",
+            fr : "Voir la torche à droite",
             en : "See the torch on the right"
         },
 
@@ -168,7 +168,7 @@ define([], function(){
             en : "This one is off."
         },
         "necroGSTorcheG-texte-3" : {
-            fr : "Vous ne trouvez pas qu&rsquo;il fait sombre ? Pourquoi ne pas l&rsquo;allumer ?",
+            fr : "Vous ne trouvez pas qu&rsquo;il fait sombre&nbsp;? Pourquoi ne pas l&rsquo;allumer&nbsp;?",
             en : "Don't you think it's dark? Why don't you light it?"
         },
 
@@ -182,7 +182,7 @@ define([], function(){
             en : "You are approaching the torch on the right wall."
         },
         "necroGSTorcheD-texte-2" : {
-            fr : "Vous ne trouvez pas qu&rsquo;il fait froid ? Pourquoi ne pas se rechauffer un peu ?",
+            fr : "Vous ne trouvez pas qu&rsquo;il fait froid&nbsp;? Pourquoi ne pas se rechauffer un peu&nbsp;?",
             en : "Don't you think it's cold? Why don't we just warm up a little?"
         },
 
@@ -200,7 +200,7 @@ define([], function(){
         },
 
         "necroGSTorcheKO-texte-1" : {
-            fr : "Vous lancez votre plus belle <span key='bouleFeu'>boule de feu</span> !",
+            fr : "Vous lancez votre plus belle <span key='bouleFeu'>boule de feu</span>&nbsp;!",
             en : "You throw your most beautiful <span key='bouleFeu'>fireball</span>!"
         },
         "necroGSTorcheKO-texte-2" : {
@@ -217,11 +217,11 @@ define([], function(){
         },
 
         "necroGSTorcheAllume-texte-1" : {
-            fr : "La torche brille de mille feux !",
+            fr : "La torche brille de mille feux&nbsp;!",
             en : "The torch shines brightly!"
         },
         "necroGSTorcheAllume-texte-2" : {
-            fr : "Ne la regardez pas trop longtemps, &ccedil;a pourrait br&ucirc;ler !",
+            fr : "Ne la regardez pas trop longtemps, &ccedil;a pourrait br&ucirc;ler&nbsp;!",
             en : "Don't look at her too long, it could burn!"
         },
 
@@ -235,7 +235,7 @@ define([], function(){
         },
 
         "necroGSS2-texte-1" : {
-            fr : "Vous faites face &agrave; une petite porte ferm&eacute;e &agrave; clef.",
+            fr : "Vous faites face à une petite porte ferm&eacute;e à clef.",
             en : "You're facing a small locked door."
         },
         "necroGSS2-texte-2" : {
@@ -243,7 +243,7 @@ define([], function(){
             en : "It seems very resistant&hellip;"
         },
         "necroGSS2-texte-3" : {
-            fr : "En tendant l&rsquo;oreille, vous entendez des cris &agrave; l&rsquo;int&eacute;rieur,",
+            fr : "En tendant l&rsquo;oreille, vous entendez des cris à l&rsquo;int&eacute;rieur,",
             en : "When you hold your ear out, you hear screams inside,"
         },
         "necroGSS2-texte-4" : {

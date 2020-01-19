@@ -5,7 +5,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 		this.soundsTicker = [];
 		
 		this.loadAll = function() {
-			var list = [];
+			var list = ["music/story1.mp3"];
 			for (var index in list) {
 				var key = list[index];
 				this.load(key);
@@ -143,7 +143,5 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                     break;
             }
         };
-		
-		this.loadAll();
 	};
 });

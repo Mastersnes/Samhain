@@ -80,3 +80,10 @@
 .boutique .itemsContainer action#fromage name {
     left: 15%;
 }
+.boutique .itemsContainer action#antidote name {
+    left: 11%;
+    font-size: 2.6vh;
+}
+.boutique .itemsContainer action#guerison name {
+    left: 15%;
+}

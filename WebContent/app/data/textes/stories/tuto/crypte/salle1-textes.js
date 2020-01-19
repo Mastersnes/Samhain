@@ -29,7 +29,7 @@ define([], function(){
         },
 
         "necroS1Fight2-texte-1" : {
-            fr : "Vous abattez ces larves !",
+            fr : "Vous abattez ces larves&nbsp;!",
             en : "You're killing those larvae!"
         },
         "necroS1Fight2-texte-2" : {
@@ -37,7 +37,7 @@ define([], function(){
             en : "They almost blew your hair&hellip;"
         },
         "necroS1Fight2-texte-3" : {
-            fr : "Il est temps de continuer !",
+            fr : "Il est temps de continuer&nbsp;!",
             en : "It's time to continue!"
         },
 

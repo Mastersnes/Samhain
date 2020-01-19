@@ -19,7 +19,7 @@ define([], function(){
         },
 
         "maraisRoi-texte-1" : {
-            fr : "La porte est grande ouverte et &agrave; moiti&eacute; explos&eacute;e.",
+            fr : "La porte est grande ouverte et à moiti&eacute; explos&eacute;e.",
             en : "The door is wide open and half blown open."
         },
 
@@ -28,7 +28,7 @@ define([], function(){
             en : "You bypass the large building when,"
         },
         "necroTrou-texte-2" : {
-            fr : "&agrave; un tournant, vous tombez sur un mur en ruine.",
+            fr : "à un tournant, vous tombez sur un mur en ruine.",
             en : "at a turning point, you fall on a ruined wall."
         },
         "necroTrou-texte-3" : {
@@ -37,11 +37,11 @@ define([], function(){
         },
 
         "necroPorte-texte-1" : {
-            fr : "La porte est immense et semble ferm&eacute; &agrave; clef.",
+            fr : "La porte est immense et semble ferm&eacute; à clef.",
             en : "The door is huge and seems to be locked."
         },
         "necroPorte-texte-2" : {
-            fr : "Vous avez beau forcer, vous n&rsquo;arrivez pas &agrave; la d&eacute;placer&hellip;",
+            fr : "Vous avez beau forcer, vous n&rsquo;arrivez pas à la d&eacute;placer&hellip;",
             en : "No matter how hard you force, you can't move it&hellip;"
         },
 	};

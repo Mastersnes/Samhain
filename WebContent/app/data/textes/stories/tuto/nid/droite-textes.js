@@ -6,7 +6,7 @@ define([], function(){
             en : "You arrive in a huge room."
         },
         "nidDroite-texte-2" : {
-            fr : "De nombreuses toiles recouvrent les murs et donnent &agrave; l&rsquo;ensemble une ambiance sinistre.",
+            fr : "De nombreuses toiles recouvrent les murs et donnent à l&rsquo;ensemble une ambiance sinistre.",
             en : "Numerous cobwebs cover the walls and give a sinister atmosphere."
         },
         "nidDroite-texte-3" : {
@@ -26,10 +26,6 @@ define([], function(){
             fr : "Elle semble vouloir quelque chose&hellip;",
             en : "She seems to want something&hellip;"
         },
-        "stop" : {
-            fr : "&laquo; Stop ! &raquo;",
-            en : "&laquo; Stop ! &raquo;"
-        },
 
         "roiAraigneePotion2-texte-1" : {
             fr : "La cr&eacute;ature s&rsquo;arr&ecirc;te net et s&rsquo;exclame d&rsquo;une voix caverneuse :",
@@ -40,41 +36,24 @@ define([], function(){
             en : "&laquo; Who are you, young adventurer, to dare to enter"
         },
         "roiAraigneePotion2-texte-3" : {
-            fr : "dans l'antre du <span key='roiAraignee'>roi des araignees</span> ?! &raquo;",
+            fr : "dans l'antre du <span key='roiAraignee'>roi des araignees</span>&nbsp;?! &raquo;",
             en : "the <span key='roiAraignee'>spider king's</span> den?! &raquo;"
         },
 
-        "death" : {
-            fr : "&laquo; La mort ! &raquo;",
-            en : "&laquo; Death ! &raquo;"
-        },
-        "ami" : {
-            fr : "&laquo; Un ami &raquo;",
-            en : "&laquo; A friend &raquo;"
-        },
-        "who-are-you" : {
-            fr : "&laquo; Qui &ecirc;tes-vous ? &raquo;",
-            en : "&laquo; Who are you? &raquo;"
-        },
-        "jai-rien" : {
-            fr : "&laquo; Je n&rsquo;ai rien &raquo;",
-            en : "&laquo; I have nothing &raquo;"
-        },
-
         "roiAraigneePotionQui-texte-1" : {
-            fr : "&laquo; Je suis Aros ! Le roi arachnide !",
+            fr : "&laquo; Je suis Aros&nbsp;! Le roi arachnide&nbsp;!",
             en : "&laquo; I'm Aros! The arachnid king!"
         },
         "roiAraigneePotionQui-texte-2" : {
-            fr : "Je r&eacute;gnais sur ce royaume jusqu&rsquo;&agrave; aujourd&rsquo;hui, mais&hellip;",
+            fr : "Je r&eacute;gnais sur ce royaume jusqu&rsquo;à aujourd&rsquo;hui, mais&hellip;",
             en : "I reigned over this kingdom until today, but&hellip;"
         },
         "roiAraigneePotionQui-texte-3" : {
-            fr : "D&rsquo;horribles cr&eacute;atures ont assassin&eacute; mes enfants !",
+            fr : "D&rsquo;horribles cr&eacute;atures ont assassin&eacute; mes enfants&nbsp;!",
             en : "Horrible creatures murdered my children!"
         },
         "roiAraigneePotionQui-texte-4" : {
-            fr : "M&rsquo;aiderez-vous &agrave; me soigner ? &raquo;",
+            fr : "M&rsquo;aiderez-vous à me soigner&nbsp;? &raquo;",
             en : "Will you help me treat myself? &raquo;"
         },
 
@@ -88,20 +67,20 @@ define([], function(){
         },
 
         "roiAraigneePotionAmi-texte-1" : {
-            fr : "&laquo; Vraiment ? Si ce que vous dites est vrai,",
+            fr : "&laquo; Vraiment&nbsp;? Si ce que vous dites est vrai,",
             en : "&laquo; Really? If what you're saying is true,"
         },
         "roiAraigneePotionAmi-texte-2" : {
-            fr : "pourriez-vous aider un bon ami en le soignant ? &raquo;",
+            fr : "pourriez-vous aider un bon ami en le soignant&nbsp;? &raquo;",
             en : "could you help a good friend by taking care of him? &raquo;"
         },
 
         "roiAraigneeGuerit-texte-1" : {
-            fr : "&laquo; Je vous remercie mon ami !",
+            fr : "&laquo; Je vous remercie mon ami&nbsp;!",
             en : "&laquo; Thank you, my friend!"
         },
         "roiAraigneeGuerit-texte-2" : {
-            fr : "Je me sens beaucoup mieux !",
+            fr : "Je me sens beaucoup mieux&nbsp;!",
             en : "I feel so much better!"
         },
         "roiAraigneeGuerit-texte-3" : {
@@ -114,8 +93,8 @@ define([], function(){
         },
 
         "qui-fait-ca" : {
-            fr : "&laquo; Qui a fait &ccedil;a ? &raquo;",
-            en : "&laquo; Who has done it ? &raquo;"
+            fr : "&laquo; Qui a fait &ccedil;a&nbsp;? &raquo;",
+            en : "&laquo; Who has done it&nbsp;? &raquo;"
         },
 
         "roiAraigneeGuerit2-texte-1" : {
@@ -132,17 +111,17 @@ define([], function(){
         },
 
         "comment" : {
-            fr : "&laquo; Comment ?! &raquo;",
-            en : "&laquo; How ?! &raquo;"
+            fr : "&laquo; Comment&nbsp;?! &raquo;",
+            en : "&laquo; How&nbsp;?! &raquo;"
         },
 
         "roiAraigneeGuerit3-texte-1" : {
-            fr : "&laquo; Ils ont tu&eacute; mes enfants ! Ces monstres !",
+            fr : "&laquo; Ils ont tu&eacute; mes enfants&nbsp;! Ces monstres&nbsp;!",
             en : "&laquo; They killed my children! Those monsters!"
         },
         "roiAraigneeGuerit3-texte-2" : {
-            fr : "Je dois les venger ! &raquo;",
-            en : "I must avenge them ! &raquo;"
+            fr : "Je dois les venger&nbsp;! &raquo;",
+            en : "I must avenge them&nbsp;! &raquo;"
         },
         "roiAraigneeGuerit3-texte-3" : {
             fr : "Le roi se jette au-dessus de vous et se dirige vers la sortie.",
@@ -150,8 +129,8 @@ define([], function(){
         },
 
         "ou-aller-vous" : {
-            fr : "&laquo; O&ugrave; allez-vous ? &raquo;",
-            en : "&laquo; Where are you going ? &raquo;"
+            fr : "&laquo; O&ugrave; allez-vous&nbsp;? &raquo;",
+            en : "&laquo; Where are you going&nbsp;? &raquo;"
         },
         "laisser-partir" : {
             fr : "Le laisser partir",
@@ -159,16 +138,16 @@ define([], function(){
         },
 
         "roiAraigneeGuerit4-texte-1" : {
-            fr : "&laquo; Ils sont partis attaquer votre village !",
+            fr : "&laquo; Ils sont partis attaquer votre village&nbsp;!",
             en : "&laquo; They've gone to attack your village!"
         },
         "roiAraigneeGuerit4-texte-2" : {
-            fr : "Les laisserez-vous donc faire ?!",
+            fr : "Les laisserez-vous donc faire&nbsp;?!",
             en : "Will you let them do it?!"
         },
         "roiAraigneeGuerit4-texte-3" : {
-            fr : "Je dois venger les miens ! En route ! &raquo;",
-            en : "I must avenge mine! Let's go ! &raquo;"
+            fr : "Je dois venger les miens&nbsp;! En route&nbsp;! &raquo;",
+            en : "I must avenge mine! Let's go&nbsp;! &raquo;"
         },
         "roiAraigneeGuerit4-texte-4" : {
             fr : "Le roi s&rsquo;enfonce dans les t&eacute;n&egrave;bres de la grotte.",
@@ -203,16 +182,16 @@ define([], function(){
             en : "You are no better than those who killed my children&hellip;"
         },
         "roiAraigneeRefus-texte-3" : {
-            fr : "Pars ! Sors de ma demeure&hellip; Laisse-moi mourir en paix. &raquo;",
+            fr : "Pars&nbsp;! Sors de ma demeure&hellip; Laisse-moi mourir en paix. &raquo;",
             en : "Go away! Get out of my house&hellip; let me die in peace. &raquo;"
         },
 
         "roiAraigneeAgonie-texte-1" : {
-            fr : "&laquo; Pourquoi ?&hellip;",
-            en : "&laquo; Why ?&hellip;"
+            fr : "&laquo; Pourquoi&nbsp;?&hellip;",
+            en : "&laquo; Why?&hellip;"
         },
         "roiAraigneeAgonie-texte-2" : {
-            fr : "Je vous maudis, vous et votre race !",
+            fr : "Je vous maudis, vous et votre race&nbsp;!",
             en : "I curse you and your race!"
         },
         "roiAraigneeAgonie-texte-3" : {
@@ -233,8 +212,8 @@ define([], function(){
             en : "Nothing of interest in the room."
         },
         "roiAraigneeAgonieFouille-texte-2" : {
-            fr : "Mais, vous trouvez sur le roi une <span key='venin'>poche de venin</span> !",
-            en : "But you find on the king a <span key='venin'>pocket of venom</span> !"
+            fr : "Mais, vous trouvez sur le roi une <span key='venin'>poche de venin</span>&nbsp;!",
+            en : "But you find on the king a <span key='venin'>pocket of venom</span>&nbsp;!"
         },
         "roiAraigneeAgonieFouille-texte-3" : {
             fr : "Elle pourra vous &ecirc;tre utile en combat.",

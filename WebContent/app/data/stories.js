@@ -1,8 +1,9 @@
 'use strict';
 define(["app/utils/utils",
+        "app/data/stories/didacticiel",
         "app/data/stories/tuto",
         "app/data/stories/gameOver"],
-		function(Utils, Tuto, GameOver) {
+		function(Utils, Didacticiel, Tuto, GameOver) {
 			var data = {
                 /**
                  * Gagne
@@ -25,6 +26,7 @@ define(["app/utils/utils",
 				 */
 				get : function(key) {
 				    var result = data[key];
+				    if (!result) result = Didacticiel.get(key);
 				    if (!result) result = Tuto.get(key);
 				    if (!result) result = GameOver.get(key);
 

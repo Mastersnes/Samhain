@@ -24,7 +24,9 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate, Textes, Mediatheque,
 		    this.scene = new SceneManager(this);
 		    
             this.mediatheque = new Mediatheque();
-            this.mediatheque.load("music/menu.ogg");
+            this.mediatheque.load("music/menu.mp3");
+            this.mediatheque.loadAll();
+
             this.kongregateUtils = new Kongregate(Textes);
             this.saveManager = new SaveManager(this.kongregateUtils);
             this.Textes = Textes;
@@ -114,7 +116,7 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate, Textes, Mediatheque,
 			$(".page.bebel").click(function() {
 				that.mediatheque.stopAllMusic();
 				setTimeout(function() {
-					that.mediatheque.play("music/menu.ogg");
+					that.mediatheque.play("music/menu.mp3");
 					$(".page.bebel").fadeOut("slow", function() {
 						$(".page.bebel").remove();
 						$(".text#loading").remove();
