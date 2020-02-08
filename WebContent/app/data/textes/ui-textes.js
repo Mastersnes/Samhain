@@ -3,6 +3,7 @@ define([], function(){
 	var data = {
 	        /**
 	        * UI
+	        * Correction OK
 	        **/
 	        "inventaire" : {
                 fr : "Inventaire",
@@ -69,7 +70,7 @@ define([], function(){
                 en : "Gain of mana"
             },
             "multicible" : {
-                fr : "Multi-cible",
+                fr : "Multicible",
                 en : "Multi-target"
             },
             "attackGain" : {
@@ -89,7 +90,7 @@ define([], function(){
                 en : "Inflicts"
             },
             "octroie" : {
-                fr : "Octroie",
+                fr : "Octroi",
                 en : "Grants"
             }
 	};

@@ -3,6 +3,7 @@ define([], function(){
 	var data = {
 	        /**
 	        * Glossaire
+	        * Correction OK
 	        **/
 	        "lifeSteal-glossaire" : {
                 fr : "% des dégâts infligés.",
@@ -21,7 +22,7 @@ define([], function(){
                 en : "% of max life."
             },
 	        "manaGain-glossaire" : {
-                fr : "% de la mana max.",
+                fr : "% du mana max.",
                 en : "% of max mana."
             },
 	};

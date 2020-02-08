@@ -3,6 +3,7 @@ define([], function(){
 	var data = {
 	        /**
 	        * Menu
+	        * Correction OK
 	        **/
 	        "bienvenue" : {
                 fr : "Bienvenue",
@@ -33,8 +34,8 @@ define([], function(){
                 en : "Our other games on:"
             },
             "eraseSave" : {
-                fr : "<text>ATTENTION&nbsp;!</text><text>Ceci effacera votre partie enregistrée</text>",
-                en : "<text>WARNING!</text><text>this will erase your registered save</text>"
+                fr : "<text>ATTENTION&nbsp;!</text><text>Ceci effacera votre partie enregistrée.</text>",
+                en : "<text>WARNING!</text><text>this will erase your registered save.</text>"
             },
             "continue" : {
                 fr : "Continuer",
@@ -61,8 +62,8 @@ define([], function(){
                 en : "Language :"
             },
             "fullscreen" : {
-                fr : "Plein écran (appuyez sur echap pour revenir)",
-                en : "Fullscreen (press escape for return)"
+                fr : "Plein écran (appuyez sur echap pour quitter le plein écran)",
+                en : "Fullscreen (press escape to exit full screen)"
             },
             "credits" : {
                 fr : "Crédits",
@@ -89,8 +90,8 @@ define([], function(){
                 en : "Mute"
             },
             "copyright-licence" : {
-                fr : "Copyright © Les Jeux de Bebel, 2018. Tous droits réservés.",
-                en : "Copyright © Les Jeux de Bebel, 2018. All rights reserved."
+                fr : "Copyright © Les Jeux de Bebel, 2020. Tous droits réservés.",
+                en : "Copyright © Les Jeux de Bebel, 2020. All rights reserved."
             },
 
             "muteMusic" : {
@@ -110,12 +111,8 @@ define([], function(){
                 en : "Play sonor effects"
             },
             "selectAuto" : {
-                fr : "Selectionner automatiquement les meilleurs equipements",
-                en : "Select automaticaly the best equipments"
-            },
-            "deselectAuto" : {
-                fr : "Ne pas selectionner automatiquement les meilleurs equipements",
-                en : "Do not select automaticaly the best equipments"
+                fr : "Sélection automatique des meilleurs équipements",
+                en : "Best equipments are automaticaly selected"
             }
 	};
 	

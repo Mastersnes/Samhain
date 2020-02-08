@@ -17,6 +17,9 @@ monstersContainer monster.grosseGoule name {
     left: 11%;
     font-size: 3.4vh;
 }
+monstersContainer monster.necromancien name {
+    top: 27%;
+}
 
 /**
 * Monsters

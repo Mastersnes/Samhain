@@ -49,15 +49,6 @@ define([], function(){
             en : "Before he dies, the king tears off a <span key='crocRoi'>fang</span> and throws it at your feet."
         },
 
-        "prendre-croc" : {
-            fr : "Prendre le croc",
-            en : "Take the fang"
-        },
-        "laisser-croc" : {
-            fr : "Laisser le croc",
-            en : "Leave the fang"
-        },
-
         "necroGSFight3Oui-texte-1" : {
             fr : "Vous prenez l&rsquo;arme en souvenir de votre ami.",
             en : "You take the fang as a souvenir of your friend."
@@ -87,11 +78,6 @@ define([], function(){
         "necroGS-texte-3" : {
             fr : "Vous remarquez trois portes : à gauche, en face et à droite&hellip;",
             en : "You notice three doors: on the left, in front of you and on the right&hellip;"
-        },
-
-        "fouiller-cercueil" : {
-            fr : "Fouiller les cercueils",
-            en : "Searching coffins"
         },
 
         "necroGSFouilleCercueil-texte-1" : {
@@ -150,15 +136,6 @@ define([], function(){
             en : "Two torches are hung on the back wall&hellip;"
         },
 
-        "voir-torche-gauche" : {
-            fr : "Voir la torche à gauche",
-            en : "See the torch on the left"
-        },
-        "voir-torche-droite" : {
-            fr : "Voir la torche à droite",
-            en : "See the torch on the right"
-        },
-
         "necroGSTorcheG-texte-1" : {
             fr : "Vous vous approchez de la torche sur le mur de gauche.",
             en : "You approach the torch on the left wall."
@@ -170,11 +147,6 @@ define([], function(){
         "necroGSTorcheG-texte-3" : {
             fr : "Vous ne trouvez pas qu&rsquo;il fait sombre&nbsp;? Pourquoi ne pas l&rsquo;allumer&nbsp;?",
             en : "Don't you think it's dark? Why don't you light it?"
-        },
-
-        "utiliser-bougie" : {
-            fr : "Utiliser la bougie",
-            en : "Use the candle"
         },
 
         "necroGSTorcheD-texte-1" : {

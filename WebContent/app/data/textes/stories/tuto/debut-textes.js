@@ -40,15 +40,6 @@ define([], function(){
             en : "You're taking a break to come to your senses:"
         },
 
-        "examine-alentours" : {
-            fr : "Examiner les alentours",
-            en : "Look around"
-        },
-        "fouille-corps" : {
-            fr : "Fouiller les corps",
-            en : "Searching bodies"
-        },
-
         "reposFouilleFail-texte-1" : {
             fr : "Vous en fouillez une mais ne trouvez que des entrailles, Berk&nbsp;!",
             en : "You search one but only find guts, Yuck!"
@@ -78,15 +69,6 @@ define([], function(){
         "reposExamine-texte-3" : {
             fr : "On se lance&nbsp;?",
             en : "Shall we get started?"
-        },
-
-        "en-avant" : {
-            fr : "En avant&nbsp;!",
-            en : "Forward!"
-        },
-        "rentrer-ville" : {
-            fr : "Rentrer en ville",
-            en : "Getting back into town"
         }
 	};
 	

@@ -50,6 +50,10 @@ define(["jquery",
             var lang = this.Textes.local;
             this.el.find("flag").removeClass("selected");
             this.el.find("flag#"+lang).addClass("selected");
+
+            var selectAuto = this.saveManager.getOption("selectAuto");
+            if (selectAuto) this.el.find("arme case").addClass("coche");
+            else this.el.find("arme case").removeClass("coche");
         };
 
         this.makeEvents = function() {
@@ -70,6 +74,10 @@ define(["jquery",
             });
             this.el.find("son#music").click(function(e) {
                 that.mediatheque.mute("music");
+                that.refresh();
+            });
+            this.el.find("arme").click(function(e) {
+                that.saveManager.setOption("selectAuto", !that.saveManager.getOption("selectAuto"));
                 that.refresh();
             });
         };

@@ -8,13 +8,14 @@ define([
 	var data = {
 	    /**
 	    * Textes generiques
+	    * Correction OK
 	    **/
         "gagne-texte-1" : {
-            fr : "Félicitation, vous avez terminé le jeu&nbsp;!",
+            fr : "Félicitations, vous avez terminé le jeu&nbsp;!",
             en : "Congratulations, you have finished the game!"
         },
         "retry" : {
-            fr : "Vous pouvez aussi retenter votre chance en lancant une nouvelle partie.",
+            fr : "Vous pouvez aussi retenter votre chance en lançant une nouvelle partie.",
             en : "You can also try your luck again by starting a new game."
         }
 	};

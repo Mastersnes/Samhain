@@ -10,7 +10,7 @@ define([], function(){
                 eo : "Araneo"
             },
             "araignee-texte" : {
-                fr : "Cette horrible créature vit souvent en groupe. De petite taille, elles grouillent par milliers dans l'obscurité.",
+                fr : "Cette horrible créature vit souvent en groupe. De petites tailles, elles grouillent par milliers dans l'obscurité.",
                 en : "This horrible creature often lives in a group. Small in size, they swarm by the thousands in the darkness."
             },
             "bandit" : {
@@ -18,7 +18,7 @@ define([], function(){
                 en : "Bandit"
             },
             "bandit-texte" : {
-                fr : "Ils errent dans les vieilles tombes à la recherche de trésors ou de babioles. N'essayez jamais de voler leurs biens, ils sont plutôt grincheux.",
+                fr : "Ils errent dans les vieilles tombes, à la recherche de trésors ou de babioles. N'essayez jamais de voler leurs biens, ils sont plutôt grincheux.",
                 en : "They wander through old tombs in search of treasures or trinkets. Never try to steal their belongings, they're rather cranky."
             },
             "roiAraignee" : {
@@ -26,7 +26,7 @@ define([], function(){
                 en : "King of Spiders"
             },
             "roiAraignee-texte" : {
-                fr : "Il reigne sur le royaume des araignées. Il est blessé mais protégera toujours ses enfants. Restez sur vos gardes, Vous pourriez le regretter&nbsp;!",
+                fr : "Il règne sur le royaume des araignées. Il est blessé, mais protégera toujours ses enfants. Restez sur. vos gardes, vous pourriez le regretter&nbsp;!",
                 en : "He reigns over the kingdom of spiders. He's hurt, but he'll always protect his children. Stay on your toes, you might regret it&nbsp;!"
             },
             "goule" : {
@@ -58,7 +58,7 @@ define([], function(){
                 en : "Big Ghoul"
             },
             "grosseGoule-texte" : {
-                fr : "Un cadavre putréfié, relevé par un mage noir puissant. Sa force a été décuplé par de sombres sortilèges.",
+                fr : "Un cadavre putréfié, relevé par un mage noir puissant. Sa force a été décuplée par de sombres sortilèges.",
                 en : "A rotten corpse, raised by a powerful black magician. His strength has been multiplied tenfold by dark spells."
             },
             "squelette" : {
@@ -66,7 +66,7 @@ define([], function(){
                 en : "Skeleton"
             },
             "squelette-texte" : {
-                fr : "Un tas d'os qui marche. Aucune défense, mais une sacré épée entre les mains&nbsp;!",
+                fr : "Un tas d'os qui marche. Aucune défense, mais une sacrée épée entre les mains&nbsp;!",
                 en : "A bunch of bones walking. No defense, but a hell of a sword in his hands!"
             },
             "experience" : {
@@ -82,7 +82,7 @@ define([], function(){
                 en : "Necrom"
             },
             "necromancien-texte" : {
-                fr : "Un horrible sorcier usant de magie noir&nbsp;! Il ressemble à un vieillard et tiens à peine sur ses jambes...",
+                fr : "Un horrible sorcier usant de magie noire&nbsp;! Il ressemble à un vieillard et tient à peine sur ses jambes...",
                 en : "A horrible wizard using black magic! He looks like an old man and barely stands on his legs..."
             },
             "liche" : {
@@ -90,7 +90,7 @@ define([], function(){
                 en : "Lich"
             },
             "liche-texte" : {
-                fr : "Un spectre tout droit sortie de l'au-delà&nbsp;! Une aura néfaste l'entoure, laissant présager de sa puissance...",
+                fr : "Un spectre tout droit sorti de l'au-delà&nbsp;! Une aura néfaste l'entoure, laissant présager de sa puissance...",
                 en : "A spectrum straight out of the afterlife! A harmful aura surrounds it, letting us imagine its power..."
             }
 	};

@@ -40,11 +40,6 @@ define([], function(){
             en : "Are you gonna let him get away alive?!"
         },
 
-        "fuir-grotte" : {
-            fr : "Fuir dans la grotte",
-            en : "Running into the cave"
-        },
-
         "nid2-texte-1" : {
             fr : "En regardant bien, vous distinguez un <span key='bandit'>bandit</span> qui se cache dans la p&eacute;nombre.",
             en : "If you look closely, you can see a <span key='bandit'>bandit</span> hiding in the darkness."
@@ -74,11 +69,6 @@ define([], function(){
         "nid3Fouille-texte-2" : {
             fr : "Allez-vous vous régaler ou le garder sagement&nbsp;?",
             en : "Are you going to enjoy yourself or keep it wisely?"
-        },
-
-        "mange-continue" : {
-            fr : "Manger et continuer",
-            en : "Eat and continue"
         },
 
         "nid3TrouveDague-texte-1" : {

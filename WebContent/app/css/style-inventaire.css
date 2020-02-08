@@ -70,6 +70,9 @@
 .inventaire profil info.lifeSteal, .inventaire profil info.manaSteal {
     left: 14%;
 }
+.inventaire profil info.xp {
+    height: auto !important;
+}
 
 /**
 * Droite - Equipment

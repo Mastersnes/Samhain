@@ -18,11 +18,6 @@ define([], function(){
             en : "A door gives access to another part of the building."
         },
 
-        "lire-parchemin" : {
-            fr : "Lire les parchemins",
-            en : "Read Scrolls"
-        },
-
         "necroS3Fouille-texte-1" : {
             fr : "Il semblerait qu&rsquo;il s&rsquo;agisse de trait&eacute;s sur la magie.",
             en : "Looks like it's about drafts on magic."
@@ -36,8 +31,8 @@ define([], function(){
             en : "but you can understand some words."
         },
         "necroS3Fouille-texte-4" : {
-            fr : "Cela parle d&rsquo;une fusion entre les &eacute;l&eacute;ments&hellip;",
-            en : "It speaks of a fusion between elements&hellip;"
+            fr : "Cela parle d'une fusion entre les éléments qui permet de libérer une <span key='soin'>aura réparatrice</span>&hellip;",
+            en : "It speaks of a fusion between elements that allows the release of a <span key='soin'>restorative aura</span>&hellip;"
         },
         "necroS3Fouille-texte-5" : {
             fr : "Vous vous relevez et vous dirigez vers la porte.",

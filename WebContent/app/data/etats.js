@@ -4,8 +4,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
         "poison" : {
             "name" : "poison",
             "element" : "poison",
-            "duree" : [1, 3],
-            "degats" : [1, 3],
+            "duree" : [1, 2],
+            "degats" : [1, 2],
             "sound" : null,
             "anim" : null,
             "offensif" : true
@@ -13,8 +13,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
         "poison-2" : {
             "name" : "poison-2",
             "element" : "poison",
-            "duree" : [2, 6],
-            "degats" : [2, 6],
+            "duree" : [2, 3],
+            "degats" : [1, 4],
             "sound" : null,
             "anim" : null,
             "offensif" : true
@@ -23,8 +23,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
         "satiete" : {
             "name" : "satiete",
             "element" : "sante",
-            "duree" : [3, 5],
-            "vie" : [3, 5],
+            "duree" : [3, 6],
+            "vie" : [3, 6],
             "sound" : null,
             "anim" : null,
             "offensif" : false
@@ -32,8 +32,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
         "satiete-2" : {
             "name" : "satiete-2",
             "element" : "sante",
-            "duree" : [3, 5],
-            "vie" : [6, 10],
+            "duree" : [3, 6],
+            "vie" : [6, 12],
             "sound" : null,
             "anim" : null,
             "offensif" : false
@@ -43,7 +43,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "name" : "brulure",
             "element" : "feu",
             "duree" : [1, 2],
-            "degats" : [2, 4],
+            "degats" : [1, 4],
             "sound" : null,
             "anim" : null,
             "offensif" : true
@@ -51,7 +51,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
         "brulure-2" : {
             "name" : "brulure-2",
             "element" : "feu",
-            "duree" : [2, 4],
+            "duree" : [2, 3],
             "degats" : [4, 8],
             "sound" : null,
             "anim" : null,
@@ -70,7 +70,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
         "saignement-2" : {
             "name" : "saignement-2",
             "element" : "saignement",
-            "duree" : [2, 6],
+            "duree" : [1, 3],
             "degats" : [1, 10],
             "sound" : null,
             "anim" : null,

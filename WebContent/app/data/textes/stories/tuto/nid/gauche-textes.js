@@ -23,11 +23,6 @@ define([], function(){
             en : "you might be able to open it?"
         },
 
-        "forcer-coffre" : {
-            fr : "Forcer le coffre",
-            en : "Forcing the trunk"
-        },
-
         "coffreReussite1-texte-1" : {
             fr : "Le coffre coince, mais en for&ccedil;ant un peu&hellip;",
             en : "The trunk gets stuck, but by forcing a little&hellip;"
@@ -99,11 +94,6 @@ define([], function(){
         "coffreEchecSimple-texte-1" : {
             fr : "Impossible de l&rsquo;ouvrir&hellip;",
             en : "Impossible to open it&hellip;"
-        },
-
-        "tant-pis" : {
-            fr : "Tant pis&hellip;",
-            en : "Too bad&hellip;"
         },
 
         "coffreRetourSimple-texte-1" : {

@@ -3,6 +3,7 @@ define([], function(){
 	var data = {
 	        /**
 	        * Inventaire
+	        * Correction OK
 	        **/
 	        "aventurier" : {
                 fr : "Aventurier",
@@ -13,8 +14,8 @@ define([], function(){
                 en : "level"
             },
             "pointDexperienceAvantNext" : {
-                 fr : "xp avant le prochain niveau",
-                 en : "xp before the next level"
+                 fr : "XP avant le prochain niveau",
+                 en : "XP before the next level"
             },
             "pieceDor" : {
                  fr : "pièces d'or",

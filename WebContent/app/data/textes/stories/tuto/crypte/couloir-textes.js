@@ -2,7 +2,7 @@
 define([], function(){
 	var data = {
         "necroCouloir-texte-1" : {
-            fr : "Vous entrez dans un long couloir &eacute;clair&eacute; par de nombreuses torches.",
+            fr : "Vous entrez dans un long couloir éclairé par de nombreuses torches.",
             en : "You enter a long corridor lit by many torches."
         },
         "necroCouloir-texte-2" : {
@@ -19,7 +19,7 @@ define([], function(){
         },
 
         "necroSalleFerme-texte-1" : {
-            fr : "Vous approchez de la porte, mais remarquez qu&rsquo;elle ne possede ni poign&eacute;e ni serrure&hellip;",
+            fr : "Vous approchez de la porte, mais remarquez qu&rsquo;elle ne possede ni poignée ni serrure&hellip;",
             en : "You approach the door, but notice that it has no handle or lock&hellip;"
         },
         "necroSalleFerme-texte-2" : {
@@ -57,8 +57,8 @@ define([], function(){
             en : "You read a few of them that tell you that it is possible,"
         },
         "necroS5-texte-3" : {
-            fr : "en se concentrant, de faire sortir de l&rsquo;&eacute;nergie de son corps afin de se <span key='soin'>soigner</span>.",
-            en : "by concentrating, to take energy out of your body in order to <span key='soin'>heal</span> yourself."
+            fr : "de faire sortir de l'énergie de son corps afin de <span key='guerison'>guerir</span> toute maladie.",
+            en : "to take energy out of your body in order to <span key='guerison'>cure</span> any disease."
         }
 	};
 	

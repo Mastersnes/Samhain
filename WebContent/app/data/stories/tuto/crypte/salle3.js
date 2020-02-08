@@ -29,8 +29,10 @@ define([], function() {
         		{
         			"appairIf" : [{"key" : "hasNoItem", "params" : ["parchoLu"]}],
         			"name" : "lire-parchemin", "action" : [
-        				{"key" : "upMG", "params" : [3]},
+        				{"key" : "upMG", "params" : [2]},
+        				{"key" : "gain", "params" : ["soin"]},
         				{"key" : "gain", "params" : ["parchoLu"]},
+        				{"key" : "score", "params" : ["LearnHeal", 1]},
         				{"key" : "go", "params" : ["necroS3Fouille"]}
         			]
         		}

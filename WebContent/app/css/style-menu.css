@@ -92,7 +92,7 @@ fullscreen.exit {
     margin-top: 10%;
     cursor: pointer;
 }
-.menu-cadre bouton case {
+.menu-page case {
     position: relative; display: inline-block;
     width: 14%; height: 100%;
     top: 20%; left: 0;
@@ -101,6 +101,6 @@ fullscreen.exit {
     background-size: 300% 100%;
     background-position: 0% 0%;
 }
-.menu-cadre bouton case.coche {
+.menu-page case.coche {
     background-position: 100% 0%;
 }

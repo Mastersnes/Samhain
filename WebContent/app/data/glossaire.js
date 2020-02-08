@@ -9,7 +9,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "vie" : [5, 5],
             "mana" : [0, 3],
             "xp": [1, 3],
-            "argent" : [1, 10],
+            "argent" : [10, 20],
             "sexe" : "f",
             "abilities" : ["morsure"]
 		},
@@ -21,7 +21,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "vie" : [10, 10],
             "mana" : [1, 3],
             "xp" : [2, 5],
-            "argent" : [10, 30],
+            "argent" : [15, 30],
             "sexe" : "m",
             "abilities" : ["voler", "doubleAttaque"]
 		},
@@ -33,7 +33,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "vie" : [80, 80],
             "mana" : [5, 10],
             "xp" : [5, 20],
-            "argent" : [30, 50],
+            "argent" : [50, 100],
             "sexe" : "m",
             "abilities" : ["araneisme", "pondreAraignee"],
             "type": "boss",
@@ -47,7 +47,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "vie" : [15, 15],
             "mana" : [2, 5],
             "xp" : [3, 6],
-            "argent" : [10, 25],
+            "argent" : [20, 40],
             "sexe" : "f",
             "abilities" : ["morsure", "cannibalisme"]
 		},
@@ -59,7 +59,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "vie" : [25, 25],
             "mana" : [2, 5],
             "xp" : [3, 10],
-            "argent" : [10, 30],
+            "argent" : [20, 50],
             "sexe" : "m",
             "abilities" : ["doubleAttaque", "taillade"]
 		},
@@ -71,7 +71,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "vie" : [5, 5],
             "mana" : [1, 3],
             "xp" : [1, 5],
-            "argent" : [5, 10],
+            "argent" : [10, 20],
             "sexe" : "m",
             "abilities" : ["doubleAttaque"]
 		},
@@ -83,7 +83,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "vie" : [30, 30],
             "mana" : [3, 6],
             "xp" : [4, 12],
-            "argent" : [20, 40],
+            "argent" : [30, 50],
             "sexe" : "f",
             "abilities" : ["morsure", "doubleAttaque", "cannibalisme"]
 		}, 
@@ -95,7 +95,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "vie" : [8, 8],
             "mana" : [2, 3],
             "xp" : [3, 10],
-            "argent" : [10, 30],
+            "argent" : [15, 30],
             "sexe" : "m",
             "abilities" : ["doubleAttaque", "taillade"]
 		}, 
@@ -107,7 +107,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "vie" : [40, 40],
             "mana" : [3, 7],
             "xp" : [5, 15],
-            "argent" : [20, 50],
+            "argent" : [20, 60],
             "sexe" : "f",
             "abilities" : ["morsure", "doubleAttaque", "cannibalisme"]
 		}, 
@@ -133,7 +133,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "vie" : [150, 150],
             "mana" : [10, 20],
             "xp" : [10, 30],
-            "argent" : [50, 100],
+            "argent" : [100, 200],
             "sexe" : "f",
             "abilities" : ["volDeVie", "volDeMana", "bouleFeu", "invoqueGrosseGoule"],
             "type" : "boss"

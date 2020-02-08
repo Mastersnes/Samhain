@@ -241,7 +241,7 @@ define([], function() {
                     ]
                 },
                 {
-                    "name" : "aller-ville", "action" : [
+                    "name" : "aller-village", "action" : [
                         {"key" : "gain", "params" : ["helpRoi"]},
                         {"key" : "go", "params" : ["reposVille"]}
                     ]
@@ -257,7 +257,7 @@ define([], function() {
                     ]
                 },
                 {
-                    "name" : "aller-ville", "action" : [
+                    "name" : "aller-village", "action" : [
                         {"key" : "gain", "params" : ["helpRoi"]},
                         {"key" : "go", "params" : ["reposVille"]}
                     ]
@@ -268,7 +268,7 @@ define([], function() {
             "textes" : ["roiAraigneeFouilleGrotte-texte-1", "roiAraigneeFouilleGrotte-texte-2"],
             "actions" : [
                 {
-                    "name" : "aller-ville", "action" : [
+                    "name" : "aller-village", "action" : [
                         {"key" : "gain", "params" : ["helpRoi"]},
                         {"key" : "go", "params" : ["reposVille"]}
                     ]
@@ -304,7 +304,7 @@ define([], function() {
                     ]
                 },
                 {
-                    "name" : "rentrer-ville", "action" : [
+                    "name" : "rentrer-village", "action" : [
                         {"key" : "go", "params" : ["reposVille"]}
                     ]
                 }
@@ -315,7 +315,7 @@ define([], function() {
                 "roiAraigneeAgonieFouille-texte-3"],
             "actions" : [
                 {
-                    "name" : "aller-ville", "action" : [
+                    "name" : "aller-village", "action" : [
                         {"key" : "go", "params" : ["reposVille"]}
                     ]
                 }

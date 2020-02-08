@@ -14,11 +14,6 @@ define([], function(){
             en : "A wind of panic overwhelms you&hellip;"
         },
 
-        "courir-ville" : {
-            fr : "Courir au village",
-            en : "Running to the village"
-        },
-
         "fermeExaminer-texte-1" : {
             fr : "Il s'agit d'une vieille grange mal entretenue&hellip;",
             en : "This is a poorly maintained old barn&hellip;"
@@ -32,15 +27,6 @@ define([], function(){
             en : "Maybe in the event of a storm?"
         },
 
-        "retirer-baton" : {
-            fr : "Retirer le b&acirc;ton",
-            en : "Remove the stick"
-        },
-        "casser-baton" : {
-            fr : "Casser le b&acirc;ton",
-            en : "Break the stick"
-        },
-
         "fermeExaminer2-texte-1" : {
             fr : "Elle semble abandonn&eacute;e.",
             en : "It seems abandoned."
@@ -48,11 +34,6 @@ define([], function(){
         "fermeExaminer2-texte-2" : {
             fr : "Le corps d&rsquo;une <span key='goule'>goule</span> g&icirc;t devant la porte grande ouverte.",
             en : "A <span key='goule'>ghoul's</span> body lies in front of the wide open door."
-        },
-
-        "entrer-grange" : {
-            fr : "Entrer dans la grange",
-            en : "Enter the barn"
         },
 
         "batonSaisieReussite1-texte-1" : {
@@ -74,11 +55,6 @@ define([], function(){
         "batonSaisieReussite1-texte-3" : {
             fr : "la grosse porte de la grange qui s&rsquo;ouvre avec fracas&hellip;",
             en : "the big door of the barn that opens with a crashing sound..."
-        },
-
-        "garder-baton" : {
-            fr : "Garder le b&acirc;ton",
-            en : "Keeping the stick"
         },
 
         "batonSaisieEchec-texte-1" : {
@@ -143,15 +119,6 @@ define([], function(){
             en : "A large table is set in the back."
         },
 
-        "fouiller-table" : {
-            fr : "Fouiller la table",
-            en : "Search the table"
-        },
-        "examine-grange" : {
-            fr : "Examiner la grange",
-            en : "Examine the barn"
-        },
-
         "grangeFouilleTable-texte-1" : {
             fr : "La table est recouverte de paperasses en pagaille.",
             en : "The table is covered in clutterful paperwork."
@@ -159,11 +126,6 @@ define([], function(){
         "grangeFouilleTable-texte-2" : {
             fr : "Une vieille <span key='bougie'>bougie</span> presque us&eacute;e est pos&eacute;e dans un coin.",
             en : "An old <span key='bougie'>candle</span> almost worn out is placed in a corner."
-        },
-
-        "prendre-bougie" : {
-            fr : "Prendre la bougie",
-            en : "Take the candle"
         },
 
         "grangeFouilleTable2-texte-1" : {

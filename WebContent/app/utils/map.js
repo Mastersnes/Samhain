@@ -33,7 +33,10 @@ define(["jquery"], function($){
 		};
 		
 		this.getKey = function(value) {
-			for (var [index, item] of this.data.entries()) {
+            var next = this.data.entries().next();
+			while (!next.done) {
+				var index = next.value[0];
+				var item = next.value[1];
 				if (item == value) return index;
 			}
 			return null;
@@ -53,7 +56,10 @@ define(["jquery"], function($){
 		 */
 		this.getFirstEmptyKey = function() {
 			var firstKey;
-			for (var [index, item] in this.data.entries()) {
+			var next = this.data.entries().next();
+            while (!next.done) {
+                var index = next.value[0];
+                var item = next.value[1];
 				if (!index) break;
 				if (!firstKey) firstKey = index;
 				

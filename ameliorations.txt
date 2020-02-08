@@ -2,35 +2,24 @@ Ameliorations :
 ****************
 -> General
 	-> Ajout de musiques
-	-> Didacticiel
 -> Contenu Additionnel
 	-> Ajout de la ville
 	-> Ajout de 3 quetes
 	-> Ajout du poste de garde (combats aleatoires en fonction du niveau)
 	-> Traduction Esperanto
-	-> Sort guerison qui permet de supprimer debuff
-	-> Objet antidote qui permet de supprimer le poison
 -> Sons
-    -> Musiques
     -> revoir les sons
     -> hurt.wav quand le joueur prend des degats
 -> Combat
     -> effets : à voir
-    -> feroce trop fort !
-    -> Vol de vie de croc trop bas a la fin
 -> Bugs
-    -> Didactitiel :
-        -->
-    -> Roi araignée, reponse "la mort" est mal cadré
-    -> Quand on arrive a la ville avec le roi "arretez" est mal cadré
-    -> Necrom l'ancien, remonter legerement le nom du boss
-    -> Revoir le placement des textes
-
+    -> N/A
 -> Fait
     -> General
         -> Quand on fouille les araignées au debut, chance de trouver un truc
         -> Refonte du moteur
         -> Refonte graphique
+        -> Didactitiel
     -> Interface
         -> Ajout du glossaire
         -> Ajout de l'inventaire
@@ -54,3 +43,7 @@ Ameliorations :
         -> Ajouter les status des monstres
     -> Contenu additionnel
         -> Ajout de la boutique
+        -> Nouvelles actions
+            -> Antidote
+            -> Guerison
+        -> Musiques

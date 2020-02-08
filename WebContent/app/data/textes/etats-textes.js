@@ -3,6 +3,7 @@ define([], function(){
 	var data = {
 	        /**
 	        * Etats
+	        * Correction OK
 	        **/
 	        "poison" : {
                 fr : "Un Peu Pâle",
@@ -17,7 +18,7 @@ define([], function(){
                 en : "Malade"
             },
 	        "poison-2-texte" : {
-                fr : "Dans un premier temps, les doigts commencent à piquer, légèrement. Ensuite la démangeaison se propage doucement dans le reste du corps jusqu'à la nuque. La fin n'est pas très belle à voir si vous voulez mon avis...",
+                fr : "Dans un premier temps, les doigts commencent à piquer, légèrement. Ensuite, la démangeaison se propage doucement dans le reste du corps jusqu'à la nuque. La fin n'est pas très belle à voir si vous voulez mon avis...",
                 en : "At first, the fingers start to sting, slightly. Then the itch spreads gently through the rest of the body to the neck. The end is not very beautiful to see if you want my opinion..."
             },
 	        "satiete" : {
@@ -29,15 +30,15 @@ define([], function(){
                 en : "A good snack to start the day off right! We are still far from the 5 fruits and vegetables a day."
             },
 	        "satiete-2" : {
-                fr : "Bon repas",
-                en : "Good meal"
+                fr : "Bon Repas",
+                en : "Good Meal"
             },
 	        "satiete-2-texte" : {
-                fr : "De quoi être repus pour un petit moment&nbsp;! Bon appétit&nbsp;!",
+                fr : "De quoi être repu pour un petit moment&nbsp;! Bon appétit&nbsp;!",
                 en : "Enough to be satisfied for a little while! Bon appétit!"
             },
 	        "brulure" : {
-                fr : "Brûlure Legere",
+                fr : "Brûlure Légère",
                 en : "Slight Burns"
             },
 	        "brulure-texte" : {
@@ -49,16 +50,16 @@ define([], function(){
                 en : "Deep Burn"
             },
 	        "brulure-2-texte" : {
-                fr : "Hurk, C'est pas très beau à voir&nbsp;! Au moins, vous avez du charbon pour le feu...",
-                en : "Hurk, it's not very beautiful to see! At least you have coal for the fire...."
+                fr : "Hurk , c'est pas très beau à voir&nbsp;! Au moins, vous avez du charbon pour le feu maintenant...",
+                en : "Hurk, it's not very beautiful to see! At least you have coal for the fire now..."
             },
 	        "saignement" : {
-                fr : "Egratignure",
+                fr : "Égratignure",
                 en : "Scratch"
             },
 	        "saignement-texte" : {
-                fr : "Une petite éraflure, vous n'allez quand même pas pleurer... Si&nbsp;?",
-                en : "A little scratch, you're not going to cry... are you?"
+                fr : "Une petite éraflure... Vous n'allez quand même pas pleurer... Si&nbsp;?",
+                en : "A little scratch... You're not going to cry... are you?"
             },
 	        "saignement-2" : {
                 fr : "Coupure",

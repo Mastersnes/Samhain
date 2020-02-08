@@ -22,13 +22,14 @@ function($, _, Utils) {
 			this.saveData = {
 			    "player" : {
 			        "life" : {
-			            "current" : 100,
-			            "max" : 100
+			            "current" : 150,
+			            "max" : 150
 			        },
 			        "mana" : {
 			            "current" : 0,
 			            "max" : 0
 			        },
+                    "unlockMana" : false,
 
 			        "buff" : null,
 			        "debuff" : null,
@@ -49,8 +50,7 @@ function($, _, Utils) {
 			            "clef" : [],
 			            "ifObj" : []
 			        },
-                    "lieu" : "quete1-start",
-                    "unlockMana" : false
+                    "lieu" : "quete1-start"
 			    },
                 "success" : {
                     "successComplete" : [],
@@ -63,17 +63,33 @@ function($, _, Utils) {
                     "KillSpider" : false,
                     "Leak" : false,
                     "LearnHeal" : false,
+                    "LearnCure" : false,
                     "MaxLevelEarn" : 1,
                     "NoChance" : false,
                     "SaveChild" : false,
                     "Traitor" : false,
                     "TraitorSpider" : false,
                     "Treasure" : false
-                },
-                "gameOptions" : {
-                    "selectAuto" : true
                 }
             };
+
+            this.gameOptions = window.localStorage.getItem(Utils.name + "Options");
+            if (!this.gameOptions) {
+                this.gameOptions = {
+                    "selectAuto" : true
+                };
+            }else this.gameOptions = JSON.parse(this.gameOptions);
+		};
+
+		this.setOption = function(key, value) {
+		    this.gameOptions[key] = value;
+		    window.localStorage.setItem(Utils.name + "Options", JSON.stringify(this.gameOptions));
+		};
+		this.getOption = function(key) {
+		    return this.gameOptions[key];
+		};
+		this.options = function() {
+		    return this.gameOptions;
 		};
 
 		/**
@@ -126,6 +142,7 @@ function($, _, Utils) {
                 if (success["KillSpider"]) this.kongregateUtils.score("KillSpider", 1);
                 if (success["Leak"]) this.kongregateUtils.score("Leak", 1);
                 if (success["LearnHeal"]) this.kongregateUtils.score("LearnHeal", 1);
+                if (success["LearnCure"]) this.kongregateUtils.score("LearnCure", 1);
                 if (success["NoChance"]) this.kongregateUtils.score("NoChance", 1);
                 if (success["SaveChild"]) this.kongregateUtils.score("SaveChild", 1);
                 if (success["Traitor"]) this.kongregateUtils.score("Traitor", 1);

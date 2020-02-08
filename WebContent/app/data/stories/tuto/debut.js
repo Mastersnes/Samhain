@@ -60,7 +60,7 @@ define([], function() {
                     ],
                 },
                 {
-                    "name" : "rentrer-ville",
+                    "name" : "rentrer-village",
                     "action" : [
                         { "key" : "go", "params" : [ "reposVille" ]}
                     ]
@@ -99,7 +99,7 @@ define([], function() {
                     "action" : [ { "key" : "go", "params" : [ "nid" ]} ]
                 },
                 {
-                    "name" : "rentrer-ville",
+                    "name" : "rentrer-village",
                     "action" : [ { "key" : "go", "params" : [ "reposVille" ]} ]
                 }
             ]

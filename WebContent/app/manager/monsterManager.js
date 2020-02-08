@@ -246,7 +246,8 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
         this.stealMana = function(baseManaSteal, cible) {
             var cibleCurrentMana = cible.get("mana.current");
             var manaSteal = Math.round(Utils.percent(cibleCurrentMana, baseManaSteal));
-            if (manaSteal > 0) this.addMana(manaSteal);
+            console.log("steal mana : ", cibleCurrentMana, baseManaSteal, manaSteal)
+            if (manaSteal > 0) this.steal("mana", cible, manaSteal);
         };
         this.stealLife = function(baseLifeSteal, degats, cible) {
             var cibleCurrentLife = cible.get("life.current");

@@ -43,7 +43,7 @@ define(["jquery",
 
             if (newLieu.before) newLieu.before(this);
             if (newLieu.music) {
-                this.mediatheque.play("music/" + newLieu.music);
+                this.playMusic("music/" + newLieu.music);
             }
 
             if (this.didacticiel) noSave = true;
@@ -65,6 +65,25 @@ define(["jquery",
 			}, 50);
 
 			this.makeEvents();
+        };
+
+        this.playMusic = function(music) {
+            var that = this;
+            var randMusic = music;
+
+            if (!music) {
+                var listMusic = [];
+                for (var i in this.mediatheque.listStories) {
+                    var music = this.mediatheque.listStories[i];
+                    if (this.mediatheque.currentMusic != music) {
+                        listMusic.push(music);
+                    }
+                }
+                randMusic = listMusic[Utils.rand(0, listMusic.length)];
+            }
+            this.mediatheque.play(randMusic, null, function() {
+                that.playMusic();
+            });
         };
 
         this.positionneActions = function() {

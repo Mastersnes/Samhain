@@ -19,7 +19,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 			this.saveManager = parent.saveManager;
 			this.recompenseManager = parent.recompenseManager;
 			this.data = this.saveManager.load("player");
-			this.options = this.saveManager.load("gameOptions");
+			this.options = this.saveManager.options();
 
 			this.mediatheque = parent.mediatheque;
 			this.levelManager = new LevelManager(this);
@@ -294,9 +294,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 
                         if (magie.manaSteal) {
                             var manaSteal = Utils.rand(magie.manaSteal[0], magie.manaSteal[1], true);
-                            var cibleCurrentMana = cible.get("mana.current");
-                            manaSteal = Math.round(Utils.percent(cibleCurrentMana, manaSteal));
-                            if (manaSteal > 0) this.addMana(manaSteal)
+                            this.stealMana(manaSteal, cible);
                         }
 
                         // Action particuliere
@@ -401,7 +399,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
         };
 		this.addMana = function(amount) {
 		    if (!this.data.unlockMana) return;
-		    if (amount > 0) this.addAmountChange(amount, "mana");
+		    this.addAmountChange(amount, "mana");
 		    this.data.mana.current += amount;
 		    if (this.data.mana.current < 0) this.data.mana.current = 0;
 		    if (this.data.mana.current > this.data.mana.max)
@@ -470,7 +468,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
         this.stealMana = function(baseManaSteal, cible) {
             var cibleCurrentMana = cible.get("mana.current");
             var manaSteal = Math.round(Utils.percent(cibleCurrentMana, baseManaSteal));
-            if (manaSteal > 0) this.addMana(manaSteal);
+            if (manaSteal > 0) this.steal("mana", cible, manaSteal);
         };
         this.stealLife = function(baseLifeSteal, degats, cible) {
             var cibleCurrentLife = cible.get("life.current");
@@ -610,6 +608,13 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
         this.restore = function() {
             this.data.life.current = 0;
             this.addPercentLife(70);
+
+            var percentMana = Utils.toPercent(this.data.mana.current, this.data.mana.max);
+            if (percentMana < 50) {
+                this.data.mana.current = 0;
+                this.addPercentMana(50);
+            }
+
             this.data.buff = null;
             this.data.debuff = null;
         };

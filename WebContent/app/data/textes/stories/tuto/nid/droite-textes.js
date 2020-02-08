@@ -57,15 +57,6 @@ define([], function(){
             en : "Will you help me treat myself? &raquo;"
         },
 
-        "donner-potion" : {
-            fr : "Donner la potion",
-            en : "Give the potion"
-        },
-        "donner-fromage" : {
-            fr : "Donner le fromage",
-            en : "Give the cheese"
-        },
-
         "roiAraigneePotionAmi-texte-1" : {
             fr : "&laquo; Vraiment&nbsp;? Si ce que vous dites est vrai,",
             en : "&laquo; Really? If what you're saying is true,"
@@ -92,11 +83,6 @@ define([], function(){
             en : "My people have been decimated. &raquo;"
         },
 
-        "qui-fait-ca" : {
-            fr : "&laquo; Qui a fait &ccedil;a&nbsp;? &raquo;",
-            en : "&laquo; Who has done it&nbsp;? &raquo;"
-        },
-
         "roiAraigneeGuerit2-texte-1" : {
             fr : "&laquo; Ils sont apparu sans pr&eacute;venir du c&oelig;ur des t&eacute;n&egrave;bres,",
             en : "&laquo; They appeared without warning of the heart of darkness,"
@@ -110,11 +96,6 @@ define([], function(){
             en : "Ghost, ghouls, creatures of the other world&hellip; &raquo;"
         },
 
-        "comment" : {
-            fr : "&laquo; Comment&nbsp;?! &raquo;",
-            en : "&laquo; How&nbsp;?! &raquo;"
-        },
-
         "roiAraigneeGuerit3-texte-1" : {
             fr : "&laquo; Ils ont tu&eacute; mes enfants&nbsp;! Ces monstres&nbsp;!",
             en : "&laquo; They killed my children! Those monsters!"
@@ -126,15 +107,6 @@ define([], function(){
         "roiAraigneeGuerit3-texte-3" : {
             fr : "Le roi se jette au-dessus de vous et se dirige vers la sortie.",
             en : "The king throws himself over you and heads for the exit."
-        },
-
-        "ou-aller-vous" : {
-            fr : "&laquo; O&ugrave; allez-vous&nbsp;? &raquo;",
-            en : "&laquo; Where are you going&nbsp;? &raquo;"
-        },
-        "laisser-partir" : {
-            fr : "Le laisser partir",
-            en : "Let him go"
         },
 
         "roiAraigneeGuerit4-texte-1" : {
@@ -152,11 +124,6 @@ define([], function(){
         "roiAraigneeGuerit4-texte-4" : {
             fr : "Le roi s&rsquo;enfonce dans les t&eacute;n&egrave;bres de la grotte.",
             en : "The king is sinking into the darkness of the cave."
-        },
-
-        "aller-ville" : {
-            fr : "Aller au village",
-            en : "Go to the village"
         },
 
         "roiAraigneeParti-texte-1" : {

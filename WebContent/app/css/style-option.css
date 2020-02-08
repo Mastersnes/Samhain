@@ -35,7 +35,9 @@
 .option-popup fleches {
     position: absolute; display: block;
     width: 58%; height: 38%;
-    top: 13%; left: 18%;
+    /**top: 13%; **/
+    top: 8%;
+    left: 18%;
     background-image: url("../img/menu/popup/option.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -46,6 +48,7 @@
     width: auto; height: auto;
     text-align: center;
     font-family: "Morgan"; font-weight: bold;
+    word-spacing: 5px;
     color: black;
 }
 
@@ -68,7 +71,7 @@
 
 .option-popup flags {
     position: absolute; display: block;
-    width: 106%; height: 83%;
+    width: 106%; height: 80%;
     top: 93%; left: 2%;
 }
 .option-popup flags flag {
@@ -84,7 +87,7 @@
     opacity: 1;
 }
 .option-popup flags text {
-    left: -19%; top: -52%;
+    left: -19%; top: -38%;
     font-size: 4.5vh;
 }
 .option-popup flags flag#fr {
@@ -105,4 +108,29 @@
 }
 .option-popup flags flag#en:not(.selected):hover {
     transform: rotate(23deg);
+}
+
+.option-popup selections {
+    position: absolute; display: block;
+    width: 88%; height: 19%;
+    top: 77%; left: 6%;
+    text-align: center;
+    font-family: "Morgan"; font-size: 3.5vh;
+    word-spacing: 5px;
+    color: black;
+}
+.option-popup arme {
+    position: absolute; display: block;
+    width: 100%; height: 27%;
+    top: 0%; left: 3%;
+    text-align: left;
+
+    cursor: pointer;
+}
+.option-popup selections element {
+    display: block; position: relative;
+    width: 100%; height: 100%;
+}
+.option-popup selections case {
+    width: 5%;
 }

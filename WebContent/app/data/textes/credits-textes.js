@@ -3,14 +3,15 @@ define([], function(){
 	var data = {
 	        /**
 	        * Credits
+	        * Correction OK
 	        **/
 	        "nous-credits" : {
                 fr : "Alicia et Steven Nesztler",
                 en : "Alicia et Steven Nesztler"
             },
 	        "lili-credits" : {
-                fr : "Alicia Vermant Nesztler (AVNes)",
-                en : "Alicia Vermant Nesztler (AVNes)"
+                fr : "Alicia V. Nesztler (AVNes)",
+                en : "Alicia V. Nesztler (AVNes)"
             },
 	        "titi-credits" : {
                 fr : "Steven Nesztler",
@@ -96,7 +97,7 @@ define([], function(){
                 en : "Special Thanks"
             },
 	        "suiveurs-thx-credits" : {
-                fr : "À nos suiveurs qui nous soutiennent chaque jours sur les differents réseaux.",
+                fr : "À nos suiveurs qui nous soutiennent chaque jour sur les différents réseaux.",
                 en : "To our followers who support us every day on the different networks."
             },
 	        "beta-thx-credits" : {
@@ -104,7 +105,7 @@ define([], function(){
                 en : "To the beta testers who are constantly improving the quality of our games."
             },
 	        "animalux-thx-credits" : {
-                fr : "À nos adorables compagnons à poil et à plume qui nous apportent joie, amours et croquettes au quotidien&nbsp;!",
+                fr : "À nos adorables compagnons à poils et à plumes qui nous apportent joie, amour et croquettes au quotidien&nbsp;!",
                 en : "To our adorable furry and feathered companions who bring us joy, love and croquettes every day!"
             }
 	};

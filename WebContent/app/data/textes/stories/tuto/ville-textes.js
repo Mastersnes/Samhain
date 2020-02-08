@@ -14,11 +14,6 @@ define([], function(){
             en : "&laquo; Get on your nerves! Defend the village! &raquo; screams a <span key='garde'>guard</span> not far from you."
         },
 
-        "defendre-ville" : {
-            fr : "Défendre le village",
-            en : "Defending the city"
-        },
-
         "reposVille3-texte-1" : {
             fr : "Vous tuez la derni&egrave;re <span key='goule'>goule</span> face à vous et retournez voir les <span key='garde'>gardes</span> :",
             en : "You kill the last <span key='goule'>ghoul</span> in front of you and go back to the <span key='garde'>guards</span>:"
@@ -74,11 +69,6 @@ define([], function(){
             en : "They can be useful. &raquo;"
         },
 
-        "prendre-arme" : {
-            fr : "Prendre les armes",
-            en : "Take up arms"
-        },
-
         "reposVilleAide1-texte-1" : {
             fr : "Vous saisissez <span key='epee'>l&rsquo;&eacute;p&eacute;e</span> et mangez un morceau pour vous pr&eacute;parer.",
             en : "You grab the <span key='epee'>sword</span> and eat something to prepare yourself."
@@ -126,11 +116,6 @@ define([], function(){
             en : "The <span key='garde'>guards</span> take out their swords and push you towards the swamp&hellip;"
         },
 
-        "venger-affront" : {
-            fr : "Venger cet affront",
-            en : "Putting up this affront"
-        },
-
         "reposVilleTraitre-texte-1" : {
             fr : "Certains <span key='villageois'>villageois</span> s&rsquo;avancent vers vous :",
             en : "Some <span key='villageois'>villagers</span> are coming towards you:"
@@ -159,11 +144,6 @@ define([], function(){
         "reposVilleTraitre2-texte-3" : {
             fr : "objets de valeur dans leurs chaumi&egrave;res&nbsp;?",
             en : "valuable objects in their cottages?"
-        },
-
-        "fouiller-maison" : {
-            fr : "Fouiller les maisons",
-            en : "Searching houses"
         },
 
         "reposVilleTraitre3-texte-1" : {
@@ -212,11 +192,6 @@ define([], function(){
         "villeFouilleReussite3-texte-3" : {
             fr : "ainsi qu'une <span key='potionSante'>potion de sant&eacute;</span>",
             en : "and a <span key='potionSante'>health potion</span>."
-        },
-
-        "laisser-arme" : {
-            fr : "Laisser les armes",
-            en : "Leave the weapons"
         },
 
         "villeFouilleEchec-texte-1" : {
@@ -282,15 +257,6 @@ define([], function(){
         "retourVille2-texte-3" : {
             fr : "et quelques <span key='garde'>gardes</span> se pr&eacute;parent d&eacute;jà à attaquer votre nouvel alli&eacute;&hellip;",
             en : "and some <span key='garde'>guards</span> are already preparing to attack your new ally."
-        },
-
-        "arreter" : {
-            fr : "&laquo; Arretez&nbsp;! &raquo;",
-            en : "&laquo; Stop it! &raquo;"
-        },
-        "help-guard" : {
-            fr : "Aider les gardes",
-            en : "Helping the guards"
         },
 
         "retourVilleAideRoi-texte-1" : {

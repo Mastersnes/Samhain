@@ -79,7 +79,7 @@ define([], function(){
         },
 
         /**
-        * Inspection
+        * Inspection d'objets
         **/
         "examine-sol" : {
             fr : "Examiner le sol",
@@ -109,6 +109,66 @@ define([], function(){
             fr : "Fouiller la salle",
             en : "Search the room"
         },
+        "laisser" : {
+            fr : "Laisser",
+            en : "Leave it"
+        },
+        "fouiller-cercueil" : {
+            fr : "Fouiller les cercueils",
+            en : "Searching coffins"
+        },
+        "voir-torche-gauche" : {
+            fr : "Voir la torche à gauche",
+            en : "See the torch on the left"
+        },
+        "voir-torche-droite" : {
+            fr : "Voir la torche à droite",
+            en : "See the torch on the right"
+        },
+        "forcer-coffre" : {
+            fr : "Forcer le coffre",
+            en : "Forcing the trunk"
+        },
+        "examine-alentours" : {
+            fr : "Examiner les alentours",
+            en : "Look around"
+        },
+        "fouille-corps" : {
+            fr : "Fouiller les corps",
+            en : "Searching bodies"
+        },
+        "fouiller-table" : {
+            fr : "Fouiller la table",
+            en : "Search the table"
+        },
+        "examine-grange" : {
+            fr : "Examiner la grange",
+            en : "Examine the barn"
+        },
+        "fouiller-maison" : {
+            fr : "Fouiller les maisons",
+            en : "Searching houses"
+        },
+
+        /**
+        * Action sur les objets
+        **/
+        "utiliser-bougie" : {
+            fr : "Utiliser la bougie",
+            en : "Use the candle"
+        },
+        "prendre-bougie" : {
+            fr : "Prendre la bougie",
+            en : "Take the candle"
+        },
+        "prendre-croc" : {
+            fr : "Prendre le croc",
+            en : "Take the fang"
+        },
+        "laisser-croc" : {
+            fr : "Laisser le croc",
+            en : "Leave the fang"
+        },
         "try-open" : {
             fr : "Essayer de l'ouvrir",
             en : "Try to open it"
@@ -133,17 +193,45 @@ define([], function(){
             fr : "Utiliser la clef",
             en : "Use the key"
         },
-        "laisser" : {
-            fr : "Laisser",
-            en : "Leave it"
+        "lire-parchemin" : {
+            fr : "Lire les parchemins",
+            en : "Read Scrolls"
+        },
+        "mange-continue" : {
+            fr : "Manger et continuer",
+            en : "Eat and continue"
+        },
+        "retirer-baton" : {
+            fr : "Retirer le b&acirc;ton",
+            en : "Remove the stick"
+        },
+        "casser-baton" : {
+            fr : "Casser le b&acirc;ton",
+            en : "Break the stick"
+        },
+        "garder-baton" : {
+            fr : "Garder le b&acirc;ton",
+            en : "Keeping the stick"
+        },
+        "prendre-arme" : {
+            fr : "Prendre les armes",
+            en : "Take up arms"
+        },
+        "laisser-arme" : {
+            fr : "Laisser les armes",
+            en : "Leave the weapons"
         },
 
         /**
-        * Interaction
+        * Interaction avec des gens ou objets
         **/
         "insister" : {
             fr : "Insister",
             en : "Insist"
+        },
+        "venger-affront" : {
+            fr : "Venger cet affront",
+            en : "Putting up this affront"
         },
         "laisser-tomber" : {
             fr : "Laisser tomber",
@@ -161,6 +249,10 @@ define([], function(){
             fr : "Aider",
             en : "Help Them"
         },
+        "aider-guarde" : {
+            fr : "Aider les gardes",
+            en : "Helping the guards"
+        },
         "parler" : {
             fr : "Parler",
             en : "Speak"
@@ -168,6 +260,22 @@ define([], function(){
         "tousser" : {
             fr : "Toussoter",
             en : "Give a discreet cough"
+        },
+        "laisser-partir" : {
+            fr : "Le laisser partir",
+            en : "Let him go"
+        },
+        "donner-potion" : {
+            fr : "Donner la potion",
+            en : "Give the potion"
+        },
+        "donner-fromage" : {
+            fr : "Donner le fromage",
+            en : "Give the cheese"
+        },
+        "defendre-ville" : {
+            fr : "Défendre le village",
+            en : "Defending the city"
         },
 
         /**
@@ -200,6 +308,26 @@ define([], function(){
         "stop" : {
             fr : "Stop&nbsp;!",
             en : "Stop!"
+        },
+        "arretez" : {
+            fr : "Arretez&nbsp;!",
+            en : "Stop it!"
+        },
+        "comment" : {
+            fr : "Comment&nbsp;?!",
+            en : "How&nbsp;?!"
+        },
+        "ou-aller-vous" : {
+            fr : "Où allez-vous&nbsp;?",
+            en : "Where are you going&nbsp;?"
+        },
+        "qui-fait-ca" : {
+            fr : "Qui a fait &ccedil;a&nbsp;?",
+            en : "Who has done it&nbsp;?"
+        },
+        "tant-pis" : {
+            fr : "Tant pis&hellip;",
+            en : "Too bad&hellip;"
         },
 
         /**
@@ -280,7 +408,31 @@ define([], function(){
         "continue-adventure" : {
             fr : "Continuer l'aventure",
             en : "Continue the adventure"
-        }
+        },
+        "aller-village" : {
+            fr : "Aller au village",
+            en : "Go to the village"
+        },
+        "rentrer-village" : {
+            fr : "Rentrer au village",
+            en : "Go back to village"
+        },
+        "courir-village" : {
+            fr : "Courir au village",
+            en : "Running to the village"
+        },
+        "fuir-grotte" : {
+            fr : "Fuir dans la grotte",
+            en : "Running into the cave"
+        },
+        "en-avant" : {
+            fr : "En avant&nbsp;!",
+            en : "Forward!"
+        },
+        "entrer-grange" : {
+            fr : "Entrer dans la grange",
+            en : "Enter the barn"
+        },
 	};
 	
 	return {

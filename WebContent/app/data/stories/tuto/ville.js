@@ -247,13 +247,13 @@ define([], function() {
             "textes" : ["reposVille2-texte-1", "retourVille2-texte-1", "retourVille2-texte-2", "retourVille2-texte-3"],
             "actions" : [
                 {
-                    "name" : "arreter", "action" : [
+                    "name" : "arretez", "action" : [
                         {"key" : "gain", "params" : ["helpRoi2"]},
                         {"key" : "go", "params" : ["retourVilleAideRoi"]}
                     ]
                 },
                 {
-                    "name" : "help-guard", "action" : [
+                    "name" : "aider-guarde", "action" : [
                         {"key" : "score", "params" : ["TraitorSpider", 1]},
                         {"key" : "fight", "params" : [[
                             {"name":"roiAraignee", "suffixe":"blesse"}

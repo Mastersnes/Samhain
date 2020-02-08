@@ -2,10 +2,13 @@
 define(["jquery", "app/utils/utils"], function($, Utils){
 	return function(){
 		this.sounds = [];
+		this.callbacks = [];
 		this.soundsTicker = [];
-		
+
+		this.listStories = ["music/story1.mp3", "music/story2.mp3"];
+
 		this.loadAll = function() {
-			var list = ["music/story1.mp3"];
+			var list = this.listStories;
 			for (var index in list) {
 				var key = list[index];
 				this.load(key);
@@ -23,20 +26,26 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 		**/
 		this.load = function(key, id, callback) {
 			if (!id) id = "";
-			var sound;
-			if (window.Audio)
-				sound = new Audio("app/"+key);
-			else
-				sound = new HTMLAudioElement("app/"+key);
-			sound.volume=1;
-			if (key.indexOf("music") > -1) {
-				sound.addEventListener('ended', function() {
-					this.currentTime = 0;
-					if (callback) callback();
-					else this.play();
-				}, false);
+			var sound = this.sounds[key + id];
+			if (!sound) {
+                if (window.Audio)
+                    sound = new Audio("app/"+key);
+                else
+                    sound = new HTMLAudioElement("app/"+key);
+                sound.volume=1;
 			}
-			
+			if (key.indexOf("music") > -1) {
+				if (this.callbacks[key + id]) {
+				    sound.removeEventListener("ended", this.callbacks[key + id]);
+				}
+				this.callbacks[key + id] = function() {
+                    this.currentTime = 0;
+                    if (callback) callback();
+                    else this.play();
+                };
+				sound.addEventListener('ended', this.callbacks[key + id], false);
+			}
+
 			sound.load();
 			this.sounds[key + id] = sound;
 		};
@@ -47,9 +56,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 		this.play = function(key, id, callback) {
 			if (!key) return;
 			if (!id) id = "";
-			if (!this.sounds[key + id]) {
-				this.load(key, id, callback);
-			}
+            this.load(key, id, callback);
 			try {
 				if (key.indexOf("music") > -1) {
 					this.currentMusic = key;
@@ -61,8 +68,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 				
 				// Si c'est une music est qu'elle est deja en cours, on ne la relance pas
 				if (key.indexOf("music") > -1 && 
-						this.sounds[key].duration > 0 && 
-						!this.sounds[key].paused) 
+						this.sounds[key + id].duration > 0 &&
+						!this.sounds[key + id].paused)
 					return;
 				this.sounds[key + id].play();
 			}catch (e) {
