@@ -110,6 +110,9 @@ define(["jquery",
         this.pioche = function() {
             var PIOCHE_MAX = 5;
 
+            var armeMin = 2;
+            var bouclierMin = 1;
+
             var that = this;
             var player = this.player;
             var arme = player.currentArme();
@@ -119,8 +122,8 @@ define(["jquery",
 
             this.actions.length = 0;
 
-            var bouclierFound = false;
-            var armeFound = false;
+            var bouclierFound = 0;
+            var armeFound = 0;
             var manaStock = this.player.get("mana").current;
             while (this.actions.length < PIOCHE_MAX) {
                 var actionsPossibles = ["arme", "bouclier"];
@@ -130,20 +133,20 @@ define(["jquery",
                 var randNumber = Utils.rand(0, actionsPossibles.length);
                 var randType = actionsPossibles[randNumber];
 
-                if (this.actions.length >= PIOCHE_MAX-2) {
-                    // On oblige d'avoir au moins un bouclier et une arme
-                    if (!armeFound) randType = "arme";
-                    if (!bouclierFound) randType = "bouclier";
+                if (this.actions.length >= PIOCHE_MAX-(armeMin + bouclierMin)) {
+                    // On oblige d'avoir au moins un bouclier et deux arme
+                    if (armeFound < armeMin) randType = "arme";
+                    if (bouclierFound < bouclierMin) randType = "bouclier";
                 }
 
                 var actionFound;
                 switch (randType) {
                     case "arme":
-                        armeFound = true;
+                        armeFound++;
                         actionFound = arme;
                         break;
                     case "bouclier":
-                        bouclierFound = true;
+                        bouclierFound++;
                         actionFound = bouclier;
                         break;
                     case "magie":

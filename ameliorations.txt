@@ -12,6 +12,7 @@ Ameliorations :
     -> hurt.wav quand le joueur prend des degats
 -> Combat
     -> effets : à voir
+    -> Idée : possibilité de configurer le nombre des actions
 -> Bugs
     -> N/A
 -> Fait

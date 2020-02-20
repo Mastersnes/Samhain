@@ -286,16 +286,16 @@ define([], function(){
             en : "Death&nbsp!"
         },
         "quietesvous" : {
-            fr : "Qui êtes vous&nbsp?",
+            fr : "Qui êtes-vous&nbsp?",
             en : "Who are you&nbsp?"
         },
         "evidemment" : {
-            fr : "Evidemment&nbsp!",
+            fr : "Évidemment&nbsp!",
             en : "Obviously&nbsp!"
         },
         "non-merci" : {
-            fr : "Non Merci",
-            en : "No Thanks"
+            fr : "Non merci",
+            en : "No thanks"
         },
         "unami" : {
             fr : "Un ami",
@@ -310,7 +310,7 @@ define([], function(){
             en : "Stop!"
         },
         "arretez" : {
-            fr : "Arretez&nbsp;!",
+            fr : "Arrêtez&nbsp;!",
             en : "Stop it!"
         },
         "comment" : {
@@ -394,7 +394,7 @@ define([], function(){
             en : "Retrace your steps"
         },
         "retour-arriere" : {
-            fr : "Retourner en arriere",
+            fr : "Retourner en arrière",
             en : "Return backward"
         },
         "sen-aller" : {

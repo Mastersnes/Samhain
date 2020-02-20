@@ -9,7 +9,7 @@ define([], function(){
                 en : "Candle"
             },
             "bougie-texte" : {
-                fr : "Une vieille bougie accompagné du matériel nécessaire pour l'allumer.",
+                fr : "Une vieille bougie accompagnée du matériel nécessaire pour l'allumer.",
                 en : "An old candle with the necessary equipment to light it."
             },
             "clefS2" : {

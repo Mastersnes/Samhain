@@ -107,7 +107,7 @@ function($, _, Utils, PopupUtils, page,
 		    if (!this.endGame) {
     		    if (!this.pause) {
                     if (!this.didacticiel) this.saveManager.saveInSession();
-                    this.playerManager.showNextAmount();
+//                    this.playerManager.showNextAmount();
                 }
                 var that = this;
                 setTimeout(function() {

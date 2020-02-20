@@ -37,7 +37,7 @@ define([], function(){
                 en : "Antidote"
             },
             "antidote-texte" : {
-                fr : "Une fiole verte visqueuse censé être de l'anti-poison. Vu l'odeur, ça risque plutôt de vous empoisonner&nbsp;!<br/>(Soigne uniquement du poison)",
+                fr : "Une fiole verte visqueuse, censée être de l'antipoison. Vu l'odeur, ça risque plutôt de vous empoisonner&nbsp;!<br/>(Soigne uniquement l'empoisonnement)",
                 en : "A slimy green vial supposed to be anti-poison. From the smell of it, it's more likely to poison you!<br/>(Only treats poison)"
             },
             "fromage" : {
@@ -69,7 +69,7 @@ define([], function(){
                 en : "Venom"
             },
             "venin-action" : {
-                fr : "Lancer le venin",
+                fr : "Lancer le Venin",
                 en : "Throwing the Venom"
             },
             "venin-texte" : {

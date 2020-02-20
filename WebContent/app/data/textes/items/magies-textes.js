@@ -26,7 +26,7 @@ define([], function(){
                 en : "*Heal*"
             },
             "soin-texte" : {
-                fr : "Un sort permettant de se soigner. Le reiki peut aller se r'habiller&nbsp;!",
+                fr : "Un sort permettant de se soigner. Le Reiki peut aller se rhabiller&nbsp;!",
                 en : "A spell for healing. The reiki can go back where he came from!"
             },
 
@@ -65,7 +65,7 @@ define([], function(){
                 en : "*Araneism*"
             },
             "araneisme-texte" : {
-                fr : "La morsure préférée de nos amis à huit pattes. Les traces qu'elle engendre sont bien plus difficile à faire partir&nbsp;!",
+                fr : "La morsure préférée de nos amis à huit pattes. Les traces qu'elle engendre sont bien plus difficiles à faire partir&nbsp;!",
                 en : "Our eight-legged friends' favorite bite. The traces it generates are much harder to get out!"
             },
 
@@ -78,7 +78,7 @@ define([], function(){
                 en : "*Steal*"
             },
             "voler-texte" : {
-                fr : "Un bon moyen de remplir sa bourse. Pas très honnête mais ô combien efficace&nbsp;!",
+                fr : "Un bon moyen de remplir sa bourse. Pas très honnête, mais ô combien efficace&nbsp;!",
                 en : "A good way to fill your purse. Not very honest but so effective!"
             },
 
@@ -130,7 +130,7 @@ define([], function(){
                 en : "*Cutting*"
             },
             "taillade-texte" : {
-                fr : "Et c'est ainsi que l'on finis en rondelle&nbsp;! Enfin, d’après des chaussettes...",
+                fr : "Et c'est ainsi que l'on finit en rondelle&nbsp;! Enfin, d’après des chaussettes...",
                 en : "And that's how we end up in a slice! Well, according to socks..."
             },
 
@@ -182,7 +182,7 @@ define([], function(){
                 en : "*Cannibalism*"
             },
             "cannibalisme-texte" : {
-                fr : "C'est peut-être ça qu'on appel : 'donner de sa personne'.",
+                fr : "C'est peut-être ça qu'on appelle : 'donner de sa personne'.",
                 en : "Maybe that's what we call : 'giving a lot of yourself'."
             },
 	};

@@ -6,7 +6,7 @@ define([], function(){
             en : "-"
         },
 	    "didacticiel-start-texte-2" : {
-            fr : "Rien à l'horizon, seul le vent souffle dans vos cheveux et siffle dans vos oreilles.",
+            fr : "Rien à l'horizon. Seul le vent souffle dans vos cheveux et siffle dans vos oreilles.",
             en : "-"
         },
 	    "didacticiel-start-texte-3" : {
@@ -27,7 +27,7 @@ define([], function(){
             en : "-"
         },
         "didacticiel-start2-texte-3" : {
-            fr : "&laquo; Bien joué étranger&nbsp;! Tu as saisie le principe des actions&nbsp;!",
+            fr : "&laquo; Bien joué étranger&nbsp;! Tu as saisi le principe des actions&nbsp;!",
             en : "-"
         },
         "didacticiel-start2-texte-4" : {
@@ -40,15 +40,15 @@ define([], function(){
             en : "-"
         },
         "didacticiel-presentation-texte-2" : {
-            fr : "Tu te demande certainement de quoi je parle non&nbsp;?",
+            fr : "Tu te demandes certainement de quoi je parle, non&nbsp;?",
             en : "-"
         },
         "didacticiel-presentation-texte-3" : {
-            fr : "Samhain est un monde fantastique, fait de danger et de mystères dans lequel chaque action a des répercutions&nbsp;!",
+            fr : "Samhain est un monde fantastique, fait de danger et de mystères, dans lequel chaque action a des répercussions&nbsp;!",
             en : "-"
         },
         "didacticiel-presentation-texte-4" : {
-            fr : "Comment t'expliquer, hum... Tiens choisis une main par exemple&nbsp;!",
+            fr : "Comment t'expliquer, hum... Tiens, choisis une main par exemple&nbsp;!",
             en : "-"
         },
         "didacticiel-presentation-texte-5" : {

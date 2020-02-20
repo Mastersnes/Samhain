@@ -18,7 +18,7 @@ define([], function(){
                 eo : "Pugnobato"
             },
             "poing-texte" : {
-                fr : "C'est simplement votre poing... Depuis votre naissance il ne vous a pas quitté.",
+                fr : "C'est simplement votre poing... Depuis votre naissance, il ne vous a pas quitté.",
                 en : "It's just your fist... Since your birth he hasn't left you."
             },
             "baton" : {

@@ -18,7 +18,7 @@ define([], function(){
                 en : "Your arm... Quite simply... You can be proud of it!"
             },
             "bouclierBois" : {
-                fr : "Bouclier de bois",
+                fr : "Bouclier en bois",
                 en : "Wooden Shield"
             },
             "bouclierBois-action" : {
@@ -26,7 +26,7 @@ define([], function(){
                 en : "Parry with the Shield"
             },
             "bouclierBois-texte" : {
-                fr : "Un bouclier en bois assez banale. Il semble plutôt résistant.",
+                fr : "Un bouclier en bois assez banal. Il semble plutôt résistant.",
                 en : "A fairly commonplace wooden shield. He seems pretty resilient."
             },
             "bouclierFer" : {

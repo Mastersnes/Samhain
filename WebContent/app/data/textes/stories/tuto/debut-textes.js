@@ -14,7 +14,7 @@ define([], function(){
             en : "Having finished your hard work a little sooner,"
         },
         "quete1-start-texte-4" : {
-            fr : "Vous ramassez une <span key='pomme'>pomme</span> de votre panier et décidez de vous reposer au pied du géants feuillus.",
+            fr : "Vous ramassez une <span key='pomme'>pomme</span> de votre panier et décidez de vous reposer au pied du géant feuillu.",
             en : "You pick an <span key='pomme'>apple</span> from your basket and decide to rest at the foot of the leafy giants."
         },
 
@@ -27,7 +27,7 @@ define([], function(){
             en : "In the distance, you seem to hear the sounds of legs..."
         },
         "repos2-texte-3" : {
-            fr : "Vous vous levez en sursaut quand deux <span key='araignee'>araignées</span> vous sautent dessus&nbsp;!",
+            fr : "Vous vous levez en sursaut, quand deux <span key='araignee'>araignées</span> vous sautent dessus&nbsp;!",
             en : "You get up in a jolt when two <span key='araignee'>spiders</span> jump on you!"
         },
 
@@ -36,13 +36,13 @@ define([], function(){
             en : "After defeating your opponents with the strength of your <span key='poing'>fist</span>,"
         },
         "reposCombat-texte-2" : {
-            fr : "Vous faites une pause pour reprendre vos esprits :",
-            en : "You're taking a break to come to your senses:"
+            fr : "Vous faites une pause pour reprendre vos esprits.",
+            en : "You're taking a break to come to your senses."
         },
 
         "reposFouilleFail-texte-1" : {
-            fr : "Vous en fouillez une mais ne trouvez que des entrailles, Berk&nbsp;!",
-            en : "You search one but only find guts, Yuck!"
+            fr : "Vous en fouillez une, mais ne trouvez que des entrailles... Berk&nbsp;!",
+            en : "You search one but only find guts... Yuck!"
         },
         "reposFouilleFail-texte-2" : {
             fr : "J’espère que ce n'est pas ce que vous cherchiez... si&nbsp;?",
@@ -50,7 +50,7 @@ define([], function(){
         },
 
         "reposFouilleSuccess-texte-1" : {
-            fr : "En remuant les entrailles vous découvrez une belle <span key='pomme'>pomme</span>&nbsp;!",
+            fr : "En remuant les entrailles, vous découvrez une belle <span key='pomme'>pomme</span>&nbsp;!",
             en : "By stirring the guts you discover a beautiful <span key='pomme'>apple</span>!"
         },
         "reposFouilleSuccess-texte-2" : {
