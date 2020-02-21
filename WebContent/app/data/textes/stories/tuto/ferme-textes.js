@@ -6,7 +6,7 @@ define([], function(){
             en : "You arrive at the outskirts of the village, in front of the old Tom's farm."
         },
         "reposVille-texte-2" : {
-            fr : "Au loin, des bruits de combats acharn&eacute;s se font entendre.",
+            fr : "Au loin, des bruits de combats acharnés se font entendre.",
             en : "In the distance, fierce fighting sounds are heard."
         },
         "reposVille-texte-3" : {
@@ -23,12 +23,12 @@ define([], function(){
             en : "She seems to give up and a <span key='baton'>big stick</span> makes it possible to stall the door."
         },
         "fermeExaminer-texte-3" : {
-            fr : "Peut-&ecirc;tre en cas d&rsquo;orage&nbsp;?",
+            fr : "Peut-être en cas d&rsquo;orage&nbsp;?",
             en : "Maybe in the event of a storm?"
         },
 
         "fermeExaminer2-texte-1" : {
-            fr : "Elle semble abandonn&eacute;e.",
+            fr : "Elle semble abandonnée.",
             en : "It seems abandoned."
         },
         "fermeExaminer2-texte-2" : {
@@ -37,11 +37,11 @@ define([], function(){
         },
 
         "batonSaisieReussite1-texte-1" : {
-            fr : "En for&ccedil;ant un peu, vous parvenez à d&eacute;bloquer le <span key='baton'>b&acirc;ton</span>.",
+            fr : "En for&ccedil;ant un peu, vous parvenez à débloquer le <span key='baton'>b&acirc;ton</span>.",
             en : "By forcing a little, you can unlock the <span key='baton'>stick</span>."
         },
         "batonSaisieReussite1-texte-2" : {
-            fr : "Dans une roulade arri&egrave;re, vous avez juste le temps d&rsquo;esquiver",
+            fr : "Dans une roulade arrière, vous avez juste le temps d&rsquo;esquiver",
             en : "In backward roll, you have just enough time to dodge"
         },
         "batonSaisieReussite2-texte-1" : {
@@ -62,7 +62,7 @@ define([], function(){
             en : "Impossible to make it move&hellip;"
         },
         "batonSaisieEchec-texte-2" : {
-            fr : "Le <span key='baton'>b&acirc;ton</span> est trop bien enfonc&eacute;.",
+            fr : "Le <span key='baton'>b&acirc;ton</span> est trop bien enfoncé.",
             en : "The <span key='baton'>stick</span> is too deep."
         },
         "batonSaisieEchec-texte-3" : {
@@ -71,7 +71,7 @@ define([], function(){
         },
 
         "batonPousse-texte-1" : {
-            fr : "Vous donnez un puissant coup de pied dans le <span key='baton'>b&acirc;ton</span> qui &eacute;clate en morceaux.",
+            fr : "Vous donnez un puissant coup de pied dans le <span key='baton'>b&acirc;ton</span> qui éclate en morceaux.",
             en : "You made a powerful kick in the <span key='baton'>stick</span> that burst into pieces."
         },
         "batonPousse-texte-2" : {
@@ -84,7 +84,7 @@ define([], function(){
             en : "A horrible <span key='goule'>ghoul</span> leaps out of the barn!"
         },
         "fermeGoule-texte-2" : {
-            fr : "Elle vous observe un moment, comme si vous &eacute;tiez un en-cas,",
+            fr : "Elle vous observe un moment, comme si vous étiez un en-cas,",
             en : "She watches you for a while, like you're a snack,"
         },
         "fermeGoule-texte-3" : {
@@ -97,7 +97,7 @@ define([], function(){
             en : "What did this monster do here&nbsp;?"
         },
         "fermeGoule2-texte-2" : {
-            fr : "Vous vous remettez de vos &eacute;motions et&hellip;",
+            fr : "Vous vous remettez de vos émotions et&hellip;",
             en : "You recover from your emotions and&hellip;"
         },
 
@@ -106,16 +106,16 @@ define([], function(){
             en : "Nothing&hellip;"
         },
         "fouillerGoule-texte-2" : {
-            fr : "Juste un cadavre à moiti&eacute; d&eacute;compos&eacute;.",
+            fr : "Juste un cadavre à moitié décomposé.",
             en : "Just a corpse half-decomposed."
         },
 
         "grange-texte-1" : {
-            fr : "La grange est sombre et sent le renferm&eacute;.",
+            fr : "La grange est sombre et sent le renfermé.",
             en : "The barn is dark and smells of containment."
         },
         "grange-texte-2" : {
-            fr : "Une grosse table est pos&eacute;e au fond.",
+            fr : "Une grosse table est posée au fond.",
             en : "A large table is set in the back."
         },
 
@@ -124,25 +124,25 @@ define([], function(){
             en : "The table is covered in clutterful paperwork."
         },
         "grangeFouilleTable-texte-2" : {
-            fr : "Une vieille <span key='bougie'>bougie</span> presque us&eacute;e est pos&eacute;e dans un coin.",
+            fr : "Une vieille <span key='bougie'>bougie</span> presque consumée est posée dans un coin.",
             en : "An old <span key='bougie'>candle</span> almost worn out is placed in a corner."
         },
 
         "grangeFouilleTable2-texte-1" : {
-            fr : "Vous prenez la <span key='bougie'>bougie</span> et le n&eacute;cessaire pour l&rsquo;allumer si besoin.",
+            fr : "Vous prenez la <span key='bougie'>bougie</span> et le nécessaire pour l&rsquo;allumer si besoin.",
             en : "You take the candle and light it if necessary."
         },
         "grangeFouilleTable2-texte-2" : {
-            fr : "Il est temps de continuer l&rsquo;aventure :",
-            en : "It is time to continue the adventure:"
+            fr : "Il est temps de continuer l&rsquo;aventure !",
+            en : "It is time to continue the adventure!"
         },
 
         "grangeExamine-texte-1" : {
-            fr : "Une grande b&acirc;tisse recouverte de poussi&egrave;re&hellip;",
+            fr : "Une grande bâtisse recouverte de poussière&hellip;",
             en : "A large building covered with dust&hellip;"
         },
         "grangeExamine-texte-2" : {
-            fr : "De la paille est pr&eacute;sente partout o&ugrave; vous mettez les pieds.",
+            fr : "De la paille est présente partout où vous mettez les pieds.",
             en : "Straw is present wherever you set foot."
         },
 

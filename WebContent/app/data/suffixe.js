@@ -291,6 +291,16 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "argent" : 1.5,
             "xp" : 1.5
         },
+        "blesse" : {
+            "namem" : "blesse-m",
+            "namef" : "blesse-f",
+            "attaque" : 0.8,
+            "defense" : 0,
+            "vie" : 0.8,
+            "mana" : 1,
+            "argent" : 0.8,
+            "xp" : 1
+        },
         "manchot" : {
             "namem" : "manchot-m",
             "namef" : "manchot-f",
@@ -300,17 +310,6 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "mana" : 1,
             "argent" : 0.5,
             "xp" : 0.5,
-            "unique" : true
-        },
-        "blesse" : {
-            "namem" : "blesse-m",
-            "namef" : "blesse-f",
-            "attaque" : 0.8,
-            "defense" : 0,
-            "vie" : 0.8,
-            "mana" : 1,
-            "argent" : 0.8,
-            "xp" : 1,
             "unique" : true
         },
         "lancien" : {
@@ -332,7 +331,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "vie" : 1.2,
             "mana" : 1.2,
             "argent" : 1,
-            "xp" : 1
+            "xp" : 1,
+            "unique" : true
         }
 	};
 	

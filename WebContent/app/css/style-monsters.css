@@ -18,7 +18,8 @@ monstersContainer monster.grosseGoule name {
     font-size: 3.4vh;
 }
 monstersContainer monster.necromancien name {
-    top: 27%;
+    top: 26% !important;
+    left: 17% !important;
 }
 
 /**
