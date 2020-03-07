@@ -193,9 +193,9 @@ define([], function(){
             fr : "Utiliser la clef",
             en : "Use the key"
         },
-        "lire-parchemin" : {
-            fr : "Lire les parchemins",
-            en : "Read Scrolls"
+        "prendre-parchemin" : {
+            fr : "Prendre les parchemins",
+            en : "Take the Scrolls"
         },
         "mange-continue" : {
             fr : "Manger et continuer",
@@ -273,7 +273,7 @@ define([], function(){
             fr : "Donner le fromage",
             en : "Give the cheese"
         },
-        "defendre-ville" : {
+        "defendre-village" : {
             fr : "Défendre le village",
             en : "Defending the city"
         },

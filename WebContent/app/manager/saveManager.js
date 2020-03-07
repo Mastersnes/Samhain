@@ -55,7 +55,7 @@ function($, _, Utils) {
                 "success" : {
                     "successComplete" : [],
 
-                    "GameComplete" : false,
+                    "TutoComplete" : false,
                     "GameStart" : false,
                     "MaxGoldEarn" : 0,
                     "HelpSpider" : false,
@@ -135,7 +135,7 @@ function($, _, Utils) {
                 this.kongregateUtils.score("Gold", success["MaxGoldEarn"]);
                 this.kongregateUtils.score("Level", success["MaxLevelEarn"]);
 
-                if (success["GameComplete"]) this.kongregateUtils.score("GameComplete", 1);
+                if (success["TutoComplete"]) this.kongregateUtils.score("TutoComplete", 1);
                 if (success["GameStart"]) this.kongregateUtils.score("GameStart", 1);
                 if (success["HelpSpider"]) this.kongregateUtils.score("HelpSpider", 1);
                 if (success["HelpTown"]) this.kongregateUtils.score("HelpTown", 1);

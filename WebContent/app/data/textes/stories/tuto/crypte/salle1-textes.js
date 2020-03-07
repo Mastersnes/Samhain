@@ -2,11 +2,11 @@
 define([], function(){
 	var data = {
         "necroS1Roi-texte-1" : {
-            fr : "Vous p&eacute;n&eacute;trez prudemment dans la pi&egrave;ce.",
+            fr : "Vous pénétrez prudemment dans la pièce.",
             en : "You enter the room carefully."
         },
         "necroS1Roi-texte-2" : {
-            fr : "Deux cadavres de <span key='goule'>goules</span> gisent sur le sol et une tra&icirc;n&eacute;e de sang vert",
+            fr : "Deux cadavres de <span key='goule'>goules</span> gisent sur le sol et une traînée de sang vert",
             en : "Two dead <span key='goule'>ghouls</span> lie on the ground and a green blood trail"
         },
         "necroS1Roi-texte-3" : {
@@ -15,7 +15,7 @@ define([], function(){
         },
 
         "necroS1-texte-1" : {
-            fr : "Vous p&eacute;n&eacute;trez dans une petite pi&egrave;ce vide.",
+            fr : "Vous pénétrez dans une petite pièce vide.",
             en : "You enter a small empty room."
         },
         "necroS1-texte-2" : {
@@ -33,7 +33,7 @@ define([], function(){
             en : "You're killing those larvae!"
         },
         "necroS1Fight2-texte-2" : {
-            fr : "Elles ont failli vous d&eacute;coiffer&hellip;",
+            fr : "Elles ont failli vous décoiffer&hellip;",
             en : "They almost blew your hair&hellip;"
         },
         "necroS1Fight2-texte-3" : {
@@ -42,15 +42,15 @@ define([], function(){
         },
 
         "necroS1Fouille-texte-1" : {
-            fr : "La salle est compl&egrave;tement vide hormis un petit paillasson",
+            fr : "La salle est complètement vide, hormis un petit paillasson",
             en : "The room is completely empty except for a doormat."
         },
         "necroS1Fouille-texte-2" : {
-            fr : "devant l&rsquo;entr&eacute;e inscrit &laquo; HellCome &raquo;.",
+            fr : "devant l'entrée sur lequel il est inscrit &laquo; HellCome &raquo;.",
             en : "in front of the entrance marked &laquo; HellCome &raquo;."
         },
         "necroS1Fouille-texte-3" : {
-            fr : "En le soulevant, vous d&eacute;couvrez une petite <span key='clefS2'>clef</span>&hellip;",
+            fr : "En le soulevant, vous découvrez une petite <span key='clefS2'>clef</span>&hellip;",
             en : "By lifting it, you discover a small <span key='clefS2'>key</span>&hellip;"
         },
         "necroS1Fouille-texte-4" : {

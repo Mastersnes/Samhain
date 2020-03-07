@@ -2,33 +2,33 @@
 define([], function(){
 	var data = {
         "nidGauche-texte-1" : {
-            fr : "La lumiére semble faiblir davantage, mais vous distinguez au loin une faible lueur.",
+            fr : "La lumière semble faiblir davantage, mais vous distinguez au loin une faible lueur.",
             en : "The light seems to fade more, but you can see a faint glow in the distance."
         },
         "nidGauche-texte-2" : {
-            fr : "En vous approchant, vous apercevez un &eacute;norme coffre.",
+            fr : "En vous approchant, vous apercevez un énorme coffre.",
             en : "As you approach, you see a huge trunk."
         },
 
         "coffre-texte-1" : {
-            fr : "Le coffre est solidement ferm&eacute;.",
+            fr : "Le coffre est solidement fermé.",
             en : "The trunk is securely closed."
         },
         "coffre-texte-2" : {
-            fr : "Peut-&ecirc;tre qu&rsquo;en for&ccedil;ant un peu avec la <span key='dague'>dague</span>,",
+            fr : "Peut-être qu'en essayant de faire levier avec la <span key='dague'>dague</span>,",
             en : "Maybe by forcing a little with the <span key='dague'>dagger</span>,"
         },
         "coffre-texte-3" : {
-            fr : "vous pourriez r&eacute;ussir à l&rsquo;ouvrir&nbsp;?",
+            fr : "vous pourriez réussir à l'ouvrir&nbsp;?",
             en : "you might be able to open it?"
         },
 
         "coffreReussite1-texte-1" : {
-            fr : "Le coffre coince, mais en for&ccedil;ant un peu&hellip;",
+            fr : "Le coffre coince, mais en forçant un peu&hellip;",
             en : "The trunk gets stuck, but by forcing a little&hellip;"
         },
         "coffreReussite1-texte-2" : {
-            fr : "Super&nbsp;! Vous r&eacute;ussissez à l&rsquo;ouvrir en grand&nbsp;!",
+            fr : "Super&nbsp;! Vous réussissez à l'ouvrir en grand&nbsp;!",
             en : "Awesome! You managed to open it wide!"
         },
         "coffreReussite1-texte-3" : {
@@ -46,7 +46,7 @@ define([], function(){
         },
 
         "coffreReussite2-texte-1" : {
-            fr : "La <span key='dague'>dague</span> &eacute;clate en morceaux et le coffre se renverse sur le sol.",
+            fr : "La <span key='dague'>dague</span> éclate en morceaux et le coffre se renverse sur le sol.",
             en : "The dagger breaks apart and the trunk falls on the floor."
         },
         "coffreReussite2-texte-2" : {
@@ -60,7 +60,7 @@ define([], function(){
         },
 
         "coffreEchec1-texte-1" : {
-            fr : "Non, impossible&nbsp;! Il ne bouge pas d&rsquo;un poil.",
+            fr : "Non, impossible&nbsp;! Il ne bouge pas d'un poil.",
             en : "No, impossible! He's not moving a bit."
         },
 
@@ -70,7 +70,7 @@ define([], function(){
         },
 
         "coffreEchec2-texte-1" : {
-            fr : "Bam&nbsp;! La <span key='dague'>dague</span> &eacute;clate dans vos mains&nbsp;!",
+            fr : "Bam&nbsp;! La <span key='dague'>dague</span> éclate dans vos mains&nbsp;!",
             en : "Bam! The dagger bursts in your hands!"
         },
         "coffreEchec2-texte-2" : {
@@ -78,7 +78,7 @@ define([], function(){
             en : "A dash of blood flows slowly on the ground."
         },
         "coffreEchec2-texte-3" : {
-            fr : "Le coffre, lui, vous regarde impassible&hellip;",
+            fr : "Le coffre, lui, vous regarde,e impassible&hellip;",
             en : "The trunk, on the other hand, looks impassive&hellip;"
         },
 
@@ -92,7 +92,7 @@ define([], function(){
             en : "With a dog sickness,"
         },
         "coffreEchecSimple-texte-1" : {
-            fr : "Impossible de l&rsquo;ouvrir&hellip;",
+            fr : "Impossible de l'ouvrir&hellip;",
             en : "Impossible to open it&hellip;"
         },
 

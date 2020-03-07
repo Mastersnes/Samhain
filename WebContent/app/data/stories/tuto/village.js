@@ -2,68 +2,68 @@
 define([], function() {
     var data = {
         /**
-         * La ville assiegee
+         * Le village assiegee
          */
-        "reposVille2" : {
-            "textes" : ["reposVille2-texte-1", "reposVille2-texte-2", "reposVille2-texte-3"],
+        "reposVillage2" : {
+            "textes" : ["reposVillage2-texte-1", "reposVillage2-texte-2", "reposVillage2-texte-3"],
             "actions" : [
                 {
-                    "name" : "defendre-ville", "action" : [
+                    "name" : "defendre-village", "action" : [
                         {"key" : "fight", "params" : [[
                             "goule", "goule"
-                        ], "reposVille3"]}
+                        ], "reposVillage3"]}
                     ]
                 }
             ]
         },
-        "reposVille3" : {
-            "textes" : ["reposVille3-texte-1", "reposVille3-texte-2", "reposVille3-texte-3", "reposVille3-texte-4",
-                "reposVille3-texte-5"],
+        "reposVillage3" : {
+            "textes" : ["reposVillage3-texte-1", "reposVillage3-texte-2", "reposVillage3-texte-3", "reposVillage3-texte-4",
+                "reposVillage3-texte-5"],
             "actions" : [
                 {
                     "name" : "suivant", "action" : [
-                        {"key" : "go", "params" : ["reposVille4"]}
+                        {"key" : "go", "params" : ["reposVillage4"]}
                     ]
                 }
             ]
         },
-        "reposVille4" : {
-            "textes" : ["reposVille4-texte-1", "reposVille4-texte-2", "reposVille4-texte-3"],
+        "reposVillage4" : {
+            "textes" : ["reposVillage4-texte-1", "reposVillage4-texte-2", "reposVillage4-texte-3"],
             "actions" : [
                 {
                     "name" : "aider", "action" : [
                         {"key" : "score", "params" : ["HelpTown", 1]},
-                        {"key" : "go", "params" : ["reposVilleAide"]}
+                        {"key" : "go", "params" : ["reposVillageAide"]}
                     ]
                 },
                 {
                     "name" : "refuser", "action" : [
-                        {"key" : "go", "params" : ["reposVilleRefus"]}
+                        {"key" : "go", "params" : ["reposVillageRefus"]}
                     ]
                 }
             ]
         },
-        "reposVilleAide" : {
-            "textes" : ["reposVilleAide-texte-1", "reposVilleAide-texte-2", "reposVilleAide-texte-3",
-                "reposVilleAide-texte-4", "reposVilleAide-texte-5"],
+        "reposVillageAide" : {
+            "textes" : ["reposVillageAide-texte-1", "reposVillageAide-texte-2", "reposVillageAide-texte-3",
+                "reposVillageAide-texte-4", "reposVillageAide-texte-5"],
             "actions" : [
                 {
                     "name" : "prendre-arme", "action" : [
                         {"key" : "gain", "params" : ["epee"]},
                         {"key" : "gain", "params" : ["bouclierFer" ]},
                         {"key" : "score", "params" : ["Treasure", 1]},
-                        {"key" : "go", "params" : ["reposVilleAide1"]}
+                        {"key" : "go", "params" : ["reposVillageAide1"]}
                     ]
                 },
                 {
                     "name" : "non-merci", "action" : [
-                        {"key" : "go", "params" : ["reposVilleAide2"]}
+                        {"key" : "go", "params" : ["reposVillageAide2"]}
                     ]
                 }
             ]
         },
-        "reposVilleAide1" : {
-            "textes" : ["reposVilleAide1-texte-1", "reposVilleAide1-texte-2", "reposVilleAide1-texte-3"],
+        "reposVillageAide1" : {
+            "textes" : ["reposVillageAide1-texte-1", "reposVillageAide1-texte-2", "reposVillageAide1-texte-3"],
             "actions" : [
                 {
                     "name" : "suivant", "action" : [
@@ -73,9 +73,9 @@ define([], function() {
                 }
             ]
         },
-        "reposVilleAide2" : {
-            "textes" : ["reposVilleAide2-texte-1", "reposVilleAide2-texte-2", "reposVilleAide2-texte-3",
-                "reposVilleAide2-texte-4", "reposVilleAide2-texte-5"],
+        "reposVillageAide2" : {
+            "textes" : ["reposVillageAide2-texte-1", "reposVillageAide2-texte-2", "reposVillageAide2-texte-3",
+                "reposVillageAide2-texte-4", "reposVillageAide2-texte-5"],
             "actions" : [
                 {
                     "name" : "suivant", "action" : [
@@ -86,63 +86,63 @@ define([], function() {
                 }
             ]
         },
-        "reposVilleRefus" : {
-            "textes" : ["reposVilleRefus-texte-1", "reposVilleRefus-texte-2", "reposVilleRefus-texte-3"],
+        "reposVillageRefus" : {
+            "textes" : ["reposVillageRefus-texte-1", "reposVillageRefus-texte-2", "reposVillageRefus-texte-3"],
             "actions" : [
                 {
                     "name" : "venger-affront", "action" : [
                         {"key" : "score", "params" : ["Traitor", 1]},
                         {"key" : "fight", "params" : [[
                             "garde", "garde"
-                        ], "reposVilleTraitre" ]}
+                        ], "reposVillageTraitre" ]}
                     ]
                 },
                 {
                     "name" : "sen-aller", "action" : [
-                        { "key" : "go", "params" : ["reposVilleRefus2"]}
+                        { "key" : "go", "params" : ["reposVillageRefus2"]}
                     ]
                 }
             ]
         },
-        "reposVilleTraitre" : {
-            "textes" : ["reposVilleTraitre-texte-1", "reposVilleTraitre-texte-2", "reposVilleTraitre-texte-3",
-                "reposVilleTraitre-texte-4"],
+        "reposVillageTraitre" : {
+            "textes" : ["reposVillageTraitre-texte-1", "reposVillageTraitre-texte-2", "reposVillageTraitre-texte-3",
+                "reposVillageTraitre-texte-4"],
             "actions" : [
                 {
                     "name" : "combattre", "action" : [
                         {"key" : "fight", "params" : [[
                             "villageois", "villageois", "villageois", "villageois"
-                        ], "reposVilleTraitre2" ]}
+                        ], "reposVillageTraitre2" ]}
                     ]
                 },
                 {
                     "name" : "fuir", "action" : [
                         {"key" : "score", "params" : ["Leak", 1]},
-                        {"key" : "go", "params" : ["reposVilleRefus2"]}
+                        {"key" : "go", "params" : ["reposVillageRefus2"]}
                     ]
                 }
             ]
         },
-        "reposVilleTraitre2" : {
-            "textes" : ["reposVilleTraitre2-texte-1", "reposVilleTraitre2-texte-2", "reposVilleTraitre2-texte-3"],
+        "reposVillageTraitre2" : {
+            "textes" : ["reposVillageTraitre2-texte-1", "reposVillageTraitre2-texte-2", "reposVillageTraitre2-texte-3"],
             "actions" : [
                 {
                     "name" : "fouiller-maison", "action" : [
                         {"key" : "random", "params" : [
-                            "villeFouilleReussite1", "villeFouilleReussite2", "villeFouilleReussite3",
-                            "villeFouilleEchec", "villeFouilleEchec2"
+                            "villageFouilleReussite1", "villageFouilleReussite2", "villageFouilleReussite3",
+                            "villageFouilleEchec", "villageFouilleEchec2"
                         ]}
                     ]
                 },
                 {
                     "name" : "sen-aller", "action" : [
-                        {"key" : "go", "params" : ["reposVilleTraitre3"]}
+                        {"key" : "go", "params" : ["reposVillageTraitre3"]}
                     ]
                 }
             ]
         },
-        "reposVilleTraitre3" : {
-            "textes" : ["reposVilleTraitre3-texte-1", "reposVilleTraitre3-texte-2", "reposVilleTraitre3-texte-3"],
+        "reposVillageTraitre3" : {
+            "textes" : ["reposVillageTraitre3-texte-1", "reposVillageTraitre3-texte-2", "reposVillageTraitre3-texte-3"],
             "actions" : [
                 {
                     "name" : "suivre-trace", "action" : [
@@ -151,38 +151,38 @@ define([], function() {
                 }
             ]
         },
-        "villeFouilleReussite1" : {
-            "textes" : ["villeFouilleReussite1-texte-1", "villeFouilleReussite1-texte-2", "villeFouilleReussite1-texte-3"],
+        "villageFouilleReussite1" : {
+            "textes" : ["villageFouilleReussite1-texte-1", "villageFouilleReussite1-texte-2", "villageFouilleReussite1-texte-3"],
             "actions" : [
                 {
                     "name" : "prendre", "action" : [
                         {"key" : "gain", "params" : ["potionSante"]},
-                        {"key" : "go", "params" : ["villeFouilleSuite"]}
+                        {"key" : "go", "params" : ["villageFouilleSuite"]}
                     ]
                 }
             ]
         },
-        "villeFouilleReussite2" : {
-            "textes" : ["villeFouilleReussite2-texte-1", "villeFouilleReussite2-texte-2", "villeFouilleReussite1-texte-3"],
+        "villageFouilleReussite2" : {
+            "textes" : ["villageFouilleReussite2-texte-1", "villageFouilleReussite2-texte-2", "villageFouilleReussite1-texte-3"],
             "actions" : [
                 {
                     "name" : "prendre", "action" : [
                         {"key" : "gain", "params" : ["epee"]},
                         {"key" : "gain", "params" : ["bouclierFer"]},
                         {"key" : "score", "params" : ["Treasure", 1]},
-                        {"key" : "go", "params" : ["villeFouilleSuite"]}
+                        {"key" : "go", "params" : ["villageFouilleSuite"]}
                     ]
                 },
                 {
                     "name" : "laisser", "action" : [
-                        {"key" : "go", "params" : ["villeFouilleSuite"]}
+                        {"key" : "go", "params" : ["villageFouilleSuite"]}
                     ]
                 }
             ]
         },
-        "villeFouilleReussite3" : {
-            "textes" : ["villeFouilleReussite3-texte-1", "villeFouilleReussite3-texte-2", "villeFouilleReussite2-texte-2",
-                "villeFouilleReussite3-texte-3", "villeFouilleReussite1-texte-2", "villeFouilleReussite1-texte-3"],
+        "villageFouilleReussite3" : {
+            "textes" : ["villageFouilleReussite3-texte-1", "villageFouilleReussite3-texte-2", "villageFouilleReussite2-texte-2",
+                "villageFouilleReussite3-texte-3", "villageFouilleReussite1-texte-2", "villageFouilleReussite1-texte-3"],
             "actions" : [
                 {
                     "name" : "tout-prendre", "action" : [
@@ -190,41 +190,41 @@ define([], function() {
                         {"key" : "gain", "params" : ["bouclierFer"]},
                         {"key" : "gain", "params" : ["potionSante"]},
                         {"key" : "score", "params" : ["Treasure", 1]},
-                        {"key" : "go", "params" : ["villeFouilleSuite"]}
+                        {"key" : "go", "params" : ["villageFouilleSuite"]}
                     ]
                 },
                 {
                     "name" : "laisser-arme", "action" : [
                         {"key" : "gain", "params" : ["potionSante"]},
-                        {"key" : "go", "params" : ["villeFouilleSuite"]}
+                        {"key" : "go", "params" : ["villageFouilleSuite"]}
                     ]
                 }
             ]
         },
-        "villeFouilleEchec" : {
-            "textes" : ["villeFouilleEchec-texte-1", "villeFouilleEchec-texte-2", "villeFouilleEchec-texte-3"],
+        "villageFouilleEchec" : {
+            "textes" : ["villageFouilleEchec-texte-1", "villageFouilleEchec-texte-2", "villageFouilleEchec-texte-3"],
             "actions" : [
                 {
                     "name" : "suivant", "action" : [
-                        {"key" : "go", "params" : ["villeFouilleSuite"]}
+                        {"key" : "go", "params" : ["villageFouilleSuite"]}
                     ]
                 }
             ]
         },
-        "villeFouilleEchec2" : {
-            "textes" : ["villeFouilleEchec2-texte-1", "villeFouilleEchec2-texte-2", "villeFouilleEchec2-texte-3"],
+        "villageFouilleEchec2" : {
+            "textes" : ["villageFouilleEchec2-texte-1", "villageFouilleEchec2-texte-2", "villageFouilleEchec2-texte-3"],
             "actions" : [
                 {
                     "name" : "combattre", "action" : [
                         {"key" : "fight", "params" : [[
                             "grosseGoule"
-                        ], "villeFouilleSuite"]}
+                        ], "villageFouilleSuite"]}
                     ]
                 }
             ]
         },
-        "villeFouilleSuite" : {
-            "textes" : ["villeFouilleSuite-texte-1", "villeFouilleSuite-texte-2", "villeFouilleSuite-texte-3"],
+        "villageFouilleSuite" : {
+            "textes" : ["villageFouilleSuite-texte-1", "villageFouilleSuite-texte-2", "villageFouilleSuite-texte-3"],
             "actions" : [
                 {
                     "name" : "suivre-trace", "action" : [
@@ -233,8 +233,8 @@ define([], function() {
                 }
             ]
         },
-        "reposVilleRefus2" : {
-            "textes" : ["reposVilleRefus2-texte-1", "reposVilleRefus2-texte-2", "reposVilleRefus2-texte-3"],
+        "reposVillageRefus2" : {
+            "textes" : ["reposVillageRefus2-texte-1", "reposVillageRefus2-texte-2", "reposVillageRefus2-texte-3"],
             "actions" : [
                 {
                     "name" : "suivre-trace", "action" : [
@@ -243,13 +243,13 @@ define([], function() {
                 }
             ]
         },
-        "retourVille2" : {
-            "textes" : ["reposVille2-texte-1", "retourVille2-texte-1", "retourVille2-texte-2", "retourVille2-texte-3"],
+        "retourVillage2" : {
+            "textes" : ["reposVillage2-texte-1", "retourVillage2-texte-1", "retourVillage2-texte-2", "retourVillage2-texte-3"],
             "actions" : [
                 {
                     "name" : "arretez", "action" : [
                         {"key" : "gain", "params" : ["helpRoi2"]},
-                        {"key" : "go", "params" : ["retourVilleAideRoi"]}
+                        {"key" : "go", "params" : ["retourVillageAideRoi"]}
                     ]
                 },
                 {
@@ -257,49 +257,49 @@ define([], function() {
                         {"key" : "score", "params" : ["TraitorSpider", 1]},
                         {"key" : "fight", "params" : [[
                             {"name":"roiAraignee", "suffixe":"blesse"}
-                        ], "retourVilleAideGarde" ]}
+                        ], "retourVillageAideGarde" ]}
                     ]
                 }
             ]
         },
-        "retourVilleAideRoi" : {
-            "textes" : ["retourVilleAideRoi-texte-1", "retourVilleAideRoi-texte-2", "retourVilleAideRoi-texte-3",
-                "retourVilleAideRoi-texte-4"],
+        "retourVillageAideRoi" : {
+            "textes" : ["retourVillageAideRoi-texte-1", "retourVillageAideRoi-texte-2", "retourVillageAideRoi-texte-3",
+                "retourVillageAideRoi-texte-4"],
             "actions" : [
                 {
                     "name" : "suivant", "action" : [
-                        {"key" : "go", "params" : ["retourVilleAideRoi2"]}
+                        {"key" : "go", "params" : ["retourVillageAideRoi2"]}
                     ]
                 }
             ]
         },
-        "retourVilleAideRoi2" : {
-            "textes" : ["retourVilleAideRoi2-texte-1", "retourVilleAideRoi2-texte-2", "retourVilleAideRoi2-texte-3"],
+        "retourVillageAideRoi2" : {
+            "textes" : ["retourVillageAideRoi2-texte-1", "retourVillageAideRoi2-texte-2", "retourVillageAideRoi2-texte-3"],
             "actions" : [
                 {
                     "name" : "suivant", "action" : [
-                        {"key" : "go", "params" : ["retourVilleAideRoi3"]}
+                        {"key" : "go", "params" : ["retourVillageAideRoi3"]}
                     ]
                 }
             ]
         },
-        "retourVilleAideRoi3" : {
-            "textes" : ["retourVilleAideRoi3-texte-1", "retourVilleAideRoi3-texte-2"],
+        "retourVillageAideRoi3" : {
+            "textes" : ["retourVillageAideRoi3-texte-1", "retourVillageAideRoi3-texte-2"],
             "actions" : [
                 {
                     "name" : "suivant", "action" : [
-                        {"key" : "go", "params" : ["reposVille4"]}
+                        {"key" : "go", "params" : ["reposVillage4"]}
                     ]
                 }
             ]
         },
-        "retourVilleAideGarde" : {
-            "textes" : ["retourVilleAideGarde-texte-1", "retourVilleAideGarde-texte-2", "reposVille3-texte-3",
-                "reposVille3-texte-4", "reposVille3-texte-5"],
+        "retourVillageAideGarde" : {
+            "textes" : ["retourVillageAideGarde-texte-1", "retourVillageAideGarde-texte-2", "reposVillage3-texte-3",
+                "reposVillage3-texte-4", "reposVillage3-texte-5"],
             "actions" : [
                 {
                     "name" : "suivant", "action" : [
-                        {"key" : "go", "params" : ["reposVille4"]}
+                        {"key" : "go", "params" : ["reposVillage4"]}
                     ]
                 }
             ]

@@ -154,7 +154,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "manaCost" : 1,
                 "sound" : "bouleFeu",
                 "anim" : "bouleFeu",
-                "price" : 200,
+                "price" : 300,
                 "offensif" : true,
                 "element" : "feu"
             },

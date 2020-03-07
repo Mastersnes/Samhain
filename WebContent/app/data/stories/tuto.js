@@ -2,11 +2,11 @@
 define(["app/data/stories/tuto/debut",
     "app/data/stories/tuto/nid",
     "app/data/stories/tuto/ferme",
-    "app/data/stories/tuto/ville",
+    "app/data/stories/tuto/village",
     "app/data/stories/tuto/echoppe",
     "app/data/stories/tuto/crypte"
 ],
-		function(Debut, Nid, Ferme, Ville, Echoppe, Crypte) {
+		function(Debut, Nid, Ferme, Village, Echoppe, Crypte) {
 			var data = {};
 			return {
 				get : function(key) {
@@ -14,7 +14,7 @@ define(["app/data/stories/tuto/debut",
                     if (!result) result = Debut.get(key);
                     if (!result) result = Nid.get(key);
                     if (!result) result = Ferme.get(key);
-                    if (!result) result = Ville.get(key);
+                    if (!result) result = Village.get(key);
                     if (!result) result = Echoppe.get(key);
                     if (!result) result = Crypte.get(key);
 					return result;

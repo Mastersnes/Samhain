@@ -2,24 +2,24 @@
 define([], function(){
 	var data = {
         "necroS3-texte-1" : {
-            fr : "Vous p&eacute;netrez dans une vieille salle en ruine.",
+            fr : "Vous pénétrez dans une vieille salle en ruine.",
             en : "You enter into an old, ruined room."
         },
         "necroS3-texte-2" : {
-            fr : "Apparement, elle servait de biblioth&egrave;que de fortune.",
+            fr : "Apparemment, elle servait de bibliothèque de fortune.",
             en : "Apparently, it was used as a makeshift library."
         },
         "necroS3-texte-3" : {
-            fr : "Vous d&eacute;couvrez de nombreux ouvrages et parchemins dispers&eacute;s un peu partout sur le sol.",
+            fr : "Vous découvrez de nombreux ouvrages et parchemins dispersés un peu partout sur le sol.",
             en : "You will discover many books and scrolls scattered all over the ground."
         },
         "necroS3-texte-4" : {
-            fr : "Une porte permet d&rsquo;acc&eacute;der à une autre partie du b&acirc;timent.",
+            fr : "Une porte permet d'accéder à une autre partie du bâtiment.",
             en : "A door gives access to another part of the building."
         },
 
         "necroS3Fouille-texte-1" : {
-            fr : "Il semblerait qu&rsquo;il s&rsquo;agisse de trait&eacute;s sur la magie.",
+            fr : "Il semblerait qu'il s'agisse de traités sur la magie.",
             en : "Looks like it's about drafts on magic."
         },
         "necroS3Fouille-texte-2" : {

@@ -146,9 +146,9 @@ function($, _, Utils, PopupUtils, page,
         	if (gagne) {
         	    this.mediatheque.stopAllMusic();
         	    var musicName = "music/victory.ogg";
-        		var gameComplete = this.saveManager.load("GameComplete");
-                this.saveManager.save("GameComplete", gameComplete+1);
-                this.kongregateUtils.score("GameComplete", gameComplete+1);
+        		var tutoComplete = this.saveManager.load("TutoComplete");
+                this.saveManager.save("TutoComplete", tutoComplete+1);
+                this.kongregateUtils.score("TutoComplete", tutoComplete+1);
                 var that = this;
 //                setTimeout(function() {
 //                    that.mediatheque.play(musicName, "", function() {

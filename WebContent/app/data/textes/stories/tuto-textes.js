@@ -3,10 +3,10 @@ define([
     "app/data/textes/stories/tuto/debut-textes",
     "app/data/textes/stories/tuto/nid-textes",
     "app/data/textes/stories/tuto/ferme-textes",
-    "app/data/textes/stories/tuto/ville-textes",
+    "app/data/textes/stories/tuto/village-textes",
     "app/data/textes/stories/tuto/echoppe-textes",
     "app/data/textes/stories/tuto/crypte-textes",
-], function(Debut, Nid, Ferme, Ville, Echoppe, Crypte){
+], function(Debut, Nid, Ferme, Village, Echoppe, Crypte){
 	var data = {
 	};
 	
@@ -16,7 +16,7 @@ define([
             if (!text) text = Debut.get(key);
             if (!text) text = Nid.get(key);
             if (!text) text = Ferme.get(key);
-            if (!text) text = Ville.get(key);
+            if (!text) text = Village.get(key);
             if (!text) text = Echoppe.get(key);
             if (!text) text = Crypte.get(key);
             return text;

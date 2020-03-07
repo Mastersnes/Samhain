@@ -21,7 +21,12 @@ define([], function() {
         			"name" : "parler", "action" : [
         				{"key" : "go", "params" : ["bossParle"]}
         			]
-        		}
+        		},
+                {
+                    "name" : "retour", "action" : [
+                        {"key" : "go", "params" : ["necroCouloir"]}
+                    ]
+                }
         	]
         },
         "bossTousse" : {
@@ -123,7 +128,7 @@ define([], function() {
         	"actions" : [
         		{
         			"name" : "terminer", "action" : [
-        			    {"key" : "score", "params" : ["GameComplete", 1]},
+        			    {"key" : "score", "params" : ["TutoComplete", 1]},
         				{"key" : "go", "params" : ["gagne"]}
         			]
         		}

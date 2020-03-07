@@ -2,14 +2,14 @@
 define([], function() {
     var data = {
         /**
-         * Ferme en direction de la ville
+         * Ferme en direction du village
          */
-        "reposVille" : {
-            "textes" : ["reposVille-texte-1", "reposVille-texte-2", "reposVille-texte-3"],
+        "reposVillage" : {
+            "textes" : ["reposVillage-texte-1", "reposVillage-texte-2", "reposVillage-texte-3"],
             "actions" : [
                 {
                     "name" : "courir-village", "action" : [
-                        {"key" : "hasItem", "params" : [["helpRoi"], "retourVille2", "reposVille2"]}
+                        {"key" : "hasItem", "params" : [["helpRoi"], "retourVillage2", "reposVillage2"]}
                     ]
                 },
                 {
@@ -37,7 +37,7 @@ define([], function() {
                 },
                 {
                     "name" : "courir-village", "action" : [
-                        {"key" : "go", "params" : [ "reposVille2"]}
+                        {"key" : "go", "params" : [ "reposVillage2"]}
                     ]
                 }
             ]
@@ -52,7 +52,7 @@ define([], function() {
                 },
                 {
                     "name" : "courir-village", "action" : [
-                        {"key" : "go", "params" : ["retourVille2"]}
+                        {"key" : "go", "params" : ["retourVillage2"]}
                     ]
                 }
             ]
@@ -102,7 +102,7 @@ define([], function() {
                 },
                 {
                     "name" : "courir-village", "action" : [
-                        {"key" : "go", "params" : ["reposVille2"]}
+                        {"key" : "go", "params" : ["reposVillage2"]}
                     ]
                 }
             ]
@@ -144,7 +144,7 @@ define([], function() {
                 },
                 {
                     "name" : "courir-village", "action" : [
-                        {"key" : "go", "params" : ["reposVille2"]}
+                        {"key" : "go", "params" : ["reposVillage2"]}
                     ]
                 }
             ]
@@ -159,7 +159,7 @@ define([], function() {
                 },
                 {
                     "name" : "courir-village", "action" : [
-                        {"key" : "go", "params" : ["reposVille2"]}
+                        {"key" : "go", "params" : ["reposVillage2"]}
                     ]
                 }
             ]
@@ -180,7 +180,7 @@ define([], function() {
                 {
                     "name" : "courir-village",
                     "action" : [
-                        {"key" : "hasItem", "params" : [["helpRoi"], "retourVille2", "reposVille2"]}
+                        {"key" : "hasItem", "params" : [["helpRoi"], "retourVillage2", "reposVillage2"]}
                     ]
                 }
             ]
@@ -212,7 +212,7 @@ define([], function() {
                 {
                     "name" : "courir-village",
                     "action" : [
-                        {"key" : "hasItem", "params" : [["helpRoi"], "retourVille2", "reposVille2"]}
+                        {"key" : "hasItem", "params" : [["helpRoi"], "retourVillage2", "reposVillage2"]}
                     ]
                 }
             ]
@@ -228,7 +228,7 @@ define([], function() {
                 {
                     "name" : "courir-village",
                     "action" : [
-                        {"key" : "hasItem", "params" : [["helpRoi"], "retourVille2", "reposVille2"]}
+                        {"key" : "hasItem", "params" : [["helpRoi"], "retourVillage2", "reposVillage2"]}
                     ]
                 }
             ]

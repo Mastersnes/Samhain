@@ -243,7 +243,7 @@ define([], function() {
                 {
                     "name" : "aller-village", "action" : [
                         {"key" : "gain", "params" : ["helpRoi"]},
-                        {"key" : "go", "params" : ["reposVille"]}
+                        {"key" : "go", "params" : ["reposVillage"]}
                     ]
                 }
             ]
@@ -259,7 +259,7 @@ define([], function() {
                 {
                     "name" : "aller-village", "action" : [
                         {"key" : "gain", "params" : ["helpRoi"]},
-                        {"key" : "go", "params" : ["reposVille"]}
+                        {"key" : "go", "params" : ["reposVillage"]}
                     ]
                 }
             ]
@@ -270,7 +270,7 @@ define([], function() {
                 {
                     "name" : "aller-village", "action" : [
                         {"key" : "gain", "params" : ["helpRoi"]},
-                        {"key" : "go", "params" : ["reposVille"]}
+                        {"key" : "go", "params" : ["reposVillage"]}
                     ]
                 }
             ]
@@ -288,7 +288,7 @@ define([], function() {
                 },
                 {
                     "name" : "let-him", "action" : [
-                        {"key" : "go", "params" : ["reposVille"]}
+                        {"key" : "go", "params" : ["reposVillage"]}
                     ]
                 }
             ]
@@ -305,7 +305,7 @@ define([], function() {
                 },
                 {
                     "name" : "rentrer-village", "action" : [
-                        {"key" : "go", "params" : ["reposVille"]}
+                        {"key" : "go", "params" : ["reposVillage"]}
                     ]
                 }
             ]
@@ -316,7 +316,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "aller-village", "action" : [
-                        {"key" : "go", "params" : ["reposVille"]}
+                        {"key" : "go", "params" : ["reposVillage"]}
                     ]
                 }
             ]

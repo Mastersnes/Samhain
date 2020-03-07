@@ -34,7 +34,7 @@ define([], function() {
                     "action" : [
                         {"key" : "hurt","params" : [ 10 ]},
                         {"key" : "score", "params" : ["Leak", 1]},
-                        {"key" : "go", "params" : [ "reposVille" ]}
+                        {"key" : "go", "params" : [ "reposVillage" ]}
                     ]
                 }
             ]
@@ -62,7 +62,7 @@ define([], function() {
                 {
                     "name" : "rentrer-village",
                     "action" : [
-                        { "key" : "go", "params" : [ "reposVille" ]}
+                        { "key" : "go", "params" : [ "reposVillage" ]}
                     ]
                 }
             ]
@@ -100,7 +100,7 @@ define([], function() {
                 },
                 {
                     "name" : "rentrer-village",
-                    "action" : [ { "key" : "go", "params" : [ "reposVille" ]} ]
+                    "action" : [ { "key" : "go", "params" : [ "reposVillage" ]} ]
                 }
             ]
         }

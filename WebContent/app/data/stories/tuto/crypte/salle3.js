@@ -28,7 +28,7 @@ define([], function() {
         		},
         		{
         			"appairIf" : [{"key" : "hasNoItem", "params" : ["parchoLu"]}],
-        			"name" : "lire-parchemin", "action" : [
+        			"name" : "prendre-parchemin", "action" : [
         				{"key" : "upMG", "params" : [2]},
         				{"key" : "gain", "params" : ["soin"]},
         				{"key" : "gain", "params" : ["parchoLu"]},
@@ -39,21 +39,23 @@ define([], function() {
         	]
         },
         "necroS3GS" : {
-        	"textes" : ["necroS3-texte-1", "necroS3-texte-2", "necroS3-texte-3"],
+        	"textes" : ["necroS3-texte-1", "necroS3-texte-2", "necroS3-texte-3", "necroS3-texte-4"],
         	"actions" : [
         		{
         			"name" : "retour", "action" : [
         			    {"key" : "go", "params" : ["necroGS"]}
                     ]
         		},
-        		{
-        			"appairIf" : [{"key" : "hasNoItem", "params" : ["parchoLu"]}],
-        			"name" : "lire-parchemin", "action" : [
-        				{"key" : "upMG", "params" : [3]},
-        				{"key" : "gain", "params" : ["parchoLu"]},
-        				{"key" : "go", "params" : ["necroS3Fouille"]}
-        			]
-        		}
+                {
+                    "appairIf" : [{"key" : "hasNoItem", "params" : ["parchoLu"]}],
+                    "name" : "prendre-parchemin", "action" : [
+                        {"key" : "upMG", "params" : [2]},
+                        {"key" : "gain", "params" : ["soin"]},
+                        {"key" : "gain", "params" : ["parchoLu"]},
+                        {"key" : "score", "params" : ["LearnHeal", 1]},
+                        {"key" : "go", "params" : ["necroS3Fouille"]}
+                    ]
+                }
         	]
         },
         "necroS3Fouille" : {

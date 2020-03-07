@@ -1,15 +1,15 @@
 'use strict';
 define([], function(){
 	var data = {
-        "reposVille-texte-1" : {
+        "reposVillage-texte-1" : {
             fr : "Vous arrivez aux abords du village, devant la ferme du vieux Tom.",
             en : "You arrive at the outskirts of the village, in front of the old Tom's farm."
         },
-        "reposVille-texte-2" : {
+        "reposVillage-texte-2" : {
             fr : "Au loin, des bruits de combats acharnés se font entendre.",
             en : "In the distance, fierce fighting sounds are heard."
         },
-        "reposVille-texte-3" : {
+        "reposVillage-texte-3" : {
             fr : "Un vent de panique vous submerge&hellip;",
             en : "A wind of panic overwhelms you&hellip;"
         },
