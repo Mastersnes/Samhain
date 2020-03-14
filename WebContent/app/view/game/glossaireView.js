@@ -164,6 +164,7 @@ define(["jquery",
             this.addInfo("experienceGain", monster.xp, suffixe.xp);
             this.addInfo("argentGain", monster.argent, suffixe.argent);
             this.addInfoList("competences", monster.abilities);
+            this.addInfoList("items", monster.consos);
             return true;
         };
 

@@ -85,6 +85,10 @@ define([], function(){
                 fr : "Compétences",
                 en : "Skills"
             },
+            "items" : {
+                fr : "Objets",
+                en : "Items"
+            },
             "inflige" : {
                 fr : "Inflige",
                 en : "Inflicts"

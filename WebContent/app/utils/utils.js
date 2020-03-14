@@ -57,7 +57,7 @@ define(["jquery", "sha"], function($, sha){
         },
 		clone : function(value) {
 		    if (value == undefined) return value;
-			else return $.extend(true, {}, value);
+			return $.extend(true, {}, value);
 		},
 		normalize : function(texte) {
 		    var newText = texte.toLowerCase();

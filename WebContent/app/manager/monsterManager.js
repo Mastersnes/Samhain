@@ -77,7 +77,23 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
 			var abilities = [];
 			if (this.template.abilities) abilities = this.template.abilities;
 
+			var consos = [];
+            if (this.template.consos) {
+                for (var i in this.template.consos) {
+                    consos.push(this.template.consos[i]);
+                }
+            }
+
 			this.type = this.template.type;
+
+			var spellChances = 25;
+			if (this.template.spellChances) spellChances = this.template.spellChances;
+
+			var itemsChances = 5;
+            if (this.template.itemsChances) itemsChances = this.template.itemsChances;
+
+            var attaqueChances = 100 - spellChances - itemsChances;
+            if (attaqueChances < 0) attaqueChances = 0;
 
 			this.isMonster = true;
 
@@ -95,9 +111,13 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
 			    "gold" : gold,
 			    "xp" : xp,
 			    "abilities" : abilities,
+			    "consos" : consos,
 			    "buff" : null,
 			    "debuff" : null,
-			    "level" : this.level
+			    "level" : this.level,
+			    "spellChances" : spellChances,
+			    "itemsChances" : itemsChances,
+			    "attaqueChances" : attaqueChances
 			};
 
 			this.etatsManager = new EtatsManager(this);
@@ -126,6 +146,12 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
 		        return this.Textes.get(suffixeName) + "<br/>" + this.Textes.get(this.name);
 		};
 
+		this.removeConso = function(name) {
+            var itemIndex = this.data.consos.indexOf(name);
+            if (itemIndex > -1) this.data.consos.splice(itemIndex, 1);
+            else console.log("Erreur suppression - conso non possédé", name);
+        };
+
 		this.attaque = function(cible, withDef) {
 		    var attaque = this.data.attaque;
             var degats = Utils.rand(attaque[0], attaque[1], true);
@@ -148,7 +174,7 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
 
         this.addPercentLife = function(amount, element) {
             var lifeMax = this.data.life.max;
-            var amount = Math.round(Utils.percent(lifeMax, amount));
+            var amount = Math.ceil(Utils.percent(lifeMax, amount));
             this.addLife(amount, element);
         };
         this.addLife = function(amount, element) {
@@ -158,8 +184,58 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
                 this.data.life.current = this.data.life.max;
         };
 
+        this.has = function(itemId) {
+            if (Utils.contains(this.data.consos, itemId)) return "conso";
+            if (Utils.contains(this.data.abilities, itemId)) return "abilities";
+            return null;
+        };
+
+        this.use = function(itemId, cibles) {
+            if (!cibles) cibles = this;
+            if (!Array.isArray(cibles)) cibles = [cibles];
+
+            var consos = this.data.consos;
+            if (Utils.contains(consos, itemId)) {
+                var item = Items.get("conso", itemId);
+                for (var i in cibles) {
+                    var cible = cibles[i];
+
+                    cible.addAmountChange(this.Textes.get(item.name), "abilitie", item.element);
+
+                    if (item.degats) {
+                        var baseAttaque = this.data.attaque;
+                        var degats = Utils.rand(baseAttaque + item.degats[0], baseAttaque + item.degats[1], true);
+                        if (degats > 0) cible.hurt(degats, true);
+                    }
+                    if (item.vie) {
+                        var vie = Utils.rand(item.vie[0], item.vie[1], true);
+                        if (vie > 0) cible.addPercentLife(vie);
+                    }
+
+                    if (item.mana) {
+                        var mana = Utils.rand(item.mana[0], item.mana[1], true);
+                        if (mana > 0) cible.addPercentMana(mana);
+                    }
+
+                    if (item.effet) {
+                        for (var i in item.effet) {
+                            var effetId = item.effet[i];
+                            this.etatsManager.check(effetId, cible);
+                        }
+                    }
+
+                    // Action particuliere
+                    if (item.action) item.action(this, cible, this.fightView);
+                }
+
+                this.removeConso(itemId);
+                return true;
+            }else {
+                console.log("Erreur use - objet non possédé", itemId, cibles);
+                return false;
+            }
+        };
         this.spell = function(itemId, cibles) {
-            var that = this;
             if (!cibles) cibles = this;
             if (!Array.isArray(cibles)) cibles = [cibles];
 
@@ -177,9 +253,7 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
                     for (var i in cibles) {
                         var cible = cibles[i];
 
-                        if (abilitie.offensif) {
-                            cible.addAmountChange(this.Textes.get(abilitie.name), "abilitie", abilitie.element);
-                        }
+                        cible.addAmountChange(this.Textes.get(abilitie.name), "abilitie", abilitie.element);
 
                         var degats = 0;
                         if (abilitie.degats) {
@@ -246,7 +320,6 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
         this.stealMana = function(baseManaSteal, cible) {
             var cibleCurrentMana = cible.get("mana.current");
             var manaSteal = Math.round(Utils.percent(cibleCurrentMana, baseManaSteal));
-            console.log("steal mana : ", cibleCurrentMana, baseManaSteal, manaSteal)
             if (manaSteal > 0) this.steal("mana", cible, manaSteal);
         };
         this.stealLife = function(baseLifeSteal, degats, cible) {
@@ -302,34 +375,81 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
         * Lance une attaque de type magique ou physique
         **/
         this.launchAttaque = function(dom, player, aliveMonsters, blockSound) {
-            if (Utils.rand(0, 4) == 0) { // Chances de lancer un sort
-                var abilities = this.usableMagie();
-                if (abilities.length > 0) {
-                    var abilitieId = abilities[Utils.rand(0, abilities.length)];
-                    var abilitie = Items.get("magie", abilitieId);
-                    var actionDone = false;
+            var chance = Utils.rand(0, 100);
+            var itemsPalier = 100 - this.data.itemsChances;
+            var spellPalier = itemsPalier - this.data.spellChances;
 
-                    if (abilitie.offensif) {
-                        actionDone = this.spell(abilitie.name, player);
-                    }else if (abilitie.multicible) {
-                        actionDone = this.spell(abilitie.name, aliveMonsters);
-                    }else {
-                        var cibleMonster = aliveMonsters[Utils.rand(0, aliveMonsters.length)];
-                        actionDone = this.spell(abilitie.name, cibleMonster);
-                    }
-                    if (actionDone) return;
+            var actionDone = false;
+
+            if (this.template.action) {
+                actionDone = this.template.action(this);
+            }
+
+            if (!actionDone) {
+                if (chance >= itemsPalier) {
+                    // Utilisation d'un objet
+                    actionDone = this.launchUse(player, aliveMonsters);
+                } else if (chance >= spellPalier) {
+                    // Lancement d'un sort
+                    actionDone = this.launchSpell(player, aliveMonsters);
                 }
             }
 
-            // Attaque classique si aucun sort a lancer
-            var degats = this.attaque(player, true);
-            if (degats) this.mediatheque.playSound("hurt.wav");
-            else {
-                if (!blockSound) blockSound = "block";
-                this.mediatheque.playSound(blockSound + ".wav");
+            if (!actionDone) {
+                // Attaque classique
+                var degats = this.attaque(player, true);
+                if (degats) this.mediatheque.playSound("hurt.wav");
+                else {
+                    if (!blockSound) blockSound = "block";
+                    this.mediatheque.playSound(blockSound + ".wav");
+                }
             }
 
             this.etatsManager.infligeEtats();
+        };
+
+        /**
+        * Lance une attaque de type sort
+        **/
+        this.launchSpell = function(player, aliveMonsters) {
+            var actionDone = false;
+            var abilities = this.usableMagie();
+            if (abilities.length > 0) {
+                var abilitieId = abilities[Utils.rand(0, abilities.length)];
+                var abilitie = Items.get("magie", abilitieId);
+
+                if (abilitie.offensif) {
+                    actionDone = this.spell(abilitie.name, player);
+                }else if (abilitie.multicible) {
+                    actionDone = this.spell(abilitie.name, aliveMonsters);
+                }else {
+                    var cibleMonster = aliveMonsters[Utils.rand(0, aliveMonsters.length)];
+                    actionDone = this.spell(abilitie.name, cibleMonster);
+                }
+            }
+            return actionDone;
+        };
+
+        /**
+        * Lance une attaque de type Item
+        **/
+        this.launchUse = function(player, aliveMonsters) {
+            var actionDone = false;
+            var items = this.data.consos;
+            if (items.length > 0) {
+                var itemId = items[Utils.rand(0, items.length)];
+                var item = Items.get("conso", itemId);
+
+                if (item.offensif) {
+                    actionDone = this.use(item.name, player);
+                }else if (items.multicible) {
+                    actionDone = this.use(item.name, aliveMonsters);
+                }else {
+                    var cibleMonster = aliveMonsters[Utils.rand(0, aliveMonsters.length)];
+                    actionDone = this.use(item.name, cibleMonster);
+                }
+            }
+            return actionDone;
         };
 
         /**
@@ -344,6 +464,13 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
                     ciblesDom.removeClass(anim);
                 });
             });
+        };
+
+        /**
+        * Ajoute un montant a perdre ou gagner au buffer d'affichage
+        **/
+        this.addAmountChange = function(amount, type, element) {
+            this.parent.player.addAmountChange(amount, type, element);
         };
 
         /**

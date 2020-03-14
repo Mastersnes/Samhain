@@ -30,7 +30,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			"texte" : "roiAraignee-texte",
             "attaque" : [5, 12],
             "defense" : [0, 0],
-            "vie" : [80, 80],
+            "vie" : [100, 100],
             "mana" : [5, 10],
             "xp" : [5, 20],
             "argent" : [50, 100],
@@ -137,7 +137,29 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "sexe" : "f",
             "abilities" : ["volDeVie", "volDeMana", "bouleFeu", "invoqueGrosseGoule"],
             "type" : "boss"
-		}
+		},
+		"roiBandit" : {
+            "name" : "roiBandit",
+            "texte" : "roiBandit-texte",
+            "attaque" : [5, 15],
+            "defense" : [0, 1],
+            "vie" : [150, 150],
+            "mana" : [5, 15],
+            "xp" : [5, 20],
+            "argent" : [100, 150],
+            "sexe" : "m",
+            "abilities" : ["voler", "doubleAttaque", "taillade"],
+            "consos" : ["pomme", "fromage"],
+            "action" : function(monster) {
+                var life = monster.get("life");
+                var percentLife = Utils.toPercent(life.current, life.max);
+                if (percentLife < 30) {
+                    if (monster.has("pomme")) return monster.use("pomme");
+                    if (monster.has("fromage")) return monster.use("fromage");
+                }
+                return false;
+            }
+        },
 	};
 	
 	return {
