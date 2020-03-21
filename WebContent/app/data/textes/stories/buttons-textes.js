@@ -49,7 +49,11 @@ define([], function(){
         /**
         * Combat
         **/
-        "attaquer" : {
+        "lattaquer-m" : {
+            fr : "L'attaquer",
+            en : "Attack him"
+        },
+        "lattaquer-f" : {
             fr : "L'attaquer",
             en : "Attack her"
         },
@@ -202,15 +206,15 @@ define([], function(){
             en : "Eat and continue"
         },
         "retirer-baton" : {
-            fr : "Retirer le b&acirc;ton",
+            fr : "Retirer le bâton",
             en : "Remove the stick"
         },
         "casser-baton" : {
-            fr : "Casser le b&acirc;ton",
+            fr : "Casser le bâton",
             en : "Break the stick"
         },
         "garder-baton" : {
-            fr : "Garder le b&acirc;ton",
+            fr : "Garder le bâton",
             en : "Keeping the stick"
         },
         "prendre-arme" : {
@@ -245,6 +249,10 @@ define([], function(){
             fr : "Refuser",
             en : "Refuse"
         },
+        "accepter" : {
+            fr : "Accepter",
+            en : "Accept"
+        },
         "aider" : {
             fr : "Aider",
             en : "Help Them"
@@ -275,23 +283,47 @@ define([], function(){
         },
         "defendre-village" : {
             fr : "Défendre le village",
-            en : "Defending the city"
+            en : "Defende the city"
+        },
+        "demander-entrer" : {
+            fr : "Demander à entrer",
+            en : "Ask to enter"
+        },
+        "linsulter-m" : {
+            fr : "L'insulter",
+            en : "Insult him"
+        },
+        "linsulter-f" : {
+            fr : "L'insulter",
+            en : "Insult her"
+        },
+        "forcer-passage" : {
+            fr : "Forcer le passage",
+            en : "Force the way"
+        },
+        "montrer-anneau" : {
+            fr : "Montrer l'anneau",
+            en : "Show the ring"
+        },
+        "demander-recompense" : {
+            fr : "Demander la récompense",
+            en : "Ask for the reward"
         },
 
         /**
         * Dialogue
         **/
         "lamort" : {
-            fr : "La mort&nbsp!",
-            en : "Death&nbsp!"
+            fr : "La mort&nbsp;!",
+            en : "Death!"
         },
         "quietesvous" : {
-            fr : "Qui êtes-vous&nbsp?",
-            en : "Who are you&nbsp?"
+            fr : "Qui êtes-vous&nbsp;?",
+            en : "Who are you?"
         },
         "evidemment" : {
-            fr : "Évidemment&nbsp!",
-            en : "Obviously&nbsp!"
+            fr : "Évidemment&nbsp;!",
+            en : "Obviously!"
         },
         "non-merci" : {
             fr : "Non merci",
@@ -315,19 +347,27 @@ define([], function(){
         },
         "comment" : {
             fr : "Comment&nbsp;?!",
-            en : "How&nbsp;?!"
+            en : "How!"
         },
         "ou-aller-vous" : {
             fr : "Où allez-vous&nbsp;?",
-            en : "Where are you going&nbsp;?"
+            en : "Where are you going?"
+        },
+        "pourquoi" : {
+            fr : "Pourquoi&nbsp;?",
+            en : "Why?"
         },
         "qui-fait-ca" : {
-            fr : "Qui a fait &ccedil;a&nbsp;?",
-            en : "Who has done it&nbsp;?"
+            fr : "Qui a fait ça&nbsp;?",
+            en : "Who has done it?"
         },
         "tant-pis" : {
             fr : "Tant pis&hellip;",
             en : "Too bad&hellip;"
+        },
+        "quel-recompense" : {
+            fr : "Quel est la récompense&nbsp;?",
+            en : "What's the reward?"
         },
 
         /**
@@ -353,6 +393,10 @@ define([], function(){
         /**
         * Direction
         **/
+        "en-route" : {
+            fr : "En route !",
+            en : "Let's go!"
+        },
         "left" : {
             fr : "Gauche",
             en : "Left"
@@ -432,6 +476,38 @@ define([], function(){
         "entrer-grange" : {
             fr : "Entrer dans la grange",
             en : "Enter the barn"
+        },
+        "entrer-ville" : {
+            fr : "Entrer dans la ville",
+            en : "Enter the city"
+        },
+        "retour-ville" : {
+            fr : "Retour en ville",
+            en : "Back to the city"
+        },
+        "panneau-quete" : {
+            fr : "Panneau des quêtes",
+            en : "Quests panel"
+        },
+        "boutiques" : {
+            fr : "Boutiques",
+            en : "Shops"
+        },
+        "poste-garde" : {
+            fr : "Poste de garde",
+            en : "Guard post"
+        },
+        "ruelle-sombre" : {
+            fr : "Ruelle sombre",
+            en : "Dark alley"
+        },
+        "palais-justice" : {
+            fr : "Palais de justice",
+            en : "Courthouse"
+        },
+        "affichage-quetes" : {
+            fr : "Affichage des quêtes",
+            en : "Display of quests"
         },
 	};
 	

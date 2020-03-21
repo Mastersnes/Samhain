@@ -121,7 +121,7 @@ define([], function() {
             "textes" : ["fermeGoule-texte-1", "fermeGoule-texte-2", "fermeGoule-texte-3"],
             "actions" : [
                 {
-                    "name" : "attaquer", "action" : [
+                    "name" : "lattaquer-f", "action" : [
                         {"key" : "fight", "params" : [[
                             "goule"
                         ], "fermeGoule2"]}

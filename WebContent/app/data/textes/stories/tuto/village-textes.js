@@ -19,7 +19,7 @@ define([], function(){
             en : "You kill the last <span key='goule'>ghoul</span> in front of you and go back to the <span key='garde'>guards</span>:"
         },
         "reposVillage3-texte-2" : {
-            fr : "&laquo; Que s&rsquo;est-il passé&nbsp;? &raquo;",
+            fr : "&laquo; Que s'est-il passé&nbsp;? &raquo;",
             en : "&laquo; What happened? &raquo;"
         },
         "reposVillage3-texte-3" : {
@@ -40,11 +40,11 @@ define([], function(){
             en : "&laquo; Unfortunately, we have to deal with the wounded."
         },
         "reposVillage4-texte-2" : {
-            fr : "Vous avez l&rsquo;air de savoir vous battre&nbsp;!",
+            fr : "Vous avez l'air de savoir vous battre&nbsp;!",
             en : "You look like you know how to fight!"
         },
         "reposVillage4-texte-3" : {
-            fr : "Vous devez les secourir, demandez de l&rsquo;aide aux autres <span key='villageois'>villageois</span>&nbsp;! &raquo;",
+            fr : "Vous devez les secourir, demandez de l'aide aux autres <span key='villageois'>villageois</span>&nbsp;! &raquo;",
             en : "You must help them, ask for help from other <span key='villageois'>villagers</span>! &raquo;"
         },
 
@@ -57,7 +57,7 @@ define([], function(){
             en : "you're heading for the panicked <span key='villageois'>villagers</span>."
         },
         "reposVillageAide-texte-3" : {
-            fr : "John, le forgeron, s&rsquo;approche de vous l&rsquo;air menaçant :",
+            fr : "John, le forgeron, s'approche de vous l'air menaçant :",
             en : "John, the blacksmith, approaches you looking threatening:"
         },
         "reposVillageAide-texte-4" : {
@@ -65,16 +65,16 @@ define([], function(){
             en : "&laquo; Here you go! Take this <span key='epee'>sword</span> and this <span key='bouclierFer'>iron shield</span>!"
         },
         "reposVillageAide-texte-5" : {
-            fr : "Ils pourront t&rsquo;être utiles. &raquo;",
+            fr : "Ils pourront t'être utiles. &raquo;",
             en : "They can be useful. &raquo;"
         },
 
         "reposVillageAide1-texte-1" : {
-            fr : "Vous saisissez <span key='epee'>l&rsquo;épée</span> et mangez un morceau pour vous préparer.",
+            fr : "Vous saisissez <span key='epee'>l'épée</span> et mangez un morceau pour vous préparer.",
             en : "You grab the <span key='epee'>sword</span> and eat something to prepare yourself."
         },
         "reposVillageAide1-texte-2" : {
-            fr : "Ces sales monstres n&rsquo;ont qu&rsquo;à bien se tenir&nbsp;!",
+            fr : "Ces sales monstres n'ont qu'à bien se tenir&nbsp;!",
             en : "These dirty monsters only have to behave themselves!"
         },
         "reposVillageAide1-texte-3" : {
@@ -83,7 +83,7 @@ define([], function(){
         },
 
         "reposVillageAide2-texte-1" : {
-            fr : "Un vieux monsieur s&rsquo;approche en toussotant :",
+            fr : "Un vieux monsieur s'approche en toussotant :",
             en : "An elderly gentleman approaches by coughing:"
         },
         "reposVillageAide2-texte-2" : {
@@ -108,7 +108,7 @@ define([], function(){
             en : "&laquo; Then get out of here!"
         },
         "reposVillageRefus-texte-2" : {
-            fr : "Nous n&rsquo;avons pas besoin de lâches dans nos rangs&nbsp;! &raquo;",
+            fr : "Nous n'avons pas besoin de lâches dans nos rangs&nbsp;! &raquo;",
             en : "We don't need cowards in our ranks! &raquo;"
         },
         "reposVillageRefus-texte-3" : {
@@ -117,11 +117,11 @@ define([], function(){
         },
 
         "reposVillageTraitre-texte-1" : {
-            fr : "Certains <span key='villageois'>villageois</span> s&rsquo;avancent vers vous :",
+            fr : "Certains <span key='villageois'>villageois</span> s'avancent vers vous :",
             en : "Some <span key='villageois'>villagers</span> are coming towards you:"
         },
         "reposVillageTraitre-texte-2" : {
-            fr : "&laquo; Traître&nbsp;! C&rsquo;est toi qui as amené la mort sur nous&nbsp;!",
+            fr : "&laquo; Traître&nbsp;! C'est toi qui as amené la mort sur nous&nbsp;!",
             en : "&laquo; You traitor! You're the one who brought death on us!"
         },
         "reposVillageTraitre-texte-3" : {
@@ -151,7 +151,7 @@ define([], function(){
             en : "You're going to the swamp."
         },
         "reposVillageTraitre3-texte-2" : {
-            fr : "Ces crétins n&rsquo;ont eu que ce qu&rsquo;ils méritaient&hellip;",
+            fr : "Ces crétins n'ont eu que ce qu'ils méritaient&hellip;",
             en : "These cretins only got what they deserved&hellip;"
         },
         "reposVillageTraitre3-texte-3" : {
@@ -182,7 +182,7 @@ define([], function(){
         },
 
         "villageFouilleReussite3-texte-1" : {
-            fr : "C&rsquo;est votre jour de chance&nbsp;!",
+            fr : "C'est votre jour de chance&nbsp;!",
             en : "This is your lucky day!"
         },
         "villageFouilleReussite3-texte-2" : {
@@ -199,7 +199,7 @@ define([], function(){
             en : "Unfortunately, the houses are empty&hellip;"
         },
         "villageFouilleEchec-texte-2" : {
-            fr : "Ces crétins n&rsquo;ont rien laissé&hellip;",
+            fr : "Ces crétins n'ont rien laissé&hellip;",
             en : "Those cretins didn't leave anythinghellip;"
         },
         "villageFouilleEchec-texte-3" : {
@@ -216,7 +216,7 @@ define([], function(){
             en : "you're falling face to face with a <span key='grosseGoule'>big ghoul</span>!"
         },
         "villageFouilleEchec2-texte-3" : {
-            fr : "Sauvez votre peau avant qu&rsquo;elle ne vous la mange&nbsp;!",
+            fr : "Sauvez votre peau avant qu'elle ne vous la mange&nbsp;!",
             en : "Save your skin before it eats you!"
         },
 
@@ -225,8 +225,8 @@ define([], function(){
             en : "As you explore the village, you will notice"
         },
         "villageFouilleSuite-texte-2" : {
-            fr : "que des traces de pas s&rsquo;enfoncent dans le marais&hellip;",
-            en : "that footprints sink into the swamp..."
+            fr : "que des traces de pas s'enfoncent dans le marais&hellip;",
+            en : "that footprints sink into the swamp&hellip;"
         },
         "villageFouilleSuite-texte-3" : {
             fr : "Peut-être un fuyard&nbsp;?",
@@ -238,8 +238,8 @@ define([], function(){
             en : "You're going to the swamp."
         },
         "reposVillageRefus2-texte-2" : {
-            fr : "Ces crétins n&rsquo;auront cas se débrouiller seuls&hellip;",
-            en : "Those cretins won't be able to figure it out on their own..."
+            fr : "Ces crétins n'auront cas se débrouiller seuls&hellip;",
+            en : "Those cretins won't be able to figure it out on their own&hellip;"
         },
         "reposVillageRefus2-texte-3" : {
             fr : "En chemin, vous distinguez des traces sur le sol.",
@@ -260,7 +260,7 @@ define([], function(){
         },
 
         "retourVillageAideRoi-texte-1" : {
-            fr : "L&rsquo;un des <span key='garde'>gardes</span> s&rsquo;adresse à vous :",
+            fr : "L'un des <span key='garde'>gardes</span> s'adresse à vous :",
             en : "One of the <span key='garde'>guards</span> ask for you:"
         },
         "retourVillageAideRoi-texte-2" : {
@@ -272,7 +272,7 @@ define([], function(){
             en : "You insist :"
         },
         "retourVillageAideRoi-texte-4" : {
-            fr : "&laquo; Non&nbsp;! C&rsquo;est le <span key='roiAraignee'>roi des araignées</span>&nbsp;! Il est venu pour nous aider&nbsp;! &raquo;",
+            fr : "&laquo; Non&nbsp;! C'est le <span key='roiAraignee'>roi des araignées</span>&nbsp;! Il est venu pour nous aider&nbsp;! &raquo;",
             en : "&laquo; No! He's the <span key='roiAraignee'>king of spiders</span>! He came to help us! &raquo;"
         },
 
@@ -285,12 +285,12 @@ define([], function(){
             en : "The <span key='roiAraignee'>king of spiders</span>, after destroying the last <span key='goule'>ghouls</span>,"
         },
         "retourVillageAideRoi2-texte-3" : {
-            fr : "s&rsquo;est enfoncé dans le marais à la recherche d&rsquo;autres proies.",
+            fr : "s'est enfoncé dans le marais à la recherche d'autres proies.",
             en : "went deep into the swamp in search of other prey."
         },
 
         "retourVillageAideRoi3-texte-1" : {
-            fr : "&laquo; Trop tard&hellip; Il s&rsquo;est enfui&hellip; Vous là&nbsp;! Qu&rsquo;est-ce qui vous a pris&nbsp;?",
+            fr : "&laquo; Trop tard&hellip; Il s'est enfui&hellip; Vous là&nbsp;! Qu'est-ce qui vous a pris&nbsp;?",
             en : "&laquo; Too late&hellip; He ran away&hellip; You there! What the hell was that about?"
         },
         "retourVillageAideRoi3-texte-2" : {
@@ -299,7 +299,7 @@ define([], function(){
         },
 
         "retourVillageAideGarde-texte-1" : {
-            fr : "Vous achevez le <span key='roiAraignee'>roi araignée</span> d&rsquo;un coup.",
+            fr : "Vous achevez le <span key='roiAraignee'>roi araignée</span> d'un coup.",
             en : "You're killing the <span key='roiAraignee'>spider king</span> all of a sudden."
         },
         "retourVillageAideGarde-texte-2" : {

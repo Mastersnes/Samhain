@@ -31,7 +31,7 @@ define([], function(){
             en : "-"
         },
         "didacticiel-start2-texte-4" : {
-            fr : "D'un autre côté... Il faut dire que c'était plutôt simple... &raquo;",
+            fr : "D'un autre côté&hellip; Il faut dire que c'était plutôt simple&hellip; &raquo;",
             en : "-"
         },
 
@@ -48,7 +48,7 @@ define([], function(){
             en : "-"
         },
         "didacticiel-presentation-texte-4" : {
-            fr : "Comment t'expliquer, hum... Tiens, choisis une main par exemple&nbsp;!",
+            fr : "Comment t'expliquer, hum&hellip; Tiens, choisis une main par exemple&nbsp;!",
             en : "-"
         },
         "didacticiel-presentation-texte-5" : {

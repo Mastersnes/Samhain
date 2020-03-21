@@ -23,8 +23,8 @@ define([], function(){
             en : "You close your eyes to better appreciate the breeze."
         },
         "repos2-texte-2" : {
-            fr : "Au loin, il vous semble entendre des bruits de pattes...",
-            en : "In the distance, you seem to hear the sounds of legs..."
+            fr : "Au loin, il vous semble entendre des bruits de pattes&hellip;",
+            en : "In the distance, you seem to hear the sounds of legs&hellip;"
         },
         "repos2-texte-3" : {
             fr : "Vous vous levez en sursaut, quand deux <span key='araignee'>araignées</span> vous sautent dessus&nbsp;!",
@@ -41,12 +41,12 @@ define([], function(){
         },
 
         "reposFouilleFail-texte-1" : {
-            fr : "Vous en fouillez une, mais ne trouvez que des entrailles... Berk&nbsp;!",
-            en : "You search one but only find guts... Yuck!"
+            fr : "Vous en fouillez une, mais ne trouvez que des entrailles&hellip; Berk&nbsp;!",
+            en : "You search one but only find guts&hellip; Yuck!"
         },
         "reposFouilleFail-texte-2" : {
-            fr : "J’espère que ce n'est pas ce que vous cherchiez... si&nbsp;?",
-            en : "I hope that's not what you searched... is it?"
+            fr : "J’espère que ce n'est pas ce que vous cherchiez&hellip; si&nbsp;?",
+            en : "I hope that's not what you searched&hellip; is it?"
         },
 
         "reposFouilleSuccess-texte-1" : {
@@ -54,8 +54,8 @@ define([], function(){
             en : "By stirring the guts you discover a beautiful <span key='pomme'>apple</span>!"
         },
         "reposFouilleSuccess-texte-2" : {
-            fr : "Espérons que le rouge provienne bien de sa maturité...",
-            en : "Let's hope that the red comes from its maturity..."
+            fr : "Espérons que le rouge provienne bien de sa maturité&hellip;",
+            en : "Let's hope that the red comes from its maturity&hellip;"
         },
 
         "reposExamine-texte-1" : {

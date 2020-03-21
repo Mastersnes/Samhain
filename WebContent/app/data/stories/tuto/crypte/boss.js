@@ -127,9 +127,9 @@ define([], function() {
         		"boss6-texte-6"],
         	"actions" : [
         		{
-        			"name" : "terminer", "action" : [
+        			"name" : "continue", "action" : [
         			    {"key" : "score", "params" : ["TutoComplete", 1]},
-        				{"key" : "go", "params" : ["gagne"]}
+        				{"key" : "go", "params" : ["ville-porte-start"]}
         			]
         		}
         	]

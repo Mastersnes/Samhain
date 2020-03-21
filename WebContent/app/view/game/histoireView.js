@@ -186,19 +186,10 @@ define(["jquery",
                     }
                     break;
                 case "gain":
-                    for (var i in params) {
-                        var item = params[i];
-                        this.player.addEquipment(item);
-                    }
+                    this.gain(params);
                     break;
                 case "gainOneTime":
-                    var items = params;
-                    if (this.player.hasNoOne(params)) {
-                        for (var i in params) {
-                            var item = params[i];
-                            this.player.addEquipment(item);
-                        }
-                    }
+                    this.gain(params, true);
                     break;
                 case "perte":
                     for (var i in params) {
@@ -252,6 +243,17 @@ define(["jquery",
                 default:
                     console.log("Erreur, l'action " + action + " n'existe pas.")
                     break;
+            }
+        };
+
+        this.gain = function(items, oneTime) {
+            if (!Array.isArray(items)) items = [items];
+
+            if (!oneTime || this.player.hasNoOne(items)) {
+                for (var i in items) {
+                    var item = items[i];
+                    this.player.addEquipment(item);
+                }
             }
         };
 

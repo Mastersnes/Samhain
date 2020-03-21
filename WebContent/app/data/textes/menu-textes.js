@@ -14,8 +14,8 @@ define([], function(){
                 en : "Guest"
             },
             "chargement" : {
-                fr : "...Chargement...",
-                en : "...Loading..."
+                fr : "&hellip;Chargement&hellip;",
+                en : "&hellip;Loading&hellip;"
             },
             "clickToContinue" : {
                 fr : "- Cliquez pour continuer -",

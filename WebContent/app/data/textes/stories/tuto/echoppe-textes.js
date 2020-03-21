@@ -14,8 +14,8 @@ define([], function(){
             en : "Satisfied (or not) with your shopping, you can now continue your adventure."
         },
         "echoppe-non-fin-texte-1" : {
-            fr : "Vous continuez votre aventure les poches vides. C'est la crise pour tout le monde après tout...",
-            en : "You continue your adventure with empty pockets. It's a crisis for everyone after all..."
+            fr : "Vous continuez votre aventure les poches vides. C'est la crise pour tout le monde après tout&hellip;",
+            en : "You continue your adventure with empty pockets. It's a crisis for everyone after all&hellip;"
         },
 	};
 	

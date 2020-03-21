@@ -23,7 +23,7 @@ define([], function(){
             en : "She seems to give up and a <span key='baton'>big stick</span> makes it possible to stall the door."
         },
         "fermeExaminer-texte-3" : {
-            fr : "Peut-être en cas d&rsquo;orage&nbsp;?",
+            fr : "Peut-être en cas d'orage&nbsp;?",
             en : "Maybe in the event of a storm?"
         },
 
@@ -32,29 +32,29 @@ define([], function(){
             en : "It seems abandoned."
         },
         "fermeExaminer2-texte-2" : {
-            fr : "Le corps d&rsquo;une <span key='goule'>goule</span> g&icirc;t devant la porte grande ouverte.",
+            fr : "Le corps d'une <span key='goule'>goule</span> g&icirc;t devant la porte grande ouverte.",
             en : "A <span key='goule'>ghoul's</span> body lies in front of the wide open door."
         },
 
         "batonSaisieReussite1-texte-1" : {
-            fr : "En for&ccedil;ant un peu, vous parvenez à débloquer le <span key='baton'>b&acirc;ton</span>.",
+            fr : "En forçant un peu, vous parvenez à débloquer le <span key='baton'>bâton</span>.",
             en : "By forcing a little, you can unlock the <span key='baton'>stick</span>."
         },
         "batonSaisieReussite1-texte-2" : {
-            fr : "Dans une roulade arrière, vous avez juste le temps d&rsquo;esquiver",
+            fr : "Dans une roulade arrière, vous avez juste le temps d'esquiver",
             en : "In backward roll, you have just enough time to dodge"
         },
         "batonSaisieReussite2-texte-1" : {
-            fr : "Malheureusement vous n&rsquo;avez pas le temps d&rsquo;&eacute;viter",
+            fr : "Malheureusement vous n'avez pas le temps d'éviter",
             en : "Unfortunately, you don't have time to avoid"
         },
         "batonSaisieReussite2-texte-2" : {
             fr : "et vous fait tomber à la renverse&hellip;",
-            en : "and knocked you over..."
+            en : "and knocked you over&hellip;"
         },
         "batonSaisieReussite1-texte-3" : {
-            fr : "la grosse porte de la grange qui s&rsquo;ouvre avec fracas&hellip;",
-            en : "the big door of the barn that opens with a crashing sound..."
+            fr : "la grosse porte de la grange qui s'ouvre avec fracas&hellip;",
+            en : "the big door of the barn that opens with a crashing sound&hellip;"
         },
 
         "batonSaisieEchec-texte-1" : {
@@ -62,7 +62,7 @@ define([], function(){
             en : "Impossible to make it move&hellip;"
         },
         "batonSaisieEchec-texte-2" : {
-            fr : "Le <span key='baton'>b&acirc;ton</span> est trop bien enfoncé.",
+            fr : "Le <span key='baton'>bâton</span> est trop bien enfoncé.",
             en : "The <span key='baton'>stick</span> is too deep."
         },
         "batonSaisieEchec-texte-3" : {
@@ -71,12 +71,12 @@ define([], function(){
         },
 
         "batonPousse-texte-1" : {
-            fr : "Vous donnez un puissant coup de pied dans le <span key='baton'>b&acirc;ton</span> qui éclate en morceaux.",
+            fr : "Vous donnez un puissant coup de pied dans le <span key='baton'>bâton</span> qui éclate en morceaux.",
             en : "You made a powerful kick in the <span key='baton'>stick</span> that burst into pieces."
         },
         "batonPousse-texte-2" : {
-            fr : "La porte de la grange s&rsquo;ouvre avec fracas&hellip;",
-            en : "The door of the barn opens with a crashing sound..."
+            fr : "La porte de la grange s'ouvre avec fracas&hellip;",
+            en : "The door of the barn opens with a crashing sound&hellip;"
         },
 
         "fermeGoule-texte-1" : {
@@ -93,7 +93,7 @@ define([], function(){
         },
 
         "fermeGoule2-texte-1" : {
-            fr : "Qu&rsquo;est-ce que ce monstre faisait là&nbsp;?",
+            fr : "Qu'est-ce que ce monstre faisait là&nbsp;?",
             en : "What did this monster do here&nbsp;?"
         },
         "fermeGoule2-texte-2" : {
@@ -129,11 +129,11 @@ define([], function(){
         },
 
         "grangeFouilleTable2-texte-1" : {
-            fr : "Vous prenez la <span key='bougie'>bougie</span> et le nécessaire pour l&rsquo;allumer si besoin.",
+            fr : "Vous prenez la <span key='bougie'>bougie</span> et le nécessaire pour l'allumer si besoin.",
             en : "You take the candle and light it if necessary."
         },
         "grangeFouilleTable2-texte-2" : {
-            fr : "Il est temps de continuer l&rsquo;aventure !",
+            fr : "Il est temps de continuer l'aventure&nbsp;!",
             en : "It is time to continue the adventure!"
         },
 
@@ -147,7 +147,7 @@ define([], function(){
         },
 
         "grangeFouilleTable3-texte-1" : {
-            fr : "Elle aurait besoin d&rsquo;un bon nettoyage&hellip;",
+            fr : "Elle aurait besoin d'un bon nettoyage&hellip;",
             en : "It would need a good cleaning&hellip;"
         }
 	};

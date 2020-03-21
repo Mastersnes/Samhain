@@ -115,7 +115,7 @@ define([], function(){
             en : "As he moves on, he starts giggling."
         },
         "necroS2Enfant-texte-5" : {
-            fr : "Ses dents, pointues comme les crocs d'un loup, brillent d'une couleur rouge&acirc;tre.",
+            fr : "Ses dents, pointues comme les crocs d'un loup, brillent d'une couleur rougeâtre.",
             en : "Its teeth, pointed like a wolf's fangs, shine red."
         },
 

@@ -52,8 +52,8 @@ define([], function(){
                 en : "*Bite*"
             },
             "morsure-texte" : {
-                fr : "Une vilaine morsure pas très belle à voir. Vous devriez consulter...",
-                en : "A nasty bite not very beautiful to see. You should consult..."
+                fr : "Une vilaine morsure pas très belle à voir. Vous devriez consulter&hellip;",
+                en : "A nasty bite not very beautiful to see. You should consult&hellip;"
             },
 
             "araneisme" : {
@@ -104,8 +104,8 @@ define([], function(){
                 en : "*Life Steal*"
             },
             "volDeVie-texte" : {
-                fr : "On vole vraiment de tout aujourd'hui&nbsp;! Mais où va le monde&nbsp;?...",
-                en : "We really steal everything today! Where is the world going?..."
+                fr : "On vole vraiment de tout aujourd'hui&nbsp;! Mais où va le monde&nbsp;?&hellip;",
+                en : "We really steal everything today! Where is the world going?&hellip;"
             },
 
             "volDeMana" : {
@@ -130,8 +130,8 @@ define([], function(){
                 en : "*Cutting*"
             },
             "taillade-texte" : {
-                fr : "Et c'est ainsi que l'on finit en rondelle&nbsp;! Enfin, d’après des chaussettes...",
-                en : "And that's how we end up in a slice! Well, according to socks..."
+                fr : "Et c'est ainsi que l'on finit en rondelle&nbsp;! Enfin, d’après des chaussettes&hellip;",
+                en : "And that's how we end up in a slice! Well, according to socks&hellip;"
             },
 
             "pondreAraignee" : {
@@ -156,8 +156,8 @@ define([], function(){
                 en : "*Invoke Ghoul*"
             },
             "invoqueGoule-texte" : {
-                fr : "Le début du cauchemar...<br/>Invoque une Goule dans la limite de 3 monstres sur le plateau.",
-                en : "The beginning of the nightmare...<br/>Summon a Ghoul up to 3 monsters on the board."
+                fr : "Le début du cauchemar&hellip;<br/>Invoque une Goule dans la limite de 3 monstres sur le plateau.",
+                en : "The beginning of the nightmare&hellip;<br/>Summon a Ghoul up to 3 monsters on the board."
             },
 
             "invoqueGrosseGoule" : {
@@ -169,8 +169,8 @@ define([], function(){
                 en : "*Invoke Big Ghoul*"
             },
             "invoqueGrosseGoule-texte" : {
-                fr : "Le cauchemar continue...<br/>Invoque une Grosse Goule dans la limite de 3 monstres sur le plateau.",
-                en : "The nightmare continue...<br/>Summon a Big Ghoul up to 3 monsters on the board."
+                fr : "Le cauchemar continue&hellip;<br/>Invoque une Grosse Goule dans la limite de 3 monstres sur le plateau.",
+                en : "The nightmare continue&hellip;<br/>Summon a Big Ghoul up to 3 monsters on the board."
             },
 
             "cannibalisme" : {

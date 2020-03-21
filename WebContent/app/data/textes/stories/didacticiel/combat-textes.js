@@ -13,18 +13,18 @@ define([], function(){
             en : "-"
         },
         "didacticiel-finchoix-texte-3" : {
-            fr : "Mais... seras-tu capable de garder tout ton sang froid lorsque l'action apparaîtra devant toi&nbsp;? &raquo;",
+            fr : "Mais&hellip; seras-tu capable de garder tout ton sang froid lorsque l'action apparaîtra devant toi&nbsp;? &raquo;",
             en : "-"
         },
         /**
         * Arrivé bandit
         **/
         "didacticiel-bandit-texte-1" : {
-            fr : "&laquo; Hum... Permets-moi d'en douter... &raquo;",
+            fr : "&laquo; Hum&hellip; Permets-moi d'en douter&hellip; &raquo;",
             en : "-"
         },
         "didacticiel-bandit-texte-2" : {
-            fr : "Un homme à l'allure minable s'approche au loin, il semble vous en vouloir... Pourtant, vous ne lui avez rien fait...",
+            fr : "Un homme à l'allure minable s'approche au loin, il semble vous en vouloir&hellip; Pourtant, vous ne lui avez rien fait&hellip;",
             en : "-"
         },
         "didacticiel-bandit-texte-3" : {
@@ -88,7 +88,7 @@ define([], function(){
             en : "-"
         },
         "didacticiel-lose-texte-3" : {
-            fr : "&laquo; Eh bien&nbsp;! Tu as réussi à mourir à l'entraînement&nbsp;! Félicitations, ce n'était pas facile...",
+            fr : "&laquo; Eh bien&nbsp;! Tu as réussi à mourir à l'entraînement&nbsp;! Félicitations, ce n'était pas facile&hellip;",
             en : "-"
         },
         "didacticiel-lose-texte-4" : {

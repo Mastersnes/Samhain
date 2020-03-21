@@ -44,7 +44,7 @@ define([], function(){
             en : "When they run away at your request, one of them hands you a <span key='potionSante'>red vial</span>."
         },
         "necroS4-texte-4" : {
-            fr : "&Ccedil;a peut toujours aider&hellip;",
+            fr : "Ça peut toujours aider&hellip;",
             en : "It can always help&hellip;"
         },
 

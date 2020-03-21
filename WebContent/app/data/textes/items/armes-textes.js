@@ -18,8 +18,8 @@ define([], function(){
                 eo : "Pugnobato"
             },
             "poing-texte" : {
-                fr : "C'est simplement votre poing... Depuis votre naissance, il ne vous a pas quitté.",
-                en : "It's just your fist... Since your birth he hasn't left you."
+                fr : "C'est simplement votre poing&hellip; Depuis votre naissance, il ne vous a pas quitté.",
+                en : "It's just your fist&hellip; Since your birth he hasn't left you."
             },
             "baton" : {
                 fr : "Bâton",
@@ -30,8 +30,8 @@ define([], function(){
                 en : "Stick Stroke"
             },
             "baton-texte" : {
-                fr : "Un gros bâton qui peut faire très mal...",
-                en : "A big stick that can hurt a lot..."
+                fr : "Un gros bâton qui peut faire très mal&hellip;",
+                en : "A big stick that can hurt a lot&hellip;"
             },
             "dague" : {
                 fr : "Dague",
@@ -66,8 +66,8 @@ define([], function(){
                 en : "Fang Strike"
             },
             "crocRoi-texte" : {
-                fr : "Le croc de votre ancien ami... Il dégage une odeur putride... Parfait pour une petite balade&nbsp;!",
-                en : "Your old friend's fang... It emits a putrid smell... Perfect for a short walk!"
+                fr : "Le croc de votre ancien ami&hellip; Il dégage une odeur putride&hellip; Parfait pour une petite balade&nbsp;!",
+                en : "Your old friend's fang&hellip; It emits a putrid smell&hellip; Perfect for a short walk!"
             }
 	};
 	

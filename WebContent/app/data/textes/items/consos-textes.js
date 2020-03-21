@@ -49,8 +49,8 @@ define([], function(){
                 en : "Eating Cheese"
             },
             "fromage-texte" : {
-                fr : "Un vieux fromage légèrement moisi...",
-                en : "An old slightly mouldy cheese..."
+                fr : "Un vieux fromage légèrement moisi&hellip;",
+                en : "An old slightly mouldy cheese&hellip;"
             },
             "pomme" : {
                 fr : "Pomme",

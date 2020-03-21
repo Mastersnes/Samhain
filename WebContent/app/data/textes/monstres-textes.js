@@ -50,8 +50,8 @@ define([], function(){
                 en : "Villagers"
             },
             "villageois-texte" : {
-                fr : "Un courageux villageois prêt à tout pour défendre ses terres. Attention, sa fourche pourrait piquer un peu...",
-                en : "A courageous villager who will do anything to defend his land. Be careful, his fork might sting a little..."
+                fr : "Un courageux villageois prêt à tout pour défendre ses terres. Attention, sa fourche pourrait piquer un peu&hellip;",
+                en : "A courageous villager who will do anything to defend his land. Be careful, his fork might sting a little&hellip;"
             },
             "grosseGoule" : {
                 fr : "Grosse goule",
@@ -74,24 +74,24 @@ define([], function(){
                 en : "Experience"
             },
             "experience-texte" : {
-                fr : "L'infâme expérience d'un sorcier fou. Elle ressemble à un enfant blanc comme un cadavre. Ses bras sont anormalement longs et couverts de coupures. De ses doigts sortent de grandes tiges de fer...",
-                en : "The infamous experience of a mad wizard. She looks like a child as white as a corpse. His arms are abnormally long and covered with cuts. From his fingers come out large rods of iron..."
+                fr : "L'infâme expérience d'un sorcier fou. Elle ressemble à un enfant blanc comme un cadavre. Ses bras sont anormalement longs et couverts de coupures. De ses doigts sortent de grandes tiges de fer&hellip;",
+                en : "The infamous experience of a mad wizard. She looks like a child as white as a corpse. His arms are abnormally long and covered with cuts. From his fingers come out large rods of iron&hellip;"
             },
             "necromancien" : {
                 fr : "Nécrom'",
                 en : "Necrom"
             },
             "necromancien-texte" : {
-                fr : "Un horrible sorcier usant de magie noire&nbsp;! Il ressemble à un vieillard et tient à peine sur ses jambes...",
-                en : "A horrible wizard using black magic! He looks like an old man and barely stands on his legs..."
+                fr : "Un horrible sorcier usant de magie noire&nbsp;! Il ressemble à un vieillard et tient à peine sur ses jambes&hellip;",
+                en : "A horrible wizard using black magic! He looks like an old man and barely stands on his legs&hellip;"
             },
             "liche" : {
                 fr : "Liche",
                 en : "Lich"
             },
             "liche-texte" : {
-                fr : "Un spectre tout droit sorti de l'au-delà&nbsp;! Une aura néfaste l'entoure, laissant présager de sa puissance...",
-                en : "A spectrum straight out of the afterlife! A harmful aura surrounds it, letting us imagine its power..."
+                fr : "Un spectre tout droit sorti de l'au-delà&nbsp;! Une aura néfaste l'entoure, laissant présager de sa puissance&hellip;",
+                en : "A spectrum straight out of the afterlife! A harmful aura surrounds it, letting us imagine its power&hellip;"
             }
 	};
 	

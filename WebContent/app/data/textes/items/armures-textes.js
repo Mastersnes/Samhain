@@ -14,8 +14,8 @@ define([], function(){
                 eo : "Bloki per la Brako"
             },
             "bras-texte" : {
-                fr : "Votre bras... Tout simplement... Vous pouvez en être fier&nbsp;!",
-                en : "Your arm... Quite simply... You can be proud of it!"
+                fr : "Votre bras&hellip; Tout simplement&hellip; Vous pouvez en être fier&nbsp;!",
+                en : "Your arm&hellip; Quite simply&hellip; You can be proud of it!"
             },
             "bouclierBois" : {
                 fr : "Bouclier en bois",

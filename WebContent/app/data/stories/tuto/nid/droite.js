@@ -18,7 +18,7 @@ define([], function() {
             "textes" : ["roiAraigneePotion-texte-1", "roiAraigneePotion-texte-2", "roiAraigneePotion-texte-3"],
             "actions" : [
                 {
-                    "name" : "attaquer", "action" : [
+                    "name" : "lattaquer-m", "action" : [
                         {"key" : "score", "params" : ["KillSpider", 1]},
                         {"key" : "fight", "params" : [[
                             {"name":"roiAraignee", "suffixe":"blesse"}
@@ -94,7 +94,7 @@ define([], function() {
             "textes" : ["roiAraigneePotion-texte-1", "roiAraigneePotion-texte-2", "roiAraigneePotion-texte-3"],
             "actions" : [
                 {
-                    "name" : "attaquer", "action" : [
+                    "name" : "lattaquer-m", "action" : [
                         {"key" : "score", "params" : ["KillSpider", 1]},
                         {"key" : "fight", "params" : [ [
                             {"name":"roiAraignee", "suffixe":"blesse"}
@@ -279,7 +279,7 @@ define([], function() {
             "textes" : ["roiAraigneeRefus-texte-1", "roiAraigneeRefus-texte-2", "roiAraigneeRefus-texte-3"],
             "actions" : [
                 {
-                    "name" : "attaquer", "action" : [
+                    "name" : "lattaquer-m", "action" : [
                         {"key" : "score", "params" : ["KillSpider", 1]},
                         {"key" : "fight", "params" : [[
                             {"name":"roiAraignee", "suffixe":"blesse"}

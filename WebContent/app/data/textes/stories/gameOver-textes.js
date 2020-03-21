@@ -6,8 +6,8 @@ define([
 	    * GameOver
 	    **/
 	    "die-texte-1" : {
-            fr : "Vous êtes étendu par terre, gisant dans une marre de sang...",
-            en : "You lie on the ground, lying in a pool of blood..."
+            fr : "Vous êtes étendu par terre, gisant dans une marre de sang&hellip;",
+            en : "You lie on the ground, lying in a pool of blood&hellip;"
         },
         "die-texte-2" : {
             fr : "L'aventure n'était peut-être pas faite pour vous finalement.",
@@ -24,8 +24,8 @@ define([
         },
 
         "gameOver2-texte-1" : {
-            fr : "Vous ouvrez les yeux brusquement. Ce rêve semblait pourtant tellement réel...",
-            en : "You open your eyes suddenly. Yet this dream seemed so real..."
+            fr : "Vous ouvrez les yeux brusquement. Ce rêve semblait pourtant tellement réel&hellip;",
+            en : "You open your eyes suddenly. Yet this dream seemed so real&hellip;"
         },
         "gameOver2-texte-2" : {
             fr : "Mais pas le temps de bâiller aux corneilles&nbsp;! L'aventure n'attend pas&nbsp;!",

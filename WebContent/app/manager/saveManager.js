@@ -50,7 +50,7 @@ function($, _, Utils) {
 			            "clef" : [],
 			            "ifObj" : []
 			        },
-                    "lieu" : "quete1-start"
+                    "lieu" : "boss6"
 			    },
                 "success" : {
                     "successComplete" : [],

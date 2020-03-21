@@ -1,7 +1,7 @@
 'use strict';
 define([], function(){
 	var data = {
-        "ville-coeur-texte-1" : {
+        "ville-garde-texte-1" : {
             fr : "???",
             en : "???"
         }
