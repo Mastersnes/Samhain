@@ -73,6 +73,12 @@
     border: none;
     border-color: none;
 }
+.glossaire .zoom suffixe .unique {
+    display: none !important;
+}
+.glossaire .zoom suffixe .unique.visible {
+    display: block !important;
+}
 
 .glossaire .zoom texte {
     display: block; position: relative;

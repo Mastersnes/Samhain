@@ -286,7 +286,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "namef" : "precis-f",
             "attaque" : 1.8,
             "defense" : 0,
-            "vie" : 1,
+            "vie" : 1.1,
             "mana" : 1.3,
             "argent" : 1.5,
             "xp" : 1.5
@@ -301,6 +301,10 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "argent" : 0.8,
             "xp" : 1
         },
+
+        /**
+        * Uniques
+        **/
         "manchot" : {
             "namem" : "manchot-m",
             "namef" : "manchot-f",
@@ -333,7 +337,82 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "argent" : 1,
             "xp" : 1,
             "unique" : true
-        }
+        },
+        "dechaine" : {
+            "namem" : "dechaine-m",
+            "namef" : "dechaine-f",
+            "attaque" : 2.5,
+            "defense" : 0,
+            "vie" : 1.5,
+            "mana" : 0,
+            "argent" : 0,
+            "xp" : 1.5,
+            "unique" : true
+        },
+
+        /**
+        * Castagne
+        **/
+        "raoul" : {
+            "namem" : "raoul",
+            "namef" : "raoul",
+            "attaque" : 1.25,
+            "defense" : 0,
+            "vie" : 1.5,
+            "mana" : 1,
+            "argent" : 1.5,
+            "xp" : 1,
+            "unique" : true,
+            "noname" : true
+        },
+        "viscerole" : {
+            "namem" : "viscerole",
+            "namef" : "viscerole",
+            "attaque" : 3,
+            "defense" : 0,
+            "vie" : 3,
+            "mana" : 2,
+            "argent" : 2,
+            "xp" : 2,
+            "unique" : true,
+            "noname" : true
+        },
+        "kraken" : {
+            "namem" : "kraken",
+            "namef" : "kraken",
+            "attaque" : 2,
+            "defense" : 0,
+            "vie" : 2.5,
+            "mana" : 1,
+            "argent" : 2,
+            "xp" : 1.5,
+            "unique" : true,
+            "noname" : true
+        },
+        "kraken-blesse" : {
+            "namem" : "kraken-blesse",
+            "namef" : "kraken-blesse",
+            "attaque" : 1,
+            "defense" : 0,
+            "vie" : 1,
+            "mana" : 0,
+            "argent" : 0,
+            "xp" : 0.5,
+            "unique" : true,
+            "noname" : true
+        },
+        "tavernier" : {
+            "namem" : "tavernier",
+            "namef" : "tavernier",
+            "attaque" : 5,
+            "defense" : 1,
+            "vie" : 18,
+            "mana" : 3,
+            "argent" : 2,
+            "xp" : 3,
+            "unique" : true,
+            "noname" : true
+        },
 	};
 	
 	return {

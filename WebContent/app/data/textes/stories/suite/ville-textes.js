@@ -3,8 +3,9 @@ define([
     "app/data/textes/stories/suite/ville/porte-textes",
     "app/data/textes/stories/suite/ville/entree-textes",
     "app/data/textes/stories/suite/ville/garde-textes",
-    "app/data/textes/stories/suite/ville/ruelle-textes"
-], function(Porte, Entree, Garde, Ruelle){
+    "app/data/textes/stories/suite/ville/ruelle-textes",
+    "app/data/textes/stories/suite/ville/castagne-textes"
+], function(Porte, Entree, Garde, Ruelle, Castagne){
 	var data = {
 	};
 
@@ -15,6 +16,7 @@ define([
             if (!text) text = Entree.get(key);
             if (!text) text = Garde.get(key);
             if (!text) text = Ruelle.get(key);
+            if (!text) text = Castagne.get(key);
             return text;
         }
     };

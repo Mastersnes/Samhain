@@ -142,6 +142,15 @@ define([], function(){
                 en : "Lunatic"
             },
 
+            "dechaine-m" : {
+                fr : "Déchainé",
+                en : "Unleashed"
+            },
+            "dechaine-f" : {
+                fr : "Déchainée",
+                en : "Unleashed"
+            },
+
             "fragile" : {
                 fr : "Fragile",
                 en : "Frail",
@@ -251,6 +260,23 @@ define([], function(){
             "spectral-f" : {
                 fr : "Spectrale",
                 en : "Spectral"
+            },
+
+            "raoul" : {
+                fr : "Raoul",
+                en : "Raoul"
+            },
+            "viscerole" : {
+                fr : "Viscerole",
+                en : "Viscerole"
+            },
+            "kraken" : {
+                fr : "Kraken",
+                en : "Kraken"
+            },
+            "kraken-blesse" : {
+                fr : "Kraken Blessé",
+                en : "Wounded Kraken"
             }
 	};
 	

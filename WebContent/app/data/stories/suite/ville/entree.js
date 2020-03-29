@@ -44,7 +44,9 @@ define([], function() {
                         {"key" : "random", "params" : [
                             "ville-ruelle-simple-1", "ville-ruelle-simple-1",
                             "ville-ruelle-simple-1", "ville-ruelle-simple-1",
-                            "ville-ruelle-voleur-1"
+                            "ville-ruelle-simple-1", "ville-ruelle-simple-1",
+                            "ville-ruelle-simple-1", "ville-ruelle-simple-1",
+                            "ville-ruelle-simple-1", "ville-ruelle-voleur-1"
                         ]}
                     ]
                 },
@@ -103,7 +105,9 @@ define([], function() {
                         {"key" : "random", "params" : [
                             "ville-ruelle-simple-1", "ville-ruelle-simple-1",
                             "ville-ruelle-simple-1", "ville-ruelle-simple-1",
-                            "ville-ruelle-voleur-1"
+                            "ville-ruelle-simple-1", "ville-ruelle-simple-1",
+                            "ville-ruelle-simple-1", "ville-ruelle-simple-1",
+                            "ville-ruelle-simple-1", "ville-ruelle-voleur-1"
                         ]}
                     ]
                 },

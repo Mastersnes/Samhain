@@ -31,7 +31,9 @@ define(["jquery",
         /**
         * Lance un nouveau combat
         **/
-        this.fight = function(adversaires, onWin, onFail, textes) {
+        this.fight = function(adversaires, onWin, onFail, textes, regles) {
+            this.makeRegles(regles);
+
             this.fightLaunch = true;
             var that = this;
             $(".histoire").fadeOut();
@@ -444,7 +446,30 @@ define(["jquery",
         };
 
         this.endFight = function() {
+            this.player.restoreStates();
             this.fightLaunch = false;
+        };
+
+        this.makeRegles = function(regles) {
+            this.reglesSaver = {};
+            if (!regles) return;
+
+            for (var i in regles) {
+                var regle = regles[i];
+
+                switch (regle) {
+                    case "no-weapon" :
+                        this.player.saveState("equipment.currentArme");
+                        this.player.saveState("equipment.currentBouclier");
+                        this.player.selectArme("poing");
+                        this.player.selectBouclier("bras");
+                    break;
+                    case "no-consos" :
+                        this.player.saveState("equipment.conso");
+                        this.player.set("equipment.conso", []);
+                    break;
+                }
+            }
         };
 
         this.init(parent);

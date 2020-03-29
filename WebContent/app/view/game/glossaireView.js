@@ -60,11 +60,11 @@ define(["jquery",
         /**
         * Lance la consultation
         **/
-        this.show = function(key, isChange) {
+        this.show = function(key, isChange, suffixe) {
             this.current = key;
 
             if (!this.showEtat(key)) {
-                if (!this.showMonster(key, isChange)) {
+                if (!this.showMonster(key, isChange, suffixe)) {
                     this.showItem(key);
                 }
             }
@@ -132,7 +132,7 @@ define(["jquery",
             return true;
         };
 
-        this.showMonster = function(key, isChange) {
+        this.showMonster = function(key, isChange, selectSuffixe) {
             var monster = Glossaire.get(key);
             if (!monster) return false;
             var monsterName = this.Textes.get(monster.name);
@@ -151,10 +151,14 @@ define(["jquery",
 
             var suffixe = this.el.find("suffixe select option:first").attr("name");
             if (isChange) suffixe = this.el.find("suffixe select option:selected").attr("name");
+            else if (selectSuffixe) suffixe = selectSuffixe;
             else if (monster.baseSuffixe) suffixe = monster.baseSuffixe;
+
+            this.el.find("suffixe select option[id="+suffixe+"-"+monster.sexe+"]").addClass("visible");
 
             this.el.find("suffixe select option").removeAttr("selected");
             this.el.find("suffixe select option[id="+suffixe+"-"+monster.sexe+"]").attr("selected", "selected");
+
             suffixe = Suffixe.get(suffixe);
 
             this.el.find("infos").empty();

@@ -136,7 +136,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "argent" : [100, 150],
             "sexe" : "f",
             "abilities" : ["volDeVie", "volDeMana", "bouleFeu", "invoqueGrosseGoule"],
-            "type" : "boss"
+            "type" : "boss",
+            "baseSuffixe" : "spectral"
 		},
 		"roiBandit" : {
             "name" : "roiBandit",

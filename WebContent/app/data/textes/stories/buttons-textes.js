@@ -57,6 +57,10 @@ define([], function(){
             fr : "L'attaquer",
             en : "Attack her"
         },
+        "les-attaquer" : {
+            fr : "Les attaquer",
+            en : "Attack them"
+        },
         "alattaque" : {
             fr : "À l'attaque&nbsp;!",
             en : "Attack!"
@@ -225,6 +229,10 @@ define([], function(){
             fr : "Laisser les armes",
             en : "Leave the weapons"
         },
+        "se-servir" : {
+            fr : "Se servir",
+            en : "Help yourself"
+        },
 
         /**
         * Interaction avec des gens ou objets
@@ -289,6 +297,10 @@ define([], function(){
             fr : "Demander à entrer",
             en : "Ask to enter"
         },
+        "demander-travail" : {
+            fr : "Demander du travail",
+            en : "Ask for work"
+        },
         "linsulter-m" : {
             fr : "L'insulter",
             en : "Insult him"
@@ -305,9 +317,29 @@ define([], function(){
             fr : "Montrer l'anneau",
             en : "Show the ring"
         },
+        "montrer-lettre" : {
+            fr : "Montrer la lettre",
+            en : "Show letter"
+        },
         "demander-recompense" : {
             fr : "Demander la récompense",
             en : "Ask for the reward"
+        },
+        "travailler" : {
+            fr : "Travailler",
+            en : "Work"
+        },
+        "apprendre" : {
+            fr : "Apprendre",
+            en : "Learn"
+        },
+        "se-reposer" : {
+            fr : "Se reposer",
+            en : "Resting"
+        },
+        "castagner" : {
+            fr : "Castagner",
+            en : "Beat up"
         },
 
         /**
@@ -368,6 +400,10 @@ define([], function(){
         "quel-recompense" : {
             fr : "Quel est la récompense&nbsp;?",
             en : "What's the reward?"
+        },
+        "agitation" : {
+            fr : "De l'agitation&nbsp;?",
+            en : "Some unrest?"
         },
 
         /**
@@ -508,6 +544,18 @@ define([], function(){
         "affichage-quetes" : {
             fr : "Affichage des quêtes",
             en : "Display of quests"
+        },
+        "partir" : {
+            fr : "Partir",
+            en : "Leave"
+        },
+        "alchimiste" : {
+            fr : "Alchimiste",
+            en : "Alchemist"
+        },
+        "taverne" : {
+            fr : "Taverne",
+            en : "Tavern"
         },
 	};
 	

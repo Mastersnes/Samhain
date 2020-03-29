@@ -114,7 +114,8 @@ define(["jquery",
 
             this.el.find("texte span").click(function() {
                 var key = $(this).attr("key");
-                that.parent.glossaire(key);
+                var suffixe = $(this).attr("suffixe");
+                that.parent.glossaire(key, suffixe);
             });
         };
 
@@ -154,6 +155,9 @@ define(["jquery",
                     var rand = Utils.rand(1, GameOver.length(), true);
                     this.go("gameOver"+rand);
                     break;
+                case "restore":
+                    this.player.restore();
+                    break;
                 case "reload":
                     this.go(this.player.data.checkpoint);
                     break;
@@ -161,12 +165,8 @@ define(["jquery",
                     var adversaires = params[0];
                     var nextLieu = params[1];
                     var failLieu = params[2];
-
-                    var textes;
-                    if (failLieu != undefined && Array.isArray(failLieu)) {
-                        textes = failLieu;
-                        failLieu = null;
-                    }else textes = params[3];
+                    var textes = params[3];
+                    var regles = params[4];
 
                     var failFunction = null;
                     if (failLieu) {
@@ -176,7 +176,7 @@ define(["jquery",
                     }
                     this.parent.fight(adversaires, function() {
                         that.go(nextLieu);
-                    }, failFunction, textes);
+                    }, failFunction, textes, regles);
                     break;
                 case "hurt":
                     var degats = params[0];
@@ -191,11 +191,19 @@ define(["jquery",
                 case "gainOneTime":
                     this.gain(params, true);
                     break;
+                case "gainGold":
+                    this.gainGold(params[0])
+                    break;
                 case "perte":
                     for (var i in params) {
                         var item = params[i];
                         this.player.removeEquipment(item);
                     }
+                    break;
+                case "depense":
+                case "perteGold":
+                    var amount = params[0];
+                    this.player.addGold(-amount);
                     break;
                 case "sound":
                     var sound = params[0];
@@ -207,7 +215,15 @@ define(["jquery",
                     var ifNotFound = params[2];
 
                     if (this.player.hasAll(items)) this.go(ifFound);
-                    else this.go(ifNotFound);
+                    else if(ifNotFound) this.go(ifNotFound);
+                    break;
+                case "hasNoItem":
+                    var items = params[0];
+                    var ifNotFound = params[1];
+                    var ifFound = params[2];
+
+                    if (this.player.hasNoOne(items)) this.go(ifNotFound);
+                    else if(ifFound) this.go(ifFound);
                     break;
                 case "heal":
                     var vie = params[0];
@@ -257,6 +273,10 @@ define(["jquery",
             }
         };
 
+        this.gainGold = function(amount) {
+            this.player.addGold(amount);
+        };
+
         this.checkActions = function(conditions) {
             var checkOk = true;
             for (var idCondition in conditions) {
@@ -277,6 +297,9 @@ define(["jquery",
                 case "hasMG":
                     var amount = params[0];
                     return this.player.get("mana.current") >= amount;
+                case "hasGold":
+                    var amount = params[0];
+                    return this.player.get("gold") >= amount;
                 default:
                     return true;
             };

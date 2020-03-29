@@ -31,7 +31,9 @@ define([], function() {
                     "action" : [
                         {"key" : "random", "params" : [
                             "ville-porte-contourner-reussite-1"
-//                            , "ville-porte-contourner-echec-1",
+                            //TODO : Bouchon, a retirer !!!
+//                            , "ville-porte-contourner-echec-1", "ville-porte-contourner-echec-1",
+//                            "ville-porte-contourner-echec-1", "ville-porte-contourner-echec-1",
 //                            "ville-porte-contourner-echec-1", "ville-porte-contourner-echec-1"
                         ]}
                     ]

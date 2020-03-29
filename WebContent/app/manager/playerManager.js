@@ -19,6 +19,8 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 			this.saveManager = parent.saveManager;
 			this.recompenseManager = parent.recompenseManager;
 			this.data = this.saveManager.load("player");
+			this.restoreStates();
+
 			this.options = this.saveManager.options();
 
 			this.mediatheque = parent.mediatheque;
@@ -37,6 +39,20 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 		    }
 
 		    return data;
+		};
+		this.set = function(key, value) {
+		    var keys = key.split(".");
+
+            var data = this.data;
+            var lastKey;
+            for (var i=0; i<keys.length; i++) {
+                if (i == keys.length-1) lastKey = keys[i];
+                else data = data[keys[i]];
+
+                if (data == undefined) return null;
+            }
+
+            data[lastKey] = value;
 		};
 
 		/**
@@ -617,6 +633,17 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 
             this.data.buff = null;
             this.data.debuff = null;
+        };
+
+        this.saveState = function(key) {
+            this.data.savesData[key] = this.get(key);
+        };
+        this.restoreStates = function() {
+            for (var key in this.data.savesData) {
+                if (key != undefined)
+                    this.set(key, this.data.savesData[key]);
+            }
+            this.data.savesData = {};
         };
 
 		this.init(parent);

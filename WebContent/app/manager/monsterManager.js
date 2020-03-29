@@ -75,7 +75,8 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
 			if (xp < 1) xp = 1;
 
 			var abilities = [];
-			if (this.template.abilities) abilities = this.template.abilities;
+			if (adversaire.abilities) abilities = adversaire.abilities;
+			else if (this.template.abilities) abilities = this.template.abilities;
 
 			var consos = [];
             if (this.template.consos) {
@@ -140,10 +141,14 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
 		    if (this.template.sexe == "m")
 		        suffixeName = this.suffixe.namem;
 
-            if (this.Textes.local == "fr")
-		        return this.Textes.get(this.name) + "<br/>" + this.Textes.get(suffixeName);
-		    else
-		        return this.Textes.get(suffixeName) + "<br/>" + this.Textes.get(this.name);
+            if (this.suffixe.noname) {
+                return this.Textes.get(suffixeName);
+            }else {
+                if (this.Textes.local == "fr")
+                    return this.Textes.get(this.name) + "<br/>" + this.Textes.get(suffixeName);
+                else
+                    return this.Textes.get(suffixeName) + "<br/>" + this.Textes.get(this.name);
+            }
 		};
 
 		this.removeConso = function(name) {

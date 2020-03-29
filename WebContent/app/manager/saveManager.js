@@ -35,7 +35,7 @@ function($, _, Utils) {
 			        "debuff" : null,
 			        "xp" : 0,
 			        "level" : 0,
-			        "gold" : 0,
+			        "gold" : 1000,
 
 			        "attaque" : 1,
 			        "defense" : 0,
@@ -48,9 +48,11 @@ function($, _, Utils) {
 			            "magie" : [],
 			            "conso" : [],
 			            "clef" : [],
-			            "ifObj" : []
+			            "ifObj" : ["VisiteTaverne", "CastagneSave1"]
 			        },
-                    "lieu" : "boss6"
+                    "lieu" : "ville-ruelle-taverne",
+
+                    "savesData" : {}
 			    },
                 "success" : {
                     "successComplete" : [],

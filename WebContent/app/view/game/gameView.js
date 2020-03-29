@@ -167,14 +167,14 @@ function($, _, Utils, PopupUtils, page,
         	this.saveManager.saveInSession();
         };
 
-        this.fight = function(adversaires, onWin, onFail, textes) {
-            this.fightView.fight(adversaires, onWin, onFail, textes);
+        this.fight = function(adversaires, onWin, onFail, textes, regles) {
+            this.fightView.fight(adversaires, onWin, onFail, textes, regles);
         };
         this.boutique = function(items, onPurchase, onNoPurchase) {
             this.boutiqueView.open(items, onPurchase, onNoPurchase);
         };
-        this.glossaire = function(key) {
-            this.glossaireView.show(key);
+        this.glossaire = function(key, suffixe) {
+            this.glossaireView.show(key, false, suffixe);
         };
 
         this.makeEvents = function() {

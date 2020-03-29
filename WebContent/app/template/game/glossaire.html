@@ -17,10 +17,11 @@
 					<select>
 						<% for (var i in suffixes) { %>
 							<% var suffixe = suffixes[i]; %>
-							<option id="<%=i%>-m" class="masculin" name="<%=i%>">
+							<% var uniqueToken = suffixe.unique?"unique":""; %>
+							<option id="<%=i%>-m" class="masculin <%=uniqueToken%>" name="<%=i%>">
 								<%=text.get(suffixe.namem)%>
 							</option>
-							<option id="<%=i%>-f" class="feminin" name="<%=i%>">
+							<option id="<%=i%>-f" class="feminin <%=uniqueToken%>" name="<%=i%>">
 								<%=text.get(suffixe.namef)%>
 							</option>
 						<% } %>
