@@ -112,7 +112,7 @@ define([], function() {
                     ]
                 },
                 {
-                    "name" : "continuer",
+                    "name" : "continue",
                     "action" : [
                         {"key" : "gainGold", "params" : [500]},
                         {"key" : "go", "params" : [ "ville-ruelle-taverne-castagne-6"]}
@@ -225,7 +225,7 @@ define([], function() {
                         "ville-ruelle-taverne-castagne-win2-texte-5", "ville-ruelle-taverne-castagne-win2-texte-6"],
             "actions" : [
                 {
-                    "name" : "continuer",
+                    "name" : "continue",
                     "action" : [
                         {"key" : "gain", "params" : ["doubleAttaque", "CastagneVictoire"]},
                         {"key" : "perte", "params" : ["CastagneSave1"]},
@@ -277,12 +277,212 @@ define([], function() {
         * Castagne Random
         **/
         "ville-ruelle-taverne-castagne-random" : {
-            "textes" : [],
+            "textes" : ["ville-ruelle-taverne-castagne-random-texte-1", "ville-ruelle-taverne-castagne-random-texte-2",
+                        "ville-ruelle-taverne-castagne-random-texte-3", "ville-ruelle-taverne-castagne-random-texte-4",
+                        "ville-ruelle-taverne-castagne-random-texte-5"],
             "actions" : [
                 {
-                    "name" : "continuer",
+                    "name" : "castagner",
                     "action" : [
-                        {"key" : "random", "params" : [ "ville-ruelle-taverne-castagne-random-1"]}
+                        {"key" : "random", "params" : [
+                            "ville-ruelle-taverne-castagne-random-1", "ville-ruelle-taverne-castagne-random-2",
+                            "ville-ruelle-taverne-castagne-random-3", "ville-ruelle-taverne-castagne-random-4",
+                            "ville-ruelle-taverne-castagne-random-5", "ville-ruelle-taverne-castagne-random-6",
+                            "ville-ruelle-taverne-castagne-random-7", "ville-ruelle-taverne-castagne-random-8",
+                            "ville-ruelle-taverne-castagne-random-9", "ville-ruelle-taverne-castagne-random-10"
+                        ]}
+                    ]
+                }
+            ]
+        },
+        "ville-ruelle-taverne-castagne-random-relance" : {
+            "textes" : ["ville-ruelle-taverne-castagne-random-relance-texte-1"],
+            "actions" : [
+                {
+                    "name" : "castagner",
+                    "action" : [
+                        {"key" : "random", "params" : [
+                            "ville-ruelle-taverne-castagne-random-1", "ville-ruelle-taverne-castagne-random-2",
+                            "ville-ruelle-taverne-castagne-random-3", "ville-ruelle-taverne-castagne-random-4",
+                            "ville-ruelle-taverne-castagne-random-5", "ville-ruelle-taverne-castagne-random-6",
+                            "ville-ruelle-taverne-castagne-random-7", "ville-ruelle-taverne-castagne-random-8",
+                            "ville-ruelle-taverne-castagne-random-9", "ville-ruelle-taverne-castagne-random-10"
+                        ]}
+                    ]
+                },
+                {
+                    "name" : "abandonner",
+                    "action" : [
+                        {"key" : "go", "params" : ["ville-ruelle-taverne-castagne-repos"]}
+                    ]
+                }
+            ]
+        },
+
+        "ville-ruelle-taverne-castagne-random-1" : {
+            "textes" : ["ville-ruelle-taverne-castagne-random-multi-texte-1"],
+            "actions" : [
+                {
+                    "name" : "combattre",
+                    "action" : [
+                        {"key" : "fight", "params" : [
+                            ["villageois", "bandit",
+                                {"name": "garde", "abilities" : ["doubleAttaque"]}
+                            ],
+                            "ville-ruelle-taverne-castagne-random-relance", "ville-ruelle-taverne-castagne-defaite",
+                            null, ["no-weapon"]
+                        ]}
+                    ]
+                }
+            ]
+        },
+        "ville-ruelle-taverne-castagne-random-2" : {
+            "textes" : ["ville-ruelle-taverne-castagne-random-multi-texte-1"],
+            "actions" : [
+                {
+                    "name" : "combattre",
+                    "action" : [
+                        {"key" : "fight", "params" : [
+                            ["bandit", "bandit", "bandit"],
+                            "ville-ruelle-taverne-castagne-random-relance", "ville-ruelle-taverne-castagne-defaite",
+                            null, ["no-weapon"]
+                        ]}
+                    ]
+                }
+            ]
+        },
+        "ville-ruelle-taverne-castagne-random-3" : {
+            "textes" : ["ville-ruelle-taverne-castagne-random-multi-texte-1"],
+            "actions" : [
+                {
+                    "name" : "combattre",
+                    "action" : [
+                        {"key" : "fight", "params" : [
+                            ["villageois", "villageois", "villageois", "villageois"],
+                            "ville-ruelle-taverne-castagne-random-relance", "ville-ruelle-taverne-castagne-defaite",
+                            null, ["no-weapon"]
+                        ]}
+                    ]
+                }
+            ]
+        },
+        "ville-ruelle-taverne-castagne-random-4" : {
+            "textes" : ["ville-ruelle-taverne-castagne-random-multi-texte-1"],
+            "actions" : [
+                {
+                    "name" : "combattre",
+                    "action" : [
+                        {"key" : "fight", "params" : [
+                            [
+                                {"name": "garde", "abilities" : ["doubleAttaque"]},
+                                {"name": "garde", "abilities" : ["doubleAttaque"]}
+                            ],
+                            "ville-ruelle-taverne-castagne-random-relance", "ville-ruelle-taverne-castagne-defaite",
+                            null, ["no-weapon"]
+                        ]}
+                    ]
+                }
+            ]
+        },
+        "ville-ruelle-taverne-castagne-random-5" : {
+            "textes" : ["ville-ruelle-taverne-castagne-random-multi-texte-1"],
+            "actions" : [
+                {
+                    "name" : "combattre",
+                    "action" : [
+                        {"key" : "fight", "params" : [
+                            [
+                                "villageois",
+                                {"name": "garde", "abilities" : ["doubleAttaque"]}
+                            ],
+                            "ville-ruelle-taverne-castagne-random-relance", "ville-ruelle-taverne-castagne-defaite",
+                            null, ["no-weapon"]
+                        ]}
+                    ]
+                }
+            ]
+        },
+        "ville-ruelle-taverne-castagne-random-6" : {
+            "textes" : ["ville-ruelle-taverne-castagne-random-multi-texte-1"],
+            "actions" : [
+                {
+                    "name" : "combattre",
+                    "action" : [
+                        {"key" : "fight", "params" : [
+                            [
+                                "villageois",
+                                "villageois",
+                                {"name": "garde", "abilities" : ["doubleAttaque"]}
+                            ],
+                            "ville-ruelle-taverne-castagne-random-relance", "ville-ruelle-taverne-castagne-defaite",
+                            null, ["no-weapon"]
+                        ]}
+                    ]
+                }
+            ]
+        },
+        "ville-ruelle-taverne-castagne-random-7" : {
+            "textes" : ["ville-ruelle-taverne-castagne-random-unique-texte-1"],
+            "actions" : [
+                {
+                    "name" : "combattre",
+                    "action" : [
+                        {"key" : "fight", "params" : [
+                            [
+                                {"name": "garde", "abilities" : ["doubleAttaque"]}
+                            ],
+                            "ville-ruelle-taverne-castagne-random-relance", "ville-ruelle-taverne-castagne-defaite",
+                            null, ["no-weapon"]
+                        ]}
+                    ]
+                }
+            ]
+        },
+        "ville-ruelle-taverne-castagne-random-8" : {
+            "textes" : ["ville-ruelle-taverne-castagne-random-unique-texte-1"],
+            "actions" : [
+                {
+                    "name" : "combattre",
+                    "action" : [
+                        {"key" : "fight", "params" : [
+                            ["bandit"],
+                            "ville-ruelle-taverne-castagne-random-relance", "ville-ruelle-taverne-castagne-defaite",
+                            null, ["no-weapon"]
+                        ]}
+                    ]
+                }
+            ]
+        },
+        "ville-ruelle-taverne-castagne-random-9" : {
+            "textes" : ["ville-ruelle-taverne-castagne-random-multi-texte-1"],
+            "actions" : [
+                {
+                    "name" : "combattre",
+                    "action" : [
+                        {"key" : "fight", "params" : [
+                            ["bandit", "villagois", "bandit", "villageois"],
+                            "ville-ruelle-taverne-castagne-random-relance", "ville-ruelle-taverne-castagne-defaite",
+                            null, ["no-weapon"]
+                        ]}
+                    ]
+                }
+            ]
+        },
+        "ville-ruelle-taverne-castagne-random-10" : {
+            "textes" : ["ville-ruelle-taverne-castagne-random-multi-texte-1"],
+            "actions" : [
+                {
+                    "name" : "combattre",
+                    "action" : [
+                        {"key" : "fight", "params" : [
+                            [
+                                "bandit", "bandit",
+                                {"name": "garde", "abilities" : ["doubleAttaque"]},
+                                {"name": "garde", "abilities" : ["doubleAttaque"]}
+                            ],
+                            "ville-ruelle-taverne-castagne-random-relance", "ville-ruelle-taverne-castagne-defaite",
+                            null, ["no-weapon"]
+                        ]}
                     ]
                 }
             ]

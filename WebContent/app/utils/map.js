@@ -3,51 +3,66 @@ define(["jquery"], function($){
 	return function(collection){
 		this.init = function(collection) {
 			if (!collection) collection = [];
-			this.data = new Map(collection);
+			this.data = [];
+			for (var i in collection) {
+			    this.put(i, collection[i]);
+			}
 		};
 		
 		this.put = function(key, value) {
-			this.data.set(key, value);
+            this.data[key] = value;
 		};
 		this.push = function(key) {
-			this.data.set(key, key);
+			this.data[key] = key;
 		};
 		
 		this.length = function() {
-			return this.data.size;
+            var length = 0;
+            for (var i in this.data) {
+                length++;
+            }
+            return length;
 		};
 		
 		this.remove = function(key) {
-			return this.data.delete(key);
+            var val = this.data[key];
+            delete this.data[key];
+            return val;
 		};
 		this.clear = function() {
-			return this.data.clear();
+			this.data = [];
 		};
 
 		this.get = function(key) {
-			return this.data.get(key);
+            return this.data[key];
 		};
 
 		this.getFirst = function() {
-			return this.data.keys().next().value;
+			for (var i in this.data) {
+			    return this.data[i];
+			}
 		};
 		
 		this.getKey = function(value) {
-            var next = this.data.entries().next();
-			while (!next.done) {
-				var index = next.value[0];
-				var item = next.value[1];
-				if (item == value) return index;
-			}
+            for (var i in this.data) {
+                if (this.data[i] == value) return i;
+            }
 			return null;
 		};
 
 		this.keys = function() {
-            return this.data.keys();
+            var keys = [];
+            for (var i in this.data) {
+                keys.push(i);
+            }
+            return keys;
         };
 		
 		this.contains = function(value) {
-			return this.getKey(value) != null;
+			for (var i in this.data) {
+			    if (this.data[i] == value) return true;
+			}
+			return false;
 		};
 		
 		/**

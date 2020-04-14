@@ -3,18 +3,17 @@ Ameliorations :
 -> General
 	-> Ajout de musiques
 -> Contenu Additionnel
-	-> Ajout de la ville
-	-> Ajout de 3 quetes
-	-> Ajout du poste de garde (combats aleatoires en fonction du niveau)
+	-> Ajout du panneau des quetes
+	-> Ajout du poste de garde
 	-> Traduction Esperanto
 -> Sons
     -> revoir les sons
     -> hurt.wav quand le joueur prend des degats
 -> Combat
     -> effets : à voir
-    -> Idée : possibilité de configurer le nombre des actions
 -> Bugs
-    -> N/A
+    -> Revoir les ponctuations finales
+    -> Revoir l'apparence du glossaire
 -> Fait
     -> General
         -> Quand on fouille les araignées au debut, chance de trouver un truc
@@ -48,3 +47,5 @@ Ameliorations :
             -> Antidote
             -> Guerison
         -> Musiques
+        -> Ajout de la ville
+        -> Ajout de la taverne

@@ -9,6 +9,7 @@ define(["jquery",
         "app/view/game/uiView",
         "app/view/game/histoireView",
         "app/view/game/fightView",
+        "app/view/game/jeuGardeView",
         "app/view/game/boutiqueView",
         "app/view/game/glossaireView",
         "app/view/game/inventaireView",
@@ -16,7 +17,8 @@ define(["jquery",
         ],
 function($, _, Utils, PopupUtils, page,
             RecompenseManager, PlayerManager,
-            UIView, HistoireView, FightView, BoutiqueView, GlossaireView, InventaireView, EndView) {
+            UIView, HistoireView, FightView, JeuGardeView,
+            BoutiqueView, GlossaireView, InventaireView, EndView) {
 	'use strict';
 
 	return function(parent, didacticiel) {
@@ -48,6 +50,7 @@ function($, _, Utils, PopupUtils, page,
             this.didacticiel = didacticiel;
             this.histoireView = new HistoireView(this, didacticiel);
             this.fightView = new FightView(this);
+            this.jeuGardeView = new JeuGardeView(this);
             this.boutiqueView = new BoutiqueView(this);
             this.glossaireView = new GlossaireView(this);
             this.inventaireView = new InventaireView(this);
@@ -125,6 +128,7 @@ function($, _, Utils, PopupUtils, page,
     		    if (!this.pause) {
         		    this.uiView.loop(this);
         		    this.fightView.loop(this);
+        		    this.jeuGardeView.loop(this);
         		    this.boutiqueView.loop(this);
         		    this.inventaireView.loop(this);
         		    this.playerManager.showNextAmount();
@@ -175,6 +179,9 @@ function($, _, Utils, PopupUtils, page,
         };
         this.glossaire = function(key, suffixe) {
             this.glossaireView.show(key, false, suffixe);
+        };
+        this.jeuGarde = function(but, onWin, onFail, onAbandon, startMise) {
+            this.jeuGardeView.launch(but, onWin, onFail, onAbandon, startMise);
         };
 
         this.makeEvents = function() {

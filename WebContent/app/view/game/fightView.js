@@ -1,12 +1,12 @@
 'use strict';
-define(["jquery",
+define(["jquery", "underscore",
         "app/utils/utils",
         "app/utils/viewUtils",
         "text!app/template/game/fight.html",
         "app/manager/monsterManager",
         "app/manager/actionManager",
         "app/data/items"
-        ], function($, Utils, ViewUtils, page, MonsterManager, ActionManager, Items){
+        ], function($, _, Utils, ViewUtils, page, MonsterManager, ActionManager, Items){
     return function(parent){
         this.init = function(parent) {
         	this.el = $(".fight");
@@ -38,6 +38,7 @@ define(["jquery",
             var that = this;
             $(".histoire").fadeOut();
             $(".boutique").fadeOut();
+            $(".jeuGarde").fadeOut();
 
             this.textesBuffer = textes;
             this.onWin = onWin;

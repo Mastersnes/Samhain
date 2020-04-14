@@ -47,16 +47,16 @@ define([], function() {
                     ]
                 },
                 {
-                    "name" : "partir",
-                    "action" : [
-                        {"key" : "go", "params" : [ "ville-garde-simple-retour"]}
-                    ]
-                },
-                {
                     "appairIf" : [{"key" : "hasItem", "params" : ["LettreSobac"]}],
                     "name" : "montrer-lettre",
                     "action" : [
                         {"key" : "go", "params" : [ "ville-garde-simple-2"]}
+                    ]
+                },
+                {
+                    "name" : "partir",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-garde-simple-retour"]}
                     ]
                 },
             ]
@@ -66,16 +66,24 @@ define([], function() {
             "textes" : ["ville-garde-simple-2-texte-1", "ville-garde-simple-2-texte-2"],
             "actions" : [
                 {
+                    "appairIf" : [{"key" : "hasNoItem", "params" : ["taillade"]}],
                     "name" : "demander-travail",
                     "action" : [
-                        {"key" : "jeu-garde", "params" : [1, "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                        {"key" : "jeu-garde", "params" : [3, "ville-garde-jeu-victoire", "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                    ]
+                },
+                {
+                    "appairIf" : [{"key" : "hasItem", "params" : ["taillade"]}],
+                    "name" : "demander-travail",
+                    "action" : [
+                        {"key" : "jeu-garde", "params" : [-1, null, "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
                     ]
                 }
             ]
         },
 
         "ville-garde-simple-combat" : {
-            "textes" : ["ville-garde-simple-combat-texte-1", "ville-garde-simple-combat-texte-1"],
+            "textes" : ["ville-garde-simple-combat-texte-1", "ville-garde-simple-combat-texte-2"],
             "actions" : [
                 {
                     "name" : "combattre",
@@ -117,14 +125,14 @@ define([], function() {
                     "appairIf" : [{"key" : "hasGold", "params" : [3000]}],
                     "name" : "accepter",
                     "action" : [
-                        {"key" : "jeu-garde", "params" : [2, "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                        {"key" : "jeu-garde", "params" : [1, "ville-garde-jeu-victoire-2", "ville-garde-jeu-echec", "ville-garde-jeu-retour", 3000]}
                     ]
                 }
             ]
         },
 
         /**
-        * Pose de garde - Reussite total du deal
+        * Poste de garde - Reussite total du deal
         **/
         "ville-garde-jeu-victoire-2" : {
             "textes" : ["ville-garde-jeu-victoire-2-texte-1", "ville-garde-jeu-victoire-2-texte-2",
@@ -175,9 +183,17 @@ define([], function() {
             "textes" : ["ville-garde-ami-texte-1"],
             "actions" : [
                 {
+                    "appairIf" : [{"key" : "hasNoItem", "params" : ["taillade"]}],
                     "name" : "travailler",
                     "action" : [
-                        {"key" : "jeu-garde", "params" : [1, "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                        {"key" : "jeu-garde", "params" : [3, "ville-garde-jeu-victoire", "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                    ]
+                },
+                {
+                    "appairIf" : [{"key" : "hasItem", "params" : ["taillade"]}],
+                    "name" : "travailler",
+                    "action" : [
+                        {"key" : "jeu-garde", "params" : [-1, null, "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
                     ]
                 }
             ]
@@ -187,9 +203,17 @@ define([], function() {
             "textes" : ["ville-garde-jeu-retour-texte-1"],
             "actions" : [
                 {
+                    "appairIf" : [{"key" : "hasNoItem", "params" : ["taillade"]}],
                     "name" : "reessayer",
                     "action" : [
-                        {"key" : "jeu-garde", "params" : [1, "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                        {"key" : "jeu-garde", "params" : [3, "ville-garde-jeu-victoire", "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                    ]
+                },
+                {
+                    "appairIf" : [{"key" : "hasItem", "params" : ["taillade"]}],
+                    "name" : "reessayer",
+                    "action" : [
+                        {"key" : "jeu-garde", "params" : [-1, null, "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
                     ]
                 },
                 {
@@ -205,9 +229,17 @@ define([], function() {
             "textes" : ["ville-garde-jeu-echec-texte-1", "ville-garde-jeu-echec-texte-2"],
             "actions" : [
                 {
+                    "appairIf" : [{"key" : "hasNoItem", "params" : ["taillade"]}],
                     "name" : "reessayer",
                     "action" : [
-                        {"key" : "jeu-garde", "params" : [1, "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                        {"key" : "jeu-garde", "params" : [3, "ville-garde-jeu-victoire", "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                    ]
+                },
+                {
+                    "appairIf" : [{"key" : "hasItem", "params" : ["taillade"]}],
+                    "name" : "reessayer",
+                    "action" : [
+                        {"key" : "jeu-garde", "params" : [-1, null, "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
                     ]
                 },
                 {
@@ -223,7 +255,7 @@ define([], function() {
         * Poste de garde - Hors la loi
         **/
         "ville-garde-combat-1" : {
-            "textes" : ["ville-garde-combat-texte-1", "ville-garde-combat-texte-2", "ville-garde-combat-texte-3"],
+            "textes" : ["ville-garde-simple-texte-1", "ville-garde-combat-texte-2", "ville-garde-combat-texte-3"],
             "actions" : [
                 {
                     "name" : "combattre",

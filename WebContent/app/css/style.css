@@ -9,6 +9,9 @@ html, body {
 body * {
 	background-color: rgba(0,0,0,0);
 }
+div {
+    width: 100%; height: 100%;
+}
 ul {
 	padding: 0;
 	margin: 0;
@@ -52,6 +55,8 @@ button:focus {outline:0;}
     font-size : 4vh;
     max-width: 100%;
     word-wrap: break-word;
+}
+.text, .texte, texte, text, info, infoList, titre {
     cursor: default;
 }
 .underline {
@@ -140,6 +145,14 @@ button:focus {outline:0;}
 @font-face {
     font-family: "Morgan";
     src: url("../fonts/morgan.ttf");
+}
+@font-face {
+    font-family: "Tangerine";
+    src: url("../fonts/tangerine.ttf");
+}
+@font-face {
+    font-family: "TangerineBold";
+    src: url("../fonts/tangerine_bold.ttf");
 }
 
 /**

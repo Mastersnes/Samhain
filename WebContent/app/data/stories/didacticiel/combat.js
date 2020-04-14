@@ -43,6 +43,7 @@ define([],
                         {
                             "name" : "retour-menu",
                             "action" : [
+                                {"key" : "score", "params" : ["DidacticielWin", 1]},
                                 {"key" : "restart", "params" : null}
                             ]
                         }

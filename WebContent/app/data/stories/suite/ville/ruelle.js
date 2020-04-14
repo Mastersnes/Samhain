@@ -35,12 +35,6 @@ define([], function() {
             "textes" : ["ville-ruelle-taverne-texte-1", "ville-ruelle-taverne-texte-2", "ville-ruelle-taverne-texte-3"],
             "actions" : [
                 {
-                    "name" : "partir",
-                    "action" : [
-                        {"key" : "go", "params" : [ "ville-entree-retour-centre"]}
-                    ]
-                },
-                {
                     "appairIf" : [{"key" : "hasItem", "params" : ["VisiteTaverne"]}],
                     "name" : "continue",
                     "action" : [
@@ -54,7 +48,13 @@ define([], function() {
                         {"key" : "gain", "params" : [ "VisiteTaverne"]},
                         {"key" : "go", "params" : [ "ville-ruelle-taverne-agitation"]}
                     ]
-                }
+                },
+                {
+                    "name" : "partir",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-entree-retour-centre"]}
+                    ]
+                },
             ]
         },
 
@@ -63,19 +63,19 @@ define([], function() {
             "ville-ruelle-taverne-agitation-texte-3", "ville-ruelle-taverne-agitation-texte-4"],
             "actions" : [
                 {
-                    "name" : "non-merci",
-                    "action" : [
-                        {"key" : "go", "params" : [ "ville-ruelle-taverne-refus"]}
-                    ]
-                },
-                {
                     "appairIf" : [{"key" : "hasGold", "params" : [100]}],
                     "name" : "castagner",
                     "action" : [
                         {"key" : "depense", "params" : [100]},
                         {"key" : "go", "params" : [ "ville-ruelle-taverne-castagne-1"]}
                     ]
-                }
+                },
+                {
+                    "name" : "non-merci",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-ruelle-taverne-refus"]}
+                    ]
+                },
             ]
         },
 
@@ -98,12 +98,6 @@ define([], function() {
             "textes" : ["ville-ruelle-taverne-2-texte-1", "ville-ruelle-taverne-2-texte-2"],
             "actions" : [
                 {
-                    "name" : "non-merci",
-                    "action" : [
-                        {"key" : "go", "params" : [ "ville-ruelle-taverne-refus"]}
-                    ]
-                },
-                {
                     "appairIf" : [{"key" : "hasGold", "params" : [100]}],
                     "name" : "castagner",
                     "action" : [
@@ -112,7 +106,13 @@ define([], function() {
                         {"key" : "hasItem", "params" : [["CastagneSave1"], "ville-ruelle-taverne-castagne-6"]},
                         {"key" : "hasItem", "params" : [["CastagneVictoire"], "ville-ruelle-taverne-castagne-random"]}
                     ]
-                }
+                },
+                {
+                    "name" : "non-merci",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-ruelle-taverne-refus"]}
+                    ]
+                },
             ]
         },
 

@@ -1,11 +1,11 @@
 'use strict';
-define(["jquery",
+define(["jquery", "underscore",
         "app/utils/utils",
         "app/utils/map",
         "app/utils/viewUtils",
         "text!app/template/game/inventaire.html",
         "app/data/items"
-        ], function($, Utils, HashMap, ViewUtsils, page, Items){
+        ], function($, _, Utils, HashMap, ViewUtsils, page, Items){
     return function(parent){
         this.init = function(parent) {
         	this.el = $(".inventaire");
@@ -38,6 +38,7 @@ define(["jquery",
         };
 
         this.render = function() {
+            console.log("consos", this.consos);
             _.templateSettings.variable = "data";
             var template = _.template(page);
             var templateData = {

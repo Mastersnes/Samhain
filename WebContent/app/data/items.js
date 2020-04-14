@@ -92,6 +92,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "antidote" : {
                 "name" : "antidote",
                 "texte" : "antidote-texte",
+                "commentaire" : "antidote-commentaire",
                 "sound" : "drink",
                 "anim" : null,
                 "price" : 100,
@@ -369,19 +370,34 @@ define(["jquery", "app/utils/utils"], function($, Utils){
         /**
         * Liste pour l'affichage
         **/
-		list : function(letter, Textes) {
-		    var resultats = this.listByType("arme", letter, Textes);
-		    resultats = resultats.concat(this.listByType("bouclier", letter, Textes))
-		    resultats = resultats.concat(this.listByType("conso", letter, Textes))
-		    resultats = resultats.concat(this.listByType("magie", letter, Textes))
+		list : function(letters, Textes, stopAtFirst) {
+		    var resultats = this.listByType("arme", letters, Textes, stopAtFirst);
+		    resultats = resultats.concat(this.listByType("bouclier", letters, Textes, stopAtFirst))
+		    resultats = resultats.concat(this.listByType("conso", letters, Textes, stopAtFirst))
+		    resultats = resultats.concat(this.listByType("magie", letters, Textes, stopAtFirst))
 		    return resultats;
 		},
-		listByType : function(type, letter, Textes) {
+		listByType : function(type, letters, Textes, stopAtFirst) {
 		    var resultats = [];
-		    for (var item in data[type]) {
-		        var itemName = Utils.normalize(Textes.get(item));
-		        if(itemName.startsWith(letter)) resultats.push(item);
-		    }
+
+		    if (Array.isArray(letters)) {
+                for (var i in letters) {
+                    var subResult = this.listByType(type, letters[i], Textes, stopAtFirst);
+                    resultats = resultats.concat(subResult);
+
+                    // Amelioration des perf
+                    if (stopAtFirst && resultats.length > 0) return resultats;
+                }
+            }else {
+                var letter = letters;
+                for (var item in data[type]) {
+                    var itemName = Utils.normalize(Textes.get(item));
+                    if(itemName.indexOf(letter, 0) === 0) resultats.push(item);
+
+                    // Amelioration des perf
+                    if (stopAtFirst && resultats.length > 0) return resultats;
+                }
+            }
 		    return resultats;
 		}
 	};

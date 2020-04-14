@@ -9,7 +9,7 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-simple-1-texte-2" : {
-            fr : "À première vue, rien ne semble attirer votre attention, mais vite votre regard se pose sur des enseignes intéressante...",
+            fr : "À première vue, rien ne semble attirer votre attention mais, assez vite, votre regard se pose sur des enseignes intéressantes...",
             en : "-"
         },
 
@@ -17,11 +17,11 @@ define([], function(){
         * Ruelle taverne
         **/
         "ville-ruelle-taverne-texte-1" : {
-            fr : "À peine entrez-vous dans la taverne qu'une chaise vole au dessus de votre tête.",
+            fr : "À peine entrez-vous dans la taverne qu'une chaise vole au-dessus de votre tête.",
             en : "-"
         },
         "ville-ruelle-taverne-texte-2" : {
-            fr : "Par chance vous réussissez à l'esquiver mais déjà deux broc plein atterrissent sur le mur à côté de vous.",
+            fr : "Par chance, vous réussissez à l'esquiver mais, déjà, deux brocs pleins atterrissent sur le mur à côté de vous.",
             en : "-"
         },
         "ville-ruelle-taverne-texte-3" : {
@@ -34,11 +34,11 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-taverne-agitation-texte-2" : {
-            fr : "&laquo; Quoi ? Ça ? Meuh non ! Rah... Ces péquenauds d’étranger... Ça, môsieur, c'est la castagne ! Le sport favoris du coin !",
+            fr : "&laquo; Quoi ? Ça ? Meuh non ! Rah... Ces péquenauds d’étranger... Ça, môsieur, c'est La Castagne ! Le sport favori du coin !",
             en : "-"
         },
         "ville-ruelle-taverne-agitation-texte-3" : {
-            fr : "La seul règle c'est qu'il faut pas en parler mais, pour quelques pièces, vous pouvez tenter vôte chance vous savez !",
+            fr : "La seule règle c'est qu'il faut pas en parler mais, pour quelques pièces, vous pouvez tenter vôte chance vous savez !",
             en : "-"
         },
         "ville-ruelle-taverne-agitation-texte-4" : {
@@ -47,11 +47,11 @@ define([], function(){
         },
 
         "ville-ruelle-taverne-refus-texte-1" : {
-            fr : "&laquo; Pas de soucis, rev'nez-donc nous voir si z'avez envie d'cogner !",
+            fr : "&laquo; Pas de soucis, rev'nez donc nous voir si z'avez envie d'cogner !",
             en : "-"
         },
         "ville-ruelle-taverne-refus-texte-2" : {
-            fr : "Et surtout n'oubliez pas la première règle de la Castagne... &raquo;",
+            fr : "Et surtout, n'oubliez pas la première règle de La Castagne... &raquo;",
             en : "-"
         },
 
@@ -75,20 +75,20 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-alchimiste-texte-2" : {
-            fr : "Un vieil homme derriere le comptoir s'affaire à préparer de curieuses potions...",
+            fr : "Un vieil homme derrière le comptoir s'affaire à préparer de curieuses potions...",
             en : "-"
         },
         "ville-ruelle-alchimiste-texte-3" : {
-            fr : "&laquo; Que puis-je pour vous jeune homme ? &raquo;",
+            fr : "&laquo; Que puis-je pour vous, jeune homme ? &raquo;",
             en : "-"
         },
 
         "ville-ruelle-alchimiste-achat-texte-1" : {
-            fr : "Vos achats terminés vous revenez dans le centre ville.",
+            fr : "Vos achats terminés, vous revenez dans le centre-ville.",
             en : "-"
         },
         "ville-ruelle-alchimiste-retour-texte-1" : {
-            fr : "Non intéressé par la marchandise, vous préférez revenir dans le centre ville.",
+            fr : "Non intéressé par la marchandise, vous préférez revenir dans le centre-ville.",
             en : "-"
         },
 
@@ -104,7 +104,7 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-voleur-1-texte-3" : {
-            fr : "&laquo; Psst, eh toi l'étranger, tu veux un bon plan ?",
+            fr : "&laquo; Psst ! Eh toi, l'étranger... Tu veux un bon plan ?",
             en : "-"
         },
         "ville-ruelle-voleur-1-texte-4" : {
@@ -120,11 +120,11 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-voleur-accept-texte-2" : {
-            fr : "L'homme sourit, vous pouvez apercevoir quelques dents toute en or.",
+            fr : "L'homme sourit, vous pouvez apercevoir quelques dents tout en or.",
             en : "-"
         },
         "ville-ruelle-voleur-accept-texte-3" : {
-            fr : "&laquo; Sir Erzalt, maître bandit pour te servir. Tu m'a l'air prometteur mon ami.",
+            fr : "&laquo; Sir Erzalt, maître-bandit, pour te servir. Tu m'as l'air prometteur mon ami...",
             en : "-"
         },
         "ville-ruelle-voleur-accept-texte-4" : {
@@ -133,15 +133,15 @@ define([], function(){
         },
 
         "ville-ruelle-voleur-accept-2-texte-1" : {
-            fr : "L'homme, fier de son affaire, vous salut :",
+            fr : "L'homme, fier de son affaire, vous salue :",
             en : "-"
         },
         "ville-ruelle-voleur-accept-2-texte-2" : {
-            fr : "&laquo; À bientôt camarade, repend la fortune des voleurs autour de toi &raquo;",
+            fr : "&laquo; À bientôt camarade ! Répands la fortune des voleurs autour de toi ! &raquo;",
             en : "-"
         },
         "ville-ruelle-voleur-accept-2-texte-3" : {
-            fr : "Il vous lève son chapeau puis disparaît dans l'ombre. Drôle de personnage...",
+            fr : "Il vous lève son chapeau, puis disparaît dans l'ombre. Drôle de personnage...",
             en : "-"
         },
 
@@ -157,7 +157,7 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-voleur-refus-texte-3" : {
-            fr : "Reviens me voir si tu change d'avis &raquo;",
+            fr : "Reviens me voir si tu changes d'avis &raquo;",
             en : "-"
         }
 	};

@@ -10,9 +10,6 @@
 .glossaire close {
     top: 16%; left: 90.4%;
 }
-.glossaire div {
-    width: 100%; height: 100%;
-}
 .glossaire contour {
     display: block; position: relative;
     width: 100%; height: 100%;
@@ -24,142 +21,194 @@
     background-size: 100% 100%;
 }
 
-.glossaire content {
+.glossaire div {
     display: block; position: absolute;
-    font-family: "Priscilla";
+    left: 0; top: 0;
 }
 
-.glossaire content.liste {
+.glossaire page {
+    display: block; position: absolute;
+    font-family: "Tangerine";
+}
+
+.glossaire page.gauche {
     width: 36%; height: 70%;
     top: 13.5%; left: 12.5%;
     transform: rotate(-8deg);
 }
-.glossaire content.zoom {
-    width: 36%; height: 74%;
-    top: 12%; left: 52.5%;
+.glossaire page.droite {
+    width: 36%; height: 71.5%;
+    top: 14%; left: 52.5%;
     transform: rotate(7deg);
     overflow: hidden;
 }
+
+/**
+* Marqueurs
+**/
+.glossaire .alphabet {
+    font-family: "Morgan";
+}
+.glossaire .alphabet {
+    display: block; position: absolute;
+    left: 1%; top: 19%;
+    width: 9%; height: 65%;
+    transform: rotate(-3deg);
+    z-index: 1;
+}
+.glossaire marqueurs {
+    display: block; position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+}
+.glossaire marqueurs marqueur {
+    display: block; position: relative;
+    width: 100%; height: 16%;
+    background-repeat: no-repeat;
+    background-image: url("../img/game/interface/bouton/marqueurs.png");
+    background-size: 300% 200%;
+    cursor: pointer;
+}
+.glossaire marqueurs marqueur texte {
+    position: relative; display: block;
+    top: 29%;
+    font-size: 3vh; font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.glossaire marqueurs marqueur[id="0"] {
+    background-position: 0% 100%;
+    left: 1%; top: -1%;
+    transform: rotate(5deg);
+}
+.glossaire marqueurs marqueur[id="1"] {
+    background-position: 0% 0%;
+    left: 3%; top: -1%;
+    transform: rotate(5deg);
+}
+.glossaire marqueurs marqueur[id="2"] {
+    background-position: 50% 100%;
+    left: 3%; top: -1%;
+    transform: rotate(5deg);
+}
+.glossaire marqueurs marqueur[id="3"] {
+    background-position: 50% 0%;
+    left: -3%; top: -0.5%;
+    transform: rotate(4deg);
+}
+.glossaire marqueurs marqueur[id="3"] texte {
+    left: 2.5%;
+}
+.glossaire marqueurs marqueur[id="4"] {
+    background-position: 100% 0%;
+    left: -0.5%; top: -1%;
+    transform: rotate(5deg);
+}
+.glossaire marqueurs marqueur[id="5"] {
+    background-position: 100% 100%;
+    left: 7%; top: -0.5%;
+    transform: rotate(2deg);
+}
+
 /**
 * Zoom sur un element
 **/
-.glossaire .zoom retour {
-    display: none; position: absolute;
-    width: 10%; height: 7%;
-    font-size: 3vh;
-    text-align: center;
-    border: 1px solid black;
-    z-index: 10;
-    top: -5%; left: -5%;
-    cursor: pointer;
+.glossaire .description {
+    color: black;
 }
-.glossaire .zoom retour:hover {
-    text-decoration: underline;
-}
-.glossaire .zoom entete {
+.glossaire .description entete {
     display: block; position: relative;
     width: 100%; height: 10%;
     text-align: center;
+    font-size: 6vh; font-weight: bold;
 }
-.glossaire .zoom titre, .glossaire .zoom suffixe {
+.glossaire .description titre, .glossaire .description suffixe#selected {
     display: inline-block; position: relative;
     width: auto; height: 100%;
-}
-
-.glossaire .zoom titre, .glossaire .zoom suffixe select {
     text-decoration: underline;
-    font-size: 3.5vh;
-    font-weight: bold;
-    border: none;
-    border-color: none;
-}
-.glossaire .zoom suffixe .unique {
-    display: none !important;
-}
-.glossaire .zoom suffixe .unique.visible {
-    display: block !important;
 }
 
-.glossaire .zoom texte {
+.glossaire .description suffixes {
+    position: absolute; display: block;
+    top: 11%;
+    width: 48%; height: 90%;
+    text-align: center;
+    font-size: 6vh; font-weight: bold;
+    overflow-y: auto;
+    background-color: #b0936e;
+    border: 2px solid;
+}
+.glossaire .description suffixes suffixe {
+    display: block;
+}
+.glossaire .description suffixes suffixe:hover {
+    background-color: #dac7ac;
+}
+.glossaire .description fleche {
+    position: relative; display: inline-block;
+    font-size: 2vh;
+}
+
+.glossaire .description suffixe, .glossaire .description fleche {
+    cursor: pointer;
+}
+
+.glossaire .description texte {
+    display: block; position: relative;
+    width: 100%; height: 90%;
+    text-align: initial; text-indent: 5%;
+    font-family: "TangerineBold"; font-size: 4.7vh;
+    padding-top: 4%;
+    padding-left: 3%; padding-right: 3%;
+    overflow-y: auto;
+}
+.glossaire .description infos {
     display: block; position: relative;
     width: 100%; height: auto;
-    text-align: justify;
-    font-size: 3vh;
-    overflow-y: auto;
-    margin-bottom: 3%;
-    border-bottom: 1px dashed black;
-    padding-bottom: 3%;
+    text-align: left; font-size: 4.7vh;
+    padding-top: 6%; padding-left: 3%;
+    font-family: "TangerineBold";
 }
-.glossaire .zoom infos {
-    display: block; position: relative;
-    width: 100%; height: auto;
-    font-size: 3vh;
-    overflow-y: auto;
-    text-align: left;
-    padding-bottom: 0.5%;
+.glossaire .description infos b {
+    font-family: "Tangerine";
 }
-.glossaire .zoom info {
+.glossaire .description info {
     display: inline-block; position: relative;
     width: 50%; height: auto;
     text-align: left;
     vertical-align: top;
 }
-.glossaire .zoom info.large {
+.glossaire .description info.large {
     width: 100%;
 }
-.glossaire .zoom infoList {
+.glossaire .description infoList {
     display: inline-block; position: relative;
     width: 100%; height: auto;
     text-align: left;
 }
 
-.glossaire .zoom span {
+.glossaire .description span {
     cursor: pointer;
 }
-.glossaire .zoom span:hover {
+.glossaire .description span:hover {
     text-decoration: underline;
 }
 
 /**
 * Liste des elements
 **/
-.glossaire .liste alphabet {
-    display: block; position: relative;
-    width: 100%; height: auto;
-    text-align: left;
-    font-size: 3vh;
-    font-weight: bold;
-}
-.glossaire .liste alphabet letter {
-    display: inline-block; position: relative;
-    width: 11%; height: auto;
-    text-align: center;
-    border: 1px solid black;
-    cursor: pointer;
-    margin: 0.25%;
-}
-.glossaire .liste alphabet letter.selected {
-    background-color: red;
-}
-.glossaire .liste alphabet letter:hover {
-    text-decoration: underline;
-}
-
 .glossaire .liste propositions {
     display: block; position: relative;
     width: 100%; height: auto;
     text-align: left;
-    font-size: 3.5vh;
-    margin-top: 12%;
+    font-size: 5vh; font-weight: bold;
 }
 .glossaire .liste proposition {
-    display: inline-block; position: relative;
+    display: block; position: relative;
     width: auto; height: auto;
     text-align: center;
-    border: 1px solid black;
     cursor: pointer;
-    margin: 0.25%;
-    padding: 1%;
 }
 .glossaire .liste proposition:hover {
     text-decoration: underline;

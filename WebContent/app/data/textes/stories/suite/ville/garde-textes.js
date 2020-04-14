@@ -13,13 +13,12 @@ define([], function(){
             fr : "vous vous dirigez vers le poste de garde.",
             en : "-"
         },
-
         "ville-garde-simple-texte-1" : {
-            fr : "Les forces de l'ordre, surpris par votre arrivé, viennent à votre rencontre :",
+            fr : "Les forces de l'ordre, surprises par votre arrivée, viennent à votre rencontre :",
             en : "-"
         },
         "ville-garde-simple-texte-2" : {
-            fr : "&laquo; Hola jeune homme ! Que viens-tu faire ici ? C'est interdit au public ! &raquo;",
+            fr : "&laquo; Halte, jeune homme ! Que viens-tu faire ici ? C'est interdit au public ! &raquo;",
             en : "-"
         },
 
@@ -28,7 +27,7 @@ define([], function(){
             en : "-"
         },
         "ville-garde-simple-2-texte-2" : {
-            fr : "Bienvenue héro, que pouvons nous faire pour toi ? &raquo;",
+            fr : "Bienvenue héros, que pouvons-nous faire pour toi ? &raquo;",
             en : "-"
         },
 
@@ -37,7 +36,7 @@ define([], function(){
             en : "-"
         },
         "ville-garde-simple-combat-texte-2" : {
-            fr : "Les soldats s'approchent, bien décidé à vous roser...",
+            fr : "Les soldats s'approchent, bien décidés à vous roser...",
             en : "-"
         },
 
@@ -46,7 +45,7 @@ define([], function(){
             en : "-"
         },
         "ville-garde-simple-retour-texte-2" : {
-            fr : "Les garde, eux, retournent à leurs occupations.",
+            fr : "Les gardes, eux, retournent à leurs occupations.",
             en : "-"
         },
 
@@ -54,19 +53,19 @@ define([], function(){
         * Poste de garde - Reussite du jeu
         **/
         "ville-garde-jeu-victoire-texte-1" : {
-            fr : "Les soldats vous regardes, ahuris.",
+            fr : "Les soldats vous regardent, ahuris.",
             en : "-"
         },
         "ville-garde-jeu-victoire-texte-2" : {
-            fr : "&laquo; Eh bah ! Tu m'épate mon gars ! Tu nous a complètement plumé... On a plus rien a parier...",
+            fr : "&laquo; Eh bah ! Tu m'épates mon gars ! Tu nous as complètement plumés... On n’a plus rien à parier...",
             en : "-"
         },
         "ville-garde-jeu-victoire-texte-3" : {
-            fr : "Tiens, on va faire un deal. Si tu gagne cette dernière partie, on t'apprend notre botte secrète, qu'est ce que t'en dis ?",
+            fr : "Tiens, on va faire un deal. Si tu gagnes cette dernière partie, on t'apprend notre botte secrète ! Qu'est ce que t'en dis ?",
             en : "-"
         },
         "ville-garde-jeu-victoire-texte-4" : {
-            fr : "La mise est de 3000 cette fois, tu suis ?",
+            fr : "La mise est de 3000 cette fois. Tu suis ?",
             en : "-"
         },
 
@@ -74,11 +73,11 @@ define([], function(){
         * Victoire ultime du deal
         **/
         "ville-garde-jeu-victoire-2-texte-1" : {
-            fr : "Les gardes sont abasourdis. vous les avez vraiment bluffé là.",
+            fr : "Les gardes sont abasourdis. Vous les avez vraiment bluffés là.",
             en : "-"
         },
         "ville-garde-jeu-victoire-2-texte-2" : {
-            fr : "Impressionné par votre science précise du jeu, ils vous apprennent leur art :",
+            fr : "Impressionnés par votre science précise du jeu, ils vous apprennent leur art :",
             en : "-"
         },
         "ville-garde-jeu-victoire-2-texte-3" : {
@@ -91,15 +90,15 @@ define([], function(){
             en : "-"
         },
         "ville-garde-jeu-victoire-3-texte-2" : {
-            fr : "En l'espace de quelques heures vous maitrisez déjà l'attaque !",
+            fr : "En l'espace de quelques heures, vous maîtrisez déjà l'attaque !",
             en : "-"
         },
         "ville-garde-jeu-victoire-3-texte-3" : {
-            fr : "&laquo; Bravo mon gars, t'es loin d'être aussi expert qu'un garde mais avec ça, tu peux être sur de casser des têtes !",
+            fr : "&laquo; Bravo, mon gars ! T'es loin d'être aussi expert qu'un garde, mais avec ça, tu peux être sûr de casser des têtes !",
             en : "-"
         },
         "ville-garde-jeu-victoire-3-texte-4" : {
-            fr : "N’hésites pas à revenir travailler avec nous un de ces quatres ! &raquo;",
+            fr : "N’hésite pas à revenir travailler avec nous un de ces quatre ! &raquo;",
             en : "-"
         },
 
@@ -115,7 +114,7 @@ define([], function(){
             en : "-"
         },
         "ville-garde-jeu-victoire-refus-texte-3" : {
-            fr : "À la revoyure camarade ! &raquo;",
+            fr : "À la revoyure, camarade ! &raquo;",
             en : "-"
         },
 
@@ -123,7 +122,7 @@ define([], function(){
         * Poste de garde amis
         **/
         "ville-garde-ami-texte-1" : {
-            fr : "Les soldats vous accueils prêt à jou... hum travailler avec vous...",
+            fr : "Les soldats vous accueillent, prêts à jou... hum travailler avec vous...",
             en : "-"
         },
 
@@ -137,23 +136,19 @@ define([], function(){
             en : "-"
         },
         "ville-garde-jeu-echec-texte-2" : {
-            fr : "Reviens-donc te faire plum... Hum hum, travailler quand tu veux ! &raquo;",
+            fr : "Reviens donc te faire plum... Hum hum, travailler quand tu veux ! &raquo;",
             en : "-"
         },
 
         /**
         * Poste de garde - Hors la loi
         **/
-        "ville-garde-combat-texte-1" : {
-            fr : "Les forces de l'ordre, surpris par votre arrivé, viennent à votre rencontre :",
-            en : "-"
-        },
         "ville-garde-combat-texte-2" : {
-            fr : "&laquo; Eh bien dis moi ! Tu as du culot pour te pointer ici après ce que tu as fait ! &raquo;",
+            fr : "&laquo; Eh bien dis-moi, tu as du culot pour te pointer ici après ce que tu as fait ! &raquo;",
             en : "-"
         },
         "ville-garde-combat-texte-3" : {
-            fr : "Pas de doute, ils vous en veulent d'avoir tuer leurs copains...",
+            fr : "Pas de doute, ils vous en veulent d'avoir tué leurs copains...",
             en : "-"
         },
 
@@ -162,7 +157,7 @@ define([], function(){
             en : "-"
         },
         "ville-garde-combat-2-texte-2" : {
-            fr : "En fouillant dans la réserve vous découvrez des ressources bien précieuse.",
+            fr : "En fouillant dans la réserve, vous découvrez des ressources bien précieuses.",
             en : "-"
         },
         "ville-garde-combat-2-texte-3" : {

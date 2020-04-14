@@ -10,7 +10,7 @@ define([], function(){
             en : "-"
         },
         "ville-entree-1-texte-3" : {
-            fr : "Vous régalant de la modernité des lieux, vous vous dirigez vers vos objectif...",
+            fr : "Vous régalant de la modernité des lieux, vous vous dirigez vers vos objectifs...",
             en : "-"
         },
 
@@ -30,7 +30,7 @@ define([], function(){
         * Panneau des quetes
         **/
         "ville-entree-panneau-quete-texte-1" : {
-            fr : "Un héro est toujours en recherche d'emploi.",
+            fr : "Un héros est toujours en recherche d'emploi.",
             en : "-"
         },
         "ville-entree-panneau-quete-texte-2" : {
@@ -38,12 +38,12 @@ define([], function(){
             en : "-"
         },
         "ville-entree-panneau-quete-texte-3" : {
-            fr : "Peut-être qu'une nouvelle aventure vous y attends ?",
+            fr : "Peut-être qu'une nouvelle aventure vous y attend ?",
             en : "-"
         },
 
         "ville-entree-panneau-quete-retour-texte-1" : {
-            fr : "Vous quittez le panneau des quêtes, certains d'avoir oublié quelque-chose.",
+            fr : "Vous quittez le panneau des quêtes, certains d'avoir oublié quelque chose.",
             en : "-"
         },
         "ville-entree-panneau-quete-retour-texte-2" : {
@@ -64,12 +64,12 @@ define([], function(){
         },
 
         "ville-entree-boutiques-achat-texte-1" : {
-            fr : "Une fois vos transactions terminées, vous décidez de revenir à vos occupation...",
+            fr : "Une fois vos transactions terminées, vous décidez de revenir à vos occupations...",
             en : "-"
         },
 
         "ville-entree-boutiques-retour-texte-1" : {
-            fr : "Après mûre réflexion vous décidez de garder votre or.",
+            fr : "Après mûre réflexion, vous décidez de garder votre or.",
             en : "-"
         },
         "ville-entree-boutiques-retour-texte-2" : {
@@ -81,7 +81,7 @@ define([], function(){
         * Palais de justice
         **/
         "ville-entree-palais-justice-texte-1" : {
-            fr : "Vous arrivez devant les grandes porte du palais mais malheureusement... Elles sont fermées.",
+            fr : "Vous arrivez devant les grandes portes du palais, mais malheureusement... elles sont fermées.",
             en : "-"
         },
         "ville-entree-palais-justice-texte-2" : {

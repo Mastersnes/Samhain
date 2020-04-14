@@ -277,6 +277,10 @@ define([], function(){
             "kraken-blesse" : {
                 fr : "Kraken Blessé",
                 en : "Wounded Kraken"
+            },
+            "tavernier" : {
+                fr : "Tavernier",
+                en : "Taverner"
             }
 	};
 	

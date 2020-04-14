@@ -1,5 +1,5 @@
 'use strict';
-define(["jquery",
+define(["jquery", "underscore",
         "app/utils/utils",
         "app/utils/viewUtils",
         "text!app/template/game/glossaire.html",
@@ -7,7 +7,7 @@ define(["jquery",
         "app/data/glossaire",
         "app/data/suffixe",
         "app/data/etats"
-        ], function($, Utils, ViewUtils, page, Items, Glossaire, Suffixe, Etats){
+        ], function($, _, Utils, ViewUtils, page, Items, Glossaire, Suffixe, Etats){
     return function(parent){
         this.init = function(parent) {
         	this.el = $(".glossaire");
@@ -41,71 +41,110 @@ define(["jquery",
 
         this.initAlphabetDispo = function() {
             var that = this;
-            this.el.find(".liste alphabet").empty();
-            var letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-            for (var i in letters) {
-                var resultats = Glossaire.list(letters[i], this.Textes);
-                if(resultats.length <= 0) resultats = Items.list(letters[i], this.Textes);
+            this.el.find(".alphabet marqueurs").empty();
+            this.letters = [
+                ["a","b","c","d"],["e","f","g","h"],["i","j","k","l"],
+                ["m","n","o","p"],["q","r","s","t"],["u","v","w","x","y","z"]
+            ];
+            if (this.Textes.local == "eo") {
+                this.letters = [
+                    ["a","b","c","ĉ","d"],["e","f","g","ĝ","h", "ĥ"],["i","j","ĵ","k","l"],
+                    ["m","n","o","p"],["r","s","ŝ","t"],["u","ŭ","v","z"]
+                ];
+            }
+
+            for (var i in this.letters) {
+                var resultats = Glossaire.list(this.letters[i], this.Textes, true);
+                if(resultats.length <= 0) resultats = Items.list(this.letters[i], this.Textes, true);
+                if(resultats.length <= 0) resultats = Etats.list(this.letters[i], this.Textes, true);
 
                 if(resultats.length > 0) {
-                    var letterDom = $("<letter></letter>")
-                    letterDom.attr("id", letters[i]);
-                    letterDom.html(letters[i]);
-                    this.el.find(".liste alphabet").append(letterDom);
+                    var marqueurs = this.letters[i];
+                    var marqueurDom = $("<marqueur></marqueur>");
+                    marqueurDom.attr("id", i);
+                    var nom = marqueurs[0].toUpperCase() + "-" + marqueurs[marqueurs.length-1].toUpperCase();
+                    marqueurDom.html("<texte>" + nom + "</texte>");
+                    this.el.find(".alphabet marqueurs").append(marqueurDom);
                 }
             }
-            this.currentLetter = "a";
+            this.currentLetter = this.letters[0];
+        };
+
+        this.initSuffixesDispo = function(monster, suffixeBonus) {
+            var suffixes = Suffixe.list();
+            var suffixesDom = this.el.find("suffixes");
+            suffixesDom.empty();
+
+            var monsterSuffixes = [];
+            if (monster.suffixes) monsterSuffixes = monster.suffixes;
+            for (var i in suffixes) {
+                var suffixe = suffixes[i];
+                if (suffixe.unique && i != suffixeBonus) {
+                    if (monsterSuffixes.indexOf(i) == -1) continue;
+                }
+                var suffixeDom = $("<suffixe></suffixe>")
+                suffixeDom.attr("id", i);
+                if (monster.sexe == "m") suffixeDom.html(this.Textes.get(suffixe.namem));
+                else suffixeDom.html(this.Textes.get(suffixe.namef));
+
+                suffixesDom.append(suffixeDom);
+            }
         };
 
         /**
         * Lance la consultation
         **/
-        this.show = function(key, isChange, suffixe) {
+        this.show = function(key) {
             this.current = key;
 
+            this.el.find(".liste").hide();
+            this.el.find(".description suffixes").hide();
+
             if (!this.showEtat(key)) {
-                if (!this.showMonster(key, isChange, suffixe)) {
+                if (!this.showMonster(key)) {
                     this.showItem(key);
                 }
             }
 
-            this.makeZoomEvents();
-            this.el.find(".zoom").show();
+            this.el.find(".description").show();
             this.el.fadeIn();
-            this.list(true);
         };
 
         this.showEtat = function(key) {
             var etat = Etats.get(key);
-            if (!etat) return false;
+            if (!etat || !etat.name) return false;
+
+            var el = this.el.find(".description");
 
             var etatName = this.Textes.get(etat.name);
-            this.el.find("titre").html(etatName);
-            this.el.find("suffixe").hide();
-            this.el.find("texte").html(this.Textes.get(etat.name + "-texte"));
+            el.find("titre").html(etatName);
+            el.find("suffixe#selected, fleche").hide();
+            el.find("texte").html(this.Textes.get(etat.name + "-texte"));
 
-            this.currentLetter = Utils.normalize(etatName).charAt(0);
-
-            this.el.find("infos").empty();
+            el.find("infos").empty();
+            this.addInfoTxt(etat.commentaire);
             this.addInfo("duree", etat.duree, null, "tours");
             this.addInfo("degats", etat.degats, null);
             this.addInfo("lifeGain", etat.vie, null, "lifeGain-glossaire");
 
             if (etat.multicible) this.addInfo("multicible", this.Textes.get("oui"));
+            this.makeZoomEvents();
             return true;
         };
 
         this.showItem = function(key) {
             var item = Items.get(key);
             if (!item || !item.name) return false;
+
+            var el = this.el.find(".description");
+
             var itemName = this.Textes.get(item.name);
-            this.el.find("titre").html(itemName);
-            this.el.find("suffixe").hide();
-            this.el.find("texte").html(this.Textes.get(item.texte));
+            el.find("titre").html(itemName);
+            el.find("suffixe#selected, fleche").hide();
+            el.find("texte").html(this.Textes.get(item.texte));
 
-            this.currentLetter = Utils.normalize(itemName).charAt(0);
-
-            this.el.find("infos").empty();
+            el.find("infos").empty();
+            this.addInfoTxt(item.commentaire);
             this.addInfo("degats", item.degats, null);
             this.addInfo("defense", item.defense, null);
 
@@ -120,48 +159,45 @@ define(["jquery",
             if (item.multicible) this.addInfo("multicible", this.Textes.get("oui"));
 
             if (item.effet) {
+                var inflige = [];
+                var octroie = [];
                 for (var i in item.effet) {
                     var effetId = item.effet[i];
                     var effet = Etats.get(effetId);
-
-                    var texte = "<span ref='"+effetId+"'>" + this.Textes.get(effet.name) + "</span>";
-                    if (effet.offensif) this.addInfo("inflige", texte);
-                    else this.addInfo("octroie", texte);
+                    if (effet.offensif) inflige.push(effetId);
+                    else octroie.push(effetId);
                 }
+                this.addInfoList("inflige", inflige);
+                this.addInfoList("octroie", octroie);
             }
+            this.makeZoomEvents();
             return true;
         };
 
-        this.showMonster = function(key, isChange, selectSuffixe) {
+        this.showMonster = function(key, selectSuffixe, refresh) {
             var monster = Glossaire.get(key);
-            if (!monster) return false;
+            if (!monster || !monster.name) return false;
+
+            var el = this.el.find(".description");
+
+            if (!refresh) this.initSuffixesDispo(monster, selectSuffixe);
+
             var monsterName = this.Textes.get(monster.name);
-            this.currentLetter = Utils.normalize(monsterName).charAt(0);
+            if (!refresh) el.find("titre").html(monsterName + " ");
+            el.find("suffixe#selected, fleche").show();
 
-            this.el.find("titre").html(monsterName + " ");
-            if (monster.sexe == "f") {
-                this.el.find("suffixe .masculin").hide();
-                this.el.find("suffixe .feminin").show();
-            }else {
-                this.el.find("suffixe .masculin").show();
-                this.el.find("suffixe .feminin").hide();
-            }
-            this.el.find("suffixe").show();
-            this.el.find("texte").html(this.Textes.get(monster.texte));
+            var suffixe = el.find("suffixes suffixe:first").attr("id");
+            if (monster.baseSuffixe) suffixe = monster.baseSuffixe;
+            if (selectSuffixe) suffixe = selectSuffixe;
 
-            var suffixe = this.el.find("suffixe select option:first").attr("name");
-            if (isChange) suffixe = this.el.find("suffixe select option:selected").attr("name");
-            else if (selectSuffixe) suffixe = selectSuffixe;
-            else if (monster.baseSuffixe) suffixe = monster.baseSuffixe;
-
-            this.el.find("suffixe select option[id="+suffixe+"-"+monster.sexe+"]").addClass("visible");
-
-            this.el.find("suffixe select option").removeAttr("selected");
-            this.el.find("suffixe select option[id="+suffixe+"-"+monster.sexe+"]").attr("selected", "selected");
+            if (!refresh) el.find("texte").html(this.Textes.get(monster.texte));
 
             suffixe = Suffixe.get(suffixe);
+            if (monster.sexe == "m") el.find("suffixe#selected").html(this.Textes.get(suffixe.namem));
+            else el.find("suffixe#selected").html(this.Textes.get(suffixe.namef));
 
-            this.el.find("infos").empty();
+            el.find("infos").empty();
+            this.addInfoTxt(monster.commentaire);
             this.addInfo("vie", monster.vie, suffixe.vie);
             this.addInfo("mana", monster.mana, suffixe.mana);
             this.addInfo("attack", monster.attaque, suffixe.attaque);
@@ -169,35 +205,53 @@ define(["jquery",
             this.addInfo("argentGain", monster.argent, suffixe.argent);
             this.addInfoList("competences", monster.abilities);
             this.addInfoList("items", monster.consos);
+            this.makeZoomEvents();
             return true;
         };
 
+        this.addInfoTxt = function(infos, next) {
+            if (infos == undefined) return;
+            var infoDom = $("<info></info>");
+
+            infoDom.html(this.Textes.get(infos));
+
+            if (next) infoDom.append(this.Textes.get(next));
+
+            infoDom.addClass("large");
+            infoDom.addClass("texte");
+            this.el.find("infos").append(infoDom);
+        };
         this.addInfo = function(titre, infos, suffixe, next) {
             if (infos == undefined) return;
             if (suffixe == undefined) suffixe = 1;
 
             var infoDom = $("<info></info>");
 
+            var titreTexte = "";
+            if (titre) titreTexte = "<b>" + this.Textes.get(titre) + " :</b> ";
+
             if (Array.isArray(infos)) {
                 var min = Math.round(infos[0] * suffixe);
                 var max = Math.round(infos[1] * suffixe);
-                if (min == max) infoDom.html(this.Textes.get(titre) + " : " + min);
-                else infoDom.html(this.Textes.get(titre) + " : " + min + "-" + max);
-            }else if(infos >= 0 || infos < 0) infoDom.html(this.Textes.get(titre) + " : " + Math.round(infos * suffixe));
-            else infoDom.html(this.Textes.get(titre) + " : " + infos);
+                if (min == max) infoDom.html(titreTexte + min);
+                else infoDom.html(titreTexte + min + "-" + max);
+            }else if(infos >= 0 || infos < 0) infoDom.html(titreTexte + Math.round(infos * suffixe));
+            else infoDom.html(titreTexte + infos);
 
             if (next) infoDom.append(this.Textes.get(next));
 
-            if (infoDom.html().length > 16) infoDom.addClass("large");
+            // On enleve 7 pour les balises <b>
+            if (infoDom.html().length - 7 > 16) infoDom.addClass("large");
             this.el.find("infos").append(infoDom);
         };
 
         this.addInfoList = function(titre, infos) {
             if (infos == undefined || infos.length == 0) return;
             var infoDom = $("<infoList></infoList>");
-            var texte = this.Textes.get(titre) + " : ";
+            var texte = "<b>" + this.Textes.get(titre) + " :</b> ";
             for (var i=0; i<infos.length; i++) {
                 var info = Items.get(infos[i]);
+                if (!info.name) info = Etats.get(infos[i]);
                 texte += "<span ref='"+infos[i]+"'>" + this.Textes.get(info.name) + "</span>";
                 if (i<infos.length-1) texte += ", ";
             }
@@ -205,25 +259,32 @@ define(["jquery",
             this.el.find("infos").append(infoDom);
         };
 
-        this.list = function(refresh) {
+        this.list = function() {
             var that = this;
             var letter = this.currentLetter;
 
-            if (!refresh) this.el.find(".zoom").hide();
+            this.el.find(".description").hide();
 
-            this.el.find(".liste letter").removeClass("selected");
-            this.el.find(".liste letter#" + letter).addClass("selected");
+            this.el.find("marqueur").removeClass("selected");
+            this.el.find("marqueur#" + letter).addClass("selected");
 
             this.el.find(".liste propositions").empty();
             var propositions = Glossaire.list(letter, this.Textes);
             propositions = propositions.concat(Items.list(letter, this.Textes));
             propositions = propositions.concat(Etats.list(letter, this.Textes));
+            propositions.sort(function(elmt1, elmt2) {
+                var elmt1Txt = that.Textes.get(elmt1);
+                var elmt2Txt = that.Textes.get(elmt2);
+                return elmt1Txt.localeCompare(elmt2Txt);
+            });
+            var parentDom = this.el.find(".gauche propositions");
             for (var i in propositions) {
                 var proposition = propositions[i];
                 var propositionDom = $("<proposition></proposition>")
                 propositionDom.html(this.Textes.get(proposition));
                 propositionDom.attr("id", proposition);
-                this.el.find(".liste propositions").append(propositionDom);
+                parentDom.append(propositionDom);
+                if (i>=9) parentDom = this.el.find(".droite propositions");
             }
 
             this.makePropositionEvents();
@@ -237,12 +298,23 @@ define(["jquery",
                 var target = $(e.target);
                 if (target.hasClass("canClose")) that.el.fadeOut();
             });
-            this.el.find(".zoom suffixe select").change(function() {
-                that.show(that.current, true);
+            this.el.find(".alphabet marqueur").click(function() {
+                var id = parseInt($(this).attr("id"));
+                that.currentLetter = that.letters[id];
+                that.list();
             });
-            this.el.find(".liste alphabet letter").click(function() {
-                that.currentLetter = $(this).attr("id");
-                that.list(true);
+
+            this.el.find(".description suffixe#selected, .description fleche").click(function(e) {
+                var el = that.el.find(".description");
+
+                if (el.find("suffixes").is(":visible")) el.find("suffixes").hide();
+                else {
+                    var left = el.find("suffixe#selected").position().left;
+                    el.find("suffixes").css({
+                        "left" : Utils.toPercent(left, el.find("entete").width()) + "%"
+                    });
+                    el.find("suffixes").show();
+                }
             });
         };
 
@@ -252,11 +324,30 @@ define(["jquery",
                 var name = $(this).attr("id");
                 that.show(name);
             });
+            // On ferme la fenetre des suffixes si on clique ailleurs
+            this.el.find(".description").click(function(e) {
+                var target = $(e.target);
+                if (target.is("suffixes, suffixe, fleche")) return;
+
+                var el = that.el.find(".description suffixes");
+                if (el.is(":visible")) el.hide();
+            });
         };
 
         this.makeZoomEvents = function() {
             var that = this;
-            this.el.find(".zoom span").click(function() {
+
+
+            this.el.find(".description suffixes suffixe").off("click");
+            this.el.find(".description suffixes suffixe").click(function(e) {
+                that.el.find(".description suffixes").hide();
+
+                var selectSuffixe = $(this).attr("id");
+                that.showMonster(that.current, selectSuffixe, true);
+            });
+
+            this.el.find(".description span").off("click");
+            this.el.find(".description span").click(function() {
                 var name = $(this).attr("ref");
                 that.show(name);
             });

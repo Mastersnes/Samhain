@@ -338,6 +338,10 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 1,
             "unique" : true
         },
+
+        /**
+        * Castagne
+        **/
         "dechaine" : {
             "namem" : "dechaine-m",
             "namef" : "dechaine-f",
@@ -349,10 +353,6 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : 1.5,
             "unique" : true
         },
-
-        /**
-        * Castagne
-        **/
         "raoul" : {
             "namem" : "raoul",
             "namef" : "raoul",

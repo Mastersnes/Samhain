@@ -1,9 +1,10 @@
 'use strict';
 define(["jquery",
+        "underscore",
         "app/utils/utils",
         "app/utils/viewUtils",
         "text!app/template/menu/popup/option.html"
-        ], function($, Utils, ViewUtils, page){
+        ], function($, _, Utils, ViewUtils, page){
     return function(parent){
         this.init = function(parent) {
         	this.el = $(".option-popup");

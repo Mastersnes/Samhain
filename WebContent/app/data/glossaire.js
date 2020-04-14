@@ -97,7 +97,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : [3, 10],
             "argent" : [15, 30],
             "sexe" : "m",
-            "abilities" : ["doubleAttaque", "taillade"]
+            "abilities" : ["doubleAttaque", "taillade"],
+            "suffixes" : ["manchot"]
 		}, 
 		"experience": {
 			"name" : "experience",
@@ -123,7 +124,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "sexe" : "m",
             "abilities" : ["volDeVie", "bouleFeu", "invoqueGoule"],
             "type" : "boss",
-            "baseSuffixe" : "lancien"
+            "baseSuffixe" : "lancien",
+            "suffixes" : ["lancien"]
 		}, 
 		"liche": {
 			"name" : "liche",
@@ -137,7 +139,8 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "sexe" : "f",
             "abilities" : ["volDeVie", "volDeMana", "bouleFeu", "invoqueGrosseGoule"],
             "type" : "boss",
-            "baseSuffixe" : "spectral"
+            "baseSuffixe" : "spectral",
+            "suffixes" : ["spectral"]
 		},
 		"roiBandit" : {
             "name" : "roiBandit",
@@ -171,11 +174,25 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			return Utils.clone(data[key]);
 		},
 
-		list : function(letter, Textes) {
+		list : function(letters, Textes, stopAtFirst) {
             var resultats = [];
-            for (var monster in data) {
-                var monsterName = Utils.normalize(Textes.get(monster));
-                if(monsterName.startsWith(letter)) resultats.push(monster);
+            if (Array.isArray(letters)) {
+                for (var i in letters) {
+                    var subResult = this.list(letters[i], Textes, stopAtFirst);
+                    resultats = resultats.concat(subResult);
+
+                    // Amelioration des perf
+                    if (stopAtFirst && resultats.length > 0) return resultats;
+                }
+            }else {
+                var letter = letters;
+                for (var monster in data) {
+                    var monsterName = Utils.normalize(Textes.get(monster));
+                    if(monsterName.indexOf(letter, 0) === 0) resultats.push(monster);
+
+                    // Amelioration des perf
+                    if (stopAtFirst && resultats.length > 0) return resultats;
+                }
             }
             return resultats;
         }

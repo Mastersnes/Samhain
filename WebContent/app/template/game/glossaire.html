@@ -3,33 +3,35 @@
 
 <div>
 	<mask class="canClose"></mask>
-	<contour class="canClose">
+	<contour>
 		<close class="canClose"></close>
-		<content class="liste">
-			<alphabet></alphabet>
-			<propositions></propositions>
-		</content>
-		<content class="zoom">
-			<retour><%=text.get("retour")%></retour>
-			<entete>
-				<titre></titre>
-				<suffixe>
-					<select>
-						<% for (var i in suffixes) { %>
-							<% var suffixe = suffixes[i]; %>
-							<% var uniqueToken = suffixe.unique?"unique":""; %>
-							<option id="<%=i%>-m" class="masculin <%=uniqueToken%>" name="<%=i%>">
-								<%=text.get(suffixe.namem)%>
-							</option>
-							<option id="<%=i%>-f" class="feminin <%=uniqueToken%>" name="<%=i%>">
-								<%=text.get(suffixe.namef)%>
-							</option>
-						<% } %>
-					</select>
-				</suffixe>
-			</entete>
-			<texte></texte>
-			<infos></infos>
-		</content>
+
+		<div class="alphabet">
+			<marqueurs></marqueurs>
+		</div>
+
+		<div class="liste canClose">
+			<page class="gauche">
+				<propositions></propositions>
+			</page>
+			<page class="droite">
+				<propositions></propositions>
+			</page>
+		</div>
+
+		<div class="description canClose">
+			<page class="gauche">
+				<entete>
+					<titre></titre>
+					<suffixe id="selected"></suffixe>
+					<fleche>▼</fleche>
+				</entete>
+				<texte></texte>
+				<suffixes></suffixes>
+            </page>
+			<page class="droite">
+				<infos></infos>
+			</page>
+		</div>
 	</contour>
 </div>

@@ -1,6 +1,5 @@
-<% var text = data.text %>
-<% var player = data.player %>
-<% var consos = data.consos %>
+<% var text = data.text; %>
+<% var player = data.player; %>
 
 <% var level = player.get("level"); %>
 <% var xp = player.get("xp"); %>
@@ -13,6 +12,7 @@
 
 <% var attaque = player.get("attaque"); %>
 <% var defense = player.get("defense"); %>
+<% var consos = data.consos; %>
 
 <div>
     <mask class="canClose"></mask>
@@ -80,7 +80,9 @@
                 <% } %>
             </magies>
             <consos>
-                <% for (var conso of consos.keys()) { %>
+                <% var keys = consos.keys(); %>
+                <% for (var i in keys) { %>
+                    <% var conso = keys[i]; %>
                     <% var number = consos.get(conso); %>
                     <% if (number == 1) { %>
                         <element id="<%=conso%>" nb="1"><%=text.get(conso)%></element>

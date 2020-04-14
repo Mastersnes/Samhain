@@ -45,6 +45,10 @@ define([], function(){
             fr : "Terminer",
             en : "Finish"
         },
+        "reessayer" : {
+            fr : "Réessayer",
+            en : "Retry"
+        },
 
         /**
         * Combat

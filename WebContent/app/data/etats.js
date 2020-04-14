@@ -86,11 +86,25 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 		/**
          * Liste pour l'affichage
          **/
-        list : function(letter, Textes) {
+        list : function(letters, Textes, stopAtFirst) {
             var resultats = [];
-            for (var etat in data) {
-                var etatName = Utils.normalize(Textes.get(etat));
-                if(etatName.startsWith(letter)) resultats.push(etat);
+            if (Array.isArray(letters)) {
+                for (var i in letters) {
+                    var subResult = this.list(letters[i], Textes, stopAtFirst);
+                    resultats = resultats.concat(subResult);
+
+                    // Amelioration des perf
+                    if (stopAtFirst && resultats.length > 0) return resultats;
+                }
+            }else {
+                var letter = letters;
+                for (var etat in data) {
+                    var etatName = Utils.normalize(Textes.get(etat));
+                    if(etatName.indexOf(letter, 0) === 0) resultats.push(etat);
+
+                    // Amelioration des perf
+                    if (stopAtFirst && resultats.length > 0) return resultats;
+                }
             }
             return resultats;
         }

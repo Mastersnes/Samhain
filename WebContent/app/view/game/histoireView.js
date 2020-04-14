@@ -1,11 +1,11 @@
 'use strict';
-define(["jquery",
+define(["jquery", "underscore",
         "app/utils/utils",
         "app/utils/viewUtils",
         "text!app/template/game/histoire.html",
         "app/data/stories",
         "app/data/stories/gameOver"
-        ], function($, Utils, ViewUtils, page, Stories, GameOver){
+        ], function($, _, Utils, ViewUtils, page, Stories, GameOver){
     return function(parent, didacticiel){
         this.init = function(parent, didacticiel) {
         	this.el = $(".histoire");
@@ -36,6 +36,7 @@ define(["jquery",
             var that = this;
             $(".fight").fadeOut();
             $(".boutique").fadeOut();
+            $(".jeuGarde").fadeOut();
 
             $("carnet").removeClass("hide");
             $("loupe").removeClass("hide");
@@ -255,6 +256,30 @@ define(["jquery",
                     this.parent.boutique(items, function() {
                         that.go(nextLieu);
                     }, failFunction);
+                    break;
+                case "jeu-garde":
+                    var but = params[0];
+                    var winLieu = params[1];
+                    var failLieu = params[2];
+                    var abandonLieu = params[3];
+                    var startMise = params[4];
+
+                    if (!startMise) startMise = 100;
+
+                    var winFunction = null;
+                    if (but > 0) {
+                        winFunction = function() {
+                            that.go(winLieu);
+                        };
+                    }
+
+                    this.parent.jeuGarde(
+                        but,
+                        winFunction,
+                        function() {that.go(failLieu);},
+                        function() {that.go(abandonLieu);},
+                        startMise
+                    );
                     break;
                 default:
                     console.log("Erreur, l'action " + action + " n'existe pas.")

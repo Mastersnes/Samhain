@@ -1,11 +1,11 @@
 'use strict';
-define(["jquery",
+define(["jquery", "underscore",
         "app/utils/utils",
         "app/utils/viewUtils",
         "app/utils/map",
         "text!app/template/game/boutique.html",
         "app/data/items"
-        ], function($, Utils, ViewUtils, HashMap, page, Items){
+        ], function($, _, Utils, ViewUtils, HashMap, page, Items){
     return function(parent){
         this.init = function(parent) {
         	this.el = $(".boutique");
@@ -35,6 +35,9 @@ define(["jquery",
             this.boutiqueOpen = true;
             $(".histoire").fadeOut();
             $(".fight").fadeOut();
+            $(".jeuGarde").fadeOut();
+
+            console.log("items", items);
 
             this.onPurchase = onPurchase;
             this.onNoPurchase = onNoPurchase;
@@ -50,6 +53,8 @@ define(["jquery",
                 var item = this.itemsAvailable[i];
                 this.items.put(item, Items.get(item));
             }
+
+            console.log("Availables", this.items);
 
             this.render("achat");
             this.el.fadeIn();
@@ -93,10 +98,13 @@ define(["jquery",
             var template = _.template(page);
             var templateData = {
                     text : this.Textes,
-                    items : this.items,
-                    mode : this.mode
+                    mode : this.mode,
+                    items : this.items
             };
             this.el.html(template(templateData));
+
+//            this.renderConsos();
+
             ViewUtils.verticalCenter();
 
             setTimeout(function() {

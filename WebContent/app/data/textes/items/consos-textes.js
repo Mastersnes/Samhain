@@ -37,8 +37,12 @@ define([], function(){
                 en : "Antidote"
             },
             "antidote-texte" : {
-                fr : "Une fiole verte visqueuse, censée être de l'antipoison. Vu l'odeur, ça risque plutôt de vous empoisonner&nbsp;!<br/>(Soigne uniquement l'empoisonnement)",
-                en : "A slimy green vial supposed to be anti-poison. From the smell of it, it's more likely to poison you!<br/>(Only treats poison)"
+                fr : "Une fiole verte visqueuse, censée être de l'antipoison. Vu l'odeur, ça risque plutôt de vous empoisonner&nbsp;!",
+                en : "A slimy green vial supposed to be anti-poison. From the smell of it, it's more likely to poison you!"
+            },
+            "antidote-commentaire" : {
+                fr : "Soigne uniquement l'empoisonnement.",
+                en : "Only treats poison."
             },
             "fromage" : {
                 fr : "Fromage",

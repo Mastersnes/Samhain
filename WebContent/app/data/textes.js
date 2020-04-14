@@ -25,6 +25,7 @@ define([
                     this.local = this.local.toLowerCase();
                     if (this.local.indexOf("fr") > -1) this.local = "fr";
                     else if (this.local.indexOf("en") > -1) this.local = "en";
+                    else if (this.local.indexOf("eo") > -1) this.local = "eo";
                 }else {
                     this.local = "en";
                 }

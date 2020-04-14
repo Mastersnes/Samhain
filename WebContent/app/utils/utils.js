@@ -61,7 +61,21 @@ define(["jquery", "sha"], function($, sha){
 		},
 		normalize : function(texte) {
 		    var newText = texte.toLowerCase();
-		    newText = newText.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+		    newText = newText.replace(/[áàâäåãæ]/g, "a");
+		    newText = newText.replace(/[çĉ]/g, "c");
+		    newText = newText.replace(/[éèêë]/g, "e");
+		    newText = newText.replace(/[ĝ]/g, "g");
+		    newText = newText.replace(/[ĥ]/g, "h");
+		    newText = newText.replace(/[íìîï]/g, "i");
+		    newText = newText.replace(/[ĵ]/g, "j");
+		    newText = newText.replace(/[ñ]/g, "n");
+		    newText = newText.replace(/[óòôöøœ]/g, "o");
+		    newText = newText.replace(/[ŝšß]/g, "s");
+		    newText = newText.replace(/[ŭùûü]/g, "u");
+		    newText = newText.replace(/[ýÿ]/g, "y");
+		    newText = newText.replace(/[ž]/g, "z");
+
+		    newText = newText.replace(/[\u0300-\u036f]/g, "");
 		    return newText;
 		},
 		pow : function(multiple, base, puissance) {

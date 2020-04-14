@@ -13,7 +13,10 @@
 	<% } %>
 	<actionsContainer class="itemsContainer">
 		<actions>
-			<% for (var [index, item] of items.data) { %>
+			<% var keys = items.keys(); %>
+			<% for (var i in keys) { %>
+				<% var index = keys[i]; %>
+				<% var item = items.get(index); %>
 				<action id="<%=index%>" type="<%=item.name%>">
 					<name class="js-center"><%=text.get(item.name)%></name>
 					<prix>

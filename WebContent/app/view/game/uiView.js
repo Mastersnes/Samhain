@@ -1,8 +1,8 @@
 'use strict';
-define(["jquery",
+define(["jquery", "underscore",
         "app/utils/utils",
         "text!app/template/game/ui.html"
-        ], function($, Utils, page){
+        ], function($, _, Utils, page){
     return function(parent){
         this.init = function(parent) {
         	this.el = $(".ui");
@@ -65,7 +65,7 @@ define(["jquery",
             }
             else this.el.find(id + " montant").html(display);
 
-            var digits = Math.floor(Math.log10(display) + 1);
+            var digits = Math.floor((Math.log(display) / Math.LN10) + 1);
             if (display == 0) digits = 1;
             this.el.find(id + " montant").attr("digits", digits);
 

@@ -35,7 +35,7 @@ function($, _, Utils) {
 			        "debuff" : null,
 			        "xp" : 0,
 			        "level" : 0,
-			        "gold" : 1000,
+			        "gold" : 0,
 
 			        "attaque" : 1,
 			        "defense" : 0,
@@ -46,11 +46,11 @@ function($, _, Utils) {
 			            "bouclier" : ["bras"],
 			            "currentBouclier" : "bras",
 			            "magie" : [],
-			            "conso" : [],
+			            "conso" : ["pomme", "fromage", "potionSante", "pomme", "pomme", "venin"],
 			            "clef" : [],
-			            "ifObj" : ["VisiteTaverne", "CastagneSave1"]
+			            "ifObj" : []
 			        },
-                    "lieu" : "ville-ruelle-taverne",
+                    "lieu" : "echoppe",
 
                     "savesData" : {}
 			    },
@@ -134,22 +134,9 @@ function($, _, Utils) {
 
                 //On rejout les succes à ce moment
                 var success = this.load("success");
-                this.kongregateUtils.score("Gold", success["MaxGoldEarn"]);
-                this.kongregateUtils.score("Level", success["MaxLevelEarn"]);
-
-                if (success["TutoComplete"]) this.kongregateUtils.score("TutoComplete", 1);
-                if (success["GameStart"]) this.kongregateUtils.score("GameStart", 1);
-                if (success["HelpSpider"]) this.kongregateUtils.score("HelpSpider", 1);
-                if (success["HelpTown"]) this.kongregateUtils.score("HelpTown", 1);
-                if (success["KillSpider"]) this.kongregateUtils.score("KillSpider", 1);
-                if (success["Leak"]) this.kongregateUtils.score("Leak", 1);
-                if (success["LearnHeal"]) this.kongregateUtils.score("LearnHeal", 1);
-                if (success["LearnCure"]) this.kongregateUtils.score("LearnCure", 1);
-                if (success["NoChance"]) this.kongregateUtils.score("NoChance", 1);
-                if (success["SaveChild"]) this.kongregateUtils.score("SaveChild", 1);
-                if (success["Traitor"]) this.kongregateUtils.score("Traitor", 1);
-                if (success["TraitorSpider"]) this.kongregateUtils.score("TraitorSpider", 1);
-                if (success["Treasure"]) this.kongregateUtils.score("Treasure", 1);
+                for (var i in success) {
+                    this.kongregateUtils.score(i, success[i]);
+                }
 	        }
 		};
 
