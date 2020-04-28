@@ -31,6 +31,31 @@ define([], function(){
             en : "-"
         },
 
+        "ville-garde-simple-3-texte-1" : {
+            fr : "Le garde vous regarde perplexe, n'ayant pas l'air de comprendre.",
+            en : "-"
+        },
+        "ville-garde-simple-3-texte-2" : {
+            fr : "&laquo; Eh bien vois tu, en ce moment, c'est plutôt calme...",
+            en : "-"
+        },
+        "ville-garde-simple-3-texte-3" : {
+            fr : "Rapport à ce que t'ai fait leur fête aux bandits tu vois... &raquo;",
+            en : "-"
+        },
+        "ville-garde-simple-3-texte-4" : {
+            fr : "Il a l'air d'hesiter puis ajoute :",
+            en : "-"
+        },
+        "ville-garde-simple-3-texte-5" : {
+            fr : "&laquo; Mais bon, si tu sais tenir ta langue, on a bien du 'travail' à te proposer... Tu connais le PokGard ?",
+            en : "-"
+        },
+        "ville-garde-simple-3-texte-6" : {
+            fr : "Tu verras c'est facile... Te faut juste 100po pour commencer, t'es partant ? &raquo;",
+            en : "-"
+        },
+
         "ville-garde-simple-combat-texte-1" : {
             fr : "&laquo; Désolé bonhomme, ça se passera pas si facilement ! &raquo;",
             en : "-"
@@ -65,7 +90,11 @@ define([], function(){
             en : "-"
         },
         "ville-garde-jeu-victoire-texte-4" : {
-            fr : "La mise est de 3000 cette fois. Tu suis ?",
+            fr : "Par contre, si tu perd ou que tu abandonne, on reprend tout au début.",
+            en : "-"
+        },
+        "ville-garde-jeu-victoire-texte-5" : {
+            fr : "La mise est de 1500 cette fois. Tu suis ?",
             en : "-"
         },
 
@@ -137,6 +166,23 @@ define([], function(){
         },
         "ville-garde-jeu-echec-texte-2" : {
             fr : "Reviens donc te faire plum... Hum hum, travailler quand tu veux ! &raquo;",
+            en : "-"
+        },
+
+        "ville-garde-jeu-pauvre-texte-1" : {
+            fr : "&laquo; Ah désolé mon gars mais t'as pas assez de piéces.",
+            en : "-"
+        },
+        "ville-garde-jeu-pauvre-texte-2" : {
+            fr : "On peut pas te faire credit tu comprend, ce serait pas réglo...",
+            en : "-"
+        },
+        "ville-garde-jeu-pauvre-texte-3" : {
+            fr : "Reviens donc nous voir quand t'aura suffisamment d'or sur toi. &raquo;",
+            en : "-"
+        },
+        "ville-garde-jeu-pauvre-texte-4" : {
+            fr : "Vous repartez vers le centre de la ville, résolument pauvre...",
             en : "-"
         },
 

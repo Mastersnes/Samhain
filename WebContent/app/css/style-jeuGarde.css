@@ -1,0 +1,267 @@
+
+/**
+* Jeux des gardes
+**/
+.jeuGarde, .jeuGarde #accueil-jeu, .jeuGarde #plateau-jeu {
+    display : block; position: absolute;
+    width: 100%; height: 100%;
+    left: 0; top: 0%;
+}
+.jeuGarde #plateau-jeu.pendingCallback {
+    cursor: pointer !important;
+}
+
+/**
+* Accueil
+**/
+.jeuGarde #accueil-jeu texteContainer {
+    display: block; position: relative;
+    width: 100%; height: 46%;
+    margin-top: 20%; margin-bottom: 6%;
+    color: #DDDDDD;
+}
+.jeuGarde #accueil-jeu texteContainer texte {
+    position: relative; display: block;
+    font-size: 2.5vh; font-family: monospace;
+}
+
+/**
+* Plateau
+**/
+.jeuGarde plateau {
+    position: relative; display: block;
+    width: 100%; height: 56%;
+}
+.jeuGarde plateau action#miser {
+    top: 61%; left: 32%;
+}
+.jeuGarde plateau action#passer {
+    top: 61%; left: 51%;
+}
+
+.jeuGarde action.lock {
+    cursor: not-allowed !important;
+    filter: grayscale(80%);
+}
+.jeuGarde action.lock.gauche:hover, .jeuGarde action.lock.droite:hover {
+    transform: rotate(0) !important;
+}
+.jeuGarde action.gauche.pending {
+    transform: rotate(-16deg);
+}
+.jeuGarde action.droite.pending {
+    transform: rotate(16deg);
+}
+
+.jeuGarde plateau pioche {
+    position: absolute; display: block;
+    width: 18%; height: 35%;
+    left: 75%; top: 16%;
+}
+.jeuGarde plateau pioche action {
+    width: 100%; height: 100%;
+}
+.jeuGarde plateau pioche action[id="0"] {
+    transform: rotate(14deg);
+}
+.jeuGarde plateau pioche action[id="1"] {
+    transform: rotate(6deg);
+}
+
+/**
+* Legende
+**/
+.jeuGarde plateau legende {
+    position: absolute; display: block;
+    width: 30%; height: 100%;
+    left: -7%; top: 1.5%;
+    background-repeat: no-repeat; background-size: 100% 100%;
+    background-image: url("../img/game/interface/pokgard/legende.png");
+}
+
+.jeuGarde plateau legende content {
+    display: block; position: absolute;
+    left: 13%; top: 4%;
+    width: 76%; height: 86%;
+    transform: rotate(-9deg);
+
+    color: black; font-family: "Luna";
+}
+.jeuGarde plateau legende titre {
+    display: block; position: relative;
+    text-align: center;
+    width: 100%; height: auto;
+    font-size: 4vh; font-weight: bold;
+    padding-left: 14%;
+}
+.jeuGarde plateau legende info {
+    display: block; position: relative;
+    text-align: left;
+    width: 100%; height: 7.2%;
+    font-size: 2.5vh;
+    padding-left: 24%;
+}
+.jeuGarde plateau legende info .titre {
+    font-weight: bold;
+}
+.jeuGarde plateau legende info.newline {
+    height: 4%;
+}
+.jeuGarde plateau legende info.clickable:hover {
+    cursor: pointer; text-decoration: underline;
+}
+
+.jeuGarde plateau legende titre#legend {
+    margin-top: 8%;
+}
+.jeuGarde plateau legende info#action{
+    margin-top: 3%;
+}
+.jeuGarde plateau legende info#pomme {
+    margin-top: 1%;
+}
+.jeuGarde plateau legende info#fromage {
+    margin-top: 1%;
+}
+.jeuGarde plateau legende info#potion {
+    margin-top: 1%;
+}
+.jeuGarde plateau legende info#score {
+    margin-top: 1%;
+}
+.jeuGarde plateau legende info#victoires {
+    margin-top: 3%;
+}
+.jeuGarde plateau legende info#bourse {
+    margin-top: 1%;
+}
+
+.jeuGarde plateau legende info#regles {
+    position: absolute;
+    top: 79%;
+    text-align: right; padding-right: 3%;
+    color: #424298;
+}
+.jeuGarde plateau legende info#abandonner {
+    position: absolute;
+    top: 88.5%;
+    font-size: 3vh; padding-left: 10%;
+    color: #cc2020;
+}
+
+/**
+* Confirmation
+**/
+.jeuGarde plateau legende #confirm {
+    display: none;
+    margin-top: 9%; margin-left: 3%;
+}
+.jeuGarde plateau legende #confirm info {
+    display: inline-block; position: relative;
+    font-size: 3vh;
+    padding-left:0; width: 30%;
+    margin-top: 9%;
+}
+.jeuGarde plateau legende #confirm info#oui {
+    margin-left: 21%;
+}
+
+.jeuGarde #confirm case {
+    position: relative; display: inline-block;
+    width: 33%; height: 100%;
+    top: 20%; left: 0;
+    background-repeat: no-repeat;
+    background-image: url("../img/game/interface/ui/checkbox.png");
+    background-size: 300% 100%;
+    background-position: 0% 0%;
+}
+.jeuGarde #confirm case.coche {
+    background-position: 50% 0%;
+}
+
+/**
+* Popin d'alert sur le plateau
+**/
+.jeuGarde plateau alert {
+    position: absolute; display: block;
+    width: 21%; height: 48%;
+    left: 78%; top: 53%;
+    background-image: url(../img/menu/popup/newgame.png);
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    transform: rotate(9deg);
+
+    transition: all 300ms;
+}
+.jeuGarde plateau alert texte {
+    position: relative; display: block;
+    width: 100%; height: auto;
+    padding-left: 12%; padding-right: 10%;
+    font-family: "Luna"; font-size: 2.7vh;
+    color: black;
+}
+
+.jeuGarde plateau alert.end {
+    left: 37%; top: 6%;
+    width: 26%; height: 57%;
+    transform: rotate(0deg);
+    cursor: pointer !important;
+}
+.jeuGarde plateau alert.end texte {
+    cursor: pointer !important;
+    padding-left: 13%; padding-right: 9%;
+}
+
+/**
+* Total de la mise
+**/
+.jeuGarde total {
+    position: absolute; display: block;
+    width: 30%; height: 50%;
+    top: 10%; left: 34%;
+}
+.jeuGarde total > picture {
+    position: relative; display: block;
+    width: 100%; height: 100%;
+    background-repeat: no-repeat;
+    /* 100 * nombre de frames */
+    background-size: 300% 600%;
+    background-image: url("../img/game/interface/pokgard/mise.png");
+}
+.jeuGarde total > montant {
+    position: absolute; display: block;
+    cursor: default; text-align: justify;
+    color: #DDDDDD; font-size: 1.7vh;
+}
+.jeuGarde total montant[digits="4"] {
+    left: 52.5%; top: 45.5%;
+    font-weight: bold;
+}
+.jeuGarde total montant[digits="3"] {
+    left: 53.5%; top: 45.5%;
+}
+.jeuGarde total montant[digits="2"] {
+    left: 54.5%; top: 45.5%;
+}
+.jeuGarde total montant[digits="1"] {
+    left: 56%; top: 45.5%;
+}
+
+.jeuGarde total > picture[step="0"] {background-position: 100% 100%;}
+.jeuGarde total > picture[step="1"] {background-position: 0% 0%;}
+.jeuGarde total > picture[step="2"] {background-position: 50% 0%;}
+.jeuGarde total > picture[step="3"] {background-position: 100% 0%;}
+.jeuGarde total > picture[step="4"] {background-position: 0% 20%;}
+.jeuGarde total > picture[step="5"] {background-position: 50% 20%;}
+.jeuGarde total > picture[step="6"] {background-position: 100% 20%;}
+.jeuGarde total > picture[step="7"] {background-position: 0% 40%;}
+.jeuGarde total > picture[step="8"] {background-position: 50% 40%;}
+.jeuGarde total > picture[step="9"] {background-position: 100% 40%;}
+.jeuGarde total > picture[step="10"] {background-position: 0% 60%;}
+.jeuGarde total > picture[step="11"] {background-position: 50% 60%;}
+.jeuGarde total > picture[step="12"] {background-position: 100% 60%;}
+.jeuGarde total > picture[step="13"] {background-position: 0% 80%;}
+.jeuGarde total > picture[step="14"] {background-position: 50% 80%;}
+.jeuGarde total > picture[step="15"] {background-position: 100% 80%;}
+.jeuGarde total > picture[step="16"] {background-position: 0% 100%;}
+.jeuGarde total > picture[step="17"] {background-position: 50% 100%;}

@@ -260,26 +260,19 @@ define(["jquery", "underscore",
                 case "jeu-garde":
                     var but = params[0];
                     var winLieu = params[1];
-                    var failLieu = params[2];
-                    var abandonLieu = params[3];
-                    var startMise = params[4];
+                    var startMise = params[2]?params[2]:100;
 
-                    if (!startMise) startMise = 100;
-
-                    var winFunction = null;
-                    if (but > 0) {
-                        winFunction = function() {
-                            that.go(winLieu);
-                        };
+                    if (this.player.get("gold") < startMise)
+                        return this.go("ville-garde-jeu-pauvre");
+                    else {
+                        this.parent.jeuGarde(
+                            but,
+                            function() {that.go(winLieu);},
+                            function() {that.go("ville-garde-jeu-echec");},
+                            function() {that.go("ville-garde-jeu-retour");},
+                            startMise
+                        );
                     }
-
-                    this.parent.jeuGarde(
-                        but,
-                        winFunction,
-                        function() {that.go(failLieu);},
-                        function() {that.go(abandonLieu);},
-                        startMise
-                    );
                     break;
                 default:
                     console.log("Erreur, l'action " + action + " n'existe pas.")

@@ -25,7 +25,8 @@ define([], function() {
                     "name" : "combattre",
                     "action" : [
                         {"key" :"fight", "params" : [[
-                            "araignee", "araignee", "araignee"
+                            "araignee", "araignee",
+                            {"name" : "araignee", "suffixe" : "mignon"}
                         ], "reposCombat"]}
                      ]
                 },

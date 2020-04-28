@@ -1,5 +1,5 @@
 'use strict';
-define(["jquery"], function($){
+define(["jquery", "app/utils/utils"], function($, Utils){
 	return function(collection){
 		this.init = function(collection) {
 			if (!collection) collection = [];
@@ -13,17 +13,18 @@ define(["jquery"], function($){
             this.data[key] = value;
 		};
 		this.push = function(key) {
-			this.data[key] = key;
+			this.data[this.length()] = key;
 		};
 		
-		this.length = function() {
+		this.length = function(tab) {
+		    if (!tab) tab = this.data;
             var length = 0;
-            for (var i in this.data) {
+            for (var i in tab) {
                 length++;
             }
             return length;
 		};
-		
+
 		this.remove = function(key) {
             var val = this.data[key];
             delete this.data[key];

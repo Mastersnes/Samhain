@@ -35,7 +35,7 @@ function($, _, Utils) {
 			        "debuff" : null,
 			        "xp" : 0,
 			        "level" : 0,
-			        "gold" : 0,
+			        "gold" : 500,
 
 			        "attaque" : 1,
 			        "defense" : 0,
@@ -46,11 +46,11 @@ function($, _, Utils) {
 			            "bouclier" : ["bras"],
 			            "currentBouclier" : "bras",
 			            "magie" : [],
-			            "conso" : ["pomme", "fromage", "potionSante", "pomme", "pomme", "venin"],
-			            "clef" : [],
+			            "conso" : [],
+			            "clef" : ["LettreSobac"],
 			            "ifObj" : []
 			        },
-                    "lieu" : "echoppe",
+                    "lieu" : "ville-garde-simple-1",
 
                     "savesData" : {}
 			    },

@@ -3,7 +3,6 @@ define([], function(){
 	var data = {
 	        /**
 	        * Suffixes
-	        * Correction OK
 	        **/
 	        "grognon" : {
                 fr : "Grognon",

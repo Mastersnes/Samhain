@@ -3,7 +3,6 @@ define([], function(){
 	var data = {
 	        /**
 	        * Etats
-	        * Correction OK
 	        **/
 	        "poison" : {
                 fr : "Un Peu Pâle",

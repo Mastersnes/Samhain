@@ -9,7 +9,6 @@ define([
 	var data = {
 	    /**
 	    * Textes generiques
-	    * Correction OK
 	    **/
         "gagne-texte-1" : {
             fr : "Félicitations, vous avez terminé le jeu&nbsp;!",

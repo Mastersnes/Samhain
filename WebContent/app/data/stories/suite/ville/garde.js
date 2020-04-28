@@ -66,17 +66,29 @@ define([], function() {
             "textes" : ["ville-garde-simple-2-texte-1", "ville-garde-simple-2-texte-2"],
             "actions" : [
                 {
-                    "appairIf" : [{"key" : "hasNoItem", "params" : ["taillade"]}],
                     "name" : "demander-travail",
                     "action" : [
-                        {"key" : "jeu-garde", "params" : [3, "ville-garde-jeu-victoire", "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                        {"key" : "go", "params" : ["ville-garde-simple-3"]}
+                    ]
+                }
+            ]
+        },
+
+        "ville-garde-simple-3" : {
+            "textes" : ["ville-garde-simple-3-texte-1", "ville-garde-simple-3-texte-2", "ville-garde-simple-3-texte-3",
+                        "ville-garde-simple-3-texte-4", "ville-garde-simple-3-texte-5", "ville-garde-simple-3-texte-6"],
+            "actions" : [
+                {
+                    "appairIf" : [{"key" : "hasGold", "params" : [100]}],
+                    "name" : "accepter",
+                    "action" : [
+                        {"key" : "jeu-garde", "params" : [3, "ville-garde-jeu-victoire"]}
                     ]
                 },
                 {
-                    "appairIf" : [{"key" : "hasItem", "params" : ["taillade"]}],
-                    "name" : "demander-travail",
+                    "name" : "refuser",
                     "action" : [
-                        {"key" : "jeu-garde", "params" : [-1, null, "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                        {"key" : "go", "params" : [ "ville-garde-simple-retour"]}
                     ]
                 }
             ]
@@ -113,7 +125,8 @@ define([], function() {
         **/
         "ville-garde-jeu-victoire" : {
             "textes" : ["ville-garde-jeu-victoire-texte-1", "ville-garde-jeu-victoire-texte-2",
-                        "ville-garde-jeu-victoire-texte-3", "ville-garde-jeu-victoire-texte-4"],
+                        "ville-garde-jeu-victoire-texte-3", "ville-garde-jeu-victoire-texte-4",
+                        "ville-garde-jeu-victoire-texte-5"],
             "actions" : [
                 {
                     "name" : "trop-cher",
@@ -122,10 +135,10 @@ define([], function() {
                     ]
                 },
                 {
-                    "appairIf" : [{"key" : "hasGold", "params" : [3000]}],
+                    "appairIf" : [{"key" : "hasGold", "params" : [1500]}],
                     "name" : "accepter",
                     "action" : [
-                        {"key" : "jeu-garde", "params" : [1, "ville-garde-jeu-victoire-2", "ville-garde-jeu-echec", "ville-garde-jeu-retour", 3000]}
+                        {"key" : "jeu-garde", "params" : [1, "ville-garde-jeu-victoire-2", 1500]}
                     ]
                 }
             ]
@@ -183,17 +196,29 @@ define([], function() {
             "textes" : ["ville-garde-ami-texte-1"],
             "actions" : [
                 {
-                    "appairIf" : [{"key" : "hasNoItem", "params" : ["taillade"]}],
+                    "appairIf" : [
+                        {"key" : "hasNoItem", "params" : ["taillade"]},
+                        {"key" : "hasGold", "params" : [100]}
+                    ],
                     "name" : "travailler",
                     "action" : [
-                        {"key" : "jeu-garde", "params" : [3, "ville-garde-jeu-victoire", "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                        {"key" : "jeu-garde", "params" : [3, "ville-garde-jeu-victoire"]}
                     ]
                 },
                 {
-                    "appairIf" : [{"key" : "hasItem", "params" : ["taillade"]}],
+                    "appairIf" : [
+                        {"key" : "hasItem", "params" : ["taillade"]},
+                        {"key" : "hasGold", "params" : [100]}
+                    ],
                     "name" : "travailler",
                     "action" : [
-                        {"key" : "jeu-garde", "params" : [-1, null, "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                        {"key" : "jeu-garde", "params" : [-1, null]}
+                    ]
+                },
+                {
+                    "name" : "retour-ville",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-entree-retour-centre"]}
                     ]
                 }
             ]
@@ -203,19 +228,38 @@ define([], function() {
             "textes" : ["ville-garde-jeu-retour-texte-1"],
             "actions" : [
                 {
-                    "appairIf" : [{"key" : "hasNoItem", "params" : ["taillade"]}],
+                    "appairIf" : [
+                        {"key" : "hasNoItem", "params" : ["taillade"]},
+                        {"key" : "hasGold", "params" : [100]}
+                    ],
                     "name" : "reessayer",
                     "action" : [
-                        {"key" : "jeu-garde", "params" : [3, "ville-garde-jeu-victoire", "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                        {"key" : "jeu-garde", "params" : [3, "ville-garde-jeu-victoire"]}
                     ]
                 },
                 {
-                    "appairIf" : [{"key" : "hasItem", "params" : ["taillade"]}],
+                    "appairIf" : [
+                        {"key" : "hasItem", "params" : ["taillade"]},
+                        {"key" : "hasGold", "params" : [100]}
+                    ],
                     "name" : "reessayer",
                     "action" : [
-                        {"key" : "jeu-garde", "params" : [-1, null, "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                        {"key" : "jeu-garde", "params" : [-1, null]}
                     ]
                 },
+                {
+                    "name" : "retour-ville",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-entree-retour-centre"]}
+                    ]
+                }
+            ]
+        },
+
+        "ville-garde-jeu-pauvre" : {
+            "textes" : ["ville-garde-jeu-pauvre-texte-1", "ville-garde-jeu-pauvre-texte-2",
+                        "ville-garde-jeu-pauvre-texte-3", "ville-garde-jeu-pauvre-texte-4"],
+            "actions" : [
                 {
                     "name" : "retour-ville",
                     "action" : [
@@ -229,17 +273,23 @@ define([], function() {
             "textes" : ["ville-garde-jeu-echec-texte-1", "ville-garde-jeu-echec-texte-2"],
             "actions" : [
                 {
-                    "appairIf" : [{"key" : "hasNoItem", "params" : ["taillade"]}],
+                    "appairIf" : [
+                        {"key" : "hasNoItem", "params" : ["taillade"]},
+                        {"key" : "hasGold", "params" : [100]}
+                    ],
                     "name" : "reessayer",
                     "action" : [
-                        {"key" : "jeu-garde", "params" : [3, "ville-garde-jeu-victoire", "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                        {"key" : "jeu-garde", "params" : [3, "ville-garde-jeu-victoire"]}
                     ]
                 },
                 {
-                    "appairIf" : [{"key" : "hasItem", "params" : ["taillade"]}],
+                    "appairIf" : [
+                        {"key" : "hasItem", "params" : ["taillade"]},
+                        {"key" : "hasGold", "params" : [100]}
+                    ],
                     "name" : "reessayer",
                     "action" : [
-                        {"key" : "jeu-garde", "params" : [-1, null, "ville-garde-jeu-echec", "ville-garde-jeu-retour"]}
+                        {"key" : "jeu-garde", "params" : [-1, null]}
                     ]
                 },
                 {

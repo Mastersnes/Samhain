@@ -1,50 +1,100 @@
 <% var text = data.text %>
 
-<div>
+<div id="accueil-jeu">
+	<texteContainer>
+		<texte></texte>
+	</texteContainer>
+	<actionsContainer class="actionsContainer" id="choix">
+		<actions>
+			<action id="continuer" class="gauche">
+				<name class="js-center"><%= text.get("continue") %></name>
+			</action>
+			<action id="regles" class="gauche">
+				<name class="js-center"><%= text.get("regles") %></name>
+			</action>
+			<action id="partir" class="droite">
+				<name class="js-center"><%= text.get("partir") %></name>
+			</action>
+		</actions>
+	</actionsContainer>
+</div>
+<div id="plateau-jeu">
 	<actionsContainer class="actionsContainer" id="gardeActions">
 		<actions>
-			<action id="0" state="new" class="gauche">
+			<action id="carte-0" class="gauche">
 				<name class="js-center"></name>
 			</action>
-			<action id="1" state="new" class="gauche">
+			<action id="carte-1" class="gauche">
 				<name class="js-center"></name>
 			</action>
-			<action id="2" state="new" class="gauche">
+			<action id="carte-2" class="gauche">
 				<name class="js-center"></name>
 			</action>
-			<action id="3" state="new" class="droite">
+			<action id="carte-3" class="droite">
 				<name class="js-center"></name>
 			</action>
-			<action id="4" state="new" class="droite">
+			<action id="carte-4" class="droite">
 				<name class="js-center"></name>
 			</action>
 		</actions>
 	</actionsContainer>
 	<plateau>
-		<legendes></legendes>
-		<total></total>
-		<pioche></pioche>
+		<legende>
+			<content id="legendes">
+				<titre id="legend"><%=text.get("legende")%></titre>
+				<info id="action"><span class="titre"><%=text.get("action-legende")%></span> 0 <%=text.get("points")%></info>
+				<info id="pomme"><span class="titre"><%=text.get("pomme-legende")%></span> 1 <%=text.get("points")%></info>
+				<info id="fromage"><span class="titre"><%=text.get("fromage-legende")%></span> 2 <%=text.get("points")%></info>
+				<info id="potion"><span class="titre"><%=text.get("potion-legende")%></span> 3 <%=text.get("points")%></info>
+				<info class="newline"></info>
+				<info id="score"><span class="titre"><%=text.get("score")%></span> <span class="val"></span> <%=text.get("points")%></info>
+				<info id="victoires"><span class="titre"><%=text.get("victoires")%></span> <span class="val"></span>/<span class="max"></span></info>
+				<info id="bourse"><span class="titre"><%=text.get("bourse")%></span> <span class="val"></span>po</info>
+				<info class="clickable" id="abandonner"><span class="titre"><%=text.get("abandonner-legend")%></span></info>
+				<info class="clickable" id="regles"><span class="titre">*&nbsp;<%=text.get("regles")%></span></info>
+			</content>
+			<content id="confirm">
+				<titre><%=text.get("abandonner-confirm")%></titre>
+				<info class="clickable" id="oui"><case></case><span class="titre"><%=text.get("oui")%></span></info>
+				<info class="clickable" id="non"><case></case><span class="titre"><%=text.get("non")%></span></info>
+			</content>
+		</legende>
+		<total>
+			<picture></picture>
+			<montant></montant>
+		</total>
+		<pioche>
+			<action id="0" class="innactive"></action>
+			<action id="1" class="innactive"></action>
+			<action id="piocher" class="gauche">
+                <name class="js-center"><%=text.get("piocher")%></name>
+            </action>
+		</pioche>
 		<action id="miser" class="gauche">
 			<name class="js-center">
-				Miser </br><span id="mise"></span>po
+				<%=text.get("miser")%> </br><span id="mise"></span>po
 			</name>
 		</action>
+		<action id="passer" class="droite">
+			<name class="js-center"><%=text.get("passer")%></name>
+		</action>
+        <alert><texte class="js-center"></texte></alert>
 	</plateau>
 	<actionsContainer class="actionsContainer" id="playerActions">
 		<actions>
-			<action id="0" state="new" class="gauche">
+			<action id="carte-0" class="gauche">
 				<name class="js-center"></name>
 			</action>
-			<action id="1" state="new" class="gauche">
+			<action id="carte-1" class="gauche">
 				<name class="js-center"></name>
 			</action>
-			<action id="2" state="new" class="gauche">
+			<action id="carte-2" class="gauche">
 				<name class="js-center"></name>
 			</action>
-			<action id="3" state="new" class="droite">
+			<action id="carte-3" class="droite">
 				<name class="js-center"></name>
 			</action>
-			<action id="4" state="new" class="droite">
+			<action id="carte-4" class="droite">
 				<name class="js-center"></name>
 			</action>
 		</actions>

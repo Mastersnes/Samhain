@@ -3,7 +3,6 @@ define([], function(){
 	var data = {
 	        /**
 	        * Glossaire
-	        * Correction OK
 	        **/
 	        "lifeSteal-glossaire" : {
                 fr : "% des dégâts infligés.",

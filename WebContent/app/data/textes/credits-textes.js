@@ -3,7 +3,6 @@ define([], function(){
 	var data = {
 	        /**
 	        * Credits
-	        * Correction OK
 	        **/
 	        "nous-credits" : {
                 fr : "Alicia et Steven Nesztler",

@@ -3,7 +3,6 @@ define([], function(){
 	var data = {
 	        /**
 	        * UI
-	        * Correction OK
 	        **/
 	        "inventaire" : {
                 fr : "Inventaire",

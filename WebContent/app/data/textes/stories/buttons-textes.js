@@ -345,6 +345,18 @@ define([], function(){
             fr : "Castagner",
             en : "Beat up"
         },
+        "miser" : {
+            fr : "Miser",
+            en : "Bet"
+        },
+        "passer" : {
+            fr : "Passer son tour",
+            en : "Skip your turn"
+        },
+        "trop-cher" : {
+            fr : "Trop cher",
+            en : "Too expensive"
+        },
 
         /**
         * Dialogue

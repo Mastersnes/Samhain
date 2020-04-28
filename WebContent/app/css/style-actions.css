@@ -13,7 +13,7 @@ actionsContainer actions {
 	width: 100%; height: 100%;
 	text-align: center;
 }
-actionsContainer action {
+action {
 	cursor: pointer !important;
 	position: relative;
 	display: inline-block;
@@ -24,7 +24,7 @@ actionsContainer action {
 
     transition: all 300ms;
 }
-actionsContainer action name {
+action name {
     position: absolute;
     display: block;
     width: 66%; height: auto;
@@ -63,10 +63,10 @@ actionsContainer action name {
     left: 10% !important;
 }
 
-actionsContainer action.gauche:hover {
+action.gauche:hover {
     transform: rotate(-16deg);
 }
-actionsContainer action.droite:hover {
+action.droite:hover {
     transform: rotate(16deg);
 }
 actionsContainer action[state] {
@@ -203,4 +203,31 @@ actionsContainer action[type="guerison"] {
 /** Sorts **/
 .fight monster anim.bouleFeu {
     background-image: url("../img/game/actions/anim/bouleFeu.png");
+}
+
+/**
+* Specificité au pokgarde
+**/
+.jeuGarde actionscontainer {
+    height: 20%;
+}
+
+.jeuGarde #gardeActions {
+    margin-top: 1%;
+}
+.jeuGarde #gardeActions action[state] {
+    top: -150%;
+}
+
+.jeuGarde #playerActions {
+    margin-bottom: 1%;
+}
+.jeuGarde #playerActions action[state] {
+    top: 150%;
+}
+
+.jeuGarde plateau action {
+    position: absolute; display: block;
+    height: 35%;
+    background-image: url("../img/game/actions/basique.png");
 }

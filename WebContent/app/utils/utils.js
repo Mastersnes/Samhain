@@ -35,7 +35,14 @@ define(["jquery", "sha"], function($, sha){
 		  var max = Math.floor(pMax);
 		  return Math.floor(Math.random() * (max - min)) + min;
 		},
-		
+
+		then : function(callback, timeout) {
+		    if (!timeout) timeout = 1000;
+		    setTimeout(function() {
+		        callback();
+		    }, timeout);
+		},
+
 		encode : function(data) {
 			return btoa(data);
 		},
