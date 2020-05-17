@@ -13,13 +13,17 @@
 * Specificité
 **/
 monstersContainer monster.grosseGoule name {
-    width: 78%;
-    left: 11%;
+    width: 78% !important;
+    left: 11% !important;
     font-size: 3.4vh;
 }
 monstersContainer monster.necromancien name {
     top: 26% !important;
     left: 17% !important;
+}
+monstersContainer monster.roiBandit name {
+    width: 59% !important;
+    left: 18% !important;
 }
 
 /**
@@ -64,4 +68,7 @@ monstersContainer monster.necromancien name {
 }
 .fight monster.necromancien {
     background-image: url("../img/game/monsters/necromancien.png");
+}
+.fight monster.roiBandit {
+    background-image: url("../img/game/monsters/roiBandit.png");
 }

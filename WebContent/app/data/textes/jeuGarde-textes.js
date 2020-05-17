@@ -9,7 +9,7 @@ define([], function(){
                 en : "Let's go, I hope you're ready!"
             },
             "pokgard-win" : {
-                fr : "Bien joué ! T'en refera bien une ? Non ?",
+                fr : "Bien joué ! T'en referas bien une ? Non ?",
                 en : "Well played! You' re gonna do another one, aren't you?"
             },
 
@@ -89,7 +89,7 @@ define([], function(){
                 en : "-"
             },
             "player-impossible" : {
-                fr : "Vous n'avez plus assez pour <b>miser</b>.<br/>Veuillez <b>passez votre tour</b>.",
+                fr : "Vous n'avez plus assez pour <b>miser</b>.<br/>Veuillez <b>passer votre tour</b>.",
                 en : "-"
             },
             "garde-use" : {
@@ -109,7 +109,7 @@ define([], function(){
                 en : "-"
             },
             "player-win" : {
-                fr : "Félicitation, vous raflez la mise !</br><b>Cliquez pour continuer</b>.",
+                fr : "Félicitations, vous raflez la mise !</br><b>Cliquez pour continuer</b>.",
                 en : "-"
             },
             "player-lose" : {
@@ -141,11 +141,11 @@ define([], function(){
             * Tuto
             **/
             "pokgard-tuto-0" : {
-                fr : "Tu vas voir, les règles sont très simple.</br><b>Clique-ici</b> je vais t'expliquer...",
+                fr : "Tu vas voir, les règles sont très simples.</br><b>Clique ici</b>, je vais t'expliquer...",
                 en : ""
             },
             "pokgard-tuto-1" : {
-                fr : "Le premier joueur est normalement <b>tiré au sort</b>.</br>Pour cette partie, je te laisse <b>commencer</b>.",
+                fr : "Normalement, le premier joueur est <b>tiré au sort</b>.</br>Pour cette partie, je te laisse <b>commencer</b>.",
                 en : ""
             },
             "pokgard-tuto-2" : {
@@ -157,7 +157,7 @@ define([], function(){
                 en : ""
             },
             "pokgard-tuto-4" : {
-                fr : "<b>Clique</b> sur <b>Miser</b> pour continuer.",
+                fr : "<b>Clique</b> sur <b>'Miser'</b> pour continuer.",
                 en : ""
             },
 
@@ -170,11 +170,11 @@ define([], function(){
                 en : ""
             },
             "pokgard-tuto-7" : {
-                fr : "Tu peux <b>passer ton tour</b> et donc abandonner ton droit de jouer cette fois ci.",
+                fr : "Tu peux <b>passer ton tour</b> et donc abandonner ton droit de jouer cette fois-ci.",
                 en : ""
             },
             "pokgard-tuto-8" : {
-                fr : "Ou bien tu peux <b>piocher</b> pour tenter d'obtenir des points.",
+                fr : "Ou bien, tu peux <b>piocher</b> pour tenter d'obtenir des points.",
                 en : ""
             },
             "pokgard-tuto-9" : {
@@ -183,7 +183,7 @@ define([], function(){
             },
 
             "pokgard-tuto-10" : {
-                fr : "Félicitation, tu as <b>pioché</b> ta premiere carte et cela a automatiquement <b>passé ton tour</b>.",
+                fr : "Félicitations, tu as <b>pioché</b> ta première carte ! Cela a automatiquement <b>passé ton tour</b>.",
                 en : ""
             },
             "pokgard-tuto-11" : {
@@ -191,23 +191,23 @@ define([], function(){
                 en : ""
             },
             "pokgard-tuto-12" : {
-                fr : "Il est possible de <b>piocher</b> deux type de cartes : <b>Les points</b> et <b>les actions</b>.",
+                fr : "Il est possible de <b>piocher</b> deux types de cartes : <b>les points</b> et <b>les actions</b>.",
                 en : ""
             },
             "pokgard-tuto-13" : {
-                fr : "La <b>pomme</b> vaut <b>1 points</b></br>Le <b>fromage</b> en vaut <b>2</b></br>Et la <b>potion</b> en vaut <b>3</b>.",
+                fr : "La <b>pomme</b> vaut <b>1 point</b>,</br>Le <b>fromage</b> en vaut <b>2</b>,</br>Et la <b>potion</b> en vaut <b>3</b>.",
                 en : ""
             },
             "pokgard-tuto-14" : {
-                fr : "Gardes-les précieusement, plus tu as de <b>point</b>, plus tu as de chance de <b>gagner la partie</b> !",
+                fr : "Garde-les précieusement. Plus tu as de <b>points</b>, plus tu as de chance de <b>gagner la partie</b> !",
                 en : ""
             },
             "pokgard-tuto-15" : {
-                fr : "Les <b>actions</b> sont des cartes qui te permettent de <b>voir</b>, <b>voler</b> ou même <b>détruire</b> les cartes adverse.",
+                fr : "Les <b>actions</b> sont des cartes qui te permettent de <b>voir</b>, <b>voler</b> ou même <b>détruire</b> les cartes adverses.",
                 en : ""
             },
             "pokgard-tuto-16" : {
-                fr : "Tu en as justement une, <b>Clique</b> dessus et <b>utilise</b> là sur ma carte !",
+                fr : "Tu en as justement une. <b>Clique</b> dessus et <b>utilise</b> là sur ma carte !",
                 en : ""
             },
 
@@ -216,11 +216,11 @@ define([], function(){
                 en : ""
             },
             "pokgard-tuto-18" : {
-                fr : "Bien, maintenant, c'est à toi de <b>jouer</b> !</br>N'oublis pas : Ne <b>mise</b> jamais plus que ce que tu possède !",
+                fr : "Bien, maintenant, c'est à toi de <b>jouer</b> !</br>N'oublie pas : ne <b>mise</b> jamais plus que ce que tu possèdes !",
                 en : ""
             },
             "pokgard-tuto-18-2" : {
-                fr : "Bien, maintenant, reprenons notre <b>partie</b> !</br>N'oublis pas : Ne <b>mise</b> jamais plus que ce que tu possède !",
+                fr : "Bien, maintenant, reprenons notre <b>partie</b> !</br>N'oublie pas : ne <b>mise</b> jamais plus que ce que tu possèdes !",
                 en : ""
             },
 	};

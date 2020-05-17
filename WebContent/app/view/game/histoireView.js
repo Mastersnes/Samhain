@@ -22,11 +22,11 @@ define(["jquery", "underscore",
 
             this.didacticiel = didacticiel;
 
-            if (didacticiel) this.go("didacticiel-start");
-            else this.go(this.player.get("lieu"));
+            if (didacticiel) this.go("didacticiel-start", true);
+            else this.go(this.player.get("lieu"), true);
         };
 
-        this.go = function(newLieuId, noSave) {
+        this.go = function(newLieuId, firstTime) {
             var newLieu = Stories.get(newLieuId);
             if (!newLieu)  {
                 console.log("Erreur - le lieu n'existe pas", newLieuId)
@@ -36,6 +36,7 @@ define(["jquery", "underscore",
             var that = this;
             $(".fight").fadeOut();
             $(".boutique").fadeOut();
+            $(".quetes").fadeOut();
             $(".jeuGarde").fadeOut();
 
             $("carnet").removeClass("hide");
@@ -43,12 +44,13 @@ define(["jquery", "underscore",
             this.el.fadeIn();
 
             if (newLieu.before) newLieu.before(this);
-            if (newLieu.music) {
-                this.playMusic("music/" + newLieu.music);
-            }
+            if (!this.didacticiel) {
+                if (newLieu.music) {
+                    this.playMusic("music/" + newLieu.music);
+                }else if (firstTime) this.playMusic();
 
-            if (this.didacticiel) noSave = true;
-            if (!noSave) this.player.data.lieu = newLieuId;
+                this.player.data.lieu = newLieuId
+            }
             this.currentLieu = newLieu;
 
         	_.templateSettings.variable = "data";
@@ -145,7 +147,7 @@ define(["jquery", "underscore",
                     break;
                 case "score":
                     var success = params[0];
-                    this.recompenseManager.addSuccess(success, true);
+                    this.recompenseManager.addSuccess(success);
                     break;
                 case "go":
                     var newLieu = params[0];
@@ -180,11 +182,7 @@ define(["jquery", "underscore",
                     }, failFunction, textes, regles);
                     break;
                 case "hurt":
-                    var degats = params[0];
-                    this.player.hurt(degats, true);
-                    if (this.player.get("life.current") <= 0) {
-                        this.player.addLife(1);
-                    }
+                    this.hurt(params[0]);
                     break;
                 case "gain":
                     this.gain(params);
@@ -274,9 +272,39 @@ define(["jquery", "underscore",
                         );
                     }
                     break;
+                case "quetes":
+                    this.parent.quetes(function() {
+                        that.go("ville-entree-panneau-quete-retour");
+                    });
+                    break;
+                case "step-quete":
+                    var amount = params[0];
+                    if (amount == undefined) amount = 1;
+                    this.player.add("currentQuest.step", amount);
+                    break;
+                case "end-quete":
+                    this.finalizeQuest(params[0])
+                    break;
                 default:
                     console.log("Erreur, l'action " + action + " n'existe pas.")
                     break;
+            }
+        };
+
+        this.startQuest = function(quest) {
+            this.player.set("currentQuest.name", quest.name);
+            this.player.set("currentQuest.step", 0);
+            this.go(quest.start);
+        };
+        this.finalizeQuest = function(percent) {
+            this.player.finalizeQuest(percent);
+            this.go("ville-entree-retour-quete");
+        };
+
+        this.hurt = function(degats) {
+            this.player.hurtPercent(degats, true);
+            if (this.player.get("life.current") <= 0) {
+                this.player.addLife(1);
             }
         };
 

@@ -24,7 +24,7 @@ define([],
                             "action" : [
                                 {"key" : "fight", "params" : [
                                     [
-                                        {"name": "bandit", "suffixe": "debile"}
+                                        {"name": "bandit", "suffixe":"debile"}
                                     ], "didacticiel-combat-win", "didacticiel-combat-lose",
                                     [
                                         ["didacticiel-combat-texte-1", "didacticiel-combat-texte-2"],
@@ -43,7 +43,7 @@ define([],
                         {
                             "name" : "retour-menu",
                             "action" : [
-                                {"key" : "score", "params" : ["DidacticielWin", 1]},
+                                {"key" : "score", "params" : ["DidacticielWin"]},
                                 {"key" : "restart", "params" : null}
                             ]
                         }

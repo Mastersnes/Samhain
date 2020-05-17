@@ -130,7 +130,7 @@ define([], function() {
                 {
                     "name" : "affichage-quetes",
                     "action" : [
-                        {"key" : "quetes", "params" : [ "ville-entree-panneau-quete-retour"]}
+                        {"key" : "quetes", "params" : []}
                     ]
                 }
             ]
@@ -139,9 +139,170 @@ define([], function() {
             "textes" : ["ville-entree-panneau-quete-retour-texte-1", "ville-entree-panneau-quete-retour-texte-2"],
             "actions" : [
                 {
-                    "name" : "retour-ville",
+                    "name" : "panneau-quete",
                     "action" : [
-                        {"key" : "go", "params" : [ "ville-entree-retour-centre"]}
+                        {"key" : "go", "params" : [ "ville-entree-panneau-quete"]}
+                    ]
+                },
+                {
+                    "name" : "boutiques",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-entree-boutiques"]}
+                    ]
+                },
+                {
+                    "appairIf" : [{"key" : "hasNoItem", "params" : ["GardesVilleTues"]}],
+                    "name" : "poste-garde",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-garde-1"]}
+                    ]
+                },
+                {
+                    "appairIf" : [{"key" : "hasItem", "params" : ["GardesVilleTues"]}],
+                    "name" : "poste-garde",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-garde-tues-1"]}
+                    ]
+                },
+                {
+                    "appairIf" : [{"key" : "hasItem", "params" : ["voler"]}],
+                    "name" : "ruelle-sombre",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-ruelle-simple-1"]}
+                    ]
+                },
+                {
+                    "appairIf" : [{"key" : "hasNoItem", "params" : ["voler"]}],
+                    "name" : "ruelle-sombre",
+                    "action" : [
+                        {"key" : "random", "params" : [
+                            "ville-ruelle-simple-1", "ville-ruelle-simple-1",
+                            "ville-ruelle-simple-1", "ville-ruelle-simple-1",
+                            "ville-ruelle-simple-1", "ville-ruelle-simple-1",
+                            "ville-ruelle-simple-1", "ville-ruelle-simple-1",
+                            "ville-ruelle-simple-1", "ville-ruelle-voleur-1"
+                        ]}
+                    ]
+                },
+                {
+                    "name" : "palais-justice",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-entree-palais-justice"]}
+                    ]
+                }
+            ]
+        },
+        "ville-entree-retour-quete" : {
+            "textes" : ["ville-entree-retour-quete-texte-1"],
+            "actions" : [
+                {
+                    "name" : "panneau-quete",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-entree-panneau-quete"]}
+                    ]
+                },
+                {
+                    "name" : "boutiques",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-entree-boutiques"]}
+                    ]
+                },
+                {
+                    "appairIf" : [{"key" : "hasNoItem", "params" : ["GardesVilleTues"]}],
+                    "name" : "poste-garde",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-garde-1"]}
+                    ]
+                },
+                {
+                    "appairIf" : [{"key" : "hasItem", "params" : ["GardesVilleTues"]}],
+                    "name" : "poste-garde",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-garde-tues-1"]}
+                    ]
+                },
+                {
+                    "appairIf" : [{"key" : "hasItem", "params" : ["voler"]}],
+                    "name" : "ruelle-sombre",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-ruelle-simple-1"]}
+                    ]
+                },
+                {
+                    "appairIf" : [{"key" : "hasNoItem", "params" : ["voler"]}],
+                    "name" : "ruelle-sombre",
+                    "action" : [
+                        {"key" : "random", "params" : [
+                            "ville-ruelle-simple-1", "ville-ruelle-simple-1",
+                            "ville-ruelle-simple-1", "ville-ruelle-simple-1",
+                            "ville-ruelle-simple-1", "ville-ruelle-simple-1",
+                            "ville-ruelle-simple-1", "ville-ruelle-simple-1",
+                            "ville-ruelle-simple-1", "ville-ruelle-voleur-1"
+                        ]}
+                    ]
+                },
+                {
+                    "name" : "palais-justice",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-entree-palais-justice"]}
+                    ]
+                }
+            ]
+        },
+        "ville-entree-echec-quete" : {
+            "textes" : ["ville-entree-echec-quete-texte-1", "ville-entree-echec-quete-texte-2",
+                        "ville-entree-echec-quete-texte-3", "ville-entree-echec-quete-texte-4"],
+            "actions" : [
+                {
+                    "name" : "panneau-quete",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-entree-panneau-quete"]}
+                    ]
+                },
+                {
+                    "name" : "boutiques",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-entree-boutiques"]}
+                    ]
+                },
+                {
+                    "appairIf" : [{"key" : "hasNoItem", "params" : ["GardesVilleTues"]}],
+                    "name" : "poste-garde",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-garde-1"]}
+                    ]
+                },
+                {
+                    "appairIf" : [{"key" : "hasItem", "params" : ["GardesVilleTues"]}],
+                    "name" : "poste-garde",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-garde-tues-1"]}
+                    ]
+                },
+                {
+                    "appairIf" : [{"key" : "hasItem", "params" : ["voler"]}],
+                    "name" : "ruelle-sombre",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-ruelle-simple-1"]}
+                    ]
+                },
+                {
+                    "appairIf" : [{"key" : "hasNoItem", "params" : ["voler"]}],
+                    "name" : "ruelle-sombre",
+                    "action" : [
+                        {"key" : "random", "params" : [
+                            "ville-ruelle-simple-1", "ville-ruelle-simple-1",
+                            "ville-ruelle-simple-1", "ville-ruelle-simple-1",
+                            "ville-ruelle-simple-1", "ville-ruelle-simple-1",
+                            "ville-ruelle-simple-1", "ville-ruelle-simple-1",
+                            "ville-ruelle-simple-1", "ville-ruelle-voleur-1"
+                        ]}
+                    ]
+                },
+                {
+                    "name" : "palais-justice",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-entree-palais-justice"]}
                     ]
                 }
             ]

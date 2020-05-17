@@ -153,6 +153,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "argent" : [100, 150],
             "sexe" : "m",
             "abilities" : ["voler", "doubleAttaque", "taillade"],
+            "type" : "boss",
             "consos" : ["pomme", "fromage"],
             "action" : function(monster) {
                 var life = monster.get("life");
@@ -167,9 +168,6 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 	};
 	
 	return {
-		/**
-		* Permet d'appeler un WS
-		**/
 		get : function(key) {
 			return Utils.clone(data[key]);
 		},

@@ -17,7 +17,7 @@ define([], function(){
                 en : "Malade"
             },
 	        "poison-2-texte" : {
-                fr : "Dans un premier temps, les doigts commencent à piquer, légèrement. Ensuite, la démangeaison se propage doucement dans le reste du corps jusqu'à la nuque. La fin n'est pas très belle à voir si vous voulez mon avis&hellip;",
+                fr : "Dans un premier temps, les doigts commencent à piquer légèrement. Ensuite, la démangeaison se propage doucement dans le reste du corps jusqu'à la nuque. La fin n'est pas très belle à voir si vous voulez mon avis&hellip;",
                 en : "At first, the fingers start to sting, slightly. Then the itch spreads gently through the rest of the body to the neck. The end is not very beautiful to see if you want my opinion&hellip;"
             },
 	        "satiete" : {

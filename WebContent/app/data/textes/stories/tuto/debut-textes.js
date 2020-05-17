@@ -1,19 +1,19 @@
 'use strict';
 define([], function(){
 	var data = {
-        "quete1-start-texte-1" : {
+        "tuto-start-texte-1" : {
             fr : "Une nouvelle journée se termine.",
             en : "A new day ends."
         },
-        "quete1-start-texte-2" : {
+        "tuto-start-texte-2" : {
             fr : "La douceur de l'automne caresse les feuilles qui virevoltent aux alentours.",
             en : "The sweetness of autumn caresses the leaves that twirl around."
         },
-        "quete1-start-texte-3" : {
+        "tuto-start-texte-3" : {
             fr : "Ayant terminé votre dur labeur un peu plus tôt,",
             en : "Having finished your hard work a little sooner,"
         },
-        "quete1-start-texte-4" : {
+        "tuto-start-texte-4" : {
             fr : "Vous ramassez une <span key='pomme'>pomme</span> de votre panier et décidez de vous reposer au pied du géant feuillu.",
             en : "You pick an <span key='pomme'>apple</span> from your basket and decide to rest at the foot of the leafy giants."
         },

@@ -4,8 +4,9 @@ define([
     "app/data/textes/stories/didacticiel-textes",
     "app/data/textes/stories/tuto-textes",
     "app/data/textes/stories/suite-textes",
+    "app/data/textes/stories/quetes-textes",
     "app/data/textes/stories/gameOver-textes"
-], function(Buttons, Didacticiel, Tuto, Suite, GameOver){
+], function(Buttons, Didacticiel, Tuto, Suite, Quetes, GameOver){
 	var data = {
 	    /**
 	    * Textes generiques
@@ -27,6 +28,7 @@ define([
             if (!text) text = Didacticiel.get(key);
             if (!text) text = Tuto.get(key);
             if (!text) text = Suite.get(key);
+            if (!text) text = Quetes.get(key);
             if (!text) text = GameOver.get(key);
             return text;
         }

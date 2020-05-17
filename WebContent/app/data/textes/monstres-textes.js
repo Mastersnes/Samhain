@@ -10,7 +10,7 @@ define([], function(){
                 eo : "Araneo"
             },
             "araignee-texte" : {
-                fr : "Cette horrible créature vit souvent en groupe. De petites tailles, elles grouillent par milliers dans l'obscurité.",
+                fr : "Cette horrible créature vit souvent en groupe. De petite taille, elles grouillent par milliers dans l'obscurité.",
                 en : "This horrible creature often lives in a group. Small in size, they swarm by the thousands in the darkness."
             },
             "bandit" : {
@@ -26,7 +26,7 @@ define([], function(){
                 en : "King of Spiders"
             },
             "roiAraignee-texte" : {
-                fr : "Il règne sur le royaume des araignées. Il est blessé, mais protégera toujours ses enfants. Restez sur. vos gardes, vous pourriez le regretter&nbsp;!",
+                fr : "Il règne sur le royaume des araignées. Il est blessé, mais protégera toujours ses enfants. Restez sur vos gardes, vous pourriez le regretter&nbsp;!",
                 en : "He reigns over the kingdom of spiders. He's hurt, but he'll always protect his children. Stay on your toes, you might regret it&nbsp;!"
             },
             "goule" : {
@@ -54,7 +54,7 @@ define([], function(){
                 en : "A courageous villager who will do anything to defend his land. Be careful, his fork might sting a little&hellip;"
             },
             "grosseGoule" : {
-                fr : "Grosse goule",
+                fr : "Grosse Goule",
                 en : "Big Ghoul"
             },
             "grosseGoule-texte" : {

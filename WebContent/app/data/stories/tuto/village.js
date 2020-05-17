@@ -32,7 +32,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "aider", "action" : [
-                        {"key" : "score", "params" : ["HelpTown", 1]},
+                        {"key" : "score", "params" : ["HelpVillage"]},
                         {"key" : "go", "params" : ["reposVillageAide"]}
                     ]
                 },
@@ -51,7 +51,7 @@ define([], function() {
                     "name" : "prendre-arme", "action" : [
                         {"key" : "gain", "params" : ["epee"]},
                         {"key" : "gain", "params" : ["bouclierFer" ]},
-                        {"key" : "score", "params" : ["Treasure", 1]},
+                        {"key" : "score", "params" : ["VillageTreasure"]},
                         {"key" : "go", "params" : ["reposVillageAide1"]}
                     ]
                 },
@@ -91,7 +91,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "venger-affront", "action" : [
-                        {"key" : "score", "params" : ["Traitor", 1]},
+                        {"key" : "score", "params" : ["VillageTraitor"]},
                         {"key" : "fight", "params" : [[
                             "garde", "garde"
                         ], "reposVillageTraitre" ]}
@@ -117,7 +117,6 @@ define([], function() {
                 },
                 {
                     "name" : "fuir", "action" : [
-                        {"key" : "score", "params" : ["Leak", 1]},
                         {"key" : "go", "params" : ["reposVillageRefus2"]}
                     ]
                 }
@@ -169,7 +168,7 @@ define([], function() {
                     "name" : "prendre", "action" : [
                         {"key" : "gain", "params" : ["epee"]},
                         {"key" : "gain", "params" : ["bouclierFer"]},
-                        {"key" : "score", "params" : ["Treasure", 1]},
+                        {"key" : "score", "params" : ["VillageTreasure"]},
                         {"key" : "go", "params" : ["villageFouilleSuite"]}
                     ]
                 },
@@ -189,7 +188,7 @@ define([], function() {
                         {"key" : "gain", "params" : ["epee"]},
                         {"key" : "gain", "params" : ["bouclierFer"]},
                         {"key" : "gain", "params" : ["potionSante"]},
-                        {"key" : "score", "params" : ["Treasure", 1]},
+                        {"key" : "score", "params" : ["VillageTreasure"]},
                         {"key" : "go", "params" : ["villageFouilleSuite"]}
                     ]
                 },
@@ -254,7 +253,7 @@ define([], function() {
                 },
                 {
                     "name" : "aider-guarde", "action" : [
-                        {"key" : "score", "params" : ["TraitorSpider", 1]},
+                        {"key" : "score", "params" : ["SpiderTraitor"]},
                         {"key" : "fight", "params" : [[
                             {"name":"roiAraignee", "suffixe":"blesse"}
                         ], "retourVillageAideGarde" ]}

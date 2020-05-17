@@ -44,7 +44,7 @@ define([], function() {
                 },
                 {
                     "name" : "fuir-grotte", "action" : [
-                        {"key" : "score", "params" : ["Leak", 1]},
+                        {"key" : "score", "params" : ["Leak"]},
                         {"key" : "go", "params" : [ "nid4" ]}
                     ]
                 }
@@ -62,7 +62,7 @@ define([], function() {
                 },
                 {
                     "name" : "fuir-grotte", "action" : [
-                        {"key" : "score", "params" : ["Leak", 1]},
+                        {"key" : "score", "params" : ["Leak"]},
                         { "key" : "go", "params" : [ "nid4" ]}
                     ]
                 }

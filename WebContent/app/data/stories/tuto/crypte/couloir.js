@@ -48,7 +48,7 @@ define([], function() {
         			"name" : "retour", "action" : [
         				{"key" : "gain", "params" : ["S4Clean"]},
         				{"key" : "gain", "params" : ["potionSante"]},
-        				{"key" : "score", "params" : ["SaveChild", 1]},
+        				{"key" : "score", "params" : ["SaveChild"]},
         				{"key" : "go", "params" : ["necroCouloir"]}
         			]
         		}
@@ -62,7 +62,7 @@ define([], function() {
         				{"key" : "gain", "params" : ["S5Clean"]},
         				{"key" : "gain", "params" : ["guerison"]},
         				{"key" : "upMG", "params" : [2]},
-        				{"key" : "score", "params" : ["LearnCure", 1]},
+        				{"key" : "score", "params" : ["FoundCure"]},
         				{"key" : "go", "params" : ["necroCouloir"]}
         			]
         		}

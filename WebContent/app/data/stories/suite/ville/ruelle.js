@@ -196,6 +196,7 @@ define([], function() {
                     "name" : "apprendre",
                     "action" : [
                         {"key" : "depense", "params" : [3000]},
+                        {"key" : "score", "params" : [ "AcceptDealVoleur"]},
                         {"key" : "gain", "params" : [ "voler"]},
                         {"key" : "go", "params" : [ "ville-ruelle-voleur-accept-2"]}
                     ]

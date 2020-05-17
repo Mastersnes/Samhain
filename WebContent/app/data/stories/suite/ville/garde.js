@@ -50,6 +50,7 @@ define([], function() {
                     "appairIf" : [{"key" : "hasItem", "params" : ["LettreSobac"]}],
                     "name" : "montrer-lettre",
                     "action" : [
+                        {"key" : "gain", "params" : [ "AmiDesGardes"]},
                         {"key" : "go", "params" : [ "ville-garde-simple-2"]}
                     ]
                 },
@@ -154,6 +155,7 @@ define([], function() {
                 {
                     "name" : "apprendre",
                     "action" : [
+                        {"key" : "score", "params" : ["WinPokGard"]},
                         {"key" : "gain", "params" : ["taillade"]},
                         {"key" : "go", "params" : [ "ville-garde-jeu-victoire-3"]}
                     ]
@@ -324,6 +326,7 @@ define([], function() {
                     "name" : "se-servir",
                     "action" : [
                         {"key" : "gain", "params" : ["GardesVilleTues"]},
+                        {"key" : "gain", "params" : ["epee", "bouclierFer", "pomme", "pomme"]},
                         {"key" : "go", "params" : [ "ville-entree-retour-centre"]}
                     ]
                 }

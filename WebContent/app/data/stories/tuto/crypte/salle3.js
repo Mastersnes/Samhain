@@ -32,7 +32,7 @@ define([], function() {
         				{"key" : "upMG", "params" : [2]},
         				{"key" : "gain", "params" : ["soin"]},
         				{"key" : "gain", "params" : ["parchoLu"]},
-        				{"key" : "score", "params" : ["LearnHeal", 1]},
+        				{"key" : "score", "params" : ["FoundHeal"]},
         				{"key" : "go", "params" : ["necroS3Fouille"]}
         			]
         		}
@@ -52,7 +52,7 @@ define([], function() {
                         {"key" : "upMG", "params" : [2]},
                         {"key" : "gain", "params" : ["soin"]},
                         {"key" : "gain", "params" : ["parchoLu"]},
-                        {"key" : "score", "params" : ["LearnHeal", 1]},
+                        {"key" : "score", "params" : ["FoundHeal"]},
                         {"key" : "go", "params" : ["necroS3Fouille"]}
                     ]
                 }

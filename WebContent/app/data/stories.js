@@ -3,8 +3,9 @@ define(["app/utils/utils",
         "app/data/stories/didacticiel",
         "app/data/stories/tuto",
         "app/data/stories/suite",
+        "app/data/stories/quetes",
         "app/data/stories/gameOver"],
-		function(Utils, Didacticiel, Tuto, Suite, GameOver) {
+		function(Utils, Didacticiel, Tuto, Suite, Quetes, GameOver) {
 			var data = {
                 /**
                  * Gagne
@@ -30,6 +31,7 @@ define(["app/utils/utils",
 				    if (!result) result = Didacticiel.get(key);
 				    if (!result) result = Tuto.get(key);
 				    if (!result) result = Suite.get(key);
+				    if (!result) result = Quetes.get(key);
 				    if (!result) result = GameOver.get(key);
 
 					if (!result) console.log("Erreur, Impossible de trouver l'histoire", key);

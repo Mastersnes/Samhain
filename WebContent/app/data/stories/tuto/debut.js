@@ -4,14 +4,14 @@ define([], function() {
         /**
          * Quete Tutoriel - Seul dans la foret
          */
-        "quete1-start" : {
+        "tuto-start" : {
             "music" : "story1.mp3",
-            "textes" : ["quete1-start-texte-1", "quete1-start-texte-2", "quete1-start-texte-3", "quete1-start-texte-4"],
+            "textes" : ["tuto-start-texte-1", "tuto-start-texte-2", "tuto-start-texte-3", "tuto-start-texte-4"],
             "actions" : [
                 {
                     "name" : "suivant",
                     "action" : [
-                        {"key" : "score", "params" : ["GameStart", 1]},
+                        {"key" : "score", "params" : ["GameStart"]},
                         {"key" : "gainOneTime", "params" : ["pomme"]},
                         {"key" : "go", "params" : [ "repos2"]}
                     ]
@@ -26,7 +26,7 @@ define([], function() {
                     "action" : [
                         {"key" :"fight", "params" : [[
                             "araignee", "araignee",
-                            {"name" : "araignee", "suffixe" : "mignon"}
+                            {"name" : "araignee", "suffixe":"mignon"}
                         ], "reposCombat"]}
                      ]
                 },
@@ -34,7 +34,7 @@ define([], function() {
                     "name" : "fuir",
                     "action" : [
                         {"key" : "hurt","params" : [ 10 ]},
-                        {"key" : "score", "params" : ["Leak", 1]},
+                        {"key" : "score", "params" : ["Leak"]},
                         {"key" : "go", "params" : [ "reposVillage" ]}
                     ]
                 }

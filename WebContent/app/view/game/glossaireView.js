@@ -94,14 +94,14 @@ define(["jquery", "underscore",
         /**
         * Lance la consultation
         **/
-        this.show = function(key) {
+        this.show = function(key, suffixe) {
             this.current = key;
 
             this.el.find(".liste").hide();
             this.el.find(".description suffixes").hide();
 
             if (!this.showEtat(key)) {
-                if (!this.showMonster(key)) {
+                if (!this.showMonster(key, suffixe)) {
                     this.showItem(key);
                 }
             }

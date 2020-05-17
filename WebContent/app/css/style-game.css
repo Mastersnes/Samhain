@@ -22,7 +22,7 @@ hitbox {
     position: absolute; display: block;
 }
 
-.histoire, .fight, .boutique {
+.histoire, .fight, .boutique, .quetes {
 	position: absolute;
 	width: 100%; height: 82%;
     left: 0; top: 18%;

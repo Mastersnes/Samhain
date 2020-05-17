@@ -128,7 +128,7 @@ define([], function() {
         	"actions" : [
         		{
         			"name" : "continue", "action" : [
-        			    {"key" : "score", "params" : ["TutoComplete", 1]},
+        			    {"key" : "score", "params" : ["TutoComplete"]},
         				{"key" : "go", "params" : ["ville-porte-start"]}
         			]
         		}

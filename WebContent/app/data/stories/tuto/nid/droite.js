@@ -19,7 +19,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "lattaquer-m", "action" : [
-                        {"key" : "score", "params" : ["KillSpider", 1]},
+                        {"key" : "score", "params" : ["KillSpider"]},
                         {"key" : "fight", "params" : [[
                             {"name":"roiAraignee", "suffixe":"blesse"}
                         ], "roiAraigneeAgonie"]}
@@ -37,7 +37,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "lamort", "action" : [
-                        {"key" : "score", "params" : ["KillSpider", 1]},
+                        {"key" : "score", "params" : ["KillSpider"]},
                         {"key" : "fight", "params" : [[
                             {"name":"roiAraignee", "suffixe":"blesse"}
                         ], "roiAraigneeAgonie"]}
@@ -62,7 +62,7 @@ define([], function() {
                 {
                     "name" : "donner-potion", "action" : [
                         { "key" : "perte", "params" : [ "potionSante"]},
-                        {"key" : "score", "params" : ["HelpSpider", 1]},
+                        {"key" : "score", "params" : ["HelpSpider"]},
                         { "key" : "go", "params" : [ "roiAraigneeGuerit"]}
                     ]
                 },
@@ -79,7 +79,7 @@ define([], function() {
                 {
                     "name" : "donner-potion", "action" : [
                         {"key" : "perte", "params" : ["potionSante"]},
-                        {"key" : "score", "params" : ["HelpSpider", 1]},
+                        {"key" : "score", "params" : ["HelpSpider"]},
                         {"key" : "go", "params" : ["roiAraigneeGuerit"]}
                     ]
                 },
@@ -95,7 +95,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "lattaquer-m", "action" : [
-                        {"key" : "score", "params" : ["KillSpider", 1]},
+                        {"key" : "score", "params" : ["KillSpider"]},
                         {"key" : "fight", "params" : [ [
                             {"name":"roiAraignee", "suffixe":"blesse"}
                         ], "roiAraigneeAgonie"]}
@@ -113,7 +113,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "lamort", "action" : [
-                        {"key" : "score", "params" : ["KillSpider", 1]},
+                        {"key" : "score", "params" : ["KillSpider"]},
                         {"key" : "fight", "params" : [[
                             {"name":"roiAraignee", "suffixe":"blesse"}
                         ], "roiAraigneeAgonie"]}
@@ -138,7 +138,7 @@ define([], function() {
                 {
                     "name" : "donner-fromage", "action" : [
                         {"key" : "perte", "params" : ["fromage"]},
-                        {"key" : "score", "params" : ["HelpSpider", 1]},
+                        {"key" : "score", "params" : ["HelpSpider"]},
                         {"key" : "go", "params" : ["roiAraigneeGuerit"]}
                     ]
                 },
@@ -155,7 +155,7 @@ define([], function() {
                 {
                     "name" : "donner-fromage", "action" : [
                         {"key" : "perte", "params" : ["fromage"]},
-                        {"key" : "score", "params" : ["HelpSpider", 1]},
+                        {"key" : "score", "params" : ["HelpSpider"]},
                         {"key" : "go", "params" : ["roiAraigneeGuerit"]}
                     ]
                 },
@@ -171,7 +171,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "lamort", "action" : [
-                        {"key" : "score", "params" : ["KillSpider", 1]},
+                        {"key" : "score", "params" : ["KillSpider"]},
                         {"key" : "fight", "params" : [ [
                             {"name":"roiAraignee", "suffixe":"blesse"}
                         ], "roiAraigneeAgonie"]}
@@ -280,7 +280,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "lattaquer-m", "action" : [
-                        {"key" : "score", "params" : ["KillSpider", 1]},
+                        {"key" : "score", "params" : ["KillSpider"]},
                         {"key" : "fight", "params" : [[
                             {"name":"roiAraignee", "suffixe":"blesse"}
                         ], "roiAraigneeAgonie"]}

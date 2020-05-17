@@ -112,6 +112,10 @@ define([], function(){
             "selectAuto" : {
                 fr : "Sélection automatique des meilleurs équipements",
                 en : "Best equipments are automaticaly selected"
+            },
+            "cibleUnique" : {
+                fr : "Ciblage automatique des ennemies isolés",
+                en : "Automatic targeting of isolated enemies"
             }
 	};
 	

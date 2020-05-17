@@ -36,8 +36,7 @@ define(["jquery", "underscore",
             $(".histoire").fadeOut();
             $(".fight").fadeOut();
             $(".jeuGarde").fadeOut();
-
-            console.log("items", items);
+            $(".quetes").fadeOut();
 
             this.onPurchase = onPurchase;
             this.onNoPurchase = onNoPurchase;
@@ -53,8 +52,6 @@ define(["jquery", "underscore",
                 var item = this.itemsAvailable[i];
                 this.items.put(item, Items.get(item));
             }
-
-            console.log("Availables", this.items);
 
             this.render("achat");
             this.el.fadeIn();

@@ -1,0 +1,52 @@
+<% var text = data.text %>
+<% var quetes = data.quetes %>
+
+<div>
+	<storyContainer id="details">
+		<titre></titre>
+		<textes></textes>
+		<infos>
+			<info id="recompense">
+				<span class="title"><%=text.get("recompense-quete")%></span> <span class="val"></span>po
+			</info>
+			<info id="difficulte">
+				<span class="title"><%=text.get("difficulte-quete")%></span> <span class="val"></span>
+			</info>
+		</infos>
+	</storyContainer>
+	<% if (quetes.length == 0) { %>
+		<storyContainer id="nothing">
+			<textes>
+				<texte><%=text.get("quetes-nothing")%></texte>
+			</textes>
+		</storyContainer>
+	<% } else { %>
+		<actionsContainer class="quetesContainer">
+			<actions>
+				<% for (var id in quetes) { %>
+					<% var quete = quetes[id]; %>
+					<action id="<%=id%>">
+						<name class="js-center"><%=text.get(quete.name)%></name>
+						<prix>
+							<amount><%=quete.price%></amount>
+						</prix>
+						<indication><%=text.get("consulter")%></indication>
+					</action>
+				<% } %>
+			</actions>
+		</actionsContainer>
+	<% } %>
+	<actionsContainer class="actionsContainer">
+		<actions>
+			<action class="droite" id="quitter">
+				<name class="js-center"><%=text.get("retour-ville")%></name>
+			</action>
+			<action class="gauche" id="accepter">
+				<name class="js-center"><%=text.get("accepter")%></name>
+			</action>
+			<action class="droite" id="retour">
+				<name class="js-center"><%=text.get("retour")%></name>
+			</action>
+		</actions>
+	</actionsContainer>
+</div>

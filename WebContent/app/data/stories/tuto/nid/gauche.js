@@ -44,7 +44,7 @@ define([], function() {
                     "name" : "tout-prendre", "action" : [
                         {"key" : "gain", "params" : ["potionSante"]},
                         {"key" : "gain", "params" : ["bouclierBois"]},
-                        {"key" : "score", "params" : ["Treasure", 1]},
+                        {"key" : "score", "params" : ["NestTreasure"]},
                         {"key" : "go", "params" : ["coffreReussite12"]}
                     ]
                 }
@@ -68,7 +68,7 @@ define([], function() {
                         {"key" : "perte", "params" : ["dague"]},
                         {"key" : "gain", "params" : ["potionSante"]},
                         {"key" : "gain", "params" : ["bouclierBois"]},
-                        {"key" : "score", "params" : ["Treasure", 1]},
+                        {"key" : "score", "params" : ["NestTreasure"]},
                         {"key" : "go", "params" : ["coffreReussite21"]}
                     ]
                 }
@@ -119,7 +119,6 @@ define([], function() {
                     "name" : "pas-la-peine", "action" : [
                         {"key" : "perte", "params" : ["dague"]},
                         {"key" : "hurt", "params" : [5]},
-                        {"key" : "score", "params" : ["NoChance", 1]},
                         {"key" : "go", "params" : ["coffreEchec21" ]}
                     ]
                 }

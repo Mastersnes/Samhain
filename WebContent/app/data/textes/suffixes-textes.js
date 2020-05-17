@@ -142,11 +142,11 @@ define([], function(){
             },
 
             "dechaine-m" : {
-                fr : "Déchainé",
+                fr : "Déchaîné",
                 en : "Unleashed"
             },
             "dechaine-f" : {
-                fr : "Déchainée",
+                fr : "Déchaînée",
                 en : "Unleashed"
             },
 
@@ -266,7 +266,7 @@ define([], function(){
                 en : "Raoul"
             },
             "viscerole" : {
-                fr : "Viscerole",
+                fr : "Viscérole",
                 en : "Viscerole"
             },
             "kraken" : {

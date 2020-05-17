@@ -16,31 +16,21 @@ function($, _, Utils) {
 			this.mediatheque = parent.mediatheque;
 
 			this.complete = this.saveManager.load("success").successComplete;
-			this.newList = [];
 		};
 
 		this.reloadSuccess = function() {
-		    for (var i in this.complete) {
-		        var success = this.complete[i];
-		        this.addSuccess(success, true);
+		    for (var success in this.complete) {
+		        this.addSuccess(success, this.complete[success]);
 		    }
 		};
 
-		this.addSuccess = function(success, withoutMessage) {
-			this.parent.kongregateUtils.score(success, 1);
-			if (this.complete.indexOf(success) > -1) return false;
+		this.addSuccess = function(success, val) {
+		    if (val == undefined) val = 1;
+			this.parent.kongregateUtils.score(success, val);
+			if (this.complete[success] != undefined) return false;
 
-			this.complete.push(success);
-			this.newList.push(success);
+			this.complete[success] = val;
 			this.saveManager.save("successComplete", this.complete);
-
-			if (!withoutMessage) {
-			    var gainText = this.Textes.get("gainSuccess");
-        		gainText = gainText.replace("{?}", this.Textes.get(success));
-
-//        		this.mediatheque.playSound("success.ogg");
-				this.parent.alertPopup(gainText, null, true);
-			}
 			return true;
 		};
 

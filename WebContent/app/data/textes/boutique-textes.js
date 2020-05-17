@@ -1,0 +1,22 @@
+'use strict';
+define([], function(){
+	var data = {
+	        /**
+	        * Boutique
+	        **/
+            "boutique-nothing-1" : {
+                fr : "Vous n'avez rien à vendre.",
+                en : ""
+            },
+            "boutique-nothing-2" : {
+                fr : "Vos poches sont aussi vides que le crâne d'une goule...",
+                en : ""
+            },
+	};
+	
+	return {
+        get : function(key) {
+            return data[key];
+        }
+    };
+});

@@ -53,8 +53,12 @@ define(["jquery",
             this.el.find("flag#"+lang).addClass("selected");
 
             var selectAuto = this.saveManager.getOption("selectAuto");
-            if (selectAuto) this.el.find("arme case").addClass("coche");
-            else this.el.find("arme case").removeClass("coche");
+            if (selectAuto) this.el.find("#selectAuto case").addClass("coche");
+            else this.el.find("#selectAuto case").removeClass("coche");
+
+            var cibleUnique = this.saveManager.getOption("cibleUnique");
+            if (cibleUnique) this.el.find("#cibleUnique case").addClass("coche");
+            else this.el.find("#cibleUnique case").removeClass("coche");
         };
 
         this.makeEvents = function() {
@@ -77,8 +81,12 @@ define(["jquery",
                 that.mediatheque.mute("music");
                 that.refresh();
             });
-            this.el.find("arme").click(function(e) {
+            this.el.find("#selectAuto").click(function(e) {
                 that.saveManager.setOption("selectAuto", !that.saveManager.getOption("selectAuto"));
+                that.refresh();
+            });
+            this.el.find("#cibleUnique").click(function(e) {
+                that.saveManager.setOption("cibleUnique", !that.saveManager.getOption("cibleUnique"));
                 that.refresh();
             });
         };

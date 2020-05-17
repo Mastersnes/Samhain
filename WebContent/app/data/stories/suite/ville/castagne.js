@@ -227,6 +227,7 @@ define([], function() {
                 {
                     "name" : "continue",
                     "action" : [
+                        {"key" : "score", "params" : ["CastagneVictoire"]},
                         {"key" : "gain", "params" : ["doubleAttaque", "CastagneVictoire"]},
                         {"key" : "perte", "params" : ["CastagneSave1"]},
                         {"key" : "go", "params" : [ "ville-ruelle-taverne-castagne-win2-2"]}

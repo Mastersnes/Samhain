@@ -19,6 +19,22 @@ define([], function(){
             "clefS2-texte" : {
                 fr : "Une simple clef.",
                 en : "A simple key."
+            },
+            "anneau-bandit" : {
+                fr : "Anneau du roi des bandits",
+                en : "Bandit King's Ring"
+            },
+            "anneau-bandit-texte" : {
+                fr : "Un anneau un peu plus doré que les autre. De la camelote si vous voulez mon avis...",
+                en : "A ring a little more golden than the others. Junk if you want my opinion..."
+            },
+            "poulet" : {
+                fr : "Poulet",
+                en : "Chicken"
+            },
+            "poulet-texte" : {
+                fr : "Un petit poulet tout mignon. Attention, il sait aussi se défendre quand il faut !",
+                en : "A cute little chicken. Watch out, he can also defend himself when he has to!"
             }
 	};
 	

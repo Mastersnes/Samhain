@@ -144,7 +144,7 @@ actionsContainer action[type="guerison"] {
 /**
 * Specificité a l'histoire
 **/
-.histoire action, .boutique action {
+.histoire action, .boutique action, .quetes action {
     top: 150%;
 }
 
@@ -152,7 +152,7 @@ actionsContainer action[type="guerison"] {
 * Specificité au combat
 **/
 .fight action {
-    top: 20%;
+    top: 17%;
 }
 .fight action.gauche[state="pending"] {
     top: -10% !important;

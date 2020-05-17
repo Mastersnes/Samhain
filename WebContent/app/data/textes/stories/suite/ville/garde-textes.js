@@ -36,15 +36,15 @@ define([], function(){
             en : "-"
         },
         "ville-garde-simple-3-texte-2" : {
-            fr : "&laquo; Eh bien vois tu, en ce moment, c'est plutôt calme...",
+            fr : "&laquo; Eh bien vois-tu, en ce moment, c'est plutôt calme...",
             en : "-"
         },
         "ville-garde-simple-3-texte-3" : {
-            fr : "Rapport à ce que t'ai fait leur fête aux bandits tu vois... &raquo;",
+            fr : "Rapport à ce que t'aies fait leur fête aux bandits tu vois... &raquo;",
             en : "-"
         },
         "ville-garde-simple-3-texte-4" : {
-            fr : "Il a l'air d'hesiter puis ajoute :",
+            fr : "Il a l'air d'hésiter puis ajoute :",
             en : "-"
         },
         "ville-garde-simple-3-texte-5" : {
@@ -52,7 +52,7 @@ define([], function(){
             en : "-"
         },
         "ville-garde-simple-3-texte-6" : {
-            fr : "Tu verras c'est facile... Te faut juste 100po pour commencer, t'es partant ? &raquo;",
+            fr : "Tu verras, c'est facile... Te faut juste 100po pour commencer. T'es partant ? &raquo;",
             en : "-"
         },
 
@@ -151,7 +151,7 @@ define([], function(){
         * Poste de garde amis
         **/
         "ville-garde-ami-texte-1" : {
-            fr : "Les soldats vous accueillent, prêts à jou... hum travailler avec vous...",
+            fr : "Les soldats vous accueillent, prêts à jou... hum, travailler avec vous...",
             en : "-"
         },
 
@@ -170,15 +170,15 @@ define([], function(){
         },
 
         "ville-garde-jeu-pauvre-texte-1" : {
-            fr : "&laquo; Ah désolé mon gars mais t'as pas assez de piéces.",
+            fr : "&laquo; Ah désolé mon gars, mais t'as pas assez de pièces.",
             en : "-"
         },
         "ville-garde-jeu-pauvre-texte-2" : {
-            fr : "On peut pas te faire credit tu comprend, ce serait pas réglo...",
+            fr : "On peut pas te faire crédit, tu comprends, ce serait pas réglo...",
             en : "-"
         },
         "ville-garde-jeu-pauvre-texte-3" : {
-            fr : "Reviens donc nous voir quand t'aura suffisamment d'or sur toi. &raquo;",
+            fr : "Reviens donc nous voir quand t'auras suffisamment d'or sur toi. &raquo;",
             en : "-"
         },
         "ville-garde-jeu-pauvre-texte-4" : {

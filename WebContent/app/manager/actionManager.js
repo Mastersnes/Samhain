@@ -14,6 +14,7 @@ function($, _, Utils, Items) {
 			this.Textes = parent.Textes;
 
 			this.saveManager = parent.saveManager;
+			this.options = this.saveManager.options();
 			this.mediatheque = parent.mediatheque;
 
 			this.name = name;
@@ -52,7 +53,7 @@ function($, _, Utils, Items) {
             var player = this.parent.player;
 
             if (this.data.multicible) this.useOn(aliveMonsters);
-//            else if (aliveMonsters.length == 1) this.useOn(aliveMonsters[0]);
+            else if (aliveMonsters.length == 1 && this.options.cibleUnique) this.useOn(aliveMonsters[0]);
             else this.parent.setPending(this);
         };
 

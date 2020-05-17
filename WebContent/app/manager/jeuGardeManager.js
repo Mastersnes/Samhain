@@ -30,7 +30,6 @@ function($, _, ViewUtils, Utils) {
 		    if (this.type == "garde") {
 		        if (this.parent.tuto > -1) this.ia = 1;
 		        else this.ia = Utils.rand(0, 5);
-		        console.log("Info : IA du garde", this.ia);
 		    }
 		};
 		this.clearMain = function() {

@@ -10,6 +10,7 @@ define(["jquery",
         "app/view/game/histoireView",
         "app/view/game/fightView",
         "app/view/game/jeuGardeView",
+        "app/view/game/quetesView",
         "app/view/game/boutiqueView",
         "app/view/game/glossaireView",
         "app/view/game/inventaireView",
@@ -17,7 +18,7 @@ define(["jquery",
         ],
 function($, _, Utils, PopupUtils, page,
             RecompenseManager, PlayerManager,
-            UIView, HistoireView, FightView, JeuGardeView,
+            UIView, HistoireView, FightView, JeuGardeView, QuetesView,
             BoutiqueView, GlossaireView, InventaireView, EndView) {
 	'use strict';
 
@@ -52,6 +53,7 @@ function($, _, Utils, PopupUtils, page,
             this.fightView = new FightView(this);
             this.jeuGardeView = new JeuGardeView(this);
             this.boutiqueView = new BoutiqueView(this);
+            this.quetesView = new QuetesView(this);
             this.glossaireView = new GlossaireView(this);
             this.inventaireView = new InventaireView(this);
 
@@ -130,6 +132,7 @@ function($, _, Utils, PopupUtils, page,
         		    this.fightView.loop(this);
         		    this.jeuGardeView.loop(this);
         		    this.boutiqueView.loop(this);
+        		    this.quetesView.loop(this);
         		    this.inventaireView.loop(this);
         		    this.playerManager.showNextAmount();
         		    if (this.easterEggs == 0) {
@@ -147,27 +150,11 @@ function($, _, Utils, PopupUtils, page,
         };
 
         this.gameOver = function(gagne) {
-        	if (gagne) {
-        	    this.mediatheque.stopAllMusic();
-        	    var musicName = "music/victory.ogg";
-        		var tutoComplete = this.saveManager.load("TutoComplete");
-                this.saveManager.save("TutoComplete", tutoComplete+1);
-                this.kongregateUtils.score("TutoComplete", tutoComplete+1);
-                var that = this;
-//                setTimeout(function() {
-//                    that.mediatheque.play(musicName, "", function() {
-//                        that.mediatheque.play("music/menu.ogg");
-//                    });
-//                }, 200);
-                this.endGame = true;
-                this.endView.render(gagne);
-        	} else {
-        	    this.playerManager.data.checkpoint = this.playerManager.data.lieu;
-        		var gameOver = this.saveManager.load("GameOver");
-        		this.saveManager.save("GameOver", gameOver+1);
-        		this.kongregateUtils.score("GameOver", gameOver+1);
-        		this.histoireView.go("die");
-        	}
+            this.playerManager.data.checkpoint = this.playerManager.data.lieu;
+            var gameOver = this.saveManager.load("GameOver");
+            this.saveManager.save("GameOver", gameOver+1);
+            this.recompenseManager.addSuccess("GameOver", gameOver+1);
+            this.histoireView.go("die");
         	this.saveManager.saveInSession();
         };
 
@@ -178,10 +165,13 @@ function($, _, Utils, PopupUtils, page,
             this.boutiqueView.open(items, onPurchase, onNoPurchase);
         };
         this.glossaire = function(key, suffixe) {
-            this.glossaireView.show(key, false, suffixe);
+            this.glossaireView.show(key, suffixe);
         };
         this.jeuGarde = function(but, onWin, onFail, onAbandon, startMise) {
             this.jeuGardeView.launch(but, onWin, onFail, onAbandon, startMise);
+        };
+        this.quetes = function(onReturn) {
+            this.quetesView.open(onReturn);
         };
 
         this.makeEvents = function() {
@@ -232,7 +222,7 @@ function($, _, Utils, PopupUtils, page,
                 if(that.easterEggs == 5) {
                     that.easterEggs = 6;
                     console.log("Bravo ! Vous l'avez =) !");
-                    that.recompenseManager.addSuccess("EasterEggs", true);
+                    that.recompenseManager.addSuccess("EasterEggs");
                     return
                 } else if (that.easterEggs < 5) that.glossaireView.list();
 

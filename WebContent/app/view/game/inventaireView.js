@@ -38,7 +38,6 @@ define(["jquery", "underscore",
         };
 
         this.render = function() {
-            console.log("consos", this.consos);
             _.templateSettings.variable = "data";
             var template = _.template(page);
             var templateData = {

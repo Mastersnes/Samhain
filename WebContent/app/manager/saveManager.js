@@ -35,7 +35,7 @@ function($, _, Utils) {
 			        "debuff" : null,
 			        "xp" : 0,
 			        "level" : 0,
-			        "gold" : 500,
+			        "gold" : 0,
 
 			        "attaque" : 1,
 			        "defense" : 0,
@@ -47,38 +47,28 @@ function($, _, Utils) {
 			            "currentBouclier" : "bras",
 			            "magie" : [],
 			            "conso" : [],
-			            "clef" : ["LettreSobac"],
+			            "clef" : [],
 			            "ifObj" : []
 			        },
-                    "lieu" : "ville-garde-simple-1",
+                    "lieu" : "tuto-start",
+                    "savesData" : {},
 
-                    "savesData" : {}
+                    "currentQuest" : {
+                        "name" : null,
+                        "step" : 0
+                    },
+                    "quetesComplete" : []
 			    },
                 "success" : {
-                    "successComplete" : [],
-
-                    "TutoComplete" : false,
-                    "GameStart" : false,
-                    "MaxGoldEarn" : 0,
-                    "HelpSpider" : false,
-                    "HelpTown" : false,
-                    "KillSpider" : false,
-                    "Leak" : false,
-                    "LearnHeal" : false,
-                    "LearnCure" : false,
-                    "MaxLevelEarn" : 1,
-                    "NoChance" : false,
-                    "SaveChild" : false,
-                    "Traitor" : false,
-                    "TraitorSpider" : false,
-                    "Treasure" : false
+                    "successComplete" : []
                 }
             };
 
             this.gameOptions = window.localStorage.getItem(Utils.name + "Options");
             if (!this.gameOptions) {
                 this.gameOptions = {
-                    "selectAuto" : true
+                    "selectAuto" : true,
+                    "cibleUnique" : false
                 };
             }else this.gameOptions = JSON.parse(this.gameOptions);
 		};
@@ -132,11 +122,7 @@ function($, _, Utils) {
 	            this.loaded = true;
 	        	this.saveData = JSON.parse(Utils.decode(this.saveSession));
 
-                //On rejout les succes à ce moment
-                var success = this.load("success");
-                for (var i in success) {
-                    this.kongregateUtils.score(i, success[i]);
-                }
+                //Les succes sont rejoué dans le recompense manager
 	        }
 		};
 

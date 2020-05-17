@@ -39,6 +39,7 @@ define(["jquery", "underscore",
             $(".histoire").fadeOut();
             $(".boutique").fadeOut();
             $(".jeuGarde").fadeOut();
+            $(".quetes").fadeOut();
 
             this.textesBuffer = textes;
             this.onWin = onWin;

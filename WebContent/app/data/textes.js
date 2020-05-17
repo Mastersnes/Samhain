@@ -5,6 +5,7 @@ define([
     "app/data/textes/credits-textes",
     "app/data/textes/ui-textes",
     "app/data/textes/jeuGarde-textes",
+    "app/data/textes/boutique-textes",
     "app/data/textes/glossaire-textes",
     "app/data/textes/inventaire-textes",
     "app/data/textes/etats-textes",
@@ -12,7 +13,7 @@ define([
     "app/data/textes/suffixes-textes",
     "app/data/textes/items-textes",
     "app/data/textes/stories-textes"
-], function(Menu, Options, Credits, UI, JeuGarde, Glossaire, Inventaire, Etats, Monstres, Suffixes, Items, Stories){
+], function(Menu, Options, Credits, UI, JeuGarde, Boutique, Glossaire, Inventaire, Etats, Monstres, Suffixes, Items, Stories){
 	var data = {
 	};
 	
@@ -38,6 +39,7 @@ define([
             if (!text) text = Credits.get(key);
             if (!text) text = UI.get(key);
             if (!text) text = JeuGarde.get(key);
+            if (!text) text = Boutique.get(key);
             if (!text) text = Glossaire.get(key);
             if (!text) text = Inventaire.get(key);
             if (!text) text = Etats.get(key);

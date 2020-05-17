@@ -329,6 +329,14 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "clefS2" : {
                 "name" : "clefS2",
                 "texte" : "clefS2-texte"
+            },
+            "anneau-bandit" : {
+                "name" : "anneau-bandit",
+                "texte" : "anneau-bandit-texte"
+            },
+            "poulet" : {
+                "name" : "poulet",
+                "texte" : "poulet-texte"
             }
 	    },
 	    "ifObj" : [

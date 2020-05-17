@@ -5,9 +5,10 @@ define(["jquery",
         "app/manager/levelManager",
         "app/manager/etatsManager",
         "app/data/items",
-        "app/data/etats"
+        "app/data/etats",
+        "app/data/quetes",
         ],
-function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
+function($, _, Utils, LevelManager, EtatsManager, Items, Etats, Quetes) {
 	'use strict';
 
 	return function(parent) {
@@ -53,6 +54,27 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
             }
 
             data[lastKey] = value;
+		};
+
+		this.add = function(key, amount) {
+		    var val = this.get(key);
+		    this.set(key, val + amount);
+		}
+
+		this.finalizeQuest = function(percent) {
+		    var quest = Quetes.get(this.get("currentQuest.name"));
+		    if (quest) {
+                if (percent == undefined) {
+                    var currentStep = this.get("currentQuest.step");
+                    percent = Utils.toPercent(currentStep, quest.steps);
+                }
+
+                var recompense = Utils.percent(quest.price, percent);
+                this.addGold(recompense);
+                this.data.quetesComplete.push(quest.name);
+                this.set("currentQuest.name", null);
+                this.set("currentQuest.step", 0);
+            }else console.log("Erreur, la quete "+ this.get("currentQuest.name") +" n'existe pas");
 		};
 
 		/**
@@ -368,6 +390,11 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
             arme.offensif = true;
             this.mediatheque.playSound(arme.sound + ".wav");
         };
+		this.hurtPercent = function(amount, withDef, element) {
+		    var lifeMax = this.data.life.max;
+            var amount = Math.round(Utils.percent(lifeMax, amount));
+            this.hurt(amount, withDef, element);
+		};
 		this.hurt = function(amount, withDef, element) {
 		    var degats = amount;
 
@@ -436,6 +463,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
 		    this.levelManager.add(amount);
 		};
 		this.levelUp = function() {
+		    this.recompenseManager.addSuccess("LevelEarn", this.data.level);
 		    this.data.attaque++;
 		    this.data.life.max += 25;
 		    if (this.data.unlockMana) this.data.mana.max++;
@@ -453,8 +481,9 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
             if (this.data.gold < 0) this.data.gold = 0;
             if (this.data.gold > Utils.MAX_GOLD) {
                 this.data.gold = Utils.MAX_GOLD;
-                this.recompenseManager.addSuccess("MaxGoldEarn", true);
+                this.recompenseManager.addSuccess("MaxGoldEarn");
             }
+            this.recompenseManager.addSuccess("GoldEarn", this.data.gold);
         };
         this.achete = function(itemId) {
             var item = Items.get(itemId);
@@ -606,7 +635,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats) {
             });
         };
 
-        // Non uilisé
+        // Non utilisé
         this.showDegats = function() {
         };
 

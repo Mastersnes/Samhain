@@ -31,10 +31,9 @@ define([], function() {
                     "action" : [
                         {"key" : "random", "params" : [
                             "ville-porte-contourner-reussite-1"
-                            //TODO : Bouchon, a retirer !!!
-//                            , "ville-porte-contourner-echec-1", "ville-porte-contourner-echec-1",
-//                            "ville-porte-contourner-echec-1", "ville-porte-contourner-echec-1",
-//                            "ville-porte-contourner-echec-1", "ville-porte-contourner-echec-1"
+                            , "ville-porte-contourner-echec-1", "ville-porte-contourner-echec-1",
+                            "ville-porte-contourner-echec-1", "ville-porte-contourner-echec-1",
+                            "ville-porte-contourner-echec-1", "ville-porte-contourner-echec-1"
                         ]}
                     ]
                 }
@@ -49,17 +48,17 @@ define([], function() {
                         "ville-porte-demander-texte-4", "ville-porte-demander-texte-5"],
             "actions" : [
                 {
-                    "name" : "forcer-passage",
-                    "action" : [
-                        {"key" : "go", "params" : [ "ville-porte-attaquer-1"]}
-                    ]
-                },
-                {
                     "name" : "pourquoi",
                     "action" : [
                         {"key" : "go", "params" : [ "ville-porte-demander-2"]}
                     ]
                 },
+                {
+                    "name" : "forcer-passage",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-porte-attaquer-1"]}
+                    ]
+                }
             ]
         },
         "ville-porte-demander-2" : {
@@ -67,15 +66,15 @@ define([], function() {
                         "ville-porte-demander-2-texte-3", "ville-porte-demander-2-texte-4"],
             "actions" : [
                 {
-                    "name" : "refuser",
-                    "action" : [
-                        {"key" : "go", "params" : [ "ville-porte-demander-refus"]}
-                    ]
-                },
-                {
                     "name" : "quel-recompense",
                     "action" : [
                         {"key" : "go", "params" : [ "ville-porte-demander-3"]}
+                    ]
+                },
+                {
+                    "name" : "refuser",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-porte-demander-refus"]}
                     ]
                 },
             ]
@@ -85,15 +84,15 @@ define([], function() {
                         "ville-porte-demander-3-texte-3", "ville-porte-demander-3-texte-4"],
             "actions" : [
                 {
-                    "name" : "refuser",
-                    "action" : [
-                        {"key" : "go", "params" : [ "ville-porte-demander-refus"]}
-                    ]
-                },
-                {
                     "name" : "accepter",
                     "action" : [
                         {"key" : "go", "params" : [ "ville-porte-demander-4"]}
+                    ]
+                },
+                {
+                    "name" : "refuser",
+                    "action" : [
+                        {"key" : "go", "params" : [ "ville-porte-demander-refus"]}
                     ]
                 }
             ]
@@ -105,7 +104,7 @@ define([], function() {
                 {
                     "name" : "en-route",
                     "action" : [
-                        {"key" : "go", "params" : [ "ville-porte-demander-refus"]}
+                        {"key" : "go", "params" : [ "bandits-porte-debut"]}
                     ]
                 }
             ]
@@ -118,8 +117,8 @@ define([], function() {
             "before" : function(histoire) {
                 histoire.gain("RefusQueteGardeVille", true);
             },
-            "textes" : ["ville-porte-demander-2-texte-1", "ville-porte-demander-2-texte-2", "",
-                        "ville-porte-demander-2-texte-3", "ville-porte-demander-2-texte-4"],
+            "textes" : ["ville-porte-demander-refus-texte-1", "ville-porte-demander-refus-texte-2",
+                        "ville-porte-demander-refus-texte-3"],
             "actions" : [
                 {
                     "name" : "lattaquer-m",
@@ -155,6 +154,7 @@ define([], function() {
                 {
                     "name" : "se-battre",
                     "action" : [
+                        {"key" : "score", "params" : ["HorsLaLoi"]},
                         {"key" : "gain", "params" : ["HorsLaLoi"]},
                         {"key" : "fight", "params" : [[
                             "garde", "garde", "garde", "garde"
@@ -170,7 +170,7 @@ define([], function() {
                 {
                     "name" : "entrer-ville",
                     "action" : [
-                        {"key" : "go", "params" : [ "ville-porte-insulter-3"]}
+                        {"key" : "go", "params" : [ "ville-entree-1"]}
                     ]
                 },
             ]
@@ -185,6 +185,7 @@ define([], function() {
                 {
                     "name" : "se-battre",
                     "action" : [
+                        {"key" : "score", "params" : ["HorsLaLoi"]},
                         {"key" : "gain", "params" : ["HorsLaLoi"]},
                         {"key" : "fight", "params" : [[
                             {"name": "garde", "suffixe":"feroce"}
@@ -283,6 +284,7 @@ define([], function() {
                 {
                     "name" : "montrer-anneau",
                     "action" : [
+                        {"key" : "perte", "params" : ["anneau-bandit"]},
                         {"key" : "go", "params" : [ "ville-porte-retour-2"]}
                     ]
                 }

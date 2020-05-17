@@ -51,6 +51,28 @@ define([], function(){
             en : "-"
         },
 
+        "ville-entree-retour-quete-texte-1" : {
+            fr : "Votre quête terminée, vous retournez au centre de la ville.",
+            en : "-"
+        },
+
+        "ville-entree-echec-quete-texte-1" : {
+            fr : "Vous vous réveillez à moitié étourdis...",
+            en : "-"
+        },
+        "ville-entree-echec-quete-texte-2" : {
+            fr : "On peut dire qu'ils n'y ont pas été de main morte.",
+            en : "-"
+        },
+        "ville-entree-echec-quete-texte-3" : {
+            fr : "L'esprit encore embrumé, vous retournez au centre de la ville.",
+            en : "-"
+        },
+        "ville-entree-echec-quete-texte-4" : {
+            fr : "L'aventure n'attend pas !",
+            en : "-"
+        },
+
         /**
         * Boutiques
         **/

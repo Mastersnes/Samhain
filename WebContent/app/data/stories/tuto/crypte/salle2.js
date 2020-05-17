@@ -104,6 +104,7 @@ define([], function() {
         	"actions" : [
         		{
         			"name" : "continue", "action" : [
+        				{"key" : "score", "params" : ["FoundFireball"]},
         				{"key" : "gain", "params" : ["bouleFeu"]},
         				{"key" : "upMG", "params" : [2]},
         				{"key" : "go", "params" : ["necroGS"]}

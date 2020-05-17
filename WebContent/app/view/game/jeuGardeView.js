@@ -37,6 +37,7 @@ define(["jquery", "underscore",
             $(".histoire").fadeOut();
             $(".boutique").fadeOut();
             $(".fight").fadeOut();
+            $(".quetes").fadeOut();
             $(".ui").fadeOut();
 
             this.onWin = onWin;

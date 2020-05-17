@@ -197,6 +197,10 @@ define([], function(){
             fr : "Ouvrir la porte",
             en : "Open the door"
         },
+        "diriger-porte" : {
+            fr : "Se diriger vers la porte",
+            en : "Walk to the door"
+        },
         "ouvrir" : {
             fr : "Ouvrir",
             en : "Open"
@@ -237,6 +241,38 @@ define([], function(){
             fr : "Se servir",
             en : "Help yourself"
         },
+        "chercher-faille" : {
+            fr : "Chercher une faille",
+            en : "Search for a flaw"
+        },
+        "chercher-indice" : {
+            fr : "Chercher des indices",
+            en : "Search for clues"
+        },
+        "chercher" : {
+            fr : "Chercher",
+            en : "Search"
+        },
+        "escalader" : {
+            fr : "Escalader",
+            en : "Climb"
+        },
+        "continuer-infiltration" : {
+            fr : "Continuer l'infiltration",
+            en : "Continue the infiltration"
+        },
+        "consulter" : {
+            fr : "Consulter",
+            en : "Consult"
+        },
+        "lattraper" : {
+            fr : "L'attraper",
+            en : "Catch it"
+        },
+        "linterroger" : {
+            fr : "L'interroger",
+            en : "Ask him"
+        },
 
         /**
         * Interaction avec des gens ou objets
@@ -252,6 +288,10 @@ define([], function(){
         "laisser-tomber" : {
             fr : "Laisser tomber",
             en : "Drop out"
+        },
+        "tomber" : {
+            fr : "Tomber",
+            en : "Fall"
         },
         "let-him" : {
             fr : "Le laisser",
@@ -357,6 +397,62 @@ define([], function(){
             fr : "Trop cher",
             en : "Too expensive"
         },
+        "sannoncer" : {
+            fr : "S'annoncer",
+            en : "Announce yourself"
+        },
+        "observer" : {
+            fr : "Observer",
+            en : "Look at"
+        },
+        "regarde-leau" : {
+            fr : "Regarder l'eau",
+            en : "Look at water"
+        },
+        "lassassiner" : {
+            fr : "L'assassiner",
+            en : "Kill him"
+        },
+        "questionner-fermier" : {
+            fr : "Questionner le fermier",
+            en : "Ask the farmer"
+        },
+        "interroger-paysans" : {
+            fr : "Interroger les paysans",
+            en : "Ask the peasants"
+        },
+        "questionner-tavernier" : {
+            fr : "Questionner le tavernier",
+            en : "Ask the taverner"
+        },
+        "menacer" : {
+            fr : "Les menacer",
+            en : "Threaten them"
+        },
+        "soudoyer-10" : {
+            fr : "Les soudoyer</br>(10po)",
+            en : "Bribe them</br>(10po)"
+        },
+        "le-rattraper" : {
+            fr : "Le rattraper",
+            en : "Catch him"
+        },
+        "prendre-verre" : {
+            fr : "Prendre un verre",
+            en : "Have a drink"
+        },
+        "sauver-poule" : {
+            fr : "Sauver la poule",
+            en : "Save the chicken"
+        },
+        "mettre-abris" : {
+            fr : "Se mettre à l'abris",
+            en : "Take cover"
+        },
+        "faire-rapport" : {
+            fr : "Faire votre rapport",
+            en : "Make your report"
+        },
 
         /**
         * Dialogue
@@ -421,6 +517,18 @@ define([], function(){
             fr : "De l'agitation&nbsp;?",
             en : "Some unrest?"
         },
+        "quest-ce-que-gagne" : {
+            fr : "Qu'est ce que j'y gagne&nbsp;?",
+            en : "What's my reward?"
+        },
+        "la-quete" : {
+            fr : "La quête",
+            en : "The quest"
+        },
+        "les-poulets" : {
+            fr : "Les poulets ?",
+            en : "The chicken?"
+        },
 
         /**
         * Achat
@@ -453,6 +561,10 @@ define([], function(){
             fr : "Gauche",
             en : "Left"
         },
+        "left" : {
+            fr : "Gauche",
+            en : "Left"
+        },
         "go-left" : {
             fr : "Aller à gauche",
             en : "Go to the left"
@@ -477,6 +589,10 @@ define([], function(){
             fr : "Approcher",
             en : "Approach"
         },
+        "sapprocher" : {
+            fr : "S'approcher",
+            en : "Approach it"
+        },
         "entrer" : {
             fr : "Entrer",
             en : "Enter"
@@ -484,6 +600,10 @@ define([], function(){
         "suivre-trace" : {
             fr : "Suivre les traces",
             en : "Follow the tracks"
+        },
+        "suivre-direction" : {
+            fr : "Suivre la direction",
+            en : "Follow the direction"
         },
         "revenir-pas" : {
             fr : "Revenir sur vos pas",
@@ -533,6 +653,10 @@ define([], function(){
             fr : "Entrer dans la ville",
             en : "Enter the city"
         },
+        "entrer-arene" : {
+            fr : "Entrer dans l’arène",
+            en : "Enter the arena"
+        },
         "retour-ville" : {
             fr : "Retour en ville",
             en : "Back to the city"
@@ -572,6 +696,42 @@ define([], function(){
         "taverne" : {
             fr : "Taverne",
             en : "Tavern"
+        },
+        "infiltrer-foule" : {
+            fr : "Infiltrer la foule",
+            en : "Infiltrate the crowd"
+        },
+        "contourner-foule" : {
+            fr : "Contourner la foule",
+            en : "Bypass the crowd"
+        },
+        "aller-champs" : {
+            fr : "Aller aux champs",
+            en : "Go to the fields"
+        },
+        "se-rendre-ville" : {
+            fr : "Se rendre en ville",
+            en : "Go to the city"
+        },
+        "aller-taverne" : {
+            fr : "Aller à la taverne",
+            en : "Go to the tavern"
+        },
+        "visiter-cuisine" : {
+            fr : "Visiter les cuisines",
+            en : "Visit the kitchen"
+        },
+        "rentrer-ville" : {
+            fr : "Rentrer à la ville",
+            en : "Go back to city"
+        },
+        "rentrer" : {
+            fr : "Rentrer",
+            en : "Go back"
+        },
+        "monter" : {
+            fr : "Monter",
+            en : "Climb"
         },
 	};
 	
