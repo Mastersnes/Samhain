@@ -240,6 +240,20 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats, Quetes) {
             return found;
 		};
 
+		/**
+		* Compte le nombre de fois que le joueur possede cet objet
+		**/
+		this.countItem = function(itemId) {
+		    var nb = 0;
+		    nb += Utils.count(this.data.equipment.arme, itemId);
+		    if (!nb) nb += Utils.count(this.data.equipment.bouclier, itemId);
+		    if (!nb) nb += Utils.count(this.data.equipment.magie, itemId);
+		    if (!nb) nb += Utils.count(this.data.equipment.conso, itemId);
+		    if (!nb) nb += Utils.count(this.data.equipment.clef, itemId);
+		    if (!nb) nb += Utils.count(this.data.equipment.ifObj, itemId);
+            return nb;
+		};
+
 		// Vrai si le joueur ne possede aucun des objets
 		// Faux si le joueur possede au moins un des objets
         this.hasNoOne = function(items) {

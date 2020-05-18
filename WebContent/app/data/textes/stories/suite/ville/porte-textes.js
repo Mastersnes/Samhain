@@ -81,7 +81,7 @@ define([], function(){
             en : "-"
         },
         "ville-porte-demander-4-texte-2" : {
-            fr : "Pour prouver ta réussite, apporte-moi l'anneau que leur chef porte à son oreille.",
+            fr : "Pour prouver ta réussite, apporte-moi <span key='anneau-bandit'>l'anneau</span> que leur chef porte à son oreille.",
             en : "-"
         },
         "ville-porte-demander-4-texte-3" : {

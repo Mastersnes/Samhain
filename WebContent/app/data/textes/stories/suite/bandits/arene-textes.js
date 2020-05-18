@@ -64,7 +64,7 @@ define([], function(){
         },
 
         "bandits-arene-assassiner-2-texte-1" : {
-            fr : "Maintenant seul, vous vous approchez du corps du roi et lui découpez l'oreille avec sa propre dague pour y récupérer l'anneau doré.",
+            fr : "Maintenant seul, vous vous approchez du corps du roi et lui découpez l'oreille avec sa propre dague pour y récupérer <span key='anneau-bandit'>l'anneau doré</span>.",
             en : "-"
         },
         "bandits-arene-assassiner-2-texte-2" : {

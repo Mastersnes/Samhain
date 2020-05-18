@@ -65,7 +65,7 @@ define([], function(){
         },
 
         "quete1-debut-fermier-2-texte-1" : {
-            fr : "&laquo; Alors c'est toi qui va retrouver mes poulets ? &raquo;",
+            fr : "&laquo; Alors c'est toi qui va retrouver mes <span key='poulet'>poulets</span> ? &raquo;",
             en : ""
         },
         "quete1-debut-fermier-2-texte-2" : {
@@ -132,7 +132,7 @@ define([], function(){
             en : ""
         },
         "quete1-debut-indice-2-texte-3" : {
-            fr : "C'est certain, les volailles se sont enfuies par là !",
+            fr : "C'est certain, les <span key='poulet'>volailles</span> se sont enfuies par là !",
             en : ""
         },
 
@@ -166,7 +166,7 @@ define([], function(){
             en : ""
         },
         "quete1-debut-indice-gauche-2-texte-2" : {
-            fr : "À vos pieds, complètement repu, un des poulets essaie de s'enfuir en roulant sur lui même.",
+            fr : "À vos pieds, complètement repu, un des <span key='poulet'>poulets</span> essaie de s'enfuir en roulant sur lui même.",
             en : ""
         },
         "quete1-debut-indice-gauche-2-texte-3" : {
@@ -271,12 +271,12 @@ define([], function(){
             en : ""
         },
         "quete1-champ-menacer-texte-3" : {
-            fr : "Les trois paysans se lève et s'avance vers vous. Ça va faire mal...",
+            fr : "Les <span key='villageois'>trois paysans</span> se lève et s'avance vers vous. Ça va faire mal...",
             en : ""
         },
 
         "quete1-champ-menacer-2-texte-1" : {
-            fr : "Les gros bras s'écroulent au sol. Maintenant, ils ont l'air bien intimidé.",
+            fr : "Les brutes s'écroulent au sol. Maintenant, ils ont l'air bien intimidé.",
             en : ""
         },
         "quete1-champ-menacer-2-texte-2" : {
@@ -333,7 +333,7 @@ define([], function(){
             en : ""
         },
         "quete1-berge-2-texte-2" : {
-            fr : "L'un des poulets, délicatement niché entre deux pierre, a profité du silence du lieu pour piquer un petit somme.",
+            fr : "L'un des <span key='poulet'>poulets</span>, délicatement niché entre deux pierre, a profité du silence du lieu pour piquer un petit somme.",
             en : ""
         },
 
@@ -367,7 +367,7 @@ define([], function(){
             en : ""
         },
         "quete1-ville-2-texte-2" : {
-            fr : "Un des volatiles s'est niché sur la cloche du bâtiment et semble bien vouloir y rester.",
+            fr : "Un des <span key='poulet'>volatiles</span> s'est niché sur la cloche du bâtiment et semble bien vouloir y rester.",
             en : ""
         },
         "quete1-ville-2-texte-3" : {
@@ -532,7 +532,7 @@ define([], function(){
             en : ""
         },
         "quete1-taverne-4-texte-3" : {
-            fr : "Le cuisinier est en train de plumé votre protégé !",
+            fr : "Le <span key='villageois'>cuisinier</span> est en train de plumé votre <span key='poulet'>protégé</span> !",
             en : ""
         },
         "quete1-taverne-4-texte-4" : {
@@ -586,7 +586,7 @@ define([], function(){
             en : ""
         },
         "quete1-retour-2-texte-2" : {
-            fr : "Mais soudain, là, à quelque pas, un des fuyard vous fait face.",
+            fr : "Mais soudain, là, à quelque pas, un des <span key='poulet'>fuyards</span> vous fait face.",
             en : ""
         },
         "quete1-retour-2-texte-3" : {

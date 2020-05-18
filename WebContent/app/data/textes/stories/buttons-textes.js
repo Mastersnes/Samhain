@@ -45,6 +45,7 @@ define([], function(){
             fr : "Terminer",
             en : "Finish"
         },
+		//Doublon
         "reessayer" : {
             fr : "Réessayer",
             en : "Retry"
@@ -130,11 +131,11 @@ define([], function(){
             en : "Searching coffins"
         },
         "voir-torche-gauche" : {
-            fr : "Voir la torche à gauche",
+            fr : "Voir la torche de gauche",
             en : "See the torch on the left"
         },
         "voir-torche-droite" : {
-            fr : "Voir la torche à droite",
+            fr : "Voir la torche de droite",
             en : "See the torch on the right"
         },
         "forcer-coffre" : {
@@ -338,7 +339,7 @@ define([], function(){
             en : "Defende the city"
         },
         "demander-entrer" : {
-            fr : "Demander à entrer",
+            fr : "Demander pour entrer",
             en : "Ask to enter"
         },
         "demander-travail" : {
@@ -446,7 +447,7 @@ define([], function(){
             en : "Save the chicken"
         },
         "mettre-abris" : {
-            fr : "Se mettre à l'abris",
+            fr : "Se mettre à l'abri",
             en : "Take cover"
         },
         "faire-rapport" : {
@@ -510,7 +511,7 @@ define([], function(){
             en : "Too bad&hellip;"
         },
         "quel-recompense" : {
-            fr : "Quel est la récompense&nbsp;?",
+            fr : "Quelle est la récompense&nbsp;?",
             en : "What's the reward?"
         },
         "agitation" : {
@@ -518,7 +519,7 @@ define([], function(){
             en : "Some unrest?"
         },
         "quest-ce-que-gagne" : {
-            fr : "Qu'est ce que j'y gagne&nbsp;?",
+            fr : "Qu'est-ce que j'y gagne&nbsp;?",
             en : "What's my reward?"
         },
         "la-quete" : {
@@ -556,10 +557,6 @@ define([], function(){
         "en-route" : {
             fr : "En route !",
             en : "Let's go!"
-        },
-        "left" : {
-            fr : "Gauche",
-            en : "Left"
         },
         "left" : {
             fr : "Gauche",

@@ -91,6 +91,13 @@ define(["jquery", "sha"], function($, sha){
         contains : function(tab, key) {
             return tab.indexOf(key) > -1;
         },
+        count : function(tab, key) {
+            var nb = 0;
+            for (var i in tab) {
+                if (tab[i] == key) nb++;
+            }
+            return nb;
+        },
         fullscreen : function() {
             try {
 	        	var isInFullScreen = (document.fullscreenElement && document.fullscreenElement !== null) ||

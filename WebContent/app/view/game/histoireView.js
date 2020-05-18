@@ -340,6 +340,8 @@ define(["jquery", "underscore",
                 case "hasItem":
                     var items = params;
                     return this.player.hasAll(items);
+                case "hasItemNb":
+                    return this.player.countItem(params[0]) == params[1];
                 case "hasMG":
                     var amount = params[0];
                     return this.player.get("mana.current") >= amount;

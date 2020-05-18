@@ -25,7 +25,7 @@ define([], function(){
                 en : "Bandit King's Ring"
             },
             "anneau-bandit-texte" : {
-                fr : "Un anneau un peu plus doré que les autre. De la camelote si vous voulez mon avis...",
+                fr : "Un anneau un peu plus doré que les autres. De la camelote si vous voulez mon avis...",
                 en : "A ring a little more golden than the others. Junk if you want my opinion..."
             },
             "poulet" : {
