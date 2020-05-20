@@ -5,11 +5,11 @@ define([], function(){
 	        * PokGard
 	        **/
             "pokgard-debut" : {
-                fr : "Allons-y mon gars, j’espère que t'es prêt !",
+                fr : "Allons-y mon gars, j’espère que t'es prêt&nbsp;!",
                 en : "Let's go, I hope you're ready!"
             },
             "pokgard-win" : {
-                fr : "Bien joué ! T'en referas bien une ? Non ?",
+                fr : "Bien joué&nbsp;! T'en referas bien une&nbsp;? Non&nbsp;?",
                 en : "Well played! You' re gonna do another one, aren't you?"
             },
 
@@ -53,11 +53,11 @@ define([], function(){
                 en : "Purse:"
             },
             "abandonner-legend" : {
-                fr : "Abandonner ?",
+                fr : "Abandonner&nbsp;?",
                 en : "Give up?"
             },
             "abandonner-confirm" : {
-                fr : "Désirez-vous réellement abandonner la partie ?",
+                fr : "Désirez-vous réellement abandonner la partie&nbsp;?",
                 en : "Do you really want to give up the game?"
             },
             "regles" : {
@@ -109,15 +109,15 @@ define([], function(){
                 en : "-"
             },
             "player-win" : {
-                fr : "Félicitations, vous raflez la mise !</br><b>Cliquez pour continuer</b>.",
+                fr : "Félicitations, vous raflez la mise&nbsp;!</br><b>Cliquez pour continuer</b>.",
                 en : "-"
             },
             "player-lose" : {
-                fr : "Vous perdez de <b>?</b> points contre <b>?</b>...</br>Le garde rafle la mise</br><b>Cliquez pour continuer</b>.",
+                fr : "Vous perdez de <b>?</b> points contre <b>?</b>&hellip;</br>Le garde rafle la mise</br><b>Cliquez pour continuer</b>.",
                 en : "-"
             },
             "match-nul" : {
-                fr : "Match nul...</br><b>Cliquez pour continuer</b>.",
+                fr : "Match nul&hellip;</br><b>Cliquez pour continuer</b>.",
                 en : "-"
             },
 
@@ -141,7 +141,7 @@ define([], function(){
             * Tuto
             **/
             "pokgard-tuto-0" : {
-                fr : "Tu vas voir, les règles sont très simples.</br><b>Clique ici</b>, je vais t'expliquer...",
+                fr : "Tu vas voir, les règles sont très simples.</br><b>Clique ici</b>, je vais t'expliquer&hellip;",
                 en : ""
             },
             "pokgard-tuto-1" : {
@@ -183,7 +183,7 @@ define([], function(){
             },
 
             "pokgard-tuto-10" : {
-                fr : "Félicitations, tu as <b>pioché</b> ta première carte ! Cela a automatiquement <b>passé ton tour</b>.",
+                fr : "Félicitations, tu as <b>pioché</b> ta première carte&nbsp;! Cela a automatiquement <b>passé ton tour</b>.",
                 en : ""
             },
             "pokgard-tuto-11" : {
@@ -199,7 +199,7 @@ define([], function(){
                 en : ""
             },
             "pokgard-tuto-14" : {
-                fr : "Garde-les précieusement. Plus tu as de <b>points</b>, plus tu as de chance de <b>gagner la partie</b> !",
+                fr : "Garde-les précieusement. Plus tu as de <b>points</b>, plus tu as de chance de <b>gagner la partie</b>&nbsp;!",
                 en : ""
             },
             "pokgard-tuto-15" : {
@@ -207,20 +207,20 @@ define([], function(){
                 en : ""
             },
             "pokgard-tuto-16" : {
-                fr : "Tu en as justement une. <b>Clique</b> dessus et <b>utilise</b> là sur ma carte !",
+                fr : "Tu en as justement une. <b>Clique</b> dessus et <b>utilise</b> là sur ma carte&nbsp;!",
                 en : ""
             },
 
             "pokgard-tuto-17" : {
-                fr : "Bien joué !</br>Les <b>actions</b> te permettront de renverser la situation et d'amasser <b>plus de points</b>.",
+                fr : "Bien joué&nbsp;!</br>Les <b>actions</b> te permettront de renverser la situation et d'amasser <b>plus de points</b>.",
                 en : ""
             },
             "pokgard-tuto-18" : {
-                fr : "Bien, maintenant, c'est à toi de <b>jouer</b> !</br>N'oublie pas : ne <b>mise</b> jamais plus que ce que tu possèdes !",
+                fr : "Bien, maintenant, c'est à toi de <b>jouer</b>&nbsp;!</br>N'oublie pas : ne <b>mise</b> jamais plus que ce que tu possèdes&nbsp;!",
                 en : ""
             },
             "pokgard-tuto-18-2" : {
-                fr : "Bien, maintenant, reprenons notre <b>partie</b> !</br>N'oublie pas : ne <b>mise</b> jamais plus que ce que tu possèdes !",
+                fr : "Bien, maintenant, reprenons notre <b>partie</b>&nbsp;!</br>N'oublie pas : ne <b>mise</b> jamais plus que ce que tu possèdes&nbsp;!",
                 en : ""
             },
 	};

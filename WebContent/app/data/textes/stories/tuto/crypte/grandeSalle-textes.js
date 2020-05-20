@@ -37,12 +37,12 @@ define([], function(){
             en : "The king, in agony, expresses his last wish to you:"
         },
         "necroGSRoiFight2-texte-3" : {
-            fr : "&laquo; Merci, noble aventurier. Je me meurs&hellip; Mais vous, vous pouvez encore sauver votre espèce.",
-            en : "&laquo; Thank you, noble adventurer. I'm dying&hellip; But you can still save your species."
+            fr : "&laquo;&nbsp;Merci, noble aventurier. Je me meurs&hellip; Mais vous, vous pouvez encore sauver votre espèce.",
+            en : "&laquo;&nbsp;Thank you, noble adventurer. I'm dying&hellip; But you can still save your species."
         },
         "necroGSRoiFight2-texte-4" : {
-            fr : "Vengez-nous, combattez pour l'araignée&nbsp;! &raquo;",
-            en : "Revenge us, fight for the spider&nbsp;! &raquo;"
+            fr : "Vengez-nous, combattez pour l'araignée&nbsp;!&nbsp;&raquo;",
+            en : "Revenge us, fight for the spider&nbsp;!&nbsp;&raquo;"
         },
         "necroGSRoiFight2-texte-5" : {
             fr : "Avant de mourir, le roi s'arrache un <span key='crocRoi'>croc</span> et le jette à vos pieds.",

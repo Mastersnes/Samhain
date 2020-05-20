@@ -9,7 +9,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-fouiller-reussite-texte-2" : {
-            fr : "Par chance, vous tombez sur la réserve. Ces vivres vous seront bien utile !",
+            fr : "Par chance, vous tombez sur la réserve. Ces vivres vous seront bien utile&nbsp;!",
             en : "-"
         },
 
@@ -21,7 +21,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-fouiller-echec-texte-2" : {
-            fr : "Rien ni personne n'est là pour vous arrêter, même pas une petite pomme...",
+            fr : "Rien ni personne n'est là pour vous arrêter, même pas une petite pomme&hellip;",
             en : "-"
         },
 
@@ -37,7 +37,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-fouiller-critique-texte-3" : {
-            fr : "Au moins, vous pourrez passer votre déception sur quelqu'un...",
+            fr : "Au moins, vous pourrez passer votre déception sur quelqu'un&hellip;",
             en : "-"
         },
 
@@ -49,7 +49,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-2-texte-2" : {
-            fr : "Des bruits au centre du village vous indiquent le lieu où chercher...",
+            fr : "Des bruits au centre du village vous indiquent le lieu où chercher&hellip;",
             en : "-"
         },
 
@@ -58,7 +58,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-3-texte-2" : {
-            fr : "Que se passe-t-il ? Il semblerait qu'ils assistent à un combat.",
+            fr : "Que se passe-t-il&nbsp;? Il semblerait qu'ils assistent à un combat.",
             en : "-"
         },
 
@@ -74,7 +74,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-infiltrer-reussite-texte-3" : {
-            fr : "Maintenant à quelques mètres du combat, vous pouvez enfin apprécier la scène à votre convenance...",
+            fr : "Maintenant à quelques mètres du combat, vous pouvez enfin apprécier la scène à votre convenance&hellip;",
             en : "-"
         },
 
@@ -107,7 +107,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-infiltrer-2-reussite-texte-3" : {
-            fr : "Le bandit le plus riche des environs n'est plus qu'à quelques mètres de vous...",
+            fr : "Le bandit le plus riche des environs n'est plus qu'à quelques mètres de vous&hellip;",
             en : "-"
         },
 
@@ -119,7 +119,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-roi-sannoncer-texte-2" : {
-            fr : "&laquo; Eh bien ! Tu m'impressionne étranger. Très peu de gens ont eu l'audace de m'approcher tu sais... &raquo;",
+            fr : "&laquo;&nbsp;Eh bien&nbsp;! Tu m'impressionne étranger. Très peu de gens ont eu l'audace de m'approcher tu sais&hellip;&nbsp;&raquo;",
             en : "-"
         },
 	    "bandits-village-roi-sannoncer-texte-3" : {
@@ -127,12 +127,12 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-roi-sannoncer-texte-4" : {
-            fr : "&laquo; Que dirais-tu d'un petit duel à mort ? Tout ce qu'il y a de plus banal en soit. &raquo;",
+            fr : "&laquo;&nbsp;Que dirais-tu d'un petit duel à mort&nbsp;? Tout ce qu'il y a de plus banal en soit.&nbsp;&raquo;",
             en : "-"
         },
 
 	    "bandits-village-roi-sannoncer-question-texte-1" : {
-            fr : "&laquo; Ne sois pas si prétentieux héros... Tu ne gagneras pas ! &raquo;",
+            fr : "&laquo;&nbsp;Ne sois pas si prétentieux héros&hellip; Tu ne gagneras pas&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
 	    "bandits-village-roi-sannoncer-question-texte-2" : {
@@ -140,7 +140,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-roi-sannoncer-question-texte-3" : {
-            fr : "Le combat est inévitable...",
+            fr : "Le combat est inévitable&hellip;",
             en : "-"
         },
 
@@ -149,7 +149,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-roi-sannoncer-refus-texte-2" : {
-            fr : "&laquo; Excuse-moi, tu pensais peut-être avoir le choix ? &raquo;",
+            fr : "&laquo;&nbsp;Excuse-moi, tu pensais peut-être avoir le choix&nbsp;?&nbsp;&raquo;",
             en : "-"
         },
 		//bandits-village-roi-sannoncer-question-texte-3
@@ -158,7 +158,7 @@ define([], function(){
         * Seconde Infiltration - Echec
         **/
 	    "bandits-village-infiltrer-2-echec-texte-1" : {
-            fr : "Vous continuez à vous approcher discrètement, silencieusement... Trop silencieusement d'ailleurs.",
+            fr : "Vous continuez à vous approcher discrètement, silencieusement&hellip; Trop silencieusement d'ailleurs.",
             en : "-"
         },
 	    "bandits-village-infiltrer-2-echec-texte-2" : {
@@ -166,7 +166,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-infiltrer-2-echec-texte-3" : {
-            fr : "Votre hurlement de douleur rugit dans tout le village, alarmant toute la mêlée...",
+            fr : "Votre hurlement de douleur rugit dans tout le village, alarmant toute la mêlée&hellip;",
             en : "-"
         },
 
@@ -175,7 +175,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-infiltrer-2-echec-2-texte-2" : {
-            fr : "&laquo; Alors alors, qu'avons-nous là ? Une fillette se serait-elle mêlée à notre assemblée ? &raquo;",
+            fr : "&laquo;&nbsp;Alors alors, qu'avons-nous là&nbsp;? Une fillette se serait-elle mêlée à notre assemblée&nbsp;?&nbsp;&raquo;",
             en : "-"
         },
 	    "bandits-village-infiltrer-2-echec-2-texte-3" : {
@@ -183,7 +183,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-infiltrer-2-echec-2-texte-4" : {
-            fr : "&laquo; Amenez-le dans l'arène mes amis, que nous rigolions un peu. &raquo;",
+            fr : "&laquo;&nbsp;Amenez-le dans l'arène mes amis, que nous rigolions un peu.&nbsp;&raquo;",
             en : "-"
         },
 	    "bandits-village-infiltrer-2-echec-2-texte-5" : {
@@ -191,7 +191,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-infiltrer-2-echec-2-texte-6" : {
-            fr : "Il semblerait qu'il ne vous reste plus qu'à vous défendre contre ces créatures...",
+            fr : "Il semblerait qu'il ne vous reste plus qu'à vous défendre contre ces créatures&hellip;",
             en : "-"
         },
 
@@ -199,7 +199,7 @@ define([], function(){
         * Infiltration - Echec
         **/
 	    "bandits-village-infiltrer-echec-texte-1" : {
-            fr : "Vous commencez à avancer discrètement, telle une ombre. Personne ne vous remarque...",
+            fr : "Vous commencez à avancer discrètement, telle une ombre. Personne ne vous remarque&hellip;",
             en : "-"
         },
 	    "bandits-village-infiltrer-echec-texte-2" : {
@@ -207,16 +207,16 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-infiltrer-echec-texte-3" : {
-            fr : "Tout va alors très vite et c'est maintenant une baston générale qui se déclenche dans la foule !",
+            fr : "Tout va alors très vite et c'est maintenant une baston générale qui se déclenche dans la foule&nbsp;!",
             en : "-"
         },
 	    "bandits-village-infiltrer-echec-texte-4" : {
-            fr : "Pas très discrète cette infiltration...",
+            fr : "Pas très discrète cette infiltration&hellip;",
             en : "-"
         },
 
 	    "bandits-village-infiltrer-echec-2-texte-1" : {
-            fr : "Vous vous débarrassez des gêneurs, mais 5 autres se jettent à nouveau sur vous !",
+            fr : "Vous vous débarrassez des gêneurs, mais 5 autres se jettent à nouveau sur vous&nbsp;!",
             en : "-"
         },
 	    "bandits-village-infiltrer-echec-2-texte-2" : {
@@ -224,7 +224,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-infiltrer-echec-2-texte-3" : {
-            fr : "Au moins, ici, les spectateurs fous ne vous suivront pas...",
+            fr : "Au moins, ici, les spectateurs fous ne vous suivront pas&hellip;",
             en : "-"
         },
 
@@ -232,7 +232,7 @@ define([], function(){
         * S'annoncer
         **/
 	    "bandits-village-sannoncer-texte-1" : {
-            fr : "&laquo; Mais qu'avons-nous là mes amis ! Un héros daigne nous honorer de sa présence ! &raquo;",
+            fr : "&laquo;&nbsp;Mais qu'avons-nous là mes amis&nbsp;! Un héros daigne nous honorer de sa présence&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
 	    "bandits-village-sannoncer-texte-2" : {
@@ -240,7 +240,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-sannoncer-texte-3" : {
-            fr : "&laquo; Qu'attends-tu donc pour venir me rejoindre ? &raquo;",
+            fr : "&laquo;&nbsp;Qu'attends-tu donc pour venir me rejoindre&nbsp;?&nbsp;&raquo;",
             en : "-"
         },
 	    "bandits-village-sannoncer-texte-4" : {
@@ -248,7 +248,7 @@ define([], function(){
             en : "-"
         },
 	    "bandits-village-sannoncer-texte-5" : {
-            fr : "Le combat semble inévitable...",
+            fr : "Le combat semble inévitable&hellip;",
             en : "-"
         },
 
@@ -256,7 +256,7 @@ define([], function(){
         * Contourner la foule
         **/
 	    "bandits-village-contourner-texte-1" : {
-            fr : "Vous cherchez un autre chemin, en vain...",
+            fr : "Vous cherchez un autre chemin, en vain&hellip;",
             en : "-"
         },
 	    "bandits-village-contourner-texte-2" : {

@@ -34,20 +34,20 @@ define([], function(){
             en : "-"
         },
         "ville-porte-demander-texte-4" : {
-            fr : "&laquo; Impossible d'entrer, la ville est confinée sous la haute protection de Sa Seigneurie Niers !",
+            fr : "&laquo;&nbsp;Impossible d'entrer, la ville est confinée sous la haute protection de Sa Seigneurie Niers&nbsp;!",
             en : "-"
         },
         "ville-porte-demander-texte-5" : {
-            fr : "Toute personne voulant y entrer ou en sortir doit posséder une autorisation officielle &raquo;",
+            fr : "Toute personne voulant y entrer ou en sortir doit posséder une autorisation officielle&nbsp;&raquo;",
             en : "-"
         },
 
         "ville-porte-demander-2-texte-1" : {
-            fr : "&laquo; Les bandits... Ils sèment le chaos dans le coin.",
+            fr : "&laquo;&nbsp;Les bandits&hellip; Ils sèment le chaos dans le coin.",
             en : "-"
         },
         "ville-porte-demander-2-texte-2" : {
-            fr : "Crois-moi que, s'ils n'avaient pas été si nombreux, je leur aurais moi-même réglé leur compte ! &raquo;",
+            fr : "Crois-moi que, s'ils n'avaient pas été si nombreux, je leur aurais moi-même réglé leur compte&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
         "ville-porte-demander-2-texte-3" : {
@@ -55,7 +55,7 @@ define([], function(){
             en : "-"
         },
         "ville-porte-demander-2-texte-4" : {
-            fr : "&laquo; Eh mais, si t'es bien un héros, tu pourrais nous en débarrasser, non ? &raquo;",
+            fr : "&laquo;&nbsp;Eh mais, si t'es bien un héros, tu pourrais nous en débarrasser, non&nbsp;?&nbsp;&raquo;",
             en : "-"
         },
 
@@ -64,7 +64,7 @@ define([], function(){
             en : "-"
         },
         "ville-porte-demander-3-texte-2" : {
-            fr : "&laquo; Eh bien, ma rente n'est pas très élevée mais...",
+            fr : "&laquo;&nbsp;Eh bien, ma rente n'est pas très élevée mais&hellip;",
             en : "-"
         },
         "ville-porte-demander-3-texte-3" : {
@@ -72,12 +72,12 @@ define([], function(){
             en : "-"
         },
         "ville-porte-demander-3-texte-4" : {
-            fr : "Tu auras accès à toute la ville, parole de garde ! &raquo;",
+            fr : "Tu auras accès à toute la ville, parole de garde&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
 
         "ville-porte-demander-4-texte-1" : {
-            fr : "&laquo; Bien, ça me paraît être un bon deal !",
+            fr : "&laquo;&nbsp;Bien, ça me paraît être un bon deal&nbsp;!",
             en : "-"
         },
         "ville-porte-demander-4-texte-2" : {
@@ -85,7 +85,7 @@ define([], function(){
             en : "-"
         },
         "ville-porte-demander-4-texte-3" : {
-            fr : "Je pense que cela devrait être plutôt évocateur... &raquo;",
+            fr : "Je pense que cela devrait être plutôt évocateur&hellip;&nbsp;&raquo;",
             en : "-"
         },
 
@@ -97,11 +97,11 @@ define([], function(){
             en : "-"
         },
         "ville-porte-demander-refus-texte-2" : {
-            fr : "&laquo; C'est bien dommage...",
+            fr : "&laquo;&nbsp;C'est bien dommage&hellip;",
             en : "-"
         },
         "ville-porte-demander-refus-texte-3" : {
-            fr : "Trouve-toi une autre ville pour passer la nuit, j'ai assez bavassé avec toi. &raquo;",
+            fr : "Trouve-toi une autre ville pour passer la nuit, j'ai assez bavassé avec toi.&nbsp;&raquo;",
             en : "-"
         },
 
@@ -113,11 +113,11 @@ define([], function(){
             en : "-"
         },
         "ville-porte-attaquer-texte-2" : {
-            fr : "Un, puis deux, c'est maintenant quatre gardes bien armés qui se trouvent face à vous !",
+            fr : "Un, puis deux, c'est maintenant quatre gardes bien armés qui se trouvent face à vous&nbsp;!",
             en : "-"
         },
         "ville-porte-attaquer-texte-3" : {
-            fr : "Bien... Une fois vaincu, plus personne ne devrait vous bloquer le passage après tout.",
+            fr : "Bien&hellip; Une fois vaincu, plus personne ne devrait vous bloquer le passage après tout.",
             en : "-"
         },
 
@@ -126,7 +126,7 @@ define([], function(){
             en : "-"
         },
         "ville-porte-attaquer-2-texte-2" : {
-            fr : "Qui sont-ils pour vous donner des ordres ?",
+            fr : "Qui sont-ils pour vous donner des ordres&nbsp;?",
             en : "-"
         },
         "ville-porte-attaquer-2-texte-3" : {
@@ -142,11 +142,11 @@ define([], function(){
             en : "-"
         },
         "ville-porte-insulter-texte-2" : {
-            fr : "&laquo; Tu crois que c'est évident de travailler dans la fonction publique ?!",
+            fr : "&laquo;&nbsp;Tu crois que c'est évident de travailler dans la fonction publique&nbsp;?!",
             en : "-"
         },
         "ville-porte-insulter-texte-3" : {
-            fr : "Je vais t'apprendre à respecter mon travail, avorton ! &raquo;",
+            fr : "Je vais t'apprendre à respecter mon travail, avorton&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
 
@@ -164,11 +164,11 @@ define([], function(){
             en : "-"
         },
         "ville-porte-insulter-3-texte-2" : {
-            fr : "&laquo; Hep hep hep, on ne passe pas !",
+            fr : "&laquo;&nbsp;Hep hep hep, on ne passe pas&nbsp;!",
             en : "-"
         },
         "ville-porte-insulter-3-texte-3" : {
-            fr : "Tu crois que tu peux te débarrasser de la garde de la ville aussi facilement ? &raquo;",
+            fr : "Tu crois que tu peux te débarrasser de la garde de la ville aussi facilement&nbsp;?&nbsp;&raquo;",
             en : "-"
         },
 
@@ -177,7 +177,7 @@ define([], function(){
             en : "-"
         },
         "ville-porte-insulter-4-texte-2" : {
-            fr : "Ils l'avaient bien cherché...",
+            fr : "Ils l'avaient bien cherché&hellip;",
             en : "-"
         },
 
@@ -185,15 +185,15 @@ define([], function(){
         * Contournement
         **/
         "ville-porte-contourner-reussite-texte-1" : {
-            fr : "Vous cherchez longuement autour du gros mur, sans grand espoir, quand...",
+            fr : "Vous cherchez longuement autour du gros mur, sans grand espoir, quand&hellip;",
             en : "-"
         },
         "ville-porte-contourner-reussite-texte-2" : {
-            fr : "Enfin, la chance vous sourit ! Vous découvrez une légère faille, juste l'espace de s'y glisser !",
+            fr : "Enfin, la chance vous sourit&nbsp;! Vous découvrez une légère faille, juste l'espace de s'y glisser&nbsp;!",
             en : "-"
         },
         "ville-porte-contourner-reussite-texte-3" : {
-            fr : "Parfait ! Personne ne vous remarquera ici !",
+            fr : "Parfait&nbsp;! Personne ne vous remarquera ici&nbsp;!",
             en : "-"
         },
         "ville-porte-contourner-echec-texte-1" : {
@@ -205,7 +205,7 @@ define([], function(){
             en : "-"
         },
         "ville-porte-contourner-echec-texte-3" : {
-            fr : "Ce mur est infranchissable. La porte semble être le seul moyen de passer...",
+            fr : "Ce mur est infranchissable. La porte semble être le seul moyen de passer&hellip;",
             en : "-"
         },
         "ville-porte-contourner-echec-texte-4" : {
@@ -221,7 +221,7 @@ define([], function(){
             en : "-"
         },
         "ville-porte-retour-texte-2" : {
-            fr : "Le garde, toujours menaçant, ne vous lâche pas des yeux...",
+            fr : "Le garde, toujours menaçant, ne vous lâche pas des yeux&hellip;",
             en : "-"
         },
 
@@ -230,7 +230,7 @@ define([], function(){
             en : "-"
         },
         "ville-porte-retour-2-texte-2" : {
-            fr : "&laquo; Tu as réussi ! Nous sommes enfin débarrassés des bandits ! &raquo;",
+            fr : "&laquo;&nbsp;Tu as réussi&nbsp;! Nous sommes enfin débarrassés des bandits&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
         "ville-porte-retour-2-texte-3" : {
@@ -238,7 +238,7 @@ define([], function(){
             en : "-"
         },
         "ville-porte-retour-2-texte-4" : {
-            fr : "&laquo; Oh non... Il faut que je fasse un rapport à Son Seigneur Niers, moi, maintenant... &raquo;",
+            fr : "&laquo;&nbsp;Oh non&hellip; Il faut que je fasse un rapport à Son Seigneur Niers, moi, maintenant&hellip;&nbsp;&raquo;",
             en : "-"
         },
 
@@ -248,11 +248,11 @@ define([], function(){
             en : "-"
         },
         "ville-porte-retour-3-texte-2" : {
-            fr : "&laquo; Oh oui, bien sûr ! Tiens, prends cette lettre, elle porte ma signature.",
+            fr : "&laquo;&nbsp;Oh oui, bien sûr&nbsp;! Tiens, prends cette lettre, elle porte ma signature.",
             en : "-"
         },
         "ville-porte-retour-3-texte-3" : {
-            fr : "Si l'un des gardes de la ville te manque de respect, montre-lui simplement ceci et dis-lui que tu es envoyé par Sobac. Il devrait alors te laisser tranquille. &raquo;",
+            fr : "Si l'un des gardes de la ville te manque de respect, montre-lui simplement ceci et dis-lui que tu es envoyé par Sobac. Il devrait alors te laisser tranquille.&nbsp;&raquo;",
             en : "-"
         },
         "ville-porte-retour-3-texte-4" : {
@@ -260,7 +260,7 @@ define([], function(){
             en : "-"
         },
         "ville-porte-retour-3-texte-5" : {
-            fr : "&laquo; Bonne visite à toi, aventurier ! &raquo;",
+            fr : "&laquo;&nbsp;Bonne visite à toi, aventurier&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
 	};

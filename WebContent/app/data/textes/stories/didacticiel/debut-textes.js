@@ -14,7 +14,7 @@ define([], function(){
             en : "-"
         },
 	    "didacticiel-start-texte-4" : {
-            fr : "&laquo; Eh toi, l'aventurier&nbsp;! Appuie sur suivant pour continuer. &raquo;",
+            fr : "&laquo;&nbsp;Eh toi, l'aventurier&nbsp;! Appuie sur suivant pour continuer.&nbsp;&raquo;",
             en : "-"
         },
 
@@ -27,16 +27,16 @@ define([], function(){
             en : "-"
         },
         "didacticiel-start2-texte-3" : {
-            fr : "&laquo; Bien joué étranger&nbsp;! Tu as saisi le principe des actions&nbsp;!",
+            fr : "&laquo;&nbsp;Bien joué étranger&nbsp;! Tu as saisi le principe des actions&nbsp;!",
             en : "-"
         },
         "didacticiel-start2-texte-4" : {
-            fr : "D'un autre côté&hellip; Il faut dire que c'était plutôt simple&hellip; &raquo;",
+            fr : "D'un autre côté&hellip; Il faut dire que c'était plutôt simple&hellip;&nbsp;&raquo;",
             en : "-"
         },
 
         "didacticiel-presentation-texte-1" : {
-            fr : "&laquo; Je suis ton humble serviteur et te voici dans le monde merveilleux de Samhain&nbsp;!!!",
+            fr : "&laquo;&nbsp;Je suis ton humble serviteur et te voici dans le monde merveilleux de Samhain&nbsp;!!!",
             en : "-"
         },
         "didacticiel-presentation-texte-2" : {
@@ -52,7 +52,7 @@ define([], function(){
             en : "-"
         },
         "didacticiel-presentation-texte-5" : {
-            fr : "Ne t'en fais pas, je ne te ferais pas le coup du choix entre la pilule rouge et bleue. &raquo;",
+            fr : "Ne t'en fais pas, je ne te ferais pas le coup du choix entre la pilule rouge et bleue.&nbsp;&raquo;",
             en : "-"
         }
 	};

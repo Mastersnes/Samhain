@@ -121,7 +121,6 @@ function($, _, Utils) {
 	        if (this.saveSession) {
 	            this.loaded = true;
 	        	this.saveData = JSON.parse(Utils.decode(this.saveSession));
-
                 //Les succes sont rejoué dans le recompense manager
 	        }
 		};

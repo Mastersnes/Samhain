@@ -18,8 +18,8 @@ define([], function(){
             en : "She speaks to you in a childish voice:"
         },
         "necroS2-texte-5" : {
-            fr : "&laquo; Qui est là&nbsp;? J'ai peur&hellip; J'ai faim&hellip; &raquo;",
-            en : "&laquo; Who's out there? I'm scared&hellip; I'm hungry&hellip; &raquo;"
+            fr : "&laquo;&nbsp;Qui est là&nbsp;? J'ai peur&hellip; J'ai faim&hellip;&nbsp;&raquo;",
+            en : "&laquo;&nbsp;Who's out there? I'm scared&hellip; I'm hungry&hellip;&nbsp;&raquo;"
         },
 
         "necroS2Retour-texte-1" : {
@@ -31,8 +31,8 @@ define([], function(){
             en : "She speaks to you in a childlike voice, calmly:"
         },
         "necroS2Retour-texte-3" : {
-            fr : "&laquo; Te revoilà&nbsp;? Tu viens jouer&nbsp;? &raquo;",
-            en : "&laquo; Are you back again? Are you coming to play? &raquo;"
+            fr : "&laquo;&nbsp;Te revoilà&nbsp;? Tu viens jouer&nbsp;?&nbsp;&raquo;",
+            en : "&laquo;&nbsp;Are you back again? Are you coming to play?&nbsp;&raquo;"
         },
 
         "necroS22-texte-1" : {
@@ -48,16 +48,16 @@ define([], function(){
             en : "You suddenly hear a screaming voice:"
         },
         "necroS22-texte-4" : {
-            fr : "&laquo; C'est un méchant&nbsp;! Tue-le&nbsp;! Tue-le, déchet&nbsp;! &raquo;",
-            en : "&laquo; He's a bad guy! Kill him! Kill him, you trash! &raquo;"
+            fr : "&laquo;&nbsp;C'est un méchant&nbsp;! Tue-le&nbsp;! Tue-le, déchet&nbsp;!&nbsp;&raquo;",
+            en : "&laquo;&nbsp;He's a bad guy! Kill him! Kill him, you trash!&nbsp;&raquo;"
         },
         "necroS22-texte-5" : {
             fr : "Puis, la voix enfantine :",
             en : "Then the childish voice:"
         },
         "necroS22-texte-6" : {
-            fr : "&laquo; Non&hellip; Il ne faut pas&hellip; &raquo;",
-            en : "&laquo; No&hellip; You mustn' t&hellip; &raquo;"
+            fr : "&laquo;&nbsp;Non&hellip; Il ne faut pas&hellip;&nbsp;&raquo;",
+            en : "&laquo;&nbsp;No&hellip; You mustn' t&hellip;&nbsp;&raquo;"
         },
 
         "necroS2Parle-texte-1" : {
@@ -69,12 +69,12 @@ define([], function(){
             en : "But it is again the screaming voice that responds to you:"
         },
         "necroS2Parle-texte-3" : {
-            fr : "&laquo; Silence&nbsp;! Insecte inutile&nbsp;! Il ne t'écoutera pas&nbsp;!",
-            en : "&laquo; Quiet! Insect useless! He won't listen to you!"
+            fr : "&laquo;&nbsp;Silence&nbsp;! Insecte inutile&nbsp;! Il ne t'écoutera pas&nbsp;!",
+            en : "&laquo;&nbsp;Quiet! Insect useless! He won't listen to you!"
         },
         "necroS2Parle-texte-4" : {
-            fr : "Maintenant, tue-le, où tu souffriras de nouveau&nbsp;! &raquo;",
-            en : "Now kill him or you'll suffer again! &raquo;"
+            fr : "Maintenant, tue-le, où tu souffriras de nouveau&nbsp;!&nbsp;&raquo;",
+            en : "Now kill him or you'll suffer again!&nbsp;&raquo;"
         },
         "necroS2Parle-texte-5" : {
             fr : "Vous voyez dans le noir deux points brillants&hellip;",
@@ -90,8 +90,8 @@ define([], function(){
             en : "The back door slams you hard and you hear the child laughing&hellip;"
         },
         "necroS2Approche-texte-3" : {
-            fr : "&laquo; Tu aurais dû t'enfuir tant que tu le pouvais&hellip; &raquo;",
-            en : "&laquo; You should have run away while you could&hellip; &raquo;"
+            fr : "&laquo;&nbsp;Tu aurais dû t'enfuir tant que tu le pouvais&hellip;&nbsp;&raquo;",
+            en : "&laquo;&nbsp;You should have run away while you could&hellip;&nbsp;&raquo;"
         },
         "necroS2Approche-texte-4" : {
             fr : "À mesure que la forme s'approche, vous la discernez mieux&hellip;",

@@ -5,7 +5,7 @@ define([], function(){
 	    * Fin choix
 	    **/
         "didacticiel-finchoix-texte-1" : {
-            fr : "&laquo; Bien, tu maîtrises à présent les subtilités du choix&nbsp;!",
+            fr : "&laquo;&nbsp;Bien, tu maîtrises à présent les subtilités du choix&nbsp;!",
             en : "-"
         },
         "didacticiel-finchoix-texte-2" : {
@@ -13,14 +13,14 @@ define([], function(){
             en : "-"
         },
         "didacticiel-finchoix-texte-3" : {
-            fr : "Mais&hellip; seras-tu capable de garder tout ton sang froid lorsque l'action apparaîtra devant toi&nbsp;? &raquo;",
+            fr : "Mais&hellip; seras-tu capable de garder tout ton sang froid lorsque l'action apparaîtra devant toi&nbsp;?&nbsp;&raquo;",
             en : "-"
         },
         /**
         * Arrivé bandit
         **/
         "didacticiel-bandit-texte-1" : {
-            fr : "&laquo; Hum&hellip; Permets-moi d'en douter&hellip; &raquo;",
+            fr : "&laquo;&nbsp;Hum&hellip; Permets-moi d'en douter&hellip;&nbsp;&raquo;",
             en : "-"
         },
         "didacticiel-bandit-texte-2" : {
@@ -28,7 +28,7 @@ define([], function(){
             en : "-"
         },
         "didacticiel-bandit-texte-3" : {
-            fr : "&laquo; Tu vois ce bandit là-bas&nbsp;? Une vraie tête à claques, hein&nbsp;? Abats-le sauvagement et tu auras toute ma reconnaissance&nbsp;! &raquo;",
+            fr : "&laquo;&nbsp;Tu vois ce bandit là-bas&nbsp;? Une vraie tête à claques, hein&nbsp;? Abats-le sauvagement et tu auras toute ma reconnaissance&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
 
@@ -36,19 +36,19 @@ define([], function(){
         * Combat contre le bandit
         **/
         "didacticiel-combat-texte-1" : {
-            fr : "&laquo; Bien, voici un bandit. Il sent mauvais, mais il n'est pas bien méchant.",
+            fr : "&laquo;&nbsp;Bien, voici un bandit. Il sent mauvais, mais il n'est pas bien méchant.",
             en : "-"
         },
         "didacticiel-combat-texte-2" : {
-            fr : "Utilise les papiers en bas de l'écran pour l'attaquer. &raquo;",
+            fr : "Utilise les papiers en bas de l'écran pour l'attaquer.&nbsp;&raquo;",
             en : "-"
         },
         "didacticiel-combat-texte-3" : {
-            fr : "&laquo; Attention&nbsp;! Si tu te défends, ce sera la fin de ton tour et le bandit t'attaquera&nbsp;!",
+            fr : "&laquo;&nbsp;Attention&nbsp;! Si tu te défends, ce sera la fin de ton tour et le bandit t'attaquera&nbsp;!",
             en : "-"
         },
         "didacticiel-combat-texte-4" : {
-            fr : "À toi de jouer maintenant&nbsp;! Bonne chance, jeune padawan&nbsp;! &raquo;",
+            fr : "À toi de jouer maintenant&nbsp;! Bonne chance, jeune padawan&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
 
@@ -60,7 +60,7 @@ define([], function(){
             en : "-"
         },
         "didacticiel-win-texte-2" : {
-            fr : "&laquo; Félicitations&nbsp;! Je suis fier de toi&nbsp;!",
+            fr : "&laquo;&nbsp;Félicitations&nbsp;! Je suis fier de toi&nbsp;!",
             en : "-"
         },
         "didacticiel-win-texte-3" : {
@@ -72,7 +72,7 @@ define([], function(){
             en : "-"
         },
         "didacticiel-win-texte-5" : {
-            fr : "Bon courage et à bientôt dans Samhain&nbsp;! &raquo;",
+            fr : "Bon courage et à bientôt dans Samhain&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
 
@@ -88,7 +88,7 @@ define([], function(){
             en : "-"
         },
         "didacticiel-lose-texte-3" : {
-            fr : "&laquo; Eh bien&nbsp;! Tu as réussi à mourir à l'entraînement&nbsp;! Félicitations, ce n'était pas facile&hellip;",
+            fr : "&laquo;&nbsp;Eh bien&nbsp;! Tu as réussi à mourir à l'entraînement&nbsp;! Félicitations, ce n'était pas facile&hellip;",
             en : "-"
         },
         "didacticiel-lose-texte-4" : {
@@ -96,7 +96,7 @@ define([], function(){
             en : "-"
         },
         "didacticiel-lose-texte-5" : {
-            fr : "Dans le cas contraire, reviens donc me voir. Tu n'es pas prêt à affronter le monde de Samhain&nbsp;! &raquo;",
+            fr : "Dans le cas contraire, reviens donc me voir. Tu n'es pas prêt à affronter le monde de Samhain&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
 	};

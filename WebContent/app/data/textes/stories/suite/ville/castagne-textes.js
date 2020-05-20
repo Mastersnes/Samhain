@@ -5,23 +5,23 @@ define([], function(){
         * Castagne
         **/
         "ville-ruelle-taverne-castagne-1-texte-1" : {
-            fr : "Dong ! Le brouhaha cesse, le calme s'installe...",
+            fr : "Dong&nbsp;! Le brouhaha cesse, le calme s'installe&hellip;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-1-texte-2" : {
-            fr : "&laquo; Mes amis, le premier combat désarmé va pouvoir commencer !",
+            fr : "&laquo;&nbsp;Mes amis, le premier combat désarmé va pouvoir commencer&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-1-texte-3" : {
-            fr : "À ma gauche, not' nouveau challenger : L'étranger !",
+            fr : "À ma gauche, not' nouveau challenger : L'étranger&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-1-texte-4" : {
-            fr : "À ma droite, le <span key='villageois' suffixe='costaud'>cogneur</span> du dimanche !",
+            fr : "À ma droite, le <span key='villageois' suffixe='costaud'>cogneur</span> du dimanche&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-1-texte-5" : {
-            fr : "Combattez bravement messieurs ! &raquo;",
+            fr : "Combattez bravement messieurs&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
 
@@ -30,46 +30,46 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-taverne-castagne-2-texte-2" : {
-            fr : "&laquo; Eh bien ! Not' nouveau challenger s'en sort plutôt bien pour son premier combat !",
+            fr : "&laquo;&nbsp;Eh bien&nbsp;! Not' nouveau challenger s'en sort plutôt bien pour son premier combat&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-2-texte-3" : {
-            fr : "Mais, l'prochain s'ra d'un tout autre niveau. V'nant du nord, veuillez accueillir comme y s'doit : <span key='villageois' suffixe='bourrin'>Les frères moustaches</span> ! &raquo;",
+            fr : "Mais, l'prochain s'ra d'un tout autre niveau. V'nant du nord, veuillez accueillir comme y s'doit : <span key='villageois' suffixe='bourrin'>Les frères moustaches</span>&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-2-texte-4" : {
-            fr : "La foule est en délire. Espérons que leur force soit aussi ridicule que leur nom...",
+            fr : "La foule est en délire. Espérons que leur force soit aussi ridicule que leur nom&hellip;",
             en : "-"
         },
 
         "ville-ruelle-taverne-castagne-3-texte-1" : {
-            fr : "Les deux moustachus s'enfuient en hurlant. Rien de bien terrible jusqu'ici...",
+            fr : "Les deux moustachus s'enfuient en hurlant. Rien de bien terrible jusqu'ici&hellip;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-3-texte-2" : {
-            fr : "&laquo; C'est une seconde réussite pour not' champion, mais interdiction de s'arrêter en si bon chemin !",
+            fr : "&laquo;&nbsp;C'est une seconde réussite pour not' champion, mais interdiction de s'arrêter en si bon chemin&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-3-texte-3" : {
-            fr : "Le sud nous envoie lui aussi ses merveilles, veuillez faire une ovation pour : <span key='bandit' suffixe='terrifiant'>Les terreurs des sables</span> ! &raquo;",
+            fr : "Le sud nous envoie lui aussi ses merveilles, veuillez faire une ovation pour : <span key='bandit' suffixe='terrifiant'>Les terreurs des sables</span>&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
 
 
         "ville-ruelle-taverne-castagne-4-texte-1" : {
-            fr : "Les bandits tombent, vous leur avez fait manger leur sable...",
+            fr : "Les bandits tombent, vous leur avez fait manger leur sable&hellip;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-4-texte-2" : {
-            fr : "&laquo; Impressionnant ! C'est de mieux en mieux dites donc !",
+            fr : "&laquo;&nbsp;Impressionnant&nbsp;! C'est de mieux en mieux dites donc&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-4-texte-3" : {
-            fr : "Le prochain combat opposera not' vainqueur aux <span key='bandit' suffixe='cruel'>teigneux</span> accompagnés d'leur grand frère <span key='bandit' suffixe='raoul'>Raoul</span> !",
+            fr : "Le prochain combat opposera not' vainqueur aux <span key='bandit' suffixe='cruel'>teigneux</span> accompagnés d'leur grand frère <span key='bandit' suffixe='raoul'>Raoul</span>&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-4-texte-4" : {
-            fr : "Qui sera le vainqueur ? &raquo;",
+            fr : "Qui sera le vainqueur&nbsp;?&nbsp;&raquo;",
             en : "-"
         },
 
@@ -78,15 +78,15 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-taverne-castagne-5-texte-2" : {
-            fr : "&laquo; Quel beau match ! Quel échange de coups ! C'était magnifique !",
+            fr : "&laquo;&nbsp;Quel beau match&nbsp;! Quel échange de coups&nbsp;! C'était magnifique&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-5-texte-3" : {
-            fr : "Mais mais mais, que vois-je au fond d'la salle ? <span key='villageois' suffixe='viscerole'>Viscerole</span>, not' bourreau des coeurs s'avance !",
+            fr : "Mais mais mais, que vois-je au fond d'la salle&nbsp;? <span key='villageois' suffixe='viscerole'>Viscerole</span>, not' bourreau des coeurs s'avance&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-5-texte-4" : {
-            fr : "Une chose est sûre, ça va commencer à saigner ! &raquo;",
+            fr : "Une chose est sûre, ça va commencer à saigner&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
 
@@ -94,7 +94,7 @@ define([], function(){
         * Castagne, premiere phase de victoire
         **/
         "ville-ruelle-taverne-castagne-win1-texte-1" : {
-            fr : "La foule vous acclame. C'est une sacrée victoire !",
+            fr : "La foule vous acclame. C'est une sacrée victoire&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-win1-texte-2" : {
@@ -102,15 +102,15 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-taverne-castagne-win1-texte-3" : {
-            fr : "&laquo; Eh bien, messire l'étranger ! Ça c'est d'la baston ! Voici un beau pactole en récompense !",
+            fr : "&laquo;&nbsp;Eh bien, messire l'étranger&nbsp;! Ça c'est d'la baston&nbsp;! Voici un beau pactole en récompense&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-win1-texte-4" : {
-            fr : "Vous pouvez vous arrêter là et reprendre à ce niveau la prochaine fois...",
+            fr : "Vous pouvez vous arrêter là et reprendre à ce niveau la prochaine fois&hellip;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-win1-texte-5" : {
-            fr : "ou continuer à nous en mettre plein la vue ! Alors ? &raquo;",
+            fr : "ou continuer à nous en mettre plein la vue&nbsp;! Alors&nbsp;?&nbsp;&raquo;",
             en : "-"
         },
 
@@ -118,11 +118,11 @@ define([], function(){
         * Castagne suite
         **/
         "ville-ruelle-taverne-castagne-6-texte-1" : {
-            fr : "La foule, en délire, vous applaudit abondamment. C'est votre jour !",
+            fr : "La foule, en délire, vous applaudit abondamment. C'est votre jour&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-6-texte-2" : {
-            fr : "&laquo; Les combats peuvent reprendre et nous augmentons encore la difficulté...",
+            fr : "&laquo;&nbsp;Les combats peuvent reprendre et nous augmentons encore la difficulté&hellip;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-6-texte-3" : {
@@ -130,7 +130,7 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-taverne-castagne-6-texte-4" : {
-            fr : "Pour c'nouveau combat, faites entrer \"<span key='bandit' suffixe='precis'>l'accusé</span>\" ! Attention, il peut être violent ! &raquo;",
+            fr : "Pour c'nouveau combat, faites entrer \"<span key='bandit' suffixe='precis'>l'accusé</span>\"&nbsp;! Attention, il peut être violent&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-6-texte-5" : {
@@ -139,37 +139,37 @@ define([], function(){
         },
 
         "ville-ruelle-taverne-castagne-7-texte-1" : {
-            fr : "Votre adversaire tombe à terre mais ne semble pas encore K.O...",
+            fr : "Votre adversaire tombe à terre mais ne semble pas encore K.O&hellip;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-7-texte-2" : {
-            fr : "&laquo; Tu pensais m'avoir si facilement gamin ? Haha, laisse-moi rire ! Tu m'as tout juste servi d'échauffement ! &raquo;",
+            fr : "&laquo;&nbsp;Tu pensais m'avoir si facilement gamin&nbsp;? Haha, laisse-moi rire&nbsp;! Tu m'as tout juste servi d'échauffement&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-7-texte-3" : {
-            fr : "Crachant du sang, <span key='bandit' suffixe='dechaine'>il</span> se relève, sûr de lui. Il est temps d'en découdre pour de bon !",
+            fr : "Crachant du sang, <span key='bandit' suffixe='dechaine'>il</span> se relève, sûr de lui. Il est temps d'en découdre pour de bon&nbsp;!",
             en : "-"
         },
 
 
         "ville-ruelle-taverne-castagne-8-texte-1" : {
-            fr : "Le criminel s'écroule, cette fois-ci pour de bon. Il ne fallait pas vous chercher...",
+            fr : "Le criminel s'écroule, cette fois-ci pour de bon. Il ne fallait pas vous chercher&hellip;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-8-texte-2" : {
-            fr : "&laquo; Incroyable !",
+            fr : "&laquo;&nbsp;Incroyable&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-8-texte-3" : {
-            fr : "Quel combat intense ! L'étranger, j'pense que vous allez finir par attirer l'attention des plus grands !",
+            fr : "Quel combat intense&nbsp;! L'étranger, j'pense que vous allez finir par attirer l'attention des plus grands&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-8-texte-4" : {
-            fr : "D'ailleurs, veuillez accueillir \"<span key='garde' suffixe='kraken'>Kraken</span>\", le mastodonte des tavernes ! &raquo;",
+            fr : "D'ailleurs, veuillez accueillir \"<span key='garde' suffixe='kraken'>Kraken</span>\", le mastodonte des tavernes&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-8-texte-5" : {
-            fr : "Le sol tremble sous vos pieds et un colosse apparaît devant vous... Ça va pas être de la tarte.",
+            fr : "Le sol tremble sous vos pieds et un colosse apparaît devant vous&hellip; Ça va pas être de la tarte.",
             en : "-"
         },
 
@@ -178,19 +178,19 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-taverne-castagne-9-texte-2" : {
-            fr : "Vous vous apprêtez à le finir lorsque deux zigotos vous en empêchent...",
+            fr : "Vous vous apprêtez à le finir lorsque deux zigotos vous en empêchent&hellip;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-9-texte-3" : {
-            fr : "&laquo; Quel retournement d'situation ! Y semblerait que les <span key='garde'>camarades</span> d'not' Kraken veuillent participer !",
+            fr : "&laquo;&nbsp;Quel retournement d'situation&nbsp;! Y semblerait que les <span key='garde'>camarades</span> d'not' Kraken veuillent participer&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-9-texte-4" : {
-            fr : "Eh bien, soit ! Ce n'est pas contraire au règlement ! &raquo;",
+            fr : "Eh bien, soit&nbsp;! Ce n'est pas contraire au règlement&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-9-texte-5" : {
-            fr : "Le <span key='garde' suffixe='kraken-blesse'>mastodonte</span> se relève, prêt pour un second round. Un de plus, un de moins...",
+            fr : "Le <span key='garde' suffixe='kraken-blesse'>mastodonte</span> se relève, prêt pour un second round. Un de plus, un de moins&hellip;",
             en : "-"
         },
 
@@ -199,11 +199,11 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-taverne-castagne-10-texte-2" : {
-            fr : "&laquo; C'est encore une victoire ! Que de spectacles dans ma taverne !",
+            fr : "&laquo;&nbsp;C'est encore une victoire&nbsp;! Que de spectacles dans ma taverne&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-10-texte-3" : {
-            fr : "Mais vient maintenant l'heure du dernier combat ! L'étranger, va falloir me montrer vos tripes ! &raquo;",
+            fr : "Mais vient maintenant l'heure du dernier combat&nbsp;! L'étranger, va falloir me montrer vos tripes&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-10-texte-4" : {
@@ -211,7 +211,7 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-taverne-castagne-10-texte-5" : {
-            fr : "&laquo; Allez-y l'étranger, vous pouvez taper, j'suis pas en mousse... &raquo;",
+            fr : "&laquo;&nbsp;Allez-y l'étranger, vous pouvez taper, j'suis pas en mousse&hellip;&nbsp;&raquo;",
             en : "-"
         },
 
@@ -219,11 +219,11 @@ define([], function(){
         * Castagne victoire absolue
         **/
         "ville-ruelle-taverne-castagne-win2-texte-1" : {
-            fr : "Votre dernier adversaire tombe à genoux, le visage en sang, puis... éclate de rire ?",
+            fr : "Votre dernier adversaire tombe à genoux, le visage en sang, puis&hellip; éclate de rire&nbsp;?",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-win2-texte-2" : {
-            fr : "&laquo; Ahaha ! Eh bah ! La raclée que j'ai eue, l'étranger ! &raquo;",
+            fr : "&laquo;&nbsp;Ahaha&nbsp;! Eh bah&nbsp;! La raclée que j'ai eue, l'étranger&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-win2-texte-3" : {
@@ -231,11 +231,11 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-taverne-castagne-win2-texte-4" : {
-            fr : "&laquo; Prenez c'talisman mon vieux ! Il se transmet depuis des générations aux castagneurs les plus chevronnées !",
+            fr : "&laquo;&nbsp;Prenez c'talisman mon vieux&nbsp;! Il se transmet depuis des générations aux castagneurs les plus chevronnées&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-win2-texte-5" : {
-            fr : "Avec lui, j'vous assure que z'allez tabasser à la vitesse du son ! &raquo;",
+            fr : "Avec lui, j'vous assure que z'allez tabasser à la vitesse du son&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-win2-texte-6" : {
@@ -244,11 +244,11 @@ define([], function(){
         },
 
         "ville-ruelle-taverne-castagne-win2-2-texte-1" : {
-            fr : "&laquo; Hésitez pas à rev'nir nous voir si z'avez envie d'cogner ! On s'ra toujours partant !",
+            fr : "&laquo;&nbsp;Hésitez pas à rev'nir nous voir si z'avez envie d'cogner&nbsp;! On s'ra toujours partant&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-win2-2-texte-2" : {
-            fr : "Et surtout, n'oubliez jamais la première règle de La Castagne... &raquo;",
+            fr : "Et surtout, n'oubliez jamais la première règle de La Castagne&hellip;&nbsp;&raquo;",
             en : "-"
         },
 
@@ -256,11 +256,11 @@ define([], function(){
         * Castagne Repos
         **/
         "ville-ruelle-taverne-castagne-repos-texte-1" : {
-            fr : "&laquo; Mes amis, not' challenger a bien mérité un petit repos !",
+            fr : "&laquo;&nbsp;Mes amis, not' challenger a bien mérité un petit repos&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-repos-texte-2" : {
-            fr : "Nous verrons donc ses prochains combats à la prochaine session de La Castagne !!! &raquo;",
+            fr : "Nous verrons donc ses prochains combats à la prochaine session de La Castagne&nbsp;!!!&nbsp;&raquo;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-repos-texte-3" : {
@@ -276,11 +276,11 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-taverne-castagne-random-texte-2" : {
-            fr : "&laquo; L'étranger ! Vous êtes maintenant l'castagneur le plus fort des environs !",
+            fr : "&laquo;&nbsp;L'étranger&nbsp;! Vous êtes maintenant l'castagneur le plus fort des environs&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-random-texte-3" : {
-            fr : "Pour plus de piquant, vos prochains combats seront tirés au sort. &raquo;",
+            fr : "Pour plus de piquant, vos prochains combats seront tirés au sort.&nbsp;&raquo;",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-random-texte-4" : {
@@ -288,12 +288,12 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-taverne-castagne-random-texte-5" : {
-            fr : "Eh bien... Plus qu'à piocher...",
+            fr : "Eh bien&hellip; Plus qu'à piocher&hellip;",
             en : "-"
         },
 
         "ville-ruelle-taverne-castagne-random-relance-texte-1" : {
-            fr : "&laquo; Bien joué, l'étranger ! Alors, on r'tente sa chance ? &raquo;",
+            fr : "&laquo;&nbsp;Bien joué, l'étranger&nbsp;! Alors, on r'tente sa chance&nbsp;?&nbsp;&raquo;",
             en : "-"
         },
 
@@ -315,7 +315,7 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-taverne-castagne-defaite-texte-2" : {
-            fr : "Eh bah, ils n'y sont pas allés de main morte !",
+            fr : "Eh bah, ils n'y sont pas allés de main morte&nbsp;!",
             en : "-"
         },
         "ville-ruelle-taverne-castagne-defaite-texte-3" : {
@@ -323,7 +323,7 @@ define([], function(){
             en : "-"
         },
         "ville-ruelle-taverne-castagne-defaite-texte-4" : {
-            fr : "Prêt à retenter votre chance ?",
+            fr : "Prêt à retenter votre chance&nbsp;?",
             en : "-"
         }
 	};

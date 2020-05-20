@@ -2,7 +2,7 @@
 define([], function(){
 	var data = {
         "bandits-porte-debut-texte-1" : {
-            fr : "Vous voici reparti à l'aventure. Sans compagnons, mais en route vers l'horizon !",
+            fr : "Vous voici reparti à l'aventure. Sans compagnons, mais en route vers l'horizon&nbsp;!",
             en : "-"
         },
         "bandits-porte-debut-texte-2" : {
@@ -14,7 +14,7 @@ define([], function(){
             en : "-"
         },
         "bandits-porte-debut-texte-4" : {
-            fr : "Plusieurs options s'offrent alors à vous...",
+            fr : "Plusieurs options s'offrent alors à vous&hellip;",
             en : "-"
         },
 
@@ -30,7 +30,7 @@ define([], function(){
             en : "-"
         },
         "bandits-porte-texte-3" : {
-            fr : "C'est certain, tout cela finira dans les larmes...",
+            fr : "C'est certain, tout cela finira dans les larmes&hellip;",
             en : "-"
         },
 
@@ -43,7 +43,7 @@ define([], function(){
             en : "-"
         },
         "bandits-porte-2-texte-3" : {
-            fr : "Il semblerait que les bandits vivent ici la grande vie !",
+            fr : "Il semblerait que les bandits vivent ici la grande vie&nbsp;!",
             en : "-"
         },
 
@@ -55,7 +55,7 @@ define([], function(){
             en : "-"
         },
         "bandits-porte-faille-texte-2" : {
-            fr : "La sécurité n'est pas très au point ici...",
+            fr : "La sécurité n'est pas très au point ici&hellip;",
             en : "-"
         },
         "bandits-porte-faille-texte-3" : {
@@ -72,7 +72,7 @@ define([], function(){
             en : "-"
         },
         "bandits-porte-escalade-reussite-texte-2" : {
-            fr : "Encore une preuve que l'exercice physique a toujours du bon !",
+            fr : "Encore une preuve que l'exercice physique a toujours du bon&nbsp;!",
             en : "-"
         },
         "bandits-porte-escalade-reussite-texte-3" : {
@@ -85,7 +85,7 @@ define([], function(){
         * Echec de l'escalade
         **/
         "bandits-porte-escalade-echec-texte-1" : {
-            fr : "Vous essayez d'escalader l’épais mur, mais en vain...",
+            fr : "Vous essayez d'escalader l’épais mur, mais en vain&hellip;",
             en : "-"
         },
         "bandits-porte-escalade-echec-texte-2" : {
@@ -101,19 +101,19 @@ define([], function(){
         * Echec critique de l'escalade
         **/
         "bandits-porte-escalade-critique-texte-1" : {
-            fr : "Vous parvenez presque en haut du muret de bois, mais une fois au sommet, c'est le drame...",
+            fr : "Vous parvenez presque en haut du muret de bois, mais une fois au sommet, c'est le drame&hellip;",
             en : "-"
         },
         "bandits-porte-escalade-critique-texte-2" : {
-            fr : "Votre pied dérape d'un coup. Vos mains moites ne parviennent pas à saisir la prise à temps et bam !",
+            fr : "Votre pied dérape d'un coup. Vos mains moites ne parviennent pas à saisir la prise à temps et bam&nbsp;!",
             en : "-"
         },
         "bandits-porte-escalade-critique-texte-3" : {
-            fr : "Vous finissez sur le cul au bas de la palissade...",
+            fr : "Vous finissez sur le cul au bas de la palissade&hellip;",
             en : "-"
         },
         "bandits-porte-escalade-critique-texte-4" : {
-            fr : "Une chose est sûre : le sport, c'est pas votre fort...",
+            fr : "Une chose est sûre : le sport, c'est pas votre fort&hellip;",
             en : "-"
         },
 		//bandits-porte-escalade-echec-texte-3

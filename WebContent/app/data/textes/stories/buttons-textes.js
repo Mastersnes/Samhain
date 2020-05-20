@@ -527,7 +527,7 @@ define([], function(){
             en : "The quest"
         },
         "les-poulets" : {
-            fr : "Les poulets ?",
+            fr : "Les poulets&nbsp;?",
             en : "The chicken?"
         },
 
@@ -555,7 +555,7 @@ define([], function(){
         * Direction
         **/
         "en-route" : {
-            fr : "En route !",
+            fr : "En route&nbsp;!",
             en : "Let's go!"
         },
         "left" : {

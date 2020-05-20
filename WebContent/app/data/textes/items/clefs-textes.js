@@ -25,15 +25,15 @@ define([], function(){
                 en : "Bandit King's Ring"
             },
             "anneau-bandit-texte" : {
-                fr : "Un anneau un peu plus doré que les autres. De la camelote si vous voulez mon avis...",
-                en : "A ring a little more golden than the others. Junk if you want my opinion..."
+                fr : "Un anneau un peu plus doré que les autres. De la camelote si vous voulez mon avis&hellip;",
+                en : "A ring a little more golden than the others. Junk if you want my opinion&hellip;"
             },
             "poulet" : {
                 fr : "Poulet",
                 en : "Chicken"
             },
             "poulet-texte" : {
-                fr : "Un petit poulet tout mignon. Attention, il sait aussi se défendre quand il faut !",
+                fr : "Un petit poulet tout mignon. Attention, il sait aussi se défendre quand il faut&nbsp;!",
                 en : "A cute little chicken. Watch out, he can also defend himself when he has to!"
             }
 	};

@@ -46,8 +46,8 @@ define([], function(){
             en : "The room is completely empty except for a doormat."
         },
         "necroS1Fouille-texte-2" : {
-            fr : "devant l'entrée sur lequel il est inscrit &laquo; HellCome &raquo;.",
-            en : "in front of the entrance marked &laquo; HellCome &raquo;."
+            fr : "devant l'entrée sur lequel il est inscrit &laquo;&nbsp;HellCome&nbsp;&raquo;.",
+            en : "in front of the entrance marked &laquo;&nbsp;HellCome&nbsp;&raquo;."
         },
         "necroS1Fouille-texte-3" : {
             fr : "En le soulevant, vous découvrez une petite <span key='clefS2'>clef</span>&hellip;",

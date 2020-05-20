@@ -74,19 +74,20 @@ define([], function() {
             ]
         },
         "batonSaisieReussite2" : {
+            "before" : function(histoire) {
+                histoire.hurt(5);
+            },
             "textes" : ["batonSaisieReussite1-texte-1", "batonSaisieReussite2-texte-1", "batonSaisieReussite1-texte-3",
                 "batonSaisieReussite2-texte-2"],
             "actions" : [
                 {
                     "name" : "garder-baton", "action" : [
-                        {"key" : "hurt", "params" : [5]},
                         {"key" : "gain", "params" : ["baton" ]},
                         {"key" : "go", "params" : ["fermeGoule" ]}
                     ]
                 },
                 {
                     "name" : "let-him", "action" : [
-                        {"key" : "hurt", "params" : [5]},
                         {"key" : "go", "params" : ["fermeGoule"]}
                     ]
                 }

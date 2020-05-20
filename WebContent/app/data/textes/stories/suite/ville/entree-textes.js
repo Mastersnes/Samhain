@@ -6,11 +6,11 @@ define([], function(){
             en : "-"
         },
         "ville-entree-1-texte-2" : {
-            fr : "La civilisation ! Enfin !",
+            fr : "La civilisation&nbsp;! Enfin&nbsp;!",
             en : "-"
         },
         "ville-entree-1-texte-3" : {
-            fr : "Vous régalant de la modernité des lieux, vous vous dirigez vers vos objectifs...",
+            fr : "Vous régalant de la modernité des lieux, vous vous dirigez vers vos objectifs&hellip;",
             en : "-"
         },
 
@@ -22,7 +22,7 @@ define([], function(){
             en : "-"
         },
         "ville-entree-retour-centre-texte-2" : {
-            fr : "Divers choix s'offrent à vous...",
+            fr : "Divers choix s'offrent à vous&hellip;",
             en : "-"
         },
 
@@ -38,7 +38,7 @@ define([], function(){
             en : "-"
         },
         "ville-entree-panneau-quete-texte-3" : {
-            fr : "Peut-être qu'une nouvelle aventure vous y attend ?",
+            fr : "Peut-être qu'une nouvelle aventure vous y attend&nbsp;?",
             en : "-"
         },
 
@@ -47,7 +47,7 @@ define([], function(){
             en : "-"
         },
         "ville-entree-panneau-quete-retour-texte-2" : {
-            fr : "L'aventure sera pour plus tard !",
+            fr : "L'aventure sera pour plus tard&nbsp;!",
             en : "-"
         },
 
@@ -57,7 +57,7 @@ define([], function(){
         },
 
         "ville-entree-echec-quete-texte-1" : {
-            fr : "Vous vous réveillez à moitié étourdis...",
+            fr : "Vous vous réveillez à moitié étourdis&hellip;",
             en : "-"
         },
         "ville-entree-echec-quete-texte-2" : {
@@ -69,7 +69,7 @@ define([], function(){
             en : "-"
         },
         "ville-entree-echec-quete-texte-4" : {
-            fr : "L'aventure n'attend pas !",
+            fr : "L'aventure n'attend pas&nbsp;!",
             en : "-"
         },
 
@@ -77,16 +77,16 @@ define([], function(){
         * Boutiques
         **/
         "ville-entree-boutiques-texte-1" : {
-            fr : "Rien de mieux que de bonnes emplettes !",
+            fr : "Rien de mieux que de bonnes emplettes&nbsp;!",
             en : "-"
         },
         "ville-entree-boutiques-texte-2" : {
-            fr : "Vous vous dirigez vers vos magasins préférés, prêt à faire de bonnes affaires !",
+            fr : "Vous vous dirigez vers vos magasins préférés, prêt à faire de bonnes affaires&nbsp;!",
             en : "-"
         },
 
         "ville-entree-boutiques-achat-texte-1" : {
-            fr : "Une fois vos transactions terminées, vous décidez de revenir à vos occupations...",
+            fr : "Une fois vos transactions terminées, vous décidez de revenir à vos occupations&hellip;",
             en : "-"
         },
 
@@ -95,7 +95,7 @@ define([], function(){
             en : "-"
         },
         "ville-entree-boutiques-retour-texte-2" : {
-            fr : "Rien de mieux que les économies !",
+            fr : "Rien de mieux que les économies&nbsp;!",
             en : "-"
         },
 
@@ -103,7 +103,7 @@ define([], function(){
         * Palais de justice
         **/
         "ville-entree-palais-justice-texte-1" : {
-            fr : "Vous arrivez devant les grandes portes du palais, mais malheureusement... elles sont fermées.",
+            fr : "Vous arrivez devant les grandes portes du palais, mais malheureusement&hellip; elles sont fermées.",
             en : "-"
         },
         "ville-entree-palais-justice-texte-2" : {
@@ -111,11 +111,11 @@ define([], function(){
             en : "-"
         },
         "ville-entree-palais-justice-texte-3" : {
-            fr : "&laquo; Fermé momentanément au public, ouverture prochaine... &raquo;",
+            fr : "&laquo;&nbsp;Fermé momentanément au public, ouverture prochaine&hellip;&nbsp;&raquo;",
             en : "-"
         },
         "ville-entree-palais-justice-texte-4" : {
-            fr : "Eh bien, il faudra attendre...",
+            fr : "Eh bien, il faudra attendre&hellip;",
             en : "-"
         },
 	};

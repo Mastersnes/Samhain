@@ -9,7 +9,7 @@ define([], function(){
                 en : ""
             },
             "boutique-nothing-2" : {
-                fr : "Vos poches sont aussi vides que le crâne d'une goule...",
+                fr : "Vos poches sont aussi vides que le crâne d'une goule&hellip;",
                 en : ""
             },
 	};

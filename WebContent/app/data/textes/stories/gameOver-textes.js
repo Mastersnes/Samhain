@@ -15,8 +15,8 @@ define([
         },
 
 	    "gameOver1-texte-1" : {
-            fr : "&laquo; Qu'est-ce que c’était&nbsp;?! &raquo;",
-            en : "&laquo; What was that?! &raquo;"
+            fr : "&laquo;&nbsp;Qu'est-ce que c’était&nbsp;?!&nbsp;&raquo;",
+            en : "&laquo;&nbsp;What was that?!&nbsp;&raquo;"
         },
         "gameOver1-texte-2" : {
             fr : "Vous vous ressaisissez, encore frappé par cette vision cauchemardesque. L'aventure n'attend pas&nbsp;!",

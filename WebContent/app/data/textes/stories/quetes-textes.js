@@ -7,7 +7,7 @@ define([
         * UI
         **/
         "quetes-nothing" : {
-            fr : "Le panneau est complètement vide...",
+            fr : "Le panneau est complètement vide&hellip;",
             en : ""
         },
         "recompense-quete" : {

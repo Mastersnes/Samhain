@@ -13,8 +13,8 @@ define([], function(){
                 en : "Potion of Life"
             },
             "potionSante-texte" : {
-                fr : "Une drôle de fiole toute rouge. Sur l'étiquette, il est noté : &laquo; Ne pas en abuser, donne la diarrhée &raquo;.",
-                en : "That's a funny red vial. On the label, it is noted: &laquo; Don't abuse it, gives diarrhea &raquo;."
+                fr : "Une drôle de fiole toute rouge. Sur l'étiquette, il est noté : &laquo;&nbsp;Ne pas en abuser, donne la diarrhée&nbsp;&raquo;.",
+                en : "That's a funny red vial. On the label, it is noted: &laquo;&nbsp;Don't abuse it, gives diarrhea&nbsp;&raquo;."
             },
             "potionMana" : {
                 fr : "Potion de mana",
@@ -25,7 +25,7 @@ define([], function(){
                 en : "Potion of Mana"
             },
             "potionMana-texte" : {
-                fr : "Une jolie fiole toute bleue. Sur l'étiquette, il est noté : &laquo; Attention, agite les ganglions &raquo;.",
+                fr : "Une jolie fiole toute bleue. Sur l'étiquette, il est noté : &laquo;&nbsp;Attention, agite les ganglions&nbsp;&raquo;.",
                 en : "-"
             },
             "antidote" : {
@@ -89,8 +89,8 @@ define([], function(){
                 en : "Elixir"
             },
             "elixir-texte" : {
-                fr : "Une grosse fiole éclatante de lumière&nbsp;! Une étiquette indique : &laquo; Ne pas boire après minuit, risque d'allergie &raquo;.",
-                en : "A big, bright vial of light! A label says: &laquo; Do not drink after midnight, risk of allergy &raquo;."
+                fr : "Une grosse fiole éclatante de lumière&nbsp;! Une étiquette indique : &laquo;&nbsp;Ne pas boire après minuit, risque d'allergie&nbsp;&raquo;.",
+                en : "A big, bright vial of light! A label says: &laquo;&nbsp;Do not drink after midnight, risk of allergy&nbsp;&raquo;."
             }
 	};
 	

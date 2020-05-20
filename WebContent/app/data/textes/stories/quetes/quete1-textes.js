@@ -7,7 +7,7 @@ define([], function(){
         },
 
         "quete1-description-1" : {
-            fr : "Toutes mes poules ont disparus !",
+            fr : "Toutes mes poules ont disparu&nbsp;!",
             en : ""
         },
         "quete1-description-2" : {
@@ -15,7 +15,7 @@ define([], function(){
             en : ""
         },
         "quete1-description-3" : {
-            fr : "PS : Vivante, merci...",
+            fr : "PS&nbsp;:&nbsp;vivantes, merci&hellip;",
             en : ""
         },
 
@@ -23,7 +23,7 @@ define([], function(){
         * Début
         **/
         "quete1-debut-texte-1" : {
-            fr : "Une belle quête bien facile !",
+            fr : "Une belle quête bien facile&nbsp;!",
             en : ""
         },
         "quete1-debut-texte-2" : {
@@ -31,20 +31,20 @@ define([], function(){
             en : ""
         },
         "quete1-debut-texte-3" : {
-            fr : "Tout ceci ne devrait qu'un simple formalité pour un héros de votre envergure...",
+            fr : "Tout ceci ne devrait être qu'une simple formalité pour un héros de votre envergure&hellip;",
             en : ""
         },
 
         "quete1-debut-2-texte-1" : {
-            fr : "Grâce à un petit raccourcis bien pratique, vous arrivez bien vite devant la chaumière de paille.",
+            fr : "Grâce à un petit raccourci bien pratique, vous arrivez bien vite devant la chaumière de paille.",
             en : ""
         },
         "quete1-debut-2-texte-2" : {
-            fr : "La basse court, lieu du crime, doit encore être flambant d'indice.",
+            fr : "La basse-cour, lieu du crime, doit encore être flambante d'indices.",
             en : ""
         },
         "quete1-debut-2-texte-3" : {
-            fr : "Mais peut-être vaudrait-il mieux interroger votre client en premier lieu ?",
+            fr : "Mais peut-être vaudrait-il mieux commencer par interroger votre client&nbsp;?",
             en : ""
         },
 
@@ -60,12 +60,12 @@ define([], function(){
             en : ""
         },
         "quete1-debut-fermier-texte-3" : {
-            fr : "&laquo; Ouai, c'est pourquoi ? &raquo;",
+            fr : "&laquo;&nbsp;Ouais, c'est pourquoi&nbsp;?&nbsp;&raquo;",
             en : ""
         },
 
         "quete1-debut-fermier-2-texte-1" : {
-            fr : "&laquo; Alors c'est toi qui va retrouver mes <span key='poulet'>poulets</span> ? &raquo;",
+            fr : "&laquo;&nbsp;Alors c'est toi qui vas retrouver mes <span key='poulet'>poulettes</span>&nbsp;?&nbsp;&raquo;",
             en : ""
         },
         "quete1-debut-fermier-2-texte-2" : {
@@ -73,41 +73,41 @@ define([], function(){
             en : ""
         },
         "quete1-debut-fermier-2-texte-3" : {
-            fr : "&laquo; T'a pas l'air très futé mais tu peux faire l'affaire.",
+            fr : "&laquo;&nbsp;T'as pas l'air très futé, mais tu peux faire l'affaire.",
             en : ""
         },
         "quete1-debut-fermier-2-texte-4" : {
-            fr : "T'auras ta récompense quand tu les auras retrouvé, pas avant ! &raquo;",
+            fr : "T'auras ta récompense quand tu les auras retrouvées, pas avant&nbsp;!&nbsp;&raquo;",
             en : ""
         },
 
         "quete1-debut-fermier-3-texte-1" : {
-            fr : "Toujours intéressé par l'idée que cette or soit dans votre poche, vous commencez les interrogatoire.",
+            fr : "Toujours intéressé par l'idée que cet or soit dans votre poche, vous commencez les interrogatoires.",
             en : ""
         },
         "quete1-debut-fermier-3-texte-2" : {
-            fr : "&laquo; Elles se sont complètement évaporés dans la nuit, j'ai rien pu voir !",
+            fr : "&laquo;&nbsp;Elles se sont complètement évaporées dans la nuit, j'ai rien pu voir&nbsp;!",
             en : ""
         },
         "quete1-debut-fermier-3-texte-3" : {
-            fr : "M'étonnerai pas qu'elles se soient perdu dans les champs, gueularde comme elles sont... &raquo;",
+            fr : "M'étonnerait pas qu'elles se soient perdues dans les champs, gueulardes comme elles sont&hellip;&nbsp;&raquo;",
             en : ""
         },
 
         "quete1-debut-fermier-4-texte-1" : {
-            fr : "Le fermier commence a s'impatienter.",
+            fr : "Le fermier commence à s'impatienter.",
             en : ""
         },
         "quete1-debut-fermier-4-texte-2" : {
-            fr : "&laquo; C'est pas tout ça mais y'en a qui ont du boulot si tu vois ce que j'veux dire.",
+            fr : "&laquo;&nbsp;C'est pas tout ça, mais y'en a qui ont du boulot si tu vois ce que j'veux dire.",
             en : ""
         },
         "quete1-debut-fermier-4-texte-3" : {
-            fr : "Retrouve mes petits et t'aura ton or ! &raquo;",
+            fr : "Retrouve mes petites et t'auras ton or&nbsp;!&nbsp;&raquo;",
             en : ""
         },
         "quete1-debut-fermier-4-texte-4" : {
-            fr : "D'un signe de tête, il vous salue et ferme la porte aussi violemment qu'il ne l'a ouverte.",
+            fr : "D'un signe de tête, il vous salue et ferme la porte aussi violemment qu'il l'a ouverte.",
             en : ""
         },
 
@@ -115,37 +115,37 @@ define([], function(){
         * Debut - Chercher des indices
         **/
         "quete1-debut-indice-texte-1" : {
-            fr : "Vous pénétrez dans la basse-court, à l’affût du moindre signe suspect...",
+            fr : "Vous pénétrez dans la basse-cour, à l’affût du moindre signe suspect&hellip;",
             en : ""
         },
         "quete1-debut-indice-texte-2" : {
-            fr : "Le lieu est couvert de boue et sent la vieille chaussette, idéal pour commencer l'enquête !",
+            fr : "Le lieu est couvert de boue et sent la vieille chaussette, idéal pour commencer l'enquête&nbsp;!",
             en : ""
         },
 
         "quete1-debut-indice-2-texte-1" : {
-            fr : "Après de longues et pénibles recherche, vous finissez par découvrir un trou dans le grillage.",
+            fr : "Après de longues et pénibles recherches, vous finissez par découvrir un trou dans le grillage.",
             en : ""
         },
         "quete1-debut-indice-2-texte-2" : {
-            fr : "Des traces de pattes boueuses s'enfonce dans les hautes herbes.",
+            fr : "Des traces de pattes boueuses s'enfoncent dans les hautes herbes.",
             en : ""
         },
         "quete1-debut-indice-2-texte-3" : {
-            fr : "C'est certain, les <span key='poulet'>volailles</span> se sont enfuies par là !",
+            fr : "C'est certain, les <span key='poulet'>volailles</span> se sont enfuies par là&nbsp;!",
             en : ""
         },
 
         "quete1-debut-indice-3-texte-1" : {
-            fr : "Scrupuleusement, la tête au sol, vous suivez la trace des fuyardes.",
+            fr : "Scrupuleusement, la tête au sol, vous suivez la piste des fuyardes.",
             en : ""
         },
         "quete1-debut-indice-3-texte-2" : {
-            fr : "Votre traque s’arrête au cœur d'un gigantesque champs.",
+            fr : "Votre traque s’arrête au cœur d'une gigantesque culture de maïs.",
             en : ""
         },
         "quete1-debut-indice-3-texte-3" : {
-            fr : "Ici, il semblerait qu'elles se soient séparées en 2 groupes...",
+            fr : "Ici, il semblerait qu'elles se soient séparées en 2 groupes&hellip;",
             en : ""
         },
 
@@ -162,20 +162,20 @@ define([], function(){
         },
 
         "quete1-debut-indice-gauche-2-texte-1" : {
-            fr : "Vous vous approchez prudemment, prêt à surprendre l'ennemi, quand...",
+            fr : "Vous vous approchez prudemment, prêt à surprendre l'ennemi, quand&hellip;",
             en : ""
         },
         "quete1-debut-indice-gauche-2-texte-2" : {
-            fr : "À vos pieds, complètement repu, un des <span key='poulet'>poulets</span> essaie de s'enfuir en roulant sur lui même.",
+            fr : "À vos pieds, complètement repue, une des <span key='poulet'>poulettes</span> essaie de s'enfuir en roulant sur elle-même.",
             en : ""
         },
         "quete1-debut-indice-gauche-2-texte-3" : {
-            fr : "Bizarre ces poulets...",
+            fr : "Bizarre ces poulets&hellip;",
             en : ""
         },
 
         "quete1-debut-indice-gauche-3-texte-1" : {
-            fr : "Vous saisissez le gourmand et lui trouvez une place confortable dans votre sac.",
+            fr : "Vous saisissez la gourmande et lui trouvez une place confortable dans votre sac.",
             en : ""
         },
         "quete1-debut-indice-gauche-3-texte-2" : {
@@ -183,7 +183,7 @@ define([], function(){
             en : ""
         },
         "quete1-debut-indice-gauche-3-texte-3" : {
-            fr : "De souvenir, les autres traces partaient vers la droite...",
+            fr : "Vers où partaient les autres empreintes déjà&nbsp;?",
             en : ""
         },
 
@@ -200,7 +200,7 @@ define([], function(){
         * En direction des champs
         **/
         "quete1-champ-texte-1" : {
-            fr : "Vous suivez le chemin de terre, dans la direction indiqué.",
+            fr : "Vous suivez le sentier de terre, dans la direction indiquée.",
             en : ""
         },
         "quete1-champ-texte-2" : {
@@ -213,24 +213,24 @@ define([], function(){
             en : ""
         },
         "quete1-champ-2-texte-2" : {
-            fr : "Ceux-ci, impassible, ne lève même pas la tête.",
+            fr : "Ceux-ci, impassibles, ne lèvent même pas la tête.",
             en : ""
         },
         "quete1-champ-2-texte-3" : {
-            fr : "Accueillant...",
+            fr : "Accueillant&hellip;",
             en : ""
         },
 
         "quete1-champ-3-texte-1" : {
-            fr : "Voyant leur manque de réaction, vous tousser pour attirer leur attention.",
+            fr : "Voyant leur manque de réaction, vous toussez pour vous faire remarquer.",
             en : ""
         },
         "quete1-champ-3-texte-2" : {
-            fr : "L'un d'eux, sans doute le chef, vous regarde et ajoute :",
+            fr : "L'un d'eux, sans doute le chef, vous regarde et lance :",
             en : ""
         },
         "quete1-champ-3-texte-3" : {
-            fr : "&laquo; Tu veux quoi toi ? &raquo;",
+            fr : "&laquo;&nbsp;Tu veux quoi toi&nbsp;?&nbsp;&raquo;",
             en : ""
         },
 
@@ -239,11 +239,11 @@ define([], function(){
             en : ""
         },
         "quete1-champ-4-texte-2" : {
-            fr : "&laquo; Des poulets ? Mouai, ptêt bien qu'on les a vu... Ou ptêt pas.",
+            fr : "&laquo;&nbsp;Des poulets&nbsp;? Mouais, ptêt bien qu'on les a vus&hellip; Ou ptêt pas.",
             en : ""
         },
         "quete1-champ-4-texte-3" : {
-            fr : "Ma mémoire me joue des tours en ce moment, tu comprend non ? &raquo;",
+            fr : "Ma mémoire me joue des tours en ce moment, tu comprends non&nbsp;?&nbsp;&raquo;",
             en : ""
         },
         "quete1-champ-4-texte-4" : {
@@ -255,7 +255,7 @@ define([], function(){
         * Abandonner
         **/
         "quete1-abandon-texte-1" : {
-            fr : "Sans piste supplémentaire, vous êtes forcé de rentrer à la ferme faire votre rapport...",
+            fr : "Sans piste supplémentaire, vous êtes forcé de rentrer à la ferme faire votre rapport&hellip;",
             en : ""
         },
 
@@ -267,28 +267,28 @@ define([], function(){
             en : ""
         },
         "quete1-champ-menacer-texte-2" : {
-            fr : "&laquo; Tu crois vraiment que tu vas nous faire peur avec ces petits bras ? &raquo;",
+            fr : "&laquo;&nbsp;Tu crois vraiment que tu vas nous faire peur avec ces petits bras&nbsp;?&nbsp;&raquo;",
             en : ""
         },
         "quete1-champ-menacer-texte-3" : {
-            fr : "Les <span key='villageois'>trois paysans</span> se lève et s'avance vers vous. Ça va faire mal...",
+            fr : "Les <span key='villageois'>trois paysans</span> se lèvent et s'avancent vers vous. Ça va faire mal&hellip;",
             en : ""
         },
 
         "quete1-champ-menacer-2-texte-1" : {
-            fr : "Les brutes s'écroulent au sol. Maintenant, ils ont l'air bien intimidé.",
+            fr : "Les brutes s'écroulent au sol. Maintenant, ils ont l'air bien intimidés.",
             en : ""
         },
         "quete1-champ-menacer-2-texte-2" : {
-            fr : "Le chef, encore conscient, semble beaucoup plus enclin à vous aider :",
+            fr : "Le chef, encore conscient, semble beaucoup plus enclin à vous aider maintenant :",
             en : ""
         },
         "quete1-champ-menacer-2-texte-3" : {
-            fr : "&laquo; On a compris, ne nous tapent plus ! Ils sont partis vers la ville, là bas. &raquo;",
+            fr : "&laquo;&nbsp;On a compris, ne nous tape plus&nbsp;! Ils sont partis vers la ville, là-bas.&nbsp;&raquo;",
             en : ""
         },
         "quete1-champ-menacer-2-texte-4" : {
-            fr : "La violence... Il n'y a que ça de vrai...",
+            fr : "La violence&hellip; Il n'y a que ça de vrai&hellip;",
             en : ""
         },
 
@@ -296,23 +296,23 @@ define([], function(){
         * Champs - Soudoiement des paysans
         **/
         "quete1-champ-soudoyer-texte-1" : {
-            fr : "Son sourire se transforme en rire et les pièce disparaissent bien vite dans sa poche.",
+            fr : "Son sourire se transforme en rire et les pièces disparaissent bien vite dans sa poche.",
             en : ""
         },
         "quete1-champ-soudoyer-texte-2" : {
-            fr : "&laquo; Ah, en vla un d'homme intelligent !",
+            fr : "&laquo;&nbsp;Ah, en v'la un d'homme intelligent&nbsp;!",
             en : ""
         },
         "quete1-champ-soudoyer-texte-3" : {
-            fr : "Ca me revient maintenant, on les a bien vu tes poulets mon gars.",
+            fr : "Ça me revient maintenant, on les a bien vu tes poulets mon gars.",
             en : ""
         },
         "quete1-champ-soudoyer-texte-4" : {
-            fr : "Ils sont partis vers la ville, dans cette direction ! &raquo;",
+            fr : "Ils sont partis vers la ville, dans cette direction&nbsp;!&nbsp;&raquo;",
             en : ""
         },
         "quete1-champ-soudoyer-texte-5" : {
-            fr : "Rien de mieux que la diplomatie...",
+            fr : "Rien de mieux que la diplomatie&hellip;",
             en : ""
         },
 
@@ -320,29 +320,29 @@ define([], function(){
         * Berge
         **/
         "quete1-berge-texte-1" : {
-            fr : "Vous suivez le chemin indiqué par vos nouveaux amis et arrivez aux bord d'un fleuve.",
+            fr : "Vous suivez le chemin indiqué par vos nouveaux amis et arrivez au bord d'un fleuve.",
             en : ""
         },
         "quete1-berge-texte-2" : {
-            fr : "Le son de l'eau calme qui ruisselle lentement sur les pierres effilés n'est perturbé que le doux ronflement du vent.",
+            fr : "Le son de l'eau calme, qui ruisselle lentement sur les pierres effilées, n'est perturbé que par le doux ronflement du vent.",
             en : ""
         },
 
         "quete1-berge-2-texte-1" : {
-            fr : "Perturbé par ce ronflement, vous vous penchez au dessus du pont pour en vérifier la source.",
+            fr : "Ronflement&nbsp;?! Intrigué par ce bruit, vous vous penchez au-dessus du pont pour en vérifier la source.",
             en : ""
         },
         "quete1-berge-2-texte-2" : {
-            fr : "L'un des <span key='poulet'>poulets</span>, délicatement niché entre deux pierre, a profité du silence du lieu pour piquer un petit somme.",
+            fr : "L'une des <span key='poulet'>poulettes</span>, délicatement nichée entre deux pierres, a profité du silence du lieu pour piquer un petit somme.",
             en : ""
         },
 
         "quete1-berge-3-texte-1" : {
-            fr : "Le belle oiseau se laisse cueillir comme une fleur et en profite même pour se blottir sous votre manteau.",
+            fr : "Le bel oiseau se laisse cueillir comme une fleur et en profite même pour se blottir sous votre manteau.",
             en : ""
         },
         "quete1-berge-3-texte-2" : {
-            fr : "Comment résister à tant de tendresse ?",
+            fr : "Comment résister à tant de tendresse&nbsp;?",
             en : ""
         },
 
@@ -358,7 +358,7 @@ define([], function(){
             en : ""
         },
         "quete1-ville-texte-3" : {
-            fr : "Qu'est ce qui se passe encore ?",
+            fr : "Qu'est-ce qui se passe encore&nbsp;?",
             en : ""
         },
 
@@ -371,7 +371,7 @@ define([], function(){
             en : ""
         },
         "quete1-ville-2-texte-3" : {
-            fr : "Comment a t'il bien pu faire pour monter là haut...",
+            fr : "Comment a-t-il bien pu faire pour monter là-haut&hellip;",
             en : ""
         },
 
@@ -384,7 +384,7 @@ define([], function(){
             en : ""
         },
         "quete1-ville-3-texte-3" : {
-            fr : "Vous n'avez pas le vertige, non ?",
+            fr : "Vous n'avez pas le vertige, non&nbsp;?",
             en : ""
         },
 
@@ -397,12 +397,12 @@ define([], function(){
             en : ""
         },
         "quete1-ville-4-texte-3" : {
-            fr : "À mis parcourt, vous sentez déjà le vent vous chahuter les cheveux...",
+            fr : "À mi-parcourt, vous sentez déjà le vent vous chahuter les cheveux&hellip;",
             en : ""
         },
 
         "quete1-ville-5-texte-1" : {
-            fr : "Ne pas regarder en bas.",
+            fr : "Ne pas regarder en bas&hellip;",
             en : ""
         },
         "quete1-ville-5-texte-2" : {
@@ -410,16 +410,16 @@ define([], function(){
             en : ""
         },
         "quete1-ville-5-texte-3" : {
-            fr : "Une fois au sommet, vous tentez un légère œil discret.",
+            fr : "Une fois au sommet, vous tentez un léger coup d'œil discret.",
             en : ""
         },
         "quete1-ville-5-texte-4" : {
-            fr : "Et là, c'est le drame...",
+            fr : "Et là, c'est le drame&hellip;",
             en : ""
         },
 
         "quete1-ville-6-texte-1" : {
-            fr : "Le sol vous parait à des kilomètres loin en dessous et pourtant il vous attire fortement.",
+            fr : "Le sol vous parait à des kilomètres en dessous et pourtant il vous attire fortement.",
             en : ""
         },
         "quete1-ville-6-texte-2" : {
@@ -431,7 +431,7 @@ define([], function(){
             en : ""
         },
         "quete1-ville-6-texte-4" : {
-            fr : "Ça y est, cette fois ci, c'est la fin...",
+            fr : "Ça y est, cette fois-ci, c'est la fin&hellip;",
             en : ""
         },
 
@@ -440,7 +440,7 @@ define([], function(){
             en : ""
         },
         "quete1-ville-7-texte-2" : {
-            fr : "Vous tombez à la renverse, et dévalez l'escalier qui était derrière vous, sur les fesses.",
+            fr : "Vous dévalez l'escalier qui était derrière vous, sur les fesses.",
             en : ""
         },
         "quete1-ville-7-texte-3" : {
@@ -448,7 +448,7 @@ define([], function(){
             en : ""
         },
         "quete1-ville-7-texte-4" : {
-            fr : "C'est déjà ça !",
+            fr : "C'est déjà ça&nbsp;!",
             en : ""
         },
 
@@ -465,7 +465,7 @@ define([], function(){
             en : ""
         },
         "quete1-ville-8-texte-4" : {
-            fr : "Vous l'avez bien mérité !",
+            fr : "Vous l'avez bien mérité&nbsp;!",
             en : ""
         },
 
@@ -473,7 +473,7 @@ define([], function(){
         * Abandon du clochet
         **/
         "quete1-ville-abandon-texte-1" : {
-            fr : "Il n'aura qu'à se débrouiller seul, vous êtes décidément trop vieux pour ces conneries...",
+            fr : "Il n'aura qu'à se débrouiller seul, vous êtes décidément trop vieux pour ces conneries&hellip;",
             en : ""
         },
         "quete1-ville-abandon-texte-2" : {
@@ -489,12 +489,12 @@ define([], function(){
             en : ""
         },
         "quete1-taverne-texte-2" : {
-            fr : "Déjà, le tintement des verres qui cognent les uns contre les autres vous ravi les oreilles.",
+            fr : "Déjà, le tintement des verres qui cognent les uns contre les autres vous ravit les oreilles.",
             en : ""
         },
 
         "quete1-taverne-2-texte-1" : {
-            fr : "Vous entrez dans le bâtiment, préparant vos oreilles au brouhaha...",
+            fr : "Vous entrez dans le bâtiment, préparant au brouhaha&hellip;",
             en : ""
         },
         "quete1-taverne-2-texte-2" : {
@@ -511,7 +511,7 @@ define([], function(){
             en : ""
         },
         "quete1-taverne-3-texte-2" : {
-            fr : "&laquo; Des pou quoi ? Euh non, y'a pas poulet ici non... &raquo;",
+            fr : "&laquo;&nbsp;Des pou quoi&nbsp;? Euh non, y'a pas d'poulets ici non&hellip;&nbsp;&raquo;",
             en : ""
         },
         "quete1-taverne-3-texte-3" : {
@@ -519,7 +519,7 @@ define([], function(){
             en : ""
         },
         "quete1-taverne-3-texte-4" : {
-            fr : "&laquo; J'vois pas ce que ça peut être... &raquo;",
+            fr : "&laquo;&nbsp;J'vois pas ce que ça peut être&hellip;&nbsp;&raquo;",
             en : ""
         },
 
@@ -528,24 +528,24 @@ define([], function(){
             en : ""
         },
         "quete1-taverne-4-texte-2" : {
-            fr : "Devant vos yeux ébahit, une scéne d'horreur :",
+            fr : "Devant vos yeux ébahis, une scène d'horreur :",
             en : ""
         },
         "quete1-taverne-4-texte-3" : {
-            fr : "Le <span key='villageois'>cuisinier</span> est en train de plumé votre <span key='poulet'>protégé</span> !",
+            fr : "Le <span key='villageois'>cuisinier</span> est en train de plumer votre <span key='poulet'>protégée</span>&nbsp;!",
             en : ""
         },
         "quete1-taverne-4-texte-4" : {
-            fr : "Vite, c'est maintenant ou jamais !",
+            fr : "Vite, c'est maintenant ou jamais&nbsp;!",
             en : ""
         },
 
         "quete1-taverne-5-texte-1" : {
-            fr : "C’était tout juste !",
+            fr : "C’était tout juste&nbsp;!",
             en : ""
         },
         "quete1-taverne-5-texte-2" : {
-            fr : "Vous profitez du fait que le cuistot soit encore inconscient pour attraper le poulet et filer comme une créme (à l'anglaise).",
+            fr : "Vous profitez du fait que le cuistot soit encore inconscient pour attraper la poulette et filer comme une crème (à l'anglaise).",
             en : ""
         },
 
@@ -553,7 +553,7 @@ define([], function(){
         * Taverne - Prendre un verre
         **/
         "quete1-taverne-verre-texte-1" : {
-            fr : "Détendu, vous buvez tranquillement votre menthe à l'eau, uniquement gêné par les piaillement d'un oiseau au loin...",
+            fr : "Détendu, vous buvez tranquillement votre menthe à l'eau, uniquement gêné par les piaillements d'un oiseau au loin&hellip;",
             en : ""
         },
         "quete1-taverne-verre-texte-2" : {
@@ -561,7 +561,7 @@ define([], function(){
             en : ""
         },
         "quete1-taverne-verre-texte-3" : {
-            fr : "Il est grand temps d'en finir...",
+            fr : "Il est grand temps d'en finir&hellip;",
             en : ""
         },
 
@@ -573,50 +573,50 @@ define([], function(){
             en : ""
         },
         "quete1-retour-texte-2" : {
-            fr : "Satisfait de vos recherche, vous vous mettez en route vers la maison de votre client, prêt à lui faire votre rapport.",
+            fr : "Satisfait de vos recherches, vous vous mettez en route vers la maison de votre client, prêt à lui faire votre rapport.",
             en : ""
         },
         "quete1-retour-texte-3" : {
-            fr : "Tout travail mérite salaire, et vous aimeriez bien avoir le votre !",
+            fr : "Tout travail mérite salaire, et vous aimeriez bien avoir le vôtre&nbsp;!",
             en : ""
         },
 
         "quete1-retour-2-texte-1" : {
-            fr : "Vous repensez aux aventures du jour, perdu dans vos esprits...",
+            fr : "Vous repensez aux aventures du jour, perdu dans vos pensées&hellip;",
             en : ""
         },
         "quete1-retour-2-texte-2" : {
-            fr : "Mais soudain, là, à quelque pas, un des <span key='poulet'>fuyards</span> vous fait face.",
+            fr : "Mais soudain, là, à quelques pas, une des <span key='poulet'>fuyardes</span> vous fait face.",
             en : ""
         },
         "quete1-retour-2-texte-3" : {
-            fr : "Son bec est vert de rage, il veut venger et libérer ses amis.",
+            fr : "Son bec est vert de rage, elle veut venger et libérer ses amis.",
             en : ""
         },
         "quete1-retour-2-texte-4" : {
-            fr : "L'affrontement s'annonce epique !",
+            fr : "L'affrontement s'annonce épique&nbsp;!",
             en : ""
         },
 
         "quete1-retour-3-texte-1" : {
-            fr : "Il lance l'assaut, prêt à vous picorer comme il se doit.",
+            fr : "Elle lance l'assaut, prête à vous picorer comme il se doit.",
             en : ""
         },
         "quete1-retour-3-texte-2" : {
-            fr : "Malheureusement, aveuglé par sa colère, il ne voit pas les vaches qui, ayant fini leur broutement quotidien, traverse comme des folles le chemin pour rentrer chez elles.",
+            fr : "Malheureusement, aveuglée par sa colère, elle ne voit pas les vaches qui, ayant fini leur broutement quotidien, traversent comme des folles le chemin pour rentrer chez elles.",
             en : ""
         },
         "quete1-retour-3-texte-3" : {
-            fr : "Vite ! Il faut agir !",
+            fr : "Vite&nbsp;! Il faut agir&nbsp;!",
             en : ""
         },
 
         "quete1-retour-4-texte-1" : {
-            fr : "Vous vous jetez sur le misérable et le protégez comme vous pouvez.",
+            fr : "Vous vous jetez sur la misérable et la protégez comme vous pouvez.",
             en : ""
         },
         "quete1-retour-4-texte-2" : {
-            fr : "Des tremblements, des meuglements puis, plus rien...",
+            fr : "Des tremblements, des meuglements puis, plus rien&hellip;",
             en : ""
         },
         "quete1-retour-4-texte-3" : {
@@ -624,7 +624,7 @@ define([], function(){
             en : ""
         },
         "quete1-retour-4-texte-4" : {
-            fr : "Le poulet, encore dans vos bras, vous observe avec un air reconnaissant.",
+            fr : "La poulette, encore dans vos bras, vous observe avec un air reconnaissant.",
             en : ""
         },
 
@@ -637,11 +637,11 @@ define([], function(){
         },
         //"quete1-retour-4-texte-2"
         "quete1-retour-abandon-texte-3" : {
-            fr : "La poussière se dissipe vous laissant constater la scène.",
+            fr : "La poussière se dissipe, vous laissant constater la scène.",
             en : ""
         },
         "quete1-retour-abandon-texte-4" : {
-            fr : "Le poulet a disparus, profitant certainement de la ruée pour s’évaporer...",
+            fr : "La poulette a disparu, profitant certainement de la ruée pour s’évaporer&hellip;",
             en : ""
         },
 
@@ -657,15 +657,15 @@ define([], function(){
             en : ""
         },
         "quete1-fin-0-texte-3" : {
-            fr : "&laquo; Tu te fous de moi ?! T'oses te pointer ici les mains vide !",
+            fr : "&laquo;&nbsp;Tu te fous d'moi&nbsp;?! T'oses te pointer ici les mains vides&nbsp;!",
             en : ""
         },
         "quete1-fin-0-texte-4" : {
-            fr : "Dégage de là, tu mérite rien ! Je les retrouverai moi même. &raquo;",
+            fr : "Dégage de là, tu mérites rien&nbsp;! Je les retrouverai moi-même.&nbsp;&raquo;",
             en : ""
         },
         "quete1-fin-0-texte-5" : {
-            fr : "Tant pis... Au moins, c’était marrant...",
+            fr : "Tant pis&hellip; Au moins, c’était marrant&hellip;",
             en : ""
         },
 
@@ -675,15 +675,15 @@ define([], function(){
         //"quete1-fin-0-texte-1"
         //"quete1-fin-0-texte-2"
         "quete1-fin-1-texte-3" : {
-            fr : "&laquo; Un poulet ? Qu'est ce que tu veux que je fasse avec un pauvre petit poulet ?!",
+            fr : "&laquo;&nbsp;Une seule poulette&nbsp;? Qu'est-ce que tu veux que je fasse avec une pauvre petite poulette&nbsp;?!",
             en : ""
         },
         "quete1-fin-1-texte-4" : {
-            fr : "Prend ton pécule et vas-t'en ! Je retrouverai les autres moi même. &raquo;",
+            fr : "Prends ton pécule et va-t'en&nbsp;! Je retrouverai les autres moi-même.&nbsp;&raquo;",
             en : ""
         },
         "quete1-fin-1-texte-5" : {
-            fr : "C'est toujours mieux que rien...",
+            fr : "C'est toujours mieux que rien&hellip;",
             en : ""
         },
 
@@ -693,7 +693,7 @@ define([], function(){
         //"quete1-fin-0-texte-1"
         //"quete1-fin-0-texte-2"
         "quete1-fin-2-texte-3" : {
-            fr : "&laquo; Deux poulets ? Qu'est ce que tu veux que je fasse avec deux pauvres petits poulets ?!",
+            fr : "&laquo;&nbsp;Seulement deux poulettes&nbsp;? Qu'est-ce que tu veux que je fasse avec deux pauvres petites poulettes&nbsp;?!",
             en : ""
         },
         //"quete1-fin-1-texte-4"
@@ -707,19 +707,19 @@ define([], function(){
             en : ""
         },
         "quete1-fin-34-texte-2" : {
-            fr : "Le fermier, rassuré, cours à votre rencontre.",
+            fr : "Le fermier, rassuré, court à votre rencontre.",
             en : ""
         },
         "quete1-fin-34-texte-3" : {
-            fr : "&laquo; Mes poulets ! Tu les as presque tous retrouvés, merci l'aventurier !",
+            fr : "&laquo;&nbsp;Mes poulettes&nbsp;! Tu les as presque toutes retrouvées&nbsp;! Merci l'aventurier&nbsp;!",
             en : ""
         },
         "quete1-fin-34-texte-4" : {
-            fr : "Prend cet or, tu le mérite amplement ! &raquo;",
+            fr : "Prend cet or, tu le mérites amplement&nbsp;!&nbsp;&raquo;",
             en : ""
         },
         "quete1-fin-34-texte-5" : {
-            fr : "C'est toujours plaisant d'aider les autres, surtout quand ça rapporte !",
+            fr : "C'est toujours plaisant d'aider les autres, surtout quand ça rapporte&nbsp;!",
             en : ""
         },
 
@@ -727,20 +727,20 @@ define([], function(){
         * Fin - 5 Poulets
         **/
         "quete1-fin-5-texte-1" : {
-            fr : "Vous arrivez enfin devant la maison du fermier, sûre de vous.",
+            fr : "Vous arrivez enfin devant la maison du fermier, sûr de vous.",
             en : ""
         },
         //"quete1-fin-34-texte-2"
         "quete1-fin-5-texte-3" : {
-            fr : "&laquo; Mes poulets ! Tu les as tous retrouvés !",
+            fr : "&laquo;&nbsp;Mes poulettes&nbsp;! Tu les as toutes retrouvées&nbsp;!",
             en : ""
         },
         "quete1-fin-5-texte-4" : {
-            fr : "Merci beaucoup l'aventurier, je t'en dois une !",
+            fr : "Merci beaucoup l'aventurier, je t'en dois une&nbsp;!",
             en : ""
         },
         "quete1-fin-5-texte-5" : {
-            fr : "Tiens, prend le double de la récompense, tu le mérite ! &raquo;",
+            fr : "Tiens, prends le double de la récompense, tu le mérites&nbsp;!&nbsp;&raquo;",
             en : ""
         },
         //"quete1-fin-34-texte-5"

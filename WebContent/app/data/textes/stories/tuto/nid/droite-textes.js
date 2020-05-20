@@ -32,17 +32,17 @@ define([], function(){
             en : "The creature stops neatly and exclaims in a cavernous voice:"
         },
         "roiAraigneePotion2-texte-2" : {
-            fr : "&laquo; Qui es-tu, jeune aventurier, pour oser pénétrer",
-            en : "&laquo; Who are you, young adventurer, to dare to enter"
+            fr : "&laquo;&nbsp;Qui es-tu, jeune aventurier, pour oser pénétrer",
+            en : "&laquo;&nbsp;Who are you, young adventurer, to dare to enter"
         },
         "roiAraigneePotion2-texte-3" : {
-            fr : "dans l'antre du <span key='roiAraignee'>roi des araignées</span>&nbsp;?! &raquo;",
-            en : "the <span key='roiAraignee'>spider king's</span> den?! &raquo;"
+            fr : "dans l'antre du <span key='roiAraignee'>roi des araignées</span>&nbsp;?!&nbsp;&raquo;",
+            en : "the <span key='roiAraignee'>spider king's</span> den?!&nbsp;&raquo;"
         },
 
         "roiAraigneePotionQui-texte-1" : {
-            fr : "&laquo; Je suis Aros&nbsp;! Le roi arachnide&nbsp;!",
-            en : "&laquo; I'm Aros! The arachnid king!"
+            fr : "&laquo;&nbsp;Je suis Aros&nbsp;! Le roi arachnide&nbsp;!",
+            en : "&laquo;&nbsp;I'm Aros! The arachnid king!"
         },
         "roiAraigneePotionQui-texte-2" : {
             fr : "Je régnais sur ce royaume jusqu'à aujourd'hui, mais&hellip;",
@@ -53,22 +53,22 @@ define([], function(){
             en : "Horrible creatures murdered my children!"
         },
         "roiAraigneePotionQui-texte-4" : {
-            fr : "M'aiderez-vous à me soigner&nbsp;? &raquo;",
-            en : "Will you help me treat myself? &raquo;"
+            fr : "M'aiderez-vous à me soigner&nbsp;?&nbsp;&raquo;",
+            en : "Will you help me treat myself?&nbsp;&raquo;"
         },
 
         "roiAraigneePotionAmi-texte-1" : {
-            fr : "&laquo; Vraiment&nbsp;? Si ce que vous dites est vrai,",
-            en : "&laquo; Really? If what you're saying is true,"
+            fr : "&laquo;&nbsp;Vraiment&nbsp;? Si ce que vous dites est vrai,",
+            en : "&laquo;&nbsp;Really? If what you're saying is true,"
         },
         "roiAraigneePotionAmi-texte-2" : {
-            fr : "pourriez-vous aider un bon ami en le soignant&nbsp;? &raquo;",
-            en : "could you help a good friend by taking care of him? &raquo;"
+            fr : "pourriez-vous aider un bon ami en le soignant&nbsp;?&nbsp;&raquo;",
+            en : "could you help a good friend by taking care of him?&nbsp;&raquo;"
         },
 
         "roiAraigneeGuerit-texte-1" : {
-            fr : "&laquo; Je vous remercie mon ami&nbsp;!",
-            en : "&laquo; Thank you, my friend!"
+            fr : "&laquo;&nbsp;Je vous remercie mon ami&nbsp;!",
+            en : "&laquo;&nbsp;Thank you, my friend!"
         },
         "roiAraigneeGuerit-texte-2" : {
             fr : "Je me sens beaucoup mieux&nbsp;!",
@@ -79,30 +79,30 @@ define([], function(){
             en : "Unfortunately, you arrived a little late&hellip;"
         },
         "roiAraigneeGuerit-texte-4" : {
-            fr : "Mon peuple a été décimé. &raquo;",
-            en : "My people have been decimated. &raquo;"
+            fr : "Mon peuple a été décimé.&nbsp;&raquo;",
+            en : "My people have been decimated.&nbsp;&raquo;"
         },
 
         "roiAraigneeGuerit2-texte-1" : {
-            fr : "&laquo; Ils sont apparus sans prévenir du c&oelig;ur des ténèbres,",
-            en : "&laquo; They appeared without warning of the heart of darkness,"
+            fr : "&laquo;&nbsp;Ils sont apparus sans prévenir du c&oelig;ur des ténèbres,",
+            en : "&laquo;&nbsp;They appeared without warning of the heart of darkness,"
         },
         "roiAraigneeGuerit2-texte-2" : {
             fr : "leur râle sombre les précédant.",
             en : "their dark rail before them."
         },
         "roiAraigneeGuerit2-texte-3" : {
-            fr : "Des spectres, des <span key='goule'>goules</span>, des créatures de l'autre monde&hellip; &raquo;",
-            en : "Ghost, ghouls, creatures of the other world&hellip; &raquo;"
+            fr : "Des spectres, des <span key='goule'>goules</span>, des créatures de l'autre monde&hellip;&nbsp;&raquo;",
+            en : "Ghost, ghouls, creatures of the other world&hellip;&nbsp;&raquo;"
         },
 
         "roiAraigneeGuerit3-texte-1" : {
-            fr : "&laquo; Ils ont tué mes enfants&nbsp;! Ces monstres&nbsp;!",
-            en : "&laquo; They killed my children! Those monsters!"
+            fr : "&laquo;&nbsp;Ils ont tué mes enfants&nbsp;! Ces monstres&nbsp;!",
+            en : "&laquo;&nbsp;They killed my children! Those monsters!"
         },
         "roiAraigneeGuerit3-texte-2" : {
-            fr : "Je dois les venger&nbsp;! &raquo;",
-            en : "I must avenge them&nbsp;! &raquo;"
+            fr : "Je dois les venger&nbsp;!&nbsp;&raquo;",
+            en : "I must avenge them&nbsp;!&nbsp;&raquo;"
         },
         "roiAraigneeGuerit3-texte-3" : {
             fr : "Le roi se jette au-dessus de vous et se dirige vers la sortie.",
@@ -110,16 +110,16 @@ define([], function(){
         },
 
         "roiAraigneeGuerit4-texte-1" : {
-            fr : "&laquo; Ils sont partis attaquer votre village&nbsp;!",
-            en : "&laquo; They've gone to attack your village!"
+            fr : "&laquo;&nbsp;Ils sont partis attaquer votre village&nbsp;!",
+            en : "&laquo;&nbsp;They've gone to attack your village!"
         },
         "roiAraigneeGuerit4-texte-2" : {
             fr : "Les laisserez-vous donc faire&nbsp;?!",
             en : "Will you let them do it?!"
         },
         "roiAraigneeGuerit4-texte-3" : {
-            fr : "Je dois venger les miens&nbsp;! En route&nbsp;! &raquo;",
-            en : "I must avenge mine! Let's go&nbsp;! &raquo;"
+            fr : "Je dois venger les miens&nbsp;! En route&nbsp;!&nbsp;&raquo;",
+            en : "I must avenge mine! Let's go&nbsp;!&nbsp;&raquo;"
         },
         "roiAraigneeGuerit4-texte-4" : {
             fr : "Le roi s'enfonce dans les ténèbres de la grotte.",
@@ -141,29 +141,29 @@ define([], function(){
         },
 
         "roiAraigneeRefus-texte-1" : {
-            fr : "&laquo; Tu n'es donc pas notre ami&hellip;",
-            en : "&laquo; So you are not our friend&hellip;"
+            fr : "&laquo;&nbsp;Tu n'es donc pas notre ami&hellip;",
+            en : "&laquo;&nbsp;So you are not our friend&hellip;"
         },
         "roiAraigneeRefus-texte-2" : {
             fr : "Tu ne vaux pas mieux que ceux qui ont tué mes enfants&hellip;",
             en : "You are no better than those who killed my children&hellip;"
         },
         "roiAraigneeRefus-texte-3" : {
-            fr : "Pars&nbsp;! Sors de ma demeure&hellip; Laisse-moi mourir en paix. &raquo;",
-            en : "Go away! Get out of my house&hellip; let me die in peace. &raquo;"
+            fr : "Pars&nbsp;! Sors de ma demeure&hellip; Laisse-moi mourir en paix.&nbsp;&raquo;",
+            en : "Go away! Get out of my house&hellip; let me die in peace.&nbsp;&raquo;"
         },
 
         "roiAraigneeAgonie-texte-1" : {
-            fr : "&laquo; Pourquoi&nbsp;?&hellip;",
-            en : "&laquo; Why?&hellip;"
+            fr : "&laquo;&nbsp;Pourquoi&nbsp;?&hellip;",
+            en : "&laquo;&nbsp;Why?&hellip;"
         },
         "roiAraigneeAgonie-texte-2" : {
             fr : "Je vous maudis, vous et votre race&nbsp;!",
             en : "I curse you and your race!"
         },
         "roiAraigneeAgonie-texte-3" : {
-            fr : "Ils vous anéantiront tous, la mort aux dents&hellip; &raquo;",
-            en : "They'll kill you all, death to the teeth&hellip; &raquo;"
+            fr : "Ils vous anéantiront tous, la mort aux dents&hellip;&nbsp;&raquo;",
+            en : "They'll kill you all, death to the teeth&hellip;&nbsp;&raquo;"
         },
         "roiAraigneeAgonie-texte-4" : {
             fr : "Le roi s'écroule devant vous, dans une marre de sang vert.",

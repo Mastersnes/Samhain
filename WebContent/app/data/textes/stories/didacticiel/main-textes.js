@@ -9,7 +9,7 @@ define([], function(){
             en : "-"
         },
         "didacticiel-gauche-texte-2" : {
-            fr : "&laquo; Grâce à ton choix fabuleux, tu as obtenu la loupe&nbsp;!",
+            fr : "&laquo;&nbsp;Grâce à ton choix fabuleux, tu as obtenu la loupe&nbsp;!",
             en : "-"
         },
         "didacticiel-gauche-texte-3" : {
@@ -17,7 +17,7 @@ define([], function(){
             en : "-"
         },
         "didacticiel-gauche-texte-4" : {
-            fr : "Puisque tu es sage et attentif, je t'autorise exceptionnellement à ouvrir mon autre main. Vas-y, c'est gratuit&nbsp;! &raquo;",
+            fr : "Puisque tu es sage et attentif, je t'autorise exceptionnellement à ouvrir mon autre main. Vas-y, c'est gratuit&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
 
@@ -29,7 +29,7 @@ define([], function(){
             en : "-"
         },
         "didacticiel-gauchedroite-texte-2" : {
-            fr : "&laquo; Voici maintenant le carnet&nbsp;!",
+            fr : "&laquo;&nbsp;Voici maintenant le carnet&nbsp;!",
             en : "-"
         },
 
@@ -41,7 +41,7 @@ define([], function(){
             en : "-"
         },
         "didacticiel-droite-texte-2" : {
-            fr : "&laquo; Grâce à ton flair infaillible, tu as obtenu le carnet&nbsp;!",
+            fr : "&laquo;&nbsp;Grâce à ton flair infaillible, tu as obtenu le carnet&nbsp;!",
             en : "-"
         },
         "didacticiel-droite-texte-3" : {
@@ -62,11 +62,11 @@ define([], function(){
             en : "-"
         },
         "didacticiel-droitegauche-texte-2" : {
-            fr : "&laquo; Voici maintenant la loupe&nbsp;!",
+            fr : "&laquo;&nbsp;Voici maintenant la loupe&nbsp;!",
             en : "-"
         },
         "didacticiel-droitegauche-texte-4" : {
-            fr : "Une fois que tu auras terminé, nous pourrons continuer. &raquo;",
+            fr : "Une fois que tu auras terminé, nous pourrons continuer.&nbsp;&raquo;",
             en : "-"
         },
 	};

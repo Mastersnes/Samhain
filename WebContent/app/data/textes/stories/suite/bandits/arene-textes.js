@@ -9,7 +9,7 @@ define([], function(){
             en : "-"
         },
         "bandits-arene-entrer-texte-2" : {
-            fr : "En face de vous, quatre goules comptent bien faire de vous leur prochain dîner...",
+            fr : "En face de vous, quatre goules comptent bien faire de vous leur prochain dîner&hellip;",
             en : "-"
         },
 
@@ -18,11 +18,11 @@ define([], function(){
             en : "-"
         },
         "bandits-arene-entrer-2-texte-2" : {
-            fr : "Vous trouvez enfin le temps de souffler, quand vous remarquez une main bouger au sol !",
+            fr : "Vous trouvez enfin le temps de souffler, quand vous remarquez une main bouger au sol&nbsp;!",
             en : "-"
         },
         "bandits-arene-entrer-2-texte-3" : {
-            fr : "Deux challengers, dévorés par les goules vaincues, se relèvent doucement et se dirigent vers vous...",
+            fr : "Deux challengers, dévorés par les goules vaincues, se relèvent doucement et se dirigent vers vous&hellip;",
             en : "-"
         },
 
@@ -31,7 +31,7 @@ define([], function(){
             en : "-"
         },
         "bandits-arene-entrer-3-texte-2" : {
-            fr : "&laquo; Assez ! Ce combat m'ennuie et n'est pas digne d'un héros comme toi... &raquo;",
+            fr : "&laquo;&nbsp;Assez&nbsp;! Ce combat m'ennuie et n'est pas digne d'un héros comme toi&hellip;&nbsp;&raquo;",
             en : "-"
         },
         "bandits-arene-entrer-3-texte-3" : {
@@ -39,7 +39,7 @@ define([], function(){
             en : "-"
         },
         "bandits-arene-entrer-3-texte-4" : {
-            fr : "&laquo; Allez, montre-moi donc de quoi tu es capable ! &raquo;",
+            fr : "&laquo;&nbsp;Allez, montre-moi donc de quoi tu es capable&nbsp;!&nbsp;&raquo;",
             en : "-"
         },
 
@@ -59,7 +59,7 @@ define([], function(){
             en : "-"
         },
         "bandits-arene-assassiner-texte-4" : {
-            fr : "Félicitations, votre assassinat est une réussite !",
+            fr : "Félicitations, votre assassinat est une réussite&nbsp;!",
             en : "-"
         },
 
@@ -68,7 +68,7 @@ define([], function(){
             en : "-"
         },
         "bandits-arene-assassiner-2-texte-2" : {
-            fr : "Eh bien, cela vous fera deux récompenses !",
+            fr : "Eh bien, cela vous fera deux récompenses&nbsp;!",
             en : "-"
         },
         "bandits-arene-assassiner-2-texte-3" : {
@@ -84,7 +84,7 @@ define([], function(){
             en : "-"
         },
         "bandits-arene-win-texte-2" : {
-            fr : "Eh bien, ils n'étaient pas si terribles que ça finalement...",
+            fr : "Eh bien, ils n'étaient pas si terribles que ça finalement&hellip;",
             en : "-"
         },
 
@@ -96,7 +96,7 @@ define([], function(){
             en : ""
         },
         "bandits-arene-solo-win-texte-2" : {
-            fr : "Eh bien, il n'était pas si terrible que ça finalement...",
+            fr : "Eh bien, il n'était pas si terrible que ça finalement&hellip;",
             en : ""
         },
 
@@ -104,7 +104,7 @@ define([], function(){
         * Victoire contre les goules
         **/
         "bandits-arene-goule-win-texte-1" : {
-            fr : "&laquo; Eh bien, tu n'es donc pas aussi faible que tu en as l'air ! &raquo;",
+            fr : "&laquo;&nbsp;Eh bien, tu n'es donc pas aussi faible que tu en as l'air&nbsp;!&nbsp;&raquo;",
             en : ""
         },
         "bandits-arene-goule-win-texte-2" : {
@@ -121,7 +121,7 @@ define([], function(){
             en : "-"
         },
         "bandits-arene-fin-texte-2" : {
-            fr : "Une nouvelle élection aura certainement lieu...",
+            fr : "Une nouvelle élection aura certainement lieu&hellip;",
             en : "-"
         },
 		//bandits-arene-assassiner-2-texte-1

@@ -144,15 +144,15 @@ define([], function() {
             "textes" : ["quete1-debut-indice-gauche-texte-1", "quete1-debut-indice-gauche-texte-2"],
             "actions" : [
                 {
-                    "name" : "revenir-pas",
-                    "action" : [
-                        {"key" : "go", "params" : ["quete1-debut-indice-droite"]}
-                    ]
-                },
-                {
                     "name" : "sapprocher",
                     "action" : [
                         {"key" : "go", "params" : ["quete1-debut-indice-gauche-2"]}
+                    ]
+                },
+                {
+                    "name" : "revenir-pas",
+                    "action" : [
+                        {"key" : "go", "params" : ["quete1-debut-indice-droite"]}
                     ]
                 }
             ]
@@ -217,7 +217,7 @@ define([], function() {
             "textes" : ["quete1-champ-2-texte-1", "quete1-champ-2-texte-2", "quete1-champ-2-texte-3"],
             "actions" : [
                 {
-                    "name" : "toussoter",
+                    "name" : "tousser",
                     "action" : [
                         {"key" : "go", "params" : ["quete1-champ-3"]}
                     ]
@@ -246,6 +246,7 @@ define([], function() {
                     ]
                 },
                 {
+                    "appairIf" : [{"key" : "hasGold", "params" : [10]}],
                     "name" : "soudoyer-10",
                     "action" : [
                         {"key" : "depense", "params" : [10]},
@@ -296,7 +297,7 @@ define([], function() {
                     "action" : [
                         {"key" :"fight", "params" : [[
                             "villageois", "villageois", "villageois"
-                        ], "quete1-champ-menacer-2"]}
+                        ], "quete1-champ-menacer-2", "ville-entree-echec-quete"]}
                     ]
                 }
             ]
@@ -525,15 +526,15 @@ define([], function() {
                         "quete1-taverne-2-texte-3"],
             "actions" : [
                 {
-                    "name" : "prendre-verre",
-                    "action" : [
-                        {"key" :"go", "params" : ["quete1-taverne-verre"]}
-                    ]
-                },
-                {
                     "name" : "questionner-tavernier",
                     "action" : [
                         {"key" :"go", "params" : ["quete1-taverne-3"]}
+                    ]
+                },
+                {
+                    "name" : "prendre-verre",
+                    "action" : [
+                        {"key" :"go", "params" : ["quete1-taverne-verre"]}
                     ]
                 }
             ]
@@ -559,7 +560,7 @@ define([], function() {
                     "action" : [
                         {"key" :"fight", "params" : [[
                             {"name" : "villageois", "suffixe":"glouton"}
-                        ], "quete1-taverne-5"]}
+                        ], "quete1-taverne-5", "ville-entree-echec-quete"]}
                     ]
                 }
             ]
@@ -754,6 +755,7 @@ define([], function() {
                 {
                     "name" : "rentrer-ville",
                     "action" : [
+                        {"key" : "score", "params" : ["ChickenQuestComplete"]},
                         {"key" : "end-quete", "params" : [0]}
                     ]
                 }
@@ -767,6 +769,7 @@ define([], function() {
                 {
                     "name" : "rentrer-ville",
                     "action" : [
+                        {"key" : "score", "params" : ["ChickenQuestComplete"]},
                         {"key" : "end-quete", "params" : []}
                     ]
                 }
@@ -780,6 +783,7 @@ define([], function() {
                 {
                     "name" : "rentrer-ville",
                     "action" : [
+                        {"key" : "score", "params" : ["ChickenQuestComplete"]},
                         {"key" : "end-quete", "params" : []}
                     ]
                 }
@@ -793,6 +797,7 @@ define([], function() {
                 {
                     "name" : "rentrer-ville",
                     "action" : [
+                        {"key" : "score", "params" : ["ChickenQuestComplete"]},
                         {"key" : "end-quete", "params" : [100]}
                     ]
                 }
@@ -806,6 +811,7 @@ define([], function() {
                 {
                     "name" : "rentrer-ville",
                     "action" : [
+                        {"key" : "score", "params" : ["ChickenQuestComplete"]},
                         {"key" : "end-quete", "params" : [200]}
                     ]
                 }

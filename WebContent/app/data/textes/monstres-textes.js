@@ -99,7 +99,7 @@ define([], function(){
                 en : "King of Bandit"
             },
             "roiBandit-texte" : {
-                fr : "Un bandit plus noble et plus fourbe que les autres. Ne vous y méprenez pas, il est aussi bien plus fort !",
+                fr : "Un bandit plus noble et plus fourbe que les autres. Ne vous y méprenez pas, il est aussi bien plus fort&nbsp;!",
                 en : "A bandit nobler and deceiver than the others. Make no mistake, he's also much stronger!"
             }
 	};
