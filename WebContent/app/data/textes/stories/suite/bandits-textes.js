@@ -14,6 +14,15 @@ define([
             if (!text) text = Village.get(key);
             if (!text) text = Arene.get(key);
             return text;
-        }
+        },
+        listAll : function() {
+            var keys = [];
+            for (var i in data) {keys.push(i);}
+
+            keys = keys.concat(Porte.listAll());
+            keys = keys.concat(Village.listAll());
+            keys = keys.concat(Arene.listAll());
+            return keys;
+        },
     };
 });

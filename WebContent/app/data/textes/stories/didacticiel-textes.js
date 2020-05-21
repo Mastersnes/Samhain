@@ -14,6 +14,15 @@ define([
             if (!text) text = Main.get(key);
             if (!text) text = Combat.get(key);
             return text;
-        }
+        },
+        listAll : function() {
+            var keys = [];
+            for (var i in data) {keys.push(i);}
+
+            keys = keys.concat(Debut.listAll());
+            keys = keys.concat(Main.listAll());
+            keys = keys.concat(Combat.listAll());
+            return keys;
+        },
     };
 });

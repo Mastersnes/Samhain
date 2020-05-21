@@ -12,6 +12,14 @@ define([
             if (!text) text = Ville.get(key);
             if (!text) text = Bandits.get(key);
             return text;
-        }
+        },
+        listAll : function() {
+            var keys = [];
+            for (var i in data) {keys.push(i);}
+
+            keys = keys.concat(Ville.listAll());
+            keys = keys.concat(Bandits.listAll());
+            return keys;
+        },
     };
 });

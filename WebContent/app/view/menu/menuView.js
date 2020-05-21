@@ -11,8 +11,11 @@ define(["jquery",
         "text!app/template/menu/menu.html",
         "app/view/game/gameView",
         "app/view/menu/optionView",
-        "app/view/menu/creditView"], 
-function($, _, SceneManager, Utils, PopupUtils, Kongregate, Textes, Mediatheque, SaveManager, page, GameView, OptionView, CreditView) {
+        "app/view/menu/traductionsView",
+        "app/view/menu/creditView"],
+function($, _, SceneManager, Utils, PopupUtils, Kongregate,
+         Textes, Mediatheque, SaveManager, page,
+         GameView, OptionView, TraductionsView, CreditView) {
 	'use strict';
 
 	return function() {
@@ -71,6 +74,7 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate, Textes, Mediatheque,
 
 				that.optionView = new OptionView(that);
 				that.creditView = new CreditView(that);
+				that.traductionsView = new TraductionsView(that);
 			}, 1000);
 		};
 		
@@ -99,10 +103,13 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate, Textes, Mediatheque,
 			$("#option").click(function() {
 				that.optionView.show();
 			});
+			$("#traductions").click(function() {
+			    that.traductionsView.show();
+			});
 			$("#credit").click(function() {
 			    that.creditView.show();
 			});
-			
+
 			$("#login").click(function() {
 				that.kongregateUtils.login();
 			});

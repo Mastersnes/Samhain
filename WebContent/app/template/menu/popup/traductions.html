@@ -1,0 +1,30 @@
+<% var text = data.text %>
+
+<div>
+	<mask class="canClose"></mask>
+	<contour class="canClose">
+		<close class="canClose"></close>
+		<content>
+			<wrapper>
+				<langages>
+					<span><%=text.get("traduction-source")%></span>
+					<select id="sources">
+						<option name="fr"><%=text.get("french")%></option>
+						<option name="en"><%=text.get("english")%></option>
+						<option name="eo"><%=text.get("esperanto")%></option>
+					</select>
+					<span>&nbsp;<%=text.get("traduction-cible")%></span>
+					<select id="cibles">
+						<option name="fr"><%=text.get("french")%></option>
+						<option name="en"><%=text.get("english")%></option>
+						<option name="eo"><%=text.get("esperanto")%></option>
+					</select>
+				</langages>
+				<textes></textes>
+				<boutons>
+					<bouton id="send"></bouton>
+				</boutons>
+			</wrapper>
+		</content>
+	</contour>
+</div>

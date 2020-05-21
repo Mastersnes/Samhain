@@ -18,6 +18,17 @@ define([
             if (!text) text = Ruelle.get(key);
             if (!text) text = Castagne.get(key);
             return text;
-        }
+        },
+        listAll : function() {
+            var keys = [];
+            for (var i in data) {keys.push(i);}
+
+            keys = keys.concat(Porte.listAll());
+            keys = keys.concat(Entree.listAll());
+            keys = keys.concat(Garde.listAll());
+            keys = keys.concat(Ruelle.listAll());
+            keys = keys.concat(Castagne.listAll());
+            return keys;
+        },
     };
 });

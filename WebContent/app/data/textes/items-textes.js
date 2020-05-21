@@ -18,6 +18,17 @@ define([
             if (!text) text = Magies.get(key);
             if (!text) text = Clefs.get(key);
             return text;
-        }
+        },
+        listAll : function() {
+            var keys = [];
+            for (var i in data) {keys.push(i);}
+
+            keys = keys.concat(Armes.listAll());
+            keys = keys.concat(Armures.listAll());
+            keys = keys.concat(Consos.listAll());
+            keys = keys.concat(Magies.listAll());
+            keys = keys.concat(Clefs.listAll());
+            return keys;
+        },
     };
 });

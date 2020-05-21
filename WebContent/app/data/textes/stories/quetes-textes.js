@@ -33,6 +33,13 @@ define([
             var text = data[key];
             if (!text) text = Quete1.get(key);
             return text;
-        }
+        },
+        listAll : function() {
+            var keys = [];
+            for (var i in data) {keys.push(i);}
+
+            keys = keys.concat(Quete1.listAll());
+            return keys;
+        },
     };
 });

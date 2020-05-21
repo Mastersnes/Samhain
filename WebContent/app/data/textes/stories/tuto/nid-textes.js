@@ -14,6 +14,15 @@ define([
             if (!text) text = Gauche.get(key);
             if (!text) text = Droite.get(key);
             return text;
-        }
+        },
+        listAll : function() {
+            var keys = [];
+            for (var i in data) {keys.push(i);}
+
+            keys = keys.concat(Entree.listAll());
+            keys = keys.concat(Gauche.listAll());
+            keys = keys.concat(Droite.listAll());
+            return keys;
+        },
     };
 });

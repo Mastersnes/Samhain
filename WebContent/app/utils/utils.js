@@ -50,7 +50,12 @@ define(["jquery", "sha"], function($, sha){
 		decode : function(str) {
 			return atob(str);
 		},
-		
+		decodeHtml : function(str) {
+			var fake = $("<textarea>");
+			fake.html(str);
+			return fake.text();
+		},
+
 		hash : function(str) {
 			str = "JHGKJHGjhkgkhjgxcvkjgKHJGJH4455456s4dfsdfkhgHJKGJHGdckldsjvkljklLHKH54654" + str + "sdfqsHJGKJGHG5465564HJGHJFJHGJHG23465dfgdfg34654GHFHGF";
 			return sha.sha256(str);

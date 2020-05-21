@@ -20,6 +20,19 @@ define([
             if (!text) text = Echoppe.get(key);
             if (!text) text = Crypte.get(key);
             return text;
-        }
+        },
+
+        listAll : function() {
+            var keys = [];
+            for (var i in data) {keys.push(i);}
+
+            keys = keys.concat(Debut.listAll());
+            keys = keys.concat(Nid.listAll());
+            keys = keys.concat(Ferme.listAll());
+            keys = keys.concat(Village.listAll());
+            keys = keys.concat(Echoppe.listAll());
+            keys = keys.concat(Crypte.listAll());
+            return keys;
+        },
     };
 });

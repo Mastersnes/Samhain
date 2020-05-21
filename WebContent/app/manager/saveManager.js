@@ -71,6 +71,14 @@ function($, _, Utils) {
                     "cibleUnique" : false
                 };
             }else this.gameOptions = JSON.parse(this.gameOptions);
+
+            this.traductions = window.localStorage.getItem(Utils.name + "Traductions");
+            if (!this.traductions) {
+                this.traductions = {
+                    "myTrads" : [],
+                    "toSend" : []
+                };
+            }else this.traductions = JSON.parse(this.traductions);
 		};
 
 		this.setOption = function(key, value) {
@@ -82,6 +90,17 @@ function($, _, Utils) {
 		};
 		this.options = function() {
 		    return this.gameOptions;
+		};
+
+//		this.addTrad = function() {
+//		    this.traductions[key] = value;
+//		    window.localStorage.setItem(Utils.name + "Options", JSON.stringify(this.traductions));
+//		};
+		this.getMyTrads = function(key) {
+		    return this.traductions.myTrads;
+		};
+		this.traductions = function() {
+		    return this.traductions;
 		};
 
 		/**

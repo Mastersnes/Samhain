@@ -31,6 +31,19 @@ define([
             if (!text) text = Quetes.get(key);
             if (!text) text = GameOver.get(key);
             return text;
-        }
+        },
+
+        listAll : function() {
+            var keys = [];
+            for (var i in data) {keys.push(i);}
+
+            keys = keys.concat(Buttons.listAll());
+            keys = keys.concat(Didacticiel.listAll());
+            keys = keys.concat(Tuto.listAll());
+            keys = keys.concat(Suite.listAll());
+            keys = keys.concat(Quetes.listAll());
+            keys = keys.concat(GameOver.listAll());
+            return keys;
+        },
     };
 });

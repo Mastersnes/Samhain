@@ -22,6 +22,19 @@ define([
             if (!text) text = Couloir.get(key);
             if (!text) text = Boss.get(key);
             return text;
-        }
+        },
+        listAll : function() {
+            var keys = [];
+            for (var i in data) {keys.push(i);}
+
+            keys = keys.concat(Marais.listAll());
+            keys = keys.concat(Salle1.listAll());
+            keys = keys.concat(Salle2.listAll());
+            keys = keys.concat(Salle3.listAll());
+            keys = keys.concat(GrandeSalle.listAll());
+            keys = keys.concat(Couloir.listAll());
+            keys = keys.concat(Boss.listAll());
+            return keys;
+        },
     };
 });

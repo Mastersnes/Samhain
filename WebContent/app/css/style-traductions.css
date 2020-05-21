@@ -1,0 +1,88 @@
+/**
+* Traductions
+**/
+.traductions-popup {
+    display : block; position: absolute;
+    width: 100%; height: 100%;
+    left: 0; top: 0%;
+    z-index: 10;
+}
+.traductions-popup div {
+    width: 100%; height: 100%;
+}
+.traductions-popup contour {
+    display: block; position: relative;
+    width: 100%; height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/menu/popup/popup.png");
+    background-size: 100% 100%;
+}
+
+.traductions-popup content {
+    display: block; position: absolute;
+    font-family: "Morgan";
+    width: 73.5%; height: 75%;
+    top: 13%; left: 12.5%;
+}
+
+.traductions-popup close {
+    width: 2.5%; height: 4%;
+    top: 15%; left: 82.2%;
+}
+.traductions-popup wrapper {
+    position: absolute; display: block;
+    width: 92%; height: 96%;
+    left: 4.5%; top: 3.2%;
+    overflow: hidden;
+}
+
+.traductions-popup langages {
+    position: absolute; display: block;
+    width: 90%; height: 10%;
+    top: 0; left: 0;
+}
+.traductions-popup langages select, .traductions-popup langages span {
+    text-align: center;
+    font-family: "Morgan";
+    font-size: 3vh;
+    text-rendering: optimizeSpeed;
+    word-spacing: 5px;
+}
+
+.traductions-popup langages span texte {
+    display: inline-block !important;
+}
+.traductions-popup langages span input {
+    background-color: #cabdac;
+}
+
+.traductions-popup textes {
+    position: absolute; display: block;
+    width: 100%; height: 84%;
+    top: 7%; left: 0;
+    overflow: auto;
+}
+
+.traductions-popup textes text {
+    position: relative; display: block;
+    width: auto; height: auto;
+    text-align: left;
+    font-family: "Morgan";
+    font-size: 3vh;
+    text-rendering: optimizeSpeed;
+    word-spacing: 5px;
+}
+
+.traductions-popup boutons {
+    position: absolute; display: block;
+    width: 26%; height: 9%;
+    top: 88.5%; left: 1%;
+}
+.traductions-popup boutons bouton {
+    position: absolute; display: block;
+    cursor: pointer;
+    transition: all 1000ms;
+}
