@@ -7,7 +7,7 @@ define([], function(){
 	        "piocher" : {
             	fr : "Piocher une carte",
             	en : "Draw a card",
-            	eo : "Tiri unu karto"
+            	eo : "Eltiri karto"
             },
             "poing" : {
             	fr : "Poing",
@@ -36,43 +36,53 @@ define([], function(){
             },
             "baton-texte" : {
             	fr : "Un gros bâton qui peut faire très mal&hellip;",
-            	en : "A big stick that can hurt a lot&hellip;"
+            	en : "A big stick that can be very painful&hellip;",
+            	eo : "Granda bastono kiu povas tre dolorigi&hellip;"
             },
             "dague" : {
             	fr : "Dague",
-            	en : "Dagger"
+            	en : "Dagger",
+            	eo : "Dago"
             },
             "dague-action" : {
             	fr : "Coup de Dague",
-            	en : "Dagger Stroke"
+            	en : "Dagger Stroke",
+            	eo : "Dagohako"
             },
             "dague-texte" : {
             	fr : "Une belle dague toute brillante. Sa lame semble tranchante comme un rasoir.",
-            	en : "A beautiful and brilliant dagger. Its blade looks sharp as a razor-sharp."
+            	en : "A beautiful and shiny dagger. Its blade looks sharp as a razor.",
+            	eo : "Bela dago tute brila. Ĝia klingo aspektas akran kiel razilon."
             },
             "epee" : {
             	fr : "Épée",
-            	en : "Sword"
+            	en : "Sword",
+            	eo : "Glavo"
             },
             "epee-action" : {
             	fr : "Coup d'Epée",
-            	en : "Sword Strike"
+            	en : "Sword Stroke",
+            	eo : "Glavohako"
             },
             "epee-texte" : {
             	fr : "Une grosse épée à une main. Elle est aussi lourde que tranchante&nbsp;!",
-            	en : "A big sword with one hand. It's as heavy as it is sharp!"
+            	en : "A big one-handed sword. It's as heavy as sharp!",
+            	eo : "Granda unu-mana glavo. Ĝi estas ankaŭ peza kiel akra!"
             },
             "crocRoi" : {
             	fr : "Croc du roi",
-            	en : "King's fang"
+            	en : "King's fang",
+            	eo : "Dentego de reĝo"
             },
             "crocRoi-action" : {
             	fr : "Coup de Croc",
-            	en : "Fang Strike"
+            	en : "Fang Stroke",
+            	eo : "Dentegohako"
             },
             "crocRoi-texte" : {
-            	fr : "Le croc de votre ancien ami&hellip; Il dégage une odeur putride&hellip; Parfait pour une petite balade&nbsp;!",
-            	en : "Your old friend's fang&hellip; It emits a putrid smell&hellip; Perfect for a short walk!"
+            	fr : "Le croc de votre défunt ami&hellip; Il dégage une odeur putride&hellip; Parfait pour une petite balade&nbsp;!",
+            	en : "Your deceased friend's fang&hellip; it smells a putrid odour&hellip; Perfect for a short walk!",
+            	eo : "La dentego de via mortinta amiko&hellip; Ĝi emanas putran odoron&hellip; Perfekta por eta promenado!"
             }
 	};
 	

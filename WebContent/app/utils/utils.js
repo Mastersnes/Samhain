@@ -53,9 +53,22 @@ define(["jquery", "sha"], function($, sha){
 		decodeHtml : function(str) {
 			var fake = $("<textarea>");
 			fake.html(str);
-			return fake.text();
+			var txt = fake.text();
+
+			txt = txt.replace(/<\/(text)>$/g, "");
+			txt = txt.replace(/<\/(text)>/g, " ");
+			txt = txt.replace(/<\/(br)>/g, " ");
+			txt = txt.replace(/<\/?[^>]+(>|$)/g, "");
+			return txt;
 		},
 
+		replaceAll : function(str, str1, str2) {
+		    var result = str;
+		    while (result.indexOf(str1) > -1) {
+		        result = result.replace(str1, str2);
+		    }
+		    return result;
+		},
 		hash : function(str) {
 			str = "JHGKJHGjhkgkhjgxcvkjgKHJGJH4455456s4dfsdfkhgHJKGJHGdckldsjvkljklLHKH54654" + str + "sdfqsHJGKJGHG5465564HJGHJFJHGJHG23465dfgdfg34654GHFHGF";
 			return sha.sha256(str);

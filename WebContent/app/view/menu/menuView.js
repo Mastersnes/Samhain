@@ -33,6 +33,7 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate,
             this.kongregateUtils = new Kongregate(Textes);
             this.saveManager = new SaveManager(this.kongregateUtils);
             this.Textes = Textes;
+            this.Textes.setSaveManager(this.saveManager);
             this.Textes.loadLanguage();
 
             var that = this;
@@ -76,6 +77,19 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate,
 				that.creditView = new CreditView(that);
 				that.traductionsView = new TraductionsView(that);
 			}, 1000);
+		};
+
+		this.refreshTextes = function() {
+		    this.el.find("bouton#new span").html(this.Textes.get("newGame"));
+		    this.el.find("bouton#load span").html(this.Textes.get("continue"));
+		    this.el.find("bouton#didacticiel span").html(this.Textes.get("didacticiel"));
+		    this.el.find("bouton#option span").html(this.Textes.get("options"));
+		    this.el.find("bouton#traductions span").html(this.Textes.get("traductions"));
+		    this.el.find("bouton#credit span").html(this.Textes.get("credits"));
+
+		    this.optionView.refreshTextes();
+		    this.creditView.refreshTextes();
+		    this.traductionsView.refreshTextes();
 		};
 		
 		this.makeEvents = function() {

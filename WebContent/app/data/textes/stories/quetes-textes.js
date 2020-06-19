@@ -4,7 +4,7 @@ define([
 ], function(Quete1){
 	var data = {
 	    /**
-        * UI
+        * Quetes
         **/
         "quetes-nothing" : {
             fr : "Le panneau est complètement vide&hellip;",

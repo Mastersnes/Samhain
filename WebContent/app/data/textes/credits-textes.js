@@ -5,107 +5,136 @@ define([], function(){
 	        * Credits
 	        **/
 	        "nous-credits" : {
-                fr : "Alicia et Steven Nesztler",
-                en : "Alicia et Steven Nesztler"
+            	fr : "Alicia et Steven Nesztler",
+            	en : "Alicia et Steven Nesztler",
+            	eo : "Alicia et Steven Nesztler"
             },
-	        "lili-credits" : {
-                fr : "Alicia V. Nesztler (AVNes)",
-                en : "Alicia V. Nesztler (AVNes)"
+            "lili-credits" : {
+            	fr : "Alicia V. Nesztler (AvnesZ)",
+            	en : "Alicia V. Nesztler (AvnesZ)",
+            	eo : "Alicia V. Nesztler (AvnesZ)"
             },
-	        "titi-credits" : {
-                fr : "Steven Nesztler",
-                en : "Steven Nesztler"
-            },
-
-	        "studio-credits" : {
-                fr : "Un Jeu Signé",
-                en : "A Game From"
-            },
-	        "creation-credits" : {
-                fr : "Créé et Réalisé par",
-                en : "Created and directed by"
+            "titi-credits" : {
+            	fr : "Steven Nesztler",
+            	en : "Steven Nesztler",
+            	eo : "Steven Nesztler"
             },
 
-	        "DA-credits" : {
-                fr : "Directeur Artistique",
-                en : "Art Director"
+            "studio-credits" : {
+            	fr : "Un Jeu Signé",
+            	en : "A Game By",
+            	eo : "Ludo De"
             },
-	        "CA-credits" : {
-                fr : "Concept Artist",
-                en : "Concept Artist"
-            },
-	        "graphist-credits" : {
-                fr : "Lead Artist",
-                en : "Lead Artist"
-            },
-	        "animation-credits" : {
-                fr : "Effets et Animations 2D",
-                en : "Effects and Animations 2D"
+            "creation-credits" : {
+            	fr : "Créé et Réalisé par",
+            	en : "Created and Directed by",
+            	eo : "Kreita kaj Realigita de"
             },
 
-	        "gameDesign-credits" : {
-                fr : "Game Designer",
-                en : "Game Designer"
+            "DA-credits" : {
+            	fr : "Directeur Artistique",
+            	en : "Art Director",
+            	eo : "Arta Directoro"
             },
-	        "programming-credits" : {
-                fr : "Lead Programmer",
-                en : "Lead Programmer"
+            "CA-credits" : {
+            	fr : "Concept Artist",
+            	en : "Concept Artist",
+            	eo : "Koncepto Artisto"
             },
-	        "levelDesign-credits" : {
-                fr : "Level Designer",
-                en : "Level Designer"
+            "graphist-credits" : {
+            	fr : "Lead Artist",
+            	en : "Lead Artist",
+            	eo : "Ĉefa Artisto"
             },
-
-	        "musiques-credits" : {
-                fr : "Musiques Originales",
-                en : "Original Music"
-            },
-	        "sound-credits" : {
-                fr : "Sound Designer",
-                en : "Sound Designer"
-            },
-
-	        "texte-credits" : {
-                fr : "Scénario Original",
-                en : "Original Scenario"
-            },
-	        "correction-credits" : {
-                fr : "Correction du Texte",
-                en : "Text Correction"
-            },
-	        "traduction-credits" : {
-                fr : "Traduction Anglaise",
-                en : "English translation"
+            "animation-credits" : {
+            	fr : "Effets et Animations 2D",
+            	en : "2D Effects and Animations",
+            	eo : "2D Efektoj kaj Animacioj"
             },
 
-	        "community-credits" : {
-                fr : "Community Manager",
-                en : "Community Manager"
+            "gameDesign-credits" : {
+            	fr : "Game Designer",
+            	en : "Game Designer",
+            	eo : "Ludo Dezajnisto"
             },
-	        "tester-credits" : {
-                fr : "Directeur des Tests",
-                en : "Test Director"
+            "programming-credits" : {
+            	fr : "Lead Programmer",
+            	en : "Lead Programmer",
+            	eo : "Ĉefa Programisto"
             },
-	        "beta-credits" : {
-                fr : "Bêta-Testeurs",
-                en : "Beta-Testers"
+            "levelDesign-credits" : {
+            	fr : "Level Designer",
+            	en : "Level Designer",
+            	eo : "Nivela Dezajnisto"
             },
 
-	        "merci-credits" : {
-                fr : "Un Grand Merci",
-                en : "Special Thanks"
+            "musiques-credits" : {
+            	fr : "Musiques Originales",
+            	en : "Original Musics",
+            	eo : "Originalaj Muzikoj"
             },
-	        "suiveurs-thx-credits" : {
-                fr : "À nos suiveurs qui nous soutiennent chaque jour sur les différents réseaux.",
-                en : "To our followers who support us every day on the different networks."
+            "sound-credits" : {
+            	fr : "Sound Designer",
+            	en : "Sound Designer",
+            	eo : "Sono Dezajnisto"
             },
-	        "beta-thx-credits" : {
-                fr : "Aux bêta-testeurs qui améliorent sans cesse la qualité de nos jeux.",
-                en : "To the beta testers who are constantly improving the quality of our games."
+
+            "texte-credits" : {
+            	fr : "Scénario Original",
+            	en : "Original Scenario",
+            	eo : "Originala Scenaro"
             },
-	        "animalux-thx-credits" : {
-                fr : "À nos adorables compagnons à poils et à plumes qui nous apportent joie, amour et croquettes au quotidien&nbsp;!",
-                en : "To our adorable furry and feathered companions who bring us joy, love and croquettes every day!"
+            "correction-credits" : {
+            	fr : "Correction du Texte",
+            	en : "Text Correction",
+            	eo : "Korektado de la Teksto"
+            },
+            "traduction-credits" : {
+            	fr : "Traduction Anglaise",
+            	en : "English Translation",
+            	eo : "Angla Traduko"
+            },
+            "traduction-eo-credits" : {
+            	fr : "Traduction Esperanto",
+            	en : "Esperanto Translation",
+            	eo : "Esperanta Traduko"
+            },
+
+            "community-credits" : {
+            	fr : "Community Manager",
+            	en : "Community Manager",
+            	eo : "Komunumo Administristo"
+            },
+            "tester-credits" : {
+            	fr : "Directeur des Tests",
+            	en : "Director of Testing",
+            	eo : "Direktoro de la Testoj"
+            },
+            "beta-credits" : {
+            	fr : "Bêta-Testeurs",
+            	en : "Beta Testers",
+            	eo : "Beta Testistoj"
+            },
+
+            "merci-credits" : {
+            	fr : "Un Grand Merci",
+            	en : "Special Thanks",
+            	eo : "Dankegon"
+            },
+            "suiveurs-thx-credits" : {
+            	fr : "À nos suiveurs qui nous soutiennent chaque jour sur les différents réseaux.",
+            	en : "To our followers who support us every day on the different networks.",
+            	eo : "Al niaj abonantoj kiuj ĉiutage subtenas nin sur la multaj retejoj. "
+            },
+            "beta-thx-credits" : {
+            	fr : "À nos bêta-testeurs qui améliorent sans cesse la qualité de nos jeux.",
+            	en : "To our beta testers who constantly improve the quality of our games.",
+            	eo : "Al niaj beta testistoj kiuj plibonigas senĉese la kvalito de niaj ludoj."
+            },
+            "animalux-thx-credits" : {
+            	fr : "À nos adorables compagnons à poils et à plumes qui nous apportent joie, amour et croquettes au quotidien&nbsp;!",
+            	en : "To our adorable furry and feathered companions who bring us joy, love and kibbles every day!",
+            	eo : "Al niaj adorindaj vilaj kaj plumhavaj kunuloj kiuj donacas nin ĝojo, amo kaj krokedoj ĉiutage!"
             }
 	};
 	

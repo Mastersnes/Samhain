@@ -5,24 +5,29 @@ define([], function(){
 	        * Glossaire
 	        **/
 	        "lifeSteal-glossaire" : {
-                fr : "% des dégâts infligés.",
-                en : "% of inflict damages."
+            	fr : "% des dégâts infligés.",
+            	en : "% of inflicted damages.",
+            	eo : "% da damaĝoj kaŭzitaj."
             },
-	        "lifeSteal2-glossaire" : {
-                fr : "% des PV actuels de la cible.",
-                en : "% of target currents PV."
+            "lifeSteal2-glossaire" : {
+            	fr : "% des PV actuels de la cible.",
+            	en : "% of the target’s currents HP.",
+            	eo : "% da nunaj VP de la celo."
             },
-	        "manaSteal-glossaire" : {
-                fr : "% des PM actuels de la cible.",
-                en : "% of target currents PM."
+            "manaSteal-glossaire" : {
+            	fr : "% des PM actuels de la cible.",
+            	en : "% of the target’s currents MP.",
+            	eo : "% da nunaj MP de la celo."
             },
-	        "lifeGain-glossaire" : {
-                fr : "% de la vie max.",
-                en : "% of max life."
+            "lifeGain-glossaire" : {
+            	fr : "% de la vie max.",
+            	en : "% of max life.",
+            	eo : "% da maks. vivo."
             },
-	        "manaGain-glossaire" : {
-                fr : "% du mana max.",
-                en : "% of max mana."
+            "manaGain-glossaire" : {
+            	fr : "% du mana max.",
+            	en : "% of max mana.",
+            	eo : "% da maks. magio."
             },
 	};
 	

@@ -31,6 +31,15 @@ define(["jquery",
             this.makeEvents();
         };
 
+        this.refreshTextes = function() {
+            console.log("Refrsh texte");
+            this.el.find("son#sound text").html(this.Textes.get("sound"));
+            this.el.find("son#music text").html(this.Textes.get("music"));
+            this.el.find("flags text").html(this.Textes.get("language"));
+            this.el.find("element#selectAuto span").html(this.Textes.get("selectAuto"));
+            this.el.find("element#cibleUnique span").html(this.Textes.get("cibleUnique"));
+        };
+
         /**
         * Montre les options
         **/
@@ -71,7 +80,8 @@ define(["jquery",
                 if ($(this).hasClass("selected")) return;
                 var lang = $(this).attr("id");
                 that.Textes.setLanguage(lang);
-                that.parent.render();
+                that.parent.refreshTextes();
+                that.refresh();
             });
             this.el.find("son#sound").click(function(e) {
                 that.mediatheque.mute("sound");

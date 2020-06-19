@@ -39,11 +39,21 @@
     overflow: hidden;
 }
 
+/**
+* Choix des langages source et cible
+**/
 .traductions-popup langages {
     position: absolute; display: block;
     width: 90%; height: 10%;
     top: 0; left: 0;
 }
+.traductions-popup langages span text {
+    display: inline-block;
+}
+.traductions-popup langages span input {
+    background-color: #cabdac;
+}
+
 .traductions-popup langages select, .traductions-popup langages span {
     text-align: center;
     font-family: "Morgan";
@@ -52,13 +62,9 @@
     word-spacing: 5px;
 }
 
-.traductions-popup langages span texte {
-    display: inline-block !important;
-}
-.traductions-popup langages span input {
-    background-color: #cabdac;
-}
-
+/**
+* Ensemble des textes
+**/
 .traductions-popup textes {
     position: absolute; display: block;
     width: 100%; height: 84%;
@@ -70,19 +76,37 @@
     position: relative; display: block;
     width: auto; height: auto;
     text-align: left;
-    font-family: "Morgan";
-    font-size: 3vh;
+    font-family: monospace;
+    font-size: 2vh;
     text-rendering: optimizeSpeed;
     word-spacing: 5px;
 }
 
+.traductions-popup textes text.verify {
+    background-color: #69cc69;
+    border-radius: 10px;
+}
+
+.traductions-popup textes text input {
+    display: inline-block;
+    width : 50%;
+}
+.traductions-popup textes text.large input {
+    display: block;
+    width: 98%
+}
+
 .traductions-popup boutons {
     position: absolute; display: block;
-    width: 26%; height: 9%;
-    top: 88.5%; left: 1%;
+    width: 100%; height: 7%;
+    top: 92%; left: 0%;
 }
 .traductions-popup boutons bouton {
     position: absolute; display: block;
+    left: 66%; top: 20%;
+    width: auto; height: auto;
+    font-size: 3vh;
+    text-rendering: optimizeSpeed;
     cursor: pointer;
-    transition: all 1000ms;
+    transition: all 300ms;
 }

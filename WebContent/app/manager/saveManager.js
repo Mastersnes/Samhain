@@ -35,7 +35,7 @@ function($, _, Utils) {
 			        "debuff" : null,
 			        "xp" : 0,
 			        "level" : 0,
-			        "gold" : 0,
+			        "gold" : 1000,
 
 			        "attaque" : 1,
 			        "defense" : 0,
@@ -50,7 +50,7 @@ function($, _, Utils) {
 			            "clef" : [],
 			            "ifObj" : []
 			        },
-                    "lieu" : "tuto-start",
+                    "lieu" : "ville-garde-simple-3",
                     "savesData" : {},
 
                     "currentQuest" : {
@@ -75,8 +75,8 @@ function($, _, Utils) {
             this.traductions = window.localStorage.getItem(Utils.name + "Traductions");
             if (!this.traductions) {
                 this.traductions = {
-                    "myTrads" : [],
-                    "toSend" : []
+                    "myTrads" : {},
+                    "toSend" : {}
                 };
             }else this.traductions = JSON.parse(this.traductions);
 		};
@@ -92,15 +92,32 @@ function($, _, Utils) {
 		    return this.gameOptions;
 		};
 
-//		this.addTrad = function() {
-//		    this.traductions[key] = value;
-//		    window.localStorage.setItem(Utils.name + "Options", JSON.stringify(this.traductions));
-//		};
-		this.getMyTrads = function(key) {
-		    return this.traductions.myTrads;
+		this.addTrad = function(key, lang, text) {
+		    if (!this.traductions.myTrads[key]) this.traductions.myTrads[key] = {};
+		    this.traductions.myTrads[key][lang] = text;
+
+		    if (!this.traductions.toSend[key]) this.traductions.toSend[key] = {};
+		    this.traductions.toSend[key][lang] = text;
+
+		    window.localStorage.setItem(Utils.name + "Traductions", JSON.stringify(this.traductions));
 		};
-		this.traductions = function() {
-		    return this.traductions;
+		this.myTrad = function(key, lang) {
+		    var trads = this.traductions.myTrads;
+		    if (!trads[key]) return null;
+		    return trads[key][lang];
+		};
+		this.sendTrad = function() {
+		    var newTrad = Utils.encode(JSON.stringify(this.traductions.toSend));
+		    var request = {
+                "username" : "",
+                "secretPass" : Utils.hash("Samhain4842"),
+                "newTrad" : newTrad
+            };
+            Utils.load("https://bebel-server.herokuapp.com/samhain/sendTrad", request, function(data, status) {
+                console.log("Succes de l'envoi de la nouvelle traduction avec le status", status);
+                that.traductions.toSend = {};
+                window.localStorage.setItem(Utils.name + "Traductions", JSON.stringify(that.traductions));
+            });
 		};
 
 		/**

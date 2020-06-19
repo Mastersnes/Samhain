@@ -5,41 +5,49 @@ define([], function(){
 	        * Armures
 	        **/
 	        "bras" : {
-                fr : "Bras",
-                en : "Arm"
+            	fr : "Bras",
+            	en : "Arm",
+            	eo : "Brako"
             },
             "bras-action" : {
-                fr : "Bloquer avec son Bras",
-                en : "Block with Arm",
-                eo : "Bloki per la Brako"
+            	fr : "Bloquer avec son Bras",
+            	en : "Block with your Arm",
+            	eo : "Bloki per via Brako"
             },
             "bras-texte" : {
-                fr : "Votre bras&hellip; Tout simplement&hellip; Vous pouvez en être fier&nbsp;!",
-                en : "Your arm&hellip; Quite simply&hellip; You can be proud of it!"
+            	fr : "Votre bras&hellip; Tout simplement&hellip; Vous pouvez en être fier&nbsp;!",
+            	en : "It’s just your arm&hellip; You can be proud of it!",
+            	eo : "Simple via brako&hellip; Vi povas esti fieran pri ĝin!"
             },
             "bouclierBois" : {
-                fr : "Bouclier en bois",
-                en : "Wooden Shield"
+            	fr : "Bouclier en bois",
+            	en : "Wooden Shield",
+            	eo : "Ŝildo el ligno"
             },
             "bouclierBois-action" : {
-                fr : "Parer avec le Bouclier",
-                en : "Parry with the Shield"
+            	fr : "Parer avec le Bouclier",
+            	en : "Block with the Shield",
+            	eo : "Bloki per la Ŝildo"
             },
             "bouclierBois-texte" : {
-                fr : "Un bouclier en bois assez banal. Il semble plutôt résistant.",
-                en : "A fairly commonplace wooden shield. He seems pretty resilient."
+            	fr : "Un bouclier en bois assez banal. Il semble plutôt résistant.",
+            	en : "A pretty common wooden shield. It seems quite resistant.",
+            	eo : "Banala ŝildo el ligno. Ĝi ŝajnas relative fortikan."
             },
             "bouclierFer" : {
-                fr : "Bouclier en fer",
-                en : "Iron Shield"
+            	fr : "Bouclier en fer",
+            	en : "Iron Shield",
+            	eo : "Ŝildo el fero"
             },
             "bouclierFer-action" : {
-                fr : "Contrer avec le Bouclier",
-                en : "Countering with the Shield"
+            	fr : "Contre attaquer avec le Bouclier",
+            	en : "Counterattack with the Shield",
+            	eo : "Kontraŭataki per la Ŝildo"
             },
             "bouclierFer-texte" : {
-                fr : "Un grand bouclier en fer&nbsp;! Il est très résistant.",
-                en : "A big iron shield! It is very resistant."
+            	fr : "Un grand bouclier en fer&nbsp;! Il est très résistant.",
+            	en : "A large iron shield! It’s very resistant.",
+            	eo : "Granda ŝildo el fero! Ĝi estas tre fortika."
             }
 	};
 	

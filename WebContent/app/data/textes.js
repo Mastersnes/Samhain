@@ -1,5 +1,6 @@
 'use strict';
 define([
+    "app/utils/utils",
     "app/data/textes/menu-textes",
     "app/data/textes/options-textes",
     "app/data/textes/credits-textes",
@@ -14,14 +15,15 @@ define([
     "app/data/textes/suffixes-textes",
     "app/data/textes/items-textes",
     "app/data/textes/stories-textes"
-], function(Menu, Options, Credits, Traductions, UI, JeuGarde, Boutique, Glossaire, Inventaire, Etats, Monstres, Suffixes, Items, Stories){
+], function(Utils, Menu, Options, Credits, Traductions, UI, JeuGarde, Boutique, Glossaire, Inventaire, Etats, Monstres, Suffixes, Items, Stories){
 	var data = {
 	};
 	
 	return {
         local : null,
+        saveManager : null,
 
-        get : function(key, forceLang) {
+        get : function(key, forceLang, notMyTrad) {
             if (!this.local) {
                 this.local = navigator.language || navigator.userLanguage;
                 if (this.local) {
@@ -32,6 +34,14 @@ define([
                 }else {
                     this.local = "en";
                 }
+            }
+
+            var local = forceLang;
+            if (!local) local = this.local;
+
+            if (this.saveManager && !notMyTrad) {
+                var trad = this.saveManager.myTrad(key, local);
+                if (trad) return trad;
             }
 
             var text = data[key];
@@ -50,9 +60,6 @@ define([
             if (!text) text = Items.get(key);
             if (!text) text = Stories.get(key);
             if (!text) return key;
-
-            var local = forceLang;
-            if (!local) local = this.local;
 
             if (text[local]) return text[local];
             else if (text.en) return text.en;
@@ -80,6 +87,10 @@ define([
             return keys;
         },
 
+        setSaveManager : function(manager) {
+            this.saveManager = manager;
+        },
+
         /**
         * Permet de charger le language en session
         **/
@@ -93,6 +104,7 @@ define([
         **/
         setLanguage : function(newLanguage) {
             window.localStorage.setItem("bebelLanguage", newLanguage);
+            this.local = newLanguage;
         }
     };
 });

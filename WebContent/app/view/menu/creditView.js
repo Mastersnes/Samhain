@@ -30,6 +30,30 @@ define(["jquery", "underscore",
             this.makeEvents();
         };
 
+        this.refreshTextes = function() {
+            this.el.find("#studio .title").html(this.Textes.get("studio-credits"));
+            this.el.find("#creation .title").html(this.Textes.get("creation-credits"));
+            this.el.find("#directeurArtistique .title").html(this.Textes.get("DA-credits"));
+            this.el.find("#conceptArt .title").html(this.Textes.get("CA-credits"));
+            this.el.find("#graphisme .title").html(this.Textes.get("graphist-credits"));
+            this.el.find("#animation .title").html(this.Textes.get("animation-credits"));
+            this.el.find("#gameDesign .title").html(this.Textes.get("gameDesign-credits"));
+            this.el.find("#programming .title").html(this.Textes.get("programming-credits"));
+            this.el.find("#levelDesign .title").html(this.Textes.get("levelDesign-credits"));
+            this.el.find("#compositeur .title").html(this.Textes.get("musiques-credits"));
+            this.el.find("#soundDesigner .title").html(this.Textes.get("sound-credits"));
+            this.el.find("#texte .title").html(this.Textes.get("texte-credits"));
+            this.el.find("#correction .title").html(this.Textes.get("correction-credits"));
+            this.el.find("#traduction .title").html(this.Textes.get("traduction-credits"));
+            this.el.find("#traductionEo .title").html(this.Textes.get("traduction-eo-credits"));
+            this.el.find("#community .title").html(this.Textes.get("community-credits"));
+            this.el.find("#beta .title").html(this.Textes.get("beta-credits"));
+            this.el.find("#merci .title").html(this.Textes.get("merci-credits"));
+            this.el.find("#merci .suiveurs").html(this.Textes.get("suiveurs-thx-credits"));
+            this.el.find("#merci .betas").html(this.Textes.get("beta-thx-credits"));
+            this.el.find("#merci .animalux").html(this.Textes.get("animalux-thx-credits"));
+        };
+
         /**
         * Montre les options
         **/
