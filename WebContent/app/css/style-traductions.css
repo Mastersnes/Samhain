@@ -17,46 +17,74 @@
     margin-right: auto;
     text-align: center;
     background-repeat: no-repeat;
-    background-image: url("../img/menu/popup/popup.png");
+    background-image: url("../img/menu/popup/traductions.jpg");
     background-size: 100% 100%;
 }
 
 .traductions-popup content {
     display: block; position: absolute;
     font-family: "Morgan";
-    width: 73.5%; height: 75%;
-    top: 13%; left: 12.5%;
 }
 
-.traductions-popup close {
-    width: 2.5%; height: 4%;
-    top: 15%; left: 82.2%;
+.traductions-popup content {
+    width: 96.8%; height: 75%;
+    top: 13%; left: 3%;
 }
 .traductions-popup wrapper {
     position: absolute; display: block;
-    width: 92%; height: 96%;
-    left: 4.5%; top: 3.2%;
+    width: 100%; height: 96%;
+    left: 0; top: 0%;
     overflow: hidden;
 }
 
 /**
-* Choix des langages source et cible
+* Partie fichiers
 **/
-.traductions-popup langages {
+.traductions-popup content#fichiers close {
+    width: 2.5%; height: 4%;
+    top: -16%; left: 96.2%;
+}
+.traductions-popup content#fichiers files {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.traductions-popup content#fichiers files file {
+    position: relative;
+    display: inline-block;
+    width: 33%;
+    font-size: 3.5vh;
+    cursor: pointer;
+}
+.traductions-popup content#fichiers files file:hover {
+    text-decoration: underline;
+}
+
+
+/**
+* Partie texte
+**/
+.traductions-popup content#textes close {
+    background-image: url("../img/menu/boutons/retour.png");
+    width: 6%; height: 10%;
+    top: -17%; left: 94%;
+}
+.traductions-popup content#textes langages {
     position: absolute; display: block;
     width: 90%; height: 10%;
-    top: 0; left: 0;
+    top: -13%; left: 23%;
 }
-.traductions-popup langages span text {
+.traductions-popup content#textes langages span text {
     display: inline-block;
 }
-.traductions-popup langages span input {
+.traductions-popup content#textes langages span input {
     background-color: #cabdac;
 }
 
-.traductions-popup langages select, .traductions-popup langages span {
+.traductions-popup content#textes langages select, .traductions-popup langages span {
     text-align: center;
-    font-family: "Morgan";
     font-size: 3vh;
     text-rendering: optimizeSpeed;
     word-spacing: 5px;
@@ -65,47 +93,54 @@
 /**
 * Ensemble des textes
 **/
-.traductions-popup textes {
+.traductions-popup content#textes textes {
     position: absolute; display: block;
-    width: 100%; height: 84%;
-    top: 7%; left: 0;
-    overflow: auto;
+    width: 100%; height: 96%;
+    top: 2%; left: 0;
+    overflow-y: auto;
 }
 
-.traductions-popup textes text {
+.traductions-popup content#textes textes text {
     position: relative; display: block;
-    width: auto; height: auto;
+    width: 92%; height: auto;
+    left: 7%; top: 0;
     text-align: left;
-    font-family: monospace;
-    font-size: 2vh;
+    font-family: "Lucida"; font-size: 2.7vh;
+    font-weight: bold; color: black;
     text-rendering: optimizeSpeed;
-    word-spacing: 5px;
+    padding-bottom: 1.2%;
 }
 
-.traductions-popup textes text.verify {
+.traductions-popup content#textes textes text.verify {
     background-color: #69cc69;
     border-radius: 10px;
 }
 
-.traductions-popup textes text input {
+.traductions-popup content#textes textes text input {
     display: inline-block;
     width : 50%;
+    background-color: #ddcaaf;
 }
-.traductions-popup textes text.large input {
-    display: block;
-    width: 98%
+.traductions-popup content#textes textes text textarea {
+    display: block; resize: none;
+    width : 98% !important; height: auto;
+    background-color: #ddcaaf;
 }
 
-.traductions-popup boutons {
+/**
+* Bouton d'envoi
+**/
+.traductions-popup content#textes boutons {
     position: absolute; display: block;
     width: 100%; height: 7%;
-    top: 92%; left: 0%;
+    top: 103%; left: -18%;
 }
-.traductions-popup boutons bouton {
+.traductions-popup content#textes boutons bouton {
     position: absolute; display: block;
-    left: 66%; top: 20%;
+    left: 63%; top: 20%;
     width: auto; height: auto;
-    font-size: 3vh;
+    font-family: "Luna"; font-size: 3.8vh;
+    font-weight: bold; color: #5a0707;
     text-rendering: optimizeSpeed;
     cursor: pointer;
     transition: all 300ms;

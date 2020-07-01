@@ -91,6 +91,10 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate,
 		    this.creditView.refreshTextes();
 		    this.traductionsView.refreshTextes();
 		};
+
+		this.onResize = function() {
+		    this.traductionsView.onResize();
+        };
 		
 		this.makeEvents = function() {
 			var that = this;
@@ -118,7 +122,7 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate,
 				that.optionView.show();
 			});
 			$("#traductions").click(function() {
-			    that.traductionsView.show();
+			    that.traductionsView.showFiles();
 			});
 			$("#credit").click(function() {
 			    that.creditView.show();
@@ -149,6 +153,7 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate,
 				var isFullscreen = Utils.fullscreen();
 				if (isFullscreen) $("fullscreen").removeClass("exit");
 				else $("fullscreen").addClass("exit");
+				that.onResize();
 			});
 
 			$("body").contextmenu(function() {

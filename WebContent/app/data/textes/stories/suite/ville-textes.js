@@ -10,25 +10,25 @@ define([
 	};
 
 	return {
+	    name : function() {
+            return "Suite ville.js";
+        },
+        children : function() {
+            return [Porte, Entree, Garde, Ruelle, Castagne];
+        },
         get : function(key) {
             var text = data[key];
-            if (!text) text = Porte.get(key);
-            if (!text) text = Entree.get(key);
-            if (!text) text = Garde.get(key);
-            if (!text) text = Ruelle.get(key);
-            if (!text) text = Castagne.get(key);
+            var children = this.children();
+            for (var i in children) {
+                if (!text) text = children[i].get(key);
+                else continue;
+            }
             return text;
         },
-        listAll : function() {
+        list : function() {
             var keys = [];
             for (var i in data) {keys.push(i);}
-
-            keys = keys.concat(Porte.listAll());
-            keys = keys.concat(Entree.listAll());
-            keys = keys.concat(Garde.listAll());
-            keys = keys.concat(Ruelle.listAll());
-            keys = keys.concat(Castagne.listAll());
             return keys;
-        },
+        }
     };
 });

@@ -10,25 +10,25 @@ define([
 	};
 	
 	return {
+	    name : function() {
+            return "Items.js";
+        },
+        children : function() {
+            return [Armes, Armures, Consos, Magies, Clefs];
+        },
         get : function(key) {
             var text = data[key];
-            if (!text) text = Armes.get(key);
-            if (!text) text = Armures.get(key);
-            if (!text) text = Consos.get(key);
-            if (!text) text = Magies.get(key);
-            if (!text) text = Clefs.get(key);
+            var children = this.children();
+            for (var i in children) {
+                if (!text) text = children[i].get(key);
+                else continue;
+            }
             return text;
         },
-        listAll : function() {
+        list : function() {
             var keys = [];
             for (var i in data) {keys.push(i);}
-
-            keys = keys.concat(Armes.listAll());
-            keys = keys.concat(Armures.listAll());
-            keys = keys.concat(Consos.listAll());
-            keys = keys.concat(Magies.listAll());
-            keys = keys.concat(Clefs.listAll());
             return keys;
-        },
+        }
     };
 });

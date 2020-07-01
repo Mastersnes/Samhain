@@ -22,28 +22,25 @@ define([
 	};
 	
 	return {
+        name : function() {
+            return "Stories.js";
+        },
+        children : function() {
+            return [Buttons, Didacticiel, Tuto, Suite, Quetes, GameOver];
+        },
         get : function(key) {
             var text = data[key];
-            if (!text) text = Buttons.get(key);
-            if (!text) text = Didacticiel.get(key);
-            if (!text) text = Tuto.get(key);
-            if (!text) text = Suite.get(key);
-            if (!text) text = Quetes.get(key);
-            if (!text) text = GameOver.get(key);
+            var children = this.children();
+            for (var i in children) {
+                if (!text) text = children[i].get(key);
+                else continue;
+            }
             return text;
         },
-
-        listAll : function() {
+        list : function() {
             var keys = [];
             for (var i in data) {keys.push(i);}
-
-            keys = keys.concat(Buttons.listAll());
-            keys = keys.concat(Didacticiel.listAll());
-            keys = keys.concat(Tuto.listAll());
-            keys = keys.concat(Suite.listAll());
-            keys = keys.concat(Quetes.listAll());
-            keys = keys.concat(GameOver.listAll());
             return keys;
-        },
+        }
     };
 });

@@ -120,13 +120,19 @@ define([], function(){
 	};
 
 	return {
+        name : function() {
+            return "Suite Bandits Porte.js";
+        },
+        children : function() {
+            return [];
+        },
         get : function(key) {
             return data[key];
         },
-        listAll : function() {
+        list : function() {
             var keys = [];
             for (var i in data) {keys.push(i);}
             return keys;
-        },
+        }
     };
 });

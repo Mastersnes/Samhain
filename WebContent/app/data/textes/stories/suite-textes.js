@@ -7,19 +7,25 @@ define([
 	};
 	
 	return {
+	    name : function() {
+            return "Suite.js";
+        },
+        children : function() {
+            return [Ville, Bandits];
+        },
         get : function(key) {
             var text = data[key];
-            if (!text) text = Ville.get(key);
-            if (!text) text = Bandits.get(key);
+            var children = this.children();
+            for (var i in children) {
+                if (!text) text = children[i].get(key);
+                else continue;
+            }
             return text;
         },
-        listAll : function() {
+        list : function() {
             var keys = [];
             for (var i in data) {keys.push(i);}
-
-            keys = keys.concat(Ville.listAll());
-            keys = keys.concat(Bandits.listAll());
             return keys;
-        },
+        }
     };
 });

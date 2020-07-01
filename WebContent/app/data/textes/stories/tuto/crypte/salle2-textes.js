@@ -168,13 +168,19 @@ define([], function(){
 	};
 	
 	return {
+        name : function() {
+            return "Tuto Crypte Salle2.js";
+        },
+        children : function() {
+            return [];
+        },
         get : function(key) {
             return data[key];
         },
-        listAll : function() {
+        list : function() {
             var keys = [];
             for (var i in data) {keys.push(i);}
             return keys;
-        },
+        }
     };
 });

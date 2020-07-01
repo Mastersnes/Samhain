@@ -11,28 +11,25 @@ define([
 	};
 	
 	return {
+        name : function() {
+            return "Tuto.js";
+        },
+        children : function() {
+            return [Debut, Nid, Ferme, Village, Echoppe, Crypte];
+        },
         get : function(key) {
             var text = data[key];
-            if (!text) text = Debut.get(key);
-            if (!text) text = Nid.get(key);
-            if (!text) text = Ferme.get(key);
-            if (!text) text = Village.get(key);
-            if (!text) text = Echoppe.get(key);
-            if (!text) text = Crypte.get(key);
+            var children = this.children();
+            for (var i in children) {
+                if (!text) text = children[i].get(key);
+                else continue;
+            }
             return text;
         },
-
-        listAll : function() {
+        list : function() {
             var keys = [];
             for (var i in data) {keys.push(i);}
-
-            keys = keys.concat(Debut.listAll());
-            keys = keys.concat(Nid.listAll());
-            keys = keys.concat(Ferme.listAll());
-            keys = keys.concat(Village.listAll());
-            keys = keys.concat(Echoppe.listAll());
-            keys = keys.concat(Crypte.listAll());
             return keys;
-        },
+        }
     };
 });

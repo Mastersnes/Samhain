@@ -8,21 +8,25 @@ define([
 	};
 	
 	return {
+        name : function() {
+            return "Didacticiel.js";
+        },
+        children : function() {
+            return [Debut, Main, Combat];
+        },
         get : function(key) {
             var text = data[key];
-            if (!text) text = Debut.get(key);
-            if (!text) text = Main.get(key);
-            if (!text) text = Combat.get(key);
+            var children = this.children();
+            for (var i in children) {
+                if (!text) text = children[i].get(key);
+                else continue;
+            }
             return text;
         },
-        listAll : function() {
+        list : function() {
             var keys = [];
             for (var i in data) {keys.push(i);}
-
-            keys = keys.concat(Debut.listAll());
-            keys = keys.concat(Main.listAll());
-            keys = keys.concat(Combat.listAll());
             return keys;
-        },
+        }
     };
 });

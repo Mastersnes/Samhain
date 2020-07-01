@@ -149,6 +149,9 @@ function($, _, Utils, PopupUtils, page,
         	}
         };
 
+        this.onResize = function() {
+        };
+
         this.gameOver = function(gagne) {
             this.playerManager.data.checkpoint = this.playerManager.data.lieu;
             var gameOver = this.saveManager.load("GameOver");
@@ -262,6 +265,7 @@ function($, _, Utils, PopupUtils, page,
 				}else {
 					$("fullscreen").addClass("exit");
 				}
+				that.onResize();
 			});
             $("mute").click(function() {
             	that.mediatheque.mute("all");

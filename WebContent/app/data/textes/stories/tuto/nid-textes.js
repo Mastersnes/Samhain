@@ -8,21 +8,25 @@ define([
 	};
 
 	return {
+        name : function() {
+            return "Tuto Nid.js";
+        },
+        children : function() {
+            return [Entree, Gauche, Droite];
+        },
         get : function(key) {
             var text = data[key];
-            if (!text) text = Entree.get(key);
-            if (!text) text = Gauche.get(key);
-            if (!text) text = Droite.get(key);
+            var children = this.children();
+            for (var i in children) {
+                if (!text) text = children[i].get(key);
+                else continue;
+            }
             return text;
         },
-        listAll : function() {
+        list : function() {
             var keys = [];
             for (var i in data) {keys.push(i);}
-
-            keys = keys.concat(Entree.listAll());
-            keys = keys.concat(Gauche.listAll());
-            keys = keys.concat(Droite.listAll());
             return keys;
-        },
+        }
     };
 });

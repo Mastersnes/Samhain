@@ -31,20 +31,26 @@ define([], function(){
                 eo : ""
             },
             "traduction-submit" : {
-                fr : "Proposer votre traduction",
-                en : "Propose your translation",
+                fr : "Proposer ma traduction",
+                en : "Propose my translation",
                 eo : ""
             },
 	};
 	
 	return {
+        name : function() {
+            return "Traductions.js";
+        },
+        children : function() {
+            return [];
+        },
         get : function(key) {
             return data[key];
         },
-        listAll : function() {
+        list : function() {
             var keys = [];
             for (var i in data) {keys.push(i);}
             return keys;
-        },
+        }
     };
 });

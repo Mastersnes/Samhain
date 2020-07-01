@@ -1,32 +1,34 @@
 <% var text = data.text %>
 
 <div>
-	<mask class="canClose"></mask>
-	<contour class="canClose">
-		<close class="canClose"></close>
-		<content>
+	<mask></mask>
+	<contour>
+		<content id="fichiers">
+			<close class="canClose"></close>
 			<wrapper>
-				<langages>
-					<span class="source"><%=text.get("traduction-source")%></span>
-					<select id="sources">
-						<option name="fr"><%=text.get("french")%></option>
-						<option name="en"><%=text.get("english")%></option>
-						<option name="eo"><%=text.get("esperanto")%></option>
-					</select>
-					<span class="cible">&nbsp;<%=text.get("traduction-cible")%></span>
-					<select id="cibles">
-						<option name="fr"><%=text.get("french")%></option>
-						<option name="en"><%=text.get("english")%></option>
-						<option name="eo"><%=text.get("esperanto")%></option>
-					</select>
-				</langages>
-				<textes>
-					<text id="model"><span></span>&nbsp;:&nbsp;<input type='text'/></text>
-				</textes>
-				<boutons>
-					<bouton id="send"><%=text.get("traduction-submit")%></bouton>
-				</boutons>
+				<files></files>
 			</wrapper>
+		</content>
+		<content id="textes">
+			<close class="canClose"></close>
+			<langages>
+				<select id="sources">
+					<option name="fr"><%=text.get("french")%></option>
+					<option name="en"><%=text.get("english")%></option>
+					<option name="eo"><%=text.get("esperanto")%></option>
+				</select>
+				<select id="cibles">
+					<option name="fr"><%=text.get("french")%></option>
+					<option name="en"><%=text.get("english")%></option>
+					<option name="eo"><%=text.get("esperanto")%></option>
+				</select>
+			</langages>
+			<wrapper>
+				<textes></textes>
+			</wrapper>
+			<boutons>
+				<bouton id="send"><%=text.get("traduction-submit")%></bouton>
+			</boutons>
 		</content>
 	</contour>
 </div>

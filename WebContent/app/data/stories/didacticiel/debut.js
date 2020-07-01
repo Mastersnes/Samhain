@@ -66,7 +66,7 @@ function() {
             var result = data[key];
             return result;
         },
-        listAll : function() {
+        list : function() {
             var keys = [];
             for (var i in data) {keys.push(i);}
             return keys;

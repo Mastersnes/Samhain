@@ -29,17 +29,25 @@ define([
 	};
 	
 	return {
+        name : function() {
+            return "Quetes.js";
+        },
+        children : function() {
+            return [Quete1];
+        },
         get : function(key) {
             var text = data[key];
-            if (!text) text = Quete1.get(key);
+            var children = this.children();
+            for (var i in children) {
+                if (!text) text = children[i].get(key);
+                else continue;
+            }
             return text;
         },
-        listAll : function() {
+        list : function() {
             var keys = [];
             for (var i in data) {keys.push(i);}
-
-            keys = keys.concat(Quete1.listAll());
             return keys;
-        },
+        }
     };
 });

@@ -154,6 +154,10 @@ button:focus {outline:0;}
     font-family: "TangerineBold";
     src: url("../fonts/tangerine_bold.ttf");
 }
+@font-face {
+    font-family: "Lucida";
+    src: url("../fonts/lucida.ttf");
+}
 
 /**
 * Ne pas selectionner le texte
