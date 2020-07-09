@@ -75,7 +75,7 @@ function($, _, Utils) {
             this.traductions = window.localStorage.getItem(Utils.name + "Traductions");
             if (!this.traductions) {
                 this.traductions = {
-                    "myTrads" : {},
+                    "modified" : {},
                     "toSend" : {}
                 };
             }else this.traductions = JSON.parse(this.traductions);
@@ -92,21 +92,45 @@ function($, _, Utils) {
 		    return this.gameOptions;
 		};
 
-		this.addTrad = function(key, lang, text) {
-		    if (!this.traductions.myTrads[key]) this.traductions.myTrads[key] = {};
-		    this.traductions.myTrads[key][lang] = text;
+		this.deleteTrad = function(key, lang) {
+		    if (this.traductions.modified[key] && this.traductions.modified[key][lang]) {
+		        delete this.traductions.modified[key][lang];
+		    }
+		    if (this.traductions.toSend[key] && this.traductions.toSend[key][lang]) {
+		        delete this.traductions.toSend[key][lang];
+		    }
 
-		    if (!this.traductions.toSend[key]) this.traductions.toSend[key] = {};
-		    this.traductions.toSend[key][lang] = text;
+		    this.nettoyage(this.traductions.modified);
+		    this.nettoyage(this.traductions.toSend);
+		    window.localStorage.setItem(Utils.name + "Traductions", JSON.stringify(this.traductions));
+		};
+
+		this.nettoyage = function(trad) {
+		    for (var i in trad) {
+		        if (!trad[i]["fr"] && !trad[i]["en"] && !trad[i]["eo"])
+		            delete trad[i];
+		    }
+		}
+
+		this.addTrad = function(key, lang, text, notSend) {
+		    if (!this.traductions.modified[key]) this.traductions.modified[key] = {};
+		    this.traductions.modified[key][lang] = text;
+
+            if (!notSend) {
+                if (!this.traductions.toSend[key]) this.traductions.toSend[key] = {};
+                this.traductions.toSend[key][lang] = text;
+		    }
 
 		    window.localStorage.setItem(Utils.name + "Traductions", JSON.stringify(this.traductions));
 		};
 		this.myTrad = function(key, lang) {
-		    var trads = this.traductions.myTrads;
-		    if (!trads[key]) return null;
-		    return trads[key][lang];
+		    var trads = this.traductions.modified;
+		    if (trads[key]) return trads[key][lang];
+		    else return null;
 		};
 		this.sendTrad = function() {
+		console.log("Send", this.traductions.toSend);
+		console.log("Modified", this.traductions.modified);
 		    var newTrad = Utils.encode(JSON.stringify(this.traductions.toSend));
 		    var request = {
                 "username" : "",

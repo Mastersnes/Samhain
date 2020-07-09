@@ -60,6 +60,8 @@ define(["jquery", "underscore",
             this.currentFile = file;
             this.el.find("content#fichiers").hide();
 
+            if (!this.source) this.source = this.Textes.loadLocal();
+            if (!this.cible) this.cible = this.Textes.loadLocal();
             this.refreshTrads();
 
             this.el.find("content#textes").fadeIn();
@@ -69,29 +71,38 @@ define(["jquery", "underscore",
         this.refreshTrads = function() {
             if (!this.currentFile) return;
             var textes = this.currentFile.list();
-            var sourceLang = this.el.find("select#sources option:selected").attr("name");
-            var cibleLang = this.el.find("select#cibles option:selected").attr("name");
+            var sourceLang = this.source;
+            var cibleLang = this.cible;
+
+            this.el.find("#textes langage#source").attr("name", sourceLang);
+            this.el.find("#textes langage#cible").attr("name", cibleLang);
 
             this.el.find("textes").empty();
             for (var i in textes) {
                 var key = textes[i];
 
-                var groupDom = $("<text><span></span></text>");
+                var groupDom = $("<text></text>");
                 this.el.find("textes").append(groupDom);
-
                 groupDom.attr("name", key);
+
+                var okDom = $("<span class='verify'></span>")
+                var deleteDom = $("<span class='delete'></span>")
+                groupDom.append(okDom);
+                groupDom.append(deleteDom);
 
                 var source = this.Textes.get(key, sourceLang, sourceLang != cibleLang);
                 source = Utils.decodeHtml(source);
-                var sourceDom = groupDom.find("span").html(source);
+                var sourceDom = $("<span class='source'></span>");
+                sourceDom.html(source);
+                groupDom.append(sourceDom);
 
                 var cible = this.saveManager.myTrad(key, cibleLang);
-                if (cible) groupDom.addClass("verify");
+                if (cible) groupDom.addClass("check");
                 else cible = this.Textes.get(key, cibleLang);
                 var cibleTxt = Utils.decodeHtml(cible);
 
                 var cibleDom;
-                if (sourceDom.text().length > 40 || cibleTxt.length > 40) {
+                if (sourceDom.text().length > 35 || cibleTxt.length > 35) {
                     cibleDom = $("<textarea></textarea>");
                     cibleDom.html(cibleTxt);
                     groupDom.addClass("large");
@@ -118,13 +129,23 @@ define(["jquery", "underscore",
 
         this.makeTextEvents = function() {
             var that = this;
-            this.el.find("textes text input").keypress(function() {
-                $(this).parent().addClass("verify");
+            this.el.find("textes text input, textes text textarea").keypress(function() {
+                $(this).parent().addClass("check");
+                var cibleLang = that.el.find("select#cibles option:selected").attr("name");
+                var key = $(this).parent().attr("name");
+                that.saveManager.addTrad(key, cibleLang, $(this).val(), true);
             });
-            this.el.find("textes text input").change(function() {
+            this.el.find("textes text input, textes text textarea").change(function() {
                 var cibleLang = that.el.find("select#cibles option:selected").attr("name");
                 var key = $(this).parent().attr("name");
                 that.saveManager.addTrad(key, cibleLang, $(this).val());
+            });
+            this.el.find("textes text span.delete").click(function() {
+                var cibleLang = that.el.find("select#cibles option:selected").attr("name");
+                var parent = $(this).parent();
+                var key = parent.attr("name");
+                that.saveManager.deleteTrad(key, cibleLang);
+                that.refreshTrads();
             });
         };
 
@@ -152,7 +173,32 @@ define(["jquery", "underscore",
                     that.showFiles();
                 }
             });
-            this.el.find("select").change(function(e) {
+            this.el.find("langage.selected").click(function(e) {
+                var el = that.el.find("content#textes");
+                var me = $(this);
+                that.langageInChange = me.attr("id");
+
+                console.log("Send", that.saveManager.traductions.toSend);
+                console.log("Modified", that.saveManager.traductions.modified);
+
+                if (el.find("langages").is(":visible")) el.find("langages").hide();
+                else {
+                    var left = me.position().left;
+                    el.find("langages").css({
+                        "left" : Utils.toPercent(left, el.width()) + "%"
+                    });
+                    el.find("langages").show();
+                }
+            });
+            this.el.find("#textes langages langage").off("click");
+            this.el.find("#textes langages langage").click(function(e) {
+                that.el.find("#textes langages").hide();
+                that.current = $(this).attr("name");
+
+                if (that.langageInChange == "source")
+                    that.source = that.current;
+                else that.cible = that.current;
+
                 that.refreshTrads();
             });
             this.el.find("bouton#send").click(function(e) {

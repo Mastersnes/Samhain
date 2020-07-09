@@ -11,18 +11,22 @@
 		</content>
 		<content id="textes">
 			<close class="canClose"></close>
+
+			<langage id="source" class="selected">
+				<picture></picture>
+				<fleche>▼</fleche>
+			</langage>
+			<fromto></fromto>
+			<langage id="cible" class="selected">
+				<picture></picture>
+				<fleche>▼</fleche>
+			</langage>
 			<langages>
-				<select id="sources">
-					<option name="fr"><%=text.get("french")%></option>
-					<option name="en"><%=text.get("english")%></option>
-					<option name="eo"><%=text.get("esperanto")%></option>
-				</select>
-				<select id="cibles">
-					<option name="fr"><%=text.get("french")%></option>
-					<option name="en"><%=text.get("english")%></option>
-					<option name="eo"><%=text.get("esperanto")%></option>
-				</select>
+				<langage name="fr"><picture></picture></langage>
+				<langage name="en"><picture></picture></langage>
+				<langage name="eo"><picture></picture></langage>
 			</langages>
+
 			<wrapper>
 				<textes></textes>
 			</wrapper>
