@@ -4,122 +4,105 @@ define([], function(){
 	        /**
 	        * Menu
 	        **/
-	        "bienvenue" : {
-                fr : "Bienvenue",
-                en : "Welcome"
+            "bienvenue" : {
+            	fr : "Bienvenue",
+            	en : "Welcome",
+            	eo : "Bonvenon"
             },
             "guest" : {
-                fr : "Invité",
-                en : "Guest"
+            	fr : "Invité",
+            	en : "Guest",
+            	eo : "Gasto"
             },
             "chargement" : {
-                fr : "&hellip;Chargement&hellip;",
-                en : "&hellip;Loading&hellip;"
+            	fr : "&hellip;Chargement&hellip;",
+            	en : "&hellip;Loading&hellip;",
+            	eo : "&hellip;Ŝarĝado&hellip;"
             },
             "clickToContinue" : {
-                fr : "- Cliquez pour continuer -",
-                en : "- Click to continue -"
+            	fr : "- Cliquez pour continuer -",
+            	en : "- Click to continue -",
+            	eo : "- Kliku por daŭri -",
             },
             "newGame" : {
-                fr : "Nouveau périple",
-                en : "New periple"
+            	fr : "Nouveau périple",
+            	en : "New journey",
+            	eo : "Nova periplo"
             },
             "didacticiel" : {
-                fr : "Didacticiel",
-                en : "Tutorial"
+            	fr : "Tutoriel",
+            	en : "Tutorial",
+            	eo : "Lernilo"
             },
             "kongregate" : {
-                fr : "Nos autres jeux sur:",
-                en : "Our other games on:"
+            	fr : "Nos autres jeux&nbsp;:",
+            	en : "Our other games:",
+            	eo : "Niaj aliaj ludoj:"
             },
             "eraseSave" : {
-                fr : "<text>ATTENTION&nbsp;!</text><text>Ceci effacera votre partie enregistrée.</text>",
-                en : "<text>WARNING!</text><text>this will erase your registered save.</text>"
+            	fr : "<text>ATTENTION&nbsp;!</text><text>Ceci effacera votre partie enregistrée.</text>",
+            	en : "<text>WARNING!</text><text>This will erase your current save.</text>",
+            	eo : "<text>Atenton!</text><text>Ĉi tio forviŝos vian registran ludon.</text>"
             },
             "continue" : {
-                fr : "Continuer",
-                en : "Continue"
+            	fr : "Continuer",
+            	en : "Continue",
+            	eo : "Daŭri"
             },
             "continuerButton" : {
-                fr : "Continuer",
-                en : "Continue"
+            	fr : "Continuer",
+            	en : "Continue",
+            	eo : "Daŭri"
             },
             "cancelButton" : {
-                fr : "Annuler",
-                en : "Cancel"
+            	fr : "Annuler",
+            	en : "Cancel",
+            	eo : "Nuligi"
             },
             "loadGame" : {
-                fr : "Continuer",
-                en : "Continue"
+            	fr : "Continuer",
+            	en : "Continue",
+            	eo : "Daŭri"
             },
             "options" : {
-                fr : "Options",
-                en : "Options"
+            	fr : "Options",
+            	en : "Options",
+            	eo : "Opcioj"
             },
             "traductions" : {
-                fr : "Traductions",
-                en : "Translations"
+            	fr : "Traductions",
+            	en : "Translations",
+            	eo : "Tradukoj"
             },
             "langage" : {
-                fr : "Langage :",
-                en : "Language :"
+            	fr : "Langage&nbsp;:",
+            	en : "Language:",
+            	eo : "Lingvo:"
             },
             "fullscreen" : {
-                fr : "Plein écran (appuyez sur echap pour quitter le plein écran)",
-                en : "Fullscreen (press escape to exit full screen)"
+            	fr : "Plein écran (appuyez sur Echap pour quitter le plein écran)",
+            	en : "Fullscreen (press Escape to exit fullscreen mode)",
+            	eo : "Tutekrano (premu sur Esk por forlasi la tutekrano)"
             },
             "credits" : {
-                fr : "Crédits",
-                en : "Credits"
-            },
-            "illustration" : {
-                fr : "Game artist",
-                en : "Game artist"
-            },
-            "developpement" : {
-                fr : "Développement",
-                en : "Development"
-            },
-            "musique" : {
-                fr : "Musiques",
-                en : "Musics"
-            },
-            "textes" : {
-                fr : "Textes",
-                en : "Texts"
-            },
-            "mute" : {
-                fr : "Mute",
-                en : "Mute"
+            	fr : "Crédits",
+            	en : "Credits",
+            	eo : "Kreditoj"
             },
             "copyright-licence" : {
-                fr : "Copyright © Les Jeux de Bebel, 2020. Tous droits réservés.",
-                en : "Copyright © Les Jeux de Bebel, 2020. All rights reserved."
-            },
-
-            "muteMusic" : {
-                fr : "Couper la musique",
-                en : "Mute musics"
-            },
-            "demuteMusic" : {
-                fr : "Jouer la musique",
-                en : "Play musics"
-            },
-            "muteSound" : {
-                fr : "Couper les effets sonores",
-                en : "Mute sonor effects"
-            },
-            "demuteSound" : {
-                fr : "Jouer les effets sonores",
-                en : "Play sonor effects"
+            	fr : "Copyright © Les Jeux de Bebel, 2020. Tous droits réservés.",
+            	en : "Copyright © Les Jeux de Bebel, 2020. All rights reserved.",
+            	eo : "Aŭtorrajto © Les Jeux de Bebel, 2020. Ĉiuj rajtoj rezervitaj."
             },
             "selectAuto" : {
-                fr : "Sélection automatique des meilleurs équipements",
-                en : "Best equipments are automaticaly selected"
+            	fr : "Sélection automatique des meilleurs équipements",
+            	en : "Best equipments will be automatically selected",
+            	eo : "La pli bonaj ekipaĵoj estas aŭtomate elektontaj"
             },
             "cibleUnique" : {
-                fr : "Ciblage automatique des ennemies isolés",
-                en : "Automatic targeting of isolated enemies"
+            	fr : "Ciblage automatique des ennemis isolés",
+            	en : "Automatic targeting of isolated enemies",
+            	eo : "Celi aŭtomate la izolaj malamikoj"
             }
 	};
 	
