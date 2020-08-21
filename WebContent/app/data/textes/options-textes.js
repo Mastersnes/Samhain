@@ -2,19 +2,22 @@
 define([], function(){
 	var data = {
 	        /**
-	        * Options
-	        **/
-	        "sound" : {
-                fr : "SON",
-                en : "SOUND"
+            * Options
+            **/
+            "sound" : {
+            	fr : "SON",
+            	en : "SOUND",
+            	eo : "SONO"
             },
             "music" : {
-                fr : "MUSIQUE",
-                en : "MUSIC"
+            	fr : "MUSIQUE",
+            	en : "MUSIC",
+            	eo : "MUZIKO"
             },
             "language" : {
-                fr : "LANGUE",
-                en : "LANGUAGE"
+            	fr : "LANGUE",
+            	en : "LANGUAGE",
+            	eo : "LINGVO"
             }
 	};
 	

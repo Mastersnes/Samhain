@@ -35,7 +35,7 @@ function($, _, Utils) {
 			        "debuff" : null,
 			        "xp" : 0,
 			        "level" : 0,
-			        "gold" : 1000,
+			        "gold" : 0,
 
 			        "attaque" : 1,
 			        "defense" : 0,
@@ -50,7 +50,7 @@ function($, _, Utils) {
 			            "clef" : [],
 			            "ifObj" : []
 			        },
-                    "lieu" : "ville-garde-simple-3",
+                    "lieu" : "tuto-start",
                     "savesData" : {},
 
                     "currentQuest" : {

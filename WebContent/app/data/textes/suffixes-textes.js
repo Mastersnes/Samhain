@@ -1,285 +1,339 @@
 'use strict';
 define([], function(){
 	var data = {
-	        /**
-	        * Suffixes
-	        **/
 	        "grognon" : {
-                fr : "Grognon",
-                en : "Grumpy"
+            	fr : "Grognon",
+            	en : "Grumpy",
+            	eo : "Grumblema"
             },
 
             "hargneux-m" : {
-                fr : "Hargneux",
-                en : "Snarly"
+            	fr : "Hargneux",
+            	en : "Spiteful",
+            	eo : "Fava"
             },
             "hargneux-f" : {
-                fr : "Hargneuse",
-                en : "Snarly"
+            	fr : "Hargneuse",
+            	en : "Spiteful",
+            	eo : "Fava"
             },
 
             "debile" : {
-                fr : "Débile",
-                en : "Dummy"
+            	fr : "Débile",
+            	en : "Dumb",
+            	eo : "Stulta"
             },
 
             "borgne" : {
-                fr : "Borgne",
-                en : "One-eyed",
-                eo : "Unuokula"
+            	fr : "Borgne",
+            	en : "One-eyed",
+            	eo : "Unuokula"
             },
 
             "timide" : {
-                fr : "Timide",
-                en : "Shy"
+            	fr : "Timide",
+            	en : "Shy",
+            	eo : "Timema"
             },
 
             "freluquet" : {
-                fr : "Freluquet",
-                en : "Whippersnapper"
+            	fr : "Freluquet",
+            	en : "Pipsqueak",
+            	eo : "Nana"
             },
 
             "bourrin-m" : {
-                fr : "Bourrin",
-                en : "Lout"
+            	fr : "Bourrin",
+            	en : "Lout",
+            	eo : "Barbara"
             },
             "bourrin-f" : {
-                fr : "Bourrine",
-                en : "Lout"
+            	fr : "Bourrine",
+            	en : "Lout",
+            	eo : "Barbara"
             },
 
             "costaud" : {
-                fr : "Costaud",
-                en : "Strong"
+            	fr : "Costaud",
+            	en : "Strong",
+            	eo : "Fortega"
             },
 
             "fairplay" : {
-                fr : "Fair-play",
-                en : "Fair-play"
+            	fr : "Fair-play",
+            	en : "Fair-play",
+            	eo : "Honesta"
             },
 
             "mignon-m" : {
-                fr : "Mignon",
-                en : "Cute"
+            	fr : "Mignon",
+            	en : "Cute",
+            	eo : "Beleta"
             },
             "mignon-f" : {
-                fr : "Mignonne",
-                en : "Cute"
+            	fr : "Mignonne",
+            	en : "Cute",
+            	eo : "Beleta"
             },
 
             "terrifiant-m" : {
-                fr : "Terrifiant",
-                en : "Terrifying"
+            	fr : "Terrifiant",
+            	en : "Terrifying",
+            	eo : "Terura"
             },
             "terrifiant-f" : {
-                fr : "Terrifiante",
-                en : "Terrifying"
+            	fr : "Terrifiante",
+            	en : "Terrifying",
+            	eo : "Terura"
             },
 
             "cruel-m" : {
-                fr : "Cruel",
-                en : "Cruel"
+            	fr : "Cruel",
+            	en : "Cruel",
+            	eo : "Kruela"
             },
             "cruel-f" : {
-                fr : "Cruelle",
-                en : "Cruel"
+            	fr : "Cruelle",
+            	en : "Cruel",
+            	eo : "Kruela"
             },
 
             "original-m" : {
-                fr : "Original",
-                en : "Original"
+            	fr : "Original",
+            	en : "Original",
+            	eo : "Originala"
             },
             "original-f" : {
-                fr : "Originale",
-                en : "Original"
+            	fr : "Originale",
+            	en : "Original",
+            	eo : "Originala"
             },
 
             "malade" : {
-                fr : "Malade",
-                en : "Sick"
+            	fr : "Malade",
+            	en : "Sick",
+            	eo : "Malsana"
             },
 
             "feroce" : {
-                fr : "Féroce",
-                en : "Fierce",
-                eo : "Feroca"
+            	fr : "Féroce",
+            	en : "Fierce",
+            	eo : "Feroca"
             },
 
             "glouton-m" : {
-                fr : "Glouton",
-                en : "Glutton"
+            	fr : "Glouton",
+            	en : "Glutton",
+            	eo : "Glutema"
             },
             "glouton-f" : {
-                fr : "Gloutonne",
-                en : "Glutton"
+            	fr : "Gloutonne",
+            	en : "Glutton",
+            	eo : "Glutema"
             },
 
             "illumine-m" : {
-                fr : "Illuminé",
-                en : "Visionary"
+            	fr : "Illuminé",
+            	en : "Fanatic",
+            	eo : "Bigota"
             },
             "illumine-f" : {
-                fr : "Illuminée",
-                en : "Visionary"
+            	fr : "Illuminée",
+            	en : "Fanatic",
+            	eo : "Bigota"
             },
 
             "savant-m" : {
-                fr : "Savant",
-                en : "Savant"
+            	fr : "Savant",
+            	en : "Savant",
+            	eo : "Klera"
             },
             "savant-f" : {
-                fr : "Savante",
-                en : "Savant"
+            	fr : "Savante",
+            	en : "Savant",
+            	eo : "Klera"
             },
 
             "fouFurieux-m" : {
-                fr : "Fou",
-                en : "Lunatic"
+            	fr : "Fou",
+            	en : "Crazy",
+            	eo : "Freneza"
             },
             "fouFurieux-f" : {
-                fr : "Folle",
-                en : "Lunatic"
+            	fr : "Folle",
+            	en : "Crazy",
+            	eo : "Freneza"
             },
 
             "dechaine-m" : {
-                fr : "Déchaîné",
-                en : "Unleashed"
+            	fr : "Déchaîné",
+            	en : "Unleashed",
+            	eo : "Senbrida"
             },
             "dechaine-f" : {
-                fr : "Déchaînée",
-                en : "Unleashed"
+            	fr : "Déchaînée",
+            	en : "Unleashed",
+            	eo : "Senbrida"
             },
 
             "fragile" : {
-                fr : "Fragile",
-                en : "Frail",
-                eo : "Fragila"
+            	fr : "Fragile",
+            	en : "Frail",
+            	eo : "Fragila"
             },
 
             "peureux-m" : {
-                fr : "Peureux",
-                en : "Fearful"
+            	fr : "Peureux",
+            	en : "Fearful",
+            	eo : "Malbrava"
             },
             "peureux-f" : {
-                fr : "Peureuse",
-                en : "Fearful"
+            	fr : "Peureuse",
+            	en : "Fearful",
+            	eo : "Malbrava"
             },
 
             "pauvre" : {
-                fr : "Pauvre",
-                en : "Poor"
+            	fr : "Pauvre",
+            	en : "Poor",
+            	eo : "Malriĉa"
             },
 
             "riche" : {
-                fr : "Riche",
-                en : "Rich"
+            	fr : "Riche",
+            	en : "Rich",
+            	eo : "Riĉa"
             },
 
             "resistant-m" : {
-                fr : "Résistant",
-                en : "Resistant"
+            	fr : "Résistant",
+            	en : "Resistant",
+            	eo : "Fortika"
             },
             "resistant-f" : {
-                fr : "Résistante",
-                en : "Resistant"
+            	fr : "Résistante",
+            	en : "Resistant",
+            	eo : "Fortika"
             },
 
             "incassable" : {
-                fr : "Incassable",
-                en : "Unbreakable"
+            	fr : "Incassable",
+            	en : "Unbreakable",
+            	eo : "Nerompebla"
             },
 
             "paresseux-m" : {
-                fr : "Paresseux",
-                en : "Lazy"
+            	fr : "Paresseux",
+            	en : "Lazy",
+            	eo : "Pigra"
             },
             "paresseux-f" : {
-                fr : "Paresseuse",
-                en : "Lazy"
+            	fr : "Paresseuse",
+            	en : "Lazy",
+            	eo : "Pigra"
             },
 
             "rieur-m" : {
-                fr : "Rieur",
-                en : "Laughing"
+            	fr : "Rieur",
+            	en : "Cheerful",
+            	eo : "Ridema"
             },
             "rieur-f" : {
-                fr : "Rieuse",
-                en : "Laughing"
+            	fr : "Rieuse",
+            	en : "Cheerful",
+            	eo : "Ridema"
             },
 
             "precis-m" : {
-                fr : "Précis",
-                en : "Precise"
+            	fr : "Précis",
+            	en : "Precise",
+            	eo : "Preciza"
             },
             "precis-f" : {
-                fr : "Précise",
-                en : "Precise"
+            	fr : "Précise",
+            	en : "Precise",
+            	eo : "Preciza"
             },
 
             "silencieux-m" : {
-                fr : "Silencieux",
-                en : "Silent"
+            	fr : "Silencieux",
+            	en : "Silent",
+            	eo : "Silenta"
             },
             "silencieux-f" : {
-                fr : "Silencieuse",
-                en : "Silent"
+            	fr : "Silencieuse",
+            	en : "Silent",
+            	eo : "SiIenta"
             },
 
             "manchot-m" : {
-                fr : "Manchot",
-                en : "One-Armed"
+            	fr : "Manchot",
+            	en : "One-Armed",
+            	eo : "Unubraka"
             },
             "manchot-f" : {
-                fr : "Manchote",
-                en : "One-Armed"
+            	fr : "Manchote",
+            	en : "One-Armed",
+            	eo : "Unubraka"
             },
 
             "blesse-m" : {
-                fr : "Blessé",
-                en : "Wounded"
+            	fr : "Blessé",
+            	en : "Wounded",
+            	eo : "Vundita"
             },
             "blesse-f" : {
-                fr : "Blessée",
-                en : "Wounded"
+            	fr : "Blessée",
+            	en : "Wounded",
+            	eo : "Vundita"
             },
 
             "lancien-m" : {
-                fr : "L'ancien",
-                en : "The ancient"
+            	fr : "L'ancien",
+            	en : "The ancient",
+            	eo : "Mantikisto"
             },
             "lancien-f" : {
-                fr : "L'ancienne",
-                en : "The ancient"
+            	fr : "L'ancienne",
+            	en : "The ancient",
+            	eo : "Mantikistino"
             },
 
             "spectral-m" : {
-                fr : "Spectral",
-                en : "Spectral"
+            	fr : "Spectral",
+            	en : "Spectral",
+            	eo : "Fantoma"
             },
             "spectral-f" : {
-                fr : "Spectrale",
-                en : "Spectral"
+            	fr : "Spectrale",
+            	en : "Spectral",
+            	eo : "Fantoma"
             },
 
             "raoul" : {
-                fr : "Raoul",
-                en : "Raoul"
+            	fr : "Raoul",
+            	en : "Raoul",
+            	eo : "Raoul"
             },
             "viscerole" : {
-                fr : "Viscérole",
-                en : "Viscerole"
+            	fr : "Viscérole",
+            	en : "Viscerole",
+            	eo : "Viscerole"
             },
             "kraken" : {
-                fr : "Kraken",
-                en : "Kraken"
+            	fr : "Kraken",
+            	en : "Kraken",
+            	eo : "Kraken"
             },
             "kraken-blesse" : {
-                fr : "Kraken Blessé",
-                en : "Wounded Kraken"
+            	fr : "Kraken Blessé",
+            	en : "Wounded Kraken",
+            	eo : "Vundita Kraken"
             },
             "tavernier" : {
-                fr : "Tavernier",
-                en : "Taverner"
+            	fr : "Tavernier",
+            	en : "Innkeeper",
+            	eo : "Albergisto"
             }
 	};
 	
