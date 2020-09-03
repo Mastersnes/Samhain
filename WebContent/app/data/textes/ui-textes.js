@@ -1,100 +1,120 @@
 'use strict';
 define([], function(){
 	var data = {
-	        /**
-	        * UI
-	        **/
 	        "inventaire" : {
-                fr : "Inventaire",
-                en : "Inventory"
+            	fr : "Inventaire",
+            	en : "Inventory",
+            	eo : "Inventaro"
             },
             "lvl" : {
-                fr : "Niv.",
-                en : "Lvl."
+            	fr : "Niv.",
+            	en : "Lvl.",
+            	eo : "Niv."
             },
             "rate" : {
-                fr : "Raté",
-                en : "Missed"
+            	fr : "Raté",
+            	en : "Missed",
+            	eo : "Maltrafi"
             },
             "vie" : {
-                fr : "Vie",
-                en : "Life"
+            	fr : "Vie",
+            	en : "Life",
+            	eo : "Vivo"
             },
             "mana" : {
-                fr : "Mana",
-                en : "Mana"
+            	fr : "Mana",
+            	en : "Mana",
+            	eo : "Magio"
             },
             "attack" : {
-                fr : "Attaque",
-                en : "Attack"
+            	fr : "Attaque",
+            	en : "Attack",
+            	eo : "Atako"
             },
             "degats" : {
-                fr : "Dégâts",
-                en : "Damage"
+            	fr : "Dégâts",
+            	en : "Damage",
+            	eo : "Damaĝo"
             },
             "lifeSteal" : {
-                fr : "Vol de vie",
-                en : "Lifesteal"
+            	fr : "Vol de vie",
+            	en : "Life steal",
+            	eo : "Vivoŝtelo"
             },
             "manaSteal" : {
-                fr : "Vol de mana",
-                en : "Manasteal"
+            	fr : "Vol de mana",
+            	en : "Mana steal",
+            	eo : "Magioŝtelo"
             },
             "manaCost" : {
-                fr : "Coût en mana",
-                en : "Mana Cost"
+            	fr : "Coût en mana",
+            	en : "Mana Cost",
+            	eo : "Magiokosto"
             },
             "defense" : {
-                fr : "Défense",
-                en : "Defense"
+            	fr : "Défense",
+            	en : "Defense",
+            	eo : "Defendo"
             },
             "experienceGain" : {
-                fr : "XP",
-                en : "XP"
+            	fr : "XP",
+            	en : "XP",
+            	eo : "SP"
             },
             "argentGain" : {
-                fr : "Argent",
-                en : "Income"
+            	fr : "Revenu",
+            	en : "Earnings",
+            	eo : "Enspezo"
             },
             "lifeGain" : {
-                fr : "Gain de vie",
-                en : "Gain of life"
+            	fr : "Gain de vie",
+            	en : "Life gain",
+            	eo : "Vivogajno"
             },
             "duree" : {
-                fr : "Durée",
-                en : "Duration"
+            	fr : "Durée",
+            	en : "Duration",
+            	eo : "Daŭro"
             },
             "manaGain" : {
-                fr : "Gain de mana",
-                en : "Gain of mana"
+            	fr : "Gain de mana",
+            	en : "Mana gain",
+            	eo : "Magiogajno"
             },
             "multicible" : {
-                fr : "Multicible",
-                en : "Multi-target"
+            	fr : "Multicible",
+            	en : "Multi-target",
+            	eo : "Multcelo"
             },
             "attackGain" : {
-                fr : "Gain d'attaque",
-                en : "Attack gain"
+            	fr : "Gain d'attaque",
+            	en : "Attack gain",
+            	eo : "Atakogajno"
             },
             "defenseGain" : {
-                fr : "Gain de défense",
-                en : "Defense gain"
+            	fr : "Gain de défense",
+            	en : "Defense gain",
+            	eo : "Defendogajno"
             },
             "competences" : {
-                fr : "Compétences",
-                en : "Skills"
+            	fr : "Compétences",
+            	en : "Skills",
+            	eo : "Kompetentoj"
             },
             "items" : {
-                fr : "Objets",
-                en : "Items"
+            	fr : "Objets",
+            	en : "Items",
+            	eo : "Objektoj"
             },
             "inflige" : {
-                fr : "Inflige",
-                en : "Inflicts"
+            	fr : "Inflige",
+            	en : "Inflicts",
+            	eo : "Okazigas"
             },
             "octroie" : {
-                fr : "Octroi",
-                en : "Grants"
+            	fr : "Octroi",
+            	en : "Grants",
+            	eo : "Akordigas"
             }
 	};
 	
