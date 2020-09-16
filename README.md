@@ -1,5 +1,5 @@
 # Samhain
-"Samhain" est un jeu par navigateur gratuit et sans attentes intempestives : http://lesjeuxdebebel.fr.nf/Samhain
+"Samhain" est un jeu par navigateur gratuit et sans attentes intempestives : http://lesjeuxdebebel.fr.nf//Samhain
 
 Il s'agit d'un jeu de rôle textuel où vos choix ont une incidence direct sur le déroulement de l'aventure.
 
