@@ -32,7 +32,7 @@ define([], function(){
             "bouclierBois-texte" : {
             	fr : "Un bouclier en bois assez banal. Il semble plutôt résistant.",
             	en : "A pretty common wooden shield. It seems quite resistant.",
-            	eo : "Banala ŝildo el ligno. Ĝi ŝajnas relative fortikan."
+            	eo : "Banala ŝildo el ligno. Ĝi ŝajnas relative fortika."
             },
             "bouclierFer" : {
             	fr : "Bouclier en fer",

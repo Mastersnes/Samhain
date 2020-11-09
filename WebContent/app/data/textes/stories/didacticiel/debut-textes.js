@@ -14,7 +14,7 @@ define([], function(){
         "didacticiel-start-texte-3" : {
         	fr : "Tout semble calme lorsque, soudain, une voix vous interpelle :",
         	en : "All seems calm when, suddenly, a voice speaks to you:",
-        	eo : "Ĉiu ŝajnas trankvila kiam, subite, voĉo alparolas vin:"
+        	eo : "Ĉiu ŝajnas trankvila, kiam subite, voĉo alparolas vin:"
         },
         "didacticiel-start-texte-4" : {
         	fr : "&laquo;&nbsp;Eh toi, l'aventurier&nbsp;! Appuie sur ‘suivant’ pour continuer.&nbsp;&raquo;",

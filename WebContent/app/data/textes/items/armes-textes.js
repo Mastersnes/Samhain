@@ -52,7 +52,7 @@ define([], function(){
             "dague-texte" : {
             	fr : "Une belle dague toute brillante. Sa lame semble tranchante comme un rasoir.",
             	en : "A beautiful and shiny dagger. Its blade looks sharp as a razor.",
-            	eo : "Bela dago tute brila. Ĝia klingo aspektas akran kiel razilon."
+            	eo : "Bela dago tute brila. Ĝia klingo aspektas akra kiel razilo."
             },
             "epee" : {
             	fr : "Épée",

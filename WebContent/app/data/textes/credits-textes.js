@@ -1,9 +1,6 @@
 'use strict';
 define([], function(){
 	var data = {
-	        /**
-	        * Credits
-	        **/
 	        "nous-credits" : {
             	fr : "Alicia et Steven Nesztler",
             	en : "Alicia et Steven Nesztler",
@@ -37,12 +34,12 @@ define([], function(){
             	eo : "Arta Directoro"
             },
             "CA-credits" : {
-            	fr : "Concept Artist",
+            	fr : "Artiste Concepteur",
             	en : "Concept Artist",
             	eo : "Koncepto Artisto"
             },
             "graphist-credits" : {
-            	fr : "Lead Artist",
+            	fr : "Artiste en Chef",
             	en : "Lead Artist",
             	eo : "Ĉefa Artisto"
             },
@@ -53,17 +50,17 @@ define([], function(){
             },
 
             "gameDesign-credits" : {
-            	fr : "Game Designer",
+            	fr : "Conception Générale",
             	en : "Game Designer",
             	eo : "Ludo Dezajnisto"
             },
             "programming-credits" : {
-            	fr : "Lead Programmer",
+            	fr : "Programmeur en Chef",
             	en : "Lead Programmer",
             	eo : "Ĉefa Programisto"
             },
             "levelDesign-credits" : {
-            	fr : "Level Designer",
+            	fr : "Concepteur des Niveaux",
             	en : "Level Designer",
             	eo : "Nivela Dezajnisto"
             },
@@ -74,7 +71,7 @@ define([], function(){
             	eo : "Originalaj Muzikoj"
             },
             "sound-credits" : {
-            	fr : "Sound Designer",
+            	fr : "Effets Sonores",
             	en : "Sound Designer",
             	eo : "Sono Dezajnisto"
             },
@@ -101,7 +98,7 @@ define([], function(){
             },
 
             "community-credits" : {
-            	fr : "Community Manager",
+            	fr : "Chargé de Communication",
             	en : "Community Manager",
             	eo : "Komunumo Administristo"
             },
