@@ -6,45 +6,45 @@ define([], function(){
         **/
         "bandits-arene-entrer-texte-1" : {
         	fr : "Vous entrez dans l’arène sous les huées de la foule.",
-        	en : "You enter into the arena under the booing of the crowd.",
-        	eo : ""
+        	en : "You enter the arena under the booing of the crowd.",
+        	eo : "Vi eniras en la areno sub la huadoj de la homamaso."
         },
         "bandits-arene-entrer-texte-2" : {
         	fr : "En face de vous, quatre goules comptent bien faire de vous leur prochain dîner&hellip;",
         	en : "In front of you, four ghouls are planning to make you their next dinner&hellip;",
-        	eo : ""
+        	eo : "Fronte al vi, kvar guloj planas fari de vin ilian baldaŭan lunĉon&hellip;"
         },
 
         "bandits-arene-entrer-2-texte-1" : {
         	fr : "Vos adversaires tombent sous vos assauts répétés, vous laissant seul parmi les cadavres.",
         	en : "Your opponents collapse under your repeated assault, letting you alone among the corpses.",
-        	eo : ""
+        	eo : "Viaj kontraŭuloj falas sub viaj ripetitaj atakoj, lasante vin solan inter la kadavrojn."
         },
         "bandits-arene-entrer-2-texte-2" : {
         	fr : "Vous trouvez enfin le temps de souffler, quand vous remarquez une main bouger au sol&nbsp;!",
-        	en : "You finally find the time to breathe, when you see a hand moving on the ground!",
-        	eo : ""
+        	en : "You finally find the time to breathe when you see a hand moving on the ground!",
+        	eo : "Vi trovas finfine la tempo por blovi, kiam vi rimarkas manon movi sur la grundon!"
         },
         "bandits-arene-entrer-2-texte-3" : {
         	fr : "Deux challengers, dévorés par les goules vaincues, se relèvent doucement et se dirigent vers vous&hellip;",
         	en : "Two challengers, devoured by the defeated ghouls, slowly get up and head towards you&hellip;",
-        	eo : ""
+        	eo : "Du defiantoj, voritaj de la venkaj guloj, restarigas malrapide kaj iras al vi&hellip;"
         },
 
         "bandits-arene-entrer-3-texte-1" : {
-        	fr : "Vous vous apprêtez à vous lancer dans cet ultime affrontement, lorsqu'une voix résonne au loin :",
-        	en : "You get ready to start this ultimate battle, when a voice sounds away:",
-        	eo : ""
+        	fr : "Vous vous apprêtez à vous lancer dans cet ultime affrontement, lorsqu'une voix résonne au loin&nbsp;:",
+        	en : "You get ready to start this ultimate battle when a voice sounds away:",
+        	eo : "Vi prepariĝas lanĉi vin en tiu finofara alfrontiĝo, dum voĉo resonas fore:"
         },
         "bandits-arene-entrer-3-texte-2" : {
         	fr : "&laquo;&nbsp;Assez&nbsp;! Ce combat m'ennuie et n'est pas digne d'un héros comme toi&hellip;&nbsp;&raquo;",
         	en : "&laquo;&nbsp;Stop it! This fight is boring me and isn’t worthy of a hero like you&hellip;&nbsp;&raquo;",
-        	eo : ""
+        	eo : "&laquo;&nbsp;Haltu! Tiu batalo enuas min kaj ne estas digna de heroo kiel vi&hellip;&nbsp;&raquo;"
         },
         "bandits-arene-entrer-3-texte-3" : {
         	fr : "Votre interlocuteur, le roi des bandits, se lève de son siège de bois massif et saute dans l’arène, éliminant les deux créatures au passage.",
         	en : "Your interlocutor, the king of bandits, gets up from his massive wooden seat and jumps into the arena, eliminating the two creatures on his way.",
-        	eo : ""
+        	eo : "Via interparolanto, la reĝo de la bantitoj, leviĝas de lia seĝo el masiva ligno kaj saltas en la areno, "
         },
         "bandits-arene-entrer-3-texte-4" : {
         	fr : "&laquo;&nbsp;Allez, montre-moi donc de quoi tu es capable&nbsp;!&nbsp;&raquo;",
