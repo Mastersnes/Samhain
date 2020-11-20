@@ -73,7 +73,7 @@ define([], function(){
 
         "reposExamine-texte-1" : {
         	fr : "En vous penchant, vous remarquez que les traces de vos adversaires remontent vers une caverne non loin.",
-        	en : "By leaning, you notice that your opponents' tracks go back to a nearby cave.",
+        	en : "By stooping, you notice that your opponents' tracks go back to a nearby cave.",
         	eo : ""
         },
         "reposExamine-texte-2" : {

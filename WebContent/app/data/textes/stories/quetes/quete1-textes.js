@@ -4,7 +4,7 @@ define([], function(){
 	    "quete1" : {
         	fr : "La Quête Des Poulets",
         	en : "The Chickens Quest",
-        	eo : "La Kokidoj Serĉo"
+        	eo : "La Kokidoj Defio"
         },
 
         "quete1-description-1" : {
@@ -20,7 +20,7 @@ define([], function(){
         "quete1-description-3" : {
         	fr : "PS&nbsp;:&nbsp;vivantes si possible, merci&hellip;",
         	en : "PS: alive please, thank you&hellip;",
-        	eo : "PS: vivantaj bonvolu, dankon&hellip;""
+        	eo : "PS: vivantaj bonvolu, dankon&hellip;"
         },
 
         /**
@@ -29,7 +29,7 @@ define([], function(){
         "quete1-debut-texte-1" : {
         	fr : "Une belle quête bien facile&nbsp;!",
         	en : "A nice quest quite easy!",
-        	eo : "Bela tre facila serĉo!"
+        	eo : "Bela tre facila defio!"
         },
         "quete1-debut-texte-2" : {
         	fr : "Intéressé par une si bonne affaire, vous décrochez l'annonce et vous rendez aux abords de la ferme.",
@@ -219,7 +219,7 @@ define([], function(){
         "quete1-debut-indice-gauche-3-texte-2" : {
         	fr : "Vous êtes maintenant prêt à continuer votre quête.",
         	en : "Now, you’re ready to continue your quest.",
-        	eo : "Nun, vi estas preta por daŭrigi via serĉo."
+        	eo : "Nun, vi estas preta por daŭrigi via defio."
         },
         "quete1-debut-indice-gauche-3-texte-3" : {
         	fr : "Vers où partaient les autres empreintes déjà&nbsp;?",
@@ -329,7 +329,7 @@ define([], function(){
         "quete1-champ-menacer-texte-3" : {
         	fr : "Les <span key='villageois'>trois paysans</span> se lèvent et s'avancent vers vous. Ça va faire mal&hellip;",
         	en : "The <span key='villageois'>three peasants</span> stand up and come forward to you. It’s going to hurt&hellip;",
-        	eo : "La <span key='villageois'>tri kamparanoj</span> ellitiĝas kaj alpaĝas al vi. Tio doloros&hellip;"
+        	eo : "La <span key='villageois'>tri kamparanoj</span> leviĝas kaj alpaĝas al vi. Tio doloros&hellip;"
         },
 
         "quete1-champ-menacer-2-texte-1" : {
@@ -350,7 +350,7 @@ define([], function(){
         "quete1-champ-menacer-2-texte-4" : {
         	fr : "La violence&hellip; Il n'y a que ça de vrai&hellip;",
         	en : "the violence&hellip; There is nothing like this&hellip;",
-        	eo : "La violento&hellip; Estas nenio pli bona.&hellip;","
+        	eo : "La violento&hellip; Estas nenio pli bona.&hellip;"
         },
 
         /**
@@ -374,7 +374,7 @@ define([], function(){
         "quete1-champ-soudoyer-texte-4" : {
         	fr : "Ils sont partis vers la ville, dans cette direction&nbsp;!&nbsp;&raquo;",
         	en : "They went to the city, in this direction!&nbsp;&raquo;",
-        	eo : "Ili foriris al la urbo, en ĉi direkton!&nbsp;&raquo;"
+        	eo : "Ili foriris al la urbo, en ĉi tiu direkton!&nbsp;&raquo;"
         },
         "quete1-champ-soudoyer-texte-5" : {
         	fr : "Rien de mieux que la diplomatie&hellip;",
@@ -415,7 +415,7 @@ define([], function(){
         "quete1-berge-3-texte-2" : {
         	fr : "Comment résister à tant de tendresse&nbsp;?",
         	en : "How to fight against so much softness?",
-        	eo : "Kiel"
+        	eo : "Kiel rezisti tiom tenereco?"
         },
 
         /**
@@ -424,149 +424,149 @@ define([], function(){
         "quete1-ville-texte-1" : {
         	fr : "Tout reposé par cette expérience sensorielle, vous poursuivez votre route en direction de la civilisation.",
         	en : "Completely recharged by this sensory experience, you continue on your way in the direction of the civilization.",
-        	eo : ""
+        	eo : "Komplete ripozita pro ĉi tiu sensa sperto, vi daŭrigas vian vojo en direkton de la civilizecon."
         },
         "quete1-ville-texte-2" : {
         	fr : "Depuis le chemin, vous apercevez déjà une foule se former autour du clocher.",
         	en : "From the path, you can already see a crowd forming around the bell tower.",
-        	eo : ""
+        	eo : "De la vojo, vi ekvidas jam homamason formiĝi ĉirkaŭ la sonorilturo."
         },
         "quete1-ville-texte-3" : {
         	fr : "Qu'est-ce qui se passe encore&nbsp;?",
         	en : "What’s going on again?",
-        	eo : ""
+        	eo : "Kio okazas ankoraŭ?"
         },
 
         "quete1-ville-2-texte-1" : {
         	fr : "Suivant les doigts dirigés vers le ciel, vous levez la tête et recevez une plume sur le bout du nez.",
         	en : "Following the fingers pointing to the sky direction, you look up and receive a feather on the tip of your nose.",
-        	eo : ""
+        	eo : "Sekvanta la fingojn indikitajn al la ĉielo, vi levas la kapon kaj vi recevas plumon sur la nazopinton."
         },
         "quete1-ville-2-texte-2" : {
         	fr : "Un des <span key='poulet'>volatiles</span> s'est niché sur la cloche du bâtiment et semble bien vouloir y rester.",
         	en : "One of the <span key='poulet'>birds</span> has nested on the bell of the building and seems to want to stay there.",
-        	eo : ""
+        	eo : "Unu el <span key='poulet'>birdo</span> estas nestiĝita sur la sonorilo de la konstruaĵo kaj ŝajnas bone voli resti tie."
         },
         "quete1-ville-2-texte-3" : {
         	fr : "Comment a-t-il bien pu faire pour monter là-haut&hellip;",
-        	en : "But how the hell did it get up there&hellip;",
-        	eo : ""
+        	en : "But how the hell did he get up there&hellip;",
+        	eo : "Kiel ĝi bone povis supreniri ĉi tie&hellip;"
         },
 
         "quete1-ville-3-texte-1" : {
         	fr : "Vous vous frayez un chemin parmi les curieux et atteignez l’arrière du bâtiment.",
         	en : "You make your way through the curious and reach the back of the building.",
-        	eo : ""
+        	eo : "Vi trabatas vojon inter la scivolemajn kaj atingas la malantaŭon de la konstruaĵon."
         },
         "quete1-ville-3-texte-2" : {
         	fr : "Ici, un grand escalier grimpe tout autour jusqu'à son sommet.",
         	en : "Here, a big staircase climbs all around to the top.",
-        	eo : ""
+        	eo : "Ĉi tie, granda ŝtuparo ŝtuparas ĉirkaŭe ĝis sia supro."
         },
         "quete1-ville-3-texte-3" : {
         	fr : "Vous n'avez pas le vertige, non&nbsp;?",
-        	en : "You don’t be afraid of heights, no?",
-        	eo : ""
+        	en : "You aren’t afraid of heights, no?",
+        	eo : "Vi ne havas la vertiĝo, ne?"
         },
 
         "quete1-ville-4-texte-1" : {
         	fr : "Vous prenez une grande respiration et commencez à grimper les marches poussiéreuses.",
         	en : "You take a deep breath and start to climb the dusty steps.",
-        	eo : ""
+        	eo : "Vi prenas grandan spiron kaj vi komencas ŝtupari la polvajn ŝtupojn."
         },
         "quete1-ville-4-texte-2" : {
         	fr : "Apparemment, le lieu n'est pas souvent fréquenté.",
         	en : "Apparently, this place is not often visited.",
-        	eo : ""
+        	eo : "Ŝajne, ĉi tiu loko ne estas ofte vizitadita."
         },
         "quete1-ville-4-texte-3" : {
         	fr : "À mi-parcourt, vous sentez déjà le vent vous chahuter les cheveux&hellip;",
         	en : "At the halfway stage, you already feel the wind heckling your hair&hellip;",
-        	eo : ""
+        	eo : "Duonvoje, vi sentas jam la venton taŭzi viajn harojn&hellip;"
         },
 
         "quete1-ville-5-texte-1" : {
         	fr : "Ne pas regarder en bas&hellip;",
         	en : "Don’t look down&hellip;",
-        	eo : ""
+        	eo : "Ne rigardi malsupren&hellip;"
         },
         "quete1-ville-5-texte-2" : {
         	fr : "Vous continuez votre ascension en gardant cette idée en tête.",
         	en : "You continue your ascent by keeping this idea in your mind.",
-        	eo : ""
+        	eo : "Vi daŭrigas vian supreniron konservante ĉi tiun ideon en via kapo."
         },
         "quete1-ville-5-texte-3" : {
         	fr : "Une fois au sommet, vous tentez un léger coup d'œil discret.",
         	en : "Once at the top, you try a little glance.",
-        	eo : ""
+        	eo : "Foje al la supro, vi provas diskretan ekrigardeton."
         },
         "quete1-ville-5-texte-4" : {
         	fr : "Et là, c'est le drame&hellip;",
-        	en : "And here, is the the drama&hellip;",
-        	eo : ""
+        	en : "And, here is the drama&hellip;",
+        	eo : "Kaj tie, tio estas la dramo&hellip;"
         },
 
         "quete1-ville-6-texte-1" : {
         	fr : "Le sol vous parait à des kilomètres en dessous et pourtant il vous attire fortement.",
         	en : "The ground seems to be far below you and yet it attracts you strongly.",
-        	eo : ""
+        	eo : "La grundo ŝajnas kilometroj for sub vi kaj tamen ĝi alitiras vin forte."
         },
         "quete1-ville-6-texte-2" : {
         	fr : "Vous vacillez et vous cognez sur la cloche qui trône fièrement devant vous.",
         	en : "You stagger and bang on the bell that stands proudly in front of you.",
-        	eo : ""
+        	eo : "Vi ŝanceliĝas kaj vi frapiĝas sur la sonorilo kiu tronas fiere antaŭ vi."
         },
         "quete1-ville-6-texte-3" : {
         	fr : "L'oiseau, apeuré, s'envole dans vos cheveux et vous fait tomber à la renverse.",
         	en : "The bird, afraid, flies in your hairs and knocks you down backwards.",
-        	eo : ""
+        	eo : "La birdo, timigita, flugiĝas en via haroj kaj faras vin fali dorsen."
         },
         "quete1-ville-6-texte-4" : {
         	fr : "Ça y est, cette fois-ci, c'est la fin&hellip;",
-        	en : "That’s it, Now, it’s the end&hellip;",
-        	eo : ""
+        	en : "That’s it, now, it’s the end&hellip;",
+        	eo : "Jen, ĉi tiu foje, tio estas la fino.&hellip;"
         },
 
         "quete1-ville-7-texte-1" : {
         	fr : "Point de destin pour les braves qui n'en ont pas besoin.",
         	en : "No destiny for the braves who don’t need it.",
-        	eo : ""
+        	eo : "Ne sorto por la bravaj kiu ne bezonas ĝin."
         },
         "quete1-ville-7-texte-2" : {
         	fr : "Vous dévalez l'escalier qui était derrière vous, sur les fesses.",
         	en : "You hurtle down the stairs behind you, on your buttocks.",
-        	eo : ""
+        	eo : "Vi rulfalas la ŝtuparo kiu estis malantaŭ vi, sur la pugo."
         },
         "quete1-ville-7-texte-3" : {
         	fr : "La douleur est atroce, mais au moins, vous êtes toujours en vie.",
         	en : "The pain is horrible, but at least, you’re still alive.",
-        	eo : ""
+        	eo : "La doloro estas terura, sed almenaŭ, vi estas ankoraŭ vivante."
         },
         "quete1-ville-7-texte-4" : {
         	fr : "C'est déjà ça&nbsp;!",
         	en : "That’s a start!",
-        	eo : ""
+        	eo : "Jam ne estas malbona!"
         },
 
         "quete1-ville-8-texte-1" : {
         	fr : "Vous vous relevez, les muscles encore endoloris par cette terrible chute.",
-        	en : "You get back on your feet, you muscles still painful after this terrible fall.",
-        	eo : ""
+        	en : "You get back on your feet, your muscles still painful after this terrible fall.",
+        	eo : "Vi releviĝas vin, la muskoloj ankoraŭ endolorigas pro ĉi tiu terura falo."
         },
         "quete1-ville-8-texte-2" : {
         	fr : "L'animal, bien perché sur votre tête, ne compte pas y bouger de si tôt.",
         	en : "The animal, well perched on your head, doesn’t intend to move for a while.",
-        	eo : ""
+        	eo : "La besto, bone sidita sur via kapo, ne deziras movi dum momente."
         },
         "quete1-ville-8-texte-3" : {
-        	fr : "Épuisé par cette longue journée de recherche, vous décidez de faire un passage par la taverne.",
+        	fr : "Épuisé par cette longue journée de recherches, vous décidez de faire un passage par la taverne.",
         	en : "Exhausted by this long day of research, you decide to stop by the inn.",
-        	eo : ""
+        	eo : "Elĉerpita pro ĉi tiu longa tago de serĉoj, vi decidas iri al la taverno."
         },
         "quete1-ville-8-texte-4" : {
         	fr : "Vous l'avez bien mérité&nbsp;!",
         	en : "You really deserved it!",
-        	eo : ""
+        	eo : "Vi havas bone merititan ĝin!"
         },
 
         /**
@@ -574,13 +574,13 @@ define([], function(){
         **/
         "quete1-ville-abandon-texte-1" : {
         	fr : "Il n'aura qu'à se débrouiller seul, vous êtes décidément trop vieux pour ces conneries&hellip;",
-        	en : "It will only have to fend for itself, you’re definitely too old for this stupidity&hellip;",
-        	eo : ""
+        	en : "He will only have to fend for himself, you’re definitely too old for these stupidities&hellip;",
+        	eo : "Ĝi nur havos elturniĝi solan, vi estas rezolute tro maljuna por tiuj stultecoj&hellip;"
         },
         "quete1-ville-abandon-texte-2" : {
         	fr : "Épuisé par cette longue journée de recherche, vous décidez de faire un passage par la taverne, histoire de vous rincer le gosier.",
         	en : "Exhausted by this long day of research, you decide to stop by the inn to take a drink.",
-        	eo : ""
+        	eo : "Elĉerpita pro ĉi tiu longa tago de serĉoj, vi decidas iri al la taverno por vi tralavi la gorĝon."
         },
 
         /**
@@ -589,81 +589,81 @@ define([], function(){
         "quete1-taverne-texte-1" : {
         	fr : "Suivant les ruelles et les allées, vous arrivez bien vite devant le lieu tant désiré.",
         	en : "Following the lanes and alleys, you soon arrive in front of the desired place.",
-        	eo : ""
+        	eo : "Sekvanta la stratetojn kaj aleojn, vi alvenas rapide antaŭ la tiel dezira loko."
         },
         "quete1-taverne-texte-2" : {
         	fr : "Déjà, le tintement des verres qui cognent les uns contre les autres vous ravit les oreilles.",
-        	en : "Already, the jingling of the glasses banging against each others gives you a real pleasure.",
-        	eo : ""
+        	en : "Already, the jingling of the glasses banging against each other gives you a real pleasure.",
+        	eo : "Jam, la tinto de glasoj kiu frapas la unuj kontraŭ la aliaj ravas viajn orelojn."
         },
 
         "quete1-taverne-2-texte-1" : {
         	fr : "Vous entrez dans le bâtiment, vous préparant au brouhaha&hellip;",
         	en : "You enter the room, preparing for the hubbub&hellip;",
-        	eo : ""
+        	eo : "Vi eniras en la konstruaĵo, vi prepariĝanta pro la bruo&hellip;"
         },
         "quete1-taverne-2-texte-2" : {
         	fr : "Mais, étrangement, tout est très calme.",
         	en : "But, strangely, all is very calm.",
-        	eo : ""
+        	eo : "Sed, strange, ĉio estas tre trankvila."
         },
         "quete1-taverne-2-texte-3" : {
         	fr : "Le tavernier, occupé à essuyer les brocs, vous salue d'un signe de tête.",
         	en : "The innkeeper, busy wiping the jugs, greeting you by a nod.",
-        	eo : ""
+        	eo : "La albergisto, okupata viŝi la kruĉoj, kapsalutas vin."
         },
 
         "quete1-taverne-3-texte-1" : {
         	fr : "L'homme est pris d'une toux, surpris par votre question.",
         	en : "The man coughs, surprised by your question.",
-        	eo : ""
+        	eo : "La homo tusas, surprizita pri via demando."
         },
         "quete1-taverne-3-texte-2" : {
-        	fr : "&laquo;&nbsp;Des pou- quoi&nbsp;? Euh non, y'a pas d'poulets ici non&hellip;&nbsp;&raquo;",
+        	fr : "&laquo;&nbsp;Des pou- quoi&nbsp;? Euh non, y'a pas d'poulets ici,  non&hellip;&nbsp;&raquo;",
         	en : "&laquo;&nbsp;Chick- what? Uh no, there is no chickens here, no&hellip;&nbsp;&raquo;",
-        	eo : ""
+        	eo : "&laquo;&nbsp;Koki- kio? O ne, estas neniu kokidoj ĉi tie, ne&hellip;&nbsp;&raquo;"
         },
         "quete1-taverne-3-texte-3" : {
         	fr : "Alors qu'il termine sa phrase, vous entendez piailler derrière lui.",
         	en : "As he finishes his sentence, you hear something chirping behind him.",
-        	eo : ""
+        	eo : "Dum li finas lian frazon, vi aŭdas pepi malantaŭ lin."
         },
         "quete1-taverne-3-texte-4" : {
         	fr : "&laquo;&nbsp;J'vois pas ce que ça peut être&hellip;&nbsp;&raquo;",
         	en : "&laquo;&nbsp;I really don’t see what it can be&hellip;&nbsp;&raquo;",
-        	eo : ""
+        	eo : "&laquo;&nbsp;Mi ne vidas vere, kio ĝi povas esti&hellip;&nbsp;&raquo;"
         },
 
         "quete1-taverne-4-texte-1" : {
         	fr : "Laissant le patron à son bar, vous vous levez et allez discrètement jeter un œil en cuisine.",
         	en : "Letting the boss at his bar, you get up and discreetly go to have a look to the kitchen.",
-        	eo : ""
+        	eo : "Lasanta la mastro al sia trinkejo, vi leviĝas kaj iras diskrete jeti okulo en la kuirejo."
         },
         "quete1-taverne-4-texte-2" : {
         	fr : "Devant vos yeux ébahis, une scène d'horreur&nbsp;:",
-        	en : "Before your astonished eyes, an horror scene:",
-        	eo : ""
+        	en : "Before your astonished eyes, a horror scene:",
+        	eo : "Antaŭ viaj okuloj miregigita, horora sceno."
         },
         "quete1-taverne-4-texte-3" : {
         	fr : "Le <span key='villageois'>cuisinier</span> est en train de plumer votre <span key='poulet'>protégée</span>&nbsp;!",
-        	en : "The <span key='villageois'>cookman</span> is plucking your <span key='poulet'>protégé</span>!",
-        	eo : ""
+        	en : "The <span key='villageois'>cook</span> is plucking your <span key='poulet'>protégé</span>!",
+        	eo : "La <span key='villageois'>kuiristo</span> estas senplumigata via <span key='poulet'>protektatino</span>!"
         },
         "quete1-taverne-4-texte-4" : {
         	fr : "Vite, c'est maintenant ou jamais&nbsp;!",
         	en : "Quick, it’s now or never!",
-        	eo : ""
+        	eo : "Ek, tio estas nun aŭ neniam!"
         },
 
         "quete1-taverne-5-texte-1" : {
         	fr : "C’était tout juste&nbsp;!",
         	en : "It was just in time!",
-        	eo : ""
+        	eo : "Ĝustatempe!"
         },
         "quete1-taverne-5-texte-2" : {
         	fr : "Vous profitez du fait que le cuistot soit encore inconscient pour attraper la poulette et filer comme une crème (à l'anglaise).",
-        	en : "You take advantage that the cookman is still unconscious to catch the pullet and run away.",
-        	eo : ""
+        	en : "You take advantage that the cook is still unconscious to catch the pullet and run away.",
+        	eo : "Vi profitas, ke la kuiristo estu ankoraŭ senkonscia por ekkapti la kokidino kaj forkuri."
         },
 
         /**
@@ -671,18 +671,18 @@ define([], function(){
         **/
         "quete1-taverne-verre-texte-1" : {
         	fr : "Détendu, vous buvez tranquillement votre menthe à l'eau, uniquement gêné par les piaillements d'un oiseau au loin&hellip;",
-        	en : "Relaxed, you quietly drink your mint in the water, only bothered by the churping of a distant bird&hellip;",
-        	eo : ""
+        	en : "Relaxed, you quietly drink your mint in the water, only bothered by the chirping of a distant bird&hellip;",
+        	eo : "Malstreĉita, vi trinkas trankvile vian mentakvon, nur ĝenita pro la pepadoj de birdo fore."
         },
         "quete1-taverne-verre-texte-2" : {
         	fr : "Votre quête commence vraiment à vous peser sur l'esprit.",
         	en : "You quest really starts to weigh on your mind.",
-        	eo : ""
+        	eo : "Via defio komencas vere pezi vin sur la menso."
         },
         "quete1-taverne-verre-texte-3" : {
         	fr : "Il est grand temps d'en finir&hellip;",
         	en : "It’s high time to get it over with&hellip;",
-        	eo : ""
+        	eo : "Ĝi estas granda tempo de fini ĝin&hellip;"
         },
 
         /**
@@ -691,75 +691,75 @@ define([], function(){
         "quete1-retour-texte-1" : {
         	fr : "La journée se termine et le soleil commence à s’éteindre à l'horizon.",
         	en : "The day ends and the sun begins to fade on the horizon.",
-        	eo : ""
+        	eo : "La tago finigas kaj la suno komencas estingiĝi al la horizonto."
         },
         "quete1-retour-texte-2" : {
         	fr : "Satisfait de vos recherches, vous vous mettez en route vers la maison de votre client, prêt à lui faire votre rapport.",
         	en : "Satisfied by your research, you set off to your client’s house, ready to make your report.",
-        	eo : ""
+        	eo : "Kontenta pri viaj serĉoj, vi ekiras al la domo de via kliento, preta por fari lin via raporto."
         },
         "quete1-retour-texte-3" : {
-        	fr : "Tout travail mérite salaire, et vous aimeriez bien avoir le vôtre&nbsp;!",
-        	en : "All work deserves payment, and you’d really like to have yours!",
-        	eo : ""
+        	fr : "Tout travail mérite salaire et vous aimeriez bien avoir le vôtre&nbsp;!",
+        	en : "All work deserves payment and you’d really like to have yours!",
+        	eo : "̈Ĉiu laboro meritas salajron kaj vi ŝatus bone havas la vian!"
         },
 
         "quete1-retour-2-texte-1" : {
         	fr : "Vous repensez aux aventures du jour, perdu dans vos pensées&hellip;",
         	en : "You think back about the day adventures, lost in your thoughts&hellip;",
-        	eo : ""
+        	eo : "Vi repensas pri la aventuroj de la tago, perdita en viaj pensadoj&hellip;"
         },
         "quete1-retour-2-texte-2" : {
         	fr : "Mais soudain, là, à quelques pas, une des <span key='poulet'>fuyardes</span> vous fait face.",
         	en : "But suddenly, there, a few steps away, one of the <span key='poulet'>fugitives</span> faces you.",
-        	eo : ""
+        	eo : "Sed subita, ĉi tie, al kelkaj paŝoj, unu el <span key='poulet'>fuĝantojn frontas</span> vin."
         },
         "quete1-retour-2-texte-3" : {
         	fr : "Son bec est vert de rage, elle veut venger et libérer ses amis.",
-        	en : "It’s beak is incandescent with rage, it wants to avenge and releases it’s friends",
-        	eo : ""
+        	en : "Her beak is incandescent with rage, She wants to avenge and releases their friends",
+        	eo : "Sia beko estas tremanta de kolerego, ŝi volas venĝi kaj liberigi siajn amikojn."
         },
         "quete1-retour-2-texte-4" : {
         	fr : "L'affrontement s'annonce épique&nbsp;!",
         	en : "The battle promises to be epic!",
-        	eo : ""
+        	eo : "La frontiĝo estos epopea!"
         },
 
         "quete1-retour-3-texte-1" : {
         	fr : "Elle lance l'assaut, prête à vous picorer comme il se doit.",
-        	en : "It launches the assault, ready to peck you as it should be.",
-        	eo : ""
+        	en : "She launches the assault, ready to peck you as it should be.",
+        	eo : "Ŝi lanĉas la atakon, pretas beki vin konvene."
         },
         "quete1-retour-3-texte-2" : {
         	fr : "Malheureusement, aveuglée par sa colère, elle ne voit pas les vaches qui, ayant fini leur broutement quotidien, traversent comme des folles le chemin pour rentrer chez elles.",
-        	en : "Unfortunately, blinded by it’s rage, it doesn’t see the cows, having finished their daily grazing, traversing the path to going back to their home like crazy.",
-        	eo : ""
+        	en : "Unfortunately, blinded by her rage, she doesn’t see the cows, having finished their daily grazing, traversing the path, to going back to their home like crazy.",
+        	eo : "Bedaŭrinde, blindigita pro ŝia kolerego, ŝi ne vidas la bovinojn, kiu estas fininta iliaj paŝtado ĉiutage, trapasas la vojon kiel frenezaj por reniri al iliaj domo."
         },
         "quete1-retour-3-texte-3" : {
         	fr : "Vite&nbsp;! Il faut agir&nbsp;!",
         	en : "Quick! You have to do something!",
-        	eo : ""
+        	eo : "Ek! Vi devas agi!"
         },
 
         "quete1-retour-4-texte-1" : {
         	fr : "Vous vous jetez sur la misérable et la protégez comme vous pouvez.",
         	en : "You throw yourself on the wretched one and protect it as you can.",
-        	eo : ""
+        	eo : "Vi jetas vin sur la mizera kaj protektas ŝin kiel vi povas."
         },
         "quete1-retour-4-texte-2" : {
         	fr : "Des tremblements, des meuglements puis, plus rien&hellip;",
-        	en : "quakings, mooings, then nothing even more&hellip;",
-        	eo : ""
+        	en : "Quakes, moos, then nothing even more&hellip;",
+        	eo : "Tremadoj, muĝadoj kaj, plu nenio&hellip;"
         },
         "quete1-retour-4-texte-3" : {
         	fr : "Vous vous relevez, endoloris par la ruée encaissée.",
         	en : "You get up, sore by rush.",
-        	eo : ""
+        	eo : "Vi releviĝas vin, endolorigas pro la kurego."
         },
         "quete1-retour-4-texte-4" : {
         	fr : "La poulette, encore dans vos bras, vous observe avec un air reconnaissant.",
         	en : "The pullet, still in your arms, looks at you with a grateful air.",
-        	eo : ""
+        	eo : "La kokidino, ankoraŭ en viaj brakoj, observas vin, dankema."
         },
 
         /**
@@ -768,18 +768,18 @@ define([], function(){
         "quete1-retour-abandon-texte-1" : {
         	fr : "Vous sautez dans les buissons proches et vous protégez la tête.",
         	en : "You jump in the closest bush and protect your head.",
-        	eo : ""
+        	eo : "Vi saltas en la proksimaj arbustoj kaj protektas vin la kapon."
         },
         //"quete1-retour-4-texte-2"
         "quete1-retour-abandon-texte-3" : {
         	fr : "La poussière se dissipe, vous laissant constater la scène.",
         	en : "The dust dissipates, letting you see the scene.",
-        	eo : ""
+        	eo : "La polvo dispolviĝas, laĉanta vin konstati la scenon."
         },
         "quete1-retour-abandon-texte-4" : {
         	fr : "La poulette a disparu, profitant certainement de la ruée pour s’évaporer&hellip;",
         	en : "The pullet has disappeared, certainly taking advantage of the rush to evaporate&hellip;",
-        	eo : ""
+        	eo : "La kokidino malaperis, profitante certe de la kurego per forvaporiĝi&hellip;"
         },
 
         /**
@@ -788,27 +788,27 @@ define([], function(){
         "quete1-fin-0-texte-1" : {
         	fr : "Vous arrivez enfin devant la maison, pas très à l'aise.",
         	en : "You finally arrive in front of the house, not really comfortable.",
-        	eo : ""
+        	eo : "Vi alvenas finfine antaŭ la domo, ne tre komforta."
         },
         "quete1-fin-0-texte-2" : {
         	fr : "Le fermier, furieux, vous attend devant sa porte.",
         	en : "The farmer, furious, wait for you at his door.",
-        	eo : ""
+        	eo : "La farmisto, furioza, atendas vin antaŭ sia pordo."
         },
         "quete1-fin-0-texte-3" : {
         	fr : "&laquo;&nbsp;Tu te fous d'moi&nbsp;?! T'oses te pointer ici les mains vides&nbsp;!",
         	en : "&laquo;&nbsp;You’re kidding me?! You dare to show up here empty-handed!",
-        	eo : ""
+        	eo : "&laquo;&nbsp;Vi mokas mi?! Vi aŭdacas montriĝi vin ĉi tien la malplenajn manojn!"
         },
         "quete1-fin-0-texte-4" : {
         	fr : "Dégage de là, tu mérites rien&nbsp;! Je les retrouverai moi-même.&nbsp;&raquo;",
         	en : "Move from here, you deserve nothing! I’ll find them by myself.&nbsp;&raquo;",
-        	eo : ""
+        	eo : "Foriru de tie, vi meritas nenio! Mi retrovos ilin mi mem.&nbsp;&raquo;"
         },
         "quete1-fin-0-texte-5" : {
         	fr : "Tant pis&hellip; Au moins, c’était marrant&hellip;",
         	en : "Never mind&hellip; At least, it was fun&hellip;",
-        	eo : ""
+        	eo : "Ne grava&hellip; Almenaŭ, tio estis amuza&hellip;"
         },
 
         /**
@@ -819,17 +819,17 @@ define([], function(){
         "quete1-fin-1-texte-3" : {
         	fr : "&laquo;&nbsp;Une seule poulette&nbsp;? Qu'est-ce que tu veux que je fasse avec une pauvre petite poulette&nbsp;?!",
         	en : "&laquo;&nbsp;Only one pullet? What do you want me to do with only one poor little pullet?!",
-        	eo : ""
+        	eo : "&laquo;&nbsp;Nur unu kokidino? Kio vi volas, ke mi faru kun nur unu mizera eta kokidino?!"
         },
         "quete1-fin-1-texte-4" : {
         	fr : "Prends ton pécule et va-t'en&nbsp;! Je retrouverai les autres moi-même.&nbsp;&raquo;",
         	en : "Well, take your nest egg and go away! I’ll find the others by myself.&nbsp;&raquo;",
-        	eo : ""
+        	eo : "Prenu via mono kaj foriru! Mi retrovos la aliajn mi mem.&nbsp;&raquo;"
         },
         "quete1-fin-1-texte-5" : {
         	fr : "C'est toujours mieux que rien&hellip;",
         	en : "Well, it’s still better than nothing&hellip;",
-        	eo : ""
+        	eo : "Tio estas ĉiam pli bona ol nenio&hellip;"
         },
 
         /**
@@ -840,7 +840,7 @@ define([], function(){
         "quete1-fin-2-texte-3" : {
         	fr : "&laquo;&nbsp;Seulement deux poulettes&nbsp;? Qu'est-ce que tu veux que je fasse avec deux pauvres petites poulettes&nbsp;?!",
         	en : "&laquo;&nbsp;Only two pullets? What do you want me to do with only two poor little pullets?!",
-        	eo : ""
+        	eo : "&laquo;&nbsp;Nur du kokidinoj?Kio vi volas, ke mi faru kun nur du mizeraj etaj kokidinoj?!"
         },
         //"quete1-fin-1-texte-4"
         //"quete1-fin-1-texte-5"
@@ -851,27 +851,27 @@ define([], function(){
         "quete1-fin-34-texte-1" : {
         	fr : "Vous arrivez enfin devant la maison, satisfait.",
         	en : "You finally arrive in front of the house, satisfied.",
-        	eo : ""
+        	eo : "Vi alvenas finfine antaŭ la domo, kontenta."
         },
         "quete1-fin-34-texte-2" : {
         	fr : "Le fermier, rassuré, court à votre rencontre.",
         	en : "The farmer, reassured, runs to meet you.",
-        	eo : ""
+        	eo : "La farmisto, trankviligita, kuras al via renkonto."
         },
         "quete1-fin-34-texte-3" : {
         	fr : "&laquo;&nbsp;Mes poulettes&nbsp;! Tu les as presque toutes retrouvées&nbsp;! Merci l'aventurier&nbsp;!",
         	en : "&laquo;&nbsp;My pullets! You found almost all of them! Thank you adventurer!",
-        	eo : ""
+        	eo : "&laquo;&nbsp;Mian kokidinojn! Vi havas ilin preskaŭ ĉiuj retrovitaj! Dankegon la aventurulon!"
         },
         "quete1-fin-34-texte-4" : {
         	fr : "Prend cet or, tu le mérites amplement&nbsp;!&nbsp;&raquo;",
         	en : "Take this gold, you largely deserve it!&nbsp;&raquo;",
-        	eo : ""
+        	eo : "Prenu tiun oron, vi meritas ĝin amplekse!&nbsp;&raquo;"
         },
         "quete1-fin-34-texte-5" : {
         	fr : "C'est toujours plaisant d'aider les autres, surtout quand ça rapporte&nbsp;!",
         	en : "It’s always a pleasure to help someone, especially when it pays off!",
-        	eo : ""
+        	eo : "Tio estas ĉiam agrabla helpi la aliaj, precipe kiam ĝi pagas!"
         },
 
         /**
@@ -880,23 +880,23 @@ define([], function(){
         "quete1-fin-5-texte-1" : {
         	fr : "Vous arrivez enfin devant la maison du fermier, sûr de vous.",
         	en : "You finally arrive in front of the house, sure of yourself.",
-        	eo : ""
+        	eo : "Vi alvenas finfine antaŭ la domo de la farmisto, certa de vi."
         },
         //"quete1-fin-34-texte-2"
         "quete1-fin-5-texte-3" : {
         	fr : "&laquo;&nbsp;Mes poulettes&nbsp;! Tu les as toutes retrouvées&nbsp;!",
         	en : "&laquo;&nbsp;My pullets! You found all of them!",
-        	eo : ""
+        	eo : "&laquo;&nbsp;Mian kokidinojn! Vi havas ilin ĉiuj retrovitaj! "
         },
         "quete1-fin-5-texte-4" : {
         	fr : "Merci beaucoup l'aventurier, je t'en dois une&nbsp;!",
         	en : "Thank you very much adventurer, I owe you!",
-        	eo : ""
+        	eo : "Dankegon la aventurulo, mi ŝuldas al vi!"
         },
         "quete1-fin-5-texte-5" : {
         	fr : "Tiens, prends le double de la récompense, tu le mérites&nbsp;!&nbsp;&raquo;",
         	en : "Here, take the double of the reward, you deserve it!&nbsp;&raquo;",
-        	eo : ""
+        	eo : "Prenu la doublan rekonpencon, vi meritas ĝin!&nbsp;&raquo;"
         },
         //"quete1-fin-34-texte-5"
 	};

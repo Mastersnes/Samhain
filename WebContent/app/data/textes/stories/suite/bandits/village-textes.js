@@ -163,7 +163,7 @@ define([], function(){
         },
         "bandits-village-roi-sannoncer-question-texte-2" : {
         	fr : "Vous n'avez pas le temps de réagir que le roi se jette sur vous.",
-        	en : "You don’t have the time to react when the king throws himself at you.",
+        	en : "You don’t have the time to react when the king leaps on you.",
         	eo : ""
         },
         "bandits-village-roi-sannoncer-question-texte-3" : {
