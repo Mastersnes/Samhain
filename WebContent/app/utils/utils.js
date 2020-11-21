@@ -7,9 +7,15 @@ define(["jquery", "sha"], function($, sha){
 		/**
 		* Permet d'appeler un WS
 		**/
-		load : function(url, params, successC, type, asyncMode) {
+		load : function(url, params, successC, type, asyncMode, errorFunc) {
 			if (!type) type = "POST";
 			if (!asyncMode) asyncMode = false;
+			if (!errorFunc) {
+			    errorFunc = function (request, status, errorThrown) {
+                    console.log("Erreur lors de l'appel à : ", url);
+                    console.log("Erreur sur : ", request, "avec le status", status, "erreur retournée :", errorThrown);
+                };
+			}
 
 			console.log("Appel de l'url", url, "avec les parametres", params, "en mode", type, "en async", asyncMode);
 
@@ -21,10 +27,7 @@ define(["jquery", "sha"], function($, sha){
 	            contentType: "application/json; charset=utf-8",
 	            dataType: "json",
 	            success: successC,
-	            error: function (request, status, errorThrown) {
-	            	console.log("Erreur lors de l'appel à : ", url);
-	            	console.log("Erreur sur : ", request, "avec le status", status, "erreur retournée :", errorThrown);
-	            }
+	            error: errorFunc
 	        });
 		},
 

@@ -61,7 +61,10 @@ define(["jquery", "underscore",
             this.el.find("content#fichiers").hide();
 
             if (!this.source) this.source = this.Textes.loadLocal();
-            if (!this.cible) this.cible = this.Textes.loadLocal();
+            if (!this.cible) {
+                if (this.source == "fr") this.cible = "en";
+                else this.cible = "eo";
+            }
             this.refreshTrads();
 
             this.el.find("content#textes").fadeIn();
@@ -85,10 +88,10 @@ define(["jquery", "underscore",
                 this.el.find("textes").append(groupDom);
                 groupDom.attr("name", key);
 
-                var okDom = $("<span class='verify'></span>")
-                var deleteDom = $("<span class='delete'></span>")
-                groupDom.append(okDom);
-                groupDom.append(deleteDom);
+                var checkContainer = $("<div class='checkContainer'></span>");
+                checkContainer.append($("<span class='verify'></span>"));
+                checkContainer.append($("<span class='delete'></span>"));
+                groupDom.append(checkContainer);
 
                 var source = this.Textes.get(key, sourceLang, sourceLang != cibleLang);
                 source = Utils.decodeHtml(source);
@@ -115,7 +118,7 @@ define(["jquery", "underscore",
             }
 
             var that = this;
-            Utils.then(function() {that.onResize();}, 10);
+            Utils.then(function() {that.onResize();}, 20);
 
             this.makeTextEvents();
         };
@@ -131,18 +134,18 @@ define(["jquery", "underscore",
             var that = this;
             this.el.find("textes text input, textes text textarea").keypress(function() {
                 $(this).parent().addClass("check");
-                var cibleLang = that.el.find("select#cibles option:selected").attr("name");
+                var cibleLang = that.el.find("langage#cible.selected").attr("name");
                 var key = $(this).parent().attr("name");
                 that.saveManager.addTrad(key, cibleLang, $(this).val(), true);
             });
             this.el.find("textes text input, textes text textarea").change(function() {
-                var cibleLang = that.el.find("select#cibles option:selected").attr("name");
+                var cibleLang = that.el.find("langage#cible.selected").attr("name");
                 var key = $(this).parent().attr("name");
                 that.saveManager.addTrad(key, cibleLang, $(this).val());
             });
             this.el.find("textes text span.delete").click(function() {
-                var cibleLang = that.el.find("select#cibles option:selected").attr("name");
-                var parent = $(this).parent();
+                var cibleLang = that.el.find("langage#cible.selected").attr("name");
+                var parent = $(this).parent().parent();
                 var key = parent.attr("name");
                 that.saveManager.deleteTrad(key, cibleLang);
                 that.refreshTrads();
@@ -177,9 +180,6 @@ define(["jquery", "underscore",
                 var el = that.el.find("content#textes");
                 var me = $(this);
                 that.langageInChange = me.attr("id");
-
-                console.log("Send", that.saveManager.traductions.toSend);
-                console.log("Modified", that.saveManager.traductions.modified);
 
                 if (el.find("langages").is(":visible")) el.find("langages").hide();
                 else {

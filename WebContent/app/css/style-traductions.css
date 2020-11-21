@@ -165,10 +165,16 @@
     background-color: #ddcaaf;
 }
 
+.traductions-popup content#textes textes text .checkContainer {
+    display: block; position: absolute;
+    left: -7%; top: 0%;
+    width: 7.5%; height: 5vh;
+}
+
 .traductions-popup content#textes textes text.check span.verify {
     display: inline-block; position: absolute;
-    left: -8%; top: -21%;
-    width: 7%; height: 90%;
+    left: -12%; top: -42%;
+    width: 9vh; height: 7vh;
     background-repeat: no-repeat;
     background-image: url("../img/menu/boutons/valider.png");
     background-size: 100% 100%;
@@ -176,8 +182,8 @@
 }
 .traductions-popup content#textes textes text.check span.delete {
     display: inline-block; position: absolute;
-    left: -4.5%; top: 9%;
-    width: 4%; height: 65%;
+    left: 41%; top: 0%;
+    width: 5vh; height: 5vh;
     background-repeat: no-repeat;
     background-image: url("../img/menu/boutons/abandon.png");
     background-size: 100% 100%;
