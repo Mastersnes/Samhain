@@ -1,0 +1,23 @@
+/**
+* Popup Erase New Game
+**/
+.popup.eraseSave contour {
+    position: absolute;
+    width: 19%; height: 27%;
+    left: 56%; top: 38%;
+    background-image: url("../img/menu/popup/newgame.png");
+}
+.popup.eraseSave content {
+    width: 83%; height: 70%;
+    top: 16%; left: 11%;
+    transform: rotate(-2deg);
+}
+.popup.eraseSave text {
+    font-size: 2.5vh;
+}
+.popup.eraseSave text.title {
+    margin-bottom: 2%;
+}
+.popup.eraseSave text.title > text:first-child {
+    margin-bottom: 2%;
+}
