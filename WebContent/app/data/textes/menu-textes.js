@@ -86,7 +86,7 @@ define([], function(){
             },
             "credits" : {
             	fr : "Crédits",
-            	en : "Credits",
+            	en : "Cred²its",
             	eo : "Kreditoj"
             },
             "copyright-licence" : {

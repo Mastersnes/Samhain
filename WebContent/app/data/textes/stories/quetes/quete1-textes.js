@@ -18,7 +18,7 @@ define([], function(){
         	eo : "Bona rekompenco al kiu retrovos ilin."
         },
         "quete1-description-3" : {
-        	fr : "PS&nbsp;:&nbsp;vivantes si possible, merci&hellip;",
+        	fr : "PS&nbsp;: vivantes si possible, merci&hellip;",
         	en : "PS: alive please, thank you&hellip;",
         	eo : "PS: vivantaj bonvolu, dankon&hellip;"
         },

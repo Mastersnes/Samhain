@@ -15,8 +15,8 @@ define([], function(){
         	eo : ""
         },
         "ville-ruelle-taverne-castagne-1-texte-3" : {
-        	fr : "À ma gauche, not' nouveau challenger&nbsp;:&nbsp;L'étranger&nbsp;!",
-        	en : "On my left, our new challenger:&nbsp;The stranger!",
+        	fr : "À ma gauche, not' nouveau challenger&nbsp;: L'étranger&nbsp;!",
+        	en : "On my left, our new challenger: The stranger!",
         	eo : ""
         },
         "ville-ruelle-taverne-castagne-1-texte-4" : {
@@ -62,8 +62,8 @@ define([], function(){
         	eo : ""
         },
         "ville-ruelle-taverne-castagne-3-texte-3" : {
-        	fr : "Le sud nous envoie lui aussi ses merveilles, veuillez faire une ovation pour&nbsp;:&nbsp;<span key='bandit' suffixe='terrifiant'>Les terreurs des sables</span>&nbsp;!&nbsp;&raquo;",
-        	en : "The south sends us too it’s wonders, please make an ovation for:&nbsp;<span key='bandit' suffixe='terrifiant'>The sands’ terrors</span>!&nbsp;&raquo",
+        	fr : "Le sud nous envoie lui aussi ses merveilles, veuillez faire une ovation pour&nbsp;: <span key='bandit' suffixe='terrifiant'>Les terreurs des sables</span>&nbsp;!&nbsp;&raquo;",
+        	en : "The south sends us too it’s wonders, please make an ovation for: <span key='bandit' suffixe='terrifiant'>The sands’ terrors</span>!&nbsp;&raquo",
         	eo : ""
         },
 

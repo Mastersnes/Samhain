@@ -152,19 +152,19 @@ define([], function(){
             * Actions
             **/
             "pokgard-voir-action" : {
-            	fr : "Action&nbsp;:&nbsp;Voir la carte",
-            	en : "Action:&nbsp;Look at the card",
-            	eo : "Ago:&nbsp;Vidi la karto"
+            	fr : "Action&nbsp;: Voir la carte",
+            	en : "Action: Look at the card",
+            	eo : "Ago: Vidi la karto"
             },
             "pokgard-voler-action" : {
-            	fr : "Action&nbsp;:&nbsp;Voler la carte",
-            	en : "Action:&nbsp;Steal the card",
-            	eo : "Ago:&nbsp;Ŝteli la karto"
+            	fr : "Action&nbsp;: Voler la carte",
+            	en : "Action: Steal the card",
+            	eo : "Ago: Ŝteli la karto"
             },
             "pokgard-detruire-action" : {
-            	fr : "Action&nbsp;:&nbsp;Détruire la carte",
-            	en : "Action:&nbsp;Destroy the card",
-            	eo : "Ago:&nbsp;Detrui la karto"
+            	fr : "Action&nbsp;: Détruire la carte",
+            	en : "Action: Destroy the card",
+            	eo : "Ago: Detrui la karto"
             },
 
             /**

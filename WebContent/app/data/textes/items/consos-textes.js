@@ -15,9 +15,9 @@ define([], function(){
             	eo : "Vivopocio"
             },
             "potionSante-texte" : {
-            	fr : "Une drôle de fiole toute rouge. Sur l'étiquette, il est noté&nbsp;:&nbsp;&laquo;&nbsp;Ne pas en abuser, donne la diarrhée.&nbsp;&raquo;",
-            	en : "A strange red flask. On the label, it’s noted:&nbsp;&laquo;&nbsp;Don't abuse it, gives diarrhoea.&nbsp;&raquo;",
-            	eo : "Stranga ruĝa flakono. Sur la etikedo, ĝi estas skribita:&nbsp;&laquo;&nbsp;Ne trouzu ĝin, donas la diareon.&nbsp;&raquo;"
+            	fr : "Une drôle de fiole toute rouge. Sur l'étiquette, il est noté&nbsp;: &laquo;&nbsp;Ne pas en abuser, donne la diarrhée.&nbsp;&raquo;",
+            	en : "A strange red flask. On the label, it’s noted: &laquo;&nbsp;Don't abuse it, gives diarrhoea.&nbsp;&raquo;",
+            	eo : "Stranga ruĝa flakono. Sur la etikedo, ĝi estas skribita: &laquo;&nbsp;Ne trouzu ĝin, donas la diareon.&nbsp;&raquo;"
             },
             "potionMana" : {
             	fr : "Potion de mana",
@@ -31,8 +31,8 @@ define([], function(){
             },
             "potionMana-texte" : {
             	fr : "Une jolie fiole toute bleue. Sur l'étiquette, il est noté : &laquo;&nbsp;Attention, agite les ganglions&nbsp;&raquo;.",
-            	en : "A pretty blue flask. On the label, it’s noted:&nbsp;&laquo;&nbsp;Warning, disturbs ganglia.&nbsp;&raquo;",
-            	eo : "Bela blua flakono. Sur la etikedo, ĝi estas skribita:&nbsp;&laquo;&nbsp;Atenton, agitas la gangliojn.&nbsp;&raquo;"
+            	en : "A pretty blue flask. On the label, it’s noted: &laquo;&nbsp;Warning, disturbs ganglia.&nbsp;&raquo;",
+            	eo : "Bela blua flakono. Sur la etikedo, ĝi estas skribita: &laquo;&nbsp;Atenton, agitas la gangliojn.&nbsp;&raquo;"
             },
             "antidote" : {
             	fr : "Antidote",
