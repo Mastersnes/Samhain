@@ -159,7 +159,6 @@ define(["jquery", "underscore",
                 });
             });
             this.el.find("#retour").click(function() {
-                console.log("Retour");
                 that.hideActions(function() {
                     that.currentQuete = null;
                     that.list();

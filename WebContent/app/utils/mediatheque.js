@@ -5,7 +5,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 		this.callbacks = [];
 		this.soundsTicker = [];
 
-		this.listStories = ["music/story1.mp3", "music/story2.mp3"];
+		this.listStories = ["music/story1.mp3", "music/story2.mp3", "music/story3.mp3"];
 
 		this.loadAll = function() {
 			var list = this.listStories;

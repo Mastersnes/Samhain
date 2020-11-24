@@ -32,7 +32,6 @@ define(["jquery",
         };
 
         this.refreshTextes = function() {
-            console.log("Refrsh texte");
             this.el.find("son#sound text").html(this.Textes.get("sound"));
             this.el.find("son#music text").html(this.Textes.get("music"));
             this.el.find("flags text").html(this.Textes.get("language"));
