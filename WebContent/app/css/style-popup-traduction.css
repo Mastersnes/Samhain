@@ -1,23 +1,23 @@
 /**
 * Popup Erase New Game
 **/
-.popup.eraseSave contour {
+.popup.traduction-error contour, .popup.traduction-success contour {
     position: absolute;
-    width: 19%; height: 27%;
-    left: 56%; top: 38%;
+    width: 25%; height: 30%;
+    left: 35%; top: 30%;
     background-image: url("../img/menu/popup/newgame.png");
 }
-.popup.eraseSave content {
+.popup.traduction-error content, .popup.traduction-success content {
     width: 83%; height: 70%;
     top: 16%; left: 11%;
     transform: rotate(-2deg);
 }
-.popup.eraseSave text {
+.popup.traduction-error text, .popup.traduction-success text {
     font-size: 2.5vh;
 }
-.popup.eraseSave text.title {
+.popup.traduction-error text.title, .popup.traduction-success text.title {
     margin-bottom: 2%;
 }
-.popup.eraseSave text.title > text:first-child {
+.popup.traduction-error text.title > text:first-child, .popup.traduction-success text.title > text:first-child {
     margin-bottom: 2%;
 }

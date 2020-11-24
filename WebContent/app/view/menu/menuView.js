@@ -31,7 +31,7 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate,
             this.mediatheque.loadAll();
 
             this.kongregateUtils = new Kongregate(Textes);
-            this.saveManager = new SaveManager(this.kongregateUtils);
+            this.saveManager = new SaveManager(this.kongregateUtils, Textes);
             this.Textes = Textes;
             this.Textes.setSaveManager(this.saveManager);
             this.Textes.loadLanguage();
@@ -164,7 +164,7 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate,
 		this.loadGame = function(didacticiel) {
 			new GameView(this, didacticiel);
 		};
-		
+
 		this.init();
 	};
 });

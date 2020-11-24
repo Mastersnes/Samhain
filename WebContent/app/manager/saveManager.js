@@ -1,15 +1,17 @@
 /*global define */
 define(["jquery",
         'underscore',
-        "app/utils/utils"
+        "app/utils/utils",
+        "app/utils/popupUtils"
         ],
-function($, _, Utils) {
+function($, _, Utils, PopupUtils) {
 	'use strict';
 
-	return function(kongregateUtils) {
-	    this.init = function(kongregateUtils) {
+	return function(kongregateUtils, Textes) {
+	    this.init = function(kongregateUtils, Textes) {
 			this.el = "";
 			this.kongregateUtils = kongregateUtils;
+			this.Textes = Textes;
 
 			this.initSaveData();
 		};
@@ -128,7 +130,8 @@ function($, _, Utils) {
 		    if (trads[key]) return trads[key][lang];
 		    else return null;
 		};
-		this.sendTrad = function() {
+		this.sendTrad = function(tradView) {
+		    var that = this;
 		    var newTrad = Utils.encode(JSON.stringify(this.traductions.toSend));
 		    var request = {
                 "username" : "",
@@ -139,8 +142,10 @@ function($, _, Utils) {
                 console.log("Succes de l'envoi de la nouvelle traduction avec le status", status);
                 that.traductions.toSend = {};
                 window.localStorage.setItem(Utils.name + "Traductions", JSON.stringify(that.traductions));
-            }, "POST", false, function() {
-                // Ajouter le cas d'erreur
+                PopupUtils.alert(that.Textes, "traduction-success", "continue");
+            }, "POST", false, function(e) {
+                console.log("Erreur !!!", e);
+                PopupUtils.alert(that.Textes, "traduction-error", "continue");
             });
 		};
 
@@ -229,6 +234,6 @@ function($, _, Utils) {
 			return this.saveData[key];
 		};
 
-		this.init(kongregateUtils);
+		this.init(kongregateUtils, Textes);
 	};
 });

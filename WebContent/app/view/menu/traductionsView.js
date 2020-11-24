@@ -202,7 +202,7 @@ define(["jquery", "underscore",
                 that.refreshTrads();
             });
             this.el.find("bouton#send").click(function(e) {
-                that.saveManager.sendTrad();
+                that.saveManager.sendTrad(that);
             });
         };
 

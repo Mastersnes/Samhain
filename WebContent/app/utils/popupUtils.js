@@ -53,17 +53,18 @@ define(["jquery",
                     texteOk : texteOk
             };
             el.html(template(templateData));
+            el.find(".popup").addClass(textePopup);
             el.find(".popup").fadeIn();
             
             if (noButton) {
-            	el.find(".popup .buttons").hide();
-            	el.find(".popup .close-button").show();
+            	el.find(".popup .clickable").hide();
+            	el.find(".popup close").show();
 		    }else {
-            	el.find(".popup .buttons").show();
-            	el.find(".popup .close-button").hide();
+            	el.find(".popup .clickable").show();
+            	el.find(".popup close").hide();
 		    }
             
-            el.find(".yes, .close-button").click(function() {
+            el.find(".yes, .canClose").click(function() {
             	el.find(".popup").fadeOut();
             	if (callbackSuccess) callbackSuccess();
             });
