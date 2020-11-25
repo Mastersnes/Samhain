@@ -140,7 +140,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "texte" : "elixir-texte",
                 "vie" : [100, 100],
                 "mana" : [100, 100],
-                "sound" : "drink",
+                "sound" : "drinkElixir",
                 "anim" : null,
                 "price" : 300,
                 "offensif" : false

@@ -403,11 +403,13 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
             if (!actionDone) {
                 // Attaque classique
                 var degats = this.attaque(player, true);
-                if (degats) this.mediatheque.playSound("hurt.wav");
+                //TODO: Attention, remettre comme avant !
+                /**if (degats) this.mediatheque.playSound("hurt.wav");
                 else {
                     if (!blockSound) blockSound = "block";
                     this.mediatheque.playSound(blockSound + ".wav");
-                }
+                }**/
+                this.mediatheque.playSound(blockSound + ".wav");
             }
 
             this.etatsManager.infligeEtats();

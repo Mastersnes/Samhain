@@ -45,10 +45,10 @@ function($, _, Utils, PopupUtils) {
 			        "equipment" : {
 			            "arme" : ["poing"],
 			            "currentArme" : "poing",
-			            "bouclier" : ["bras"],
+			            "bouclier" : ["bras", "bouclierFer", "bouclierBois"],
 			            "currentBouclier" : "bras",
 			            "magie" : [],
-			            "conso" : [],
+			            "conso" : ["potionSante", "potionMana", "elixir", "fromage", "pomme"],
 			            "clef" : [],
 			            "ifObj" : []
 			        },

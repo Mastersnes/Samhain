@@ -25,6 +25,11 @@ monstersContainer monster.roiBandit name {
     width: 59% !important;
     left: 18% !important;
 }
+monstersContainer monster.experience name {
+    width: 70% !important;
+    left: 12% !important;
+    font-size: 3.3vh;
+}
 
 /**
 * Monsters

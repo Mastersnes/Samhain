@@ -62,6 +62,7 @@ define(["jquery", "underscore",
                     var marqueurs = this.letters[i];
                     var marqueurDom = $("<marqueur></marqueur>");
                     marqueurDom.attr("id", i);
+                    marqueurDom.attr("name", this.letters[i]);
                     var nom = marqueurs[0].toUpperCase() + "-" + marqueurs[marqueurs.length-1].toUpperCase();
                     marqueurDom.html("<texte>" + nom + "</texte>");
                     this.el.find(".alphabet marqueurs").append(marqueurDom);
@@ -266,7 +267,7 @@ define(["jquery", "underscore",
             this.el.find(".description").hide();
 
             this.el.find("marqueur").removeClass("selected");
-            this.el.find("marqueur#" + letter).addClass("selected");
+            this.el.find("marqueur[name='" + letter + "']").addClass("selected");
 
             this.el.find(".liste propositions").empty();
             var propositions = Glossaire.list(letter, this.Textes);
