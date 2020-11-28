@@ -44,12 +44,12 @@ define([], function(){
         "bandits-arene-entrer-3-texte-3" : {
         	fr : "Votre interlocuteur, le roi des bandits, se lève de son siège de bois massif et saute dans l’arène, éliminant les deux créatures au passage.",
         	en : "Your interlocutor, the king of bandits, gets up from his massive wooden seat and jumps into the arena, eliminating the two creatures on his way.",
-        	eo : "Via interparolanto, la reĝo de la bantitoj, leviĝas de lia seĝo el masiva ligno kaj saltas en la areno, "
+        	eo : "Via interparolanto, la reĝo de la bantitoj, leviĝas de lia seĝo el masiva ligno kaj saltas en la areno, eliminante la du kreitaĵoj survoje."
         },
         "bandits-arene-entrer-3-texte-4" : {
         	fr : "&laquo;&nbsp;Allez, montre-moi donc de quoi tu es capable&nbsp;!&nbsp;&raquo;",
         	en : "&laquo;&nbsp;Come on, show me what you can do!&nbsp;&raquo;",
-        	eo : ""
+        	eo : "&laquo;&nbsp;Ek, montru al mi, kio vi povas fari!&nbsp;&raquo;"
         },
 
         /**
@@ -58,38 +58,38 @@ define([], function(){
         "bandits-arene-assassiner-texte-1" : {
         	fr : "Voici venir la dernière étape de votre infiltration.",
         	en : "Here comes the last step of your infiltration.",
-        	eo : ""
+        	eo : "Jen veni la lasta etapo de via enŝteliĝado."
         },
         "bandits-arene-assassiner-texte-2" : {
         	fr : "Vous vous approchez doucement et étranglez votre adversaire en l’empêchant de crier.",
-        	en : "You prudently approach and strangle your opponent, preventing him to screaming.",
-        	eo : ""
+        	en : "You prudently approach and strangle your opponent, preventing him screaming.",
+        	eo : "Vi proksimiĝas vin malrapide kaj strangolas vian kontraŭulon malhelpantan lin krii."
         },
         "bandits-arene-assassiner-texte-3" : {
         	fr : "Il se débat, essaie de vous arrêter, mais bientôt ses râles étouffés ne laissent place qu'à un silence morbide.",
         	en : "He’s struggling, trying to stop you, but soon his suffocation changes into a morbid silence.",
-        	eo : ""
+        	eo : "Li baraktas, provas halti vin, sed baldaŭ liaj sufokiĝoj ŝanĝiĝas mortigan silenton."
         },
         "bandits-arene-assassiner-texte-4" : {
         	fr : "Félicitations, votre assassinat est une réussite&nbsp;!",
-        	en : "Congratulation, Your murder is a success!",
-        	eo : ""
+        	en : "Congratulations, your murder is a success!",
+        	eo : "Gratulon! Via murdo estas sukceso!"
         },
 
         "bandits-arene-assassiner-2-texte-1" : {
         	fr : "Maintenant seul, vous vous approchez du corps du roi et lui découpez l'oreille avec sa propre dague pour y récupérer <span key='anneau-bandit'>l'anneau doré</span>.",
         	en : "Now alone, you approach the king corpse and cut off his ear with his own dagger in order to take his <span key='anneau-bandit'>golden ring</span>.",
-        	eo : ""
+        	eo : "Nun sola, vi proksimiĝas vin de la reĝo korpo kaj fortranĉas lia orelon kun lian propran dagon por rekuperi <span key='anneau-bandit'>la oran ringon</span>."
         },
         "bandits-arene-assassiner-2-texte-2" : {
         	fr : "Eh bien, cela vous fera deux récompenses&nbsp;!",
         	en : "Well, that will make you two rewards!",
-        	eo : ""
+        	eo : "Nu, tio feros al vi du rekompencoj!"
         },
         "bandits-arene-assassiner-2-texte-3" : {
         	fr : "Fier de votre butin, vous retournez en ville pour annoncer votre victoire.",
         	en : "Proud of your loot, you go back to the city to announce your victory.",
-        	eo : ""
+        	eo : "Fiera pri via akiraĵo, vi reiras en la urbo por anonci via venko."
         },
 
         /**
@@ -98,12 +98,12 @@ define([], function(){
         "bandits-arene-win-texte-1" : {
         	fr : "Vous venez à bout de vos adversaires sous les applaudissements de la foule.",
         	en : "You beat your opponents to the applause of the crowd.",
-        	eo : ""
+        	eo : "Vi venkas viajn kontraŭulojn sub la aplaŭdojn de la homamason."
         },
         "bandits-arene-win-texte-2" : {
         	fr : "Eh bien, ils n'étaient pas si terribles que ça finalement&hellip;",
         	en : "Well, they weren’t so terrible after all&hellip;",
-        	eo : ""
+        	eo : "Nu, ili ne estis tiel timindaj finfine&hellip;"
         },
 
         /**
@@ -112,12 +112,12 @@ define([], function(){
         "bandits-arene-solo-win-texte-1" : {
         	fr : "Vous venez à bout de votre adversaire sous les applaudissements de la foule.",
         	en : "You beat your opponent to the applause of the crowd.",
-        	eo : ""
+        	eo : "Vi venkas vian kontraŭulon sub la aplaŭdojn de la homamason."
         },
         "bandits-arene-solo-win-texte-2" : {
         	fr : "Eh bien, il n'était pas si terrible que ça finalement&hellip;",
         	en : "Well, he wasn’t so terrible after all&hellip;",
-        	eo : ""
+        	eo : "Nu, li ne estis tiel timinda finfine&hellip;"
         },
 
         /**
@@ -126,12 +126,12 @@ define([], function(){
         "bandits-arene-goule-win-texte-1" : {
         	fr : "&laquo;&nbsp;Eh bien, tu n'es donc pas aussi faible que tu en as l'air&nbsp;!&nbsp;&raquo;",
         	en : "&laquo;&nbsp;Well, you’re not as weak as you look!&nbsp;&raquo;",
-        	eo : ""
+        	eo : "&laquo;&nbsp;Nu, vi ne estas tiel malforta kiel vi aspektas!&nbsp;&raquo;"
         },
         "bandits-arene-goule-win-texte-2" : {
         	fr : "Le noble voleur, remotivé par votre combat, se lève de son siège de bois massif et saute dans l'arène.",
-        	en : "The noble thief, remotivated by your battle, get up from his massive wooden seat and jump into the arena.",
-        	eo : ""
+        	en : "The noble thief, remotivated by your battle, gets up from his massive wooden seat and jumps into the arena.",
+        	eo : "La nobla ŝtelisto, remotivigita pri via batalo, leviĝas de lia seĝo el masiva ligno kaj saltas en la areno."
         },
         //"bandits-arene-entrer-3-texte-4"
 
@@ -141,12 +141,12 @@ define([], function(){
         "bandits-arene-fin-texte-1" : {
         	fr : "Le combat maintenant terminé, la foule se disperse, rassasiée.",
         	en : "The fight now ended, the crowd disperses, satiated.",
-        	eo : ""
+        	eo : "La batalo estas nun finita, la homamaso disiras, sata."
         },
         "bandits-arene-fin-texte-2" : {
         	fr : "Une nouvelle élection aura certainement lieu&hellip;",
         	en : "A new election will certainly take place&hellip;",
-        	eo : ""
+        	eo : "Nova elekto certe okazos&hellip;"
         },
         //bandits-arene-assassiner-2-texte-1
         //bandits-arene-assassiner-2-texte-2

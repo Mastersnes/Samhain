@@ -7,12 +7,12 @@ define([], function(){
             "french" : {
             	fr : "Français",
             	en : "French",
-            	eo : ""
+            	eo : "Franca"
             },
             "english" : {
             	fr : "Anglais",
             	en : "English",
-            	eo : ""
+            	eo : "Angla"
             },
             "esperanto" : {
             	fr : "Espéranto",
@@ -21,29 +21,29 @@ define([], function(){
             },
 
             "traduction-source" : {
-            	fr : "Traduire de :",
-            	en : "Translate from :",
-            	eo : ""
+            	fr : "Traduire de&nbsp;:",
+            	en : "Translate from:",
+            	eo : "Traduki de:"
             },
             "traduction-cible" : {
-            	fr : "Vers :",
-            	en : "To :",
-            	eo : ""
+            	fr : "Vers&nbsp;:",
+            	en : "To:",
+            	eo : "Al:"
             },
             "traduction-submit" : {
             	fr : "Proposer ma traduction",
             	en : "Propose my translation",
-            	eo : ""
+            	eo : "Proponi mian tradukon"
             },
             "traduction-error" : {
             	fr : "Arf, quelque chose s'est mal passé&hellip;</br>Veuillez réessayer plus tard.",
             	en : "Arf, something went wrong&hellip;</br>Please, try again later.",
-            	eo : ""
+            	eo : "Oj, io malbona okazis&hellip;</br>Bonvolu provi denove poste."
             },
             "traduction-success" : {
             	fr : "Proposition envoyée!</br>Merci pour votre aide!",
             	en : "Proposal sent!</br>Thanks for your help!",
-            	eo : ""
+            	eo : "Propono sendita!</br>Dankegon pri via helpo!"
             }
 	};
 	
