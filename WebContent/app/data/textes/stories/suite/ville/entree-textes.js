@@ -128,7 +128,7 @@ define([], function(){
         	eo : ""
         },
         "ville-entree-palais-justice-texte-2" : {
-        	fr : "Rien, personne à l'horizon. Sur un écriteau, vous lisez :",
+        	fr : "Rien, personne à l'horizon. Sur un écriteau, vous lisez&nbsp;:",
         	en : "Nothing, Nobody on the horizon. On a sign, you can read:",
         	eo : ""
         },

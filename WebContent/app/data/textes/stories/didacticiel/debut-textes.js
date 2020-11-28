@@ -12,7 +12,7 @@ define([], function(){
         	eo : "Estas nenio. Sola la vento blovas en viaj hararoj kaj fajfas en viaj oreloj."
         },
         "didacticiel-start-texte-3" : {
-        	fr : "Tout semble calme lorsque, soudain, une voix vous interpelle :",
+        	fr : "Tout semble calme lorsque, soudain, une voix vous interpelle&nbsp;:",
         	en : "All seems calm when, suddenly, a voice speaks to you:",
         	eo : "Ĉiu ŝajnas trankvila, kiam subite, voĉo alparolas vin:"
         },
@@ -28,7 +28,7 @@ define([], function(){
         	eo : "Vi konformiĝas vin, havanta nenion pli bonan farendan."
         },
         "didacticiel-start2-texte-2" : {
-        	fr : "La voix, elle, continue de plus belle :",
+        	fr : "La voix, elle, continue de plus belle&nbsp;:",
         	en : "The voice continues even more:",
         	eo : "La voĉo pli daŭriĝas: "
         },

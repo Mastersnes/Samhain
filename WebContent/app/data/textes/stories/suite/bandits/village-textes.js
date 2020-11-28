@@ -214,7 +214,7 @@ define([], function(){
         	eo : ""
         },
         "bandits-village-infiltrer-2-echec-2-texte-3" : {
-        	fr : "Votre interlocuteur, le roi des bandits, ricane doucement et continue :",
+        	fr : "Votre interlocuteur, le roi des bandits, ricane doucement et continue&nbsp;:",
         	en : "Your interlocutor, the king of bandits, slowly sniggers and continues:",
         	eo : ""
         },

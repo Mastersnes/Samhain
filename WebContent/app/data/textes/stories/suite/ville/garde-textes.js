@@ -15,7 +15,7 @@ define([], function(){
         	eo : ""
         },
         "ville-garde-simple-texte-1" : {
-        	fr : "Les forces de l'ordre, surprises par votre arrivée, viennent à votre rencontre :",
+        	fr : "Les forces de l'ordre, surprises par votre arrivée, viennent à votre rencontre&nbsp;:",
         	en : "The forces of order, suprised by your arrival, come towards you:",
         	eo : ""
         },
@@ -52,7 +52,7 @@ define([], function(){
         	eo : ""
         },
         "ville-garde-simple-3-texte-4" : {
-        	fr : "Il a l'air d'hésiter puis ajoute :",
+        	fr : "Il a l'air d'hésiter puis ajoute&nbsp;:",
         	en : "He seems to hesitate and then adds:",
         	eo : ""
         },
@@ -127,7 +127,7 @@ define([], function(){
         	eo : ""
         },
         "ville-garde-jeu-victoire-2-texte-2" : {
-        	fr : "Impressionnés par votre science précise du jeu, ils vous apprennent leur art :",
+        	fr : "Impressionnés par votre science précise du jeu, ils vous apprennent leur art&nbsp;:",
         	en : "Impressed by your accurate science of the game, they teach you their art:",
         	eo : ""
         },

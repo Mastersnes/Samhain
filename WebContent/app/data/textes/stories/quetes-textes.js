@@ -12,12 +12,12 @@ define([
         	eo : "La panelo estas tute malplena&hellip;"
         },
         "recompense-quete" : {
-        	fr : "Récompense :",
+        	fr : "Récompense&nbsp;:",
         	en : "Reward:",
         	eo : "Rekompenco:"
         },
         "difficulte-quete" : {
-        	fr : "Difficulté :",
+        	fr : "Difficulté&nbsp;:",
         	en : "Difficulty:",
         	eo : "Malfacileco:"
         },

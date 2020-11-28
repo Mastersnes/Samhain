@@ -70,7 +70,7 @@ define([], function(){
         * Retour à la taverne apres une premiere visite
         **/
         "ville-ruelle-taverne-2-texte-1" : {
-        	fr : "L'homme vous toise, sourit, puis ajoute :",
+        	fr : "L'homme vous toise, sourit, puis ajoute&nbsp;:",
         	en : "The man looks at you up and down, smiles, then adds:",
         	eo : ""
         },

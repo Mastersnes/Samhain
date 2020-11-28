@@ -36,7 +36,7 @@ define([], function(){
         	eo : ""
         },
         "ville-porte-demander-texte-3" : {
-        	fr : "Le garde, plus calme, vous jauge puis vous répond :",
+        	fr : "Le garde, plus calme, vous jauge puis vous répond&nbsp;:",
         	en : "The guard, calmer, looks at you and answers:",
         	eo : ""
         },
@@ -62,7 +62,7 @@ define([], function(){
         	eo : ""
         },
         "ville-porte-demander-2-texte-3" : {
-        	fr : "L'homme vous toise de nouveau, il semble réfléchir un peu puis ajoute :",
+        	fr : "L'homme vous toise de nouveau, il semble réfléchir un peu puis ajoute&nbsp;:",
         	en : "The man looks at you again, he seems to think a little then adds:",
         	eo : ""
         },
@@ -73,7 +73,7 @@ define([], function(){
         },
 
         "ville-porte-demander-3-texte-1" : {
-        	fr : "Il réfléchit longuement et annonce :",
+        	fr : "Il réfléchit longuement et annonce&nbsp;:",
         	en : "He thinks for a long and announces:",
         	eo : ""
         },

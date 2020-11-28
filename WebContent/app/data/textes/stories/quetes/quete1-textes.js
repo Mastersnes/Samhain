@@ -83,7 +83,7 @@ define([], function(){
         	eo : "&laquo;&nbsp;Ho, nu tiu estas vi, kiu iras trovi miajn <span key='poulet'>kokidinojn</span>?&nbsp;&raquo;"
         },
         "quete1-debut-fermier-2-texte-2" : {
-        	fr : "Il n'a pas l'air convaincu. Après un crachat sur le côté, il continue :",
+        	fr : "Il n'a pas l'air convaincu. Après un crachat sur le côté, il continue&nbsp;:",
         	en : "He doesn’t seem convinced. After a spit, he continues:",
         	eo : "Li ne aspektas konvinkita. Post kraĉaĵo flanke, li daŭrigas:"
         },
@@ -338,7 +338,7 @@ define([], function(){
         	eo : "La kruduoj detruiĝas sur la grundo. Nun, ili ŝajnas bone timigitaj."
         },
         "quete1-champ-menacer-2-texte-2" : {
-        	fr : "Le chef, encore conscient, semble beaucoup plus enclin à vous aider maintenant :",
+        	fr : "Le chef, encore conscient, semble beaucoup plus enclin à vous aider maintenant&nbsp;:",
         	en : "The chief, still conscious, seems to be more disposed to help you now.",
         	eo : "La ĉefo, ankoraŭ konscia, ŝajnas multe pli inklina helpi vin nune."
         },

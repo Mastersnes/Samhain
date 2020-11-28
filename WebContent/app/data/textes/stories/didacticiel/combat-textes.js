@@ -100,7 +100,7 @@ define([], function(){
         	eo : "La bandito donas al vin la finofaran baton, kaj vi faliĝas sur la grundo."
         },
         "didacticiel-lose-texte-2" : {
-        	fr : "Votre vue faiblit peu à peu, mais vous semblez encore entendre murmurer dans votre oreille :",
+        	fr : "Votre vue faiblit peu à peu, mais vous semblez encore entendre murmurer dans votre oreille&nbsp;:",
         	en : "Your eyesight decline little by little but you still heard a whisper in your ears:",
         	eo : "Via vidkapablo malpliiĝas iom post iom sed vi ŝajnas aŭdi ankoraŭ flustri en via orelo:"
         },
