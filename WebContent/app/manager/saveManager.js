@@ -28,10 +28,10 @@ function($, _, Utils, PopupUtils) {
 			            "max" : 150
 			        },
 			        "mana" : {
-			            "current" : 0,
-			            "max" : 0
+			            "current" : 10,
+			            "max" : 10
 			        },
-                    "unlockMana" : false,
+                    "unlockMana" : true,
 
 			        "buff" : null,
 			        "debuff" : null,
@@ -47,8 +47,8 @@ function($, _, Utils, PopupUtils) {
 			            "currentArme" : "poing",
 			            "bouclier" : ["bras", "bouclierFer", "bouclierBois"],
 			            "currentBouclier" : "bras",
-			            "magie" : [],
-			            "conso" : ["potionSante", "potionMana", "elixir", "fromage", "pomme"],
+			            "magie" : ["bouleFeu", "soin"],
+			            "conso" : ["potionSante", "potionMana", "elixir", "fromage", "pomme", "venin", "venin"],
 			            "clef" : [],
 			            "ifObj" : []
 			        },

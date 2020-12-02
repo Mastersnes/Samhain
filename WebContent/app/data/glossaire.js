@@ -11,6 +11,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp": [1, 3],
             "argent" : [10, 20],
             "sexe" : "f",
+            "dieSound" : null,
             "abilities" : ["morsure"]
 		},
 		"bandit" : {

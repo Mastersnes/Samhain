@@ -184,7 +184,15 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
         };
         this.addLife = function(amount, element) {
             this.data.life.current += amount;
-            if (this.data.life.current < 0) this.data.life.current = 0;
+            if (this.data.life.current <= 0) {
+                this.data.life.current = 0;
+                if (this.template.dieSound) {
+                    var that = this;
+                    Utils.then(function() {
+                        that.mediatheque.playSound(that.template.dieSound + ".wav");
+                    }, 100);
+                }
+            }
             if (this.data.life.current > this.data.life.max)
                 this.data.life.current = this.data.life.max;
         };
@@ -233,6 +241,8 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
                     if (item.action) item.action(this, cible, this.fightView);
                 }
 
+                // On joue le son de l'attaque apres la boucle pour ne pas tuer les oreilles du joueur
+                if (item.sound) this.mediatheque.playSound(item.sound + ".wav");
                 this.removeConso(itemId);
                 return true;
             }else {
@@ -293,6 +303,8 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
                         }
                     }
                     actionDone = true;
+                    // On joue le son de l'attaque apres la boucle pour ne pas tuer les oreilles du joueur
+                    if (abilitie.sound) this.mediatheque.playSound(abilitie.sound + ".wav");
                 } else console.log("Erreur monster spell - pas assez de mana", abilitie, cibles);
             }else console.log("Erreur monster spell - sort non possédé", itemId, cibles);
 
@@ -403,13 +415,11 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
             if (!actionDone) {
                 // Attaque classique
                 var degats = this.attaque(player, true);
-                //TODO: Attention, remettre comme avant !
-                /**if (degats) this.mediatheque.playSound("hurt.wav");
+                if (degats) this.mediatheque.playSound("hurt.wav");
                 else {
                     if (!blockSound) blockSound = "block";
                     this.mediatheque.playSound(blockSound + ".wav");
-                }**/
-                this.mediatheque.playSound(blockSound + ".wav");
+                }
             }
 
             this.etatsManager.infligeEtats();

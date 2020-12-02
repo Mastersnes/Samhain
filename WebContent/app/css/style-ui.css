@@ -44,7 +44,8 @@ fiole > picture[step="10"] {background-position: 0% 0%;}
 fiole montant {
     color: #DDDDDD;
     left: 16%; top: 53%;
-    font-size: 1.7vh;
+    font-size: 1.5vh;
+    font-family: "Lucida";
 }
 
 fiole.life {
@@ -117,6 +118,7 @@ gold > picture {
 gold montant {
     color: #DDDDDD;
     font-size: 1.7vh;
+    font-family: 'Lucida';
 }
 gold montant[digits="4"] {
     left: 52.5%; top: 45.5%;
@@ -173,6 +175,7 @@ level montant {
     text-align: center !important;
     top: 22%;
     font-size: 2vh; font-weight: bold;
+    font-family: "Luna";
 }
 level > picture[step="18"] {background-position: 0% 0%;}
 level > picture[step="17"] {background-position: 0% 5.556%;}
