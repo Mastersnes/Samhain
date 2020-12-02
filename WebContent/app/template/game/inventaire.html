@@ -43,13 +43,15 @@
         </content>
         <content class="equipment">
             <armes>
+                <% var alreadyCoche = false; %>
                 <% var armes = player.get("equipment.arme"); %>
                 <% var current = player.get("equipment.currentArme"); %>
                 <% for (var i in armes) { %>
                     <% var arme = armes[i]; %>
                     <element id="<%=arme%>">
-                        <% if (current == arme) { %>
+                        <% if (current == arme && !alreadyCoche) { %>
                             <case class="coche"></case>
+                            <% alreadyCoche = true; %>
                         <% } else {%>
                             <case></case>
                         <% } %>
@@ -58,13 +60,15 @@
                 <% } %>
             </armes>
             <boucliers>
+                <% alreadyCoche = false; %>
                 <% var boucliers = player.get("equipment.bouclier"); %>
                 <% var current = player.get("equipment.currentBouclier"); %>
                 <% for (var i in boucliers) { %>
                     <% var bouclier = boucliers[i]; %>
                     <element id="<%=bouclier%>">
-                        <% if (current == bouclier) { %>
+                        <% if (current == bouclier && !alreadyCoche) { %>
                             <case class="coche"></case>
+                            <% alreadyCoche = true; %>
                         <% } else { %>
                             <case></case>
                         <% } %>
