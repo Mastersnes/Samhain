@@ -121,14 +121,14 @@ gold montant {
     font-family: 'Lucida';
 }
 gold montant[digits="4"] {
-    left: 52.5%; top: 45.5%;
+    left: 51%; top: 45.5%;
     font-weight: bold;
 }
 gold montant[digits="3"] {
-    left: 53.5%; top: 45.5%;
+    left: 53%; top: 45.5%;
 }
 gold montant[digits="2"] {
-    left: 54.5%; top: 45.5%;
+    left: 54%; top: 45.5%;
 }
 gold montant[digits="1"] {
     left: 56%; top: 45.5%;

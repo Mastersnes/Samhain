@@ -107,6 +107,18 @@ define(["jquery", "underscore",
                 }
             }
 
+            var found = this.letters[0];
+            var normalizeName = Utils.normalize(this.Textes.get(key));
+            for (var i in this.letters) {
+                if (this.letters[i].indexOf(normalizeName[0]) != -1) {
+                    found = this.letters[i];
+                    break;
+                }
+            }
+
+            this.el.find("marqueur").removeClass("selected");
+            this.el.find("marqueur[name='" + found + "']").addClass("selected");
+
             this.el.find(".description").show();
             this.el.fadeIn();
         };
