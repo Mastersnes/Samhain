@@ -20,18 +20,6 @@ define(["jquery", "app/utils/utils", "app/data/kongregateStats", "kongregate"], 
 		
 		this.render = function() {
 			if (!this.isLoad) return;
-			
-			var isGuest = this.isGuest;
-			var username = this.username;
-			if (isGuest) {
-				username = this.Textes.get("guest");
-				$("#login").removeClass("hidden");
-				$(".username").addClass("hidden");
-			} else {
-				$(".username").html(username);
-				$(".username").removeClass("hidden");
-				$("#login").addClass("hidden");
-			}
 		};
 		
 		this.score = function(key, value) {

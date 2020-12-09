@@ -108,6 +108,7 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate,
 				        that.el.find("carnet boutons").fadeIn();
 				    }, "continuerButton", "cancelButton");
 			    }else {
+			        that.saveManager.eraseSave();
 			    	that.loadGame();
 			    }
 			});
