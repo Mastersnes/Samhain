@@ -35,6 +35,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 sound.volume=1;
 			}
 			if (key.indexOf("music") > -1) {
+				sound.volume=0.7;
 				if (this.callbacks[key + id]) {
 				    sound.removeEventListener("ended", this.callbacks[key + id]);
 				}

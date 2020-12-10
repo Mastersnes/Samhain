@@ -31,7 +31,7 @@ function($, _, Utils, PopupUtils) {
 			            "current" : 0,
 			            "max" : 0
 			        },
-                    "unlockMana" : false,
+                    "unlockMana" : true,
 
 			        "buff" : null,
 			        "debuff" : null,

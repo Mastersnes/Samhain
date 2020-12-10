@@ -147,6 +147,9 @@
 .fight monster etats etat[type="feu"] {
     background-image: url("../img/game/etats/feu.png");
 }
+.fight monster etats etat[type="saignement"] {
+    background-image: url("../img/game/etats/saignement.png");
+}
 .fight monster etats etat[type="sante"] {
     background-image: url("../img/game/etats/sante.png");
 }

@@ -214,9 +214,11 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "sound" : null,
                 "anim" : null,
                 "price" : null,
+                "sound" : "voler",
                 "offensif" : true,
                 "action" : function(me, cible) {
-                    var steal = Utils.rand(10 * (me.level+1), 20 * (me.level+1));
+                    var level = me.level ? me.level : me.data.level;
+                    var steal = Utils.rand(5 * (level+1), 10 * (level+1));
 
                     // Si c'est le monstre, il nous vole et recupere une partie
                     if (me.isMonster) me.steal("gold", cible, steal, 0);
@@ -235,7 +237,9 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "offensif" : true,
                 "action" : function(me, cible) {
                     me.attaque(cible, true);
-                    me.attaque(cible, true);
+                    Utils.then(function() {
+                        me.attaque(cible, true);
+                    }, 250);
                 }
             },
             "volDeVie" : {
@@ -265,7 +269,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "effet" : ["saignement"],
                 "manaCost" : 1,
                 "sound" : null,
-                "anim" : null,
+                "anim" : "dague",
                 "price" : null,
                 "offensif" : true
             },
@@ -288,7 +292,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "name" : "invoqueGoule",
                 "texte" : "invoqueGoule-texte",
                 "manaCost" : 1,
-                "sound" : null,
+                "sound" : "invoquer",
                 "anim" : null,
                 "price" : null,
                 "offensif" : true,
@@ -300,7 +304,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "name" : "invoqueGrosseGoule",
                 "texte" : "invoqueGrosseGoule-texte",
                 "manaCost" : 1,
-                "sound" : null,
+                "sound" : "invoquer",
                 "anim" : null,
                 "price" : null,
                 "offensif" : true,
