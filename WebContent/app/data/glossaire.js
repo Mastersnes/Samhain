@@ -11,7 +11,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp": [1, 3],
             "argent" : [10, 20],
             "sexe" : "f",
-            "dieSound" : null,
+            "dieSound" : "mortAraignee",
             "abilities" : ["morsure"]
 		},
 		"bandit" : {
@@ -36,6 +36,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : [5, 20],
             "argent" : [50, 100],
             "sexe" : "m",
+            "dieSound" : "mortAraignee",
             "abilities" : ["araneisme", "pondreAraignee"],
             "type": "boss",
             "baseSuffixe" : "blesse"
@@ -98,6 +99,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : [3, 10],
             "argent" : [15, 30],
             "sexe" : "m",
+            "dieSound" : "mortSquelette",
             "abilities" : ["doubleAttaque", "taillade"],
             "suffixes" : ["manchot"]
 		}, 

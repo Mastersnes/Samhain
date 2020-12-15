@@ -85,10 +85,12 @@ define(["jquery",
             this.el.find("son#sound").click(function(e) {
                 that.mediatheque.mute("sound");
                 that.refresh();
+                that.parent.refresh();
             });
             this.el.find("son#music").click(function(e) {
                 that.mediatheque.mute("music");
                 that.refresh();
+                that.parent.refresh();
             });
             this.el.find("#selectAuto").click(function(e) {
                 that.saveManager.setOption("selectAuto", !that.saveManager.getOption("selectAuto"));

@@ -85,11 +85,10 @@ function($, _, Utils, PopupUtils, page,
             (document.webkitFullscreenElement && document.webkitFullscreenElement !== null) ||
             (document.mozFullScreenElement && document.mozFullScreenElement !== null) ||
             (document.msFullscreenElement && document.msFullscreenElement !== null);
-			if (!isFullscreen) {
-				$("fullscreen").removeClass("exit");
-			}else {
-				$("fullscreen").addClass("exit");
-			}
+			if (!isFullscreen) $("fullscreen").removeClass("exit");
+			else $("fullscreen").addClass("exit");
+
+			this.refreshSound();
 		};
 
         /**
@@ -147,6 +146,16 @@ function($, _, Utils, PopupUtils, page,
                     }
                 }, 100);
         	}
+        };
+
+        this.refreshSound = function() {
+            if (this.mediatheque.isMute("sound"))
+                this.el.find("son#sound").addClass("mute");
+            else this.el.find("son#sound").removeClass("mute");
+
+            if (this.mediatheque.isMute("music"))
+                this.el.find("son#music").addClass("mute");
+            else this.el.find("son#music").removeClass("mute");
         };
 
         this.onResize = function() {
@@ -267,9 +276,14 @@ function($, _, Utils, PopupUtils, page,
 				}
 				that.onResize();
 			});
-            $("mute").click(function() {
-            	that.mediatheque.mute("all");
-			});
+			this.el.find("son#sound").click(function(e) {
+                that.mediatheque.mute("sound");
+                that.refreshSound();
+            });
+            this.el.find("son#music").click(function(e) {
+                that.mediatheque.mute("music");
+                that.refreshSound();
+            });
         };
 
         /**

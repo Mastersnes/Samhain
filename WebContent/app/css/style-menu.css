@@ -30,10 +30,8 @@
 }
 
 fullscreen {
-	z-index: 10;
-	cursor: pointer;
-	display: block;
-	position: absolute;
+	z-index: 10; cursor: pointer;
+	display: block; position: absolute;
 	right: 1%; bottom: 1%;
 	width: 3%; height: 4%;
 	background-image: url("../img/game/interface/bouton/fullscreen.png");
@@ -43,6 +41,20 @@ fullscreen {
 
 fullscreen.exit {
 	background-image: url("../img/game/interface/bouton/exit-fullscreen.png") !important;
+}
+
+.scene > son#sound {
+    z-index: 10; cursor: pointer;
+    display: block; position: absolute;
+    right: 0.5%; bottom: 5%;
+    width: 4%; height: 5%;
+}
+
+.scene > son#music {
+    z-index: 10; cursor: pointer;
+    display: block; position: absolute;
+    right: 0.5%; bottom: 9.5%;
+    width: 4%; height: 5%;
 }
 
 /**

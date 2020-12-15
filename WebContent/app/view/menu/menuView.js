@@ -61,6 +61,7 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate,
 			};
 			this.el.html(template(templateData));
 			this.kongregateUtils.render();
+			this.refresh();
 			
 			this.makeEvents();
 			
@@ -77,6 +78,16 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate,
 				that.creditView = new CreditView(that);
 				that.traductionsView = new TraductionsView(that);
 			}, 1000);
+		};
+
+		this.refresh = function() {
+		    if (this.mediatheque.isMute("sound"))
+                this.el.find("son#sound").addClass("mute");
+            else this.el.find("son#sound").removeClass("mute");
+
+            if (this.mediatheque.isMute("music"))
+                this.el.find("son#music").addClass("mute");
+            else this.el.find("son#music").removeClass("mute");
 		};
 
 		this.refreshTextes = function() {
@@ -156,6 +167,15 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate,
 				else $("fullscreen").addClass("exit");
 				that.onResize();
 			});
+
+			this.el.find("son#sound").click(function(e) {
+                that.mediatheque.mute("sound");
+                that.refresh();
+            });
+            this.el.find("son#music").click(function(e) {
+                that.mediatheque.mute("music");
+                that.refresh();
+            });
 
 			$("body").contextmenu(function() {
 				return false;

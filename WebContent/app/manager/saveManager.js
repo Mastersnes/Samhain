@@ -28,8 +28,8 @@ function($, _, Utils, PopupUtils) {
 			            "max" : 150
 			        },
 			        "mana" : {
-			            "current" : 0,
-			            "max" : 0
+			            "current" : 10,
+			            "max" : 10
 			        },
                     "unlockMana" : true,
 
