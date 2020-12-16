@@ -16,6 +16,11 @@ define([], function(){
             	en : "Steven Nesztler",
             	eo : "Steven Nesztler"
             },
+            "alexi-credits" : {
+            	fr : "Alexi Jacquet",
+            	en : "Alexi Jacquet",
+            	eo : "Alexi Jacquet"
+            },
 
             "studio-credits" : {
             	fr : "Un Jeu Signé",

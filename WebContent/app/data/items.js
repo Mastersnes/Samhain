@@ -188,7 +188,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "lifeSteal" : [50, 100],
                 "effet" : ["poison"],
                 "manaCost" : 1,
-                "sound" : null,
+                "sound" : "morsure",
                 "anim" : null,
                 "price" : null,
                 "offensif" : true,
@@ -201,7 +201,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "lifeSteal" : [50, 100],
                 "effet" : ["poison-2"],
                 "manaCost" : 1,
-                "sound" : null,
+                "sound" : "morsure",
                 "anim" : null,
                 "price" : null,
                 "offensif" : true,
@@ -211,10 +211,9 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "name" : "voler",
                 "texte" : "voler-texte",
                 "manaCost" : 1,
-                "sound" : null,
+                "sound" : "voler",
                 "anim" : null,
                 "price" : null,
-                "sound" : "voler",
                 "offensif" : true,
                 "action" : function(me, cible) {
                     var level = me.level ? me.level : me.data.level;
@@ -247,7 +246,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "texte" : "volDeVie-texte",
                 "lifeSteal" : [10, 30],
                 "manaCost" : 1,
-                "sound" : null,
+                "sound" : "volVie",
                 "anim" : null,
                 "price" : null,
                 "offensif" : true
@@ -257,7 +256,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "texte" : "volDeMana-texte",
                 "manaSteal" : [10, 30],
                 "manaCost" : 1,
-                "sound" : null,
+                "sound" : "volVie",
                 "anim" : null,
                 "price" : null,
                 "offensif" : true
@@ -319,7 +318,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                 "degats" : [2, 4],
                 "lifeSteal" : [50, 100],
                 "manaCost" : 1,
-                "sound" : null,
+                "sound" : "cannibalisme",
                 "anim" : null,
                 "price" : null,
                 "offensif" : true
