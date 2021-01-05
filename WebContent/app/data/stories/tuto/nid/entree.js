@@ -25,7 +25,7 @@ define([], function() {
                 {
                     "name" : "suivant", "action" : [
                         {"key" : "gain", "params" : [ "dague" ]},
-                        {"key" : "sound", "params" : [ "items/punch" ]},
+                        {"key" : "sound", "params" : [ "hurt/hurt0" ]},
                         {"key" : "hurt", "params" : [ 5 ]},
                         {"key" : "go", "params" : [ "nidDague" ]}
                     ]

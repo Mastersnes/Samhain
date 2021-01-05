@@ -65,6 +65,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "tout-prendre", "action" : [
+                        {"key" : "sound", "params" : [ "hurt/hurt1" ]},
                         {"key" : "perte", "params" : ["dague"]},
                         {"key" : "gain", "params" : ["potionSante"]},
                         {"key" : "gain", "params" : ["bouclierBois"]},
@@ -117,6 +118,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "pas-la-peine", "action" : [
+                        {"key" : "sound", "params" : [ "hurt/hurt2" ]},
                         {"key" : "perte", "params" : ["dague"]},
                         {"key" : "hurt", "params" : [5]},
                         {"key" : "go", "params" : ["coffreEchec21" ]}
