@@ -415,8 +415,10 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
             if (!actionDone) {
                 // Attaque classique
                 var degats = this.attaque(player, true);
-                if (degats) this.mediatheque.playSound("hurt.wav");
-                else {
+                if (degats) {
+                    var rand = Utils.rand(0, this.mediatheque.hurtNb);
+                    this.mediatheque.playSound("hurt/hurt"+rand+".wav");
+                } else {
                     if (!blockSound) blockSound = "block";
                     this.mediatheque.playSound(blockSound + ".wav");
                 }

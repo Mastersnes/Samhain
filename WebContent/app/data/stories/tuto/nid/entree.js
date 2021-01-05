@@ -25,7 +25,7 @@ define([], function() {
                 {
                     "name" : "suivant", "action" : [
                         {"key" : "gain", "params" : [ "dague" ]},
-                        {"key" : "sound", "params" : [ "punch" ]},
+                        {"key" : "sound", "params" : [ "items/punch" ]},
                         {"key" : "hurt", "params" : [ 5 ]},
                         {"key" : "go", "params" : [ "nidDague" ]}
                     ]
@@ -88,7 +88,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "mange-continue", "action" : [
-                        {"key" : "sound", "params" : ["eat"]},
+                        {"key" : "sound", "params" : ["items/eat"]},
                         {"key" : "heal", "params" : [ 40 ]},
                         {"key" : "go", "params" : ["nid4"]}
                     ]
@@ -106,7 +106,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "mange-continue", "action" : [
-                        {"key" : "sound", "params" : ["eat"]},
+                        {"key" : "sound", "params" : ["items/eat"]},
                         {"key" : "heal", "params" : [ 40 ]},
                         {"key" : "random", "params" : [
                             "nid3TrouveDague", "nid4"

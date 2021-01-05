@@ -28,10 +28,10 @@ function($, _, Utils, PopupUtils) {
 			            "max" : 150
 			        },
 			        "mana" : {
-			            "current" : 10,
-			            "max" : 10
+			            "current" : 0,
+			            "max" : 0
 			        },
-                    "unlockMana" : true,
+                    "unlockMana" : false,
 
 			        "buff" : null,
 			        "debuff" : null,
@@ -43,8 +43,8 @@ function($, _, Utils, PopupUtils) {
 			        "defense" : 0,
 
 			        "equipment" : {
-			            "arme" : ["poing"],
-			            "currentArme" : "poing",
+			            "arme" : ["poing", "crocRoi"],
+			            "currentArme" : "crocRoi",
 			            "bouclier" : ["bras"],
 			            "currentBouclier" : "bras",
 			            "magie" : [],

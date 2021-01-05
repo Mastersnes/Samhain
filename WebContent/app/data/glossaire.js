@@ -11,7 +11,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp": [1, 3],
             "argent" : [10, 20],
             "sexe" : "f",
-            "dieSound" : "mortAraignee",
+            "dieSound" : "morts/mortAraignee",
             "abilities" : ["morsure"]
 		},
 		"bandit" : {
@@ -24,6 +24,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : [2, 5],
             "argent" : [15, 30],
             "sexe" : "m",
+            "dieSound" : "morts/mortHumain",
             "abilities" : ["voler", "doubleAttaque"]
 		},
 		"roiAraignee" : {
@@ -36,7 +37,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : [5, 20],
             "argent" : [50, 100],
             "sexe" : "m",
-            "dieSound" : "mortAraignee",
+            "dieSound" : "morts/mortAraignee",
             "abilities" : ["araneisme", "pondreAraignee"],
             "type": "boss",
             "baseSuffixe" : "blesse"
@@ -51,6 +52,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : [3, 6],
             "argent" : [20, 40],
             "sexe" : "f",
+            "dieSound" : "morts/mortGoule",
             "abilities" : ["morsure", "cannibalisme"]
 		},
 		"garde": {
@@ -63,6 +65,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : [3, 10],
             "argent" : [20, 50],
             "sexe" : "m",
+            "dieSound" : "morts/mortHumain",
             "abilities" : ["doubleAttaque", "taillade"]
 		},
 		"villageois": {
@@ -75,6 +78,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : [1, 5],
             "argent" : [10, 20],
             "sexe" : "m",
+            "dieSound" : "morts/mortHumain",
             "abilities" : ["doubleAttaque"]
 		},
 		"grosseGoule": {
@@ -87,6 +91,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : [4, 12],
             "argent" : [30, 50],
             "sexe" : "f",
+            "dieSound" : "morts/mortGoule",
             "abilities" : ["morsure", "doubleAttaque", "cannibalisme"]
 		}, 
 		"squelette": {
@@ -99,7 +104,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : [3, 10],
             "argent" : [15, 30],
             "sexe" : "m",
-            "dieSound" : "mortSquelette",
+            "dieSound" : "morts/mortSquelette",
             "abilities" : ["doubleAttaque", "taillade"],
             "suffixes" : ["manchot"]
 		}, 
@@ -113,6 +118,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : [5, 15],
             "argent" : [20, 50],
             "sexe" : "f",
+            "dieSound" : "morts/mortExperience",
             "abilities" : ["morsure", "doubleAttaque", "cannibalisme"]
 		}, 
 		"necromancien": {
@@ -125,6 +131,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : [5, 20],
             "argent" : [0, 0],
             "sexe" : "m",
+            "dieSound" : "morts/mortNecrom",
             "abilities" : ["volDeVie", "bouleFeu", "invoqueGoule"],
             "type" : "boss",
             "baseSuffixe" : "lancien",
@@ -140,6 +147,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "xp" : [10, 30],
             "argent" : [100, 150],
             "sexe" : "f",
+            "dieSound" : "morts/mortLiche",
             "abilities" : ["volDeVie", "volDeMana", "bouleFeu", "invoqueGrosseGoule"],
             "type" : "boss",
             "baseSuffixe" : "spectral",
@@ -151,18 +159,18 @@ define(["jquery", "app/utils/utils"], function($, Utils){
             "attaque" : [5, 15],
             "defense" : [0, 1],
             "vie" : [150, 150],
-            "mana" : [5, 15],
+            "mana" : [5, 10],
             "xp" : [5, 20],
             "argent" : [100, 150],
             "sexe" : "m",
+            "dieSound" : "morts/mortHumain",
             "abilities" : ["voler", "doubleAttaque", "taillade"],
             "type" : "boss",
-            "consos" : ["pomme", "fromage"],
+            "consos" : ["fromage"],
             "action" : function(monster) {
                 var life = monster.get("life");
                 var percentLife = Utils.toPercent(life.current, life.max);
                 if (percentLife < 30) {
-                    if (monster.has("pomme")) return monster.use("pomme");
                     if (monster.has("fromage")) return monster.use("fromage");
                 }
                 return false;

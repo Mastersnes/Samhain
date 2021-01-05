@@ -208,6 +208,7 @@ define(["jquery", "underscore",
                 case "perteGold":
                     var amount = params[0];
                     this.player.addGold(-amount);
+                    this.player.addAmountChange(-amount, "gold");
                     break;
                 case "sound":
                     var sound = params[0];

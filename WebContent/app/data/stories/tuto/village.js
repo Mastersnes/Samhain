@@ -67,7 +67,7 @@ define([], function() {
             "actions" : [
                 {
                     "name" : "suivant", "action" : [
-                        {"key" : "sound", "params" : ["eat"]},
+                        {"key" : "sound", "params" : ["items/eat"]},
                         {"key" : "heal", "params" : [100]},
                         {"key" : "go", "params" : ["echoppe"]}
                     ]

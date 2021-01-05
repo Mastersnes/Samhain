@@ -99,7 +99,17 @@ define([], function() {
         			]
         		},
         		{
-        			"appairIf" : [{"key" : "hasItem", "params" : ["viaS3"]}],
+        			"appairIf" : [{"key" : "hasItem", "params" : ["viaS3", "helpRoi2"]}],
+        			"name" : "go-left", "action" : [
+        				{"key" : "hasItem", "params" : [["necroS1Clean"], "necroS1", "necroS1Roi"]},
+        			    {"key" : "gain", "params" : ["necroS1Clean"]}
+        			]
+        		},
+        		{
+        			"appairIf" : [
+        			    {"key" : "hasItem", "params" : ["viaS3"]},
+        			    {"key" : "hasNoItem", "params" : ["helpRoi2"]}
+                    ],
         			"name" : "go-left", "action" : [
         				{"key" : "hasItem", "params" : [["necroS1Clean"], "necroS1", "necroS1Fight"]}
         			]
@@ -247,7 +257,7 @@ define([], function() {
         				{"key" : "hasMG", "params" : [1]}
         			],
         			"name" : "lancer-boule-feu", "action" : [
-        				{"key" : "sound", "params" : ["bouleFeu"]},
+        				{"key" : "sound", "params" : ["competences/bouleFeu"]},
         				{"key" : "gain", "params" : ["torcheExploseG"]},
         				{"key" : "healMG", "params" : [-1]},
         				{"key" : "go", "params" : ["necroGSTorcheKO"]}
@@ -276,7 +286,7 @@ define([], function() {
         				{"key" : "hasMG", "params" : [1]}
         			],
         			"name" : "lancer-boule-feu", "action" : [
-        				{"key" : "sound", "params" : ["bouleFeu"]},
+        				{"key" : "sound", "params" : ["competences/bouleFeu"]},
         				{"key" : "gain", "params" : ["torcheExploseD"]},
         				{"key" : "healMG", "params" : [-1]},
         				{"key" : "go", "params" : ["necroGSTorcheKO"]}
