@@ -43,8 +43,8 @@ function($, _, Utils, PopupUtils) {
 			        "defense" : 0,
 
 			        "equipment" : {
-			            "arme" : ["poing", "crocRoi"],
-			            "currentArme" : "crocRoi",
+			            "arme" : ["poing"],
+			            "currentArme" : "poing",
 			            "bouclier" : ["bras"],
 			            "currentBouclier" : "bras",
 			            "magie" : [],
