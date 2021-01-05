@@ -222,7 +222,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
                     // Si c'est le monstre, il nous vole et recupere une partie
                     if (me.isMonster) me.steal("gold", cible, steal, 0);
                     // Si c'est nous, le monstre ne perd rien
-                    else me.addGold(steal);
+                    else me.addGold(steal, true);
                 },
                 "element" : "gold"
             },

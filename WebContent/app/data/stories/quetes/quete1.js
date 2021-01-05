@@ -460,6 +460,7 @@ define([], function() {
                     "name" : "tomber",
                     "action" : [
                         {"key" :"hurt", "params" : [20]},
+                        {"key" : "sound", "params" : [ "hurt/hurt2" ]},
                         {"key" :"go", "params" : ["quete1-ville-7"]}
                     ]
                 }
@@ -630,6 +631,7 @@ define([], function() {
                     "name" : "sauver-poule",
                     "action" : [
                         {"key" :"hurt", "params" : [20]},
+                        {"key" : "sound", "params" : [ "hurt/hurt3" ]},
                         {"key" :"gain", "params" : ["poulet"]},
                         {"key" : "step-quete", "params" : [1]},
                         {"key" :"go", "params" : ["quete1-retour-4"]}

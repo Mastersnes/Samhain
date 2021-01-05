@@ -489,8 +489,11 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats, Quetes) {
 		/**
 		* Modification sur l'or
 		**/
-		this.addGold = function(amount) {
-		    if (amount > 0) this.addAmountChange(amount, "gold");
+		this.addGold = function(amount, noSound) {
+		    if (amount > 0 && !((this.data.gold+amount) > Utils.MAX_GOLD)) {
+		        if (!noSound) this.mediatheque.playSound("ui/gainArgent.wav");
+		        this.addAmountChange(amount, "gold");
+		    }
             this.data.gold += amount;
             if (this.data.gold < 0) this.data.gold = 0;
             if (this.data.gold > Utils.MAX_GOLD) {

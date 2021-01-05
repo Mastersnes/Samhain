@@ -34,6 +34,7 @@ define([], function() {
                     "name" : "fuir",
                     "action" : [
                         {"key" : "hurt","params" : [ 10 ]},
+                        {"key" : "sound", "params" : [ "hurt/hurt0" ]},
                         {"key" : "score", "params" : ["Leak"]},
                         {"key" : "go", "params" : [ "reposVillage" ]}
                     ]
