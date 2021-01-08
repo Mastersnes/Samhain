@@ -7,11 +7,12 @@ define(["jquery",
 function($, _, Utils, PopupUtils) {
 	'use strict';
 
-	return function(kongregateUtils, Textes) {
-	    this.init = function(kongregateUtils, Textes) {
+	return function(kongregateUtils, Textes, mediatheque) {
+	    this.init = function(kongregateUtils, Textes, mediatheque) {
 			this.el = "";
 			this.kongregateUtils = kongregateUtils;
 			this.Textes = Textes;
+			this.mediatheque = mediatheque;
 
 			this.initSaveData();
 		};
@@ -142,9 +143,13 @@ function($, _, Utils, PopupUtils) {
                 console.log("Succes de l'envoi de la nouvelle traduction avec le status", status);
                 that.traductions.toSend = {};
                 window.localStorage.setItem(Utils.name + "Traductions", JSON.stringify(that.traductions));
+
+                that.mediatheque.playSound("ui/postit.wav");
                 PopupUtils.alert(that.Textes, "traduction-success", "continue");
             }, "POST", false, function(e) {
                 console.log("Erreur !!!", e);
+
+                that.mediatheque.playSound("ui/postit.wav");
                 PopupUtils.alert(that.Textes, "traduction-error", "continue");
             });
 		};
@@ -234,6 +239,6 @@ function($, _, Utils, PopupUtils) {
 			return this.saveData[key];
 		};
 
-		this.init(kongregateUtils, Textes);
+		this.init(kongregateUtils, Textes, mediatheque);
 	};
 });

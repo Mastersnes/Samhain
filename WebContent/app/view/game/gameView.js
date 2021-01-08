@@ -177,6 +177,7 @@ function($, _, Utils, PopupUtils, page,
             this.boutiqueView.open(items, onPurchase, onNoPurchase);
         };
         this.glossaire = function(key, suffixe) {
+            this.mediatheque.playSound("ui/openGlossaire.wav");
             this.glossaireView.show(key, suffixe);
         };
         this.jeuGarde = function(but, onWin, onFail, onAbandon, startMise) {
@@ -236,7 +237,10 @@ function($, _, Utils, PopupUtils, page,
                     console.log("Bravo ! Vous l'avez =) !");
                     that.recompenseManager.addSuccess("EasterEggs");
                     return
-                } else if (that.easterEggs < 5) that.glossaireView.list();
+                } else if (that.easterEggs < 5) {
+                    that.mediatheque.playSound("ui/openGlossaire.wav");
+                    that.glossaireView.list();
+                }
 
                 that.easterEggs = 0;
             });

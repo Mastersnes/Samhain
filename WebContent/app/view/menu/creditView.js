@@ -95,6 +95,7 @@ define(["jquery", "underscore",
             this.el.find(".canClose").click(function(e) {
                 var target = $(e.target);
                 if (target.hasClass("canClose")) {
+                    that.mediatheque.playSound("ui/fermerPopup.wav");
                     that.el.fadeOut();
                     that.stopText();
                 }

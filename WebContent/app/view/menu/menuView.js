@@ -31,7 +31,7 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate,
             this.mediatheque.loadAll();
 
             this.kongregateUtils = new Kongregate(Textes);
-            this.saveManager = new SaveManager(this.kongregateUtils, Textes);
+            this.saveManager = new SaveManager(this.kongregateUtils, Textes, this.mediatheque);
             this.Textes = Textes;
             this.Textes.setSaveManager(this.saveManager);
             this.Textes.loadLanguage();
@@ -112,6 +112,7 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate,
 			$("#new").click(function() {
 			    if (that.saveManager.checkSave()) {
 			        that.el.find("carnet boutons").fadeOut();
+			        that.mediatheque.playSound("ui/postit.wav");
 					PopupUtils.confirm(Textes, "eraseSave", function() {
 				        that.saveManager.eraseSave();
 						that.loadGame();

@@ -94,7 +94,7 @@ actionsContainer action[type="baton"] {
 actionsContainer action[type="epee"] {
  background-image: url("../img/game/actions/epee.png");
 }
-actionsContainer action[type="croc"] {
+actionsContainer action[type="crocRoi"] {
  background-image: url("../img/game/actions/croc.png");
 }
 /** Defense **/

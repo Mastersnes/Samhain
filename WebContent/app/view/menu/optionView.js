@@ -73,7 +73,10 @@ define(["jquery",
             var that = this;
             this.el.find(".canClose").click(function(e) {
                 var target = $(e.target);
-                if (target.hasClass("canClose")) that.el.fadeOut();
+                if (target.hasClass("canClose")){
+                    that.mediatheque.playSound("ui/fermerPopup.wav");
+                    that.el.fadeOut();
+                }
             });
             this.el.find("flag").click(function(e) {
                 if ($(this).hasClass("selected")) return;

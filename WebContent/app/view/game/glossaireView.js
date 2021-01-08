@@ -120,6 +120,7 @@ define(["jquery", "underscore",
             this.el.find("marqueur[name='" + found + "']").addClass("selected");
 
             this.el.find(".description").show();
+
             this.el.fadeIn();
         };
 
@@ -309,7 +310,10 @@ define(["jquery", "underscore",
             var that = this;
             this.el.find(".canClose").click(function(e) {
                 var target = $(e.target);
-                if (target.hasClass("canClose")) that.el.fadeOut();
+                if (target.hasClass("canClose")) {
+                    that.mediatheque.playSound("ui/closeInventaire.wav");
+                    that.el.fadeOut();
+                }
             });
             this.el.find(".alphabet marqueur").click(function() {
                 var id = parseInt($(this).attr("id"));

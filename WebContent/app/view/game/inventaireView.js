@@ -58,6 +58,8 @@ define(["jquery", "underscore",
             this.player.arme();
             this.player.bouclier();
             this.render();
+
+            this.mediatheque.playSound("ui/openInventaire.wav");
             this.el.fadeIn();
             this.refreshStats();
         };
@@ -151,6 +153,7 @@ define(["jquery", "underscore",
             this.el.find("armes element").click(function() {
                 var coche = $(this).find("case");
                 if (!coche.hasClass("coche")) {
+                    that.mediatheque.playSound("ui/crayon.wav");
                     that.el.find("armes case").removeClass("coche");
                     coche.addClass("coche");
                     that.player.selectArme($(this).attr("id"));
@@ -160,6 +163,7 @@ define(["jquery", "underscore",
             this.el.find("boucliers element").click(function() {
                 var coche = $(this).find("case");
                 if (!coche.hasClass("coche")) {
+                    that.mediatheque.playSound("ui/crayon.wav");
                     that.el.find("boucliers case").removeClass("coche");
                     coche.addClass("coche");
                     that.player.selectBouclier($(this).attr("id"));
@@ -223,6 +227,7 @@ define(["jquery", "underscore",
                 if (target.hasClass("canClose")) {
                     that.inventaireOpen = false;
                     $("carnet").removeClass("hide");
+                    that.mediatheque.playSound("ui/closeInventaire.wav");
                     that.el.fadeOut();
                 }
             });
