@@ -27,8 +27,8 @@ define([],
                                         {"name": "bandit", "suffixe":"debile"}
                                     ], "didacticiel-combat-win", "didacticiel-combat-lose",
                                     [
-                                        ["didacticiel-combat-texte-1", "didacticiel-combat-texte-2"],
-                                        ["didacticiel-combat-texte-3", "didacticiel-combat-texte-4"]
+                                        ["didacticiel-combat-texte-1", "didacticiel-combat-texte-2", "clickToContinue"],
+                                        ["didacticiel-combat-texte-3", "didacticiel-combat-texte-4", "clickToContinue"]
                                     ]
                                 ]}
                             ]

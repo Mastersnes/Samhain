@@ -54,7 +54,7 @@ define([], function(){
         	eo : "Vi demandas vin certe, pri kio mi parolas, ne?"
         },
         "didacticiel-presentation-texte-3" : {
-        	fr : "’Samhain’ est un monde fantastique, fait de danger et de mystères, dans lequel chaque action a des répercussions&nbsp;!",
+        	fr : "’Samhain’ est un monde fantastique, fait de dangers et de mystères, dans lequel chaque action a des répercussions&nbsp;!",
         	en : "’Samhain’ is a fantastic world made of dangers and mysteries in which each action has consequences!",
         	eo : "’Samhain’ estas fantazia mondo, farita el danĝeroj kaj misterojs, en kiu ĉiu ago havas konsekvencojn!"
         },
