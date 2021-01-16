@@ -160,7 +160,17 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
 		this.attaque = function(cible, withDef) {
 		    var attaque = this.data.attaque;
             var degats = Utils.rand(attaque[0], attaque[1], true);
+
             if (degats < 0) degats = 0;
+            if (degats) {
+                var rand = Utils.rand(0, this.mediatheque.hurtNb);
+                this.mediatheque.playSound("hurt/hurt"+rand+".wav");
+            } else {
+                if (!blockSound) blockSound = "block";
+                this.mediatheque.playSound(blockSound + ".wav");
+            }
+
+
             return cible.hurt(degats, withDef);
         };
         this.hurt = function(amount, withDef, element) {
@@ -414,14 +424,7 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
 
             if (!actionDone) {
                 // Attaque classique
-                var degats = this.attaque(player, true);
-                if (degats) {
-                    var rand = Utils.rand(0, this.mediatheque.hurtNb);
-                    this.mediatheque.playSound("hurt/hurt"+rand+".wav");
-                } else {
-                    if (!blockSound) blockSound = "block";
-                    this.mediatheque.playSound(blockSound + ".wav");
-                }
+                this.attaque(player, true);
             }
 
             this.etatsManager.infligeEtats();

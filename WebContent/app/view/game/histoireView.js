@@ -45,13 +45,12 @@ define(["jquery", "underscore",
             this.el.fadeIn();
 
             if (newLieu.before) newLieu.before(this);
-            if (!this.didacticiel) {
-                if (newLieu.music) {
-                    this.playMusic("music/" + newLieu.music);
-                }else if (firstTime) this.playMusic();
 
-                this.player.data.lieu = newLieuId
-            }
+            if (newLieu.music) this.playMusic("music/" + newLieu.music);
+            else if (firstTime) this.playMusic();
+
+            if (!this.didacticiel) this.player.data.lieu = newLieuId;
+
             this.currentLieu = newLieu;
 
         	_.templateSettings.variable = "data";

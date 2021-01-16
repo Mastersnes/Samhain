@@ -134,6 +134,8 @@ function($, _, Utils, PopupUtils) {
 		this.sendTrad = function(tradView) {
 		    var that = this;
 		    var newTrad = Utils.encode(JSON.stringify(this.traductions.toSend));
+		    if (newTrad == "e30=") return;
+
 		    var request = {
                 "username" : "",
                 "secretPass" : Utils.hash("Samhain4842"),
