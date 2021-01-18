@@ -61,10 +61,10 @@ define(["jquery", "underscore",
 					view : this
 			};
 			this.el.html(template(templateData));
-			ViewUtils.verticalCenter();
 
 			setTimeout(function() {
 			    that.showActions(function() {that.positionneActions()});
+			    Utils.then(ViewUtils.verticalCenter(), 100);
 			}, 50);
 
 			this.makeEvents();
