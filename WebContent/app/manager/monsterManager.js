@@ -164,10 +164,10 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
             if (degats < 0) degats = 0;
             if (degats) {
                 var rand = Utils.rand(0, this.mediatheque.hurtNb);
-                this.mediatheque.playSound("hurt/hurt"+rand+".wav");
+                this.mediatheque.playSound("hurt/hurt"+rand+".ogg");
             } else {
                 if (!blockSound) blockSound = "block";
-                this.mediatheque.playSound(blockSound + ".wav");
+                this.mediatheque.playSound(blockSound + ".ogg");
             }
 
 
@@ -199,7 +199,7 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
                 if (this.template.dieSound) {
                     var that = this;
                     Utils.then(function() {
-                        that.mediatheque.playSound(that.template.dieSound + ".wav");
+                        that.mediatheque.playSound(that.template.dieSound + ".ogg");
                     }, 100);
                 }
             }
@@ -252,7 +252,7 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
                 }
 
                 // On joue le son de l'attaque apres la boucle pour ne pas tuer les oreilles du joueur
-                if (item.sound) this.mediatheque.playSound(item.sound + ".wav");
+                if (item.sound) this.mediatheque.playSound(item.sound + ".ogg");
                 this.removeConso(itemId);
                 return true;
             }else {
@@ -314,7 +314,7 @@ function($, _, Utils, EtatsManager, Glossaire, Suffixe, Items, Etats) {
                     }
                     actionDone = true;
                     // On joue le son de l'attaque apres la boucle pour ne pas tuer les oreilles du joueur
-                    if (abilitie.sound) this.mediatheque.playSound(abilitie.sound + ".wav");
+                    if (abilitie.sound) this.mediatheque.playSound(abilitie.sound + ".ogg");
                 } else console.log("Erreur monster spell - pas assez de mana", abilitie, cibles);
             }else console.log("Erreur monster spell - sort non possédé", itemId, cibles);
 

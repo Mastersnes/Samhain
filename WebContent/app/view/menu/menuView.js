@@ -27,7 +27,7 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate,
 		    this.scene = new SceneManager(this);
 		    
             this.mediatheque = new Mediatheque();
-            this.mediatheque.load("music/menu.mp3");
+            this.mediatheque.load("music/menu.ogg");
             this.mediatheque.loadAll();
 
             this.kongregateUtils = new Kongregate(Textes);
@@ -112,7 +112,7 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate,
 			$("#new").click(function() {
 			    if (that.saveManager.checkSave()) {
 			        that.el.find("carnet boutons").fadeOut();
-			        that.mediatheque.playSound("ui/postit.wav");
+			        that.mediatheque.playSound("ui/postit.ogg");
 					PopupUtils.confirm(Textes, "eraseSave", function() {
 				        that.saveManager.eraseSave();
 						that.loadGame();
@@ -154,7 +154,7 @@ function($, _, SceneManager, Utils, PopupUtils, Kongregate,
 			$(".page.bebel").click(function() {
 				that.mediatheque.stopAllMusic();
 				setTimeout(function() {
-					that.mediatheque.play("music/menu.mp3");
+					that.mediatheque.play("music/menu.ogg");
 					$(".page.bebel").fadeOut("slow", function() {
 						$(".page.bebel").remove();
 						$(".text#loading").remove();

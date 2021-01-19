@@ -6,7 +6,7 @@ function() {
     **/
     var data = {
         "didacticiel-start" : {
-            "music" : "story1.mp3",
+            "music" : "story1.ogg",
             "before" : function(histoire) {
                 $("carnet").addClass("hide");
                 $("loupe").addClass("hide");

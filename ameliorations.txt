@@ -8,7 +8,7 @@ Ameliorations :
 	-> Traduction Esperanto
 -> Sons
     -> revoir les sons
-    -> hurt.wav quand le joueur prend des degats
+    -> hurt.ogg quand le joueur prend des degats
 -> Combat
     -> effets : à voir
 -> Bugs

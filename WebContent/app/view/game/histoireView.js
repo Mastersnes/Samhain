@@ -211,7 +211,7 @@ define(["jquery", "underscore",
                     break;
                 case "sound":
                     var sound = params[0];
-                    this.mediatheque.playSound(sound + ".wav");
+                    this.mediatheque.playSound(sound + ".ogg");
                     break;
                 case "hasItem":
                     var items = params[0];

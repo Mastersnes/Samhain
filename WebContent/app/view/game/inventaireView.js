@@ -59,7 +59,7 @@ define(["jquery", "underscore",
             this.player.bouclier();
             this.render();
 
-            this.mediatheque.playSound("ui/openInventaire.wav");
+            this.mediatheque.playSound("ui/openInventaire.ogg");
             this.el.fadeIn();
             this.refreshStats();
         };
@@ -153,7 +153,7 @@ define(["jquery", "underscore",
             this.el.find("armes element").click(function() {
                 var coche = $(this).find("case");
                 if (!coche.hasClass("coche")) {
-                    that.mediatheque.playSound("ui/crayon.wav");
+                    that.mediatheque.playSound("ui/crayon.ogg");
                     that.el.find("armes case").removeClass("coche");
                     coche.addClass("coche");
                     that.player.selectArme($(this).attr("id"));
@@ -163,7 +163,7 @@ define(["jquery", "underscore",
             this.el.find("boucliers element").click(function() {
                 var coche = $(this).find("case");
                 if (!coche.hasClass("coche")) {
-                    that.mediatheque.playSound("ui/crayon.wav");
+                    that.mediatheque.playSound("ui/crayon.ogg");
                     that.el.find("boucliers case").removeClass("coche");
                     coche.addClass("coche");
                     that.player.selectBouclier($(this).attr("id"));
@@ -227,7 +227,7 @@ define(["jquery", "underscore",
                 if (target.hasClass("canClose")) {
                     that.inventaireOpen = false;
                     $("carnet").removeClass("hide");
-                    that.mediatheque.playSound("ui/closeInventaire.wav");
+                    that.mediatheque.playSound("ui/closeInventaire.ogg");
                     that.el.fadeOut();
                 }
             });

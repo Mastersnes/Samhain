@@ -74,7 +74,7 @@ define(["jquery",
             this.el.find(".canClose").click(function(e) {
                 var target = $(e.target);
                 if (target.hasClass("canClose")){
-                    that.mediatheque.playSound("ui/fermerPopup.wav");
+                    that.mediatheque.playSound("ui/fermerPopup.ogg");
                     that.el.fadeOut();
                 }
             });

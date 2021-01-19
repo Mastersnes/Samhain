@@ -146,12 +146,12 @@ function($, _, Utils, PopupUtils) {
                 that.traductions.toSend = {};
                 window.localStorage.setItem(Utils.name + "Traductions", JSON.stringify(that.traductions));
 
-                that.mediatheque.playSound("ui/postit.wav");
+                that.mediatheque.playSound("ui/postit.ogg");
                 PopupUtils.alert(that.Textes, "traduction-success", "continue");
             }, "POST", false, function(e) {
                 console.log("Erreur !!!", e);
 
-                that.mediatheque.playSound("ui/postit.wav");
+                that.mediatheque.playSound("ui/postit.ogg");
                 PopupUtils.alert(that.Textes, "traduction-error", "continue");
             });
 		};

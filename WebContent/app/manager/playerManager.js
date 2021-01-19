@@ -305,7 +305,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats, Quetes) {
 		        }
 
                 // On joue le son de l'attaque apres la boucle pour ne pas tuer les oreilles du joueur
-                this.mediatheque.playSound(item.sound + ".wav");
+                this.mediatheque.playSound(item.sound + ".ogg");
 		        this.removeEquipment("conso", itemId);
 		        return true;
 		    }else {
@@ -362,7 +362,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats, Quetes) {
                         if (magie.offensif) cible.showDegats(magie.anim);
                     }
                     // On joue le son de l'attaque apres la boucle pour ne pas tuer les oreilles du joueur
-                    this.mediatheque.playSound(magie.sound + ".wav");
+                    this.mediatheque.playSound(magie.sound + ".ogg");
                 } else console.log("Erreur spell - pas assez de mana", magie, cibles);
             }else console.log("Erreur spell - sort non possédé", itemId, cibles);
         };
@@ -402,7 +402,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats, Quetes) {
             }
             // On joue le son de l'attaque apres la boucle pour ne pas tuer les oreilles du joueur
             arme.offensif = true;
-            this.mediatheque.playSound(arme.sound + ".wav");
+            this.mediatheque.playSound(arme.sound + ".ogg");
         };
 		this.hurtPercent = function(amount, withDef, element) {
 		    var lifeMax = this.data.life.max;
@@ -491,7 +491,7 @@ function($, _, Utils, LevelManager, EtatsManager, Items, Etats, Quetes) {
 		**/
 		this.addGold = function(amount, noSound) {
 		    if (amount > 0 && !((this.data.gold+amount) > Utils.MAX_GOLD)) {
-		        if (!noSound) this.mediatheque.playSound("ui/gainArgent.wav");
+		        if (!noSound) this.mediatheque.playSound("ui/gainArgent.ogg");
 		        this.addAmountChange(amount, "gold");
 		    }
             this.data.gold += amount;

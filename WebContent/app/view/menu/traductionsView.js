@@ -165,7 +165,7 @@ define(["jquery", "underscore",
             this.el.find("content#fichiers .canClose").click(function(e) {
                 var target = $(e.target);
                 if (target.hasClass("canClose")) {
-                    that.mediatheque.playSound("ui/fermerPopup.wav");
+                    that.mediatheque.playSound("ui/fermerPopup.ogg");
                     that.el.fadeOut();
                     that.parent.refreshTextes();
                 }
@@ -173,7 +173,7 @@ define(["jquery", "underscore",
             this.el.find("content#textes .canClose").click(function(e) {
                 var target = $(e.target);
                 if (target.hasClass("canClose")) {
-                    that.mediatheque.playSound("ui/fermerPopup.wav");
+                    that.mediatheque.playSound("ui/fermerPopup.ogg");
                     that.parent.refreshTextes();
                     that.showFiles();
                 }
@@ -201,7 +201,7 @@ define(["jquery", "underscore",
                     that.source = that.current;
                 else that.cible = that.current;
 
-                that.mediatheque.playSound("ui/fermerPopup.wav");
+                that.mediatheque.playSound("ui/fermerPopup.ogg");
 
                 that.refreshTrads();
             });

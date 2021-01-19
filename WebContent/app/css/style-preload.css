@@ -9,3 +9,109 @@ preload {
 	background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
+/**
+* Menu
+**/
+preload.flags-preload {background-image: url("../img/menu/boutons/flags.png");}
+preload.credit-popup-preload {background-image: url("../img/menu/popup/credit.png");}
+preload.newgame-popup-preload {background-image: url("../img/menu/popup/newgame.png");}
+preload.option-popup-preload {background-image: url("../img/menu/popup/option.png");}
+preload.popup-popup-preload {background-image: url("../img/menu/popup/popup.png");}
+preload.traductions-popup-preload {background-image: url("../img/menu/popup/traductions.jpg");}
+preload.background-menu-preload {background-image: url("../img/menu/background.jpg");}
+
+/**
+* Actions - Anim
+**/
+preload.baton-anim-preload {background-image: url("../img/game/actions/anim/baton.png");}
+preload.bouleFeu-anim-preload {background-image: url("../img/game/actions/anim/bouleFeu.png");}
+preload.croc-anim-preload {background-image: url("../img/game/actions/anim/croc.png");}
+preload.dague-anim-preload {background-image: url("../img/game/actions/anim/dague.png");}
+preload.epee-anim-preload {background-image: url("../img/game/actions/anim/epee.png");}
+preload.poing-anim-preload {background-image: url("../img/game/actions/anim/poing.png");}
+preload.venin-anim-preload {background-image: url("../img/game/actions/anim/venin.png");}
+
+/**
+* Actions
+**/
+preload.antidote-preload {background-image: url("../img/game/actions/antidote.png");}
+preload.basique-preload {background-image: url("../img/game/actions/basique.png");}
+preload.baton-preload {background-image: url("../img/game/actions/baton.png");}
+preload.bouclierBois-preload {background-image: url("../img/game/actions/bouclierBois.png");}
+preload.bouclierFer-preload {background-image: url("../img/game/actions/bouclierFer.png");}
+preload.bouleFeu-preload {background-image: url("../img/game/actions/bouleFeu.png");}
+preload.bras-preload {background-image: url("../img/game/actions/bras.png");}
+preload.cible-preload {background-image: url("../img/game/actions/cible.png");}
+preload.croc-preload {background-image: url("../img/game/actions/croc.png");}
+preload.dague-preload {background-image: url("../img/game/actions/dague.png");}
+preload.elixir-preload {background-image: url("../img/game/actions/elixir.png");}
+preload.epee-preload {background-image: url("../img/game/actions/epee.png");}
+preload.fromage-preload {background-image: url("../img/game/actions/fromage.png");}
+preload.guerison-preload {background-image: url("../img/game/actions/guerison.png");}
+preload.poing-preload {background-image: url("../img/game/actions/poing.png");}
+preload.pomme-preload {background-image: url("../img/game/actions/pomme.png");}
+preload.potionMana-preload {background-image: url("../img/game/actions/potionMana.png");}
+preload.potionSante-preload {background-image: url("../img/game/actions/potionSante.png");}
+preload.soin-preload {background-image: url("../img/game/actions/soin.png");}
+preload.venin-preload {background-image: url("../img/game/actions/venin.png");}
+
+/**
+* Etats
+**/
+preload.feu-etat-preload {background-image: url("../img/game/etats/feu.png");}
+preload.poison-etat-preload {background-image: url("../img/game/etats/poison.png");}
+preload.saignement-etat-preload {background-image: url("../img/game/etats/saignement.png");}
+preload.sante-etat-preload {background-image: url("../img/game/etats/sante.png");}
+
+/**
+* Interface
+**/
+preload.marqueurs-preload {background-image: url("../img/game/interface/bouton/marqueurs.png");}
+preload.feu-degats-preload {background-image: url("../img/game/interface/degats/feu.png");}
+preload.normal-degats-preload {background-image: url("../img/game/interface/degats/normal.png");}
+preload.poison-degats-preload {background-image: url("../img/game/interface/degats/poison.png");}
+preload.background-preload {background-image: url("../img/game/interface/background.jpg");}
+preload.glossaire-preload {background-image: url("../img/game/interface/glossaire.png");}
+preload.inventaire-preload {background-image: url("../img/game/interface/inventaire.png");}
+
+/**
+* Pokgard
+**/
+preload.legende-pokgard-preload {background-image: url("../img/game/interface/pokgard/legende.png");}
+preload.mise-pokgard-preload {background-image: url("../img/game/interface/pokgard/mise.png");}
+
+/**
+* UI
+**/
+preload.sante-buff-preload {background-image: url("../img/game/interface/ui/buff/sante.png");}
+preload.feu-life-preload {background-image: url("../img/game/interface/ui/life/feu.png");}
+preload.normal-life-preload {background-image: url("../img/game/interface/ui/life/normal.png");}
+preload.poison-life-preload {background-image: url("../img/game/interface/ui/life/poison.png");}
+preload.saignement-life-preload {background-image: url("../img/game/interface/ui/life/saignement.png");}
+
+preload.bourse-preload {background-image: url("../img/game/interface/ui/bourse.png");}
+preload.carnet-preload {background-image: url("../img/game/interface/ui/carnet.png");}
+preload.checkbox-preload {background-image: url("../img/game/interface/ui/checkbox.png");}
+preload.loupe-preload {background-image: url("../img/game/interface/ui/loupe.png");}
+preload.mana-preload {background-image: url("../img/game/interface/ui/mana.png");}
+preload.piece-preload {background-image: url("../img/game/interface/ui/piece.png");}
+preload.plaque-preload {background-image: url("../img/game/interface/ui/plaque.png");}
+preload.xp-preload {background-image: url("../img/game/interface/ui/xp.png");}
+
+/**
+* Monsters
+**/
+preload.araignee-monster-preload {background-image: url("../img/game/monsters/araignee.png");}
+preload.bandit-monster-preload {background-image: url("../img/game/monsters/bandit.png");}
+preload.experience-monster-preload {background-image: url("../img/game/monsters/experience.png");}
+preload.garde-monster-preload {background-image: url("../img/game/monsters/garde.png");}
+preload.goule-monster-preload {background-image: url("../img/game/monsters/goule.png");}
+preload.grosseGoule-monster-preload {background-image: url("../img/game/monsters/grosseGoule.png");}
+preload.liche-monster-preload {background-image: url("../img/game/monsters/liche.png");}
+preload.necromancien-monster-preload {background-image: url("../img/game/monsters/necromancien.png");}
+preload.roiAraignee-monster-preload {background-image: url("../img/game/monsters/roiAraignee.png");}
+preload.roiBandit-monster-preload {background-image: url("../img/game/monsters/roiBandit.png");}
+preload.squelette-monster-preload {background-image: url("../img/game/monsters/squelette.png");}
+preload.squeletteManchot-monster-preload {background-image: url("../img/game/monsters/squeletteManchot.png");}
+preload.villageois-monster-preload {background-image: url("../img/game/monsters/villageois.png");}
