@@ -133,11 +133,12 @@ function($, _, Utils, PopupUtils) {
 		};
 		this.sendTrad = function(tradView) {
 		    var that = this;
-		    var newTrad = Utils.encode(JSON.stringify(this.traductions.toSend));
-		    if (newTrad == "e30=") return;
+		    var newTrad = JSON.stringify(this.traductions.toSend);
+		    if (!newTrad) return;
 
+            var username = this.kongregateUtils.username;
 		    var request = {
-                "username" : "",
+                "username" : username,
                 "secretPass" : Utils.hash("Samhain4842"),
                 "newTrad" : newTrad
             };
@@ -171,7 +172,7 @@ function($, _, Utils, PopupUtils) {
 			this.saveSession = window.localStorage.getItem(Utils.name);
 			if (!this.saveSession) {
 			    var username = this.kongregateUtils.username;
-			    if (this.kongregateUtils.isLoad && username) {
+			    if (this.kongregateUtils.isLoad && username && username != "Guest") {
                     var that = this;
                     var request = {
                         "username" : username,
@@ -207,7 +208,7 @@ function($, _, Utils, PopupUtils) {
 		this.saveInCloud = function() {
 			var saveJeton = Utils.encode(JSON.stringify(this.saveData));
 		    var username = this.kongregateUtils.username;
-            if (this.kongregateUtils.isLoad && username) {
+            if (this.kongregateUtils.isLoad && username && username != "Guest") {
                 var that = this;
                 var request = {
                     "username" : username,

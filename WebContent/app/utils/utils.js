@@ -42,7 +42,7 @@ define(["jquery", "sha"], function($, sha){
 		then : function(callback, timeout) {
 		    if (!timeout) timeout = 1000;
 		    setTimeout(function() {
-		        callback();
+		        if (callback && callback.call) callback.call();
 		    }, timeout);
 		},
 
@@ -53,6 +53,7 @@ define(["jquery", "sha"], function($, sha){
 		decode : function(str) {
 			return atob(str);
 		},
+
 		decodeHtml : function(str) {
 			var fake = $("<textarea>");
 			fake.html(str);

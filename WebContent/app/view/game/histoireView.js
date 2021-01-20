@@ -64,7 +64,7 @@ define(["jquery", "underscore",
 
 			setTimeout(function() {
 			    that.showActions(function() {that.positionneActions()});
-			    Utils.then(ViewUtils.verticalCenter(), 100);
+			    Utils.then(ViewUtils.verticalCenter, 100);
 			}, 50);
 
 			this.makeEvents();
