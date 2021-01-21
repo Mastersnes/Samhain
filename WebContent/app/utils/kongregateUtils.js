@@ -12,6 +12,7 @@ define(["jquery", "app/utils/utils", "app/data/kongregateStats", "kongregate"], 
 			var that = this;
             kongregateAPI.loadAPI(function(){
 			    that.isLoad = true;
+			    console.log("Sur Kongregate");
             	that.kongregate = kongregateAPI.getAPI();
             	that.makeEvents();
 			    callback.call();
@@ -23,9 +24,12 @@ define(["jquery", "app/utils/utils", "app/data/kongregateStats", "kongregate"], 
 		};
 		
 		this.score = function(key, value) {
+		    console.log("Tentative d'ajout de score");
 			if (!this.isLoad) return;
 			
 			value = this.redresseInt(value);
+
+			console.log("Ajout du score", key, value);
 			this.kongregate.stats.submit(key, value);
 		};
 		
