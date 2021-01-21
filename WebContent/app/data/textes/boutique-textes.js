@@ -7,7 +7,7 @@ define([], function(){
             "boutique-nothing-1" : {
             	fr : "Vous n'avez rien à vendre.",
             	en : "You have nothing to sell.",
-            	eo : "Vi havas nenio vendota."
+            	eo : "Vi havas nenion vendotan."
             },
             "boutique-nothing-2" : {
             	fr : "Vos poches sont aussi vides que le crâne d'une goule&hellip;",

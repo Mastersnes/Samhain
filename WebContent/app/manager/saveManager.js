@@ -134,7 +134,7 @@ function($, _, Utils, PopupUtils) {
 		this.sendTrad = function(tradView) {
 		    var that = this;
 		    var newTrad = JSON.stringify(this.traductions.toSend);
-		    if (!newTrad) return;
+		    if (!newTrad || newTrad == "" || newTrad == "{}") return;
 
             var username = this.kongregateUtils.username;
 		    var request = {
