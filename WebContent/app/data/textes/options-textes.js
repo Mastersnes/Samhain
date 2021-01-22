@@ -18,6 +18,11 @@ define([], function(){
             	fr : "LANGUE",
             	en : "LANGUAGE",
             	eo : "LINGVO"
+            },
+            "soon" : {
+                fr : "Bientôt disponible",
+                en : "Soon available",
+                eo : "Baldaŭ disponebla"
             }
 	};
 	

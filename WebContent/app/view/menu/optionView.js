@@ -81,6 +81,7 @@ define(["jquery",
             this.el.find("flag").click(function(e) {
                 if ($(this).hasClass("selected")) return;
                 var lang = $(this).attr("id");
+                if (id == "eo") return;
                 that.Textes.setLanguage(lang);
                 that.parent.refreshTextes();
                 that.refresh();
