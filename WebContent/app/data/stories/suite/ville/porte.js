@@ -15,26 +15,23 @@ define([], function() {
                     ]
                 },
                 {
-                    "name" : "lattaquer-m",
+                    "name" : "marchander",
                     "action" : [
-                        {"key" : "go", "params" : [ "ville-porte-attaquer-1"]}
+                        {"key" : "boutique", "params" : [[
+                             "pomme", "fromage"
+                        ], "ville-porte-retour-achat", "ville-porte-retour-achat"]}
                     ]
-                },
+                }
+            ]
+        },
+
+        "ville-porte-retour-achat" : {
+            "textes" : ["ville-porte-retour-achat-texte-1"],
+            "actions" : [
                 {
-                    "name" : "linsulter-m",
+                    "name" : "demander-entrer",
                     "action" : [
-                        {"key" : "go", "params" : [ "ville-porte-insulter-1"]}
-                    ]
-                },
-                {
-                    "name" : "contourner",
-                    "action" : [
-                        {"key" : "random", "params" : [
-                            "ville-porte-contourner-reussite-1"
-                            , "ville-porte-contourner-echec-1", "ville-porte-contourner-echec-1",
-                            "ville-porte-contourner-echec-1", "ville-porte-contourner-echec-1",
-                            "ville-porte-contourner-echec-1", "ville-porte-contourner-echec-1"
-                        ]}
+                        {"key" : "go", "params" : [ "ville-porte-demander-1"]}
                     ]
                 }
             ]
@@ -137,7 +134,9 @@ define([], function() {
                     "name" : "contourner",
                     "action" : [
                         {"key" : "random", "params" : [
-                            "ville-porte-contourner-reussite-1", "ville-porte-contourner-echec-1",
+                            "ville-porte-contourner-reussite-1",
+                            "ville-porte-contourner-echec-1", "ville-porte-contourner-echec-1",
+                            "ville-porte-contourner-echec-1", "ville-porte-contourner-echec-1",
                             "ville-porte-contourner-echec-1", "ville-porte-contourner-echec-1"
                         ]}
                     ]

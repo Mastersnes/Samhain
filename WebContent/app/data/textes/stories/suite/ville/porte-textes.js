@@ -22,6 +22,12 @@ define([], function(){
         	eo : ""
         },
 
+        "ville-porte-retour-achat-texte-1" : {
+            fr : "Fier de vos affaires, vous reprenez la discussion là où vous l'aviez commencée.",
+            en : "Proud of your deals, you continue the discussion where you had begun it.",
+            eo : ""
+        },
+
         /**
         * Demander à entrer
         **/

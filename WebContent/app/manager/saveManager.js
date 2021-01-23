@@ -178,6 +178,7 @@ function($, _, Utils, PopupUtils) {
                         "username" : username,
                         "secretPass" : Utils.hash("Samhain4842" + username)
                     };
+                    console.log("Recuperation de la sauvegarde", request);
                     Utils.load("https://bebel-server.herokuapp.com/samhain/getSave", request, function(data, status) {
                         console.log("Succes de la recuperation de la sauvegarde", data, "avec le status", status);
                         that.saveSession = data.data;
