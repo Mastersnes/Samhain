@@ -19,22 +19,18 @@ Dernieres mises à jour :
 
 - Mise en place d'un sexe pour les monstres
 
-Modifications prevues pour la suite :
-
 - Un écran d'explication
 
 - Un ciblage automatique du monstre dans le cas où il reste plus qu'un ennemie (Merci à -Adridu84- de JeuxVideo.com pour la superbe idée)
 
-- ajout d'un inventaire, il sera alors possible d'utiliser les consommables comme les potions ou le fromage hors combat. Il sera également possible de choisir son arme parmi celles obtenues.
+- ajout d'un inventaire
 
 - Ajout de l'argent
 
-- Ajout d'une ville que l'on pourra atteindre après la première quête. Dans cette ville, il sera possible d'acheter ou de vendre des objets (consommables, armes, armures, etc...) en fonction du niveau. Il sera également possible de chasser des monstres aléatoires ou de boire un coup à la taverne. La taverne permettra également de commencer de nouvelles quêtes inédites en fonction du niveau.
+- Ajout d'une ville
 
-N’hésitez pas à nous proposer des scénarios pour les nouvelles quêtes ! Si celui-ci est validé, votre nom apparaîtra alors dans les crédits du jeu !
+Je vous invites également à aimer notre page Les Jeux de Bebel sur Twitter : @lesjeuxdebebel
 
-Je vous invites également à aimer notre page Les Jeux de Bebel sur Facebook : https://www.facebook.com/Les-jeux-de-Bebel-175358759157852/
-
-Les Jeux de Bebel est un studio de développement de jeu par navigateur en français.
+Les Jeux de Bebel est un studio de développement de jeu par navigateur en français 100% Lorrain !
 
 Bonne soirée et bon jeu!
