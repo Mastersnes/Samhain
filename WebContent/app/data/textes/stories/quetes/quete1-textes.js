@@ -335,7 +335,7 @@ define([], function(){
         "quete1-champ-menacer-2-texte-1" : {
         	fr : "Les brutes s'écroulent au sol. Maintenant, ils ont l'air bien intimidés.",
         	en : "The brutes collapse on the ground. Now, they seem really intimidate.",
-        	eo : "La kruduoj detruiĝas sur la grundo. Nun, ili ŝajnas bone timigitaj."
+        	eo : "La kruduoj falas sur la grundo. Nun, ili ŝajnas bone timigitaj."
         },
         "quete1-champ-menacer-2-texte-2" : {
         	fr : "Le chef, encore conscient, semble beaucoup plus enclin à vous aider maintenant&nbsp;:",
@@ -610,7 +610,7 @@ define([], function(){
         "quete1-taverne-2-texte-3" : {
         	fr : "Le tavernier, occupé à essuyer les brocs, vous salue d'un signe de tête.",
         	en : "The innkeeper, busy wiping the jugs, greeting you by a nod.",
-        	eo : "La albergisto, okupata viŝi la kruĉoj, kapsalutas vin."
+        	eo : "La tavernestro, okupata viŝi la kruĉoj, kapsalutas vin."
         },
 
         "quete1-taverne-3-texte-1" : {
@@ -663,7 +663,7 @@ define([], function(){
         "quete1-taverne-5-texte-2" : {
         	fr : "Vous profitez du fait que le cuistot soit encore inconscient pour attraper la poulette et filer comme une crème (à l'anglaise).",
         	en : "You take advantage that the cook is still unconscious to catch the pullet and run away.",
-        	eo : "Vi profitas, ke la kuiristo estu ankoraŭ senkonscia por ekkapti la kokidino kaj forkuri."
+        	eo : "Vi profitas, ke la kuiristo estu ankoraŭ senkonscia por ekkapti la kokidinon kaj forkuri."
         },
 
         /**

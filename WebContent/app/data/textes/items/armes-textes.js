@@ -7,7 +7,8 @@ define([], function(){
 	        "piocher" : {
             	fr : "Piocher une carte",
             	en : "Draw a card",
-            	eo : "Eltiri karto"
+            	eo : "Eltiri karton"
+
             },
             "poing" : {
             	fr : "Poing",
@@ -22,7 +23,7 @@ define([], function(){
             "poing-texte" : {
             	fr : "C'est simplement votre poing&hellip; Depuis votre naissance, il ne vous a pas quitté.",
             	en : "It's just your fist&hellip; Since your birth, it hasn't left you.",
-            	eo : "Tio estas simple via pugno&hellip; Ekde via nasko, ĝi ne forlasis vin."
+            	eo : "Tio estas simple via pugno&hellip; Ekde via naskiĝo, ĝi ne forlasis vin."
             },
             "baton" : {
             	fr : "Bâton",
@@ -32,12 +33,12 @@ define([], function(){
             "baton-action" : {
             	fr : "Coup de Bâton",
             	en : "Stick Stroke",
-            	eo : "Bastonobato"
+            	eo : "Bastonbato"
             },
             "baton-texte" : {
             	fr : "Un gros bâton qui peut faire très mal&hellip;",
             	en : "A big stick that can be very painful&hellip;",
-            	eo : "Granda bastono kiu povas tre dolorigi&hellip;"
+            	eo : "Granda bastono, kiu povas tre dolorigi&hellip;"
             },
             "dague" : {
             	fr : "Dague",
@@ -52,7 +53,7 @@ define([], function(){
             "dague-texte" : {
             	fr : "Une belle dague toute brillante. Sa lame semble tranchante comme un rasoir.",
             	en : "A beautiful and shiny dagger. Its blade looks sharp as a razor.",
-            	eo : "Bela dago tute brila. Ĝia klingo aspektas akra kiel razilo."
+            	eo : "Bela dago tute brila. Ĝia klingo shajnas akra kiel razilo."
             },
             "epee" : {
             	fr : "Épée",
@@ -67,7 +68,7 @@ define([], function(){
             "epee-texte" : {
             	fr : "Une grosse épée à une main. Elle est aussi lourde que tranchante&nbsp;!",
             	en : "A big one-handed sword. It's as heavy as sharp!",
-            	eo : "Granda unu-mana glavo. Ĝi estas ankaŭ peza kiel akra!"
+            	eo : "Granda unumana glavo. Ĝi estas tiel peza kiel akra!"
             },
             "crocRoi" : {
             	fr : "Croc du roi",

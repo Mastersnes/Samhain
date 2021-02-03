@@ -14,12 +14,12 @@ define([
         "gagne-texte-1" : {
         	fr : "Félicitations, vous avez terminé le jeu&nbsp;!",
         	en : "Congratulations, you’ve won the game!",
-        	eo : "Gratulon! Vi estas fininta la ludo!"
+        	eo : "Gratulon! Vi estas fininta la ludon!"
         },
         "retry" : {
         	fr : "Vous pouvez aussi retenter votre chance en lançant une nouvelle partie.",
         	en : "You can also try again by starting a new game.",
-        	eo : "Vi povas ankaŭ reprovi vian ŝancon per lanĉanta novan ludon."
+        	eo : "Vi povas ankaŭ reprovi vian ŝancon lanĉante novan ludon."
         }
 	};
 	

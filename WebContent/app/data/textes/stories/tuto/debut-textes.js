@@ -33,8 +33,8 @@ define([], function(){
         	eo : ""
         },
         "repos2-texte-3" : {
-        	fr : "Vous vous levez en sursaut, quand deux <span key='araignee'>araignées</span> vous sautent dessus&nbsp;!",
-        	en : "You get up in a jolt when two <span key='araignee'>spiders</span> jump on you!",
+        	fr : "Vous vous levez en sursaut, quand trois <span key='araignee'>araignées</span> vous sautent dessus&nbsp;!",
+        	en : "You get up in a jolt when three <span key='araignee'>spiders</span> jump on you!",
         	eo : ""
         },
 

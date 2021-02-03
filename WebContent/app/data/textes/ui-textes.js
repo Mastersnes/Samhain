@@ -14,7 +14,7 @@ define([], function(){
             "rate" : {
             	fr : "Raté",
             	en : "Missed",
-            	eo : "Maltrafi"
+            	eo : "Maltrafita"
             },
             "vie" : {
             	fr : "Vie",
@@ -44,12 +44,12 @@ define([], function(){
             "manaSteal" : {
             	fr : "Vol de mana",
             	en : "Mana steal",
-            	eo : "Magioŝtelo"
+            	eo : "Magiŝtelo"
             },
             "manaCost" : {
             	fr : "Coût en mana",
             	en : "Mana Cost",
-            	eo : "Magiokosto"
+            	eo : "Magikosto"
             },
             "defense" : {
             	fr : "Défense",
@@ -79,12 +79,12 @@ define([], function(){
             "manaGain" : {
             	fr : "Gain de mana",
             	en : "Mana gain",
-            	eo : "Magiogajno"
+            	eo : "Magigajno"
             },
             "multicible" : {
             	fr : "Multicible",
             	en : "Multi-target",
-            	eo : "Multcelo"
+            	eo : "Multcela"
             },
             "attackGain" : {
             	fr : "Gain d'attaque",
@@ -99,7 +99,7 @@ define([], function(){
             "competences" : {
             	fr : "Compétences",
             	en : "Skills",
-            	eo : "Kompetentoj"
+            	eo : "Kapabloj"
             },
             "items" : {
             	fr : "Objets",
@@ -109,12 +109,12 @@ define([], function(){
             "inflige" : {
             	fr : "Inflige",
             	en : "Inflicts",
-            	eo : "Okazigas"
+            	eo : "Kaŭzas"
             },
             "octroie" : {
-            	fr : "Octroi",
+            	fr : "Octroie",
             	en : "Grants",
-            	eo : "Akordigas"
+            	eo : "Donas"
             }
 	};
 	

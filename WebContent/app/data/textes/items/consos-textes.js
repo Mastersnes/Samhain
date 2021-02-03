@@ -52,7 +52,7 @@ define([], function(){
             "antidote-commentaire" : {
             	fr : "Soigne uniquement l'empoisonnement.",
             	en : "Only treats poisoning.",
-            	eo : "Kuracas nur la toksado."
+            	eo : "Kuracas nur la venenaĵo."
             },
             "fromage" : {
             	fr : "Fromage",

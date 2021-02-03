@@ -24,12 +24,12 @@ define([], function(){
         },
         "roiAraigneePotion-texte-2" : {
         	fr : "Mal en point, elle s'avance doucement vers vous.",
-        	en : "In a Bad way, he's slowly comes toward you.",
+        	en : "In a Bad way, she's slowly comes toward you.",
         	eo : ""
         },
         "roiAraigneePotion-texte-3" : {
         	fr : "Elle semble vouloir quelque chose&hellip;",
-        	en : "He seems to want something&hellip;",
+        	en : "She seems to want something&hellip;",
         	eo : ""
         },
 
@@ -210,7 +210,7 @@ define([], function(){
         },
         "roiAraigneeAgonie-texte-5" : {
         	fr : "Vous vous demandez ce qu'il a voulu dire&hellip;",
-        	en : "You wonder what he meant&hellip;",
+        	en : "You wonder what she meant&hellip;",
         	eo : ""
         },
 

@@ -96,12 +96,12 @@ define([], function(){
         "lancer-boule-feu" : {
         	fr : "Lancer une boule de feu",
         	en : "Throwing a fireball",
-        	eo : "Lanĉi fajrobulo"
+        	eo : "Lanĉi fajrobulon"
         },
         "lancer-combat" : {
         	fr : "Lancer le combat",
         	en : "Launch the fight",
-        	eo : "Lanĉi la batalo"
+        	eo : "Lanĉi la batalon"
         },
 
         /**
@@ -110,27 +110,27 @@ define([], function(){
         "examine-sol" : {
         	fr : "Examiner le sol",
         	en : "Inspect the ground",
-        	eo : "Inspekti la grundo"
+        	eo : "Inspekti la grundon"
         },
         "examiner-lieux" : {
         	fr : "Examiner les lieux",
         	en : "Inspect the places",
-        	eo : "Inspekti la lokoj"
+        	eo : "Inspekti la lokojn"
         },
         "fouiller-lieux" : {
         	fr : "Fouiller les lieux",
         	en : "Search the places",
-        	eo : "Esplori la lokoj"
+        	eo : "Esplori la lokojn"
         },
         "fouille-corp" : {
         	fr : "Fouiller le corps",
         	en : "Search the corpse",
-        	eo : "Priserĉi la korpo"
+        	eo : "Priserĉi la korpon"
         },
         "fouille-corps" : {
         	fr : "Fouiller les corps",
         	en : "Search the corpses",
-        	eo : "Priserĉi la korpoj"
+        	eo : "Priserĉi la korpojn"
         },
         "fouiller" : {
         	fr : "Fouiller",
@@ -140,12 +140,12 @@ define([], function(){
         "fouiller-piece" : {
         	fr : "Fouiller la pièce",
         	en : "Search the room",
-        	eo : "Esplori la ĉambro"
+        	eo : "Esplori la ĉambron"
         },
         "fouiller-salle" : {
         	fr : "Fouiller la salle",
         	en : "Search the hall",
-        	eo : "Esplori la halo"
+        	eo : "Esplori la halon"
         },
         "laisser" : {
         	fr : "Laisser",
@@ -155,42 +155,42 @@ define([], function(){
         "fouiller-cercueil" : {
         	fr : "Fouiller les cercueils",
         	en : "Search the coffins",
-        	eo : "Priserĉi la ĉerkoj"
+        	eo : "Priserĉi la ĉerkojn"
         },
         "voir-torche-gauche" : {
         	fr : "Voir la torche de gauche",
         	en : "Look at the left torch",
-        	eo : "Vidi la maldekstra torĉo"
+        	eo : "Vidi la maldekstran torĉon"
         },
         "voir-torche-droite" : {
         	fr : "Voir la torche de droite",
         	en : "Look at the right torch",
-        	eo : "Vidi la dekstra torĉo"
+        	eo : "Vidi la dekstran torĉon"
         },
         "forcer-coffre" : {
         	fr : "Forcer le coffre",
         	en : "Forcing the trunk",
-        	eo : "Forci la kofro"
+        	eo : "Enrompi la kofron"
         },
         "examine-alentours" : {
         	fr : "Examiner les alentours",
         	en : "Look around",
-        	eo : "Inspekti ĉirkaŭaĵo"
+        	eo : "Inspekti ĉirkaŭaĵon"
         },
         "fouiller-table" : {
         	fr : "Fouiller la table",
         	en : "Search the table",
-        	eo : "Priserĉi la tablo"
+        	eo : "Priserĉi la tablon"
         },
         "examine-grange" : {
         	fr : "Examiner la grange",
         	en : "Examine the barn",
-        	eo : "Esplori la garbejo"
+        	eo : "Esplori la garbejon"
         },
         "fouiller-maison" : {
         	fr : "Fouiller les maisons",
         	en : "Search the houses",
-        	eo : "Inspekti la domoj"
+        	eo : "Inspekti la domojn"
         },
 
         /**
@@ -199,22 +199,22 @@ define([], function(){
         "utiliser-bougie" : {
         	fr : "Utiliser la bougie",
         	en : "Use the candle",
-        	eo : "Uzi la kandelo"
+        	eo : "Uzi la kandelon"
         },
         "prendre-bougie" : {
         	fr : "Prendre la bougie",
         	en : "Take the candle",
-        	eo : "Preni la kandelo"
+        	eo : "Preni la kandelon"
         },
         "prendre-croc" : {
         	fr : "Prendre le croc",
         	en : "Take the fang",
-        	eo : "Preni la dentego"
+        	eo : "Preni la dentegon"
         },
         "laisser-croc" : {
         	fr : "Laisser le croc",
         	en : "Leave the fang",
-        	eo : "Lasi la dentego"
+        	eo : "Lasi la dentegon"
         },
         "try-open" : {
         	fr : "Essayer de l'ouvrir",
@@ -229,12 +229,12 @@ define([], function(){
         "tout-prendre" : {
         	fr : "Tout prendre",
         	en : "Take everything",
-        	eo : "Ĉio preni"
+        	eo : "Ĉion preni"
         },
         "ouvrir-porte" : {
         	fr : "Ouvrir la porte",
         	en : "Open the door",
-        	eo : "Malfermi la pordo"
+        	eo : "Malfermi la pordon"
         },
         "diriger-porte" : {
         	fr : "Se diriger vers la porte",
@@ -249,57 +249,57 @@ define([], function(){
         "utiliser-clef" : {
         	fr : "Utiliser la clef",
         	en : "Use the key",
-        	eo : "Uzi la ŝlosilo"
+        	eo : "Uzi la ŝlosilon"
         },
         "prendre-parchemin" : {
         	fr : "Prendre les parchemins",
         	en : "Take the scrolls",
-        	eo : "Preni la pergamenoj"
+        	eo : "Preni la pergamenojn"
         },
         "mange-continue" : {
         	fr : "Manger et continuer",
         	en : "Eat and continue",
-        	eo : "Manĝi kaj daŭri"
+        	eo : "Manĝi kaj daŭrigi"
         },
         "retirer-baton" : {
         	fr : "Retirer le bâton",
         	en : "Remove the stick",
-        	eo : "Retiri la bastono"
+        	eo : "Eltiri la bastonon"
         },
         "casser-baton" : {
         	fr : "Casser le bâton",
         	en : "Break the stick",
-        	eo : "Rompi la bastono"
+        	eo : "Rompi la bastonon"
         },
         "garder-baton" : {
         	fr : "Garder le bâton",
         	en : "Keep the stick",
-        	eo : "Konservi la bastono"
+        	eo : "Konservi la bastonon"
         },
         "prendre-arme" : {
         	fr : "Prendre les armes",
         	en : "Take the weapons",
-        	eo : "Preni la armiloj"
+        	eo : "Preni la armilojn"
         },
         "laisser-arme" : {
         	fr : "Laisser les armes",
         	en : "Leave the weapons",
-        	eo : "Lasi la armiloj"
+        	eo : "Lasi la armilojn"
         },
         "se-servir" : {
         	fr : "Se servir",
         	en : "Serve yourself",
-        	eo : "Serviĝi"
+        	eo : "Sin provizi"
         },
         "chercher-faille" : {
         	fr : "Chercher une faille",
         	en : "Search for a flaw",
-        	eo : "Serĉi fajo"
+        	eo : "Serĉi mankon"
         },
         "chercher-indice" : {
         	fr : "Chercher des indices",
         	en : "Search for clues",
-        	eo : "Serĉi indikoj"
+        	eo : "Serĉi indikojn"
         },
         "chercher" : {
         	fr : "Chercher",
@@ -314,7 +314,7 @@ define([], function(){
         "continuer-infiltration" : {
         	fr : "Continuer l'infiltration",
         	en : "Continue the infiltration",
-        	eo : "Daŭrigi la enŝteliĝado"
+        	eo : "Daŭrigi la kaŝeniĝadon"
         },
         "consulter" : {
         	fr : "Consulter",
@@ -343,7 +343,7 @@ define([], function(){
         "venger-affront" : {
         	fr : "Venger cet affront",
         	en : "Avenge this affront",
-        	eo : "Venĝi ĉi tiu ofendo"
+        	eo : "Venĝi ĉi tiun ofendon"
         },
         "laisser-tomber" : {
         	fr : "Laisser tomber",
@@ -378,7 +378,7 @@ define([], function(){
         "aider-guarde" : {
         	fr : "Aider les gardes",
         	en : "Help the guards",
-        	eo : "Helpi la gardistoj"
+        	eo : "Helpi la gardistojn"
         },
         "parler" : {
         	fr : "Parler",
@@ -393,32 +393,32 @@ define([], function(){
         "laisser-partir" : {
         	fr : "Le laisser partir",
         	en : "Let him go",
-        	eo : "Lasi foriri lin"
+        	eo : "Lasi lin foriri"
         },
         "donner-potion" : {
         	fr : "Donner la potion",
         	en : "Give the potion",
-        	eo : "Doni la pocio"
+        	eo : "Doni la pocion"
         },
         "donner-fromage" : {
         	fr : "Donner le fromage",
         	en : "Give the cheese",
-        	eo : "Doni la fromaĝo"
+        	eo : "Doni la fromaĝon"
         },
         "defendre-village" : {
         	fr : "Défendre le village",
         	en : "Defende the village",
-        	eo : "Defendi la vilaĝo"
+        	eo : "Defendi la vilaĝon"
         },
         "demander-entrer" : {
         	fr : "Demander pour entrer",
         	en : "Ask to enter",
-        	eo : "Demandi por eniri"
+        	eo : "Peti por eniri"
         },
         "demander-travail" : {
         	fr : "Demander du travail",
         	en : "Ask for work",
-        	eo : "Demandi laboro"
+        	eo : "Peti pri laboron"
         },
         "linsulter-m" : {
         	fr : "L'insulter",
@@ -433,22 +433,22 @@ define([], function(){
         "forcer-passage" : {
         	fr : "Forcer le passage",
         	en : "Force the way",
-        	eo : "Forci la pasejo"
+        	eo : "Perforte trairi"
         },
         "montrer-anneau" : {
         	fr : "Montrer l'anneau",
         	en : "Show the ring",
-        	eo : "Montri la ringo"
+        	eo : "Montri la ringon"
         },
         "montrer-lettre" : {
         	fr : "Montrer la lettre",
         	en : "Show the letter",
-        	eo : "Montri la letero"
+        	eo : "Montri la leteron"
         },
         "demander-recompense" : {
         	fr : "Demander la récompense",
         	en : "Ask for the reward",
-        	eo : "Peti la rekompenco"
+        	eo : "Peti la rekompencon"
         },
         "travailler" : {
         	fr : "Travailler",
@@ -463,7 +463,7 @@ define([], function(){
         "se-reposer" : {
         	fr : "Se reposer",
         	en : "Have a rest",
-        	eo : "Ripoziĝi"
+        	eo : "Ripozi"
         },
         "castagner" : {
         	fr : "Castagner",
@@ -478,12 +478,12 @@ define([], function(){
         "passer" : {
         	fr : "Passer son tour",
         	en : "Pass your turn",
-        	eo : "Pasigi sia vico"
+        	eo : "Rezigni sian vicon"
         },
         "trop-cher" : {
         	fr : "Trop cher",
         	en : "Too expensive",
-        	eo : "Multekosta"
+        	eo : "Trop multekosta"
         },
         "sannoncer" : {
         	fr : "S'annoncer",
@@ -498,7 +498,7 @@ define([], function(){
         "regarde-leau" : {
         	fr : "Regarder l'eau",
         	en : "Look at water",
-        	eo : "Observi la akvo"
+        	eo : "Observi la akvon"
         },
         "lassassiner" : {
         	fr : "L'assassiner",
@@ -508,17 +508,17 @@ define([], function(){
         "questionner-fermier" : {
         	fr : "Questionner le fermier",
         	en : "Question the farmer",
-        	eo : "Demandi la farmisto"
+        	eo : "Demandi la farmiston"
         },
         "interroger-paysans" : {
         	fr : "Interroger les paysans",
         	en : "Ask the peasants",
-        	eo : "Pridemandi la kamparanoj"
+        	eo : "Pridemandi la kamparanojn"
         },
         "questionner-tavernier" : {
         	fr : "Questionner le tavernier",
         	en : "Question the innkeeper",
-        	eo : "Demandi la albergisto"
+        	eo : "Demandi la tavernestron"
         },
         "menacer" : {
         	fr : "Les menacer",
@@ -538,12 +538,12 @@ define([], function(){
         "prendre-verre" : {
         	fr : "Prendre un verre",
         	en : "Have a drink",
-        	eo : "Preni trinkaĵo"
+        	eo : "Trinki glason"
         },
         "sauver-poule" : {
         	fr : "Sauver la poule",
         	en : "Save the chicken",
-        	eo : "Savi la kokino"
+        	eo : "Savi la kokinon"
         },
         "mettre-abris" : {
         	fr : "Se mettre à l'abri",
@@ -553,7 +553,12 @@ define([], function(){
         "faire-rapport" : {
         	fr : "Faire votre rapport",
         	en : "Make your report",
-        	eo : "Fari via raporto"
+        	eo : "Fari vian raporton"
+        },
+        "marchander" : {
+            fr : "Marchander",
+            en : "Merchandise",
+            eo : "Marĉandi"
         },
 
         /**
@@ -602,7 +607,7 @@ define([], function(){
         "comment" : {
         	fr : "Comment&nbsp;?!",
         	en : "What?!",
-        	eo : "Kion?!"
+        	eo : "Pardonu?!"
         },
         "ou-aller-vous" : {
         	fr : "Où allez-vous&nbsp;?",
@@ -632,7 +637,7 @@ define([], function(){
         "agitation" : {
         	fr : "De l'agitation&nbsp;?",
         	en : "Some unrest?",
-        	eo : "Iom agitado?"
+        	eo : "Iom da agitado?"
         },
         "quest-ce-que-gagne" : {
         	fr : "Qu'est-ce que j'y gagne&nbsp;?",
@@ -671,7 +676,7 @@ define([], function(){
         "quitter-boutique" : {
         	fr : "Quitter la boutique",
         	en : "Leave the shop",
-        	eo : "Eliri la butiko"
+        	eo : "Eliri el la butiko"
         },
 
         /**
@@ -690,7 +695,7 @@ define([], function(){
         "go-left" : {
         	fr : "Aller à gauche",
         	en : "Go to the left",
-        	eo : "Iri al la maldekstra"
+        	eo : "Iri maldekstren"
         },
         "right" : {
         	fr : "Droite",
@@ -700,12 +705,12 @@ define([], function(){
         "go-right" : {
         	fr : "Aller à droite",
         	en : "Go to the right",
-        	eo : "Iri al la dekstra"
+        	eo : "Iri dekstren"
         },
         "go-face" : {
         	fr : "Aller en face",
         	en : "Go to front",
-        	eo : "Iri al la fronte"
+        	eo : "Iri rekte antaŭen"
         },
         "avancer" : {
         	fr : "S'avancer",
@@ -730,12 +735,12 @@ define([], function(){
         "suivre-trace" : {
         	fr : "Suivre les traces",
         	en : "Follow the tracks",
-        	eo : "Sekvi la spuroj"
+        	eo : "Sekvi la spurojn"
         },
         "suivre-direction" : {
         	fr : "Suivre la direction",
         	en : "Follow the direction",
-        	eo : "Sekvi la direkto"
+        	eo : "Sekvi la direkton"
         },
         "revenir-pas" : {
         	fr : "Revenir sur vos pas",
@@ -760,7 +765,7 @@ define([], function(){
         "continue-adventure" : {
         	fr : "Continuer l'aventure",
         	en : "Continue the adventure",
-        	eo : "Daŭrigi la aventuro"
+        	eo : "Daŭrigi la aventuron"
         },
         "aller-village" : {
         	fr : "Aller au village",
@@ -780,7 +785,7 @@ define([], function(){
         "fuir-grotte" : {
         	fr : "Fuir dans la grotte",
         	en : "Flee into the cave",
-        	eo : "Forkuri en la kaverno"
+        	eo : "Forkuri en la kavernon"
         },
         "en-avant" : {
         	fr : "En avant&nbsp;!",
@@ -790,17 +795,17 @@ define([], function(){
         "entrer-grange" : {
         	fr : "Entrer dans la grange",
         	en : "Enter the barn",
-        	eo : "Eniri en la garbejo"
+        	eo : "Eniri en la garbejon"
         },
         "entrer-ville" : {
         	fr : "Entrer dans la ville",
         	en : "Enter the city",
-        	eo : "Eniri en la urbo"
+        	eo : "Eniri en la urbon"
         },
         "entrer-arene" : {
         	fr : "Entrer dans l’arène",
         	en : "Enter the arena",
-        	eo : "Eniri en la areno"
+        	eo : "Eniri en la arenon"
         },
         "retour-ville" : {
         	fr : "Retour en ville",
@@ -810,7 +815,7 @@ define([], function(){
         "panneau-quete" : {
         	fr : "Panneau des quêtes",
         	en : "Quests board",
-        	eo : "Serĉoj panelo "
+        	eo : "Serĉpanelo"
         },
         "boutiques" : {
         	fr : "Boutiques",
@@ -835,7 +840,7 @@ define([], function(){
         "affichage-quetes" : {
         	fr : "Affichage des quêtes",
         	en : "Quests display",
-        	eo : "Afiŝado la serĉoj "
+        	eo : "Afiŝado de la serĉoj"
         },
         "partir" : {
         	fr : "Partir",
@@ -855,12 +860,12 @@ define([], function(){
         "infiltrer-foule" : {
         	fr : "Infiltrer la foule",
         	en : "Infiltrate the crowd",
-        	eo : "Enŝteligi la homamaso"
+        	eo : "Kaŝeniĝi la homamason"
         },
         "contourner-foule" : {
         	fr : "Contourner la foule",
         	en : "Bypass the crowd",
-        	eo : "Ĉirkaŭiri la homamaso"
+        	eo : "Ĉirkaŭiri la homamason"
         },
         "aller-champs" : {
         	fr : "Aller aux champs",
@@ -880,7 +885,7 @@ define([], function(){
         "visiter-cuisine" : {
         	fr : "Visiter les cuisines",
         	en : "Visit the kitchen",
-        	eo : "Viziti la kuirejoj"
+        	eo : "Viziti la kuirejojn"
         },
         "rentrer-ville" : {
         	fr : "Rentrer à la ville",
@@ -895,7 +900,7 @@ define([], function(){
         "monter" : {
         	fr : "Monter",
         	en : "Climb",
-        	eo : "Surpreniri"
+        	eo : "Supreniri"
         }
 	};
 	

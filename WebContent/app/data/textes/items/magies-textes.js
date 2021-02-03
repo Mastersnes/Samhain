@@ -17,7 +17,7 @@ define([], function(){
             "bouleFeu-texte" : {
             	fr : "Un sort imparable permettant de lancer une énorme boule de feu&nbsp;!",
             	en : "An unstoppable spell that allows you to cast a huge fireball!",
-            	eo : "Nehaltigebla sorĉo ebliganta ĵeti enorma fajrobulo."
+            	eo : "Nehaltigebla sorĉo ebliganta ĵeti enorman fajrobulon."
             },
 
             "soin" : {
@@ -33,7 +33,7 @@ define([], function(){
             "soin-texte" : {
             	fr : "Un sort permettant de se soigner. Le Reiki peut aller se rhabiller&nbsp;!",
             	en : "A spell that allows you to heal yourself. Reiki is no match for this!",
-            	eo : "Sorĉo ebliganta kuraci vin. Rejkio ne estas ankaŭ bonege!"
+            	eo : "Sorĉo ebliganta kuraci vin. Rejkio ne estas ankaŭ bonega!"
             },
 
             "guerison" : {
@@ -49,7 +49,7 @@ define([], function(){
             "guerison-texte" : {
             	fr : "Un sort permettant de supprimer n'importe quel mal. Attention, ne procure aucun soin&nbsp;!",
             	en : "A spell that allows you to remove any damage. Prudence, this doesn’t provide any heal&nbsp;!",
-            	eo : "Sorĉo ebliganta forigi ajna damaĝo. Atenton, ne kuracas!"
+            	eo : "Sorĉo ebliganta forigi ajnan damaĝon. Atenton, ĝi ne kuracas!"
             },
 
             "morsure" : {
@@ -71,17 +71,17 @@ define([], function(){
             "araneisme" : {
             	fr : "Aranéisme",
             	en : "Arachnidism",
-            	eo : "Araneismo"
+            	eo : "Aranemordo"
             },
             "araneisme-action" : {
             	fr : "*Aranéisme*",
             	en : "*Arachnidism*",
-            	eo : "*Araneismo*"
+            	eo : "*Aranemordo*"
             },
             "araneisme-texte" : {
             	fr : "La morsure préférée de nos amis à huit pattes. Les traces qu'elle engendre vous laisseront une belle cicatrice.",
             	en : "Our eight-legged friends' favourite bite. Traces caused will let you a pretty scar.",
-            	eo : "La mordo preferata de niaj ok kruroj amikoj. Spuroj estigitaj postlasos vin belan cikatron."
+            	eo : "La mordo preferata de niaj okkruraj amikoj. Spuroj estigitaj postlasos al vi belan cikatron."
             },
 
             "voler" : {
@@ -97,7 +97,7 @@ define([], function(){
             "voler-texte" : {
             	fr : "Un bon moyen de remplir sa bourse. Pas très honnête, mais ô combien efficace&nbsp;!",
             	en : "A good way to fill your purse. Not very honest but so effective!",
-            	eo : "Bona maniero plenigi via burso. Ne tre honesta sed nekredeble efika!"
+            	eo : "Bona maniero plenigi vian burson. Ne tre honesta sed nekredeble efika!"
             },
 
             "doubleAttaque" : {
@@ -112,8 +112,8 @@ define([], function(){
             },
             "doubleAttaque-texte" : {
             	fr : "Mieux vaut deux fois qu'une&nbsp;! Non&nbsp;?",
-            	en : "Better twice than once! No?",
-            	eo : "Pli bone dufoje ol unufoje! Ne?"
+            	en : "Better twice than once! Isn't?",
+            	eo : "Pli bone dufoje ol unufoje! Ĉu ne?"
             },
 
             "volDeVie" : {
@@ -129,7 +129,7 @@ define([], function(){
             "volDeVie-texte" : {
             	fr : "On vole vraiment de tout aujourd'hui&nbsp;! Mais où va le monde&nbsp;?&hellip;",
             	en : "We really steal everything today! What’s the world coming to?&hellip;",
-            	eo : "Ĝi ŝtelas vere ajna hodiaŭ. Kien iras la mondo?&hellip;"
+            	eo : "Oni vere ŝtelas ion ajn hodiaŭ. Kien iras la mondo?&hellip;"
             },
 
             "volDeMana" : {
@@ -161,18 +161,18 @@ define([], function(){
             "taillade-texte" : {
             	fr : "Et c'est ainsi que l'on finit en rondelles&nbsp;! Enfin, d’après des chaussettes&hellip;",
             	en : "And so it’s that we become a slice! Well, according to socks&hellip;",
-            	eo : "Kaj tiel ĝi finiĝas tranĉaĵoj! Laŭ ŝtrumpetoj&hellip;"
+            	eo : "Kaj tiel oni finiĝas kiel tranĉaĵoj! Almenaŭ, laŭ ŝtrumpetoj&hellip;"
             },
 
             "pondreAraignee" : {
             	fr : "Ponte",
             	en : "Laying",
-            	eo : "Ovodemetado"
+            	eo : "Ovumado"
             },
             "pondreAraignee-action" : {
             	fr : "*Ponte*",
             	en : "*Laying*",
-            	eo : "*Ovodemetado*"
+            	eo : "*Ovumado*"
             },
             "pondreAraignee-texte" : {
             	fr : "&laquo;&nbsp;Alien&nbsp;&raquo;, à côté, c'est du pipi de chat&nbsp;!<br/>Invoque une Araignée dans la limite de 3 monstres sur le plateau.",
@@ -183,33 +183,33 @@ define([], function(){
             "invoqueGoule" : {
             	fr : "Invoquer goule",
             	en : "Summon ghoul",
-            	eo : "Alvoki gulo"
+            	eo : "Alvoki gulon"
             },
             "invoqueGoule-action" : {
             	fr : "*Invoquer Goule*",
             	en : "*Summon Ghoul*",
-            	eo : "*Alvoki Gulo*"
+            	eo : "*Alvoki Gulon*"
             },
             "invoqueGoule-texte" : {
             	fr : "Le début du cauchemar&hellip;<br/>Invoque une Goule dans la limite de 3 monstres sur le plateau.",
             	en : "The nightmare beginning&hellip;<br/>Summon a Ghoul up to 3 monsters on the board.",
-            	eo : "La komenco de la koŝmaro&hellip;</br>Alvokas Gulo ĝis 3 monstroj sur la ludtabulo."
+            	eo : "La komenco de la koŝmaro&hellip;</br>Alvokas Gulon ĝis 3 monstroj sur la ludtabulo."
             },
 
             "invoqueGrosseGoule" : {
             	fr : "Invoquer grosse goule",
             	en : "Summon big ghoul",
-            	eo : "Alvoki granda gulo"
+            	eo : "Alvoki grandan gulon"
             },
             "invoqueGrosseGoule-action" : {
             	fr : "*Invoquer Grosse Goule*",
             	en : "*Summon Big Ghoul*",
-            	eo : "*Alvoki Granda Gulo*"
+            	eo : "*Alvoki Grandan Gulon*"
             },
             "invoqueGrosseGoule-texte" : {
             	fr : "Le cauchemar continue&hellip;<br/>Invoque une Grosse Goule dans la limite de 3 monstres sur le plateau.",
             	en : "The nightmare continues&hellip;<br/>Summon a Big Ghoul up to 3 monsters on the board.",
-            	eo : "La koŝmaro daŭrigas&hellip;<br/>Alvokas Granda Gulo ĝis 3 monstroj sur la ludtabulo."
+            	eo : "La koŝmaro daŭras&hellip;<br/>Alvokas Grandan Gulon ĝis 3 monstroj sur la ludtabulo."
             },
 
             "cannibalisme" : {
@@ -225,7 +225,7 @@ define([], function(){
             "cannibalisme-texte" : {
             	fr : "C'est peut-être ça qu'on appelle : ‘donner de sa personne’.",
             	en : "Maybe that’s what we call: ‘giving of himself’.",
-            	eo : "Ĉu estas tio ke ĝi vokas: ‘donaci sin’."
+            	eo : "Eble estas tio, kion oni nomas: ‘donaci sin’."
             },
 	};
 	

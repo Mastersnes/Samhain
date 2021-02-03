@@ -233,7 +233,7 @@ define([], function() {
         },
         "roiAraigneeGuerit4" : {
             "textes" : ["roiAraigneeGuerit4-texte-1", "roiAraigneeGuerit4-texte-2", "roiAraigneeGuerit4-texte-3",
-                "roiAraigneeGuerit4-texte-4"],
+                "roiAraigneeGuerit4-texte-4", "roiAraigneeParti-texte-1"],
             "actions" : [
                 {
                     "name" : "fouiller-lieux", "action" : [

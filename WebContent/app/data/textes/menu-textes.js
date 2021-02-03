@@ -22,7 +22,7 @@ define([], function(){
             "clickToContinue" : {
             	fr : "- Cliquez pour continuer -",
             	en : "- Click to continue -",
-            	eo : "- Kliku por daŭri -",
+            	eo : "- Kliku por daŭrigi -",
             },
             "newGame" : {
             	fr : "Nouveau périple",
@@ -42,17 +42,17 @@ define([], function(){
             "eraseSave" : {
             	fr : "<text>ATTENTION&nbsp;!</text><text>Ceci effacera votre partie enregistrée.</text>",
             	en : "<text>WARNING!</text><text>This will erase your current save.</text>",
-            	eo : "<text>Atenton!</text><text>Ĉi tio forviŝos vian registran ludon.</text>"
+            	eo : "<text>Atenton!</text><text>Ĉi tio forviŝos vian registritan ludon.</text>"
             },
             "continue" : {
             	fr : "Continuer",
             	en : "Continue",
-            	eo : "Daŭri"
+            	eo : "Daŭrigi"
             },
             "continuerButton" : {
             	fr : "Continuer",
             	en : "Continue",
-            	eo : "Daŭri"
+            	eo : "Daŭrigi"
             },
             "cancelButton" : {
             	fr : "Annuler",
@@ -62,7 +62,7 @@ define([], function(){
             "loadGame" : {
             	fr : "Continuer",
             	en : "Continue",
-            	eo : "Daŭri"
+            	eo : "Daŭrigi"
             },
             "options" : {
             	fr : "Options",
@@ -82,11 +82,11 @@ define([], function(){
             "fullscreen" : {
             	fr : "Plein écran (appuyez sur Echap pour quitter le plein écran)",
             	en : "Fullscreen (press Escape to exit fullscreen mode)",
-            	eo : "Tutekrano (premu sur Esk por forlasi la tutekrano)"
+            	eo : "Tutekrano (premu sur Esk por forlasi la tutekranon)"
             },
             "credits" : {
             	fr : "Crédits",
-            	en : "Cred²its",
+            	en : "Credits",
             	eo : "Kreditoj"
             },
             "copyright-licence" : {
@@ -97,12 +97,12 @@ define([], function(){
             "selectAuto" : {
             	fr : "Sélection automatique des meilleurs équipements",
             	en : "Best equipments will be automatically selected",
-            	eo : "La pli bonaj ekipaĵoj estas aŭtomate elektontaj"
+            	eo : "La plej bonaj ekipaĵoj estos aŭtomate elektitaj"
             },
             "cibleUnique" : {
             	fr : "Ciblage automatique des ennemis isolés",
             	en : "Automatic targeting of isolated enemies",
-            	eo : "Celi aŭtomate la izolaj malamikoj"
+            	eo : "Celi aŭtomate la izolitajn malamikojn"
             }
 	};
 	

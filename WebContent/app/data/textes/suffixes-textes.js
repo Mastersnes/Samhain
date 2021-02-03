@@ -291,12 +291,12 @@ define([], function(){
             "lancien-m" : {
             	fr : "L'ancien",
             	en : "The ancient",
-            	eo : "Mantikisto"
+            	eo : "Loga"
             },
             "lancien-f" : {
             	fr : "L'ancienne",
             	en : "The ancient",
-            	eo : "Mantikistino"
+            	eo : "Loga"
             },
 
             "spectral-m" : {
@@ -333,7 +333,7 @@ define([], function(){
             "tavernier" : {
             	fr : "Tavernier",
             	en : "Innkeeper",
-            	eo : "Albergisto"
+            	eo : "Tavernestro"
             }
 	};
 	

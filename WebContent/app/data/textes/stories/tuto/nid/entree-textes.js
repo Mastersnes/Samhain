@@ -68,7 +68,7 @@ define([], function(){
         "nid3-texte-1" : {
         	fr : "Le combat se termine et votre adversaire s'écroule sur le sol.",
         	en : "The fight ends and your opponent collapses on the ground.",
-        	eo : "La batalo finiĝas kaj via kontraûlo faliĝas sur la grundon."
+        	eo : "La batalo finiĝas kaj via kontraûlo falas sur la grundo."
         },
         "nid3-texte-2" : {
         	fr : "Dans le feu de l'action, vous en profitez pour&nbsp;:",

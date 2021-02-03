@@ -31,7 +31,7 @@ define([], function(){
             "DA-credits" : {
             	fr : "Directeur Artistique",
             	en : "Art Director",
-            	eo : "Arta Directoro"
+            	eo : "Arta Direktoro"
             },
             "CA-credits" : {
             	fr : "Artiste Concepteur",
@@ -41,7 +41,7 @@ define([], function(){
             "graphist-credits" : {
             	fr : "Artiste en Chef",
             	en : "Lead Artist",
-            	eo : "Ĉefa Artisto"
+            	eo : "Ĉefartisto"
             },
             "animation-credits" : {
             	fr : "Effets et Animations 2D",
@@ -52,17 +52,17 @@ define([], function(){
             "gameDesign-credits" : {
             	fr : "Conception Générale",
             	en : "Game Designer",
-            	eo : "Ludo Dezajnisto"
+            	eo : "Ludodezajnisto"
             },
             "programming-credits" : {
             	fr : "Programmeur en Chef",
             	en : "Lead Programmer",
-            	eo : "Ĉefa Programisto"
+            	eo : "Ĉefprogramisto"
             },
             "levelDesign-credits" : {
             	fr : "Concepteur des Niveaux",
             	en : "Level Designer",
-            	eo : "Nivela Dezajnisto"
+            	eo : "Niveldezajnisto"
             },
 
             "musiques-credits" : {
@@ -73,7 +73,7 @@ define([], function(){
             "sound-credits" : {
             	fr : "Effets Sonores",
             	en : "Sound Designer",
-            	eo : "Sono Dezajnisto"
+            	eo : "Sonodezajnisto"
             },
 
             "texte-credits" : {
@@ -100,7 +100,8 @@ define([], function(){
             "community-credits" : {
             	fr : "Chargé de Communication",
             	en : "Community Manager",
-            	eo : "Komunumo Administristo"
+            	eo : "Administristo pri Komunikado"
+
             },
             "tester-credits" : {
             	fr : "Directeur des Tests",
@@ -110,7 +111,7 @@ define([], function(){
             "beta-credits" : {
             	fr : "Bêta-Testeurs",
             	en : "Beta Testers",
-            	eo : "Beta Testistoj"
+            	eo : "<i>Beta</i> Testistoj"
             },
 
             "merci-credits" : {
@@ -121,17 +122,17 @@ define([], function(){
             "suiveurs-thx-credits" : {
             	fr : "À nos suiveurs qui nous soutiennent chaque jour sur les différents réseaux.",
             	en : "To our followers who support us every day on the different networks.",
-            	eo : "Al niaj abonantoj kiuj ĉiutage subtenas nin sur la multaj retejoj. "
+            	eo : "Al niaj abonantoj, kiuj ĉiutage subtenas nin sur la multaj retejoj."
             },
             "beta-thx-credits" : {
             	fr : "À nos bêta-testeurs qui améliorent sans cesse la qualité de nos jeux.",
             	en : "To our beta testers who constantly improve the quality of our games.",
-            	eo : "Al niaj beta testistoj kiuj plibonigas senĉese la kvalito de niaj ludoj."
+            	eo : "Al niaj <i>beta</i> testistoj, kiuj plibonigas senĉese la kvaliton de niaj ludoj."
             },
             "animalux-thx-credits" : {
-            	fr : "À nos adorables compagnons à poils et à plumes qui nous apportent joie, amour et croquettes au quotidien&nbsp;!",
-            	en : "To our adorable furry and feathered companions who bring us joy, love and kibbles every day!",
-            	eo : "Al niaj adorindaj vilaj kaj plumhavaj kunuloj kiuj donacas nin ĝojo, amo kaj krokedoj ĉiutage!"
+            	fr : "À nos adorables compagnons à poils et à plumes qui nous apportent joie et amour au quotidien&nbsp;!",
+            	en : "To our adorable furry and feathered companions who bring us joy and love every day!",
+            	eo : "Al niaj adorindaj vilaj kaj plumhavaj kunuloj, kiuj donacas al ni ĝojon kaj amon ĉiutage!"
             }
 	};
 	

@@ -7,7 +7,7 @@ define([], function(){
         "didacticiel-gauche-texte-1" : {
         	fr : "Vous choisissez la main de gauche, bien qu'elle soit invisible.",
         	en : "You choose the left hand, although it’s invisible.",
-        	eo : "Vi elektas la maldekstran manon, kvankam ĝi estu nevidebla."
+        	eo : "Vi elektas la maldekstran manon, kvankam ĝi estas nevidebla."
         },
         "didacticiel-gauche-texte-2" : {
         	fr : "&laquo;&nbsp;Grâce à ton choix fabuleux, tu as obtenu la loupe&nbsp;!",
