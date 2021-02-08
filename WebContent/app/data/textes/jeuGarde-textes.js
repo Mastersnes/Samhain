@@ -231,7 +231,6 @@ define([], function(){
             	fr : "J'en ai donc profité pour <b>jouer</b> et <b>piocher</b> également.",
             	en : "So I took the opportunity to <b>play</b> and <b>draw</b> too.",
             	eo : "Do, ankaŭ mi estas profitinta por <b>ludi</b> kaj <b>eltiri karton</b>."
-            	      Do, ankau mi povis ludi kaj eltiri karton.
             },
             "pokgard-tuto-12" : {
             	fr : "Il est possible de <b>piocher</b> deux types de cartes : <b>les points</b> et <b>les actions</b>.",
