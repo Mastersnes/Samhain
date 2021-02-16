@@ -26,14 +26,14 @@ define([], function(){
             },
 
             "pointDeVie" : {
-            	fr : "points de vie",
-            	en : "health points",
-            	eo : "Vivopoentoj"
+            	fr : "points de vie (PV)",
+            	en : "health points (HP)",
+            	eo : "Vivopoentoj (VP)"
             },
             "pointDeMana" : {
-            	fr : "points de magie",
-            	en : "magic points",
-            	eo : "magiopoentoj"
+            	fr : "points de magie (PM)",
+            	en : "magic points (MP)",
+            	eo : "magipoentoj (MP)"
             },
 
             "pointDattaque" : {

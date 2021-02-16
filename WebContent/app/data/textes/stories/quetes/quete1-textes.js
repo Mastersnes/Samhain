@@ -20,7 +20,7 @@ define([], function(){
         "quete1-description-3" : {
         	fr : "PS&nbsp;: vivantes si possible, merci&hellip;",
         	en : "PS: alive please, thank you&hellip;",
-        	eo : "PS: vivantaj bonvolu, dankon&hellip;"
+        	eo : "PS: vivantaj, se eblas, dankon&hellip;"
         },
 
         /**
@@ -39,23 +39,23 @@ define([], function(){
         "quete1-debut-texte-3" : {
         	fr : "Tout ceci ne devrait être qu'une simple formalité pour un héros de votre envergure&hellip;",
         	en : "All of this should be a simple formality for a great hero like you&hellip;",
-        	eo : "̈Ĉio ĉi devus esti simpla formalaĵo por heroo tiel vi&hellip;"
+        	eo : "Ĉio ĉi devus esti simpla formalaĵo por heroo kiel vi&hellip;"
         },
 
         "quete1-debut-2-texte-1" : {
         	fr : "Grâce à un petit raccourci bien pratique, vous arrivez bien vite devant la chaumière de paille.",
         	en : "Thanks to a little shortcut, you quickly arrive in front of the straw cottage.",
-        	eo : "Danke al eta ŝparvojo bone pratika, vi rapida alvenas antaŭ la kabano el pajlo."
+        	eo : "Danke al tre praktika ŝparvojeto, vi rapide alvenas antaŭ la kabano el pajlo."
         },
         "quete1-debut-2-texte-2" : {
         	fr : "La basse-cour, lieu du crime, doit encore être flambante d'indices.",
         	en : "The farmyard, the crime scene, must still be full of clues.",
-        	eo : "La birdokorto, krimloko, devas esti ankoraŭ indicoplena.j"
+        	eo : "La birdokorto, krimejo, verŝajne restis indicoriĉa."
         },
         "quete1-debut-2-texte-3" : {
         	fr : "Mais peut-être vaudrait-il mieux commencer par interroger votre client&nbsp;?",
         	en : "But perhaps, it would be better to start by asking your client?",
-        	eo : "Sed, eble ke estus pli bone komenci pridemandi via kliento?"
+        	eo : "Sed, eble indus komenci demandante vian klienton?"
         },
 
         /**
@@ -64,12 +64,12 @@ define([], function(){
         "quete1-debut-fermier-texte-1" : {
         	fr : "Après avoir retiré la poussière de votre tunique, vous frappez à la porte du pauvre fermier, plein d'assurance.",
         	en : "After pulling the dust out of your tunic, you knock on the poor farmer’s door, full of self-confidence.",
-        	eo : "Post foriginta la polvon sur vian tunikon, vi frapas al la pordo de la povra farmisto, plena je memfido."
+        	eo : "Foriginta la polvon de via tuniko, vi frapas je la pordo de la povra farmisto, plena je memfido."
         },
         "quete1-debut-fermier-texte-2" : {
         	fr : "Un gros bonhomme tout sale ouvre en trombe et vous toise de haut en bas.",
         	en : "A big dirty man opens the door like a shot and looks at you up and down.",
-        	eo : "Malpura dika viro malfermas la pordo bruske kaj rigardegas vin."
+        	eo : "Malpura dika viro bruske malfermas la pordon kaj rigardegas vin."
         },
         "quete1-debut-fermier-texte-3" : {
         	fr : "&laquo;&nbsp;Ouais, c'est pourquoi&nbsp;?&nbsp;&raquo;",
@@ -80,33 +80,33 @@ define([], function(){
         "quete1-debut-fermier-2-texte-1" : {
         	fr : "&laquo;&nbsp;Alors c'est toi qui vas retrouver mes <span key='poulet'>poulettes</span>&nbsp;?&nbsp;&raquo;",
         	en : "&laquo;&nbsp;Oh, so it’s you who’s going to find my <span key='poulet'>chickens</span>?&nbsp;&raquo;",
-        	eo : "&laquo;&nbsp;Ho, nu tiu estas vi, kiu iras trovi miajn <span key='poulet'>kokidinojn</span>?&nbsp;&raquo;"
+        	eo : "&laquo;&nbsp;Ho, nu vi estas tiu, kiu trovos miajn <span key='poulet'>kokidinojn</span>?&nbsp;&raquo;"
         },
         "quete1-debut-fermier-2-texte-2" : {
         	fr : "Il n'a pas l'air convaincu. Après un crachat sur le côté, il continue&nbsp;:",
         	en : "He doesn’t seem convinced. After a spit, he continues:",
-        	eo : "Li ne aspektas konvinkita. Post kraĉaĵo flanke, li daŭrigas:"
+        	eo : "Li ne aspektas konvinkita. Post kraĉaĵo flanken, li daŭrigas:"
         },
         "quete1-debut-fermier-2-texte-3" : {
         	fr : "&laquo;&nbsp;T'as pas l'air très futé, mais tu peux faire l'affaire.",
         	en : "&laquo;&nbsp;You don’t seem very smart, but you can do the job.",
-        	eo : "&laquo;&nbsp;Vi ne aspektas tre ruza, sed vi povas fari la aferon."
+        	eo : "&laquo;&nbsp;Vi ne aspektas tre ruza, sed vi povas taŭgi."
         },
         "quete1-debut-fermier-2-texte-4" : {
         	fr : "T'auras ta récompense quand tu les auras retrouvées, pas avant&nbsp;!&nbsp;&raquo;",
         	en : "You’ll get the reward when you find them, not before!&nbsp;&raquo;",
-        	eo : "Vi havos la rekompencon, kiam vi estas trovota ilin, ne antaŭ!&nbsp;&raquo;"
+        	eo : "Vi havos la rekompencon, kiam vi estas trovinta ilin, ne antaŭe!&nbsp;&raquo;"
         },
 
         "quete1-debut-fermier-3-texte-1" : {
         	fr : "Toujours intéressé par l'idée que cet or soit dans votre poche, vous commencez les interrogatoires.",
         	en : "Still interested in the thought of this gold in your pocket, you start the questioning.",
-        	eo : "Ĉiam interesata pri la ideo, ke tiu oro estu en via poŝo, vi komencas la pridemandadoj."
+        	eo : "Ĉiam interesata pri la ideo, ke tiu oro estu en via poŝo, vi komencas la pridemandadojn."
         },
         "quete1-debut-fermier-3-texte-2" : {
         	fr : "&laquo;&nbsp;Elles se sont complètement évaporées dans la nuit, j'ai rien pu voir&nbsp;!",
         	en : "&laquo;&nbsp;They’ve all disappeared in the night, I couldn’t see anything!",
-        	eo : "&laquo;&nbsp;Ili komplete forvaporiĝis nokte, mi nenion povis vidi!"
+        	eo : "&laquo;&nbsp;Ili komplete forvaporiĝis ĉinokte, mi nenion povis vidi!"
         },
         "quete1-debut-fermier-3-texte-3" : {
         	fr : "M'étonnerait pas qu'elles se soient perdues dans les champs, gueulardes comme elles sont&hellip;&nbsp;&raquo;",
@@ -198,7 +198,7 @@ define([], function(){
         "quete1-debut-indice-gauche-2-texte-1" : {
         	fr : "Vous vous approchez prudemment, prêt à surprendre l'ennemi, quand&hellip;",
         	en : "You approach prudently, ready to surprise the enemy, when&hellip;",
-        	eo : "Vi proksimiĝas singarde, preta por surprizi la malamiko, kiam&hellip;"
+        	eo : "Vi proksimiĝas singarde, preta por surprizi la malamikon, kiam&hellip;"
         },
         "quete1-debut-indice-gauche-2-texte-2" : {
         	fr : "À vos pieds, complètement repue, une des <span key='poulet'>poulettes</span> essaie de s'enfuir en roulant sur elle-même.",
@@ -219,12 +219,12 @@ define([], function(){
         "quete1-debut-indice-gauche-3-texte-2" : {
         	fr : "Vous êtes maintenant prêt à continuer votre quête.",
         	en : "Now, you’re ready to continue your quest.",
-        	eo : "Nun, vi estas preta por daŭrigi via defio."
+        	eo : "Nun, vi estas preta por daŭrigi vian defion."
         },
         "quete1-debut-indice-gauche-3-texte-3" : {
         	fr : "Vers où partaient les autres empreintes déjà&nbsp;?",
         	en : "Where the other traces were going, again?",
-        	eo : "Al kie iris la aliaj spuroj jam?"
+        	eo : "Kien iris la aliaj spuroj jam?"
         },
 
         /**
@@ -701,7 +701,7 @@ define([], function(){
         "quete1-retour-texte-3" : {
         	fr : "Tout travail mérite salaire et vous aimeriez bien avoir le vôtre&nbsp;!",
         	en : "All work deserves payment and you’d really like to have yours!",
-        	eo : "̈Ĉiu laboro meritas salajron kaj vi ŝatus bone havas la vian!"
+        	eo : "Ĉiu laboro meritas salajron kaj vi ŝatus bone havas la vian!"
         },
 
         "quete1-retour-2-texte-1" : {

@@ -206,7 +206,7 @@ define([], function(){
         "roiAraigneeAgonie-texte-4" : {
         	fr : "Le roi s'écroule devant vous, dans une mare de sang vert.",
         	en : "The king is falling down in front of you in a pool of green blood.",
-        	eo : "La reĝo falas antaŭ vi, en marĉo de verda sango."
+        	eo : "La reĝo falas antaŭ vi, en marĉeto el verda sango."
         },
         "roiAraigneeAgonie-texte-5" : {
         	fr : "Vous vous demandez ce qu'il a voulu dire&hellip;",
@@ -222,7 +222,7 @@ define([], function(){
         "roiAraigneeAgonieFouille-texte-2" : {
         	fr : "Mais, vous trouvez sur le roi une <span key='venin'>poche de venin</span>&nbsp;!",
         	en : "But, you find on the king a <span key='venin'>gland of venom</span>&nbsp;!",
-        	eo : "Sed, vi trovas sur la reĝo <span key='venin'>veneno sako</span>&nbsp;!"
+        	eo : "Sed, vi trovas sur la reĝo <span key='venin'>venensako</span>&nbsp;!"
         },
         "roiAraigneeAgonieFouille-texte-3" : {
         	fr : "Elle pourra vous être utile en combat.",

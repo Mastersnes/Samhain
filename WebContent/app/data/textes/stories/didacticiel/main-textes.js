@@ -17,12 +17,12 @@ define([], function(){
         "didacticiel-gauche-texte-3" : {
         	fr : "Elle te permettra d’accéder au glossaire afin de découvrir tous les trésors de ce monde. N’hésite pas à cliquer dessus pour en savoir plus.",
         	en : "It will allow you to access the glossary in order to discover all the treasure of this world. Don’t hesitate to click on it to know more about it.",
-        	eo : "Ĝi ebligos al vi aliri a la glosaron por malkovri ĉiujn la trezorojn de ĉi tiun mondon. Ne hezitu kliki sur ĝi por scii pli."
+        	eo : "Ĝi ebligos al vi aliri al la glosaro por malkovri ĉiujn trezorojn de ĉi tiun mondon. Ne hezitu kliki sur ĝi por scii pli."
         },
         "didacticiel-gauche-texte-4" : {
         	fr : "Puisque tu es sage et attentif, je t'autorise exceptionnellement à ouvrir mon autre main. Vas-y, c'est gratuit&nbsp;!&nbsp;&raquo;",
         	en : "As you’re wise and attentive, I exceptionally allow you to open my other hand. Come on, it’s free!&nbsp;&raquo;",
-        	eo : "Ĉar vi estas saĝa kaj atenta, mi escepte permesas al vi malfermi mia alia mano. Ek, tio estas senpaga!&nbsp;&raquo;"
+        	eo : "Ĉar vi estas saĝa kaj atenta, mi escepte permesas al vi malfermi mian alian manon. Ek, tio estas senpaga!&nbsp;&raquo;"
         },
 
         /**
@@ -45,7 +45,7 @@ define([], function(){
         "didacticiel-droite-texte-1" : {
         	fr : "Bien qu'elle soit invisible, vous choisissez la main de droite.",
         	en : "Although it is invisible, you choose the right hand.",
-        	eo : "Kvankam ĝi estu nevidebla, vi elektas la dekstran manon."
+        	eo : "Kvankam ĝi estas nevidebla, vi elektas la dekstran manon."
         },
         "didacticiel-droite-texte-2" : {
         	fr : "&laquo;&nbsp;Grâce à ton flair infaillible, tu as obtenu le carnet&nbsp;!",
@@ -55,12 +55,12 @@ define([], function(){
         "didacticiel-droite-texte-3" : {
         	fr : "Il te permettra d’accéder à l'inventaire afin de modifier ton équipement et utiliser tes objets.",
         	en : "It will allow you to access to inventory in order to modify your equipment and use your items.",
-        	eo : "Ĝi ebligos al vi aliri a la inventaro por modifi via ekipaĵo kaj uzi viaj objektoj."
+        	eo : "Ĝi ebligos al vi aliri al la inventaro por modifi vian ekipaĵon kaj uzi viajn objektojn."
         },
         "didacticiel-droite-texte-4" : {
         	fr : "N’hésite pas à cliquer dessus de temps à autre pour mettre au point ta stratégie.",
         	en : "Don’t hesitate to click on it from time to time to develop your strategy.",
-        	eo : "Ne hezitu kliki sur ĝi de tempo al tempo por perfektigi via strategio."
+        	eo : "Ne hezitu kliki sur ĝi de tempo al tempo por perfektigi vian strategion."
         },
         //didacticiel-gauche-texte-4
 
@@ -70,7 +70,7 @@ define([], function(){
         "didacticiel-droitegauche-texte-1" : {
         	fr : "La main invisible s'ouvre devant vos yeux ébahis.",
         	en : "The invisible hand opens before your astounded eyes.",
-        	eo : "La nevidebla mano malfermas antaŭ viaj miregigitaj okuloj."
+        	eo : "La nevidebla mano malfermiĝas antaŭ viaj miregigitaj okuloj."
         },
         "didacticiel-droitegauche-texte-2" : {
         	fr : "&laquo;&nbsp;Voici maintenant la loupe&nbsp;!",
@@ -80,7 +80,7 @@ define([], function(){
         "didacticiel-droitegauche-texte-4" : {
         	fr : "Une fois que tu auras terminé, nous pourrons continuer.&nbsp;&raquo;",
         	en : "Once you’re done, we will be able to continue.&nbsp;&raquo;",
-        	eo : "Foje kiam vi estas finota, ni povos daŭrigi.&nbsp;&raquo;"
+        	eo : "Kiam vi estos fininta, ni povos daŭrigi.&nbsp;&raquo;"
         }
 	};
 	

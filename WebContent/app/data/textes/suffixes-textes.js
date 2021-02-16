@@ -10,12 +10,12 @@ define([], function(){
             "hargneux-m" : {
             	fr : "Hargneux",
             	en : "Spiteful",
-            	eo : "Fava"
+            	eo : "Kolerema"
             },
             "hargneux-f" : {
             	fr : "Hargneuse",
             	en : "Spiteful",
-            	eo : "Fava"
+            	eo : "Kolerema"
             },
 
             "debile" : {
@@ -247,23 +247,23 @@ define([], function(){
             "precis-m" : {
             	fr : "Précis",
             	en : "Precise",
-            	eo : "Preciza"
+            	eo : "Precizema"
             },
             "precis-f" : {
             	fr : "Précise",
             	en : "Precise",
-            	eo : "Preciza"
+            	eo : "Precizema"
             },
 
             "silencieux-m" : {
             	fr : "Silencieux",
             	en : "Silent",
-            	eo : "Silenta"
+            	eo : "Silentema"
             },
             "silencieux-f" : {
             	fr : "Silencieuse",
             	en : "Silent",
-            	eo : "SiIenta"
+            	eo : "Silentema"
             },
 
             "manchot-m" : {

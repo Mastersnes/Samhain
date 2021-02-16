@@ -418,7 +418,7 @@ define([], function(){
         "demander-travail" : {
         	fr : "Demander du travail",
         	en : "Ask for work",
-        	eo : "Peti pri laboron"
+        	eo : "Peti pri laboro"
         },
         "linsulter-m" : {
         	fr : "L'insulter",
@@ -448,7 +448,7 @@ define([], function(){
         "demander-recompense" : {
         	fr : "Demander la récompense",
         	en : "Ask for the reward",
-        	eo : "Peti la rekompencon"
+        	eo : "Peti pri rekompenco"
         },
         "travailler" : {
         	fr : "Travailler",
@@ -860,7 +860,7 @@ define([], function(){
         "infiltrer-foule" : {
         	fr : "Infiltrer la foule",
         	en : "Infiltrate the crowd",
-        	eo : "Kaŝeniĝi la homamason"
+        	eo : "Kaŝeniĝi en la homamason"
         },
         "contourner-foule" : {
         	fr : "Contourner la foule",

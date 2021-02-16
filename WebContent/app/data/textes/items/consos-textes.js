@@ -17,7 +17,7 @@ define([], function(){
             "potionSante-texte" : {
             	fr : "Une drôle de fiole toute rouge. Sur l'étiquette, il est noté&nbsp;: &laquo;&nbsp;Ne pas en abuser, donne la diarrhée.&nbsp;&raquo;",
             	en : "A strange red flask. On the label, it’s noted: &laquo;&nbsp;Don't abuse it, gives diarrhoea.&nbsp;&raquo;",
-            	eo : "Stranga ruĝa flakono. Sur la etikedo, ĝi estas skribita: &laquo;&nbsp;Ne trouzu ĝin, donas la diareon.&nbsp;&raquo;"
+            	eo : "Stranga ruĝa flakono. Sur la etikedo, estas skribite: &laquo;&nbsp;Ne trouzu ĝin, ĝi estigas la lakson.&nbsp;&raquo;"
             },
             "potionMana" : {
             	fr : "Potion de mana",
@@ -32,7 +32,7 @@ define([], function(){
             "potionMana-texte" : {
             	fr : "Une jolie fiole toute bleue. Sur l'étiquette, il est noté : &laquo;&nbsp;Attention, agite les ganglions&nbsp;&raquo;.",
             	en : "A pretty blue flask. On the label, it’s noted: &laquo;&nbsp;Warning, disturbs ganglia.&nbsp;&raquo;",
-            	eo : "Bela blua flakono. Sur la etikedo, ĝi estas skribita: &laquo;&nbsp;Atenton, agitas la gangliojn.&nbsp;&raquo;"
+            	eo : "Bela tute blua flakono. Sur la etikedo, estas skribite: &laquo;&nbsp;Atenton, agitas la gangliojn.&nbsp;&raquo;"
             },
             "antidote" : {
             	fr : "Antidote",
@@ -47,7 +47,7 @@ define([], function(){
             "antidote-texte" : {
             	fr : "Une fiole verte visqueuse censée être de l'antipoison. Vu l'odeur, ça risque plutôt de vous empoisonner&nbsp;!",
             	en : "A slimy green flask supposed to be an anti-poison. Judging by the smell, it might poison you!",
-            	eo : "Verda viskoza flakono supozita esti kontraŭtokson. Laŭ la odoro, tio riskas toksi vin! "
+            	eo : "Verda viskoza flakono supozebla kontraŭtokso. Laŭ la odoro, tio riskas toksi vin!"
             },
             "antidote-commentaire" : {
             	fr : "Soigne uniquement l'empoisonnement.",
@@ -62,12 +62,12 @@ define([], function(){
             "fromage-action" : {
             	fr : "Manger le Fromage",
             	en : "Eating the Cheese",
-            	eo : "Manĝi la Fromaĝo"
+            	eo : "Manĝi la Fromaĝon"
             },
             "fromage-texte" : {
             	fr : "Un vieux fromage légèrement moisi&hellip;",
             	en : "An old cheese slightly mouldy&hellip;",
-            	eo : "Maljuna iomete ŝima fromaĝo&hellip;"
+            	eo : "Malnova iomete ŝima fromaĝo&hellip;"
             },
             "pomme" : {
             	fr : "Pomme",
@@ -77,7 +77,7 @@ define([], function(){
             "pomme-action" : {
             	fr : "Croquer la Pomme",
             	en : "Crunch the Apple",
-            	eo : "Krakmanĝi la pomo"
+            	eo : "Krakmanĝi la pomon"
             },
             "pomme-texte" : {
             	fr : "Une belle pomme bien rouge&nbsp;! Vous allez vous régaler&nbsp;!",
@@ -92,12 +92,12 @@ define([], function(){
             "venin-action" : {
             	fr : "Lancer le Venin",
             	en : "Throwing the Venom",
-            	eo : "Ĵeti la Veneno"
+            	eo : "Ĵeti la Venenon"
             },
             "venin-texte" : {
             	fr : "Une poche de venin prélevée sur une grosse araignée&nbsp;!",
             	en : "A venom bag extracted from a big spider!",
-            	eo : "Veneno sako elprenita en granda araneo!"
+            	eo : "Venensako elprenita en granda araneo!"
             },
             "elixir" : {
             	fr : "Élixir",
@@ -112,7 +112,7 @@ define([], function(){
             "elixir-texte" : {
             	fr : "Une grosse fiole éclatante de lumière&nbsp;! L’étiquette indique : &laquo;&nbsp;Ne pas boire après minuit, risques d'allergies.&nbsp;&raquo;",
             	en : "A big shining bright flask! The label recommends: &laquo;&nbsp;Don’t drink it after midnight, risk of allergies.&nbsp;&raquo;",
-            	eo : "Granda flakono brilanta per lumo! La etikedo indikas: &laquo;&nbsp;Ne trinku ĝin post noktomezo, alergioj riskoj.&nbsp;&raquo;"
+            	eo : "Granda flakono lumege brilanta! La etikedo indikas: &laquo;&nbsp;Ne trinku ĝin post noktomezo, alergioj riskoj.&nbsp;&raquo;"
             }
 	};
 	
