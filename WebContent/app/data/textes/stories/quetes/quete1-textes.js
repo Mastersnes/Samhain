@@ -4,7 +4,7 @@ define([], function(){
 	    "quete1" : {
         	fr : "La Quête Des Poulets",
         	en : "The Chickens Quest",
-        	eo : "La Kokidoj Defio"
+        	eo : "La Defio Pri La Kokidoj"
         },
 
         "quete1-description-1" : {

@@ -9,7 +9,7 @@ define([], function(){
         "nidGauche-texte-2" : {
         	fr : "En vous approchant, vous apercevez un énorme coffre.",
         	en : "As you approach, you see a huge trunk.",
-        	eo : "Proksimiĝante, vi ekvisas enorman kofron"
+        	eo : "Proksimiĝante, vi ekvisas grandegan kofron"
         },
 
         "coffre-texte-1" : {
@@ -31,7 +31,7 @@ define([], function(){
         "coffreReussite1-texte-1" : {
         	fr : "Le coffre coince, mais en forçant un peu&hellip;",
         	en : "The trunk is stucking, but by forcing a little&hellip;",
-        	eo : "La kofro blokas, sed provante cedigi&hellip;"
+        	eo : "La kofro resistas, sed vi pli penas&hellip;"
         },
         "coffreReussite1-texte-2" : {
         	fr : "Super&nbsp;! Vous réussissez à l'ouvrir en grand&nbsp;!",
@@ -52,13 +52,13 @@ define([], function(){
         "coffreReussite12-texte-2" : {
         	fr : "vous retournez à l'intersection et prenez la direction de droite.",
         	en : "you go back to the intersection and turn right.",
-        	eo : "vi revenas al la kruciĝo kaj vi iras al la dekstra."
+        	eo : "vi revenas al la kruciĝo kaj vi iras dekstren."
         },
 
         "coffreReussite2-texte-1" : {
         	fr : "La <span key='dague'>dague</span> éclate en morceaux et le coffre se renverse sur le sol.",
         	en : "The <span key='dague'>dagger</span> breaks in pieces and the trunk falls on the floor.",
-        	eo : "La <span key='dague'>dago</span> rompiĝas kaj la kofro falas sur la grundo."
+        	eo : "La <span key='dague'>dago</span> disrompiĝas kaj la kofro renversiĝas sur la grundo."
         },
         "coffreReussite2-texte-2" : {
         	fr : "Dans le chantier, vous discernez une <span key='potionSante'>potion rouge</span> et un <span key='bouclierBois'>bouclier en bois</span>.",

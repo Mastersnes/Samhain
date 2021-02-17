@@ -12,12 +12,12 @@ define([], function(){
         "didacticiel-gauche-texte-2" : {
         	fr : "&laquo;&nbsp;Grâce à ton choix fabuleux, tu as obtenu la loupe&nbsp;!",
         	en : "&laquo;&nbsp;Thanks to your fabulous choice, you receive the magnifying glass!",
-        	eo : "&laquo;&nbsp;Danke al via fabela elekto, vi akiris la lupeon!"
+        	eo : "&laquo;&nbsp;Danke al via miriga elekto, vi akiris la lupeon!"
         },
         "didacticiel-gauche-texte-3" : {
         	fr : "Elle te permettra d’accéder au glossaire afin de découvrir tous les trésors de ce monde. N’hésite pas à cliquer dessus pour en savoir plus.",
         	en : "It will allow you to access the glossary in order to discover all the treasure of this world. Don’t hesitate to click on it to know more about it.",
-        	eo : "Ĝi ebligos al vi aliri al la glosaro por malkovri ĉiujn trezorojn de ĉi tiun mondon. Ne hezitu kliki sur ĝi por scii pli."
+        	eo : "Ĝi ebligos al vi aliri al la glosaro por malkovri ĉiujn trezorojn de ĉi tiu mondo. Ne hezitu kliki sur ĝin por scii pli."
         },
         "didacticiel-gauche-texte-4" : {
         	fr : "Puisque tu es sage et attentif, je t'autorise exceptionnellement à ouvrir mon autre main. Vas-y, c'est gratuit&nbsp;!&nbsp;&raquo;",
@@ -60,7 +60,7 @@ define([], function(){
         "didacticiel-droite-texte-4" : {
         	fr : "N’hésite pas à cliquer dessus de temps à autre pour mettre au point ta stratégie.",
         	en : "Don’t hesitate to click on it from time to time to develop your strategy.",
-        	eo : "Ne hezitu kliki sur ĝi de tempo al tempo por perfektigi vian strategion."
+        	eo : "Ne hezitu kliki sur ĝin de tempo al tempo por perfektigi vian strategion."
         },
         //didacticiel-gauche-texte-4
 

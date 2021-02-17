@@ -25,7 +25,7 @@ define([], function(){
         "roiAraigneePotion-texte-2" : {
         	fr : "Mal en point, elle s'avance doucement vers vous.",
         	en : "In a bad way, she's slowly comes toward you.",
-        	eo : "Malsana, ŝi malrapida antaŭeniras al vi."
+        	eo : "Vundita, ŝi malrapida antaŭeniras al vi."
         },
         "roiAraigneePotion-texte-3" : {
         	fr : "Elle semble vouloir quelque chose&hellip;",
@@ -105,12 +105,12 @@ define([], function(){
         "roiAraigneeGuerit2-texte-1" : {
         	fr : "&laquo;&nbsp;Ils sont apparus sans prévenir du c&oelig;ur des ténèbres,",
         	en : "&laquo;&nbsp;They appeared suddenly from the heart of darkness,",
-        	eo : "&laquo;&nbsp;Ili aperis senaverte de la tenebroj,"
+        	eo : "&laquo;&nbsp;Ili aperis senaverte el la tenebroj,"
         },
         "roiAraigneeGuerit2-texte-2" : {
         	fr : "leur râle sombre les précédant.",
         	en : "their dark wheeze before them.",
-        	eo : "Ilia timiga stertoro antaŭante ilin."
+        	eo : "antaŭitaj de ilia timiga stertoro."
         },
         "roiAraigneeGuerit2-texte-3" : {
         	fr : "Des spectres, des <span key='goule'>goules</span>, des créatures de l'autre monde&hellip;&nbsp;&raquo;",
@@ -121,7 +121,7 @@ define([], function(){
         "roiAraigneeGuerit3-texte-1" : {
         	fr : "&laquo;&nbsp;Ils ont tué mes enfants&nbsp;! Ces monstres&nbsp;!",
         	en : "&laquo;&nbsp;They killed my children! Those monsters!",
-        	eo : "&laquo;&nbsp;Ili mortigis miajn infanojn! Ĉi tiuj monstroj!"
+        	eo : "&laquo;&nbsp;Ĉi tiuj monstroj mortigis miajn infanojn!"
         },
         "roiAraigneeGuerit3-texte-2" : {
         	fr : "Je dois les venger&nbsp;!&nbsp;&raquo;",
@@ -147,7 +147,7 @@ define([], function(){
         "roiAraigneeGuerit4-texte-3" : {
         	fr : "Je dois venger les miens&nbsp;! En route&nbsp;!&nbsp;&raquo;",
         	en : "I must avenge mine! Let's go!&nbsp;&raquo;",
-        	eo : "Mi devas venĝi la miajn! Ek!&nbsp;&raquo;"
+        	eo : "Mi devas venĝi mian popolon! Ek!&nbsp;&raquo;"
         },
         "roiAraigneeGuerit4-texte-4" : {
         	fr : "Le roi s'enfonce dans les ténèbres de la grotte",
@@ -201,7 +201,7 @@ define([], function(){
         "roiAraigneeAgonie-texte-3" : {
         	fr : "Ils vous anéantiront tous, la mort aux dents&hellip;&nbsp;&raquo;",
         	en : "They'll kill you all, death to the teeth&hellip;&nbsp;&raquo;",
-        	eo : "Ili ekstermos vin ĉiujn, la morto al la dentoj&hellip;&nbsp;&raquo;"
+        	eo : "Ili ekstermos vin ĉiujn per mortigaj dentoj&hellip;&nbsp;&raquo;"
         },
         "roiAraigneeAgonie-texte-4" : {
         	fr : "Le roi s'écroule devant vous, dans une mare de sang vert.",
@@ -222,7 +222,7 @@ define([], function(){
         "roiAraigneeAgonieFouille-texte-2" : {
         	fr : "Mais, vous trouvez sur le roi une <span key='venin'>poche de venin</span>&nbsp;!",
         	en : "But, you find on the king a <span key='venin'>gland of venom</span>&nbsp;!",
-        	eo : "Sed, vi trovas sur la reĝo <span key='venin'>venensako</span>&nbsp;!"
+        	eo : "Sed, vi trovas sur la reĝo <span key='venin'>venenglando</span>&nbsp;!"
         },
         "roiAraigneeAgonieFouille-texte-3" : {
         	fr : "Elle pourra vous être utile en combat.",

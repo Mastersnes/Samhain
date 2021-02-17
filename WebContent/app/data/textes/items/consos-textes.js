@@ -96,8 +96,8 @@ define([], function(){
             },
             "venin-texte" : {
             	fr : "Une poche de venin prélevée sur une grosse araignée&nbsp;!",
-            	en : "A venom bag extracted from a big spider!",
-            	eo : "Venensako elprenita en granda araneo!"
+            	en : "A gland of venom extracted from a big spider!",
+            	eo : "Venenglando elprenita en granda araneo!"
             },
             "elixir" : {
             	fr : "Élixir",

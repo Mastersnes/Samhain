@@ -105,7 +105,7 @@ define([], function(){
             "player-turn-2" : {
             	fr : "Vous pouvez maintenant <b>piocher</b> ou <b>utiliser une action</b>.",
             	en : "Now, you can <b>draw</b> or <b>use an action</b>.",
-            	eo : "Nun vi povas <b>eltiri karton</b> aŭ <b>uzi agon</b>."
+            	eo : "Nun vi povas <b>eltiri karton</b> aŭ <b>uzi agokarton</b>."
             },
             "player-impossible" : {
             	fr : "Vous n'avez plus assez pour <b>miser</b>.<br/>Veuillez <b>passer votre tour</b>.",
@@ -115,17 +115,17 @@ define([], function(){
             "garde-use" : {
             	fr : "Le garde utilise l'action <b>?</b>.",
             	en : "Guard uses the action <b>?</b>.",
-            	eo : "La gardisto uzas la ago <b>?</b>."
+            	eo : "La gardisto uzas la agokarton <b>?</b>."
             },
             "player-use" : {
             	fr : "Choisissez une <b>carte adverse</b> pour <b>utiliser votre action</b>.",
             	en : "Choose an <b>adverse card</b> to <b>use your action</b>.",
-            	eo : "Elektu <b>adversan karton</b> por <b>uzi via ago</b>."
+            	eo : "Elektu <b>adversan karton</b> por <b>uzi vian agokarton</b>."
             },
             "garde-mise" : {
             	fr : "Le garde mise <b>?po</b>.",
             	en : "Guard bets <b>?gold</b>.",
-            	eo : "La gardisto vetas <b>?oron</b>."
+            	eo : "La gardisto vetas <b>?orojn</b>."
             },
             "garde-non-mise" : {
             	fr : "Le garde passe son tour.",
@@ -145,7 +145,7 @@ define([], function(){
             "match-nul" : {
             	fr : "Match nul&hellip;</br><b>Cliquez pour continuer</b>.",
             	en : "Draw&hellip;</br><b>Click to continue</b>.",
-            	eo : "Nula matĉo&hellip;</br><b>Kliku por daŭrigi</b>."
+            	eo : "Senvenka matĉo&hellip;</br><b>Kliku por daŭrigi</b>."
             },
 
             /**
@@ -178,12 +178,12 @@ define([], function(){
             "pokgard-tuto-1" : {
             	fr : "Normalement, le premier joueur est <b>tiré au sort</b>.</br>Mais pour cette partie, je te laisse <b>commencer</b>.",
             	en : "Usually, the first player is <b>randomly chosen</b>.</br>But for this game, I let you <b>begin</b>.",
-            	eo : "Kutime, la unua ludanto estas <b>lotita</b>.</br>Sed pri ĉi tiu ludo, mi lasas vin <b>komenci</b>."
+            	eo : "Kutime, la unua ludanto estas <b>lotita</b>.</br>Sed ĉifoje, mi lasas vin <b>komenci</b>."
             },
             "pokgard-tuto-2" : {
             	fr : "Pour ce <b>premier tour</b>, la <b>mise</b> initiale est de <b>100po</b>.</br>Elle <b>augmentera</b> ensuite tout au long de la partie.",
             	en : "For this <b>first turn</b>, the starting <b>bet</b> is <b>100gold</b>.</br>Then, it’ll <b>increase</b> during the game.",
-            	eo : "Pri ĉi tiu <b>unua vico</b>, la eka <b>veto</b> estas da <b>100oro</b>.</br>Poste, ĝi <b>pliiĝos</b> dum la ludo."
+            	eo : "Pri ĉi tiu <b>unua vico</b>, la eka <b>veto</b> estas da <b>100oroj</b>.</br>Poste, ĝi <b>pliiĝos</b> dum la ludo."
             },
             "pokgard-tuto-3" : {
             	fr : "Tu es obligé de <b>miser</b> pour pouvoir jouer.</br>Si tu ne peux pas, il te faudra <b>passer ton tour</b>.",
@@ -199,7 +199,7 @@ define([], function(){
             "pokgard-tuto-5" : {
             	fr : "Bien joué&nbsp;!</br>Maintenant que tu as <b>misé</b>, trois choix s'offrent à toi.",
             	en : "Well played!</br>Now that you have <b>bet</b>, you got three choices.",
-            	eo : "Bonege!</br>Nun ke vi estas <b>vetinta</b>, vi havas tri elektojn."
+            	eo : "Bonege!</br><b>Vetinta</b>, vi nun havas tri elekteblojn."
             },
             "pokgard-tuto-6" : {
             	fr : "Tu peux <b>miser</b> de nouveau et ainsi <b>augmenter la mise</b> que doivent verser les joueurs <b>à chaque tour</b>.",
@@ -230,7 +230,7 @@ define([], function(){
             "pokgard-tuto-11" : {
             	fr : "J'en ai donc profité pour <b>jouer</b> et <b>piocher</b> également.",
             	en : "So I took the opportunity to <b>play</b> and <b>draw</b> too.",
-            	eo : "Do, ankaŭ mi estas profitinta por <b>ludi</b> kaj <b>eltiri karton</b>."
+            	eo : "Do, mi profitis de tio por <b>ludi</b> kaj <b>eltiri karton</b>."
             },
             "pokgard-tuto-12" : {
             	fr : "Il est possible de <b>piocher</b> deux types de cartes : <b>les points</b> et <b>les actions</b>.",
@@ -250,7 +250,7 @@ define([], function(){
             "pokgard-tuto-15" : {
             	fr : "Les <b>actions</b> permettent de <b>voir</b>, <b>voler</b> ou même <b>détruire</b> les cartes adverses.",
             	en : "The <b>actions</b> allow you to <b>see</b>, <b>steal</b> or <b>destroy</b> adverse cards.",
-            	eo : "La <b>agoj</b> ebligas <b>vidi</b>, <b>ŝteli</b> aŭ <b>detrui</b> adversajn kartojn."
+            	eo : "La <b>agokartoj</b> ebligas <b>vidi</b>, <b>ŝteli</b> aŭ <b>detrui</b> adversajn kartojn."
             },
             "pokgard-tuto-16" : {
             	fr : "Tu en as justement une. <b>Clique</b> dessus et <b>utilise</b> la sur ma carte&nbsp;!",
@@ -261,7 +261,7 @@ define([], function(){
             "pokgard-tuto-17" : {
             	fr : "Bien joué&nbsp;!</br>Les <b>actions</b> te permettront de renverser la situation et d'amasser <b>plus de points</b>.",
             	en : "Well played! The <b>actions</b> will allow you to reverse the situation and to amass <b>more points</b>.",
-            	eo : "Bonege! La <b>agoj</b> ebligos vin inversigi la situacion kaj amasigi <b>pliajn poentojn</b>."
+            	eo : "Bonege! La <b>agokartoj</b> ebligos vin inversigi la situacion kaj amasigi <b>pliajn poentojn</b>."
             },
             "pokgard-tuto-18" : {
             	fr : "Bien, maintenant, c'est à toi de <b>jouer</b>&nbsp;!</br>N'oublie pas : ne <b>mise</b> jamais plus que ce que tu possèdes&nbsp;!",

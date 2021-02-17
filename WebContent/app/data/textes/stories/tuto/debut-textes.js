@@ -9,7 +9,7 @@ define([], function(){
         "tuto-start-texte-2" : {
         	fr : "La douceur de l'automne caresse les feuilles qui virevoltent aux alentours.",
         	en : "The autumn sweetness caresses the leaves that spin around.",
-        	eo : "La dolĉeco de la aŭtuno karesas la foliojn, kiuj flirtas ĉirkaŭe."
+        	eo : "La mildeco de la aŭtuno karesas la foliojn, kiuj flirtas ĉirkaŭe."
         },
         "tuto-start-texte-3" : {
         	fr : "Ayant terminé votre dur labeur un peu plus tôt,",
@@ -19,13 +19,13 @@ define([], function(){
         "tuto-start-texte-4" : {
         	fr : "Vous ramassez une <span key='pomme'>pomme</span> de votre panier et décidez de vous reposer au pied du géant feuillu.",
         	en : "You pick an <span key='pomme'>apple</span> from your basket and decide to rest at the foot of a leafy giant.",
-        	eo : "Vi prenas <span key='pomme'>pomon</span> en via korbo kaj decidas ripozi vin piede de giganta arbo."
+        	eo : "Vi prenas <span key='pomme'>pomon</span> en via korbo kaj decidas ripozi piede de giganta arbo."
         },
 
         "repos2-texte-1" : {
         	fr : "Vous fermez les yeux pour mieux apprécier la brise.",
         	en : "You close your eyes to better appreciate the breeze.",
-        	eo : "Vi malfermas viajn okulojn por pli bone ŝati la brizon."
+        	eo : "Vi malfermas viajn okulojn por pli bone ĝui la brizon."
         },
         "repos2-texte-2" : {
         	fr : "Au loin, il vous semble entendre des bruits de pattes&hellip;",
@@ -35,18 +35,18 @@ define([], function(){
         "repos2-texte-3" : {
         	fr : "Vous vous levez en sursaut, quand deux <span key='araignee'>araignées</span> vous sautent dessus&nbsp;!",
         	en : "You get up in a jolt when two <span key='araignee'>spiders</span> jump on you!",
-        	eo : "Vi leviĝas subite, kiam du <span key='araignee'>araneoj</span> saltas sur vi!"
+        	eo : "Vi ekstaras, kaj subite du <span key='araignee'>araneoj</span> saltas sur vin!"
         },
 
         "reposCombat-texte-1" : {
         	fr : "Après avoir défait vos adversaires à la force de vos <span key='poing'>poings</span>,",
         	en : "After defeating your opponents with the strength of your <span key='poing'>fist</span>,",
-        	eo : "Post venkinta viajn kontraŭulojn per la forto de viaj <span key='poing'>pugnoj</span>,"
+        	eo : "Venkinta viajn kontraŭulojn per la forto de viaj <span key='poing'>pugnoj</span>,"
         },
         "reposCombat-texte-2" : {
         	fr : "Vous faites une pause pour reprendre vos esprits.",
         	en : "You take a break to get your breath.",
-        	eo : "Vi faras paŭzo por iom spiri."
+        	eo : "Vi paŭzas por iom spiri."
         },
 
         "reposFouilleFail-texte-1" : {
@@ -57,7 +57,7 @@ define([], function(){
         "reposFouilleFail-texte-2" : {
         	fr : "J’espère que ce n'est pas ce que vous cherchiez&hellip; si&nbsp;?",
         	en : "I hope that's not what you’re looking for&hellip; is it?",
-        	eo : "Mi esperas, ke tio ne estas kion vi serĉus&hellip; Ĉu?"
+        	eo : "Mi esperas, ke ne tion vi serĉis&hellip; Ĉu?"
         },
 
         "reposFouilleSuccess-texte-1" : {
@@ -68,7 +68,7 @@ define([], function(){
         "reposFouilleSuccess-texte-2" : {
         	fr : "Espérons que le rouge provienne bien de sa maturité&hellip;",
         	en : "Well, hope that the red comes from its maturity&hellip;",
-        	eo : "Espereble la ruĝa devenas bone de sia matureco&hellip;"
+        	eo : "Espereble la ruĝo ja devenas de ĝia matureco&hellip;"
         },
 
         "reposExamine-texte-1" : {

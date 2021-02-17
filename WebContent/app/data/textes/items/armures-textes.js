@@ -12,7 +12,7 @@ define([], function(){
             "bras-action" : {
             	fr : "Bloquer avec son Bras",
             	en : "Block with your Arm",
-            	eo : "Bloki per via Brako"
+            	eo : "Haltigi per via Brako"
             },
             "bras-texte" : {
             	fr : "Votre bras&hellip; Tout simplement&hellip; Vous pouvez en être fier&nbsp;!",
@@ -27,7 +27,7 @@ define([], function(){
             "bouclierBois-action" : {
             	fr : "Parer avec le Bouclier",
             	en : "Block with the Shield",
-            	eo : "Bloki per la Ŝildo"
+            	eo : "Haltigi per la Ŝildo"
             },
             "bouclierBois-texte" : {
             	fr : "Un bouclier en bois assez banal. Il semble plutôt résistant.",
