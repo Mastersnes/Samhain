@@ -548,7 +548,7 @@ define([], function(){
         "mettre-abris" : {
         	fr : "Se mettre à l'abri",
         	en : "Take shelter",
-        	eo : "̈Ŝirmi sin"
+        	eo : "Ŝirmi sin"
         },
         "faire-rapport" : {
         	fr : "Faire votre rapport",

@@ -58,7 +58,7 @@ define([], function(){
         "bandits-arene-assassiner-texte-1" : {
         	fr : "Voici venir la dernière étape de votre infiltration.",
         	en : "Here comes the last step of your infiltration.",
-        	eo : "Jen veni la lasta etapo de via enŝteliĝado."
+        	eo : "Jen veni la lastan etapon de via kaŝeniĝado."
         },
         "bandits-arene-assassiner-texte-2" : {
         	fr : "Vous vous approchez doucement et étranglez votre adversaire en l’empêchant de crier.",
