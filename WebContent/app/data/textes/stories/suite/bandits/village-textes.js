@@ -200,7 +200,7 @@ define([], function(){
         "bandits-village-infiltrer-2-echec-texte-3" : {
         	fr : "Votre hurlement de douleur rugit dans tout le village, alarmant toute l’assemblée&hellip;",
         	en : "Your scream of pain roars through the village, alarming whole the gathering&hellip;",
-        	eo : "Via dolorkriado resonas tra la vilaĝo, alarmante la tutan homamason&hellip;""
+        	eo : "Via dolorkriado resonas tra la vilaĝo, alarmante la tutan homamason&hellip;"
         },
 
         "bandits-village-infiltrer-2-echec-2-texte-1" : {
