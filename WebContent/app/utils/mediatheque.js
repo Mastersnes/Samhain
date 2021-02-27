@@ -5,6 +5,7 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 		this.callbacks = [];
 		this.soundsTicker = [];
 		this.hurtNb = 4;
+		this.alreadyPlayed = [];
 
 		this.listStories = ["music/story1.ogg", "music/story2.ogg", "music/story3.ogg"];
 
@@ -89,6 +90,29 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			this.play("sounds/"+key, this.soundsTicker[key]++);
 			if (this.soundsTicker[key] > 3) this.soundsTicker[key] = 0;
 		};
+
+		this.playMusic = function(music) {
+            var that = this;
+            var randMusic = music;
+
+            if (!music) {
+                var listMusic = [];
+                if (this.alreadyPlayed.length >= this.listStories.length) {
+                    this.alreadyPlayed = [];
+                }
+                for (var i in this.listStories) {
+                    var music = this.listStories[i];
+                    if (this.alreadyPlayed.indexOf(music) == -1 && this.currentMusic != music) {
+                        listMusic.push(music);
+                    }
+                }
+                randMusic = listMusic[Utils.rand(0, listMusic.length)];
+            }
+            this.alreadyPlayed.push(randMusic);
+            this.play(randMusic, null, function() {
+                that.playMusic();
+            });
+        };
 		
 		this.stopSound = function(key) {
 			if (!key) return;
@@ -133,10 +157,15 @@ define(["jquery", "app/utils/utils"], function($, Utils){
 			
 			window.localStorage.setItem(Utils.name + "Music", this.isMuteMusic);
 			window.localStorage.setItem(Utils.name + "Sound", this.isMuteSound);
-			
+
+			var that = this;
 			if (musicOldState != this.isMuteMusic) {
 				if (this.isMuteMusic) this.stopAllMusic();
-				else this.play(this.currentMusic);
+				else {
+                    this.play(this.currentMusic, null, function() {
+                        that.playMusic();
+                    });
+                }
 			}
 		};
 

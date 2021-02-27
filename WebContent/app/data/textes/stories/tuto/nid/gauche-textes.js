@@ -4,12 +4,12 @@ define([], function(){
 	    "nidGauche-texte-1" : {
         	fr : "La lumière semble faiblir davantage, mais vous distinguez au loin une petite lueur.",
         	en : "The light seems to fade more, but you can see a glow in the distance.",
-        	eo : "La lumo ŝajnas pli malpliiĝi, sed vi distingas lumeton foren."
+        	eo : "La lumo ŝajnas pli malpliiĝi, sed vi distingas lumeton fore."
         },
         "nidGauche-texte-2" : {
         	fr : "En vous approchant, vous apercevez un énorme coffre.",
         	en : "As you approach, you see a huge trunk.",
-        	eo : "Proksimiĝante, vi ekvisas grandegan kofron"
+        	eo : "Proksimiĝante, vi ekvisas grandegan kofron."
         },
 
         "coffre-texte-1" : {
@@ -20,7 +20,7 @@ define([], function(){
         "coffre-texte-2" : {
         	fr : "Peut-être qu'en essayant de faire levier avec la <span key='dague'>dague</span>,",
         	en : "Perhaps by forcing a little with the <span key='dague'>dagger</span>,",
-        	eo : "Eble provante fari levilon per la <span key='dague'>dago</span>"
+        	eo : "Eble uzante <span key='dague'>dagon</span> kiel levilon,"
         },
         "coffre-texte-3" : {
         	fr : "vous pourriez réussir à l'ouvrir&nbsp;?",
@@ -31,7 +31,7 @@ define([], function(){
         "coffreReussite1-texte-1" : {
         	fr : "Le coffre coince, mais en forçant un peu&hellip;",
         	en : "The trunk is stucking, but by forcing a little&hellip;",
-        	eo : "La kofro resistas, sed vi pli penas&hellip;"
+        	eo : "La kofro resistas, sed se vi pli penas&hellip;"
         },
         "coffreReussite1-texte-2" : {
         	fr : "Super&nbsp;! Vous réussissez à l'ouvrir en grand&nbsp;!",
@@ -75,7 +75,7 @@ define([], function(){
         "coffreEchec1-texte-1" : {
         	fr : "Non, impossible&nbsp;! Il ne bouge pas d'un poil.",
         	en : "No, impossible! It's doesn’t move at all.",
-        	eo : "Ne ebla! Ĝi ne movas!"
+        	eo : "Ne eblas! Ĝi tute ne moviĝas!"
         },
 
         "coffreEchec12-texte-1" : {
@@ -87,17 +87,17 @@ define([], function(){
         "coffreEchec2-texte-1" : {
         	fr : "Bam&nbsp;! La <span key='dague'>dague</span> éclate dans vos mains&nbsp;!",
         	en : "Bam! The <span key='dague'>dagger</span> breaks in your hands!",
-        	eo : "Bum! La <span key='dague'>dago</span> rompigas en via manoj!"
+        	eo : "Bum! La <span key='dague'>dago</span> rompiĝas en via manoj!"
         },
         "coffreEchec2-texte-2" : {
         	fr : "Un filet de sang coule doucement sur le sol.",
         	en : "A dash of blood flows slowly on the ground.",
-        	eo : "Sango flueto fluas malrapide sur la grundo."
+        	eo : "Sangoflueto fluas malrapide sur la grundo."
         },
         "coffreEchec2-texte-3" : {
         	fr : "Le coffre, lui, vous regarde, impassible&hellip;",
         	en : "The trunk, it, looks at you, impassive&hellip;",
-        	eo : "La kofro, ĝi, vi rigardas, flegma&hellip;"
+        	eo : "La kofro, ĝi, rigardas vin, flegma&hellip;"
         },
 
         "pas-la-peine" : {
@@ -109,7 +109,7 @@ define([], function(){
         "coffreEchec21-texte-1" : {
         	fr : "Avec un mal de chien,",
         	en : "With a dog sickness,",
-        	eo : "Kun ega doloraĉa,"
+        	eo : "Kun dolorego,"
         },
         "coffreEchecSimple-texte-1" : {
         	fr : "Impossible de l'ouvrir&hellip;",

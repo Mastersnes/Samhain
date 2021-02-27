@@ -21,7 +21,6 @@ define(["jquery", "underscore",
             this.player = parent.playerManager;
 
             this.didacticiel = didacticiel;
-            this.alreadyPlayed = [];
 
             if (didacticiel) this.go("didacticiel-start", true);
             else this.go(this.player.get("lieu"), true);
@@ -46,8 +45,8 @@ define(["jquery", "underscore",
 
             if (newLieu.before) newLieu.before(this);
 
-            if (newLieu.music) this.playMusic("music/" + newLieu.music);
-            else if (firstTime) this.playMusic();
+            if (newLieu.music) this.mediatheque.playMusic("music/" + newLieu.music);
+            else if (firstTime) this.mediatheque.playMusic();
 
             if (!this.didacticiel) this.player.data.lieu = newLieuId;
 
@@ -68,29 +67,6 @@ define(["jquery", "underscore",
 			}, 50);
 
 			this.makeEvents();
-        };
-
-        this.playMusic = function(music) {
-            var that = this;
-            var randMusic = music;
-
-            if (!music) {
-                var listMusic = [];
-                if (this.alreadyPlayed.length >= this.mediatheque.listStories.length) {
-                    this.alreadyPlayed = [];
-                }
-                for (var i in this.mediatheque.listStories) {
-                    var music = this.mediatheque.listStories[i];
-                    if (this.alreadyPlayed.indexOf(music) == -1 && this.mediatheque.currentMusic != music) {
-                        listMusic.push(music);
-                    }
-                }
-                randMusic = listMusic[Utils.rand(0, listMusic.length)];
-            }
-            this.alreadyPlayed.push(randMusic);
-            this.mediatheque.play(randMusic, null, function() {
-                that.playMusic();
-            });
         };
 
         this.positionneActions = function() {
