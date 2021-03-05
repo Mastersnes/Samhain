@@ -4,7 +4,7 @@ define([], function(){
         "nid-texte-1" : {
         	fr : "Vous arrivez dans une cavité plutôt sombre et silencieuse.",
         	en : "You arrive in a rather dark and silent cavity.",
-        	eo : "Vi alvenas en sombra kaj silenta kavo."
+        	eo : "Vi alvenas en malhela kaj silenta kavo."
         },
         "nid-texte-2" : {
         	fr : "Une odeur nauséabonde monte à votre nez.",
@@ -100,23 +100,23 @@ define([], function(){
         "nid3TrouveDague-texte-3" : {
         	fr : "Un bon outil qui vous sera bien utile.",
         	en : "A good tool that will be pretty useful to you.",
-        	eo : "Bone ilo, kiu estos bone utila al vi."
+        	eo : "Bona ilo, kiu estos bone utila al vi."
         },
 
         "nid4-texte-1" : {
         	fr : "Vous vous enfoncez de plus en plus dans l'obscurité et n'y voyez pas grand-chose.",
         	en : "You sink deeper and deeper into the darkness and don't see  a lot.",
-        	eo : "Vi enprofundiĝas en la mallumo kaj vi ne vidas nenion."
+        	eo : "Vi enprofundiĝas en la mallumo kaj vi vidas preskaŭ nenion."
         },
         "nid4-texte-2" : {
         	fr : "Soudain, le tunnel se sépare en deux.",
         	en : "Suddenly, the tunnel splits in half.",
-        	eo : "Subite, la tunelo duonigas."
+        	eo : "Subite, la tunelo duvojiĝas."
         },
         "nid4-texte-3" : {
         	fr : "Deux choix s'offrent donc à vous&nbsp;:",
-        	en : "Two choices are available:",
-        	eo : "Vi havas du elektojn:"
+        	en : "Then, two choices are available:",
+        	eo : "Vi do havas du elektojn:"
         }
 	};
 	

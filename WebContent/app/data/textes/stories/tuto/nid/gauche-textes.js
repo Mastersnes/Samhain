@@ -87,7 +87,7 @@ define([], function(){
         "coffreEchec2-texte-1" : {
         	fr : "Bam&nbsp;! La <span key='dague'>dague</span> éclate dans vos mains&nbsp;!",
         	en : "Bam! The <span key='dague'>dagger</span> breaks in your hands!",
-        	eo : "Bum! La <span key='dague'>dago</span> rompiĝas en via manoj!"
+        	eo : "Bum! La <span key='dague'>dago</span> disrompiĝas en via manoj!"
         },
         "coffreEchec2-texte-2" : {
         	fr : "Un filet de sang coule doucement sur le sol.",

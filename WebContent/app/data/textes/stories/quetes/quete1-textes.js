@@ -69,7 +69,7 @@ define([], function(){
         "quete1-debut-fermier-texte-2" : {
         	fr : "Un gros bonhomme tout sale ouvre en trombe et vous toise de haut en bas.",
         	en : "A big dirty man opens the door like a shot and looks at you up and down.",
-        	eo : "Malpura dika viro bruske malfermas la pordon kaj rigardegas vin."
+        	eo : "Malpura dika viro bruske malfermas la pordon kaj malestime rigardas vin."
         },
         "quete1-debut-fermier-texte-3" : {
         	fr : "&laquo;&nbsp;Ouais, c'est pourquoi&nbsp;?&nbsp;&raquo;",
@@ -95,7 +95,7 @@ define([], function(){
         "quete1-debut-fermier-2-texte-4" : {
         	fr : "T'auras ta récompense quand tu les auras retrouvées, pas avant&nbsp;!&nbsp;&raquo;",
         	en : "You’ll get the reward when you find them, not before!&nbsp;&raquo;",
-        	eo : "Vi havos la rekompencon, kiam vi estas trovinta ilin, ne antaŭe!&nbsp;&raquo;"
+        	eo : "Vi havos la rekompencon, kiam vi estos trovinta ilin, ne antaŭe!&nbsp;&raquo;"
         },
 
         "quete1-debut-fermier-3-texte-1" : {
@@ -127,12 +127,12 @@ define([], function(){
         "quete1-debut-fermier-4-texte-3" : {
         	fr : "Retrouve mes petites et t'auras ton or&nbsp;!&nbsp;&raquo;",
         	en : "Find my babies and you’ll get your gold!&nbsp;&raquo;",
-        	eo : "Trovu miajn etuletojn kaj vi havos viajn oron&nbsp;!&nbsp;&raquo;"
+        	eo : "Trovu miajn etuletojn kaj vi havos vian oron&nbsp;!&nbsp;&raquo;"
         },
         "quete1-debut-fermier-4-texte-4" : {
         	fr : "D'un signe de tête, il vous salue et ferme la porte aussi violemment qu'il l'a ouverte.",
         	en : "With a nod, he greets you and closes the door as violently as he opened it before.",
-        	eo : "Li kapsalutas vin kaj fermas la pordon, same fortege kiel li malfermis ĝin."
+        	eo : "Li kapsalutas vin kaj fermas la pordon, same bruske kiel li malfermis ĝin."
         },
 
         /**
@@ -141,12 +141,12 @@ define([], function(){
         "quete1-debut-indice-texte-1" : {
         	fr : "Vous pénétrez dans la basse-cour, à l’affût du moindre signe suspect&hellip;",
         	en : "You enter into the farmyard, on lookup for the smallest suspicious sign&hellip;",
-        	eo : "Vi eniras en la birdokordo, gvatanta la plej eta signo suspektebla&hellip;"
+        	eo : "Vi eniras en la birdokordon, gvatanta la plej etan signon suspekteblan&hellip;"
         },
         "quete1-debut-indice-texte-2" : {
-        	fr : "Le lieu est couvert de boue et sent la vieille chaussette, idéal pour commencer l'enquête&nbsp;!",
-        	en : "The place is covered with mud and smells like an old sock, perfect for starting the investigation!",
-        	eo : "La loko estas kovrita de ŝlimo kaj malbonodoras la malnovan ŝtrumpeton, ideala por komenci la enketo&nbsp;!"
+        	fr : "Le lieu est couvert de boue et sent la vieille chaussette. Idéal pour commencer l'enquête&nbsp;!",
+        	en : "The place is covered with mud and smells like an old sock. Perfect for starting the investigation!",
+        	eo : "La loko estas kovrita de ŝlimo kaj malbonodoras la malnovan ŝtrumpeton. Ideale por komenci la enketon&nbsp;!"
         },
 
         "quete1-debut-indice-2-texte-1" : {
@@ -157,7 +157,7 @@ define([], function(){
         "quete1-debut-indice-2-texte-2" : {
         	fr : "Des traces de pattes boueuses s'enfoncent dans les hautes herbes.",
         	en : "Traces of muddy chicken's legs sink into the tall grass.",
-        	eo : "La ŝlimaj piedospuroj enprofundiĝas en la altaj herboj."
+        	eo : "Ŝlimaj piedospuroj enprofundiĝas en la altaj herboj."
         },
         "quete1-debut-indice-2-texte-3" : {
         	fr : "C'est certain, les <span key='poulet'>volailles</span> se sont enfuies par là&nbsp;!",
@@ -167,18 +167,18 @@ define([], function(){
 
         "quete1-debut-indice-3-texte-1" : {
         	fr : "Scrupuleusement, la tête au sol, vous suivez la piste des fuyardes.",
-        	en : "Scrupulously, your head in front of the ground, you follow the fugitives’ traces.",
-        	eo : "Skrupule, la kapo antaŭ la grundo, vi sekvas la spurojn de la fuĝantojn"
+        	en : "Scrupulously, watching the ground, you follow the fugitives’ traces.",
+        	eo : "Skrupule, vi rigardas la grundon kaj vi sekvas la spurojn de la fuĝantinoj."
         },
         "quete1-debut-indice-3-texte-2" : {
         	fr : "Votre traque s’arrête au cœur d'une gigantesque culture de maïs.",
         	en : "Your tracking stops at the heart of a giant corn crop.",
-        	eo : "Via postsekvo haltiĝas al la koro de giganta maizo kultivado."
+        	eo : "Via postsekvo haltiĝas en la koro de giganta maizkultivejo."
         },
         "quete1-debut-indice-3-texte-3" : {
         	fr : "Ici, il semblerait qu'elles se soient séparées en 2 groupes&hellip;",
         	en : "Here, it seems like they split in 2 groups&hellip;",
-        	eo : "Ĉi tie ŝajnus, ke ili estu disiĝitaj en 2 grupoj&hellip;"
+        	eo : "Ĉi tie ŝajnas, ke ili disiĝis en 2 grupoj&hellip;"
         },
 
         /**
@@ -187,12 +187,12 @@ define([], function(){
         "quete1-debut-indice-gauche-texte-1" : {
         	fr : "Vous suivez les traces de gauche, continuant votre périple à travers champs.",
         	en : "You follow the traces on the left, continuing your journey through the fields.",
-        	eo : "Vi sekvas la spurojn maldekstran, daŭriganta via periplo tra kampoj."
+        	eo : "Vi sekvas la maldekstrajn spurojn, daŭrigante vian periplon tra kampoj."
         },
         "quete1-debut-indice-gauche-texte-2" : {
         	fr : "Là, devant vous, une clairière semble doucement se dessiner.",
         	en : "Here, in front of you, a clearing appears slowly.",
-        	eo : "Tie, antaŭ vi, maldensejo sâjnas aperi malrapide."
+        	eo : "Tie, antaŭ vi, maldensejo sâjnas malrapide aperi."
         },
 
         "quete1-debut-indice-gauche-2-texte-1" : {
@@ -203,7 +203,7 @@ define([], function(){
         "quete1-debut-indice-gauche-2-texte-2" : {
         	fr : "À vos pieds, complètement repue, une des <span key='poulet'>poulettes</span> essaie de s'enfuir en roulant sur elle-même.",
         	en : "At your feet, completely full, one of the <span key='poulet'>chickens</span> tries to flee by rolling on itself.",
-        	eo : "Ĉe viaj piedoj, komplete sata, unu el <span key='poulet'>kokidinoj</span> provas fuĝi ruliĝanta sur ŝi mem."
+        	eo : "Ĉe viaj piedoj, tute sata, unu el <span key='poulet'>kokidinoj</span> provas fuĝi ruliĝante sur ŝi mem."
         },
         "quete1-debut-indice-gauche-2-texte-3" : {
         	fr : "Bizarres ces poulets&hellip;",
@@ -214,7 +214,7 @@ define([], function(){
         "quete1-debut-indice-gauche-3-texte-1" : {
         	fr : "Vous saisissez la gourmande et lui trouvez une place confortable dans votre sac.",
         	en : "You grasp the gourmand and find a comfortable place for it in your bag.",
-        	eo : "Vi kaptas la manĝegeman kaj trovas al ŝi komfortan lokon en via sako."
+        	eo : "Vi kaptas la manĝegeminon kaj trovas por ŝi komfortan lokon en via sako."
         },
         "quete1-debut-indice-gauche-3-texte-2" : {
         	fr : "Vous êtes maintenant prêt à continuer votre quête.",
@@ -243,23 +243,23 @@ define([], function(){
         "quete1-champ-texte-1" : {
         	fr : "Vous suivez le sentier de terre, dans la direction indiquée.",
         	en : "You follow the dirt way in the indicate direction.",
-        	eo : "Vi sekvas la vojeton en la direkton indikitan."
+        	eo : "Vi sekvas la vojeton laŭ la indikita direkto."
         },
         "quete1-champ-texte-2" : {
         	fr : "Les paysans, au loin, s’attellent au travail des champs sans vous apporter aucune attention.",
         	en : "The peasants, in the distance, get down to the farm work without giving you any attention.",
-        	eo : "La kamparanoj, fore, daŭrigas ilian laboron en la kampoj sen zorgi pri vi."
+        	eo : "La kamparanoj, fore, daŭrigas ilian laboron en la kampoj sen iel atenti vin."
         },
 
         "quete1-champ-2-texte-1" : {
         	fr : "Vous prenez votre air le plus vaillant et vous dirigez vers les travailleurs.",
         	en : "You take on your bravest air and head for the workers.",
-        	eo : "Vi prenas vian mienon la plej brava kaj vi iras al la laboristoj."
+        	eo : "Vi prenas vian plej bravan mienon kaj vi iras al la laboristoj."
         },
         "quete1-champ-2-texte-2" : {
         	fr : "Ceux-ci, impassibles, ne lèvent même pas la tête.",
         	en : "These, impassive, don’t even raise their heads.",
-        	eo : "Ĉi tiuj, flegmaj, mem ne levas la kapon."
+        	eo : "Ĉi tiuj, flegmaj, eĉ ne levas la kapon."
         },
         "quete1-champ-2-texte-3" : {
         	fr : "Accueillant&hellip;",
