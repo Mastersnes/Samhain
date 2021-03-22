@@ -306,7 +306,7 @@ define([], function(){
         "retourVillage2-texte-1" : {
         	fr : "Le <span key='roiAraignee'>roi des araignées</span> dévore de nombreuses <span key='goule'>goules</span> autour de vous.",
         	en : "The <span key='roiAraignee'>king of spiders</span> devours many <span key='goule'>ghouls</span> around you.",
-        	eo : "La <span key='roiAraignee'>reĝo de araneoj</span> voras multajn gulojn ĉirkaŭ vi."
+        	eo : "La <span key='roiAraignee'>reĝo de la araneoj</span> voras multajn gulojn ĉirkaŭ vi."
         },
         "retourVillage2-texte-2" : {
         	fr : "Les paysans sont partis se cacher dans leurs chaumières en ruine",
@@ -337,7 +337,7 @@ define([], function(){
         "retourVillageAideRoi-texte-4" : {
         	fr : "&laquo;&nbsp;Non&nbsp;! C'est le <span key='roiAraignee'>roi des araignées</span>&nbsp;! Il est venu pour nous aider&nbsp;!&nbsp;&raquo;",
         	en : "&laquo;&nbsp;No! It's the <span key='roiAraignee'>king of spiders</span>! He came to help us!&nbsp;&raquo;",
-        	eo : "&laquo;&nbsp;Ne! Tiu estas la <span key='roiAraignee'>reĝo de araneoj</span>! Li venis por helpi nin!&nbsp;&raquo;"
+        	eo : "&laquo;&nbsp;Ne! Tiu estas la <span key='roiAraignee'>reĝo de la araneoj</span>! Li venis por helpi nin!&nbsp;&raquo;"
         },
 
         "retourVillageAideRoi2-texte-1" : {
@@ -348,7 +348,7 @@ define([], function(){
         "retourVillageAideRoi2-texte-2" : {
         	fr : "Le <span key='roiAraignee'>roi des araignées</span>, après avoir détruit les dernières <span key='goule'>goules</span>,",
         	en : "The <span key='roiAraignee'>king of spiders</span>, after destroying the last <span key='goule'>ghouls</span>,",
-        	eo : "La <span key='roiAraignee'>reĝo de araneoj</span>, mortiginta la lastan <span key='goule'>gulojn</span>"
+        	eo : "La <span key='roiAraignee'>reĝo de la araneoj</span>, mortiginta la lastan <span key='goule'>gulojn</span>"
         },
         "retourVillageAideRoi2-texte-3" : {
         	fr : "s'est enfoncé dans le marais à la recherche d'autres proies.",

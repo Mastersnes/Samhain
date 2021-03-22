@@ -14,7 +14,7 @@ define([], function(){
         "tuto-start-texte-3" : {
         	fr : "Ayant terminé votre dur labeur un peu plus tôt,",
         	en : "Having finished your hard work a little sooner,",
-        	eo : "Fininte vian malfacilan laboron iom pli frue."
+        	eo : "Fininte vian malfacilan laboron iom pli frue,"
         },
         "tuto-start-texte-4" : {
         	fr : "Vous ramassez une <span key='pomme'>pomme</span> de votre panier et décidez de vous reposer au pied du géant feuillu.",
@@ -30,12 +30,12 @@ define([], function(){
         "repos2-texte-2" : {
         	fr : "Au loin, il vous semble entendre des bruits de pattes&hellip;",
         	en : "In the distance, you seem to hear legs noises&hellip;",
-        	eo : "Fore, ŝajnas al vi aŭdi bruojn de piedojn&hellip;"
+        	eo : "Fore, ŝajnas al vi aŭdi piedbruojn&hellip;"
         },
         "repos2-texte-3" : {
         	fr : "Vous vous levez en sursaut, quand deux <span key='araignee'>araignées</span> vous sautent dessus&nbsp;!",
         	en : "You get up in a jolt when two <span key='araignee'>spiders</span> jump on you!",
-        	eo : "Vi ekstaras, kaj subite du <span key='araignee'>araneoj</span> saltas sur vin!"
+        	eo : "Vi ekstaras kaj subite du <span key='araignee'>araneoj</span> saltas sur vin!"
         },
 
         "reposCombat-texte-1" : {
@@ -46,7 +46,7 @@ define([], function(){
         "reposCombat-texte-2" : {
         	fr : "Vous faites une pause pour reprendre vos esprits.",
         	en : "You take a break to get your breath.",
-        	eo : "Vi paŭzas por iom spiri."
+        	eo : "Vi faras paŭzon por iom spiri."
         },
 
         "reposFouilleFail-texte-1" : {
@@ -74,17 +74,17 @@ define([], function(){
         "reposExamine-texte-1" : {
         	fr : "En vous penchant, vous remarquez que les traces de vos adversaires remontent vers une caverne non loin.",
         	en : "By stooping, you notice that your opponents' tracks go back to a nearby cave.",
-        	eo : "Kliniĝante, vi rimarkas, ke la spuroj de viaj kontraŭuloj iras al kaverno proksima."
+        	eo : "Kliniĝante, vi rimarkas, ke la spuroj de viaj kontraŭuloj gvidas al proksima kaverno."
         },
         "reposExamine-texte-2" : {
         	fr : "On peut clairement y entendre grouiller divers insectes.",
         	en : "You can clearly hear various insects swarming around.",
-        	eo : "Ni povas aŭdi klare svarmi diversajn insectojn."
+        	eo : "Ni povas klare aŭdi svarmadon de diversaj insektoj."
         },
         "reposExamine-texte-3" : {
         	fr : "On se lance&nbsp;?",
         	en : "Let’s go?",
-        	eo : "Ek!"
+        	eo : "Ek?"
         }
 	};
 	

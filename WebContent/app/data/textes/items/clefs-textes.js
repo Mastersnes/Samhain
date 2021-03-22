@@ -27,7 +27,7 @@ define([], function(){
             "anneau-bandit" : {
             	fr : "Anneau du roi des bandits",
             	en : "Bandit king's ring",
-            	eo : "Ringo de bandita reĝo"
+            	eo : "Ringo de la reĝo de la banditoj"
             },
             "anneau-bandit-texte" : {
             	fr : "Un anneau un peu plus doré que les autres. De la camelote si vous voulez mon avis&hellip;",

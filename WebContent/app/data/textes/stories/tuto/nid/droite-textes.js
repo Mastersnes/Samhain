@@ -4,17 +4,17 @@ define([], function(){
 	    "nidDroite-texte-1" : {
         	fr : "Vous arrivez dans une immense salle.",
         	en : "You arrive in a huge room.",
-        	eo : "Vi alvenas en enorma ĉambro"
+        	eo : "Vi alvenas en grandega ĉambro."
         },
         "nidDroite-texte-2" : {
         	fr : "De nombreuses toiles recouvrent les murs et donnent à l'ensemble une ambiance sinistre.",
         	en : "Several spiderwebs cover the walls and give a sinister atmosphere.",
-        	eo : "Multaj araneaĵoj kovras la murojn kaj donas sinistran etoson."
+        	eo : "La etoso estas sinistra kaj multaj araneaĵoj kovras la murojn."
         },
         "nidDroite-texte-3" : {
         	fr : "Une forme semble bouger lentement au fond de la pièce, dans l'obscurité.",
         	en : "A shape seems to move slowly in the dark at the bottom of the room.",
-        	eo : "Formo ŝajnas malrapida movi funde de la ĉambro, en la mallumo."
+        	eo : "Formo ŝajnas malrapide moviĝi funde de la ĉambro, en la mallumo."
         },
 
         "roiAraigneePotion-texte-1" : {
@@ -25,12 +25,12 @@ define([], function(){
         "roiAraigneePotion-texte-2" : {
         	fr : "Mal en point, elle s'avance doucement vers vous.",
         	en : "In a bad way, she's slowly comes toward you.",
-        	eo : "Vundita, ŝi malrapida antaŭeniras al vi."
+        	eo : "Vundita, ŝi malrapide antaŭeniras al vi."
         },
         "roiAraigneePotion-texte-3" : {
         	fr : "Elle semble vouloir quelque chose&hellip;",
         	en : "She seems to want something&hellip;",
-        	eo : "Ŝi ŝajnas voli io&hellip;"
+        	eo : "Ŝi ŝajnas voli ion&hellip;"
         },
 
         "roiAraigneePotion2-texte-1" : {
@@ -46,18 +46,18 @@ define([], function(){
         "roiAraigneePotion2-texte-3" : {
         	fr : "dans l'antre du <span key='roiAraignee'>roi des araignées</span>&nbsp;?!&nbsp;&raquo;",
         	en : "the <span key='roiAraignee'>king of spiders</span> den?!&nbsp;&raquo;",
-        	eo : "en la nestego de la <span key='roiAraignee'>araneoj reĝo</span>?!&nbsp;&raquo;"
+        	eo : "en la nestegon de la <span key='roiAraignee'>reĝo de la araneoj</span>?!&nbsp;&raquo;"
         },
 
         "roiAraigneePotionQui-texte-1" : {
         	fr : "&laquo;&nbsp;Je suis Aros&nbsp;! Le roi arachnide&nbsp;!",
         	en : "&laquo;&nbsp;I'm Aros! The arachnid king!",
-        	eo : "&laquo;&nbsp;Mi estas Aros! La araneulo reĝo!"
+        	eo : "&laquo;&nbsp;Mi estas Aros! La aranea reĝo!"
         },
         "roiAraigneePotionQui-texte-2" : {
         	fr : "Je régnais sur ce royaume jusqu'à aujourd'hui, mais&hellip;",
         	en : "I reigned over this kingdom until today, but&hellip;",
-        	eo : "Mi reĝis la reĝlandon ĝis hodiaŭ, sed&hellip;"
+        	eo : "Mi reĝis tiun reĝlandon ĝis hodiaŭ, sed&hellip;"
         },
         "roiAraigneePotionQui-texte-3" : {
         	fr : "D'horribles créatures ont assassiné mes enfants&nbsp;!",
@@ -115,7 +115,7 @@ define([], function(){
         "roiAraigneeGuerit2-texte-3" : {
         	fr : "Des spectres, des <span key='goule'>goules</span>, des créatures de l'autre monde&hellip;&nbsp;&raquo;",
         	en : "Ghosts, <span key='goule'>ghouls</span>, creatures of the other world&hellip;&nbsp;&raquo;",
-        	eo : "Fantomoj, <span key='goule'>guloj</span>, kreaĵoj de la alia modo.&hellip;&nbsp;&raquo;"
+        	eo : "Fantomoj, <span key='goule'>guloj</span>, kreaĵoj de la alia mondo.&hellip;&nbsp;&raquo;"
         },
 
         "roiAraigneeGuerit3-texte-1" : {
@@ -158,7 +158,7 @@ define([], function(){
         "roiAraigneeParti-texte-1" : {
         	fr : "et vous laisse seul dans sa demeure&hellip;",
         	en : "and leaves you alone in his home&hellip;",
-        	eo : "kaj lasas vin solan en sia domo&hellip;"
+        	eo : "kaj lasas vin sola en sia domo&hellip;"
         },
 
         "roiAraigneeFouilleGrotte-texte-1" : {
@@ -180,12 +180,12 @@ define([], function(){
         "roiAraigneeRefus-texte-2" : {
         	fr : "Tu ne vaux pas mieux que ceux qui ont tué mes enfants&hellip;",
         	en : "You’re no better than those who killed my children&hellip;",
-        	eo : "Vi ne valoras pli bone, ke tiuj kiuj mortigis miajn infanojn&hellip;"
+        	eo : "Vi ne valoras pli bone, ol tiuj kiuj mortigis miajn infanojn&hellip;"
         },
         "roiAraigneeRefus-texte-3" : {
         	fr : "Pars&nbsp;! Sors de ma demeure&hellip; Laisse-moi mourir en paix.&nbsp;&raquo;",
         	en : "Go away! Get out of my house&hellip; let me die in peace.&nbsp;&raquo;",
-        	eo : "Foriru! Foriru de mia domo&hellip;Lasu min morti pace.&nbsp;&raquo;"
+        	eo : "Foriru! Foriru el mia domo&hellip;Lasu min pace morti.&nbsp;&raquo;"
         },
 
         "roiAraigneeAgonie-texte-1" : {
@@ -196,7 +196,7 @@ define([], function(){
         "roiAraigneeAgonie-texte-2" : {
         	fr : "Je vous maudis, vous et votre race&nbsp;!",
         	en : "I curse you and your breed!",
-        	eo : "Mi malbenas vin, vi kaj via raso!"
+        	eo : "Mi malbenas vin, vin kaj vian rason!"
         },
         "roiAraigneeAgonie-texte-3" : {
         	fr : "Ils vous anéantiront tous, la mort aux dents&hellip;&nbsp;&raquo;",
@@ -227,7 +227,7 @@ define([], function(){
         "roiAraigneeAgonieFouille-texte-3" : {
         	fr : "Elle pourra vous être utile en combat.",
         	en : "It can be useful in combat.",
-        	eo : "Ĝi povas esti utila al vi en batalo."
+        	eo : "Ĝi povas esti utila al vi dum batalo."
         }
 	};
 	

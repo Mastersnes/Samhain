@@ -216,7 +216,7 @@ define([], function(){
         "bandits-village-infiltrer-2-echec-2-texte-3" : {
         	fr : "Votre interlocuteur, le roi des bandits, ricane doucement et continue&nbsp;:",
         	en : "Your interlocutor, the king of bandits, sniggers and continues:",
-        	eo : "Via interparolanto, la reĝo de banditoj, rikanas kaj daŭrigas:"
+        	eo : "Via interparolanto, la reĝo de la banditoj, rikanas kaj daŭrigas:"
         },
         "bandits-village-infiltrer-2-echec-2-texte-4" : {
         	fr : "&laquo;&nbsp;Amenez-le dans l'arène mes amis, que nous rigolions un peu.&nbsp;&raquo;",
@@ -285,7 +285,7 @@ define([], function(){
         "bandits-village-sannoncer-texte-2" : {
         	fr : "Votre interlocuteur, le roi des bandits, se lève de son siège et saute dans l’arène, éliminant les créatures au passage.",
         	en : "Your interlocutor, the king of bandits, gets up from his seat and jumps into the arena, eliminating the creatures on his way.",
-        	eo : "Via interparolanto, la reĝo de banditoj, leviĝas de lia seĝo kaj saltas en la arenon, mortiganta survoje la kreaĵoj."
+        	eo : "Via interparolanto, la reĝo de la banditoj, leviĝas de lia seĝo kaj saltas en la arenon, mortiganta survoje la kreaĵoj."
         },
         "bandits-village-sannoncer-texte-3" : {
         	fr : "&laquo;&nbsp;Qu'attends-tu donc pour venir me rejoindre&nbsp;?&nbsp;&raquo;",
