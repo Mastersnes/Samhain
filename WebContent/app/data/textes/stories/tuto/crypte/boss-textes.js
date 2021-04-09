@@ -93,7 +93,7 @@ define([], function(){
         "bossAvance2-texte-6" : {
         	fr : "Ils ressemblent à des enfants, mais n'en ont plus que l'apparence&hellip;",
         	en : "They look like children, but they only have theirs appearance&hellip;",
-        	eo : "Ili aspektas kiel infanoj, sed ili nur havas iliaj aspekto&hellip;","
+        	eo : "Ili aspektas kiel infanoj, sed ili nur havas iliaj aspekto&hellip;",
         },
 
         "boss2-texte-1" : {
