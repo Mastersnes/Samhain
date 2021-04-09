@@ -41,7 +41,7 @@ define([], function(){
         "roiAraigneePotion2-texte-2" : {
         	fr : "&laquo;&nbsp;Qui es-tu, jeune aventurier, pour oser pénétrer",
         	en : "&laquo;&nbsp;Who are you, young adventurer, to dare to enter",
-        	eo : "&laquo;&nbsp;Kiu vi estas, juna aventurulo, por aŭdaci eniri"
+        	eo : "&laquo;&nbsp;Kiu vi estas, juna aventurulo, kiu aŭdacas eniri"
         },
         "roiAraigneePotion2-texte-3" : {
         	fr : "dans l'antre du <span key='roiAraignee'>roi des araignées</span>&nbsp;?!&nbsp;&raquo;",
@@ -147,7 +147,7 @@ define([], function(){
         "roiAraigneeGuerit4-texte-3" : {
         	fr : "Je dois venger les miens&nbsp;! En route&nbsp;!&nbsp;&raquo;",
         	en : "I must avenge mine! Let's go!&nbsp;&raquo;",
-        	eo : "Mi devas venĝi mian popolon! Ek!&nbsp;&raquo;"
+        	eo : "Mi devas venĝi miajn kunulojn! Ek!&nbsp;&raquo;"
         },
         "roiAraigneeGuerit4-texte-4" : {
         	fr : "Le roi s'enfonce dans les ténèbres de la grotte",
@@ -226,8 +226,8 @@ define([], function(){
         },
         "roiAraigneeAgonieFouille-texte-3" : {
         	fr : "Elle pourra vous être utile en combat.",
-        	en : "It can be useful in combat.",
-        	eo : "Ĝi povas esti utila al vi dum batalo."
+        	en : "It could be useful in combat.",
+        	eo : "Ĝi povos esti utila al vi dum batalo."
         }
 	};
 	

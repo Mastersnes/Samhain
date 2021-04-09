@@ -15,7 +15,7 @@ define([], function(){
         "quete1-description-2" : {
         	fr : "Belle récompense à qui me les ramènera.",
         	en : "Great reward for whom will bring them back to me.",
-        	eo : "Bona rekompenco al kiu retrovos ilin."
+        	eo : "Bona rekompenco al tiu, kiu retrovos ilin."
         },
         "quete1-description-3" : {
         	fr : "PS&nbsp;: vivantes si possible, merci&hellip;",
@@ -85,7 +85,7 @@ define([], function(){
         "quete1-debut-fermier-2-texte-2" : {
         	fr : "Il n'a pas l'air convaincu. Après un crachat sur le côté, il continue&nbsp;:",
         	en : "He doesn’t seem convinced. After a spit, he continues:",
-        	eo : "Li ne aspektas konvinkita. Post kraĉaĵo flanken, li daŭrigas:"
+        	eo : "Li ne aspektas konvinkita. Post kraĉado flanken, li daŭrigas:"
         },
         "quete1-debut-fermier-2-texte-3" : {
         	fr : "&laquo;&nbsp;T'as pas l'air très futé, mais tu peux faire l'affaire.",
@@ -111,7 +111,7 @@ define([], function(){
         "quete1-debut-fermier-3-texte-3" : {
         	fr : "M'étonnerait pas qu'elles se soient perdues dans les champs, gueulardes comme elles sont&hellip;&nbsp;&raquo;",
         	en : "I wouldn’t be surprised that they got lost in the fields, gluttonous like they are&hellip;&nbsp;&raquo;",
-        	eo : "Tio ne surprizus min, ke ili estus perdiĝitaj en la kampoj, glutemaj kiel ili estas&hellip;&nbsp;&raquo;"
+        	eo : "Ne surprizus min, ke, tiel glutemaj, ili estu perdiĝintaj en la kampoj&hellip;&nbsp;&raquo;"
         },
 
         "quete1-debut-fermier-4-texte-1" : {
@@ -162,13 +162,13 @@ define([], function(){
         "quete1-debut-indice-2-texte-3" : {
         	fr : "C'est certain, les <span key='poulet'>volailles</span> se sont enfuies par là&nbsp;!",
         	en : "For sure, the <span key='poulet'>poultry</span> ran away by that way!",
-        	eo : "Tio estas certa, la <span key='poulet'> koltobirdoj</span> fuĝis tie for!"
+        	eo : "Tio estas certa, la <span key='poulet'> kortobirdoj</span> tien forfuĝis!"
         },
 
         "quete1-debut-indice-3-texte-1" : {
-        	fr : "Scrupuleusement, la tête au sol, vous suivez la piste des fuyardes.",
-        	en : "Scrupulously, watching the ground, you follow the fugitives’ traces.",
-        	eo : "Skrupule, vi rigardas la grundon kaj vi sekvas la spurojn de la fuĝantinoj."
+        	fr : "Scrupuleusement, vous suivez la piste des fuyardes.",
+        	en : "Scrupulously, you follow the fugitives’ traces.",
+        	eo : "Skrupule, vi sekvas la spurojn de la fuĝintinoj."
         },
         "quete1-debut-indice-3-texte-2" : {
         	fr : "Votre traque s’arrête au cœur d'une gigantesque culture de maïs.",
@@ -270,12 +270,12 @@ define([], function(){
         "quete1-champ-3-texte-1" : {
         	fr : "Voyant leur manque de réaction, vous toussez pour vous faire remarquer.",
         	en : "Seeing their lack of reaction, you cough to stand out.",
-        	eo : "Vidante ilia manko de reakcio, vi tusas por altiri la atento."
+        	eo : "Vidante ilian senreagon, vi tusas por altiri la atenton."
         },
         "quete1-champ-3-texte-2" : {
         	fr : "L'un d'eux, sans doute le chef, vous regarde et lance&nbsp;:",
         	en : "One of them, probably the chief, looks at you and fling:",
-        	eo : "Unu el ili, sendube la ĉefo, rigardas vin kaj lanĉas:"
+        	eo : "Unu el ili, sendube la ĉefo, rigardas vin kaj eldiras:"
         },
         "quete1-champ-3-texte-3" : {
         	fr : "&laquo;&nbsp;Tu veux quoi toi&nbsp;?&nbsp;&raquo;",
@@ -291,17 +291,17 @@ define([], function(){
         "quete1-champ-4-texte-2" : {
         	fr : "&laquo;&nbsp;Des poulets&nbsp;? Mouais, ptêt bien qu'on les a vus&hellip; Ou ptêt pas.",
         	en : "&laquo;&nbsp;Chickens? Well, maybe we saw them&hellip; Or maybe not.",
-        	eo : "&laquo;&nbsp;Kokidojn? Nu, eble oni vidis ilin&hellip; Aŭ ne eble."
+        	eo : "&laquo;&nbsp;Kokidojn? Nu, eble ni vidis ilin&hellip; Aŭ ne eble."
         },
         "quete1-champ-4-texte-3" : {
         	fr : "Ma mémoire me joue des tours en ce moment, tu comprends non&nbsp;?&nbsp;&raquo;",
         	en : "My memory is acting up these days. You understand, no?&nbsp;&raquo;",
-        	eo : "Mia memoro trompetas min, momente. Vi komprenas, ne?&nbsp;&raquo;"
+        	eo : "Mia memoro trompetas min, nuntempe. Vi komprenas, ĉu ne?&nbsp;&raquo;"
         },
         "quete1-champ-4-texte-4" : {
         	fr : "Il semble attendre une réaction de votre part.",
         	en : "He seems to be waiting for a reaction from you.",
-        	eo : "Li ŝajnas atendi reakcio de vi."
+        	eo : "Li ŝajnas atendi reagon viaflanke."
         },
 
         /**
@@ -310,7 +310,7 @@ define([], function(){
         "quete1-abandon-texte-1" : {
         	fr : "Sans piste supplémentaire, vous êtes forcé de rentrer à la ferme faire votre rapport&hellip;",
         	en : "Without another track, you’re forced to go back to the farm to make your report&hellip;",
-        	eo : "Sen indicoj pliaj, vi estas devigita de reveni al la farmo por fari via raporto.&hellip;"
+        	eo : "Sen pliaj indicoj, vi estas devigita reveni al la farmo por fari vian raporton&hellip;"
         },
 
         /**
@@ -324,33 +324,33 @@ define([], function(){
         "quete1-champ-menacer-texte-2" : {
         	fr : "&laquo;&nbsp;Tu crois vraiment que tu vas nous faire peur avec ces petits bras&nbsp;?&nbsp;&raquo;",
         	en : "&laquo;&nbsp;Do you really expect to scare us with these little arms?&nbsp;&raquo;",
-        	eo : "&laquo;&nbsp;Vi kredas vere, ke vi timigontas al ni kun ĉi tiu etaj brakoj?&nbsp;&raquo;"
+        	eo : "&laquo;&nbsp;Ĉu vi vere kredas, ke vi timigos nin kun tiel etaj brakoj?&nbsp;&raquo;"
         },
         "quete1-champ-menacer-texte-3" : {
         	fr : "Les <span key='villageois'>trois paysans</span> se lèvent et s'avancent vers vous. Ça va faire mal&hellip;",
         	en : "The <span key='villageois'>three peasants</span> stand up and come forward to you. It’s going to hurt&hellip;",
-        	eo : "La <span key='villageois'>tri kamparanoj</span> leviĝas kaj alpaĝas al vi. Tio doloros&hellip;"
+        	eo : "La <span key='villageois'>tri kamparanoj</span> leviĝas kaj alpaŝas al vi. Tuj doloros&hellip;"
         },
 
         "quete1-champ-menacer-2-texte-1" : {
         	fr : "Les brutes s'écroulent au sol. Maintenant, ils ont l'air bien intimidés.",
         	en : "The brutes collapse on the ground. Now, they seem really intimidate.",
-        	eo : "La kruduoj falas sur la grundo. Nun, ili ŝajnas bone timigitaj."
+        	eo : "La kruduloj falas sur la grundo. Nun, ili ŝajnas tre timigitaj."
         },
         "quete1-champ-menacer-2-texte-2" : {
         	fr : "Le chef, encore conscient, semble beaucoup plus enclin à vous aider maintenant&nbsp;:",
         	en : "The chief, still conscious, seems to be more disposed to help you now.",
-        	eo : "La ĉefo, ankoraŭ konscia, ŝajnas multe pli inklina helpi vin nune."
+        	eo : "La ĉefo, ankoraŭ konscia, ŝajnas nun multe pli inklina helpi vin."
         },
         "quete1-champ-menacer-2-texte-3" : {
         	fr : "&laquo;&nbsp;On a compris, ne nous tape plus&nbsp;! Ils sont partis vers la ville, là-bas.&nbsp;&raquo;",
         	en : "&laquo;&nbsp;We understood, don’t hit us anymore! They went to this city over there.&nbsp;&raquo;",
-        	eo : "&laquo;&nbsp;Oni komprenas, ne plu frapas nin! Ili iris al la urbo, ĉi tie.&nbsp;&raquo;"
+        	eo : "&laquo;&nbsp;Ni komprenis, ne plu frapu nin! Ili iris al la urbo, ĉi tie.&nbsp;&raquo;"
         },
         "quete1-champ-menacer-2-texte-4" : {
         	fr : "La violence&hellip; Il n'y a que ça de vrai&hellip;",
         	en : "the violence&hellip; There is nothing like this&hellip;",
-        	eo : "La violento&hellip; Estas nenio pli bona.&hellip;"
+        	eo : "Violento&hellip; Nenio pli bonas&hellip;"
         },
 
         /**
@@ -359,7 +359,7 @@ define([], function(){
         "quete1-champ-soudoyer-texte-1" : {
         	fr : "Son sourire se transforme en rire et les pièces disparaissent bien vite dans sa poche.",
         	en : "His smile turns into laughter and the coins quickly disappear into his pocket.",
-        	eo : "Lia rideto ŝanĝiĝas rido kaj la moneroj malaperas rapide en lia poŝo."
+        	eo : "Lia rideto ŝanĝiĝas al rido kaj la moneroj malaperas rapide en lian poŝon."
         },
         "quete1-champ-soudoyer-texte-2" : {
         	fr : "&laquo;&nbsp;Ah, en v'la un d'homme intelligent&nbsp;!",
@@ -369,17 +369,17 @@ define([], function(){
         "quete1-champ-soudoyer-texte-3" : {
         	fr : "Ça me revient maintenant, on les a bien vu tes poulets mon gars.",
         	en : "It’s coming back to me now, we’ve seen your chickens, man.",
-        	eo : "Ĝi revenas al mi nune, oni vidis ilin viajn kokidojn, ulo."
+        	eo : "Mi rememoras nun, ni ja vidis viajn kokidojn, ulo."
         },
         "quete1-champ-soudoyer-texte-4" : {
         	fr : "Ils sont partis vers la ville, dans cette direction&nbsp;!&nbsp;&raquo;",
         	en : "They went to the city, in this direction!&nbsp;&raquo;",
-        	eo : "Ili foriris al la urbo, en ĉi tiu direkton!&nbsp;&raquo;"
+        	eo : "Ili foriris al la urbo, en ĉi tiu direkto!&nbsp;&raquo;"
         },
         "quete1-champ-soudoyer-texte-5" : {
         	fr : "Rien de mieux que la diplomatie&hellip;",
         	en : "Nothing is better than diplomacy&hellip;",
-        	eo : "Nenio pli bona, ke la diplomatio&hellip;"
+        	eo : "Nenio pli bonas ol diplomatio&hellip;"
         },
 
         /**
@@ -388,18 +388,18 @@ define([], function(){
         "quete1-berge-texte-1" : {
         	fr : "Vous suivez le chemin indiqué par vos nouveaux amis et arrivez au bord d'un fleuve.",
         	en : "You follow the way indicated by your new friends and arrive at the edge of a river.",
-        	eo : "Vi sekvas la vojon indikitan de viajn novajn amikojn kaj vi alvenas apud riverego."
+        	eo : "Vi sekvas la vojon indikitan de viaj novaj amikoj kaj vi alvenas apud riverego."
         },
         "quete1-berge-texte-2" : {
         	fr : "Le son de l'eau calme, qui ruisselle lentement sur les pierres effilées, n'est perturbé que par le doux ronflement du vent.",
         	en : "Only the soft snoring of the wind perturbs the sound of calm water, slowly flowing on the sharpen stones.",
-        	eo : "La sono de la trankvila akvo, kiu rojas malrapide sur la akrigaj ŝtonoj, ne estas pertubita, ke pro la pacema ronkado de la vento."
+        	eo : "La sono de la trankvila akvo, kiu rojas malrapide sur la akrigaj ŝtonoj, estas pertubata nur de la pacema ronkado de la vento."
         },
 
         "quete1-berge-2-texte-1" : {
         	fr : "Ronflement&nbsp;?! Intrigué par ce bruit, vous vous penchez au-dessus du pont pour en vérifier la source.",
         	en : "Snoring?! Intrigued by this sound, you lean out of the bridge to verify the origin of it.",
-        	eo : "Ronkado?! Intrigita pri la bruo, vi kliniĝas super la ponto por kontroli la deveno."
+        	eo : "Ronkado?! Mirigita pro tiu bruo, vi kliniĝas super la ponto por kontroli la deveno."
         },
         "quete1-berge-2-texte-2" : {
         	fr : "L'une des <span key='poulet'>poulettes</span>, délicatement nichée entre deux pierres, a profité du silence du lieu pour piquer un petit somme.",
