@@ -31,7 +31,7 @@ define([], function(){
         "coffreReussite1-texte-1" : {
         	fr : "Le coffre coince, mais en forçant un peu&hellip;",
         	en : "The trunk is stucking, but by forcing a little&hellip;",
-        	eo : "La kofro resistas, sed se vi pli penas&hellip;"
+        	eo : "La kofro resistas, sed se vi plipenas&hellip;"
         },
         "coffreReussite1-texte-2" : {
         	fr : "Super&nbsp;! Vous réussissez à l'ouvrir en grand&nbsp;!",

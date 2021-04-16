@@ -47,7 +47,7 @@ define([], function(){
         "necroS1Fight2-texte-3" : {
         	fr : "Il est temps de continuer&nbsp;!",
         	en : "It's time to continue!",
-        	eo : "Estas tempo de daŭrigi!"
+        	eo : "Estas tempo por daŭrigi!"
         },
 
         "necroS1Fouille-texte-1" : {

@@ -682,7 +682,7 @@ define([], function(){
         "quete1-taverne-verre-texte-3" : {
         	fr : "Il est grand temps d'en finir&hellip;",
         	en : "It’s high time to get it over with&hellip;",
-        	eo : "Ĝi estas granda tempo de fini ĝin&hellip;"
+        	eo : "Ĝi estas granda tempo por fini ĝin&hellip;"
         },
 
         /**

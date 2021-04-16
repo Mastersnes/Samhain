@@ -147,7 +147,7 @@ define([], function(){
         "roiAraigneeGuerit4-texte-3" : {
         	fr : "Je dois venger les miens&nbsp;! En route&nbsp;!&nbsp;&raquo;",
         	en : "I must avenge mine! Let's go!&nbsp;&raquo;",
-        	eo : "Mi devas venĝi miajn kunulojn! Ek!&nbsp;&raquo;"
+        	eo : "Mi devas venĝi mian popolon! Ek!&nbsp;&raquo;"
         },
         "roiAraigneeGuerit4-texte-4" : {
         	fr : "Le roi s'enfonce dans les ténèbres de la grotte",

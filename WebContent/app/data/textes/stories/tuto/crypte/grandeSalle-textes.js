@@ -148,7 +148,7 @@ define([], function(){
         "necroGSFouilleCercueil3-texte-2" : {
         	fr : "Il est temps de continuer votre aventure&nbsp;!",
         	en : "It's time to continue your adventure!",
-        	eo : "Estas tempo de daŭrigi vian aventuron!"
+        	eo : "Estas tempo por daŭrigi vian aventuron!"
         },
 
         "necroGSFouilleSalle-texte-1" : {

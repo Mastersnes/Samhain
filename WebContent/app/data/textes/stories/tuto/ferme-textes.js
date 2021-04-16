@@ -4,7 +4,7 @@ define([], function(){
         "reposVillage-texte-1" : {
         	fr : "Vous arrivez aux abords du village, devant la ferme du vieux Tom.",
         	en : "You arrive at the outskirts of the village, in front of the farm of old Tom.",
-        	eo : "Vi alvenas apud vilaĝo, antaŭ la farmo de la maljuna Tom."
+        	eo : "Vi alvenas apud la vilaĝo, antaŭ la farmo de la maljuna Tom."
         },
         "reposVillage-texte-2" : {
         	fr : "Au loin, des bruits de combats acharnés se font entendre.",
@@ -14,7 +14,7 @@ define([], function(){
         "reposVillage-texte-3" : {
         	fr : "Un vent de panique vous submerge&hellip;",
         	en : "A wave of panic overwhelms you&hellip;",
-        	eo : "Vento de paniko premas vin&hellip;"
+        	eo : "Panikvento premas vin&hellip;"
         },
 
         "fermeExaminer-texte-1" : {
@@ -52,7 +52,7 @@ define([], function(){
         "batonSaisieReussite1-texte-2" : {
         	fr : "Dans une roulade arrière, vous avez juste le temps d'esquiver",
         	en : "In a backward roll, you have just enough time to dodge",
-        	eo : "Per malantaŭ transkapiĝo, vi nur havas tempon por eviti"
+        	eo : "Per rulado malantaŭen, vi ĝustatempe evitas"
         },
         "batonSaisieReussite2-texte-1" : {
         	fr : "Malheureusement vous n'avez pas le temps d'éviter",
@@ -62,7 +62,7 @@ define([], function(){
         "batonSaisieReussite1-texte-3" : {
         	fr : "la grosse porte de la grange qui s'ouvre avec fracas&hellip;",
         	en : "the big door of the barn that opens with crash&hellip;",
-        	eo : "la portegon de la garbejon, kiu bruege malfermiĝas&hellip;"
+        	eo : "la pordegon de la garbejo, kiu bruege malfermiĝas&hellip;"
         },
         "batonSaisieReussite2-texte-2" : {
         	fr : "et vous fait tomber à la renverse&hellip;",
@@ -73,7 +73,7 @@ define([], function(){
         "batonSaisieEchec-texte-1" : {
         	fr : "Impossible de le faire bouger&hellip;",
         	en : "Impossible to make it move&hellip;",
-        	eo : "Neeblas movigi ĝin&hellip;"
+        	eo : "Neeblas movi ĝin&hellip;"
         },
         "batonSaisieEchec-texte-2" : {
         	fr : "Le <span key='baton'>bâton</span> est trop bien enfoncé.",
@@ -89,7 +89,7 @@ define([], function(){
         "batonPousse-texte-1" : {
         	fr : "Vous donnez un puissant coup de pied dans le <span key='baton'>bâton</span> qui éclate en morceaux.",
         	en : "You give a powerful kick in the <span key='baton'>stick</span> that burst into pieces.",
-        	eo : "Vi fortega piedbatas la bastonon, kiu disrompiĝas en pecojn."
+        	eo : "Vi fortege piedbatas la <span key='baton'>bastonon</span>, kiu disrompiĝas en pecojn."
         },
         "batonPousse-texte-2" : {
         	fr : "La porte de la grange s'ouvre avec fracas&hellip;",
@@ -127,7 +127,7 @@ define([], function(){
         "fouillerGoule-texte-1" : {
         	fr : "Rien&hellip;",
         	en : "Nothing&hellip;",
-        	eo : "Nenion&hellip;"
+        	eo : "Nenio&hellip;"
         },
         "fouillerGoule-texte-2" : {
         	fr : "Juste un cadavre à moitié décomposé.",
@@ -138,7 +138,7 @@ define([], function(){
         "grange-texte-1" : {
         	fr : "La grange est sombre et sent le renfermé.",
         	en : "The barn is dark and smells musty.",
-        	eo : "La garbejo estas malhela kaj odoras mucidan."
+        	eo : "La garbejo estas malhela kaj odoras mucidon."
         },
         "grange-texte-2" : {
         	fr : "Une grosse table est posée au fond.",
@@ -149,23 +149,23 @@ define([], function(){
         "grangeFouilleTable-texte-1" : {
         	fr : "La table est recouverte de paperasses en pagaille.",
         	en : "The table is covered with lots of papers in a mess.",
-        	eo : "La tablo estas kovrita de malordaj paperoj."
+        	eo : "La tablo estas kovrita de malordaj paperaĉoj."
         },
         "grangeFouilleTable-texte-2" : {
         	fr : "Une vieille <span key='bougie'>bougie</span> presque consumée est posée dans un coin.",
         	en : "An old <span key='bougie'>candle</span> almost whole burned was placed in a corner.",
-        	eo : "Malnova <span key='bougie'>kandelo</span> preskaŭ konsumiĝita estas metita en angulo."
+        	eo : "Malnova <span key='bougie'>kandelo</span> preskaŭ konsumiĝita staras en angulo."
         },
 
         "grangeFouilleTable2-texte-1" : {
         	fr : "Vous prenez la <span key='bougie'>bougie</span> et le nécessaire pour l'allumer si besoin.",
         	en : "You take the <span key='bougie'>candle</span> and some stuff to light it.",
-        	eo : "Vi prenas la <span key='bougie'>kandelon</span> kaj la necesan por bruligi ĝin."
+        	eo : "Vi prenas la <span key='bougie'>kandelon</span> kaj la necesaĵojn por bruligi ĝin."
         },
         "grangeFouilleTable2-texte-2" : {
         	fr : "Il est temps de continuer l'aventure&nbsp;!",
         	en : "It’s time to continue the adventure!",
-        	eo : "Estas tempo de daŭrigi la aventuron!"
+        	eo : "Estas tempo por daŭrigi la aventuron!"
         },
 
         "grangeExamine-texte-1" : {

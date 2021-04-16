@@ -191,7 +191,7 @@ define([], function(){
         "necroS2Fouille-texte-4" : {
         	fr : "Il est temps de retourner dans la grande salle&nbsp;! L'aventure n'attend pas&nbsp;!",
         	en : "It's time to go back to the big room! The adventure doesn’t wait!",
-        	eo : "Estas tempo de reiras en la grandan ĉambron! La aventuro ne attendas!"
+        	eo : "Estas tempo por reiri en la grandan ĉambron! La aventuro ne attendas!"
         },
 
         "necroS2Clean-texte-1" : {
