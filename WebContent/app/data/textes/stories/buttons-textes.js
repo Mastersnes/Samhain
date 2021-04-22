@@ -647,7 +647,7 @@ define([], function(){
         "la-quete" : {
         	fr : "La quête",
         	en : "The quest",
-        	eo : "La serĉado"
+        	eo : "La defio"
         },
         "les-poulets" : {
         	fr : "Les poulets&nbsp;?",
@@ -815,7 +815,7 @@ define([], function(){
         "panneau-quete" : {
         	fr : "Panneau des quêtes",
         	en : "Quests board",
-        	eo : "Serĉpanelo"
+        	eo : "Defioj panelo"
         },
         "boutiques" : {
         	fr : "Boutiques",
@@ -840,7 +840,7 @@ define([], function(){
         "affichage-quetes" : {
         	fr : "Affichage des quêtes",
         	en : "Quests display",
-        	eo : "Afiŝado de la serĉoj"
+        	eo : "Afiŝado de la defioj"
         },
         "partir" : {
         	fr : "Partir",
