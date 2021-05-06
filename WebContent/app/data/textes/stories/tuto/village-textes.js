@@ -9,7 +9,7 @@ define([], function(){
         "reposVillage2-texte-2" : {
         	fr : "De nombreuses <span key='goule'>goules</span> tentent de dévorer les paysans qui se battent de leur mieux.",
         	en : "Many <span key='goule'>ghouls</span> try to devour the peasants who fight as best as they can.",
-        	eo : "Multaj <span key='goule'>guloj</span> provas vori la kamparanojn, kiuj batalas iliaj plej bone."
+        	eo : "Multaj <span key='goule'>guloj</span> provas vori la kamparanojn, kiuj plej bone batalas."
         },
         "reposVillage2-texte-3" : {
         	fr : "&laquo;&nbsp;Du nerf&nbsp;! Défendez le village&nbsp;!&nbsp;&raquo; hurle un <span key='garde'>garde</span> non loin de vous.",
@@ -40,7 +40,7 @@ define([], function(){
         "reposVillage3-texte-5" : {
         	fr : "Ils ont emporté les enfants dans la forêt&nbsp;&raquo;",
         	en : "They took the children into the forest&nbsp;&raquo;",
-        	eo : "Ili forportis la infanojn en la arbaro&nbsp;&raquo;"
+        	eo : "Ili forportis la infanojn en la arbaron&nbsp;&raquo;"
         },
 
         "reposVillage4-texte-1" : {
@@ -56,7 +56,7 @@ define([], function(){
         "reposVillage4-texte-3" : {
         	fr : "Vous devez les secourir&nbsp;! Demandez de l'aide aux autres <span key='villageois'>villageois</span>&nbsp;!&nbsp;&raquo;",
         	en : "You have to help them! Ask other <span key='villageois'>villagers</span> for help!&nbsp;&raquo;",
-        	eo : "Vi devas sukuri ilin! Petu helpon al la aliaj <span key='villageois'>vilaĝanoj</span>!&nbsp;&raquo;"
+        	eo : "Vi devas sukurigi ilin! Petu la aliajn <span key='villageois'>vilaĝanojn</span> pri helpo!&nbsp;&raquo;"
         },
 
         "reposVillageAide-texte-1" : {
@@ -72,7 +72,7 @@ define([], function(){
         "reposVillageAide-texte-3" : {
         	fr : "John, le forgeron, s'approche de vous l'air menaçant&nbsp;:",
         	en : "John, the blacksmith, approaches you, looking threatening:",
-        	eo : "John, la forĝisto, alproskimiĝas al vin, ŝajnas minaca:"
+        	eo : "John, la forĝisto, alproksimiĝas al vi, kun minaca mieno:"
         },
         "reposVillageAide-texte-4" : {
         	fr : "&laquo;&nbsp;Tiens&nbsp;! Prends cette <span key='epee'>épée</span> et ce <span key='bouclierFer'>bouclier en fer</span>&nbsp;!",
@@ -104,7 +104,7 @@ define([], function(){
         "reposVillageAide2-texte-1" : {
         	fr : "Un vieux monsieur s'approche en toussotant&nbsp;:",
         	en : "An old man approaches by coughing:",
-        	eo : "Maljuna homo alproksimiĝas tusante:"
+        	eo : "Maljuna viro alproksimiĝas tusante:"
         },
         "reposVillageAide2-texte-2" : {
         	fr : "&laquo;&nbsp;Prends au moins cette <span key='potionSante'>potion</span>, mon petit&hellip; ",
@@ -114,7 +114,7 @@ define([], function(){
         "reposVillageAide2-texte-3" : {
         	fr : "Tu ne peux pas y aller sans rien&nbsp;!&nbsp;&raquo;",
         	en : "You can't go without taking anything!&nbsp;&raquo;",
-        	eo : "Vi ne povas iri tie sen io!&nbsp;&raquo;"
+        	eo : "Vi ne povas iri tien sen io!&nbsp;&raquo;"
         },
         "reposVillageAide2-texte-4" : {
         	fr : "Vous prenez la fiole et mangez un morceau.",
@@ -140,7 +140,7 @@ define([], function(){
         "reposVillageRefus-texte-3" : {
         	fr : "Les <span key='garde'>gardes</span> sortent leurs épées et vous pousse vers le marais&hellip;",
         	en : "The <span key='garde'>guards</span> take out their swords and push you to the swamp&hellip;",
-        	eo : "La <span key='garde'>gardistoj</span> prenas iliajn glavojn kaj puŝas vin al la marĉo&hellip;"
+        	eo : "La <span key='garde'>gardistoj</span> prenas siajn glavojn kaj puŝas vin al la marĉo&hellip;"
         },
 
         "reposVillageTraitre-texte-1" : {
@@ -151,7 +151,7 @@ define([], function(){
         "reposVillageTraitre-texte-2" : {
         	fr : "&laquo;&nbsp;Traître&nbsp;! C'est toi qui as amené la mort sur nous&nbsp;!",
         	en : "&laquo;&nbsp;Traitor! You're the one who brought death on us!",
-        	eo : "&laquo;&nbsp;Perfidulo! Estas vi, kiu alportis morton ĝis ni!"
+        	eo : "&laquo;&nbsp;Perfidulo! Vi estas tiu, kiu alportis morton ĝis ni!"
         },
         "reposVillageTraitre-texte-3" : {
         	fr : "Tu vas nous le payer&nbsp;! Rends-nous nos enfants&nbsp;!&nbsp;&raquo;",
@@ -161,7 +161,7 @@ define([], function(){
         "reposVillageTraitre-texte-4" : {
         	fr : "Ils se jettent sur vous&hellip;",
         	en : "They leap on you&hellip;",
-        	eo : "Ili ĵetiĝas sur vi&hellip;"
+        	eo : "Ili ĵetiĝas sur vin&hellip;"
         },
 
         "reposVillageTraitre2-texte-1" : {
@@ -177,7 +177,7 @@ define([], function(){
         "reposVillageTraitre2-texte-3" : {
         	fr : "objets de valeur dans leurs chaumières&nbsp;?",
         	en : "valuable objects in their cottages?",
-        	eo : "valoraĵojn en iliaj dometoj?"
+        	eo : "valoraĵojn en siaj dometoj?"
         },
 
         "reposVillageTraitre3-texte-1" : {
@@ -246,8 +246,8 @@ define([], function(){
         },
         "villageFouilleEchec-texte-2" : {
         	fr : "Ces crétins n'ont rien laissé&hellip;",
-        	en : "Those cretins didn't leave anythinghellip;",
-        	eo : "Tiuj stultuloj lasis nenionhellip;"
+        	en : "Those cretins didn't leave anything&hellip;",
+        	eo : "Tiuj stultuloj lasis nenion&hellip;"
         },
         "villageFouilleEchec-texte-3" : {
         	fr : "Vous continuez votre route.",
@@ -263,12 +263,12 @@ define([], function(){
         "villageFouilleEchec2-texte-2" : {
         	fr : "vous tombez nez à nez avec une <span key='grosseGoule'>grosse goule</span>&nbsp;!",
         	en : "you're coming face to face with a <span key='grosseGoule'>big ghoul</span>!",
-        	eo : "vi falas vidalvide kun span key='grosseGoule'>gulego</span>!"
+        	eo : "vi falas vidalvide kun <span key='grosseGoule'>gulego</span>!"
         },
         "villageFouilleEchec2-texte-3" : {
         	fr : "Sauvez votre peau avant qu'elle ne vous la mange&nbsp;!",
         	en : "Save your skin before it eats yours!",
-        	eo : "Savu vian haŭton antaŭ ol ŝi manĝas ĝin!"
+        	eo : "Savu vian haŭton antaŭ ol ŝi manĝos ĝin!"
         },
 
         "villageFouilleSuite-texte-1" : {
@@ -279,7 +279,7 @@ define([], function(){
         "villageFouilleSuite-texte-2" : {
         	fr : "que des traces de pas s'enfoncent dans le marais&hellip;",
         	en : "that steps traces sink into the swamp&hellip;",
-        	eo : "ke la piedospuroj foririĝas en la marĉo&hellip;"
+        	eo : "ke la piedospuroj foriras en la marĉo&hellip;"
         },
         "villageFouilleSuite-texte-3" : {
         	fr : "Peut-être un fuyard&nbsp;?",
@@ -290,7 +290,7 @@ define([], function(){
         "reposVillageRefus2-texte-1" : {
         	fr : "Vous vous en allez vers le marais.",
         	en : "You're heading for the swamp.",
-        	eo : "Vi foriras al la marĉo."
+        	eo : "Vi iras al la marĉo."
         },
         "reposVillageRefus2-texte-2" : {
         	fr : "Ces crétins n'auront cas se débrouiller seuls&hellip;",
@@ -311,7 +311,7 @@ define([], function(){
         "retourVillage2-texte-2" : {
         	fr : "Les paysans sont partis se cacher dans leurs chaumières en ruine",
         	en : "The peasants left to hide in their ruined cottages",
-        	eo : "La kamparanoj foriris kaŝiĝi en iliajn ruinaj dometojn"
+        	eo : "La kamparanoj foriris por kaŝiĝi en siajn ruinajn dometojn"
         },
         "retourVillage2-texte-3" : {
         	fr : "et quelques <span key='garde'>gardes</span> se préparent déjà à attaquer votre nouvel allié&hellip;",
@@ -327,7 +327,7 @@ define([], function(){
         "retourVillageAideRoi-texte-2" : {
         	fr : "&laquo;&nbsp;Que dites-vous&nbsp;? Il faut tuer ce monstre&nbsp;!&nbsp;&raquo;",
         	en : "&laquo;&nbsp;What are you talking about? We have to kill that monster!&nbsp;&raquo;",
-        	eo : "&laquo;&nbsp;Kion vi diras? Ni devas mordigi ĉi tiun monstron!&nbsp;&raquo;"
+        	eo : "&laquo;&nbsp;Kion vi diras? Ni devas mortigi ĉi tiun monstron!&nbsp;&raquo;"
         },
         "retourVillageAideRoi-texte-3" : {
         	fr : "Vous insistez&nbsp;:",
@@ -353,29 +353,29 @@ define([], function(){
         "retourVillageAideRoi2-texte-3" : {
         	fr : "s'est enfoncé dans le marais à la recherche d'autres proies.",
         	en : "sank into the swamp in search of others preys.",
-        	eo : "foriris en la marĉo por serĉi aliajn predojn."
+        	eo : "foriris en la marĉon por serĉi aliajn predojn."
         },
 
         "retourVillageAideRoi3-texte-1" : {
         	fr : "&laquo;&nbsp;Trop tard&hellip; Il s'est enfui&hellip; Vous là&nbsp;! Qu'est-ce qui vous a pris&nbsp;?",
         	en : "&laquo;&nbsp;Too late&hellip; He ran away&hellip; You there! What the hell was wrong with you?",
-        	eo : "&laquo;&nbsp;Tro malfrue&hellip; Li fuĝis&hellip; Vi tie! Kion vi faras?"
+        	eo : "&laquo;&nbsp;Tro malfrue&hellip; Li fuĝis&hellip; Hej vi! Kion vi faris?"
         },
         "retourVillageAideRoi3-texte-2" : {
         	fr : "Les morts nous ont attaqués et ils ont emportés nos enfants dans la forêt&nbsp;!&nbsp;&raquo;",
         	en : "The dead attacked us and they took our children into the forest!&nbsp;&raquo;",
-        	eo : "La mortintoj atakis nin kaj forportis la infanojn en la arbaro!&nbsp;&raquo;"
+        	eo : "La mortintoj atakis nin kaj forportis la infanojn en la arbaron!&nbsp;&raquo;"
         },
 
         "retourVillageAideGarde-texte-1" : {
         	fr : "Vous achevez le <span key='roiAraignee'>roi araignée</span> d'un coup.",
         	en : "You're finishing the <span key='roiAraignee'>king of spiders</span> with one stroke.",
-        	eo : "Vi donas al la  <span key='roiAraignee'>reĝo de la araneojn</span> la fatalan baton."
+        	eo : "Vi donas al la <span key='roiAraignee'>reĝo de la araneoj</span> la fatalan baton."
         },
         "retourVillageAideGarde-texte-2" : {
         	fr : "Les <span key='villageois'>villageois</span> commencent déjà à sortir de leurs maisons, rassurés.",
         	en : "The <span key='villageois'>villagers</span> already start to leave their homes, reassured.",
-        	eo : "La <span key='villageois'>vilaĝanoj</span> jam komencas eliri el iliaj domoj, trankviliĝitaj."
+        	eo : "La <span key='villageois'>vilaĝanoj</span> ekeliras el siaj domoj, trankviliĝintaj."
         }
 	};
 	

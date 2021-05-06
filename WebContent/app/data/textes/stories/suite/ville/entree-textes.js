@@ -9,12 +9,12 @@ define([], function(){
         "ville-entree-1-texte-2" : {
         	fr : "La civilisation&nbsp;! Enfin&nbsp;!",
         	en : "Civilization! At last!",
-        	eo : "Civilizacion! Fine!"
+        	eo : "Civilizacio! Finfine!"
         },
         "ville-entree-1-texte-3" : {
         	fr : "Vous régalant de la modernité des lieux, vous vous dirigez vers vos objectifs&hellip;",
         	en : "Enjoying the modernity of this place, you head for your goals&hellip;",
-        	eo : "Ĝuinte la modernecon de la loko, vi iras al viaj celoj&hellip;"
+        	eo : "Ĝuante la modernecon de la loko, vi iras al viaj celoj&hellip;"
         },
 
         /**
@@ -23,7 +23,7 @@ define([], function(){
         "ville-entree-retour-centre-texte-1" : {
         	fr : "Vous voici de nouveau au centre de la ville.",
         	en : "Here you are in the center of the city again.",
-        	eo : "Vi denove estas al la centro de la urbo."
+        	eo : "Vi denove estas en la centro de la urbo."
         },
         "ville-entree-retour-centre-texte-2" : {
         	fr : "Divers choix s'offrent à vous&hellip;",
@@ -40,14 +40,14 @@ define([], function(){
         	eo : "Heroo ĉiam estas laborpetanta."
         },
         "ville-entree-panneau-quete-texte-2" : {
-        	fr : "Vous vous dirigez vers le panneau d'affichage des quêtes,",
-        	en : "You head for the quests displaying panel,",
-        	eo : "Vi iras al la defioj afiŝtabulo."
+        	fr : "Vous vous dirigez vers le panneau des quêtes,",
+        	en : "You head for the quests panel,",
+        	eo : "Vi iras al la defioj panelo."
         },
         "ville-entree-panneau-quete-texte-3" : {
         	fr : "Peut-être qu'une nouvelle aventure vous y attend&nbsp;?",
         	en : "Maybe a new adventure is waiting for you?",
-        	eo : "Eble nova aventuro atendas vin?"
+        	eo : "Eble nova aventuro tie atendas vin?"
         },
 
         "ville-entree-panneau-quete-retour-texte-1" : {
@@ -70,7 +70,7 @@ define([], function(){
         "ville-entree-echec-quete-texte-1" : {
         	fr : "Vous vous réveillez à moitié étourdis&hellip;",
         	en : "You wake up half stunned&hellip;",
-        	eo : "Vi vekiĝas duone konfuzita&hellip;"
+        	eo : "Vi vekiĝas duonkonfuza&hellip;"
         },
         "ville-entree-echec-quete-texte-2" : {
         	fr : "On peut dire qu'ils n'y ont pas été de main morte.",
@@ -80,7 +80,7 @@ define([], function(){
         "ville-entree-echec-quete-texte-3" : {
         	fr : "L'esprit encore embrumé, vous retournez au centre de la ville.",
         	en : "Still confused, you return to the center of the city.",
-        	eo : "Ankoraŭ konfuzita, vi reiras al la centro de la urbo."
+        	eo : "Ankoraŭ konfuza, vi reiras al la centro de la urbo."
         },
         "ville-entree-echec-quete-texte-4" : {
         	fr : "L'aventure n'attend pas&nbsp;!",
@@ -99,13 +99,13 @@ define([], function(){
         "ville-entree-boutiques-texte-2" : {
         	fr : "Vous vous dirigez vers vos magasins préférés, prêt à faire de bonnes affaires&nbsp;!",
         	en : "You head for your favorites shops, ready for good deals!",
-        	eo : "Vi iras al viaj preferataj butikoj, preta por fari bonajn aferojn."
+        	eo : "Vi iras al viaj preferataj butikoj, preta por fari bonajn negocojn!"
         },
 
         "ville-entree-boutiques-achat-texte-1" : {
         	fr : "Une fois vos transactions terminées, vous décidez de revenir à vos occupations&hellip;",
         	en : "Once your transactions finished, you decide to get back to your occupations&hellip;",
-        	eo : "Post viaj transakcioj finiĝitaj, vi decidas reveni al viaj okupoj&hellip;"
+        	eo : "Fininte viajn transakciojn, vi decidas reveni al viaj okupoj&hellip;"
         },
 
         "ville-entree-boutiques-retour-texte-1" : {
@@ -116,7 +116,7 @@ define([], function(){
         "ville-entree-boutiques-retour-texte-2" : {
         	fr : "Rien de mieux que les économies&nbsp;!",
         	en : "There is nothing better than saving your money!",
-        	eo : "Nenio pli bone ol la ŝparaĵoj!"
+        	eo : "Nenio pli bona ol la ŝparado!"
         },
 
         /**
@@ -130,7 +130,7 @@ define([], function(){
         "ville-entree-palais-justice-texte-2" : {
         	fr : "Rien, personne à l'horizon. Sur un écriteau, vous lisez&nbsp;:",
         	en : "Nothing, Nobody on the horizon. On a sign, you can read:",
-        	eo : "Nenio, neniu ĉirkaŭen. Sur panelo, vi legis:"
+        	eo : "Nenio, neniu ĉirkaŭe. Sur panelo, vi legas:"
         },
         "ville-entree-palais-justice-texte-3" : {
         	fr : "&laquo;&nbsp;Fermé momentanément au public, ouverture prochaine&hellip;&nbsp;&raquo;",

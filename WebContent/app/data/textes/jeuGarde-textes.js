@@ -199,7 +199,7 @@ define([], function(){
             "pokgard-tuto-5" : {
             	fr : "Bien joué&nbsp;!</br>Maintenant que tu as <b>misé</b>, trois choix s'offrent à toi.",
             	en : "Well played!</br>Now that you have <b>bet</b>, you got three choices.",
-            	eo : "Bonege!</br><b>Vetinta</b>, vi nun havas tri elekteblojn."
+            	eo : "Bonege!</br><b>Vetinta</b>, vi nun havas tri elektojn."
             },
             "pokgard-tuto-6" : {
             	fr : "Tu peux <b>miser</b> de nouveau et ainsi <b>augmenter la mise</b> que doivent verser les joueurs <b>à chaque tour</b>.",
