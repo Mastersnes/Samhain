@@ -31,7 +31,7 @@ define([], function(){
         "ville-ruelle-taverne-texte-3" : {
         	fr : "Le tavernier, tout à fait naturellement, vous propose un siège et une boisson&hellip;",
         	en : "The innkeeper, naturally, offers you a chair and a drink&hellip;",
-        	eo : "La tavernisto, nature, proposas al vi seĝon kaj trinkaĵon&hellip;"
+        	eo : "La tavernestro, nature, proposas al vi seĝon kaj trinkaĵon&hellip;"
         },
 
         "ville-ruelle-taverne-agitation-texte-1" : {

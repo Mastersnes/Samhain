@@ -20,7 +20,7 @@ define([], function(){
         "fermeExaminer-texte-1" : {
         	fr : "Il s'agit d'une vieille grange mal entretenue&hellip;",
         	en : "This is a poorly maintained old barn&hellip;",
-        	eo : "Temas pri malnova kaduka garbejo&hellip"
+        	eo : "Temas pri malnova kaduka garbejo&hellip;"
         },
         "fermeExaminer-texte-2" : {
         	fr : "Elle semble abandonnée et un <span key='baton'>gros bâton</span> permet de caler la porte.",

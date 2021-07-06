@@ -11,6 +11,11 @@ define([], function(){
             	en : "Alicia V. Nesztler (AvnesZ)",
             	eo : "Alicia V. Nesztler (AvnesZ)"
             },
+            "jeanluc-credits" : {
+            	fr : "Jean-Luc Thibias",
+            	en : "Jean-Luc Thibias",
+            	eo : "Jean-Luc Thibias"
+            },
             "titi-credits" : {
             	fr : "Steven Nesztler",
             	en : "Steven Nesztler",
@@ -96,6 +101,11 @@ define([], function(){
             	en : "Esperanto Translation",
             	eo : "Esperanta Traduko"
             },
+            "correction-eo-credits" : {
+            	fr : "Correction Esperanto",
+            	en : "Esperanto Correction",
+            	eo : "Esperanta Korektado"
+            },
 
             "community-credits" : {
             	fr : "Chargé de Communication",
@@ -133,6 +143,11 @@ define([], function(){
             	fr : "À nos adorables compagnons à poils et à plumes qui nous apportent joie et amour au quotidien&nbsp;!",
             	en : "To our adorable furry and feathered companions who bring us joy and love every day!",
             	eo : "Al niaj adorindaj vilaj kaj plumhavaj kunuloj, kiuj donacas al ni ĝojon kaj amon ĉiutage!"
+            },
+            "eo-thx-credits" : {
+                fr : "Un remerciement spécial à l'association Esperanto France Est, à Jean-Luc Thibias et à Liliane Bersweiler pour leur aide et leur soutien pour la version en Esperanto &nbsp;!",
+                en : "Special thanks to the Esperanto France Est Association, Jean-Luc Thibias and Liliane Bersweiler for their help and support for the Esperanto version!",
+                eo : "Speciale koran dankon al la asocio Esperanto France Est, al Jean-Luc Thibias kaj al Liliane Bersweiler pro ilia helpo kaj ilia subteno pri la versio en Esperanto!"
             }
 	};
 	
